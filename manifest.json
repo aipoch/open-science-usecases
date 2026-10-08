@@ -152,5 +152,19 @@
     "bytes": 789146,
     "sha256": "a4aa03f30c9ca2000fba435dd0ffef906dbbf5dc8f45770552ddce0b96c9cf9e",
     "location": "How Much Memory Does a Trillion-Parameter AI Need/How Much Memory Does a Trillion-Parameter AI Need.science"
+  },
+  {
+    "case": "Open AI Models - What Can You Actually Download",
+    "source_name": "Open AI Models - What Can You Actually Download.png",
+    "bytes": 1852005,
+    "sha256": "69c16475eef10c0e46af4f0c7eccba6bf3b39be96f9fa200cebd9f129cd2fce2",
+    "location": "Open AI Models - What Can You Actually Download/Open AI Models - What Can You Actually Download.png"
+  },
+  {
+    "case": "Open AI Models - What Can You Actually Download",
+    "source_name": "Open AI Models - What Can You Actually Download.science",
+    "bytes": 7267470,
+    "sha256": "5a9499c5c59ea19dbb179b960018ad2f66d4d82a83009e08d9bfa31a819e6a4c",
+    "location": "Open AI Models - What Can You Actually Download/Open AI Models - What Can You Actually Download.science"
   }
 ]
