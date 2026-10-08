@@ -222,5 +222,19 @@
     "bytes": 8892352,
     "sha256": "952a7dd53d95e1c0ccbabb3d5aedd7e1a9eb41376ede4b267063248d3e5f444a",
     "location": "Neutrino Hotspots - Signal or Chance/Neutrino Hotspots - Signal or Chance.science"
+  },
+  {
+    "case": "Neutrino Energy - Does Higher Mean Sharper",
+    "source_name": "Neutrino Energy - Does Higher Mean Sharper.png",
+    "bytes": 2160192,
+    "sha256": "730d1479df3201455d7fbf87939ffc4c35133dbabbb73a76d298701db1c3bb99",
+    "location": "Neutrino Energy - Does Higher Mean Sharper/Neutrino Energy - Does Higher Mean Sharper.png"
+  },
+  {
+    "case": "Neutrino Energy - Does Higher Mean Sharper",
+    "source_name": "Neutrino Energy - Does Higher Mean Sharper.science",
+    "bytes": 8091916,
+    "sha256": "42c5a03e38de289ef68aed40c2f50c9bff67c15dcb7c92959521b1fc4d6f590a",
+    "location": "Neutrino Energy - Does Higher Mean Sharper/Neutrino Energy - Does Higher Mean Sharper.science"
   }
 ]
