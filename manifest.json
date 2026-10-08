@@ -180,5 +180,19 @@
     "bytes": 19275018,
     "sha256": "2d6b72b21ef97d93d939f1f577842042e14a4ed8f1b2c222c5bc3cd8e2bb2803",
     "location": "AI Math Papers - Can You Check the Proofs/AI Math Papers - Can You Check the Proofs.science"
+  },
+  {
+    "case": "AI Math Citations - Do They Check Out",
+    "source_name": "AI Math Citations - Do They Check Out.png",
+    "bytes": 1971629,
+    "sha256": "e258c13aff553be832840db7b428dcb4f0bcab3df76550e6e7b87d1d47cf92c7",
+    "location": "AI Math Citations - Do They Check Out/AI Math Citations - Do They Check Out.png"
+  },
+  {
+    "case": "AI Math Citations - Do They Check Out",
+    "source_name": "AI Math Citations - Do They Check Out.science",
+    "bytes": 6631478,
+    "sha256": "93c94fa7ca3965be1fd62276a0ad389b430cfddbd7913870f1aeb62464f62f25",
+    "location": "AI Math Citations - Do They Check Out/AI Math Citations - Do They Check Out.science"
   }
 ]
