@@ -194,5 +194,19 @@
     "bytes": 6631478,
     "sha256": "93c94fa7ca3965be1fd62276a0ad389b430cfddbd7913870f1aeb62464f62f25",
     "location": "AI Math Citations - Do They Check Out/AI Math Citations - Do They Check Out.science"
+  },
+  {
+    "case": "AI Explains Math - What Gets Lost",
+    "source_name": "AI Explains Math - What Gets Lost.png",
+    "bytes": 1953453,
+    "sha256": "0af465248277dbc2983ca2f5f0aeb4c271ee839264f1fc06dcbe90c93a0ff188",
+    "location": "AI Explains Math - What Gets Lost/AI Explains Math - What Gets Lost.png"
+  },
+  {
+    "case": "AI Explains Math - What Gets Lost",
+    "source_name": "AI Explains Math - What Gets Lost.science",
+    "bytes": 4001406,
+    "sha256": "b31eff931c5340405f0f96b73c31e8aa598323123ae75593f29fa6a23cc14b95",
+    "location": "AI Explains Math - What Gets Lost/AI Explains Math - What Gets Lost.science"
   }
 ]
