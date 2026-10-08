@@ -166,5 +166,19 @@
     "bytes": 7267470,
     "sha256": "5a9499c5c59ea19dbb179b960018ad2f66d4d82a83009e08d9bfa31a819e6a4c",
     "location": "Open AI Models - What Can You Actually Download/Open AI Models - What Can You Actually Download.science"
+  },
+  {
+    "case": "AI Math Papers - Can You Check the Proofs",
+    "source_name": "AI Math Papers - Can You Check the Proofs.png",
+    "bytes": 1961709,
+    "sha256": "391a66ba3c3539ce59bcf4e509ebb44160354d88c8099fb7ebe5a88487a2e488",
+    "location": "AI Math Papers - Can You Check the Proofs/AI Math Papers - Can You Check the Proofs.png"
+  },
+  {
+    "case": "AI Math Papers - Can You Check the Proofs",
+    "source_name": "AI Math Papers - Can You Check the Proofs.science",
+    "bytes": 19275018,
+    "sha256": "2d6b72b21ef97d93d939f1f577842042e14a4ed8f1b2c222c5bc3cd8e2bb2803",
+    "location": "AI Math Papers - Can You Check the Proofs/AI Math Papers - Can You Check the Proofs.science"
   }
 ]
