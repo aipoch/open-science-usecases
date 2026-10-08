@@ -124,5 +124,19 @@
     "bytes": 121972,
     "sha256": "e87a4937bdfb7e1d6ed8b2a48d7ae3012e010e98b829b807026d413cb1e9fa21",
     "location": "Why Do Coffee and Sleep Studies Disagree/Why Do Coffee and Sleep Studies Disagree.science"
+  },
+  {
+    "case": "Can One Extra Token Make AI Cost 5× as Much",
+    "source_name": "Can One Extra Token Make AI Cost 5× as Much.png",
+    "bytes": 2753386,
+    "sha256": "25eae5c1f669870373896bb203e442be150edd3ee33ec4088be518c87492d5ae",
+    "location": "Can One Extra Token Make AI Cost 5× as Much/Can One Extra Token Make AI Cost 5× as Much.png"
+  },
+  {
+    "case": "Can One Extra Token Make AI Cost 5× as Much",
+    "source_name": "Can One Extra Token Make AI Cost 5× as Much.science",
+    "bytes": 1392897,
+    "sha256": "da8cae64d0fb1c7cc3563e47af1031021ae2cca61b672a3d4bcdf7674fd52b20",
+    "location": "Can One Extra Token Make AI Cost 5× as Much/Can One Extra Token Make AI Cost 5× as Much.science"
   }
 ]
