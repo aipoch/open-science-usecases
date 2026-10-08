@@ -138,5 +138,19 @@
     "bytes": 1392897,
     "sha256": "da8cae64d0fb1c7cc3563e47af1031021ae2cca61b672a3d4bcdf7674fd52b20",
     "location": "Can One Extra Token Make AI Cost 5× as Much/Can One Extra Token Make AI Cost 5× as Much.science"
+  },
+  {
+    "case": "How Much Memory Does a Trillion-Parameter AI Need",
+    "source_name": "How Much Memory Does a Trillion-Parameter AI Need.png",
+    "bytes": 2256206,
+    "sha256": "6d5dc28b66afcfa7798f1c27ba91e6d257cefcb01e1636c4089120f0940e7bb7",
+    "location": "How Much Memory Does a Trillion-Parameter AI Need/How Much Memory Does a Trillion-Parameter AI Need.png"
+  },
+  {
+    "case": "How Much Memory Does a Trillion-Parameter AI Need",
+    "source_name": "How Much Memory Does a Trillion-Parameter AI Need.science",
+    "bytes": 789146,
+    "sha256": "a4aa03f30c9ca2000fba435dd0ffef906dbbf5dc8f45770552ddce0b96c9cf9e",
+    "location": "How Much Memory Does a Trillion-Parameter AI Need/How Much Memory Does a Trillion-Parameter AI Need.science"
   }
 ]
