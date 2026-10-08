@@ -208,5 +208,19 @@
     "bytes": 4001406,
     "sha256": "b31eff931c5340405f0f96b73c31e8aa598323123ae75593f29fa6a23cc14b95",
     "location": "AI Explains Math - What Gets Lost/AI Explains Math - What Gets Lost.science"
+  },
+  {
+    "case": "Neutrino Hotspots - Signal or Chance",
+    "source_name": "Neutrino Hotspots - Signal or Chance.png",
+    "bytes": 2094008,
+    "sha256": "09b74eede8e7ea75a680db314d604cd6b353423f10eb82ee5a1ccd4d50f2de85",
+    "location": "Neutrino Hotspots - Signal or Chance/Neutrino Hotspots - Signal or Chance.png"
+  },
+  {
+    "case": "Neutrino Hotspots - Signal or Chance",
+    "source_name": "Neutrino Hotspots - Signal or Chance.science",
+    "bytes": 8892352,
+    "sha256": "952a7dd53d95e1c0ccbabb3d5aedd7e1a9eb41376ede4b267063248d3e5f444a",
+    "location": "Neutrino Hotspots - Signal or Chance/Neutrino Hotspots - Signal or Chance.science"
   }
 ]
