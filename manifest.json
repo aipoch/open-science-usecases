@@ -292,5 +292,19 @@
     "bytes": 725418,
     "sha256": "32905d517617c013333224e29049e8b7e4212d2061070c37c38a336561af84e9",
     "location": "99% Pure - Does Molecular Handedness Matter/99% Pure - Does Molecular Handedness Matter.science"
+  },
+  {
+    "case": "Light On - How Fast Do Neurons Respond",
+    "source_name": "Light On - How Fast Do Neurons Respond.png",
+    "bytes": 1962719,
+    "sha256": "790b676e46be90bbe75e91f79a80acd624ac746e8b8696cbf1d67a4b5fac7d48",
+    "location": "Light On - How Fast Do Neurons Respond/Light On - How Fast Do Neurons Respond.png"
+  },
+  {
+    "case": "Light On - How Fast Do Neurons Respond",
+    "source_name": "Light On - How Fast Do Neurons Respond.science",
+    "bytes": 23690481,
+    "sha256": "4dd4e0e65c8fbcceccb4f6da5ab0c22d9cfe30fa3ffbf6827dfaa2e67bd1e468",
+    "location": "Light On - How Fast Do Neurons Respond/Light On - How Fast Do Neurons Respond.science"
   }
 ]
