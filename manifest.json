@@ -362,5 +362,19 @@
     "bytes": 855771,
     "sha256": "7837410c9c39d9a3c7f7a845d91aadeea8eb3eef3dafe468be68eedfc1925d57",
     "location": "A Million Examples - Is That a Proof/A Million Examples - Is That a Proof.science"
+  },
+  {
+    "case": "Revised AI Papers - Did the Main Claim Change",
+    "source_name": "Revised AI Papers - Did the Main Claim Change.png",
+    "bytes": 2572457,
+    "sha256": "8a494fc9b718c190ce5c8caa9b49969ba94d65feb268a397cdf7f8d8b5fdc498",
+    "location": "Revised AI Papers - Did the Main Claim Change/Revised AI Papers - Did the Main Claim Change.png"
+  },
+  {
+    "case": "Revised AI Papers - Did the Main Claim Change",
+    "source_name": "Revised AI Papers - Did the Main Claim Change.science",
+    "bytes": 5909599,
+    "sha256": "8e9d981302ae45c01366688b45c19439a1e513b36ca78dd31f9bab6489e04f64",
+    "location": "Revised AI Papers - Did the Main Claim Change/Revised AI Papers - Did the Main Claim Change.science"
   }
 ]
