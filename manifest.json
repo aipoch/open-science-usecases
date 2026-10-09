@@ -320,5 +320,19 @@
     "bytes": 12304088,
     "sha256": "acd46947d444bf9a2826ddcb754508049560a9a0b5adae7ddc6fa251adf19171",
     "location": "Light-Activated Neurons - Does the Cutoff Matter/Light-Activated Neurons - Does the Cutoff Matter.science"
+  },
+  {
+    "case": "Neurons Respond on Average - Does Every Trial Work",
+    "source_name": "Neurons Respond on Average - Does Every Trial Work.png",
+    "bytes": 1975067,
+    "sha256": "7f841c27ba309983ccf3b5f86560ac281ab766617882d32fa2d1b5a2ee9a4f57",
+    "location": "Neurons Respond on Average - Does Every Trial Work/Neurons Respond on Average - Does Every Trial Work.png"
+  },
+  {
+    "case": "Neurons Respond on Average - Does Every Trial Work",
+    "source_name": "Neurons Respond on Average - Does Every Trial Work.science",
+    "bytes": 8018281,
+    "sha256": "c4972ddead00f5c8c5523e4825cb989e3bfd254d93cce1872f599b551de7de0d",
+    "location": "Neurons Respond on Average - Does Every Trial Work/Neurons Respond on Average - Does Every Trial Work.science"
   }
 ]
