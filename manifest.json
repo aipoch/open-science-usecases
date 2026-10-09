@@ -278,5 +278,19 @@
     "bytes": 809081,
     "sha256": "c63a47bc71b5a4b81a36573897e2ceda876b288a3bb7fd289a8a7235e8cee09d",
     "location": "Mirror-Image Molecules - Can Algorithms Tell Them Apart/Mirror-Image Molecules - Can Algorithms Tell Them Apart.science"
+  },
+  {
+    "case": "99% Pure - Does Molecular Handedness Matter",
+    "source_name": "99% Pure - Does Molecular Handedness Matter.png",
+    "bytes": 1848045,
+    "sha256": "0cc353b450e082d5971f6ed96e9314862ce78085b74d838fbb3f93a1fd4bfe6c",
+    "location": "99% Pure - Does Molecular Handedness Matter/99% Pure - Does Molecular Handedness Matter.png"
+  },
+  {
+    "case": "99% Pure - Does Molecular Handedness Matter",
+    "source_name": "99% Pure - Does Molecular Handedness Matter.science",
+    "bytes": 725418,
+    "sha256": "32905d517617c013333224e29049e8b7e4212d2061070c37c38a336561af84e9",
+    "location": "99% Pure - Does Molecular Handedness Matter/99% Pure - Does Molecular Handedness Matter.science"
   }
 ]
