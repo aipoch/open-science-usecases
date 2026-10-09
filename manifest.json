@@ -264,5 +264,19 @@
     "bytes": 9111097,
     "sha256": "0f369f09310ad301aa85322ac0d1c2e943f27903c67c208d45636a8ef58e9f11",
     "location": "Chiral Molecules - Can a 0.1% Lead Take Over/Chiral Molecules - Can a 0.1% Lead Take Over.science"
+  },
+  {
+    "case": "Mirror-Image Molecules - Can Algorithms Tell Them Apart",
+    "source_name": "Mirror-Image Molecules - Can Algorithms Tell Them Apart.png",
+    "bytes": 1825817,
+    "sha256": "749eaf202870fc4455c0615a6f7201c06d642c30a6c503c94f956a0fe327322c",
+    "location": "Mirror-Image Molecules - Can Algorithms Tell Them Apart/Mirror-Image Molecules - Can Algorithms Tell Them Apart.png"
+  },
+  {
+    "case": "Mirror-Image Molecules - Can Algorithms Tell Them Apart",
+    "source_name": "Mirror-Image Molecules - Can Algorithms Tell Them Apart.science",
+    "bytes": 809081,
+    "sha256": "c63a47bc71b5a4b81a36573897e2ceda876b288a3bb7fd289a8a7235e8cee09d",
+    "location": "Mirror-Image Molecules - Can Algorithms Tell Them Apart/Mirror-Image Molecules - Can Algorithms Tell Them Apart.science"
   }
 ]
