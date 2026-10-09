@@ -306,5 +306,19 @@
     "bytes": 23690481,
     "sha256": "4dd4e0e65c8fbcceccb4f6da5ab0c22d9cfe30fa3ffbf6827dfaa2e67bd1e468",
     "location": "Light On - How Fast Do Neurons Respond/Light On - How Fast Do Neurons Respond.science"
+  },
+  {
+    "case": "Light-Activated Neurons - Does the Cutoff Matter",
+    "source_name": "Light-Activated Neurons - Does the Cutoff Matter.png",
+    "bytes": 2042635,
+    "sha256": "b76b5b3cde63cefd0be550dcb2f1eb8586649b51a44bb91b1715ca5ae95d5c7a",
+    "location": "Light-Activated Neurons - Does the Cutoff Matter/Light-Activated Neurons - Does the Cutoff Matter.png"
+  },
+  {
+    "case": "Light-Activated Neurons - Does the Cutoff Matter",
+    "source_name": "Light-Activated Neurons - Does the Cutoff Matter.science",
+    "bytes": 12304088,
+    "sha256": "acd46947d444bf9a2826ddcb754508049560a9a0b5adae7ddc6fa251adf19171",
+    "location": "Light-Activated Neurons - Does the Cutoff Matter/Light-Activated Neurons - Does the Cutoff Matter.science"
   }
 ]
