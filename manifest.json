@@ -250,5 +250,19 @@
     "bytes": 7483158,
     "sha256": "9ced09ecb39d1712264beedc393c46ed9e7c20190f60b91c64f8c0822e11c908",
     "location": "One Neutrino - How Much Sky/One Neutrino - How Much Sky.science"
+  },
+  {
+    "case": "Chiral Molecules - Can a 0.1% Lead Take Over",
+    "source_name": "Chiral Molecules - Can a 0.1% Lead Take Over.png",
+    "bytes": 1949542,
+    "sha256": "b3a66253077d75388ec2ba529de585a1c223ab21e17f56ee15bd08c5d7926968",
+    "location": "Chiral Molecules - Can a 0.1% Lead Take Over/Chiral Molecules - Can a 0.1% Lead Take Over.png"
+  },
+  {
+    "case": "Chiral Molecules - Can a 0.1% Lead Take Over",
+    "source_name": "Chiral Molecules - Can a 0.1% Lead Take Over.science",
+    "bytes": 9111097,
+    "sha256": "0f369f09310ad301aa85322ac0d1c2e943f27903c67c208d45636a8ef58e9f11",
+    "location": "Chiral Molecules - Can a 0.1% Lead Take Over/Chiral Molecules - Can a 0.1% Lead Take Over.science"
   }
 ]
