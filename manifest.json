@@ -348,5 +348,19 @@
     "bytes": 2972283,
     "sha256": "fd336f24602167d0fa77c0704e91eb3f69709f846e5d308c72dfc50ff354968b",
     "location": "AI Math Counterexample - Does Exact Arithmetic Agree/AI Math Counterexample - Does Exact Arithmetic Agree.science"
+  },
+  {
+    "case": "A Million Examples - Is That a Proof",
+    "source_name": "A Million Examples - Is That a Proof.png",
+    "bytes": 2717313,
+    "sha256": "2bfcfec65a748ace73707b5310bfa047673394eb30286aaa2a250d706157e900",
+    "location": "A Million Examples - Is That a Proof/A Million Examples - Is That a Proof.png"
+  },
+  {
+    "case": "A Million Examples - Is That a Proof",
+    "source_name": "A Million Examples - Is That a Proof.science",
+    "bytes": 855771,
+    "sha256": "7837410c9c39d9a3c7f7a845d91aadeea8eb3eef3dafe468be68eedfc1925d57",
+    "location": "A Million Examples - Is That a Proof/A Million Examples - Is That a Proof.science"
   }
 ]
