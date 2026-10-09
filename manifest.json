@@ -334,5 +334,19 @@
     "bytes": 8018281,
     "sha256": "c4972ddead00f5c8c5523e4825cb989e3bfd254d93cce1872f599b551de7de0d",
     "location": "Neurons Respond on Average - Does Every Trial Work/Neurons Respond on Average - Does Every Trial Work.science"
+  },
+  {
+    "case": "AI Math Counterexample - Does Exact Arithmetic Agree",
+    "source_name": "AI Math Counterexample - Does Exact Arithmetic Agree.png",
+    "bytes": 2069783,
+    "sha256": "d14073b0fe92de469459418a5a536a601bf3c09943b852404f113aace2e08c8b",
+    "location": "AI Math Counterexample - Does Exact Arithmetic Agree/AI Math Counterexample - Does Exact Arithmetic Agree.png"
+  },
+  {
+    "case": "AI Math Counterexample - Does Exact Arithmetic Agree",
+    "source_name": "AI Math Counterexample - Does Exact Arithmetic Agree.science",
+    "bytes": 2972283,
+    "sha256": "fd336f24602167d0fa77c0704e91eb3f69709f846e5d308c72dfc50ff354968b",
+    "location": "AI Math Counterexample - Does Exact Arithmetic Agree/AI Math Counterexample - Does Exact Arithmetic Agree.science"
   }
 ]
