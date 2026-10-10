@@ -1,0 +1,153 @@
+name: Check and publish cases
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  pull_request:
+    types: [opened, synchronize, reopened, edited]
+
+permissions:
+  contents: read
+
+# Keep the lock from reading the S3 baseline through the final manifest upload.
+concurrency:
+  group: case-publish-${{ github.ref }}
+  queue: max
+  cancel-in-progress: false
+
+jobs:
+  check-structure:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out the fixed pull request target
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+          persist-credentials: false
+
+      - name: Fix the pull request check range
+        id: range
+        env:
+          BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          TARGET_SHA: ${{ github.event.pull_request.head.sha }}
+        run: echo "before=$(git merge-base "$BASE_SHA" "$TARGET_SHA")" >> "$GITHUB_OUTPUT"
+
+      - name: Check directories declared by added or modified manifest entries
+        id: directories
+        env:
+          BASE_SHA: ${{ steps.range.outputs.before }}
+        run: python3 .github/scripts/check_structure.py directories --base "$BASE_SHA"
+
+      - name: Check matching manifest entries and package sources
+        if: steps.directories.outputs.cases != '' && steps.directories.outputs.cases != '[]'
+        env:
+          CASES_JSON: ${{ steps.directories.outputs.cases }}
+          CASE_FILE_BASE_URL: https://raw.githubusercontent.com/${{ github.event.pull_request.head.repo.full_name }}/${{ github.event.pull_request.head.sha }}
+        run: python3 .github/scripts/check_structure.py manifest
+
+      - name: Check local SHA declarations in added or modified manifest entries
+        env:
+          BASE_SHA: ${{ steps.range.outputs.before }}
+          TARGET_SHA: ${{ github.event.pull_request.head.sha }}
+        run: python3 .github/scripts/check_structure.py declarations --base "$BASE_SHA" --after "$TARGET_SHA"
+
+      - name: Test workflow behavior on pull requests
+        run: python3 -B -m unittest discover -s .github/tests -v
+
+  publish:
+    if: >-
+      github.ref == 'refs/heads/main' &&
+      (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    steps:
+      - name: Reject native reruns
+        run: |
+          if [ "$GITHUB_RUN_ATTEMPT" != "1" ]; then
+            echo 'Native reruns are disabled. Use workflow_dispatch on main.' >&2
+            exit 1
+          fi
+
+      - name: Check out the fixed event target
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.sha }}
+          persist-credentials: false
+
+      - name: Read S3 manifest and prepare validated resource sources
+        id: plan
+        env:
+          TARGET_SHA: ${{ github.sha }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+          AWS_TARGET_FOLDER: ${{ secrets.AWS_TARGET_FOLDER }}
+          AWS_EC2_METADATA_DISABLED: "true"
+          AWS_PAGER: ""
+        run: python3 .github/scripts/publish.py --after "$TARGET_SHA" --prepare "$RUNNER_TEMP/publication-plan.json"
+
+      - name: Check planned manifest entries and resource availability
+        if: steps.plan.outputs.has_uploads == 'true'
+        env:
+          CASE_FILE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}
+        run: python3 .github/scripts/check_structure.py manifest --plan "$RUNNER_TEMP/publication-plan.json"
+
+      - name: Download and extract changed science packages
+        if: steps.plan.outputs.has_uploads == 'true'
+        env:
+          CASE_FILE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}
+        run: python3 .github/scripts/extract_science.py --plan "$RUNNER_TEMP/publication-plan.json" --output "$RUNNER_TEMP/science-publication"
+
+      - name: Replace extracted content and upload resources, then manifest
+        id: apply
+        if: steps.plan.outputs.has_uploads == 'true'
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+          AWS_TARGET_FOLDER: ${{ secrets.AWS_TARGET_FOLDER }}
+          AWS_EC2_METADATA_DISABLED: "true"
+          AWS_PAGER: ""
+        run: python3 .github/scripts/publish.py --apply-plan "$RUNNER_TEMP/publication-plan.json"
+
+      - name: Invalidate the published manifest in CloudFront
+        if: steps.apply.outcome == 'success'
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+          AWS_DISTRIBUITION_ID: ${{ secrets.AWS_DISTRIBUITION_ID }}
+          AWS_EC2_METADATA_DISABLED: "true"
+          AWS_PAGER: ""
+        run: |
+          aws cloudfront create-invalidation \
+            --distribution-id "$AWS_DISTRIBUITION_ID" \
+            --paths "/open-science/usecases/manifest.json"
+
+      - name: Explain publication result
+        if: always()
+        env:
+          JOB_STATUS: ${{ job.status }}
+          PLAN_OUTCOME: ${{ steps.plan.outcome }}
+          HAS_UPLOADS: ${{ steps.plan.outputs.has_uploads }}
+          APPLY_OUTCOME: ${{ steps.apply.outcome }}
+        run: |
+          if [ "$PLAN_OUTCOME" = "failure" ]; then
+            reason='Publication preparation failed; no resources were uploaded.'
+          elif [ "$JOB_STATUS" = "cancelled" ]; then
+            reason='Publication was cancelled; inspect the last completed upload before retrying.'
+          elif [ "$JOB_STATUS" = "failure" ]; then
+            reason='Publication failed; later processing and uploads stopped. Inspect the failed step.'
+          elif [ "$PLAN_OUTCOME" = "success" ] && [ "$HAS_UPLOADS" = "false" ]; then
+            reason='Repository manifest matches S3; no uploads are needed.'
+          elif [ "$APPLY_OUTCOME" = "success" ]; then
+            reason='Publication completed; the root manifest was uploaded after all resources.'
+          else
+            reason='Publication did not complete; inspect the step outcomes.'
+          fi
+          printf '::notice::%s\n' "$reason"
+          printf '### Publication\n\n%s\n' "$reason" >> "$GITHUB_STEP_SUMMARY"
