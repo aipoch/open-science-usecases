@@ -36,17 +36,16 @@ jobs:
           TARGET_SHA: ${{ github.event.pull_request.head.sha }}
         run: echo "before=$(git merge-base "$BASE_SHA" "$TARGET_SHA")" >> "$GITHUB_OUTPUT"
 
-      - name: Check directories declared by added or modified manifest entries
+      - name: Select added or modified manifest entries
         id: directories
         env:
           BASE_SHA: ${{ steps.range.outputs.before }}
         run: python3 .github/scripts/check_structure.py directories --base "$BASE_SHA"
 
-      - name: Check matching manifest entries and package sources
+      - name: Check manifest entries and resource sources
         if: steps.directories.outputs.cases != '' && steps.directories.outputs.cases != '[]'
         env:
           CASES_JSON: ${{ steps.directories.outputs.cases }}
-          CASE_FILE_BASE_URL: https://raw.githubusercontent.com/${{ github.event.pull_request.head.repo.full_name }}/${{ github.event.pull_request.head.sha }}
         run: python3 .github/scripts/check_structure.py manifest
 
       - name: Check local SHA declarations in added or modified manifest entries
@@ -79,7 +78,7 @@ jobs:
           ref: ${{ github.sha }}
           persist-credentials: false
 
-      - name: Read S3 manifest and prepare validated resource sources
+      - name: Read S3 manifest and plan resource candidates
         id: plan
         env:
           TARGET_SHA: ${{ github.sha }}
@@ -93,20 +92,27 @@ jobs:
         run: python3 .github/scripts/publish.py --after "$TARGET_SHA" --prepare "$RUNNER_TEMP/publication-plan.json"
 
       - name: Check planned manifest entries and resource availability
-        if: steps.plan.outputs.has_uploads == 'true'
-        env:
-          CASE_FILE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}
+        if: steps.plan.outputs.has_checks == 'true'
         run: python3 .github/scripts/check_structure.py manifest --plan "$RUNNER_TEMP/publication-plan.json"
 
-      - name: Download and extract changed science packages
+      - name: Prepare selected resources and deduplicate against S3 metadata
         if: steps.plan.outputs.has_uploads == 'true'
         env:
-          CASE_FILE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ github.sha }}
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
+          AWS_TARGET_FOLDER: ${{ secrets.AWS_TARGET_FOLDER }}
+          AWS_EC2_METADATA_DISABLED: "true"
+          AWS_PAGER: ""
+        run: python3 .github/scripts/publish.py --prepare-resources "$RUNNER_TEMP/publication-plan.json" --output "$RUNNER_TEMP/resource-publication"
+
+      - name: Extract selected prepared science packages
+        if: steps.plan.outputs.has_packages == 'true'
         run: python3 .github/scripts/extract_science.py --plan "$RUNNER_TEMP/publication-plan.json" --output "$RUNNER_TEMP/science-publication"
 
       - name: Publish each case checkpoint and refresh its CDN cache
         id: apply
-        if: steps.plan.outputs.has_uploads == 'true'
+        if: steps.plan.outputs.has_manifest == 'true'
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
@@ -142,10 +148,10 @@ jobs:
             reason='Publication was cancelled; inspect the last completed upload before retrying.'
           elif [ "$JOB_STATUS" = "failure" ]; then
             reason='Publication failed; later processing and uploads stopped. Inspect the failed step.'
+          elif [ "$APPLY_OUTCOME" = "success" ]; then
+            reason='Publication completed; every checkpoint and the final manifest sync were committed, read back and refreshed through CDN.'
           elif [ "$PLAN_OUTCOME" = "success" ] && [ "$HAS_UPLOADS" = "false" ]; then
             reason='No resource changes; the final manifest sync and CDN refresh are still required.'
-          elif [ "$APPLY_OUTCOME" = "success" ]; then
-            reason='Publication completed; every checkpoint and the final repository manifest were committed and their CDN invalidations completed.'
           else
             reason='Publication did not complete; inspect the step outcomes.'
           fi

@@ -14,7 +14,7 @@ import tarfile
 import tempfile
 import time
 import unicodedata
-from urllib.parse import quote, urlsplit
+from urllib.parse import urlsplit
 from urllib.request import urlopen
 
 from manifest_diff import git
@@ -33,15 +33,6 @@ def relative_path(value):
                 or re.fullmatch(r'(?i:con|prn|aux|nul|com[1-9¹²³]|lpt[1-9¹²³])(?:\..*)?', part)):
             raise ValueError('Unsafe package path: ' + repr(value))
     return value
-
-
-def repository_path(value):
-    # Repository filenames are URL components, not portable extraction paths.
-    if (not isinstance(value, str) or not value or len(value) > 2048
-            or re.search(r'[\x00-\x1f\x7f\\]', value)
-            or any(part in ('', '.', '..') for part in value.split('/'))):
-        raise ValueError('Unsafe repository path: ' + repr(value))
-    return quote(value, safe='/')
 
 
 def check_layout(entries):
@@ -70,8 +61,8 @@ def download(url, target, resource):
     size = resource.get('bytes')
     if not isinstance(expected, str) or not re.fullmatch(r'[0-9a-fA-F]{64}', expected):
         raise ValueError('Package requires a valid SHA-256 declaration')
-    if type(size) is not int or size <= 0:
-        raise ValueError('Package requires a positive byte size')
+    if type(size) is not int or size < 0:
+        raise ValueError('Package requires a nonnegative byte size')
     # Stream large release packages to disk, binding mutable URLs to the declaration.
     digest = hashlib.sha256()
     count = 0
@@ -95,7 +86,7 @@ def download(url, target, resource):
         raise ValueError('Downloaded package byte size does not match the manifest')
 
 
-def unpack(package, output):
+def unpack(package, output, verify_only=False):
     if output.is_symlink() or not output.is_dir() or any(output.iterdir()):
         raise ValueError('Extraction requires an empty, non-symlink output directory')
     with tarfile.open(package, 'r:gz') as archive:
@@ -164,6 +155,24 @@ def unpack(package, output):
             raise ValueError('Package inventory is incomplete or contains undeclared files')
         check_layout([(key, False) for targets in destinations.values() for key, _ in targets])
 
+        if verify_only:
+            # Audit destinations from the package without extracting it a second time.
+            verified = []
+            for member in members:
+                if member.name not in destinations:
+                    continue
+                digest, size = hashlib.sha256(), 0
+                with archive.extractfile(member) as source:
+                    for chunk in iter(lambda: source.read(1024 * 1024), b''):
+                        digest.update(chunk)
+                        size += len(chunk)
+                actual = (size, digest.hexdigest())
+                for key, expected in destinations[member.name]:
+                    if size != member.size or (expected is not None and actual != expected):
+                        raise ValueError('Inventory content size or checksum mismatch: ' + member.name)
+                    verified.append({'path': key, 'bytes': size, 'sha256': actual[1]})
+            return verified
+
         # Stage privately; malformed content never leaves a partial restored tree.
         verified = []
         with tempfile.TemporaryDirectory(prefix='.restore-', dir=output.parent) as temporary:
@@ -195,11 +204,15 @@ def unpack(package, output):
         return verified
 
 
-def expand_plan(root, plan, output, base_url):
+def expand_plan(root, plan, output):
     if git(root, 'rev-parse', 'HEAD').strip() != plan['after']:
         raise ValueError('Checkout must match the prepared target commit')
     if plan.get('extraction_complete'):
         raise ValueError('Extraction requires a fresh, unprepared plan')
+    from publish import verify_plan
+    verify_plan(root, plan)
+    if plan.get('packages') and plan.get('resources_prepared') is not True:
+        raise ValueError('Prepare all resources before extracting packages')
     result = copy.deepcopy(plan)
     generated = []
     batch = None
@@ -210,21 +223,22 @@ def expand_plan(root, plan, output, base_url):
                 output.mkdir(parents=True, exist_ok=True)
                 batch = Path(tempfile.mkdtemp(prefix='run-', dir=output))
             resource = package['resource']
-            url = resource.get('release_url')
-            if not url:
-                url = base_url.rstrip('/') + '/' + repository_path(resource['path'])
+            key = package['name'] + '/' + resource['file_name']
+            selected = [item for item in plan['files'] if item['key'] == key]
+            if len(selected) != 1:
+                raise ValueError('Prepared package is missing from upload list')
+            downloaded = root / selected[0]['path']
+            if file_integrity(downloaded) != (resource['bytes'], resource['sha256'].lower()):
+                raise ValueError('Prepared package size or checksum mismatch')
             directory = batch / package['name']
             directory.mkdir()
-            downloaded = directory / 'package.science'
-            print('Downloading and extracting: ' + package['name'], flush=True)
-            download(url, downloaded, resource)
+            print('Extracting prepared package: ' + package['name'], flush=True)
             extracted = directory / 'extracted'
             extracted.mkdir()
             verified = unpack(downloaded, extracted)
             for item in sorted(verified, key=lambda item: item['path']):
                 generated.append({**item, 'path': str((extracted / item['path']).resolve()),
                                   'key': prefix + item['path']})
-            downloaded.unlink()
     except BaseException:
         if batch is not None:
             shutil.rmtree(batch)
@@ -252,7 +266,7 @@ def main():
         plan['extraction_complete'] = False
         args.plan.write_text(json.dumps(plan) + '\n', encoding='utf-8')
         raise ValueError('Prepare a fresh plan before retrying extraction')
-    result = expand_plan(Path.cwd(), plan, args.output.resolve(), os.environ.get('CASE_FILE_BASE_URL', ''))
+    result = expand_plan(Path.cwd(), plan, args.output.resolve())
     from publication_steps import write_artifacts, print_plan, Reporter
     write_artifacts(result, args.plan.with_suffix(''))
     Reporter(result, args.plan.with_suffix(''))

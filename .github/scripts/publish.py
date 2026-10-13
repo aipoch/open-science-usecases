@@ -1,25 +1,29 @@
 #!/usr/bin/env python3
 """Compare the target S3 manifest with a fixed checkout, then publish resources."""
 import argparse
+import copy
+import shutil
 import time
 import hashlib
 import json
 import os
-from pathlib import Path, PurePosixPath
+from pathlib import Path
 import re
 import subprocess
 import sys
 import tempfile
 from urllib.parse import quote, urlsplit
 
-from check_structure import is_image_filename, is_science_url, kebab_case, read_json
-from manifest_diff import changed_entries, git, local_resources
+from check_structure import catalog_errors, read_json, schema_errors, source_errors, selected_cases
+from manifest_diff import changed_entries, git
 from publication_steps import (build_steps, group_files, write_artifacts, print_plan,
                                Reporter, digest)
 
 
-def read_manifest(text, source):
-    # Reject ambiguous or malformed baselines rather than treating them as empty.
+KINDS = ('cover', 'case', 'introduction')
+
+
+def read_manifest(text, source, legacy=True):
     entries = read_json(text, source)
     if not isinstance(entries, list):
         raise ValueError(source + ' must be an array of case objects')
@@ -27,79 +31,38 @@ def read_manifest(text, source):
     for entry in entries:
         if not isinstance(entry, dict):
             raise ValueError(source + ': invalid case object')
-        name = entry.get('name')
-        extracted_prefix(name)
-        if name in names:
-            raise ValueError(source + ': Duplicate case name: ' + name)
-        names.add(name)
-        if not isinstance(entry.get('title'), str) or not entry['title'].strip():
-            raise ValueError(source + ': missing case title')
-        if not {'cover', 'case'} <= entry.keys():
-            raise ValueError(source + ': missing cover or case resource')
-        folders = set()
-        for kind, extension in (('cover', None), ('case', '.science'), ('introduction', '.md')):
-            if kind not in entry:
-                continue  # Legacy cases can omit an introduction.
-            resource = entry[kind]
-            if not isinstance(resource, dict):
-                raise ValueError(source + ': invalid ' + kind + ' resource')
-            path, filename = resource.get('path'), resource.get('file_name')
-            if (not isinstance(path, str) or '\\' in path or '\x00' in path
-                    or len(path.split('/')) != 2
-                    or any(part in ('', '.', '..') for part in path.split('/'))
-                    or PurePosixPath(path).is_absolute()
-                    or filename != path.split('/')[-1]
-                    or not (is_image_filename(filename) if kind == 'cover' else filename.endswith(extension))):
-                raise ValueError(source + ': invalid resource path or file_name')
-            folders.add(path.split('/')[0])
-            if type(resource.get('bytes')) is not int or resource['bytes'] < 0:
-                raise ValueError(source + ': invalid resource byte size')
-            sha = resource.get('sha256')
-            if not isinstance(sha, str) or not re.fullmatch(r'[0-9a-fA-F]{64}', sha):
-                raise ValueError(source + ': resource requires a 64-digit SHA-256')
-            if kind == 'case':
-                url = resource.get('release_url')
-                if url != '' and not is_science_url(url):
-                    raise ValueError(source + ': invalid case.release_url')
-        if len(folders) != 1:
-            raise ValueError(source + ': resources must share one case directory')
-    local_resources(entries)  # Also reject colliding upload destinations.
+        errors = schema_errors(entry, legacy=legacy)
+        if errors:
+            raise ValueError(source + ': ' + '; '.join(errors))
+        if entry['name'] in names:
+            raise ValueError(source + ': Duplicate case name: ' + entry['name'])
+        names.add(entry['name'])
+    errors = catalog_errors(entries, legacy=legacy)
+    if errors:
+        raise ValueError(source + ': ' + '; '.join(errors))
     return entries
 
 
-def resource_changed(previous, current):
+def candidate_reasons(previous, current):
     if previous is None:
-        return True
-    # Hexadecimal spelling is not a content change; other resource metadata is.
-    return ({**previous, 'sha256': previous['sha256'].lower()}
-            != {**current, 'sha256': current['sha256'].lower()})
+        return ['new resource'], False
+    source_changed = previous.get('release_url', '') != current.get('release_url', '')
+    reasons = ['release_url'] if source_changed else []
+    for field in ('file_name', 'bytes', 'sha256'):
+        old, new = previous[field], current[field]
+        if field == 'sha256':
+            old, new = old.lower(), new.lower()
+        if old != new:
+            reasons.append(field)
+    return reasons, source_changed
 
 
 def check_sources(root, entries):
-    cases = []
-    # Validate every affected case before any package download or extraction.
     for entry in entries:
-        directory = entry['cover']['path'].split('/')[0]
-        if entry['name'] != kebab_case(directory):
-            raise ValueError('Case name must match its directory: ' + directory)
-        folder = root / directory
-        if not folder.is_dir() or folder.is_symlink():
-            raise ValueError('Missing or invalid case directory: ' + directory)
-        for kind in ('cover', 'case', 'introduction'):
-            if kind not in entry:
-                continue
-            resource = entry[kind]
-            path = root / resource['path']
-            if path.is_symlink():
-                raise ValueError('Resource source must not be a symlink: ' + resource['path'])
-            if kind == 'case' and resource['release_url']:
-                if path.exists():
-                    raise ValueError('Package requires exactly one source: ' + resource['path'])
-            elif not path.is_file():
-                raise ValueError('Planned resource source is missing: ' + resource['path'])
-        cases.append({'directory': directory, 'name': entry['name'], 'valid': True,
-                      'has_local_science': not bool(entry['case']['release_url'])})
-    return cases
+        errors = source_errors(root, entry)
+        if errors:
+            raise ValueError('; '.join(errors))
+    return selected_cases(entries)
 
 
 def prepare(root, baseline, after):
@@ -109,21 +72,95 @@ def prepare(root, baseline, after):
     if (root / 'manifest.json').read_bytes() != current_text.encode('utf-8'):
         raise ValueError('Checkout manifest.json differs from the fixed target commit')
     old = [] if baseline is None else read_manifest(baseline, 'S3 manifest.json')
-    new = read_manifest(current_text, 'repository manifest.json')
+    new = read_manifest(current_text, 'repository manifest.json', legacy=False)
     cases = check_sources(root, changed_entries(old, new))
-    previous, current = local_resources(old), local_resources(new)
-    files = [{'path': resource['path'], 'key': key, 'bytes': resource['bytes'],
-              'sha256': resource['sha256'].lower()} for key, resource in current.items()
-             if resource_changed(previous.get(key), resource)]
-    previous_cases = {entry['name']: entry for entry in old}
-    packages = [{'name': entry['name'], 'resource': entry['case']} for entry in new
-                if resource_changed(previous_cases.get(entry['name'], {}).get('case'), entry['case'])]
-    files.append({'path': 'manifest.json', 'key': 'manifest.json'})
-    return group_files({'after': after, 'baseline': baseline, 'files': files,
-                        'packages': packages, 'cases': cases,
-                        'unchanged': [entry['name'] for entry in new
-                                      if previous_cases.get(entry['name']) == entry],
+    previous = {entry['name']: entry for entry in old}
+    candidates, packages = [], []
+    for entry in new:
+        for kind in KINDS:
+            resource = entry[kind]
+            reasons, force = candidate_reasons(previous.get(entry['name'], {}).get(kind), resource)
+            if not reasons:
+                continue
+            candidates.append({'name': entry['name'], 'kind': kind, 'path': resource['path'],
+                               'key': entry['name'] + '/' + resource['file_name'],
+                               'bytes': resource['bytes'], 'sha256': resource['sha256'].lower(),
+                               'release_url': resource['release_url'], 'reasons': reasons,
+                               'force_upload': force})
+            if kind == 'case':
+                packages.append({'name': entry['name'], 'resource': resource})
+    files = copy.deepcopy(candidates) + [{'path': 'manifest.json', 'key': 'manifest.json'}]
+    return group_files({'after': after, 'baseline': baseline, 'candidates': candidates,
+                        'files': files, 'packages': packages, 'cases': cases,
+                        'unchanged': [entry['name'] for entry in new if previous.get(entry['name']) == entry],
                         'steps': build_steps(old, new, current_text)})
+
+
+def matching_head(head, item):
+    if not isinstance(head, dict):
+        return False
+    checksum = head.get('Metadata', {}).get('sha256')
+    return (type(head.get('ContentLength')) is int and head['ContentLength'] == item['bytes']
+            and isinstance(checksum, str) and checksum.lower() == item['sha256'])
+
+
+def verify_plan(root, plan):
+    expected = prepare(root, plan['baseline'], plan['after'])
+    for field in ('candidates', 'packages', 'cases', 'unchanged'):
+        if plan.get(field) != expected[field]:
+            raise ValueError('Prepared ' + field + ' differ from the fixed target')
+    if len(plan['steps']) != len(expected['steps']):
+        raise ValueError('Prepared publication steps differ from the fixed target')
+    for actual, wanted in zip(plan['steps'], expected['steps']):
+        for field in ('id', 'operation', 'name', 'before', 'after', 'manifest'):
+            if actual[field] != wanted[field]:
+                raise ValueError('Prepared publication step differs: ' + field)
+    grouped = group_files(copy.deepcopy(plan))
+    for actual, rebuilt in zip(plan['steps'], grouped['steps']):
+        if actual['files'] != rebuilt['files'] or actual['packages'] != rebuilt['packages']:
+            raise ValueError('Checkpoint upload lists differ from plan inventory')
+    return expected
+
+
+def prepare_resources(root, plan, s3, output):
+    from extract_science import download
+    expected = verify_plan(root, plan)
+    if plan.get('resources_prepared') or plan['files'] != expected['files']:
+        raise ValueError('Resource preparation requires a fresh plan')
+    result = copy.deepcopy(plan)
+    decisions, files = [], []
+    output.mkdir(parents=True, exist_ok=True)
+    batch = Path(tempfile.mkdtemp(prefix='sources-', dir=output)).resolve()
+    try:
+        for item in plan['candidates']:
+            # Only selected, non-forced covers/introductions consult target metadata.
+            head = s3.head(item['key']) if item['kind'] != 'case' and not item['force_upload'] else None
+            skip = item['kind'] != 'case' and not item['force_upload'] and matching_head(head, item)
+            decisions.append({'key': item['key'], 'action': 'skip' if skip else 'upload',
+                              'head': head, 'reason': 'target SHA and size match' if skip else 'upload required'})
+            if skip:
+                continue
+            target = batch / item['name'] / item['key'].split('/', 1)[1]
+            target.parent.mkdir(parents=True, exist_ok=True)
+            if item['release_url']:
+                download(item['release_url'], target, item)
+            else:
+                # Bind local input to the fixed Git tree as well as the declared digest.
+                listing = git(root, '--literal-pathspecs', 'ls-tree', plan['after'], '--', item['path']).split()
+                if not listing or listing[0] not in ('100644', '100755'):
+                    raise ValueError('Local source must be a committed regular file: ' + item['path'])
+                subprocess.run(['git', '--literal-pathspecs', 'diff', '--quiet', plan['after'], '--', item['path']],
+                               cwd=root, check=True)
+                shutil.copyfile(root / item['path'], target)
+            if file_integrity(target) != (item['bytes'], item['sha256']):
+                raise ValueError('Prepared file size or checksum mismatch: ' + item['key'])
+            files.append({**item, 'path': str(target)})
+    except BaseException:
+        shutil.rmtree(batch)
+        raise
+    result.update(files=files + [{'path': 'manifest.json', 'key': 'manifest.json'}],
+                  decisions=decisions, resources_prepared=True)
+    return group_files(result)
 
 
 def extracted_prefix(name):
@@ -173,12 +210,19 @@ class S3:
         subprocess.run(['aws', 's3', 'cp', str(path), self.target + '/' + key,
                         '--only-show-errors', '--metadata', 'sha256=' + checksum], check=True)
 
-    def verify_upload(self, key, size, checksum):
+    def head(self, key):
         result = subprocess.run(['aws', 's3api', 'head-object', '--bucket', self.bucket,
                                  '--key', self.object_key(key), '--output', 'json'],
-                                capture_output=True, text=True, check=True)
-        head = json.loads(result.stdout)
-        if head.get('ContentLength') != size or head.get('Metadata', {}).get('sha256') != checksum:
+                                capture_output=True, text=True)
+        if result.returncode:
+            # HeadObject reports a missing object as 404; 403/transport errors are fatal.
+            if re.search(r'\((?:404|NoSuchKey|NotFound)\) when calling the HeadObject operation', result.stderr):
+                return None
+            raise ValueError('Cannot HEAD target S3 object: ' + result.stderr.strip())
+        return json.loads(result.stdout)
+
+    def verify_upload(self, key, size, checksum):
+        if not matching_head(self.head(key), {'bytes': size, 'sha256': checksum.lower()}):
             raise ValueError('Uploaded object metadata mismatch: ' + key)
 
     def object_key(self, key):
@@ -193,13 +237,11 @@ class S3:
                         '--content-type', 'application/json', '--metadata', 'sha256=' + file_integrity(path)[1],
                         *condition], capture_output=True, text=True, check=True)
 
-    def refresh_cdn(self, case_name=None, final=False):
+    def refresh_cdn(self, case_name=None):
         distribution = os.environ['AWS_DISTRIBUITION_ID']
-        # Final sync repairs cache refresh failures from prior runs, including resource caches.
+        # Manifest-only checkpoints keep unrelated resource caches warm.
         paths = [quote('/' + self.manifest_key, safe='/')]
-        if final:
-            paths = [quote('/' + self.object_key(''), safe='/') + '*']
-        elif case_name:
+        if case_name:
             paths.append(quote('/' + self.object_key(case_name + '/'), safe='/') + '*')
         print('CDN paths: ' + json.dumps(paths), flush=True)
         result = subprocess.run(['aws', 'cloudfront', 'create-invalidation',
@@ -219,46 +261,66 @@ class S3:
 def apply(root, plan, s3, output=None):
     if git(root, 'rev-parse', 'HEAD').strip() != plan['after']:
         raise ValueError('Checkout must match the prepared target commit')
-    # Re-derive checkpoint manifests from the fixed commit; never trust a stale/tampered plan.
-    expected = prepare(root, plan['baseline'], plan['after'])
-    if len(plan['steps']) != len(expected['steps']):
-        raise ValueError('Prepared publication steps differ from the fixed target')
-    for actual, wanted in zip(plan['steps'], expected['steps']):
-        for field in ('id', 'operation', 'name', 'before', 'after', 'manifest'):
-            if actual[field] != wanted[field]:
-                raise ValueError('Prepared publication step differs: ' + field)
-    packages = plan.get('packages', [])
-    if packages != expected['packages']:
-        raise ValueError('Prepared packages differ from the fixed target')
-    if packages:
-        if plan.get('extraction_complete') is not True:
-            raise ValueError('All packages must be extracted before publication')
-        keys = {item['key'] for item in plan['files']}
-        for package in packages:
-            for metadata in ('session.json', 'records.json', 'manifest.json'):
-                if extracted_prefix(package['name']) + metadata not in keys:
-                    raise ValueError('Extracted metadata is missing from the upload plan: ' + metadata)
-    # Check every original and generated file before clearing any published prefix.
-    prefixes = tuple(extracted_prefix(package['name']) for package in packages)
-    originals = {item['key']: item for item in expected['files']}
+    expected = verify_plan(root, plan)
+    candidates = {item['key']: item for item in expected['candidates']}
+    if candidates and plan.get('resources_prepared') is not True:
+        raise ValueError('All selected resources must be prepared before publication')
+    decisions = plan.get('decisions', [])
+    if len(decisions) != len(candidates) or {d['key'] for d in decisions} != candidates.keys():
+        raise ValueError('Prepared resource decisions are missing or duplicated')
+    skipped = set()
+    for decision in decisions:
+        item = candidates[decision['key']]
+        if decision['action'] == 'skip':
+            if (item['force_upload'] or item['kind'] == 'case'
+                    or not matching_head(decision.get('head'), item)
+                    or decision.get('reason') != 'target SHA and size match'):
+                raise ValueError('Invalid or forged skip decision: ' + item['key'])
+            # Revalidate every skipped object before the first write in the entire batch.
+            if not matching_head(s3.head(item['key']), item):
+                raise ValueError('Target changed since skip decision: ' + item['key'])
+            skipped.add(item['key'])
+        elif decision['action'] != 'upload':
+            raise ValueError('Invalid resource decision')
+    originals = {}
+    generated = {}
     seen = set()
     for item in plan['files']:
-        if item['key'] in seen:
-            raise ValueError('Duplicate planned upload: ' + item['key'])
-        seen.add(item['key'])
+        key = item['key']
+        if key in seen:
+            raise ValueError('Duplicate planned upload: ' + key)
+        seen.add(key)
+        if key == 'manifest.json':
+            if item != {'path': 'manifest.json', 'key': 'manifest.json'}:
+                raise ValueError('Manifest upload differs from fixed target')
+            continue
         path = root / item['path']
-        if not path.is_file() or path.is_symlink():
+        if not path.is_file() or any(p.is_symlink() for p in (path, *path.parents)):
             raise ValueError('Planned upload file is missing or invalid: ' + item['path'])
-        if item['key'] in originals:
-            if item != originals[item['key']]:
-                raise ValueError('Original upload differs from fixed target: ' + item['key'])
-        elif not item['key'].startswith(prefixes):
-            raise ValueError('Unexpected upload destination: ' + item['key'])
-        if item['key'] != 'manifest.json':
-            if file_integrity(path) != (item.get('bytes'), item.get('sha256')):
-                raise ValueError('Staged file size or checksum mismatch: ' + item['key'])
-    if not originals.keys() <= seen:
+        if file_integrity(path) != (item.get('bytes'), item.get('sha256')):
+            raise ValueError('Staged file size or checksum mismatch: ' + key)
+        if key in candidates:
+            if key in skipped or {**item, 'path': candidates[key]['path']} != candidates[key]:
+                raise ValueError('Original upload differs from fixed target: ' + key)
+            originals[key] = item
+        else:
+            generated[key] = item
+    if originals.keys() != candidates.keys() - skipped or 'manifest.json' not in seen:
         raise ValueError('Original uploads are missing from the plan')
+    packages = plan['packages']
+    if packages and plan.get('extraction_complete') is not True:
+        raise ValueError('All packages must be extracted before publication')
+    # Bind the entire extracted upload inventory to verified package bytes, not mutable plan metadata.
+    from extract_science import unpack
+    expanded = {}
+    for package in packages:
+        key = package['name'] + '/' + package['resource']['file_name']
+        with tempfile.TemporaryDirectory() as temporary:
+            inventory = unpack(root / originals[key]['path'], Path(temporary), verify_only=True)
+        for item in inventory:
+            expanded[extracted_prefix(package['name']) + item['path']] = (item['bytes'], item['sha256'])
+    if {key: (item['bytes'], item['sha256']) for key, item in generated.items()} != expanded:
+        raise ValueError('Extracted upload inventory differs from verified packages')
     group_files(plan)
     output = output or root / '.publication'
     write_artifacts(plan, output)
@@ -275,19 +337,25 @@ def apply(root, plan, s3, output=None):
                 if s3.read_manifest() != baseline:
                     raise ValueError('S3 manifest changed since preparation; dispatch a fresh run')
                 phase = 'files'
-                for package in step['packages']:
-                    reporter.event(step, 'clear_extracted', 'uploading', name=package['name'])
-                    s3.clear_extracted(package['name'])
-                    reporter.event(step, 'clear_extracted', 'completed', name=package['name'])
+                # Finish one case before clearing the next, even when originals and extracted files are interleaved.
+                case_files = {}
                 for item, file_state in zip(step['files'], state['files']):
-                    started = time.monotonic()
-                    file_state['status'] = 'uploading'
-                    reporter.event(step, 'file', 'uploading', **item)
-                    s3.upload(root / item['path'], item['key'])
-                    s3.verify_upload(item['key'], item['bytes'], item['sha256'])
-                    file_state['status'] = 'completed'
-                    reporter.event(step, 'file', 'completed', key=item['key'],
-                                   elapsed_seconds=round(time.monotonic() - started, 3))
+                    case_files.setdefault(item['key'].split('/', 1)[0], []).append((item, file_state))
+                package_names = {package['name'] for package in step['packages']}
+                for name, files in case_files.items():
+                    if name in package_names:
+                        reporter.event(step, 'clear_extracted', 'uploading', name=name)
+                        s3.clear_extracted(name)
+                        reporter.event(step, 'clear_extracted', 'completed', name=name)
+                    for item, file_state in files:
+                        started = time.monotonic()
+                        file_state['status'] = 'uploading'
+                        reporter.event(step, 'file', 'uploading', **item)
+                        s3.upload(root / item['path'], item['key'])
+                        s3.verify_upload(item['key'], item['bytes'], item['sha256'])
+                        file_state['status'] = 'completed'
+                        reporter.event(step, 'file', 'completed', key=item['key'],
+                                       elapsed_seconds=round(time.monotonic() - started, 3))
                 phase = 'manifest'
                 reporter.event(step, phase, 'uploading', sha256=digest(step['manifest']))
                 directory = output / 'steps' / ('%03d-%s' % (step['id'], step['name'] or step['operation'].lower()))
@@ -316,8 +384,10 @@ def apply(root, plan, s3, output=None):
                 phase = 'cdn'
                 state['cdn'] = 'uploading'
                 reporter.event(step, phase, 'uploading')
-                s3.refresh_cdn(step['name'] if step['files'] else None,
-                               final=step['operation'] == 'FINAL_SYNC')
+                # Catalog checkpoints may upload several cases; refresh only those prefixes.
+                changed_names = sorted({item['key'].split('/', 1)[0] for item in step['files']})
+                for name in changed_names or [None]:
+                    s3.refresh_cdn(name)
                 state['cdn'] = 'completed'
                 state['status'] = 'completed'
                 reporter.event(step, 'step', 'completed')
@@ -345,10 +415,20 @@ def main():
     modes = parser.add_mutually_exclusive_group(required=True)
     modes.add_argument('--prepare', type=Path)
     modes.add_argument('--dry-run', action='store_true')
+    modes.add_argument('--prepare-resources', type=Path)
+    parser.add_argument('--output', type=Path)
     modes.add_argument('--apply-plan', type=Path)
     args = parser.parse_args()
     root = Path.cwd()
     s3 = S3(os.environ.get('AWS_TARGET_FOLDER', ''))
+    if args.prepare_resources:
+        if args.output is None:
+            raise ValueError('--output is required for resource preparation')
+        plan = json.loads(args.prepare_resources.read_text())
+        plan = prepare_resources(root, plan, s3, args.output)
+        write_artifacts(plan, args.prepare_resources.with_suffix(''))
+        args.prepare_resources.write_text(json.dumps(plan) + '\n', encoding='utf-8')
+        return
     if args.apply_plan:
         if not os.environ.get('AWS_DISTRIBUITION_ID', '').strip():
             raise ValueError('AWS_DISTRIBUITION_ID is required for every publication step')
@@ -365,7 +445,9 @@ def main():
         args.prepare.write_text(json.dumps(plan, ensure_ascii=True) + '\n', encoding='utf-8')
         if os.environ.get('GITHUB_OUTPUT'):
             with open(os.environ['GITHUB_OUTPUT'], 'a') as stream:
-                stream.write('has_uploads=' + str(bool(plan['files'])).lower() + '\n')
+                for key, value in {'has_checks': bool(plan['cases']), 'has_uploads': bool(plan['candidates']),
+                                   'has_packages': bool(plan['packages']), 'has_manifest': True}.items():
+                    stream.write(key + '=' + str(value).lower() + '\n')
 
 
 if __name__ == '__main__':

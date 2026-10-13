@@ -14,5 +14,5 @@ The original `.science` export and matching poster are preserved byte-for-byte f
 
 ## Case files
 
-- [Session export](./The%20100K%20Cliff.science)
+- [Session export](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/5608f9845e54550f67d861e87b6b9735da864d5d/AI%20Research/The%20100K%20Cliff/The%20100K%20Cliff.science)
 - [Case poster](./The%20100K%20Cliff.png)

@@ -14,5 +14,5 @@ The original `.science` export and matching poster are preserved byte-for-byte f
 
 ## Case files
 
-- [Session export](./One-Shot%20vs%20Chunked.science)
+- [Session export](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/5608f9845e54550f67d861e87b6b9735da864d5d/AI%20Research/One-Shot%20vs%20Chunked/One-Shot%20vs%20Chunked.science)
 - [Case poster](./One-Shot%20vs%20Chunked.png)

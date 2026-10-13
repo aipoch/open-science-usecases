@@ -14,5 +14,5 @@ The original `.science` export and matching poster are preserved byte-for-byte f
 
 ## Case files
 
-- [Session export](./Is%20Thinking%20Longer%20Worth%20It%3F.science)
+- [Session export](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/5608f9845e54550f67d861e87b6b9735da864d5d/AI%20Research/Is%20Thinking%20Longer%20Worth%20It%3F/Is%20Thinking%20Longer%20Worth%20It%3F.science)
 - [Case poster](./Is%20Thinking%20Longer%20Worth%20It%3F.png)
