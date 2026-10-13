@@ -18,3 +18,11 @@ The conclusion holds for Central Park during 1991–2025 after accounting for co
 Newey–West inference used three annual lags. The annual-mean trend remains clearly positive (`p = 0.00005`), whereas the hot-ten trend remains statistically indistinguishable from zero (`p = 0.264`). Theil–Sen estimates give the same interpretation. The negative hot-ten estimates are not persuasive evidence of cooling because their intervals are wide and cross zero.
 
 All 35 years from 1991 through 2025 passed the completeness and quality-flag checks.
+## Import provenance
+
+This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/Hotter%20Years%2C%20Hotter%20Days/Hotter%20Years%2C%20Hotter%20Days.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
+
+## Case files
+
+- [Session export](./Hotter%20Years%2C%20Hotter%20Days.science)
+- [Case poster](./Hotter%20Years%2C%20Hotter%20Days.png)

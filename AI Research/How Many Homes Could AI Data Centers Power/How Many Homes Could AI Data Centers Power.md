@@ -22,3 +22,11 @@
 The household denominators come from the latest available **September 2026 EIA outlook**. “Homes” means mean purchased-electricity equivalents per residential utility customer—not median household consumption or total household energy. Both year and region match. [EIA Table 7a](https://www.eia.gov/outlooks/steo/tables/pdf/7atab.pdf).
 
 Across the five spreadsheet scenarios, the equivalents span **6.00–6.18 million in 2025** and **11.06–11.24 million in 2026**. These are scenario ranges, not confidence intervals. All values came directly from the spreadsheet; **no chart-reading estimates were needed**.
+## Import provenance
+
+This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/How%20Many%20Homes%20Could%20AI%20Data%20Centers%20Power/How%20Many%20Homes%20Could%20AI%20Data%20Centers%20Power.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
+
+## Case files
+
+- [Session export](./How%20Many%20Homes%20Could%20AI%20Data%20Centers%20Power.science)
+- [Case poster](./How%20Many%20Homes%20Could%20AI%20Data%20Centers%20Power.png)

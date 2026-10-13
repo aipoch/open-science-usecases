@@ -63,3 +63,11 @@ The benefit-risk balance may also differ sharply in healthy people. In SELECT, a
 The defensible conclusion is:
 
 > GLP-1 drugs help some high-risk patients avoid diseases and events that shorten life. Whether they slow human aging or extend healthy lifespan independently of treating obesity, diabetes, or cardiovascular disease remains unknown.
+## Import provenance
+
+This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/Can%20GLP-1%20Drugs%20Really%20Help%20Us%20Live%20Longer/Can%20GLP-1%20Drugs%20Really%20Help%20Us%20Live%20Longer.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
+
+## Case files
+
+- [Session export](./Can%20GLP-1%20Drugs%20Really%20Help%20Us%20Live%20Longer.science)
+- [Case poster](./Can%20GLP-1%20Drugs%20Really%20Help%20Us%20Live%20Longer.png)

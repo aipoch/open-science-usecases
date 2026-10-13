@@ -7,8 +7,8 @@
     "cover": {
       "path": "Curiosity Lab/$10,000: NVIDIA, BITCOIN, OR BOTH?/$10,000: NVIDIA, BITCOIN, OR BOTH?.png",
       "file_name": "$10,000: NVIDIA, BITCOIN, OR BOTH?.png",
-      "bytes": 2401612,
-      "sha256": "9b14a3a5e9092536401373b92994eb71f05fcd8243c12c35e6262e54f46adf69",
+      "bytes": 2378855,
+      "sha256": "8b01f9de338b1f98d415f8ccb6e9efac5e098e489659cba2f6b329f790d0ddfb",
       "release_url": ""
     },
     "case": {
@@ -21,8 +21,8 @@
     "introduction": {
       "path": "Curiosity Lab/$10,000: NVIDIA, BITCOIN, OR BOTH?/$10,000: NVIDIA, BITCOIN, OR BOTH?.md",
       "file_name": "$10,000: NVIDIA, BITCOIN, OR BOTH?.md",
-      "bytes": 1051,
-      "sha256": "8683a17a3688b697fe37260dda3fca2b5b2d10e801c8587b6bffa777d1496cd1",
+      "bytes": 1697,
+      "sha256": "42417121a2b42ab65f28ec074bdf380ee9b7ec8f0bf11d897ca3f80f380ccac9",
       "release_url": ""
     }
   },
@@ -34,8 +34,8 @@
     "cover": {
       "path": "Curiosity Lab/99% Pure - Does Molecular Handedness Matter/99% Pure - Does Molecular Handedness Matter.png",
       "file_name": "99% Pure - Does Molecular Handedness Matter.png",
-      "bytes": 1848045,
-      "sha256": "0cc353b450e082d5971f6ed96e9314862ce78085b74d838fbb3f93a1fd4bfe6c",
+      "bytes": 2279357,
+      "sha256": "2667e3ae128e093d85d9ac3960474c6d41d60ae29e7a8ef75ec4c0b6e8e7aa69",
       "release_url": ""
     },
     "case": {
@@ -48,8 +48,8 @@
     "introduction": {
       "path": "Curiosity Lab/99% Pure - Does Molecular Handedness Matter/99% Pure - Does Molecular Handedness Matter.md",
       "file_name": "99% Pure - Does Molecular Handedness Matter.md",
-      "bytes": 1022,
-      "sha256": "b2704ef7a2aa85661c3d816f7fc6a502ca092fc214ee721f016bc97aaef3b7c6",
+      "bytes": 1680,
+      "sha256": "0ba2a9126c82dcf75cba70a64eb4b919ac04dab36077e8c2203327a1df58bfd4",
       "release_url": ""
     }
   },
@@ -61,8 +61,8 @@
     "cover": {
       "path": "Curiosity Lab/A City's 100-Year Rainfall Record/A City's 100-Year Rainfall Record.png",
       "file_name": "A City's 100-Year Rainfall Record.png",
-      "bytes": 2410298,
-      "sha256": "034d6ccbfa44fd6df7d6cdd7d096afb26cab8e2cafd69ecf47f570275600d15b",
+      "bytes": 2564423,
+      "sha256": "4e28506ec3d5db5d645c10ba27a3ae1ba4d509c15535180ee36838553a8cc6f3",
       "release_url": ""
     },
     "case": {
@@ -75,8 +75,8 @@
     "introduction": {
       "path": "Curiosity Lab/A City's 100-Year Rainfall Record/A City's 100-Year Rainfall Record.md",
       "file_name": "A City's 100-Year Rainfall Record.md",
-      "bytes": 1088,
-      "sha256": "fa0666612fe68ae38e9b79fdae196dac7f0d81cd1c6ee1aa6130118daa690469",
+      "bytes": 1690,
+      "sha256": "061b1d64aad9f7ed4d526161e2ac47c8d0215c449573e98aa3580fddb57de8bd",
       "release_url": ""
     }
   },
@@ -88,8 +88,8 @@
     "cover": {
       "path": "Curiosity Lab/A Million Examples - Is That a Proof/A Million Examples - Is That a Proof.png",
       "file_name": "A Million Examples - Is That a Proof.png",
-      "bytes": 2717313,
-      "sha256": "2bfcfec65a748ace73707b5310bfa047673394eb30286aaa2a250d706157e900",
+      "bytes": 2286794,
+      "sha256": "ac250dd0d017b02dbda7e822a3f54e7a7afb23773ec698f495273f45d2ded799",
       "release_url": ""
     },
     "case": {
@@ -102,8 +102,8 @@
     "introduction": {
       "path": "Curiosity Lab/A Million Examples - Is That a Proof/A Million Examples - Is That a Proof.md",
       "file_name": "A Million Examples - Is That a Proof.md",
-      "bytes": 4788,
-      "sha256": "c6516b1efbd1e3d775afd631822e7e15d20bc7c22631baa502d894182d3ade2d",
+      "bytes": 5418,
+      "sha256": "204134dfda1a8922aff76506e8eccf361c8d42e272f55c2a249fb04b85ddd186",
       "release_url": ""
     }
   },
@@ -115,8 +115,8 @@
     "cover": {
       "path": "AI Research/AI Explains Math - What Gets Lost/AI Explains Math - What Gets Lost.png",
       "file_name": "AI Explains Math - What Gets Lost.png",
-      "bytes": 1953453,
-      "sha256": "0af465248277dbc2983ca2f5f0aeb4c271ee839264f1fc06dcbe90c93a0ff188",
+      "bytes": 2076454,
+      "sha256": "686874264465d638de736c36e44ff1e4aeb2a1415752c93783ecb965c6f48c12",
       "release_url": ""
     },
     "case": {
@@ -129,8 +129,8 @@
     "introduction": {
       "path": "AI Research/AI Explains Math - What Gets Lost/AI Explains Math - What Gets Lost.md",
       "file_name": "AI Explains Math - What Gets Lost.md",
-      "bytes": 1049,
-      "sha256": "0f2441ed74cc6de5397a30e485289ed86f783c97d5a90ff291c052f7709274f2",
+      "bytes": 1659,
+      "sha256": "7e6547241be95355f4fa405e413729e54936c6f77e5db7e2b7277ff58cfc0b54",
       "release_url": ""
     }
   },
@@ -142,8 +142,8 @@
     "cover": {
       "path": "AI Research/AI Math Citations - Do They Check Out/AI Math Citations - Do They Check Out.png",
       "file_name": "AI Math Citations - Do They Check Out.png",
-      "bytes": 1971629,
-      "sha256": "e258c13aff553be832840db7b428dcb4f0bcab3df76550e6e7b87d1d47cf92c7",
+      "bytes": 2059278,
+      "sha256": "99488a23ce52433f9336b0d599d75620caf8df2ef6e107397c86d3c1d4780a91",
       "release_url": ""
     },
     "case": {
@@ -156,8 +156,8 @@
     "introduction": {
       "path": "AI Research/AI Math Citations - Do They Check Out/AI Math Citations - Do They Check Out.md",
       "file_name": "AI Math Citations - Do They Check Out.md",
-      "bytes": 1031,
-      "sha256": "4e845c256df9863b35c7308c7f03321ab09f94f3aa2b59bb9f48ab454d60117a",
+      "bytes": 1665,
+      "sha256": "6d915cfa6c874231f7c5f69e3a0fef4c6617f8d23e52276e0819d02edd5b4779",
       "release_url": ""
     }
   },
@@ -169,8 +169,8 @@
     "cover": {
       "path": "AI Research/AI Math Counterexample - Does Exact Arithmetic Agree/AI Math Counterexample - Does Exact Arithmetic Agree.png",
       "file_name": "AI Math Counterexample - Does Exact Arithmetic Agree.png",
-      "bytes": 2069783,
-      "sha256": "d14073b0fe92de469459418a5a536a601bf3c09943b852404f113aace2e08c8b",
+      "bytes": 2019119,
+      "sha256": "669dc272da500e7cad7ea0e6fafc998a465994fe0857faf0e4b37abdd126969a",
       "release_url": ""
     },
     "case": {
@@ -183,8 +183,8 @@
     "introduction": {
       "path": "AI Research/AI Math Counterexample - Does Exact Arithmetic Agree/AI Math Counterexample - Does Exact Arithmetic Agree.md",
       "file_name": "AI Math Counterexample - Does Exact Arithmetic Agree.md",
-      "bytes": 1095,
-      "sha256": "daa1bbd438a35b269074b0b1a5f7a9b2b07a83b8aff52b3735d1abd708658733",
+      "bytes": 1789,
+      "sha256": "3a33f2c0a6356335c86389e5e1810f1c640bde72858cde7c943dae090ad729ad",
       "release_url": ""
     }
   },
@@ -196,8 +196,8 @@
     "cover": {
       "path": "AI Research/AI Math Papers - Can You Check the Proofs/AI Math Papers - Can You Check the Proofs.png",
       "file_name": "AI Math Papers - Can You Check the Proofs.png",
-      "bytes": 1961709,
-      "sha256": "391a66ba3c3539ce59bcf4e509ebb44160354d88c8099fb7ebe5a88487a2e488",
+      "bytes": 1980844,
+      "sha256": "37d140ab74dc9ab2245fe2ef41c42ceaeb36439cf3cabee8ebe4c181e8543e59",
       "release_url": ""
     },
     "case": {
@@ -210,8 +210,8 @@
     "introduction": {
       "path": "AI Research/AI Math Papers - Can You Check the Proofs/AI Math Papers - Can You Check the Proofs.md",
       "file_name": "AI Math Papers - Can You Check the Proofs.md",
-      "bytes": 1050,
-      "sha256": "71dfe720ba9345b4cd1f16b867488718571ca819c7642cf7ba30f844ddde3d47",
+      "bytes": 1708,
+      "sha256": "2530f6f57e98bc913454aee187b59362b7e966ebec53a5eee27e3a98dd1fa22e",
       "release_url": ""
     }
   },
@@ -223,8 +223,8 @@
     "cover": {
       "path": "Curiosity Lab/At 70% should you take it/At 70% should you take it.png",
       "file_name": "At 70% should you take it.png",
-      "bytes": 2575579,
-      "sha256": "96ad73069fe8c8d59845def3821b05b1b69420fc49c1f8396e52150c27aa0f08",
+      "bytes": 2477402,
+      "sha256": "5e57510d9e2265cb12c1d731732b95a599aae858b0e822f12cd0faa5a86dd9ba",
       "release_url": ""
     },
     "case": {
@@ -237,8 +237,8 @@
     "introduction": {
       "path": "Curiosity Lab/At 70% should you take it/At 70% should you take it.md",
       "file_name": "At 70% should you take it.md",
-      "bytes": 1050,
-      "sha256": "bf697baf53d257b6e330c5c7334cdc0edd76263bc94c394faa856fca923a29e7",
+      "bytes": 1628,
+      "sha256": "181945346bf0c28519e9e3289934c452e395b6548be04c3e0f89e58ff0543f41",
       "release_url": ""
     }
   },
@@ -250,8 +250,8 @@
     "cover": {
       "path": "Curiosity Lab/Birthday Paradox Simulation Verifying the 23-Person 50% Claim/Birthday Paradox Simulation Verifying the 23-Person 50% Claim.png",
       "file_name": "Birthday Paradox Simulation Verifying the 23-Person 50% Claim.png",
-      "bytes": 2439693,
-      "sha256": "8b4f4985ddca36292d0663f39267c35b9b3392bfd8cd107c2cc2503571697e0b",
+      "bytes": 2479383,
+      "sha256": "021cf6644f0a05864425c6e2c9f088f64d5b94bc97ad9d7f41a77c4e38a9f99e",
       "release_url": ""
     },
     "case": {
@@ -264,8 +264,8 @@
     "introduction": {
       "path": "Curiosity Lab/Birthday Paradox Simulation Verifying the 23-Person 50% Claim/Birthday Paradox Simulation Verifying the 23-Person 50% Claim.md",
       "file_name": "Birthday Paradox Simulation Verifying the 23-Person 50% Claim.md",
-      "bytes": 5067,
-      "sha256": "374fe21a52d0f0fd989ea9f21ca21a1bf7f4651a9b28f7a086b2b425c8addb57",
+      "bytes": 5805,
+      "sha256": "d2d7a3341da0ca87f64c5068316f1d4987972e986347671ad288f29589e32f89",
       "release_url": ""
     }
   },
@@ -277,8 +277,8 @@
     "cover": {
       "path": "Curiosity Lab/Bottled Water in Convenience Stores Across Five Cities- What Is the Price Gap Between the Most Expensive and the Cheapest/Bottled Water in Convenience Stores Across Five Cities- What Is the Price Gap Between the Most Expensive and the Cheapest.png",
       "file_name": "Bottled Water in Convenience Stores Across Five Cities- What Is the Price Gap Between the Most Expensive and the Cheapest.png",
-      "bytes": 2092426,
-      "sha256": "5bb25ce01b6e8b19b4710581529c668811ddf8e5cdf645c16e80d5ced5bf9e2b",
+      "bytes": 2301082,
+      "sha256": "a87aa1aeb9db6b4ce385f7d76f422ec6bb0610252e09c6e8df85640aa0ac2da2",
       "release_url": ""
     },
     "case": {
@@ -291,8 +291,8 @@
     "introduction": {
       "path": "Curiosity Lab/Bottled Water in Convenience Stores Across Five Cities- What Is the Price Gap Between the Most Expensive and the Cheapest/Bottled Water in Convenience Stores Across Five Cities- What Is the Price Gap Between the Most Expensive and the Cheapest.md",
       "file_name": "Bottled Water in Convenience Stores Across Five Cities- What Is the Price Gap Between the Most Expensive and the Cheapest.md",
-      "bytes": 1200,
-      "sha256": "6802c12e475384cd76e99b5641ac059eefd6b5f6f8b23b795e7947e683402258",
+      "bytes": 2266,
+      "sha256": "88720dafdb3efd29122cf16ccb3ffd7ff1253ee65abca6cf7921c2a5573ee7c7",
       "release_url": ""
     }
   },
@@ -304,8 +304,8 @@
     "cover": {
       "path": "AI Research/CAN 10,000 AI PAPERS PREDICT WHICH TOPICS WILL GROW SIX MONTHS LATER?/CAN 10,000 AI PAPERS PREDICT WHICH TOPICS WILL GROW SIX MONTHS LATER?.png",
       "file_name": "CAN 10,000 AI PAPERS PREDICT WHICH TOPICS WILL GROW SIX MONTHS LATER?.png",
-      "bytes": 2401612,
-      "sha256": "9b14a3a5e9092536401373b92994eb71f05fcd8243c12c35e6262e54f46adf69",
+      "bytes": 2012101,
+      "sha256": "132e6d7e4c06382688d9ca2c5c1ddcefe2e0b890590e9c53fdfe6452e55de534",
       "release_url": ""
     },
     "case": {
@@ -318,8 +318,8 @@
     "introduction": {
       "path": "AI Research/CAN 10,000 AI PAPERS PREDICT WHICH TOPICS WILL GROW SIX MONTHS LATER?/CAN 10,000 AI PAPERS PREDICT WHICH TOPICS WILL GROW SIX MONTHS LATER?.md",
       "file_name": "CAN 10,000 AI PAPERS PREDICT WHICH TOPICS WILL GROW SIX MONTHS LATER?.md",
-      "bytes": 1099,
-      "sha256": "6ee80d758ea3af98a3563d758153aadc121cecbc4ddf2741819ccc83ea3fa76d",
+      "bytes": 1909,
+      "sha256": "74c5852e4bc15340d89d867472272c0d7d2bebd8aad1b25183741344377bd14a",
       "release_url": ""
     }
   },
@@ -331,8 +331,8 @@
     "cover": {
       "path": "Curiosity Lab/Can 20 Pokémon Packs Guarantee an SIR/Can 20 Pokémon Packs Guarantee an SIR.png",
       "file_name": "Can 20 Pokémon Packs Guarantee an SIR.png",
-      "bytes": 2716807,
-      "sha256": "267e137121e1207afb0f3934e206ab9374f474f3dc657dd1df8cd8bacd5924b0",
+      "bytes": 2510492,
+      "sha256": "b0add86b806f2d9ade3040d23ea97fbd7b82205d61b53e9e384259def0e0b334",
       "release_url": ""
     },
     "case": {
@@ -345,8 +345,8 @@
     "introduction": {
       "path": "Curiosity Lab/Can 20 Pokémon Packs Guarantee an SIR/Can 20 Pokémon Packs Guarantee an SIR.md",
       "file_name": "Can 20 Pokémon Packs Guarantee an SIR.md",
-      "bytes": 1050,
-      "sha256": "c4017940a62bf4f6767543ab43365c97db49813878cf15856b5da44b26b98ae8",
+      "bytes": 1696,
+      "sha256": "0c25247f91bc5585a3f3ae30dd3773404270148c4242698edb8aa5e70076ce10",
       "release_url": ""
     }
   },
@@ -358,8 +358,8 @@
     "cover": {
       "path": "AI Research/Can a Layout Change Make AI Miss Parts of Your Resume/Can a Layout Change Make AI Miss Parts of Your Resume.png",
       "file_name": "Can a Layout Change Make AI Miss Parts of Your Resume.png",
-      "bytes": 2318623,
-      "sha256": "5d4b0e60fa648d07ac07e6e81675e54191ecef3e912c3c60368aedf6fbc5ca78",
+      "bytes": 1924985,
+      "sha256": "8c6c314f83a56bc4075c34eea57ad4f68af42200e7fcfbad765458227069fd8a",
       "release_url": ""
     },
     "case": {
@@ -372,8 +372,8 @@
     "introduction": {
       "path": "AI Research/Can a Layout Change Make AI Miss Parts of Your Resume/Can a Layout Change Make AI Miss Parts of Your Resume.md",
       "file_name": "Can a Layout Change Make AI Miss Parts of Your Resume.md",
-      "bytes": 1003,
-      "sha256": "0f7fefbf5f4b1324f84d0aba69c6295983830986e52eeeb8566ff7f874df7331",
+      "bytes": 1725,
+      "sha256": "0cc0f8beb99714998f95c5dc7c7c4a1e32e853ed5ed54fb16bb0b0d594938c45",
       "release_url": ""
     }
   },
@@ -385,8 +385,8 @@
     "cover": {
       "path": "AI Research/Can a Simple Algorithm Beat AI at Wordle/Can a Simple Algorithm Beat AI at Wordle.png",
       "file_name": "Can a Simple Algorithm Beat AI at Wordle.png",
-      "bytes": 2366230,
-      "sha256": "cf90cb228dcc7c623c507f471820e14104a8abe85751f80a60a326c9d444d24e",
+      "bytes": 1900728,
+      "sha256": "945fb3abc411ad1725ced6cc5c4799c8bb3c5d5146b15ac17672e2a353e7b677",
       "release_url": ""
     },
     "case": {
@@ -399,8 +399,8 @@
     "introduction": {
       "path": "AI Research/Can a Simple Algorithm Beat AI at Wordle/Can a Simple Algorithm Beat AI at Wordle.md",
       "file_name": "Can a Simple Algorithm Beat AI at Wordle.md",
-      "bytes": 1368,
-      "sha256": "8d0399c9934a0f44b2dee148dc4a6f90165381c7d2ce5a25427d4926bad6578f",
+      "bytes": 2014,
+      "sha256": "ae088deccace36d83d405e2dadd2b041fbaa2c4874d8ecfece777a727f50b031",
       "release_url": ""
     }
   },
@@ -412,8 +412,8 @@
     "cover": {
       "path": "AI Research/Can AI Bluff and Detect Bluffs in Poker/Can AI Bluff and Detect Bluffs in Poker.png",
       "file_name": "Can AI Bluff and Detect Bluffs in Poker.png",
-      "bytes": 2467942,
-      "sha256": "8889cd260332483ed676eb50e4ec294ca0290153ad92e94123caccdc40856933",
+      "bytes": 1949173,
+      "sha256": "c313571820b2458a11253349aaff91f66ffc3a7a3c95cf1410c4bc4bb2a287d5",
       "release_url": ""
     },
     "case": {
@@ -426,8 +426,8 @@
     "introduction": {
       "path": "AI Research/Can AI Bluff and Detect Bluffs in Poker/Can AI Bluff and Detect Bluffs in Poker.md",
       "file_name": "Can AI Bluff and Detect Bluffs in Poker.md",
-      "bytes": 1035,
-      "sha256": "c6106368cfc6f13817ccc7cab6c60d873cb85f665f54e0faf4f13289dbfa9d0a",
+      "bytes": 1677,
+      "sha256": "0a6929eb87fed1d1d3cb627c9dd636e1ba7647e042b7f6de3b129aacdfbc6849",
       "release_url": ""
     }
   },
@@ -439,8 +439,8 @@
     "cover": {
       "path": "AI Research/Can AI Extract Final Action Items, Owners, and Deadlines/Can AI Extract Final Action Items, Owners, and Deadlines.png",
       "file_name": "Can AI Extract Final Action Items, Owners, and Deadlines.png",
-      "bytes": 2343913,
-      "sha256": "66d8ad66249a91b783afd67c258f2e34cd85b36586eb223c67a32a888e90ef8f",
+      "bytes": 1935181,
+      "sha256": "1fc4b07eacac1b102a5776c1b151405cb2d63f243c2170015b2752db3c7a48ea",
       "release_url": ""
     },
     "case": {
@@ -453,8 +453,8 @@
     "introduction": {
       "path": "AI Research/Can AI Extract Final Action Items, Owners, and Deadlines/Can AI Extract Final Action Items, Owners, and Deadlines.md",
       "file_name": "Can AI Extract Final Action Items, Owners, and Deadlines.md",
-      "bytes": 1128,
-      "sha256": "252cc401c326a068645e3321157c617f6a4566c8781cf104e4c84b78c90f451b",
+      "bytes": 1862,
+      "sha256": "c58dd88cb7675eee69188b4d12368617ee90987b0c3decae7d37d86f8dc7129f",
       "release_url": ""
     }
   },
@@ -466,8 +466,8 @@
     "cover": {
       "path": "AI Research/Can AI Find Five Hidden Planet-Like Signals/Can AI Find Five Hidden Planet-Like Signals.png",
       "file_name": "Can AI Find Five Hidden Planet-Like Signals.png",
-      "bytes": 2807034,
-      "sha256": "6351e3d2d5d8df26636f997adce26cb1f8c96c6d1c7e622eed90defb2b07b0a8",
+      "bytes": 2010517,
+      "sha256": "d20fbec90ec51a3d19dad23b31bcae671962bb908c780d17bd77c56a01b0404e",
       "release_url": ""
     },
     "case": {
@@ -480,8 +480,8 @@
     "introduction": {
       "path": "AI Research/Can AI Find Five Hidden Planet-Like Signals/Can AI Find Five Hidden Planet-Like Signals.md",
       "file_name": "Can AI Find Five Hidden Planet-Like Signals.md",
-      "bytes": 1063,
-      "sha256": "fc9b90c76913f4201d0595daa2c699011a0b45b1be5272cc6b3faa296ac6f034",
+      "bytes": 1713,
+      "sha256": "e82cf7cf764879d97f9c911cb77b7eb143638716796bfd674a5f3bc6ce185612",
       "release_url": ""
     }
   },
@@ -493,8 +493,8 @@
     "cover": {
       "path": "AI Research/Can AI Find the Cheapest Checkout with 100 Discount Rules/Can AI Find the Cheapest Checkout with 100 Discount Rules.png",
       "file_name": "Can AI Find the Cheapest Checkout with 100 Discount Rules.png",
-      "bytes": 2743863,
-      "sha256": "dace0ab90f8cd1b251fa1874c6918d3eb0c7b36e3ad23a74492d6213e200884e",
+      "bytes": 1952628,
+      "sha256": "43ce10a3033abd431adbad3f0e11797e4da806db68760c336f802f1dd9081b6e",
       "release_url": ""
     },
     "case": {
@@ -507,8 +507,8 @@
     "introduction": {
       "path": "AI Research/Can AI Find the Cheapest Checkout with 100 Discount Rules/Can AI Find the Cheapest Checkout with 100 Discount Rules.md",
       "file_name": "Can AI Find the Cheapest Checkout with 100 Discount Rules.md",
-      "bytes": 1106,
-      "sha256": "de8e1a477d85d5e8126507aa21296ce118cbdab8672861c580cc20c6353015f0",
+      "bytes": 1836,
+      "sha256": "2111fc6507dcdf39919e7af8cccae94afdcbcbdc93fec24ef0fc1706a13394d3",
       "release_url": ""
     }
   },
@@ -520,8 +520,8 @@
     "cover": {
       "path": "AI Research/Can AI Find the Shortest Paris Sightseeing Route/Can AI Find the Shortest Paris Sightseeing Route.png",
       "file_name": "Can AI Find the Shortest Paris Sightseeing Route.png",
-      "bytes": 2914520,
-      "sha256": "06477f24d745a15ba9d6d8ea4130928be7411a5a32d172bb062b3fe29169fb06",
+      "bytes": 2274719,
+      "sha256": "b081e72ffeae2cc1b3cc971c0d52a626e37103ee51155ec8facd670d568961db",
       "release_url": ""
     },
     "case": {
@@ -534,8 +534,8 @@
     "introduction": {
       "path": "AI Research/Can AI Find the Shortest Paris Sightseeing Route/Can AI Find the Shortest Paris Sightseeing Route.md",
       "file_name": "Can AI Find the Shortest Paris Sightseeing Route.md",
-      "bytes": 1037,
-      "sha256": "a9a5b8bdfefcb6f47fea826960a7e1a1cec81b48198bf426555ad91419e398c9",
+      "bytes": 1715,
+      "sha256": "c81522ceed32094197f1ea0118f16e431f4115da464498f2c11e8f13f8aa422c",
       "release_url": ""
     }
   },
@@ -547,8 +547,8 @@
     "cover": {
       "path": "AI Research/Can AI Find Three Contradictions in a 20-Page Presentation/Can AI Find Three Contradictions in a 20-Page Presentation.png",
       "file_name": "Can AI Find Three Contradictions in a 20-Page Presentation.png",
-      "bytes": 2018073,
-      "sha256": "1ebc2cffb36b5bb0f704b23550fece169311ba30d5621eec507c00c192cafd5b",
+      "bytes": 1946742,
+      "sha256": "7e3793f92004f840438abe0e5dd732df66bdd62b3502ea5b56ebcab9f6fc244f",
       "release_url": ""
     },
     "case": {
@@ -561,8 +561,8 @@
     "introduction": {
       "path": "AI Research/Can AI Find Three Contradictions in a 20-Page Presentation/Can AI Find Three Contradictions in a 20-Page Presentation.md",
       "file_name": "Can AI Find Three Contradictions in a 20-Page Presentation.md",
-      "bytes": 1035,
-      "sha256": "ec4d184ecbcb579e02c4ca427c4ab51eb8eec6d414543f444dafca37181ff17e",
+      "bytes": 1761,
+      "sha256": "45c327c9cd1f9ccac8f38151ac82c2f3a17c12a350c0208b696a8d2ef169d6e1",
       "release_url": ""
     }
   },
@@ -574,8 +574,8 @@
     "cover": {
       "path": "AI Research/Can AI Fit 10 London Landmarks Into One Day/Can AI Fit 10 London Landmarks Into One Day.png",
       "file_name": "Can AI Fit 10 London Landmarks Into One Day.png",
-      "bytes": 615513,
-      "sha256": "1b43116acbabc668a1a24d0d5359962825f02221d9da3004c3169b6646d1ac9e",
+      "bytes": 2186936,
+      "sha256": "5b6e229c50a5ecc0d556fc1b5f4521326d7bd25b30dda8a695b1cd846f12ece5",
       "release_url": ""
     },
     "case": {
@@ -588,8 +588,8 @@
     "introduction": {
       "path": "AI Research/Can AI Fit 10 London Landmarks Into One Day/Can AI Fit 10 London Landmarks Into One Day.md",
       "file_name": "Can AI Fit 10 London Landmarks Into One Day.md",
-      "bytes": 1037,
-      "sha256": "e8b3992322ca4b280561976dc08d568dd13c799c2c9e73eac04e1b762b59321a",
+      "bytes": 1703,
+      "sha256": "9dd7456b11855011e774b3717e6c282696d556624b1334dd38354dc4c90fc710",
       "release_url": ""
     }
   },
@@ -601,8 +601,8 @@
     "cover": {
       "path": "AI Research/Can AI Fit Eight Tasks in 30 Minutes/Can AI Fit Eight Tasks in 30 Minutes.png",
       "file_name": "Can AI Fit Eight Tasks in 30 Minutes.png",
-      "bytes": 2387247,
-      "sha256": "0f6b3921e671e49e9363cc21eb9d08e607fdfd8ef9e4631d470f7842285a570d",
+      "bytes": 1949780,
+      "sha256": "ab24257ed2b0a7cdfb09ea1d25de5f0600f4188e07bc968fa5eeb4dde7a5d834",
       "release_url": ""
     },
     "case": {
@@ -615,8 +615,8 @@
     "introduction": {
       "path": "AI Research/Can AI Fit Eight Tasks in 30 Minutes/Can AI Fit Eight Tasks in 30 Minutes.md",
       "file_name": "Can AI Fit Eight Tasks in 30 Minutes.md",
-      "bytes": 988,
-      "sha256": "9b1184911d2479bb2c584a058bcf7c2fd08ceab610451f8b83cae5103f89244c",
+      "bytes": 1618,
+      "sha256": "3aa6e59e1f04e002d818ac2668e58346e6d9ec5790b37f968fe92e1c12b5fae3",
       "release_url": ""
     }
   },
@@ -628,8 +628,8 @@
     "cover": {
       "path": "AI Research/Can AI Fix a Tiny Bug/Can AI Fix a Tiny Bug.png",
       "file_name": "Can AI Fix a Tiny Bug.png",
-      "bytes": 2179124,
-      "sha256": "8f88821aef94efe1df36317eb6af9a57ecf6ecd1f443005ca0e2e10b1900af0f",
+      "bytes": 1913406,
+      "sha256": "bdc8138dcce11af42cb6285812338250945fa5cb904f55449f8d3402c2383d9f",
       "release_url": ""
     },
     "case": {
@@ -642,8 +642,8 @@
     "introduction": {
       "path": "AI Research/Can AI Fix a Tiny Bug/Can AI Fix a Tiny Bug.md",
       "file_name": "Can AI Fix a Tiny Bug.md",
-      "bytes": 3220,
-      "sha256": "6e878e199d6feec1635c01d30eb4a54711b9ce89689beb63dc1412a229300f0d",
+      "bytes": 3774,
+      "sha256": "f82d6022564c5ac0e8e6e21e409b0f526ac2cff08d9137cd798fb7caf3406226",
       "release_url": ""
     }
   },
@@ -655,8 +655,8 @@
     "cover": {
       "path": "AI Research/Can AI Guess the Animal in 20 Yes-or-No Questions/Can AI Guess the Animal in 20 Yes-or-No Questions.png",
       "file_name": "Can AI Guess the Animal in 20 Yes-or-No Questions.png",
-      "bytes": 2628988,
-      "sha256": "f6d3ccc5a9a2cad6c32954bc4cd5a9e3efb4ba5b3de4adf6fbfec85b95ebe24a",
+      "bytes": 2017975,
+      "sha256": "6e3ad0a935763f3c3ace1dafd69a2da5b95268fabe9c800b7c77a540ef5a9c22",
       "release_url": ""
     },
     "case": {
@@ -669,8 +669,8 @@
     "introduction": {
       "path": "AI Research/Can AI Guess the Animal in 20 Yes-or-No Questions/Can AI Guess the Animal in 20 Yes-or-No Questions.md",
       "file_name": "Can AI Guess the Animal in 20 Yes-or-No Questions.md",
-      "bytes": 964,
-      "sha256": "3c08a31b08ca3cecbb5ced40b42fd69a74fd6d05da55451ed65475de6d63e1cf",
+      "bytes": 1654,
+      "sha256": "2541469206c9fc6118e3f51475cb94d03718c2fdba604cc6c67142c42c95b718",
       "release_url": ""
     }
   },
@@ -682,8 +682,8 @@
     "cover": {
       "path": "AI Research/Can AI Keep Track of Corrections in Meeting Notes/Can AI Keep Track of Corrections in Meeting Notes.png",
       "file_name": "Can AI Keep Track of Corrections in Meeting Notes.png",
-      "bytes": 2463162,
-      "sha256": "565a436a563d4b8365e2e16d28bbaf42023417acdabee847d94c89d2859ca50a",
+      "bytes": 1993410,
+      "sha256": "e0fe5122746f196be6534604a37edd5a3a4ebcb514295f34b2a4469f89ff4de2",
       "release_url": ""
     },
     "case": {
@@ -696,8 +696,8 @@
     "introduction": {
       "path": "AI Research/Can AI Keep Track of Corrections in Meeting Notes/Can AI Keep Track of Corrections in Meeting Notes.md",
       "file_name": "Can AI Keep Track of Corrections in Meeting Notes.md",
-      "bytes": 1019,
-      "sha256": "2910293f022f1ecb9b219cdf3929e3748758651f3d161c2641abb70e119da5cb",
+      "bytes": 1709,
+      "sha256": "950a56b9ea793734c79a8b7a3be62677276a8b7dd002b49006ae4b7051c8b12a",
       "release_url": ""
     }
   },
@@ -709,8 +709,8 @@
     "cover": {
       "path": "AI Research/Can AI Make Good Trade-Offs When Packing a Suitcase/Can AI Make Good Trade-Offs When Packing a Suitcase.png",
       "file_name": "Can AI Make Good Trade-Offs When Packing a Suitcase.png",
-      "bytes": 575158,
-      "sha256": "ec56c0f31d276a9ac669f476195f3d9c5f68b7e76aad81977103966b92b391b0",
+      "bytes": 2073451,
+      "sha256": "2f10b0a2cd1a95bac86dec6ed2163ce1bc3106cef177d170bdfcfc03a463900a",
       "release_url": ""
     },
     "case": {
@@ -723,8 +723,8 @@
     "introduction": {
       "path": "AI Research/Can AI Make Good Trade-Offs When Packing a Suitcase/Can AI Make Good Trade-Offs When Packing a Suitcase.md",
       "file_name": "Can AI Make Good Trade-Offs When Packing a Suitcase.md",
-      "bytes": 1018,
-      "sha256": "cb7eb7fe201ff9d97ecc3eb67c0c74451ec31a9a703d5d1a2a38c883399b4280",
+      "bytes": 1716,
+      "sha256": "7115b3f161061264c9c2a84f6718d8b04a7444b0ce0d08c7ca50753ce79bee9e",
       "release_url": ""
     }
   },
@@ -736,8 +736,8 @@
     "cover": {
       "path": "Curiosity Lab/CAN AI PICK LUCKY LOTTERY NUMBERS?/CAN AI PICK LUCKY LOTTERY NUMBERS?.png",
       "file_name": "CAN AI PICK LUCKY LOTTERY NUMBERS?.png",
-      "bytes": 2401612,
-      "sha256": "9b14a3a5e9092536401373b92994eb71f05fcd8243c12c35e6262e54f46adf69",
+      "bytes": 2395497,
+      "sha256": "637fbe7312a46883efe0bef67650979e343ecb2837958a0a52a4a3f51adb2dc3",
       "release_url": ""
     },
     "case": {
@@ -750,8 +750,8 @@
     "introduction": {
       "path": "Curiosity Lab/CAN AI PICK LUCKY LOTTERY NUMBERS?/CAN AI PICK LUCKY LOTTERY NUMBERS?.md",
       "file_name": "CAN AI PICK LUCKY LOTTERY NUMBERS?.md",
-      "bytes": 1023,
-      "sha256": "174d9a7905fae4fd0c28e2df29986a171a7f2b45ac906bce774b37971dd740c3",
+      "bytes": 1637,
+      "sha256": "0085cb6280a050a82f02ffa7aa652f56c26d1e363d1d46f5a8a180221e5ab0d0",
       "release_url": ""
     }
   },
@@ -763,8 +763,8 @@
     "cover": {
       "path": "AI Research/Can AI Pick the Right Contact/Can AI Pick the Right Contact.png",
       "file_name": "Can AI Pick the Right Contact.png",
-      "bytes": 2396797,
-      "sha256": "ec6b4b64177dfa9ee91668789428dd021aee0bcd17c6a9d6c2bf993f97539499",
+      "bytes": 1971023,
+      "sha256": "a839fb89fe503fd27dad742cabb14c66b56d513c9126219f64719f7e78f597df",
       "release_url": ""
     },
     "case": {
@@ -777,8 +777,8 @@
     "introduction": {
       "path": "AI Research/Can AI Pick the Right Contact/Can AI Pick the Right Contact.md",
       "file_name": "Can AI Pick the Right Contact.md",
-      "bytes": 964,
-      "sha256": "e72e200498468b210ee4e9878a7e20d528ee30fc8405c2762256481c02515a46",
+      "bytes": 1550,
+      "sha256": "e7ed1aa29eb40c3e9f2da7a4e52bb6cc945caa4307509564eadfaa05b9707f45",
       "release_url": ""
     }
   },
@@ -790,8 +790,8 @@
     "cover": {
       "path": "AI Research/Can AI Plan a Fair Chinese Shared Dinner/Can AI Plan a Fair Chinese Shared Dinner.png",
       "file_name": "Can AI Plan a Fair Chinese Shared Dinner.png",
-      "bytes": 624969,
-      "sha256": "6697561af10b05e4546f250dfab84ba53cbaef9ac3a62fb8a0f06dd623c46d3c",
+      "bytes": 2199983,
+      "sha256": "173029ad8601594e8d64ecc8ea6caf50421301967631345271dcda44f75cd378",
       "release_url": ""
     },
     "case": {
@@ -804,8 +804,8 @@
     "introduction": {
       "path": "AI Research/Can AI Plan a Fair Chinese Shared Dinner/Can AI Plan a Fair Chinese Shared Dinner.md",
       "file_name": "Can AI Plan a Fair Chinese Shared Dinner.md",
-      "bytes": 1066,
-      "sha256": "08fe2b1b38d351f31307a8d451466edbed26e5b5ef817778bf536a8752d39cad",
+      "bytes": 1712,
+      "sha256": "4c13eb403fbef10858cf0b05376c853c75502ecb30b2b87368faff7411a5bd19",
       "release_url": ""
     }
   },
@@ -817,8 +817,8 @@
     "cover": {
       "path": "AI Research/Can AI Plan Seven Lunches Under $50 If Ingredients Must Be Bought in Full Packages/Can AI Plan Seven Lunches Under $50 If Ingredients Must Be Bought in Full Packages.png",
       "file_name": "Can AI Plan Seven Lunches Under $50 If Ingredients Must Be Bought in Full Packages.png",
-      "bytes": 2393342,
-      "sha256": "5318a85a140eca21cb11df3fb3fbcee215214a6fdca2fd5214e20e93510587ea",
+      "bytes": 2089649,
+      "sha256": "d895f26ab3b712d32980c56e61f727c7394c0ca055b2d965ac7a9b12acae74f4",
       "release_url": ""
     },
     "case": {
@@ -831,8 +831,8 @@
     "introduction": {
       "path": "AI Research/Can AI Plan Seven Lunches Under $50 If Ingredients Must Be Bought in Full Packages/Can AI Plan Seven Lunches Under $50 If Ingredients Must Be Bought in Full Packages.md",
       "file_name": "Can AI Plan Seven Lunches Under $50 If Ingredients Must Be Bought in Full Packages.md",
-      "bytes": 1138,
-      "sha256": "fbcb5e17bc4b68d4699f0ac44ac711d797582dc969a46e0a329e93fb0f3d8e9d",
+      "bytes": 2016,
+      "sha256": "7e4c56cbe7fc1cc0122ced894be567179601852e1d1e0c72dce93dbc4845c8fd",
       "release_url": ""
     }
   },
@@ -844,8 +844,8 @@
     "cover": {
       "path": "AI Research/Can AI Read the Numbers from One Chart/Can AI Read the Numbers from One Chart.png",
       "file_name": "Can AI Read the Numbers from One Chart.png",
-      "bytes": 2480359,
-      "sha256": "0de5d700c9e30bfbe2b5c6dac4a27561a8bc0f95407b424d9d98351404671fb1",
+      "bytes": 1993485,
+      "sha256": "a13b1e62e5265d188d7d045fb9008ec25a9fe996aac9124c6fe09df77fcdbf5d",
       "release_url": ""
     },
     "case": {
@@ -858,8 +858,8 @@
     "introduction": {
       "path": "AI Research/Can AI Read the Numbers from One Chart/Can AI Read the Numbers from One Chart.md",
       "file_name": "Can AI Read the Numbers from One Chart.md",
-      "bytes": 955,
-      "sha256": "22562de76a3735a6a71f9ca0fd3d88e90d9784fa652991f7476e0ffb762768ad",
+      "bytes": 1593,
+      "sha256": "2f4b57d94fbba7b277fd14c15e6de336133d2d8a14ff640a8f796f6b1e92d8d0",
       "release_url": ""
     }
   },
@@ -871,8 +871,8 @@
     "cover": {
       "path": "AI Research/Can AI Recommend Movies That Follow Your Rules/Can AI Recommend Movies That Follow Your Rules.png",
       "file_name": "Can AI Recommend Movies That Follow Your Rules.png",
-      "bytes": 2775311,
-      "sha256": "0b5e5c33cce421e343cb5409cc88fe38a1329ea8617b863de41b8b5e1f1fcbfc",
+      "bytes": 2032308,
+      "sha256": "fa1849290c08b9ed14adf82ff2dac0d5d6aa840719d272ea2d006f740234bac0",
       "release_url": ""
     },
     "case": {
@@ -885,8 +885,8 @@
     "introduction": {
       "path": "AI Research/Can AI Recommend Movies That Follow Your Rules/Can AI Recommend Movies That Follow Your Rules.md",
       "file_name": "Can AI Recommend Movies That Follow Your Rules.md",
-      "bytes": 1041,
-      "sha256": "972a88c1a8d764e5dac5eb802786daaa9c2d760fe3b8bb2874ff1959a6b34e3a",
+      "bytes": 1711,
+      "sha256": "ad45a5569ce583dbe91a3722c5bf9ab7cf5fb63949d8ea70d660887ad4410ac6",
       "release_url": ""
     }
   },
@@ -898,8 +898,8 @@
     "cover": {
       "path": "AI Research/Can AI Spot the Errors in a Spreadsheet/Can AI Spot the Errors in a Spreadsheet.png",
       "file_name": "Can AI Spot the Errors in a Spreadsheet.png",
-      "bytes": 2421132,
-      "sha256": "cea1621908154862edf6e9107608695d5903290499bd95af2a34be64ddbbcdf4",
+      "bytes": 2043752,
+      "sha256": "962b8038a6f50c8b85e7b578805610590cc920860a88f7446852a2d890158b65",
       "release_url": ""
     },
     "case": {
@@ -912,8 +912,8 @@
     "introduction": {
       "path": "AI Research/Can AI Spot the Errors in a Spreadsheet/Can AI Spot the Errors in a Spreadsheet.md",
       "file_name": "Can AI Spot the Errors in a Spreadsheet.md",
-      "bytes": 2727,
-      "sha256": "f2c51f4436f8b35accd774dbf9a2068bf3db3178bb49d3e63601e7499455c8a6",
+      "bytes": 3369,
+      "sha256": "d5368f67690e63e3505e879e49ecd908ad9b9dd6ce693ec47645726557bc6e89",
       "release_url": ""
     }
   },
@@ -925,8 +925,8 @@
     "cover": {
       "path": "AI Research/Can an AI Bidder Overpay and Lose Money/Can an AI Bidder Overpay and Lose Money.png",
       "file_name": "Can an AI Bidder Overpay and Lose Money.png",
-      "bytes": 580424,
-      "sha256": "7b9e6e9ef684ac46fae400613df46911effe55e6fe9c8dde1bc947b0ecf06330",
+      "bytes": 1961980,
+      "sha256": "68e3c5ff4f13f7d7bfe87e7fd1cd4d9339aa229e4d1c9912b872ecaaa0d806fa",
       "release_url": ""
     },
     "case": {
@@ -939,8 +939,8 @@
     "introduction": {
       "path": "AI Research/Can an AI Bidder Overpay and Lose Money/Can an AI Bidder Overpay and Lose Money.md",
       "file_name": "Can an AI Bidder Overpay and Lose Money.md",
-      "bytes": 989,
-      "sha256": "8a3167d471b468f6b53274038aaff9bad4fd90b652db1ebbbf849fff5a9471da",
+      "bytes": 1631,
+      "sha256": "ceae79d7bb0abe716140e7f7236cf1360591daf5c8cac6dc6db5393d067133ed",
       "release_url": ""
     }
   },
@@ -952,8 +952,8 @@
     "cover": {
       "path": "Curiosity Lab/Can GLP-1 Drugs Really Help Us Live Longer/Can GLP-1 Drugs Really Help Us Live Longer.png",
       "file_name": "Can GLP-1 Drugs Really Help Us Live Longer.png",
-      "bytes": 2493772,
-      "sha256": "c9cd168b371f6cc2e3eac6d92e71555112c303939747099f162feadc10111ce7",
+      "bytes": 2327952,
+      "sha256": "19ee4ad298e7fec993c3710988f56036ba7460267460a2714ed9051c4fedd4fe",
       "release_url": ""
     },
     "case": {
@@ -966,8 +966,8 @@
     "introduction": {
       "path": "Curiosity Lab/Can GLP-1 Drugs Really Help Us Live Longer/Can GLP-1 Drugs Really Help Us Live Longer.md",
       "file_name": "Can GLP-1 Drugs Really Help Us Live Longer.md",
-      "bytes": 6001,
-      "sha256": "5b2991ecbfd90d4aa5c760bf81201be4b3c251de7c760f002794358cf3553352",
+      "bytes": 6655,
+      "sha256": "4c4e3d4a961d3010f9170232e61ae204927282c2ab91584814d1683b2d2e9456",
       "release_url": ""
     }
   },
@@ -979,8 +979,8 @@
     "cover": {
       "path": "AI Research/Can Jev Route Prompts as Well as General LLMs/Can Jev Route Prompts as Well as General LLMs.png",
       "file_name": "Can Jev Route Prompts as Well as General LLMs.png",
-      "bytes": 2650617,
-      "sha256": "c688cf7eee9c09d20c0529d4343efe75de4f7854339352be352aa75c45b0693c",
+      "bytes": 1992265,
+      "sha256": "4d6b2b0e215ecbc47240185191d26584ccd64b39b5c988491aa3255fabb0ced7",
       "release_url": ""
     },
     "case": {
@@ -993,8 +993,8 @@
     "introduction": {
       "path": "AI Research/Can Jev Route Prompts as Well as General LLMs/Can Jev Route Prompts as Well as General LLMs.md",
       "file_name": "Can Jev Route Prompts as Well as General LLMs.md",
-      "bytes": 1069,
-      "sha256": "f48f6e488d677b24bb3b8bb3484cb8ab362464e23b17700947d05a35d7b0cd39",
+      "bytes": 1743,
+      "sha256": "fc2eb32ea6bc79c7bf247988f52ab5981669ecb0f4cc3835a51abaf91b71df69",
       "release_url": ""
     }
   },
@@ -1006,8 +1006,8 @@
     "cover": {
       "path": "AI Research/Can One Extra Token Make AI Cost 5× as Much/Can One Extra Token Make AI Cost 5× as Much.png",
       "file_name": "Can One Extra Token Make AI Cost 5× as Much.png",
-      "bytes": 2753386,
-      "sha256": "25eae5c1f669870373896bb203e442be150edd3ee33ec4088be518c87492d5ae",
+      "bytes": 2018901,
+      "sha256": "d14a08e85c62dea504b45a54b74ff407a1a551b1c29b72053abe7c2b0ff6a9c4",
       "release_url": ""
     },
     "case": {
@@ -1020,8 +1020,8 @@
     "introduction": {
       "path": "AI Research/Can One Extra Token Make AI Cost 5× as Much/Can One Extra Token Make AI Cost 5× as Much.md",
       "file_name": "Can One Extra Token Make AI Cost 5× as Much.md",
-      "bytes": 2387,
-      "sha256": "ed267620a0e15c694e34da0af1febc5be5f21c3c5f984d37bfad24a1fe034c55",
+      "bytes": 3081,
+      "sha256": "fc57f3170cba8f1e136e03ecabbf8ec4798cafb49e06afc5749cc8feab47fe50",
       "release_url": ""
     }
   },
@@ -1033,8 +1033,8 @@
     "cover": {
       "path": "Curiosity Lab/CAN ONE WEEK FLIP THE WINNER?/CAN ONE WEEK FLIP THE WINNER?.png",
       "file_name": "CAN ONE WEEK FLIP THE WINNER?.png",
-      "bytes": 2401612,
-      "sha256": "9b14a3a5e9092536401373b92994eb71f05fcd8243c12c35e6262e54f46adf69",
+      "bytes": 2538919,
+      "sha256": "b2922d76e69f5719d7a82063d63e486a363623809d1777c12e83d80494c708b4",
       "release_url": ""
     },
     "case": {
@@ -1047,8 +1047,8 @@
     "introduction": {
       "path": "Curiosity Lab/CAN ONE WEEK FLIP THE WINNER?/CAN ONE WEEK FLIP THE WINNER?.md",
       "file_name": "CAN ONE WEEK FLIP THE WINNER?.md",
-      "bytes": 1019,
-      "sha256": "1413c9f4498ae63d753c16aa869ade4870c752a6bf2f10a851ce848fc1f8b014",
+      "bytes": 1613,
+      "sha256": "d0773e114a860abf44e12c6a75e8414cb5c8084782ede3b9e947ccf74cfcf13a",
       "release_url": ""
     }
   },
@@ -1060,8 +1060,8 @@
     "cover": {
       "path": "Curiosity Lab/Can petal length identify iris/Can petal length identify iris.png",
       "file_name": "Can petal length identify iris.png",
-      "bytes": 2426911,
-      "sha256": "42024cfc3811b99211b3a01281307e2c62c50ef4a0305d7a82527bd5c3e94d7d",
+      "bytes": 2601073,
+      "sha256": "1b43062fb1f0c1ac227a94ea4b79fd6e9757306690219dda056093014476106b",
       "release_url": ""
     },
     "case": {
@@ -1074,8 +1074,8 @@
     "introduction": {
       "path": "Curiosity Lab/Can petal length identify iris/Can petal length identify iris.md",
       "file_name": "Can petal length identify iris.md",
-      "bytes": 1006,
-      "sha256": "421fbd67b66f3485af77226021325bd34517fc48b56674d5e78ea28364624a1a",
+      "bytes": 1588,
+      "sha256": "e81e0b32d74d34624f9538ce67acd9fa194b44e8267c6695152ab48c07bd6fcd",
       "release_url": ""
     }
   },
@@ -1087,8 +1087,8 @@
     "cover": {
       "path": "AI Research/Can Social Pressure Make AI Change a Correct Answer/Can Social Pressure Make AI Change a Correct Answer.png",
       "file_name": "Can Social Pressure Make AI Change a Correct Answer.png",
-      "bytes": 511096,
-      "sha256": "ba22c0d35546bfebaa669e41eb5bb7c1fe59a20edc728e239de3d452ab933710",
+      "bytes": 1961797,
+      "sha256": "84c1b39820091d4f76c3ba9c1f359f46fa4f84dc5d5238d05c51faa032e4922d",
       "release_url": ""
     },
     "case": {
@@ -1101,8 +1101,8 @@
     "introduction": {
       "path": "AI Research/Can Social Pressure Make AI Change a Correct Answer/Can Social Pressure Make AI Change a Correct Answer.md",
       "file_name": "Can Social Pressure Make AI Change a Correct Answer.md",
-      "bytes": 1057,
-      "sha256": "fef4a5359d90aa2886eb441d56f197ee11164c63e49ee97a95eda5e57ebac2f1",
+      "bytes": 1755,
+      "sha256": "ba1cea83f8e8761a9958cc3d6e40ee0c7748fe228495fc4bd8167121083787b4",
       "release_url": ""
     }
   },
@@ -1114,8 +1114,8 @@
     "cover": {
       "path": "Curiosity Lab/Card Shuffle Adjacency Simulation/Card Shuffle Adjacency Simulation.png",
       "file_name": "Card Shuffle Adjacency Simulation.png",
-      "bytes": 3097067,
-      "sha256": "1861214dbbfbe6c3d6fd18e48be44e2a7ad0e9a4408451e5251b88faba5a2c94",
+      "bytes": 2592073,
+      "sha256": "86d7c13807e11fd0ce27a0b533351453e0f4d7cdb020c2d34b74078b33093989",
       "release_url": ""
     },
     "case": {
@@ -1128,8 +1128,8 @@
     "introduction": {
       "path": "Curiosity Lab/Card Shuffle Adjacency Simulation/Card Shuffle Adjacency Simulation.md",
       "file_name": "Card Shuffle Adjacency Simulation.md",
-      "bytes": 1004,
-      "sha256": "b5a66af6e8c66270806d4af15ff2092722473c04e2558151e8af1975741fd437",
+      "bytes": 1590,
+      "sha256": "7da04360f1fe9aff45d9dec69f9dfdc2e02966f8de6c31ef35d41132502e08b9",
       "release_url": ""
     }
   },
@@ -1141,8 +1141,8 @@
     "cover": {
       "path": "Curiosity Lab/Chiral Molecules - Can a 0.1% Lead Take Over/Chiral Molecules - Can a 0.1% Lead Take Over.png",
       "file_name": "Chiral Molecules - Can a 0.1% Lead Take Over.png",
-      "bytes": 1949542,
-      "sha256": "b3a66253077d75388ec2ba529de585a1c223ab21e17f56ee15bd08c5d7926968",
+      "bytes": 2393063,
+      "sha256": "947eac4e3678dc6a0f25139a0fa2ec6002c2e56e5eacdba52a049ccaf6a9f230",
       "release_url": ""
     },
     "case": {
@@ -1155,8 +1155,8 @@
     "introduction": {
       "path": "Curiosity Lab/Chiral Molecules - Can a 0.1% Lead Take Over/Chiral Molecules - Can a 0.1% Lead Take Over.md",
       "file_name": "Chiral Molecules - Can a 0.1% Lead Take Over.md",
-      "bytes": 1058,
-      "sha256": "a44e79111439f48b55aa9fe1b56550d6b061cf54d8e49775df616755d006f52d",
+      "bytes": 1736,
+      "sha256": "8faca20e8ccf182ff30466df02bff7284050427a709b1ae67f0cb09cf8130ab0",
       "release_url": ""
     }
   },
@@ -1168,8 +1168,8 @@
     "cover": {
       "path": "Curiosity Lab/Coin Flip Streak Simulation Luck vs. Skill Across 1,000 Guessers/Coin Flip Streak Simulation Luck vs. Skill Across 1,000 Guessers.png",
       "file_name": "Coin Flip Streak Simulation Luck vs. Skill Across 1,000 Guessers.png",
-      "bytes": 2642434,
-      "sha256": "2dcbe3f87dd025758c5dfbddb8bd3572496413b66c84aba797cc0619aea982ce",
+      "bytes": 2525926,
+      "sha256": "979accbf1feb79c764364dfa526733dae560ed82b2bdebc0cba2e4217184fa69",
       "release_url": ""
     },
     "case": {
@@ -1182,8 +1182,8 @@
     "introduction": {
       "path": "Curiosity Lab/Coin Flip Streak Simulation Luck vs. Skill Across 1,000 Guessers/Coin Flip Streak Simulation Luck vs. Skill Across 1,000 Guessers.md",
       "file_name": "Coin Flip Streak Simulation Luck vs. Skill Across 1,000 Guessers.md",
-      "bytes": 5828,
-      "sha256": "5af7c26979229ec313909933b21c03a30a66e745c2515b6d1b937b249c0f1efa",
+      "bytes": 6594,
+      "sha256": "2f8aacc9a9edd9d6a43d3f2c78948d310b45102e930aa8bd4a2c9e5a8c382780",
       "release_url": ""
     }
   },
@@ -1195,8 +1195,8 @@
     "cover": {
       "path": "Curiosity Lab/DO STOP-LOSSES PROTECT NVDA?/DO STOP-LOSSES PROTECT NVDA?.png",
       "file_name": "DO STOP-LOSSES PROTECT NVDA?.png",
-      "bytes": 2401612,
-      "sha256": "9b14a3a5e9092536401373b92994eb71f05fcd8243c12c35e6262e54f46adf69",
+      "bytes": 2371235,
+      "sha256": "bce80e5aa7af9192b81ef0785274a040ae8b04956718774c493b756c9c15e108",
       "release_url": ""
     },
     "case": {
@@ -1209,8 +1209,8 @@
     "introduction": {
       "path": "Curiosity Lab/DO STOP-LOSSES PROTECT NVDA?/DO STOP-LOSSES PROTECT NVDA?.md",
       "file_name": "DO STOP-LOSSES PROTECT NVDA?.md",
-      "bytes": 1015,
-      "sha256": "172a18a7a037c17e4626e66573aa5775bb3e4aba7c35ed4440c64aeadc93853c",
+      "bytes": 1589,
+      "sha256": "b80f9fa999a76696f66435d8a663f1d93762f335ba3249e78a84dde50a372f37",
       "release_url": ""
     }
   },
@@ -1249,8 +1249,8 @@
     "cover": {
       "path": "Curiosity Lab/For the same one-square-meter area, which receives more solar energy over the course of a year London or Seattle/For the same one-square-meter area, which receives more solar energy over the course of a year London or Seattle.png",
       "file_name": "For the same one-square-meter area, which receives more solar energy over the course of a year London or Seattle.png",
-      "bytes": 2383883,
-      "sha256": "3e82296b0854ecd39b68a0cb3853f074d6039baa4ec915ef7c01f7aebe802a8f",
+      "bytes": 2600490,
+      "sha256": "dafdc7fdc2e6e55d6e677c1e7b0e7911e190f2c3bdacb5fd9612438871ec0ceb",
       "release_url": ""
     },
     "case": {
@@ -1263,8 +1263,8 @@
     "introduction": {
       "path": "Curiosity Lab/For the same one-square-meter area, which receives more solar energy over the course of a year London or Seattle/For the same one-square-meter area, which receives more solar energy over the course of a year London or Seattle.md",
       "file_name": "For the same one-square-meter area, which receives more solar energy over the course of a year London or Seattle.md",
-      "bytes": 1178,
-      "sha256": "278e76f6617cb65e18cb4bd62ff7c6f570d66b9d3e4fb6ff5dfcdd54c0df4ca2",
+      "bytes": 2208,
+      "sha256": "dc20c4c85cfe85dd3fcce60aae36db3bc8ba4c0069e9958cf10159abca58e088",
       "release_url": ""
     }
   },
@@ -1276,8 +1276,8 @@
     "cover": {
       "path": "Curiosity Lab/From 10 Metres Up, a 39° Throw Beats 45°/From 10 Metres Up, a 39° Throw Beats 45°.png",
       "file_name": "From 10 Metres Up, a 39° Throw Beats 45°.png",
-      "bytes": 2546762,
-      "sha256": "1f0d3ed30fa472d838615f15060a5c0c20683535494fb23fa14ae5328fa8a60a",
+      "bytes": 2613464,
+      "sha256": "8e69e2cbd6da9a8f947657d60f2754bd8db0d6a1859ab8fc2d784f582fc7c6e4",
       "release_url": ""
     },
     "case": {
@@ -1290,8 +1290,8 @@
     "introduction": {
       "path": "Curiosity Lab/From 10 Metres Up, a 39° Throw Beats 45°/From 10 Metres Up, a 39° Throw Beats 45°.md",
       "file_name": "From 10 Metres Up, a 39° Throw Beats 45°.md",
-      "bytes": 3713,
-      "sha256": "df672c0c94d9e38ff920c353c7c9f3044764a10f43ce26368e6aed22cdd6219b",
+      "bytes": 4415,
+      "sha256": "2368ea5db2283b9a7a3658459600df4276e3645ed2be49d4c03013afe6ef9073",
       "release_url": ""
     }
   },
@@ -1303,8 +1303,8 @@
     "cover": {
       "path": "Curiosity Lab/From brain map to walking fly/From brain map to walking fly.png",
       "file_name": "From brain map to walking fly.png",
-      "bytes": 2618603,
-      "sha256": "bef7405e8f7ce20217e8788cddbe449b4dfa02d3b12d364b781fe9b41f7c581b",
+      "bytes": 2629469,
+      "sha256": "52c824b1b707e463a4710fce9c0d04625ed499d0ab3b88328da807eb9238a4df",
       "release_url": ""
     },
     "case": {
@@ -1317,8 +1317,8 @@
     "introduction": {
       "path": "Curiosity Lab/From brain map to walking fly/From brain map to walking fly.md",
       "file_name": "From brain map to walking fly.md",
-      "bytes": 1058,
-      "sha256": "2571c89f1329bf45fd38e1168382ef3e22f9f02329cca3af18d02b90b84caadd",
+      "bytes": 1644,
+      "sha256": "3de04b1510b295b4cce70a9a1965024a30fff5ae1674a6ce26de705cd93f1dbf",
       "release_url": ""
     }
   },
@@ -1330,8 +1330,8 @@
     "cover": {
       "path": "Curiosity Lab/Gold vs Bitcoin 28 Days Changed the Winner/Gold vs Bitcoin 28 Days Changed the Winner.png",
       "file_name": "Gold vs Bitcoin 28 Days Changed the Winner.png",
-      "bytes": 2560864,
-      "sha256": "39a475575077a66619d94f78936adfbc1d75ac04756ffb6885add5bf9b804b0f",
+      "bytes": 2708089,
+      "sha256": "f04b0a97441ef461bbfcba94ed4cdaca519d5cd1a4d921158c123e2e3e96cefe",
       "release_url": ""
     },
     "case": {
@@ -1344,8 +1344,8 @@
     "introduction": {
       "path": "Curiosity Lab/Gold vs Bitcoin 28 Days Changed the Winner/Gold vs Bitcoin 28 Days Changed the Winner.md",
       "file_name": "Gold vs Bitcoin 28 Days Changed the Winner.md",
-      "bytes": 1001,
-      "sha256": "65cc7caa203868e5c5280806245979f5f70e6930e099026f4b505b096c5c7592",
+      "bytes": 1655,
+      "sha256": "cd38698e18e199ccb0d23523365ef46b65bd8b12a84f274e2bb66be845bf9022",
       "release_url": ""
     }
   },
@@ -1357,8 +1357,8 @@
     "cover": {
       "path": "Curiosity Lab/Gold, Bitcoin, Nvidia, and the S&P How Big Will/Gold, Bitcoin, Nvidia, and the S&P How Big Will.png",
       "file_name": "Gold, Bitcoin, Nvidia, and the S&P How Big Will.png",
-      "bytes": 2962598,
-      "sha256": "cfc3c3e88a41623a998158724d1f070d341ae6b0cfc08800a4b5cd245698f33f",
+      "bytes": 2446905,
+      "sha256": "6826d2466f2c9e6dc6346af940ee2949c84fb299916d7744d92a7094b65131ec",
       "release_url": ""
     },
     "case": {
@@ -1371,8 +1371,8 @@
     "introduction": {
       "path": "Curiosity Lab/Gold, Bitcoin, Nvidia, and the S&P How Big Will/Gold, Bitcoin, Nvidia, and the S&P How Big Will.md",
       "file_name": "Gold, Bitcoin, Nvidia, and the S&P How Big Will.md",
-      "bytes": 1026,
-      "sha256": "2f62e21f144fa743294e4aa715f74bdb732682ffe2aa2c4a5ac61d60c7011179",
+      "bytes": 1740,
+      "sha256": "360edeba07bca3999ed47acb7476a2cccc886df2a92f45bc98dce3950d99c76b",
       "release_url": ""
     }
   },
@@ -1384,8 +1384,8 @@
     "cover": {
       "path": "Curiosity Lab/Hotter Years, Hotter Days/Hotter Years, Hotter Days.png",
       "file_name": "Hotter Years, Hotter Days.png",
-      "bytes": 2454280,
-      "sha256": "01bd0c1a1dd668381e4624c9184fed882efbb039dd0128cc63e7de6c91ca5679",
+      "bytes": 2595116,
+      "sha256": "7e49be753e3131ae9b246f10c5c46a6e5e6fed44784612161bf24f686f6c53b1",
       "release_url": ""
     },
     "case": {
@@ -1398,8 +1398,8 @@
     "introduction": {
       "path": "Curiosity Lab/Hotter Years, Hotter Days/Hotter Years, Hotter Days.md",
       "file_name": "Hotter Years, Hotter Days.md",
-      "bytes": 1465,
-      "sha256": "3c9dfa3d243aae9992c19506a2415f2bced9be7d3c19d81493b8c0daa4c9f610",
+      "bytes": 2027,
+      "sha256": "9b3c22bac9b85cdc9315b3dd489504209236cb0a613bfae5fd3752be20eb2786",
       "release_url": ""
     }
   },
@@ -1438,8 +1438,8 @@
     "cover": {
       "path": "Curiosity Lab/How early should you leave/How early should you leave.png",
       "file_name": "How early should you leave.png",
-      "bytes": 2426315,
-      "sha256": "1da6f00b0ab62d3d7df6c4f7e907877232d239122b327ccbb33736629b046854",
+      "bytes": 2535769,
+      "sha256": "ea1ed97dc5fb736996cd630db7f7ceea4c3266bb7c2fb142bbd2472df16a0061",
       "release_url": ""
     },
     "case": {
@@ -1452,8 +1452,8 @@
     "introduction": {
       "path": "Curiosity Lab/How early should you leave/How early should you leave.md",
       "file_name": "How early should you leave.md",
-      "bytes": 1019,
-      "sha256": "dbae61ca9f3544c5f22afc1261f94d6ef002047da0b4be37378906081751b371",
+      "bytes": 1585,
+      "sha256": "249c87fd64d8e771b51c52c90f962882ddd076625e370ece50973f54a8204d56",
       "release_url": ""
     }
   },
@@ -1465,8 +1465,8 @@
     "cover": {
       "path": "AI Research/How Far Has AI Drug Discovery Really Gotten/How Far Has AI Drug Discovery Really Gotten.png",
       "file_name": "How Far Has AI Drug Discovery Really Gotten.png",
-      "bytes": 537745,
-      "sha256": "dacca5ca6c810a33ba1c0d7dcabe468bcfa21194beb25a393c1f362dd92b6246",
+      "bytes": 1877102,
+      "sha256": "7977e744307f1b9db57549d37f096a235b6227c1b1be235bf85974d4ddecc16a",
       "release_url": ""
     },
     "case": {
@@ -1479,8 +1479,8 @@
     "introduction": {
       "path": "AI Research/How Far Has AI Drug Discovery Really Gotten/How Far Has AI Drug Discovery Really Gotten.md",
       "file_name": "How Far Has AI Drug Discovery Really Gotten.md",
-      "bytes": 1094,
-      "sha256": "d8af2e048c061e347af32e56afbc4fee8912d2289a60a30d1cd8f838cac18425",
+      "bytes": 1752,
+      "sha256": "54a0bf15b61543e32e0f0683a72d0254bfe65151d9ff47441fa15b45e3ec4e21",
       "release_url": ""
     }
   },
@@ -1492,8 +1492,8 @@
     "cover": {
       "path": "AI Research/How Many Homes Could AI Data Centers Power/How Many Homes Could AI Data Centers Power.png",
       "file_name": "How Many Homes Could AI Data Centers Power.png",
-      "bytes": 2639183,
-      "sha256": "e419b8e5584e8d508a1e7cdaa7869b4e1d8f96e28c36c1bafdfa4445999fb005",
+      "bytes": 2260641,
+      "sha256": "8ef124bbd781c5db53c2a46119824980f66772b9a6e2c6cce0b7ce6d94388364",
       "release_url": ""
     },
     "case": {
@@ -1506,8 +1506,8 @@
     "introduction": {
       "path": "AI Research/How Many Homes Could AI Data Centers Power/How Many Homes Could AI Data Centers Power.md",
       "file_name": "How Many Homes Could AI Data Centers Power.md",
-      "bytes": 3163,
-      "sha256": "7fc7339663bae1eab5f2ca9c9530c617aaf94624c34c75d6e8d30ee039ee8acc",
+      "bytes": 3817,
+      "sha256": "8b2379ee60979e5c9dd68f4d468b29380329b5fa7dce115abe815c253239341d",
       "release_url": ""
     }
   },
@@ -1519,8 +1519,8 @@
     "cover": {
       "path": "Curiosity Lab/How much does battery health decline after two years of smartphone use/How much does battery health decline after two years of smartphone use.png",
       "file_name": "How much does battery health decline after two years of smartphone use.png",
-      "bytes": 1848843,
-      "sha256": "e3e30b742a8c3cc8a71b0a66e75a8bfb98db9a1cc15d5e7ee7be0e2b6f6aa730",
+      "bytes": 2626027,
+      "sha256": "83fa858646913d608122ccf69544eec4cceaecc7f68e4078114f319bad212d2c",
       "release_url": ""
     },
     "case": {
@@ -1533,8 +1533,8 @@
     "introduction": {
       "path": "Curiosity Lab/How much does battery health decline after two years of smartphone use/How much does battery health decline after two years of smartphone use.md",
       "file_name": "How much does battery health decline after two years of smartphone use.md",
-      "bytes": 1081,
-      "sha256": "6d609686a55d6d12963be25b480b153e5900f5a8ff988e31cf67c44c23719fd0",
+      "bytes": 1879,
+      "sha256": "3c59543e9679dfb08a3583d64bbdbf5a2b249d177bb9514df5f62f1d0130eff6",
       "release_url": ""
     }
   },
@@ -1546,8 +1546,8 @@
     "cover": {
       "path": "AI Research/How Much Memory Does a Trillion-Parameter AI Need/How Much Memory Does a Trillion-Parameter AI Need.png",
       "file_name": "How Much Memory Does a Trillion-Parameter AI Need.png",
-      "bytes": 2256206,
-      "sha256": "6d5dc28b66afcfa7798f1c27ba91e6d257cefcb01e1636c4089120f0940e7bb7",
+      "bytes": 2029290,
+      "sha256": "7fc114005965f70f449b360b1c83668fd315ef0d89e043948b68584a1f572710",
       "release_url": ""
     },
     "case": {
@@ -1560,8 +1560,8 @@
     "introduction": {
       "path": "AI Research/How Much Memory Does a Trillion-Parameter AI Need/How Much Memory Does a Trillion-Parameter AI Need.md",
       "file_name": "How Much Memory Does a Trillion-Parameter AI Need.md",
-      "bytes": 1084,
-      "sha256": "d227e15236e94e0e49d45b5d477b20259ee3cb7ec3abe606c3e24969c02984a6",
+      "bytes": 1766,
+      "sha256": "92ede406a0765bbc071d0d6d213f843720dc9cdb959991fab3cf4bd502e8e3b0",
       "release_url": ""
     }
   },
@@ -1573,8 +1573,8 @@
     "cover": {
       "path": "Curiosity Lab/If a rigged coin is mixed in with twenty coins, how many tosses does it take to catch it/If a rigged coin is mixed in with twenty coins, how many tosses does it take to catch it.png",
       "file_name": "If a rigged coin is mixed in with twenty coins, how many tosses does it take to catch it.png",
-      "bytes": 2258139,
-      "sha256": "0509c74e9d364c56264b8fd05026ea3c0b9c11db43d93f890dd2cf78ccb9d6fe",
+      "bytes": 2554460,
+      "sha256": "3e5e78402dbabb232531b84a3077138b3fe0ef599220efe07fceadf216ce941d",
       "release_url": ""
     },
     "case": {
@@ -1587,8 +1587,8 @@
     "introduction": {
       "path": "Curiosity Lab/If a rigged coin is mixed in with twenty coins, how many tosses does it take to catch it/If a rigged coin is mixed in with twenty coins, how many tosses does it take to catch it.md",
       "file_name": "If a rigged coin is mixed in with twenty coins, how many tosses does it take to catch it.md",
-      "bytes": 1138,
-      "sha256": "b8f26f4aff148b66ff8b9703b5d27e26e96699167605a10ddbdbe18cd01c6422",
+      "bytes": 2072,
+      "sha256": "cc62289286c72a710e876df3ef7c9af8fd40437908c7ab1a99c39212ff77fc07",
       "release_url": ""
     }
   },
@@ -1654,8 +1654,8 @@
     "cover": {
       "path": "Curiosity Lab/Light On - How Fast Do Neurons Respond/Light On - How Fast Do Neurons Respond.png",
       "file_name": "Light On - How Fast Do Neurons Respond.png",
-      "bytes": 1962719,
-      "sha256": "790b676e46be90bbe75e91f79a80acd624ac746e8b8696cbf1d67a4b5fac7d48",
+      "bytes": 2677375,
+      "sha256": "22d85511e1df7670202a4f41f92d0f4719693c084d784497cea8a13e153f1291",
       "release_url": ""
     },
     "case": {
@@ -1668,8 +1668,8 @@
     "introduction": {
       "path": "Curiosity Lab/Light On - How Fast Do Neurons Respond/Light On - How Fast Do Neurons Respond.md",
       "file_name": "Light On - How Fast Do Neurons Respond.md",
-      "bytes": 1046,
-      "sha256": "07ca5200c6a88638231e167940303b021c7c6ddfb8689661f64a7b76a1eca03c",
+      "bytes": 1684,
+      "sha256": "4a153b241d1e1636d98170e0beaa2df25a6c7eeae6759c79d57070326d29482f",
       "release_url": ""
     }
   },
@@ -1681,8 +1681,8 @@
     "cover": {
       "path": "Curiosity Lab/Light-Activated Neurons - Does the Cutoff Matter/Light-Activated Neurons - Does the Cutoff Matter.png",
       "file_name": "Light-Activated Neurons - Does the Cutoff Matter.png",
-      "bytes": 2042635,
-      "sha256": "b76b5b3cde63cefd0be550dcb2f1eb8586649b51a44bb91b1715ca5ae95d5c7a",
+      "bytes": 2516306,
+      "sha256": "f8505c6457f1c2d24fed7d700e9e8e1ed04afaa06cbfe9317627be8bd494bf76",
       "release_url": ""
     },
     "case": {
@@ -1695,8 +1695,8 @@
     "introduction": {
       "path": "Curiosity Lab/Light-Activated Neurons - Does the Cutoff Matter/Light-Activated Neurons - Does the Cutoff Matter.md",
       "file_name": "Light-Activated Neurons - Does the Cutoff Matter.md",
-      "bytes": 1050,
-      "sha256": "32e45534c7ff40c6dfe78a063481f749614f80114a0200c080923cf0c3e7e13e",
+      "bytes": 1720,
+      "sha256": "5524aef3aa59c31a6ea5a0320a861d854385ac699cc7b95122da7f084a66837e",
       "release_url": ""
     }
   },
@@ -1708,8 +1708,8 @@
     "cover": {
       "path": "AI Research/MiMo-V2.6 Pro vs. Flash - Is More RL Spending Worth It/MiMo-V2.6 Pro vs. Flash - Is More RL Spending Worth It.png",
       "file_name": "MiMo-V2.6 Pro vs. Flash - Is More RL Spending Worth It.png",
-      "bytes": 2572068,
-      "sha256": "447b79cdc03ebf16ceb79400204b35acc970006ed8b6633957dfe3c0f2002294",
+      "bytes": 2107909,
+      "sha256": "84894f898275beccf1d54dc85e08069b3b9fde758b588bb1206b2c2aa7705457",
       "release_url": ""
     },
     "case": {
@@ -1722,8 +1722,8 @@
     "introduction": {
       "path": "AI Research/MiMo-V2.6 Pro vs. Flash - Is More RL Spending Worth It/MiMo-V2.6 Pro vs. Flash - Is More RL Spending Worth It.md",
       "file_name": "MiMo-V2.6 Pro vs. Flash - Is More RL Spending Worth It.md",
-      "bytes": 1095,
-      "sha256": "262f5cc233d3baabe59f292c9eee88ed9942eca8c52aeb3dececb95159079467",
+      "bytes": 1821,
+      "sha256": "2e44fae55c267ddf6a5d04bc893b9569c04a2bdbda62c287a54706540678ee26",
       "release_url": ""
     }
   },
@@ -1735,8 +1735,8 @@
     "cover": {
       "path": "Curiosity Lab/Mirror-Image Molecules - Can Algorithms Tell Them Apart/Mirror-Image Molecules - Can Algorithms Tell Them Apart.png",
       "file_name": "Mirror-Image Molecules - Can Algorithms Tell Them Apart.png",
-      "bytes": 1825817,
-      "sha256": "749eaf202870fc4455c0615a6f7201c06d642c30a6c503c94f956a0fe327322c",
+      "bytes": 2470378,
+      "sha256": "481f5b04574a1ad23d73b4c2294474a69ff840e97ed42f8f9540c7fd93bc29f9",
       "release_url": ""
     },
     "case": {
@@ -1749,8 +1749,8 @@
     "introduction": {
       "path": "Curiosity Lab/Mirror-Image Molecules - Can Algorithms Tell Them Apart/Mirror-Image Molecules - Can Algorithms Tell Them Apart.md",
       "file_name": "Mirror-Image Molecules - Can Algorithms Tell Them Apart.md",
-      "bytes": 1066,
-      "sha256": "bcb92fdcf969d8312e6a43fbbccdcefe96117be257636f722cf88b866b10b3fa",
+      "bytes": 1772,
+      "sha256": "f715bcfa729e774a4746e539b6c4a61649b387534df6e17f62f344e5c442934e",
       "release_url": ""
     }
   },
@@ -1762,8 +1762,8 @@
     "cover": {
       "path": "Curiosity Lab/Monthly rotation of best-performing assets vs. buy-and-hold/Monthly rotation of best-performing assets vs. buy-and-hold.png",
       "file_name": "Monthly rotation of best-performing assets vs. buy-and-hold.png",
-      "bytes": 2529626,
-      "sha256": "b6c029035d77e5ce7f5d17c32fe5a5e3d3b71e4208dd09d079e02707a059ba00",
+      "bytes": 2545170,
+      "sha256": "670bb9f6771b5e885a46d22521b38ec97a111585cd59e2dcff0045db8d680988",
       "release_url": ""
     },
     "case": {
@@ -1776,8 +1776,8 @@
     "introduction": {
       "path": "Curiosity Lab/Monthly rotation of best-performing assets vs. buy-and-hold/Monthly rotation of best-performing assets vs. buy-and-hold.md",
       "file_name": "Monthly rotation of best-performing assets vs. buy-and-hold.md",
-      "bytes": 1062,
-      "sha256": "076a3949c89e38d28565b4fe422596d6238f3c8a174a224200f88231dfa71e64",
+      "bytes": 1776,
+      "sha256": "d9396acea425b66260bdc8991aa59036e679e84f0a47d3eeb6859da09ea4c170",
       "release_url": ""
     }
   },
@@ -1789,8 +1789,8 @@
     "cover": {
       "path": "Curiosity Lab/Neurons Respond on Average - Does Every Trial Work/Neurons Respond on Average - Does Every Trial Work.png",
       "file_name": "Neurons Respond on Average - Does Every Trial Work.png",
-      "bytes": 1975067,
-      "sha256": "7f841c27ba309983ccf3b5f86560ac281ab766617882d32fa2d1b5a2ee9a4f57",
+      "bytes": 2538905,
+      "sha256": "7f4df8e4272b09839331dece53999b801f2a303f589ba3c24105124b703b06f1",
       "release_url": ""
     },
     "case": {
@@ -1803,8 +1803,8 @@
     "introduction": {
       "path": "Curiosity Lab/Neurons Respond on Average - Does Every Trial Work/Neurons Respond on Average - Does Every Trial Work.md",
       "file_name": "Neurons Respond on Average - Does Every Trial Work.md",
-      "bytes": 1036,
-      "sha256": "40b1170b300f4dc2ad7c92f477a049cb0e36118329a5158670c4e080370ef9ab",
+      "bytes": 1730,
+      "sha256": "483e890c2974928e87284e59d189b769125bdb2bd861cfd602ea39643f1a3ab1",
       "release_url": ""
     }
   },
@@ -1816,8 +1816,8 @@
     "cover": {
       "path": "Curiosity Lab/Neutrino Energy - Does Higher Mean Sharper/Neutrino Energy - Does Higher Mean Sharper.png",
       "file_name": "Neutrino Energy - Does Higher Mean Sharper.png",
-      "bytes": 2160192,
-      "sha256": "730d1479df3201455d7fbf87939ffc4c35133dbabbb73a76d298701db1c3bb99",
+      "bytes": 2477608,
+      "sha256": "d4bc9b5a0263541602a5fe872d232be871f1c99a9e8443dd414b0da9ee51a7ab",
       "release_url": ""
     },
     "case": {
@@ -1830,8 +1830,8 @@
     "introduction": {
       "path": "Curiosity Lab/Neutrino Energy - Does Higher Mean Sharper/Neutrino Energy - Does Higher Mean Sharper.md",
       "file_name": "Neutrino Energy - Does Higher Mean Sharper.md",
-      "bytes": 1043,
-      "sha256": "2a1408641954f78622b240668be1de91634e66a3ff214f858bf0c0c31f737451",
+      "bytes": 1689,
+      "sha256": "9afd7152910d422544683c92dc99e7d31cb8825a99dcd74928a016853d810358",
       "release_url": ""
     }
   },
@@ -1843,8 +1843,8 @@
     "cover": {
       "path": "Curiosity Lab/Neutrino Hotspots - Signal or Chance/Neutrino Hotspots - Signal or Chance.png",
       "file_name": "Neutrino Hotspots - Signal or Chance.png",
-      "bytes": 2094008,
-      "sha256": "09b74eede8e7ea75a680db314d604cd6b353423f10eb82ee5a1ccd4d50f2de85",
+      "bytes": 2525014,
+      "sha256": "e157b9ea7bf3bd289663c7e5a77cff3467f6bf173963f3fbfd80f16053c6fc0a",
       "release_url": ""
     },
     "case": {
@@ -1857,8 +1857,8 @@
     "introduction": {
       "path": "Curiosity Lab/Neutrino Hotspots - Signal or Chance/Neutrino Hotspots - Signal or Chance.md",
       "file_name": "Neutrino Hotspots - Signal or Chance.md",
-      "bytes": 1042,
-      "sha256": "cc95e6d78d5df06e0ae5a666d53833a50eabb768b492a29a303cee516f9a350d",
+      "bytes": 1656,
+      "sha256": "658fff671805cd7cc0ea8bf38dd81d104985c1dcfa575c6a0d424436c0d3ccfd",
       "release_url": ""
     }
   },
@@ -1870,8 +1870,8 @@
     "cover": {
       "path": "Curiosity Lab/NVDA: ALL AT ONCE OR FOUR WEEKS?/NVDA: ALL AT ONCE OR FOUR WEEKS?.png",
       "file_name": "NVDA: ALL AT ONCE OR FOUR WEEKS?.png",
-      "bytes": 2401612,
-      "sha256": "9b14a3a5e9092536401373b92994eb71f05fcd8243c12c35e6262e54f46adf69",
+      "bytes": 2661272,
+      "sha256": "581c740c781ad185e32b5076ba7515fdb4875756dee85d63f907c6eca03f696e",
       "release_url": ""
     },
     "case": {
@@ -1884,8 +1884,8 @@
     "introduction": {
       "path": "Curiosity Lab/NVDA: ALL AT ONCE OR FOUR WEEKS?/NVDA: ALL AT ONCE OR FOUR WEEKS?.md",
       "file_name": "NVDA: ALL AT ONCE OR FOUR WEEKS?.md",
-      "bytes": 1009,
-      "sha256": "427fe146446744568ad9f52c3feb912fd211ac72111630e5ed27a7b21bb76c50",
+      "bytes": 1631,
+      "sha256": "1f9b58b61bc4ba84488461993e2becc7125b8621aa387fa7ce9f5b44a8ca7a78",
       "release_url": ""
     }
   },
@@ -1897,8 +1897,8 @@
     "cover": {
       "path": "Curiosity Lab/One Neutrino - How Much Sky/One Neutrino - How Much Sky.png",
       "file_name": "One Neutrino - How Much Sky.png",
-      "bytes": 2076690,
-      "sha256": "1a2cbbd80a3209fa97e69d602e44f9f1eefa924880db797a950b7dd730f52baf",
+      "bytes": 2610545,
+      "sha256": "8b62e9a100eacb5f76e856f7c50f902f7e5411c4fac8d477c358b6037eeb4a45",
       "release_url": ""
     },
     "case": {
@@ -1911,8 +1911,8 @@
     "introduction": {
       "path": "Curiosity Lab/One Neutrino - How Much Sky/One Neutrino - How Much Sky.md",
       "file_name": "One Neutrino - How Much Sky.md",
-      "bytes": 981,
-      "sha256": "35607fff8380307c474171a73aab9a7cd159b41dd19711e408d0be95fd1beb4a",
+      "bytes": 1559,
+      "sha256": "023134a09de7b66db460ddf3d1c250134e640f7bfe352eae28fffa91e615dd6d",
       "release_url": ""
     }
   },
@@ -1951,8 +1951,8 @@
     "cover": {
       "path": "AI Research/Open AI Models - What Can You Actually Download/Open AI Models - What Can You Actually Download.png",
       "file_name": "Open AI Models - What Can You Actually Download.png",
-      "bytes": 1852005,
-      "sha256": "69c16475eef10c0e46af4f0c7eccba6bf3b39be96f9fa200cebd9f129cd2fce2",
+      "bytes": 2053498,
+      "sha256": "7cac8dd5066ee479df1545b1ac1672a2a7cc5df1915a0d46e24e9321d542806b",
       "release_url": ""
     },
     "case": {
@@ -1965,8 +1965,8 @@
     "introduction": {
       "path": "AI Research/Open AI Models - What Can You Actually Download/Open AI Models - What Can You Actually Download.md",
       "file_name": "Open AI Models - What Can You Actually Download.md",
-      "bytes": 1071,
-      "sha256": "f7877ba3b13d14ff1f1aa62858dd5959b0862474e42491faf52f794c2165d030",
+      "bytes": 1753,
+      "sha256": "5a46de2b55334a88796dfaeb702250a3c49f41903616144e9ed454526e6ed935",
       "release_url": ""
     }
   },
@@ -1978,8 +1978,8 @@
     "cover": {
       "path": "Curiosity Lab/Our Nearest Exoplanet - How Long Is the Trip/Our Nearest Exoplanet - How Long Is the Trip.png",
       "file_name": "Our Nearest Exoplanet - How Long Is the Trip.png",
-      "bytes": 2571257,
-      "sha256": "b460a8c14e7f4b5e154db1d60062f0822b00f314859e68ac0f34fc6bdf6d6c65",
+      "bytes": 2534091,
+      "sha256": "1e07e6f5251b987c5fd0ee62db477b0c5849067bed91d9ffd7b0eb73fad0a11e",
       "release_url": ""
     },
     "case": {
@@ -1992,8 +1992,8 @@
     "introduction": {
       "path": "Curiosity Lab/Our Nearest Exoplanet - How Long Is the Trip/Our Nearest Exoplanet - How Long Is the Trip.md",
       "file_name": "Our Nearest Exoplanet - How Long Is the Trip.md",
-      "bytes": 846,
-      "sha256": "3bcf672f5070ea16f25012683bd38b892f71afcaa864f329d20c2ef40f77d8c0",
+      "bytes": 1516,
+      "sha256": "3c8fe8bacf83e2416e69f74e378d04e27c2428a55a648d1301b8ac1c961d1044",
       "release_url": ""
     }
   },
@@ -2005,8 +2005,8 @@
     "cover": {
       "path": "AI Research/Revised AI Papers - Did the Main Claim Change/Revised AI Papers - Did the Main Claim Change.png",
       "file_name": "Revised AI Papers - Did the Main Claim Change.png",
-      "bytes": 2572457,
-      "sha256": "8a494fc9b718c190ce5c8caa9b49969ba94d65feb268a397cdf7f8d8b5fdc498",
+      "bytes": 1934155,
+      "sha256": "0e1b43a47bdd2d6825483b4c598d7e86a11c1bda779371d2770493984aa67a1e",
       "release_url": ""
     },
     "case": {
@@ -2019,8 +2019,8 @@
     "introduction": {
       "path": "AI Research/Revised AI Papers - Did the Main Claim Change/Revised AI Papers - Did the Main Claim Change.md",
       "file_name": "Revised AI Papers - Did the Main Claim Change.md",
-      "bytes": 1061,
-      "sha256": "3d0b5cab226defac65f221e7a7e4b7b7cd6b14b80f41fcc44d7baaf9e4181e13",
+      "bytes": 1735,
+      "sha256": "025288c5e25c71815867789d9f730e29adf109fcb1ae0f6b0152d4b63d207313",
       "release_url": ""
     }
   },
@@ -2032,8 +2032,8 @@
     "cover": {
       "path": "AI Research/Run JEV through 1,000 hands of Texas Holdem/Run JEV through 1,000 hands of Texas Holdem.png",
       "file_name": "Run JEV through 1,000 hands of Texas Holdem.png",
-      "bytes": 2605719,
-      "sha256": "db2067a0da796a6b46a7d9b98978f2a5f09c67d1097edab015394dcf978fdac8",
+      "bytes": 2095021,
+      "sha256": "f01aefaff960eec39105371e74ba3eeb8a0de1ec20a42af9721e5388b5deec82",
       "release_url": ""
     },
     "case": {
@@ -2046,8 +2046,8 @@
     "introduction": {
       "path": "AI Research/Run JEV through 1,000 hands of Texas Holdem/Run JEV through 1,000 hands of Texas Holdem.md",
       "file_name": "Run JEV through 1,000 hands of Texas Holdem.md",
-      "bytes": 1026,
-      "sha256": "097ae226be084922ed19974f2f3a3449d6bf060393b08bf2d16f279c0ba656b3",
+      "bytes": 1692,
+      "sha256": "1ede0bae0514b8a773b49e3c4ad2d521f41541d13633851ad144e1efea67c6ee",
       "release_url": ""
     }
   },
@@ -2059,8 +2059,8 @@
     "cover": {
       "path": "Curiosity Lab/Shared vs Separate Checkout Lines Simulation/Shared vs Separate Checkout Lines Simulation.png",
       "file_name": "Shared vs Separate Checkout Lines Simulation.png",
-      "bytes": 2481439,
-      "sha256": "1deecd139fa13294f84d203a9388d265def5942ae48600651ae2bd312220655b",
+      "bytes": 2580345,
+      "sha256": "9b76eb18340572d8c33244f6985eb8bde60d2b83238360504305080aaa4cd46b",
       "release_url": ""
     },
     "case": {
@@ -2073,8 +2073,8 @@
     "introduction": {
       "path": "Curiosity Lab/Shared vs Separate Checkout Lines Simulation/Shared vs Separate Checkout Lines Simulation.md",
       "file_name": "Shared vs Separate Checkout Lines Simulation.md",
-      "bytes": 1039,
-      "sha256": "2be8744d1e61bc315759ebe5b8217c134880efbac5948cc287eda521fb6d7dc2",
+      "bytes": 1685,
+      "sha256": "f98b9ff3257cac058855cb70ab34fd16c2772f102dc639052a686b81d453c56a",
       "release_url": ""
     }
   },
@@ -2086,8 +2086,8 @@
     "cover": {
       "path": "Curiosity Lab/Spending $100 on Ads vs. $100 on Content Which/Spending $100 on Ads vs. $100 on Content Which.png",
       "file_name": "Spending $100 on Ads vs. $100 on Content Which.png",
-      "bytes": 2798276,
-      "sha256": "45a768f6893cee950e9d3c176482725a5f4daaeec7525672e20772a8b7771638",
+      "bytes": 2655513,
+      "sha256": "23589b6267806faece45927d9cdefc7786793b957f07535bc7c3e615847a8e3e",
       "release_url": ""
     },
     "case": {
@@ -2100,8 +2100,8 @@
     "introduction": {
       "path": "Curiosity Lab/Spending $100 on Ads vs. $100 on Content Which/Spending $100 on Ads vs. $100 on Content Which.md",
       "file_name": "Spending $100 on Ads vs. $100 on Content Which.md",
-      "bytes": 1064,
-      "sha256": "c9acefdd6daa174b29e5aea65b0aaa39de57888b7f2d531f9e38fcfbb9fa91a5",
+      "bytes": 1758,
+      "sha256": "77a0bbb9e11f0078f1c17ace398d1a166df57de229f09ae9f0790c5e8caf175f",
       "release_url": ""
     }
   },
@@ -2140,8 +2140,8 @@
     "cover": {
       "path": "Curiosity Lab/We keep arguing in the studio about product phot/We keep arguing in the studio about product phot.png",
       "file_name": "We keep arguing in the studio about product phot.png",
-      "bytes": 2289647,
-      "sha256": "94af377dbfd83eabec3c8a733756ad14983fc61a6f04d8156e935a0a7e287919",
+      "bytes": 2456316,
+      "sha256": "c7064c1799939862277e217d0197fb0f650c6f148e53723b82784605460deb78",
       "release_url": ""
     },
     "case": {
@@ -2154,8 +2154,8 @@
     "introduction": {
       "path": "Curiosity Lab/We keep arguing in the studio about product phot/We keep arguing in the studio about product phot.md",
       "file_name": "We keep arguing in the studio about product phot.md",
-      "bytes": 1086,
-      "sha256": "2fbf1448e15abd5b2d2ee20a5e8c8bbcf30a17f5127901b886c7272e3739f7e3",
+      "bytes": 1772,
+      "sha256": "7b50b6b246d331fb347b2478bcd9cae8eb4d973e6748cd29d052f1b9f73eb699",
       "release_url": ""
     }
   },
@@ -2221,8 +2221,8 @@
     "cover": {
       "path": "AI Research/Where Do AlphaFold Protein Structures Lose Confidence/Where Do AlphaFold Protein Structures Lose Confidence.png",
       "file_name": "Where Do AlphaFold Protein Structures Lose Confidence.png",
-      "bytes": 2570771,
-      "sha256": "3eac15830e09726a32552b09b3bcbf898a6b39f1237a0904eaefb3ae561b7316",
+      "bytes": 2064066,
+      "sha256": "3e23430caf5a342d7197849999705929e2195c1afcb6331b3319a1cca58bc0a8",
       "release_url": ""
     },
     "case": {
@@ -2235,8 +2235,8 @@
     "introduction": {
       "path": "AI Research/Where Do AlphaFold Protein Structures Lose Confidence/Where Do AlphaFold Protein Structures Lose Confidence.md",
       "file_name": "Where Do AlphaFold Protein Structures Lose Confidence.md",
-      "bytes": 1030,
-      "sha256": "4feed7e687db5fa4a5b103b2c497d9eff4ffef84817a2d7f4a2ea8339ccb8d7d",
+      "bytes": 1720,
+      "sha256": "3b5a92ceb411b4a7cb9ffa5d4fffea65fd509b163ea5c9d59f16ccf71b6cd355",
       "release_url": ""
     }
   },
@@ -2248,8 +2248,8 @@
     "cover": {
       "path": "Curiosity Lab/which deal is actually cheaper/which deal is actually cheaper.png",
       "file_name": "which deal is actually cheaper.png",
-      "bytes": 2441727,
-      "sha256": "f313d7fe92a767459863cc306b9e130ba25d87ec57ab6b5aa9c22884faf49604",
+      "bytes": 2592020,
+      "sha256": "c15f97902a2d42e3ca9e588870f5f369395051ac18f936aba41c9c02ce3e9ecc",
       "release_url": ""
     },
     "case": {
@@ -2262,8 +2262,8 @@
     "introduction": {
       "path": "Curiosity Lab/which deal is actually cheaper/which deal is actually cheaper.md",
       "file_name": "which deal is actually cheaper.md",
-      "bytes": 970,
-      "sha256": "ad7a805843a3191bfbba2625004c0f2333075193d45f0e7ae03a60ca2e8834e9",
+      "bytes": 1552,
+      "sha256": "4b7dbffbe146905a5d808145748378ef827498cd92d36c631b18ca030d52f784",
       "release_url": ""
     }
   },
@@ -2275,8 +2275,8 @@
     "cover": {
       "path": "Curiosity Lab/Which Planet Is Most Like Earth—and Who Decides/Which Planet Is Most Like Earth—and Who Decides.png",
       "file_name": "Which Planet Is Most Like Earth—and Who Decides.png",
-      "bytes": 2556612,
-      "sha256": "b9705598cb95da7626d35a9a4c86f822eff5b863628ede38eb544e5e7388867a",
+      "bytes": 2660259,
+      "sha256": "cf717c9ef4747521881f2b4c14b7130337dd79e418cd863e7f467485e7f8c474",
       "release_url": ""
     },
     "case": {
@@ -2289,8 +2289,8 @@
     "introduction": {
       "path": "Curiosity Lab/Which Planet Is Most Like Earth—and Who Decides/Which Planet Is Most Like Earth—and Who Decides.md",
       "file_name": "Which Planet Is Most Like Earth—and Who Decides.md",
-      "bytes": 774,
-      "sha256": "6ab4942985dcc183497d14aa93a9278afc5275c19894254cc35a8ca39f2b02ae",
+      "bytes": 1480,
+      "sha256": "aa99676afa06a66dbccc3ffd0302b9283fc19de046b948cbcb3962548e4340be",
       "release_url": ""
     }
   },
@@ -2302,8 +2302,8 @@
     "cover": {
       "path": "Curiosity Lab/Why Do Coffee and Sleep Studies Disagree/Why Do Coffee and Sleep Studies Disagree.png",
       "file_name": "Why Do Coffee and Sleep Studies Disagree.png",
-      "bytes": 2477457,
-      "sha256": "f64a756e17c37c2194cb8766fae32fd997fee3d7ecc287aac95e4d657776106f",
+      "bytes": 2398730,
+      "sha256": "df46cf59dc7da9ec32d6301fdddfd30e124f04fb905bd54ebc7daf81fda907d5",
       "release_url": ""
     },
     "case": {
@@ -2316,8 +2316,8 @@
     "introduction": {
       "path": "Curiosity Lab/Why Do Coffee and Sleep Studies Disagree/Why Do Coffee and Sleep Studies Disagree.md",
       "file_name": "Why Do Coffee and Sleep Studies Disagree.md",
-      "bytes": 5573,
-      "sha256": "304006a3ad0de43be54cac5428408889878a68b9bc802ddc696999f0712160a9",
+      "bytes": 6211,
+      "sha256": "1d23838ca1528e2a9f1ce5914f894e5de66449008e4b690982fe57e3efcf3568",
       "release_url": ""
     }
   },
@@ -2329,8 +2329,8 @@
     "cover": {
       "path": "AI Research/Will 10× Cheaper AI Increase Total Spending/Will 10× Cheaper AI Increase Total Spending.png",
       "file_name": "Will 10× Cheaper AI Increase Total Spending.png",
-      "bytes": 2297359,
-      "sha256": "989bf7ee2dd902f447b5b82c9d82dafcf699fe5a8e5d717f47f80e201d815f9a",
+      "bytes": 2016031,
+      "sha256": "1ebdd0668505ca8df968118bfb7e668b9cc4b14b0eda13c75578bde565820003",
       "release_url": ""
     },
     "case": {
@@ -2343,8 +2343,8 @@
     "introduction": {
       "path": "AI Research/Will 10× Cheaper AI Increase Total Spending/Will 10× Cheaper AI Increase Total Spending.md",
       "file_name": "Will 10× Cheaper AI Increase Total Spending.md",
-      "bytes": 1001,
-      "sha256": "4200bef8099d828e6a0e001973753e32fd3a4fd50e268b420b2e6b384ea0817d",
+      "bytes": 1671,
+      "sha256": "3e9dca7614dc11eed5f9fcb3b3b89c4a26d8c2855d8230e3f569794b6c36be6b",
       "release_url": ""
     }
   },
@@ -2356,8 +2356,8 @@
     "cover": {
       "path": "AI Research/Will AI Overrefund or Underrefund/Will AI Overrefund or Underrefund.png",
       "file_name": "Will AI Overrefund or Underrefund.png",
-      "bytes": 2382778,
-      "sha256": "bf86ca8a98343b45fd6f5882cb7574b3b26471e61d909beffe57e86ac4e46057",
+      "bytes": 1970730,
+      "sha256": "6133c9cf8de1fbcd23134f32e84f4dbdfccbc46b8ef4d7bfaf3553262d84a231",
       "release_url": ""
     },
     "case": {
@@ -2370,8 +2370,8 @@
     "introduction": {
       "path": "AI Research/Will AI Overrefund or Underrefund/Will AI Overrefund or Underrefund.md",
       "file_name": "Will AI Overrefund or Underrefund.md",
-      "bytes": 1005,
-      "sha256": "1a32cf3e591ee6046b138841bfc8d25ce19bcb357e41a14f1bdc5361dd07d95c",
+      "bytes": 1599,
+      "sha256": "f00164ac6b4f0a4b66aea92bf42f6c67fda6931915b0ab57ad28ab76c7132d41",
       "release_url": ""
     }
   },
@@ -2383,8 +2383,8 @@
     "cover": {
       "path": "AI Research/WOULD AN AI KEEP COOPERATING?/WOULD AN AI KEEP COOPERATING?.png",
       "file_name": "WOULD AN AI KEEP COOPERATING?.png",
-      "bytes": 2401612,
-      "sha256": "9b14a3a5e9092536401373b92994eb71f05fcd8243c12c35e6262e54f46adf69",
+      "bytes": 1939184,
+      "sha256": "c8184d91dfaaa4640ce3a6ca93ac18530e5e46f56ebc5e8509bd9e1a4a6c970c",
       "release_url": ""
     },
     "case": {
@@ -2397,8 +2397,8 @@
     "introduction": {
       "path": "AI Research/WOULD AN AI KEEP COOPERATING?/WOULD AN AI KEEP COOPERATING?.md",
       "file_name": "WOULD AN AI KEEP COOPERATING?.md",
-      "bytes": 1010,
-      "sha256": "f1f7b3914b3592666ab8b5a4611c1a56d232fa4f378d806c8af63d8f11551548",
+      "bytes": 1596,
+      "sha256": "fdc9062e4c08bbf77291406674e68f2ecce66ac311c71f507ce40a8cfc7bbd47",
       "release_url": ""
     }
   }

@@ -41,3 +41,11 @@ The numerical ranges, maximizing angles, and landing equations were independentl
 ## Provenance
 
 The original `.science` package and cover PNG are imported unchanged from [aipoch/open-science-usecases at a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284](https://github.com/aipoch/open-science-usecases/tree/a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284/From%2010%20Metres%20Up%2C%20a%2039%C2%B0%20Throw%20Beats%2045%C2%B0). Shanruoyu (@shanruoyu) contributed the case in [53aaf940](https://github.com/aipoch/open-science-usecases/commit/53aaf9404dcda39e2d395a43002ebf8b95a724bd).
+## Import provenance
+
+This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/From%2010%20Metres%20Up%2C%20a%2039%C2%B0%20Throw%20Beats%2045%C2%B0/From%2010%20Metres%20Up%2C%20a%2039%C2%B0%20Throw%20Beats%2045%C2%B0.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
+
+## Case files
+
+- [Session export](./From%2010%20Metres%20Up%2C%20a%2039%C2%B0%20Throw%20Beats%2045%C2%B0.science)
+- [Case poster](./From%2010%20Metres%20Up%2C%20a%2039%C2%B0%20Throw%20Beats%2045%C2%B0.png)

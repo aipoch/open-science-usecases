@@ -11,3 +11,11 @@ Sunshine duration is a proxy, not measured global horizontal irradiation. The on
 ## Package and provenance
 
 The original `.science` export and matching poster are preserved byte-for-byte from [the upstream case](https://github.com/aipoch/open-science-usecases/tree/a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284/For%20the%20same%20one-square-meter%20area%2C%20which%20receives%20more%20solar%20energy%20over%20the%20course%20of%20a%20year%20London%20or%20Seattle). The package contains the conversation, session metadata, and the resources inventoried in its internal manifest. This introduction summarizes the archived record; the research, external sources, and model evaluations were not rerun for this import.
+## Import provenance
+
+This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/For%20the%20same%20one-square-meter%20area%2C%20which%20receives%20more%20solar%20energy%20over%20the%20course%20of%20a%20year%20London%20or%20Seattle/For%20the%20same%20one-square-meter%20area%2C%20which%20receives%20more%20solar%20energy%20over%20the%20course%20of%20a%20year%20London%20or%20Seattle.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
+
+## Case files
+
+- [Session export](./For%20the%20same%20one-square-meter%20area%2C%20which%20receives%20more%20solar%20energy%20over%20the%20course%20of%20a%20year%20London%20or%20Seattle.science)
+- [Case poster](./For%20the%20same%20one-square-meter%20area%2C%20which%20receives%20more%20solar%20energy%20over%20the%20course%20of%20a%20year%20London%20or%20Seattle.png)

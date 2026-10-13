@@ -29,3 +29,11 @@ The labels identify the referenced sessions; they do not establish exact model v
 The package contains the review conversation, Notebook run and dependency-analysis data, execution-file evidence JSON, and original session metadata. Those evidence files preserve the review's record; their presence does not resolve the stated lack of independently authenticated test output from the three compared sessions.
 
 The original `.science` package and PNG are imported unchanged from [aipoch/open-science-usecases at a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284](https://github.com/aipoch/open-science-usecases/tree/a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284/Can%20AI%20Fix%20a%20Tiny%20Bug). The case was contributed by 单偌宇 in [bbd8c940](https://github.com/aipoch/open-science-usecases/commit/bbd8c940bedbfa6bed4ba1e4c37322e82ca4e36a). This introduction summarizes the packaged conversation and its stated limitations.
+## Import provenance
+
+This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/Can%20AI%20Fix%20a%20Tiny%20Bug/Can%20AI%20Fix%20a%20Tiny%20Bug.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
+
+## Case files
+
+- [Session export](./Can%20AI%20Fix%20a%20Tiny%20Bug.science)
+- [Case poster](./Can%20AI%20Fix%20a%20Tiny%20Bug.png)

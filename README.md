@@ -2,7 +2,7 @@
 
 This repository collects completed Open-Science session exports, covers, and introductions. The root `manifest.json` serves as the case index.
 
-Classification is being migrated one catalog at a time, following upstream's [classification snapshot](https://github.com/aipoch/open-science-usecases/blob/2d19bdbaffa776fb6c75951005ac88e74cc6aac9/categories.json):
+Cases follow upstream's [classification snapshot](https://github.com/aipoch/open-science-usecases/blob/2d19bdbaffa776fb6c75951005ac88e74cc6aac9/categories.json), integrated with this fork's catalog fields and directories:
 
 | Stage | Catalog directory | `catalog_name` | Cases | Migration |
 | --- | --- | --- | --- | --- |
@@ -10,6 +10,8 @@ Classification is being migrated one catalog at a time, following upstream's [cl
 | 2 | [`Curiosity Lab/`](<Curiosity Lab/>) | `curiosity-lab` | 45 | 41 existing cases and four imported cases |
 
 The manifest now contains 89 cases. **First Flight vs. Evening Flight - Which Is More Reliable** is absent from the upstream classification snapshot and remains under `usecases/` with both classification fields set to `""`. **Academic Research** has no cases in that snapshot, so no directory or placeholder entry is created.
+
+`manifest.json` is the authoritative publication index, including classification and resource paths. `categories.json` preserves upstream category membership as a reference; it excludes the unclassified fork case. The 88 classified cases use the posters and introductions from upstream commit `2d19bdb`, with remote session links preserved.
 
 Each entry contains a `title`, a unique kebab-case `name`, the two classification strings, and three resources: `cover`, `case`, and `introduction`. Every resource provides `file_name`, `path`, `bytes`, `sha256`, and `release_url`. An empty URL selects a local file; a nonempty URL selects a remote resource. Fully remote entries do not need local directories but must still retain valid paths. The seven imported packages across both stages retain their upstream remote sources; their covers and introductions are stored locally.
 
@@ -26,6 +28,7 @@ Directories, titles, and names can be chosen independently. S3 always uses `<nam
 
 Original `.science` session contents remain unchanged. Simulation demonstrations and unresolved conclusions noted in a case remain subject to the source session; inclusion does not guarantee general model performance.
 
+- [Browse cases by catalog](CATEGORIES.md)
 - [Adding and updating cases](AGENTS.md)
 - [Validation rules and commands](.github/CHECKING.md)
 - [Publication, deduplication, and recovery](.github/PUBLISHING.md)

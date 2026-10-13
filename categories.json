@@ -1,0 +1,449 @@
+{
+  "categories": [
+    "Curiosity Lab",
+    "AI Research",
+    "Academic Research"
+  ],
+  "cases": [
+    {
+      "title": "$10,000: NVIDIA, BITCOIN, OR BOTH?",
+      "name": "10-000-nvidia-bitcoin-or-both",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "99% Pure - Does Molecular Handedness Matter",
+      "name": "99-pure-does-molecular-handedness-matter",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "A City's 100-Year Rainfall Record",
+      "name": "a-city-s-100-year-rainfall-record",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "A Million Examples - Is That a Proof",
+      "name": "a-million-examples-is-that-a-proof",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "AI Explains Math - What Gets Lost",
+      "name": "ai-explains-math-what-gets-lost",
+      "category": "AI Research"
+    },
+    {
+      "title": "AI Math Citations - Do They Check Out",
+      "name": "ai-math-citations-do-they-check-out",
+      "category": "AI Research"
+    },
+    {
+      "title": "AI Math Counterexample - Does Exact Arithmetic Agree",
+      "name": "ai-math-counterexample-does-exact-arithmetic-agree",
+      "category": "AI Research"
+    },
+    {
+      "title": "AI Math Papers - Can You Check the Proofs",
+      "name": "ai-math-papers-can-you-check-the-proofs",
+      "category": "AI Research"
+    },
+    {
+      "title": "At 70% should you take it",
+      "name": "at-70-should-you-take-it",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Birthday Paradox Simulation Verifying the 23-Person 50% Claim",
+      "name": "birthday-paradox-simulation-verifying-the-23-person-50-claim",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Bottled Water in Convenience Stores Across Five Cities- What Is the Price Gap Between the Most Expensive and the Cheapest",
+      "name": "bottled-water-in-convenience-stores-across-five-cities-what-is-the-price-gap-between-the-most-expensive-and-the-cheapest",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "CAN 10,000 AI PAPERS PREDICT WHICH TOPICS WILL GROW SIX MONTHS LATER?",
+      "name": "can-10-000-ai-papers-predict-which-topics-will-grow-six-months-later",
+      "category": "AI Research"
+    },
+    {
+      "title": "CAN AI PICK LUCKY LOTTERY NUMBERS?",
+      "name": "can-ai-pick-lucky-lottery-numbers",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "CAN ONE WEEK FLIP THE WINNER?",
+      "name": "can-one-week-flip-the-winner",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Can 20 Pokémon Packs Guarantee an SIR",
+      "name": "can-20-pokemon-packs-guarantee-an-sir",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Can AI Bluff and Detect Bluffs in Poker",
+      "name": "can-ai-bluff-and-detect-bluffs-in-poker",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Extract Final Action Items, Owners, and Deadlines",
+      "name": "can-ai-extract-final-action-items-owners-and-deadlines",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Find Five Hidden Planet-Like Signals",
+      "name": "can-ai-find-five-hidden-planet-like-signals",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Find Three Contradictions in a 20-Page Presentation",
+      "name": "can-ai-find-three-contradictions-in-a-20-page-presentation",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Find the Cheapest Checkout with 100 Discount Rules",
+      "name": "can-ai-find-the-cheapest-checkout-with-100-discount-rules",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Find the Shortest Paris Sightseeing Route",
+      "name": "can-ai-find-the-shortest-paris-sightseeing-route",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Fit 10 London Landmarks Into One Day",
+      "name": "can-ai-fit-10-london-landmarks-into-one-day",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Fit Eight Tasks in 30 Minutes",
+      "name": "can-ai-fit-eight-tasks-in-30-minutes",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Fix a Tiny Bug",
+      "name": "can-ai-fix-a-tiny-bug",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Guess the Animal in 20 Yes-or-No Questions",
+      "name": "can-ai-guess-the-animal-in-20-yes-or-no-questions",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Keep Track of Corrections in Meeting Notes",
+      "name": "can-ai-keep-track-of-corrections-in-meeting-notes",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Make Good Trade-Offs When Packing a Suitcase",
+      "name": "can-ai-make-good-trade-offs-when-packing-a-suitcase",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Pick the Right Contact",
+      "name": "can-ai-pick-the-right-contact",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Plan Seven Lunches Under $50 If Ingredients Must Be Bought in Full Packages",
+      "name": "can-ai-plan-seven-lunches-under-50-if-ingredients-must-be-bought-in-full-packages",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Plan a Fair Chinese Shared Dinner",
+      "name": "can-ai-plan-a-fair-chinese-shared-dinner",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Read the Numbers from One Chart",
+      "name": "can-ai-read-the-numbers-from-one-chart",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Recommend Movies That Follow Your Rules",
+      "name": "can-ai-recommend-movies-that-follow-your-rules",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Spot the Errors in a Spreadsheet",
+      "name": "can-ai-spot-the-errors-in-a-spreadsheet",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can GLP-1 Drugs Really Help Us Live Longer",
+      "name": "can-glp-1-drugs-really-help-us-live-longer",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Can Jev Route Prompts as Well as General LLMs",
+      "name": "can-jev-route-prompts-as-well-as-general-ll-ms",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can One Extra Token Make AI Cost 5× as Much",
+      "name": "can-one-extra-token-make-ai-cost-5-as-much",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can Social Pressure Make AI Change a Correct Answer",
+      "name": "can-social-pressure-make-ai-change-a-correct-answer",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can a Layout Change Make AI Miss Parts of Your Resume",
+      "name": "can-a-layout-change-make-ai-miss-parts-of-your-resume",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can a Simple Algorithm Beat AI at Wordle",
+      "name": "can-a-simple-algorithm-beat-ai-at-wordle",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can an AI Bidder Overpay and Lose Money",
+      "name": "can-an-ai-bidder-overpay-and-lose-money",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can petal length identify iris",
+      "name": "can-petal-length-identify-iris",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Card Shuffle Adjacency Simulation",
+      "name": "card-shuffle-adjacency-simulation",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Chiral Molecules - Can a 0.1% Lead Take Over",
+      "name": "chiral-molecules-can-a-0-1-lead-take-over",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Coin Flip Streak Simulation Luck vs. Skill Across 1,000 Guessers",
+      "name": "coin-flip-streak-simulation-luck-vs-skill-across-1-000-guessers",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "DO STOP-LOSSES PROTECT NVDA?",
+      "name": "do-stop-losses-protect-nvda",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "For the same one-square-meter area, which receives more solar energy over the course of a year London or Seattle",
+      "name": "for-the-same-one-square-meter-area-which-receives-more-solar-energy-over-the-course-of-a-year-london-or-seattle",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "From 10 Metres Up, a 39° Throw Beats 45°",
+      "name": "from-10-metres-up-a-39-throw-beats-45",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "From brain map to walking fly",
+      "name": "from-brain-map-to-walking-fly",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Gold vs Bitcoin 28 Days Changed the Winner",
+      "name": "gold-vs-bitcoin-28-days-changed-the-winner",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Gold, Bitcoin, Nvidia, and the S&P How Big Will",
+      "name": "gold-bitcoin-nvidia-and-the-s-p-how-big-will",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Hotter Years, Hotter Days",
+      "name": "hotter-years-hotter-days",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "How Far Has AI Drug Discovery Really Gotten",
+      "name": "how-far-has-ai-drug-discovery-really-gotten",
+      "category": "AI Research"
+    },
+    {
+      "title": "How Many Homes Could AI Data Centers Power",
+      "name": "how-many-homes-could-ai-data-centers-power",
+      "category": "AI Research"
+    },
+    {
+      "title": "How Much Memory Does a Trillion-Parameter AI Need",
+      "name": "how-much-memory-does-a-trillion-parameter-ai-need",
+      "category": "AI Research"
+    },
+    {
+      "title": "How Often Do Job Posts Ask for Proficiency?",
+      "name": "how-often-do-job-posts-ask-for-proficiency",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "How early should you leave",
+      "name": "how-early-should-you-leave",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "How much does battery health decline after two years of smartphone use",
+      "name": "how-much-does-battery-health-decline-after-two-years-of-smartphone-use",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "If a rigged coin is mixed in with twenty coins, how many tosses does it take to catch it",
+      "name": "if-a-rigged-coin-is-mixed-in-with-twenty-coins-how-many-tosses-does-it-take-to-catch-it",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "In a Year's Worth of Weather Forecasts, Are Predictions of ‘Sunny’ Weather More Accurate, or Are Predictions of ‘Rain’ More Accurate?",
+      "name": "in-a-year-s-worth-of-weather-forecasts-are-predictions-of-sunny-weather-more-accurate-or-are-predictions-of-rain-more-accurate",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Is Thinking Longer Worth It?",
+      "name": "is-thinking-longer-worth-it",
+      "category": "AI Research"
+    },
+    {
+      "title": "Light On - How Fast Do Neurons Respond",
+      "name": "light-on-how-fast-do-neurons-respond",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Light-Activated Neurons - Does the Cutoff Matter",
+      "name": "light-activated-neurons-does-the-cutoff-matter",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "MiMo-V2.6 Pro vs. Flash - Is More RL Spending Worth It",
+      "name": "mi-mo-v2-6-pro-vs-flash-is-more-rl-spending-worth-it",
+      "category": "AI Research"
+    },
+    {
+      "title": "Mirror-Image Molecules - Can Algorithms Tell Them Apart",
+      "name": "mirror-image-molecules-can-algorithms-tell-them-apart",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Monthly rotation of best-performing assets vs. buy-and-hold",
+      "name": "monthly-rotation-of-best-performing-assets-vs-buy-and-hold",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "NVDA: ALL AT ONCE OR FOUR WEEKS?",
+      "name": "nvda-all-at-once-or-four-weeks",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Neurons Respond on Average - Does Every Trial Work",
+      "name": "neurons-respond-on-average-does-every-trial-work",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Neutrino Energy - Does Higher Mean Sharper",
+      "name": "neutrino-energy-does-higher-mean-sharper",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Neutrino Hotspots - Signal or Chance",
+      "name": "neutrino-hotspots-signal-or-chance",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "One Neutrino - How Much Sky",
+      "name": "one-neutrino-how-much-sky",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "One-Shot vs Chunked",
+      "name": "one-shot-vs-chunked",
+      "category": "AI Research"
+    },
+    {
+      "title": "Open AI Models - What Can You Actually Download",
+      "name": "open-ai-models-what-can-you-actually-download",
+      "category": "AI Research"
+    },
+    {
+      "title": "Our Nearest Exoplanet - How Long Is the Trip",
+      "name": "our-nearest-exoplanet-how-long-is-the-trip",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Revised AI Papers - Did the Main Claim Change",
+      "name": "revised-ai-papers-did-the-main-claim-change",
+      "category": "AI Research"
+    },
+    {
+      "title": "Run JEV through 1,000 hands of Texas Holdem",
+      "name": "run-jev-through-1-000-hands-of-texas-holdem",
+      "category": "AI Research"
+    },
+    {
+      "title": "Shared vs Separate Checkout Lines Simulation",
+      "name": "shared-vs-separate-checkout-lines-simulation",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Spending $100 on Ads vs. $100 on Content Which",
+      "name": "spending-100-on-ads-vs-100-on-content-which",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "The 100K Cliff",
+      "name": "the-100-k-cliff",
+      "category": "AI Research"
+    },
+    {
+      "title": "WOULD AN AI KEEP COOPERATING?",
+      "name": "would-an-ai-keep-cooperating",
+      "category": "AI Research"
+    },
+    {
+      "title": "We keep arguing in the studio about product phot",
+      "name": "we-keep-arguing-in-the-studio-about-product-phot",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "What Follows a Bitcoin Surge?",
+      "name": "what-follows-a-bitcoin-surge",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "What Happens If You Remove 1% of the Nodes from the Fruit Fly Brain Network?",
+      "name": "what-happens-if-you-remove-1-of-the-nodes-from-the-fruit-fly-brain-network",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Where Do AlphaFold Protein Structures Lose Confidence",
+      "name": "where-do-alpha-fold-protein-structures-lose-confidence",
+      "category": "AI Research"
+    },
+    {
+      "title": "Which Planet Is Most Like Earth—and Who Decides",
+      "name": "which-planet-is-most-like-earth-and-who-decides",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Why Do Coffee and Sleep Studies Disagree",
+      "name": "why-do-coffee-and-sleep-studies-disagree",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Will 10× Cheaper AI Increase Total Spending",
+      "name": "will-10-cheaper-ai-increase-total-spending",
+      "category": "AI Research"
+    },
+    {
+      "title": "Will AI Overrefund or Underrefund",
+      "name": "will-ai-overrefund-or-underrefund",
+      "category": "AI Research"
+    },
+    {
+      "title": "which deal is actually cheaper",
+      "name": "which-deal-is-actually-cheaper",
+      "category": "Curiosity Lab"
+    }
+  ]
+}
