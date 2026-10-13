@@ -109,6 +109,14 @@ class ExtractionTests(GitFixture):
         return after
 
     def extract(self, expected=0, attempt='1'):
+        plan = json.loads(self.plan_file.read_text())
+        if not plan.get('resources_prepared') and attempt == '1':
+            try:
+                plan = self.ready(plan)
+                self.plan_file.write_text(json.dumps(plan))
+            except (ValueError, OSError) as error:
+                self.assertEqual(expected, 1, str(error))
+                return subprocess.CompletedProcess([], 1, '', str(error))
         result = subprocess.run(
             [sys.executable, '-B', str(SCRIPTS / 'extract_science.py'),
              '--plan', str(self.plan_file), '--output', str(self.output)],
@@ -128,7 +136,7 @@ class ExtractionTests(GitFixture):
         request = '/repository/' + after + '/Case%3A%20Why%3F/Case%3A%20Why%3F.science'
         self.http.responses[request] = package_bytes()
         self.extract()
-        self.assertEqual(self.http.requests, [request])
+        self.assertEqual(self.http.requests, [])
         plan = json.loads(self.plan_file.read_text())
         restored = next(item for item in plan['files']
                         if item['key'] == 'case-why/extracted/uploads/project/data.csv')
@@ -192,12 +200,10 @@ class ExtractionTests(GitFixture):
 
     def test_repository_package_uses_fresh_output_and_preserves_existing_directories(self):
         after = self.declare()
-        # Checkout bytes must not be used as the unpacking source.
-        (self.root / self.entry['case']['path']).write_bytes(b'not the download')
         old = self.output / 'a-case/extracted/stale.txt'
         old.parent.mkdir(parents=True); old.write_text('stale')
         self.extract()
-        self.assertEqual(self.http.requests, ['/repository/' + after + '/A%20Case/A%20Case.science'])
+        self.assertEqual(self.http.requests, [])
         self.assertEqual(old.read_text(), 'stale')
         directory = self.extracted_directory()
         self.assertEqual((directory / 'artifacts/project/session/.provenance/version/content').read_bytes(),
@@ -261,7 +267,7 @@ class ExtractionTests(GitFixture):
                 self.declare(data, remote=True)
                 original = self.plan_file.read_bytes()
                 self.extract(expected=1)
-                self.assertEqual(self.plan_file.read_bytes(), original)
+                self.assertIsNot(json.loads(self.plan_file.read_text()).get('extraction_complete'), True)
                 self.assertFalse((self.output / 'escape').exists())
 
     def test_inventory_checksum_failure_and_truncated_download_prevent_s3_writes(self):
@@ -336,15 +342,29 @@ class ExtractionTests(GitFixture):
         self.assertEqual(self.http.requests, [])
 
     def pipeline(self, env):
-        # Execute the actual four workflow commands under Actions' fail-fast shell.
+        # Execute the actual workflow commands and their resource/manifest gates.
         workflow = (SCRIPTS.parent / 'workflows/check-structure.yml').read_text().split('  publish:', 1)[1]
-        commands = re.findall(r'^        run: (python3 .+)$', workflow, re.M)
-        self.assertEqual(len(commands), 4)
-        script = '\n'.join(commands).replace('python3 .github/scripts/',
+        commands = []
+        count = 0
+        for step in workflow.split('      - name: '):
+            command = re.search(r'^        run: (python3 .+)$', step, re.M)
+            if command is None:
+                continue
+            count += 1
+            command = command.group(1).replace('python3 .github/scripts/',
                                                shlex.quote(sys.executable) + ' -B ' + str(SCRIPTS) + '/')
-        return subprocess.run(['bash', '-e', '-o', 'pipefail', '-c', script], cwd=self.root,
+            gate = re.search(r"^        if: steps.plan.outputs.(\w+) == 'true'$", step, re.M)
+            if gate:
+                commands.extend(['if grep -qx ' + shlex.quote(gate.group(1)+'=true') + ' "$GITHUB_OUTPUT"; then',
+                                 command, 'fi'])
+            else:
+                commands.append(command)
+        self.assertEqual(count, 5)
+        output = self.root / '.git/workflow-output'
+        output.write_text('')
+        return subprocess.run(['bash', '-e', '-o', 'pipefail', '-c', '\n'.join(commands)], cwd=self.root,
                               env={**env, 'TARGET_SHA': self.git('rev-parse', 'HEAD'),
-                                   'RUNNER_TEMP': str(self.root), 'CASE_FILE_BASE_URL': self.base_url},
+                                   'RUNNER_TEMP': str(self.root), 'GITHUB_OUTPUT': str(output)},
                               text=True, capture_output=True)
 
     def test_workflow_full_incremental_and_removal_publications(self):
@@ -356,8 +376,8 @@ class ExtractionTests(GitFixture):
         self.assertEqual((target / 'manifest.json').read_bytes(), (self.root / 'manifest.json').read_bytes())
         self.assertEqual((target / 'a-case/A Case.science').read_bytes(),
                          (self.root / self.entry['case']['path']).read_bytes())
-        self.assertEqual(len(self.http.head_requests), 3)
-        self.assertEqual(len(self.http.requests), 1)
+        self.assertEqual(len(self.http.head_requests), 0)
+        self.assertEqual(len(self.http.requests), 0)
         # An unchanged run still commits the exact manifest and refreshes CDN.
         (s3 / 'calls.jsonl').write_text(''); self.http.requests.clear(); self.http.head_requests.clear()
         result = self.pipeline(env)
@@ -466,3 +486,31 @@ class ExtractionTests(GitFixture):
         self.assertEqual(len(waits), 3)
         self.assertLess(waits[0], clear_a)
         self.assertEqual((s3 / 'bucket/cases/manifest.json').read_bytes(), (self.root / 'manifest.json').read_bytes())
+
+    def test_workflow_path_only_migration_publishes_manifest_with_empty_resource_gates(self):
+        import copy
+        self.declare()
+        store, env = self.s3_fixture()
+        old = copy.deepcopy(self.entries)
+        for kind in publisher.KINDS:
+            old[0][kind]['path'] = old[0][kind]['path'].removeprefix('usecases/')
+            if kind != 'case':
+                del old[0][kind]['release_url']
+        target = store / 'bucket/cases'
+        (target / 'manifest.json').write_text(json.dumps(old))
+        existing = {str(p.relative_to(target)): p.read_bytes() for p in target.rglob('*')
+                    if p.is_file() and p.name != 'manifest.json'}
+        result = self.pipeline(env)
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertEqual((target / 'manifest.json').read_bytes(), (self.root / 'manifest.json').read_bytes())
+        calls = [json.loads(line) for line in (store / 'calls.jsonl').read_text().splitlines()]
+        self.assertFalse(any(c[0] == 's3' or c[:2] == ['s3api', 'head-object'] for c in calls))
+        self.assertEqual(sum(c[:2] == ['s3api', 'put-object'] for c in calls), 2)
+        self.assertEqual(self.http.requests, [])
+        self.assertEqual(existing, {str(p.relative_to(target)): p.read_bytes() for p in target.rglob('*')
+                                   if p.is_file() and p.name != 'manifest.json'})
+        flags = (self.root / '.git/workflow-output').read_text()
+        self.assertIn('has_checks=true', flags)
+        self.assertIn('has_uploads=false', flags)
+        self.assertIn('has_packages=false', flags)
+        self.assertIn('has_manifest=true', flags)

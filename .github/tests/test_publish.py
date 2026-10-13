@@ -23,6 +23,7 @@ class GitFixture(unittest.TestCase):
         self.root = Path(self.temp.name).resolve()
         self.git('init', '-q')
         self.git('config', 'core.autocrlf', 'false')
+        (self.root / '.git/info/exclude').write_text('sources/\nstaging/\ns3/\nbin/\nplan*\npublication*\nresource-publication/\nscience-publication/\n')
         self.git('config', 'user.name', 'Test')
         self.git('config', 'user.email', 'test@example.invalid')
         self.entries = []
@@ -44,12 +45,11 @@ class GitFixture(unittest.TestCase):
         entry = {'title': title, 'name': name}
         for kind, ext in [('cover', 'png'), ('case', 'science'), ('introduction', 'md')]:
             file = title + '.' + ext
-            path = title + '/' + file
-            (self.root / title).mkdir(exist_ok=True)
+            path = 'usecases/' + title + '/' + file
+            (self.root / 'usecases' / title).mkdir(parents=True, exist_ok=True)
             (self.root / path).write_bytes(b'original')
             entry[kind] = {'path': path, 'file_name': file, 'bytes': 8, 'sha256': hashlib.sha256(b'original').hexdigest()}
-            if kind == 'case':
-                entry[kind]['release_url'] = ''
+            entry[kind]['release_url'] = ''
         self.entries.append(entry)
         return entry
 
@@ -68,6 +68,12 @@ class GitFixture(unittest.TestCase):
         baseline = self.git('show', (before or self.base) + ':manifest.json')
         return publisher.prepare(self.root, baseline, after or self.git('rev-parse', 'HEAD'))
 
+    def ready(self, plan):
+        class EmptyTarget:
+            def head(self, key):
+                return None
+        return publisher.prepare_resources(self.root, plan, EmptyTarget(), self.root / 'sources')
+
     def keys(self, plan):
         return [item['key'] for item in plan['files']]
 
@@ -79,7 +85,7 @@ class PublishTests(GitFixture):
             with self.subTest(extension=extension):
                 cover = self.entry['cover']
                 filename = 'A Case.' + extension
-                path = 'A Case/' + filename
+                path = 'usecases/A Case/' + filename
                 (self.root / cover['path']).rename(self.root / path)
                 cover.update(file_name=filename, path=path)
                 self.write_manifest()
@@ -120,11 +126,11 @@ class PublishTests(GitFixture):
         self.assertEqual(self.keys(self.plan()), ['a-case/A Case.science', 'manifest.json'])
         self.assertEqual(self.plan()['packages'], [{'name': 'a-case', 'resource': self.entry['case']}])
 
-    def test_remote_package_source_change_selects_extraction_only(self):
+    def test_remote_package_source_change_selects_upload_and_extraction(self):
         (self.root / self.entry['case']['path']).unlink()
         self.entry['case']['release_url'] = 'https://example.com/new.science'
         self.write_manifest(); self.commit()
-        self.assertEqual(self.keys(self.plan()), ['manifest.json'])
+        self.assertEqual(self.keys(self.plan()), ['a-case/A Case.science', 'manifest.json'])
         self.assertEqual(len(self.plan()['packages']), 1)
 
     def test_remote_to_local_switch_uploads_and_extracts(self):
@@ -155,7 +161,7 @@ class PublishTests(GitFixture):
     def test_removed_entry_preserves_original_and_extracted_objects(self):
         objects = {'a-case/A Case.png': b'old', 'a-case/extracted/stale': b'keep'}
         self.entries = []; self.write_manifest(); self.commit()
-        shutil.rmtree(self.root / 'A Case')
+        shutil.rmtree(self.root / 'usecases/A Case')
         plan = self.plan()
         self.assertEqual(self.keys(plan), ['manifest.json'])
         class Upload:
@@ -186,7 +192,7 @@ class PublishTests(GitFixture):
                 with self.assertRaisesRegex(ValueError, 'missing|Missing|source'):
                     self.plan()
                 path.write_bytes(data)
-        shutil.rmtree(self.root / 'A Case')
+        shutil.rmtree(self.root / 'usecases/A Case')
         with self.assertRaisesRegex(ValueError, 'directory'):
             self.plan()
 
@@ -216,15 +222,14 @@ class PublishTests(GitFixture):
         with self.assertRaisesRegex(ValueError, 'Duplicate'):
             publisher.prepare(self.root, json.dumps(self.entries * 2), self.base)
 
-    def test_missing_undeclared_legacy_introduction_is_supported(self):
+    def test_missing_introduction_is_rejected(self):
         del self.entry['introduction']; self.write_manifest(); after = self.commit()
-        plan = publisher.prepare(self.root, None, after)
-        self.assertEqual(self.keys(plan), ['a-case/A Case.png', 'a-case/A Case.science', 'manifest.json'])
+        with self.assertRaisesRegex(ValueError, 'introduction'):
+            publisher.prepare(self.root, None, after)
 
-    def test_case_name_must_match_its_directory_before_extraction(self):
+    def test_case_name_is_independent_of_directory(self):
         self.entry['name'] = 'unrelated-name'; self.write_manifest(); self.commit()
-        with self.assertRaisesRegex(ValueError, 'name.*directory'):
-            self.plan()
+        self.assertEqual(len(self.plan()['candidates']), 3)
 
     def test_wrong_checkout_or_modified_manifest_fails(self):
         self.change()
@@ -255,7 +260,7 @@ class PublishTests(GitFixture):
                 calls.append(key)
                 raise OSError('upload failed')
         with self.assertRaises(OSError):
-            publisher.apply(self.root, self.plan(), Upload())
+            publisher.apply(self.root, self.ready(self.plan()), Upload())
         self.assertEqual(calls, ['a-case/A Case.png'])
 
     def s3_fixture(self):
@@ -283,7 +288,7 @@ class PublishTests(GitFixture):
                         store.read_manifest()
 
     def test_cli_upload_metadata_matches_verified_content(self):
-        self.change(); plan = self.plan()
+        self.change(); plan = self.ready(self.plan())
         s3, env = self.s3_fixture()
         baseline = s3 / 'bucket/cases/manifest.json'
         baseline.parent.mkdir(parents=True); baseline.write_text(plan['baseline'])

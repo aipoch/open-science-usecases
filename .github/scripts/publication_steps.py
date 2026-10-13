@@ -87,6 +87,10 @@ def write_artifacts(plan, output):
 def print_plan(plan):
     print('Publication target: ' + plan['after'], flush=True)
     print('Step counts: ' + json.dumps(Counter(step['operation'] for step in plan['steps'])), flush=True)
+    for item in plan.get('candidates', []):
+        print('Candidate: ' + json.dumps(item, ensure_ascii=True), flush=True)
+    for decision in plan.get('decisions', []):
+        print('Target decision: ' + json.dumps(decision, ensure_ascii=True), flush=True)
     for name in plan.get('unchanged', []):
         print('[skipped] ' + name + ': declaration matches S3', flush=True)
     print('Extraction ready: ' + str(plan.get('extraction_complete', not plan['packages'])), flush=True)

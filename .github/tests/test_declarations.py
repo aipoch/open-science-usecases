@@ -59,7 +59,7 @@ class DeclarationTests(GitFixture):
         self.entry['case']['release_url'] = ''; self.write_manifest(); self.commit()
         self.assertEqual(self.check(before=remote), [])
         old = self.git('rev-parse', 'HEAD')
-        self.git('mv', 'A Case', 'Renamed')
+        self.git('mv', 'usecases/A Case', 'usecases/Renamed')
         self.entry['name'] = 'renamed'
         for resource in (self.entry[kind] for kind in ('cover', 'case', 'introduction')):
             resource['path'] = resource['path'].replace('A Case/', 'Renamed/')
@@ -95,3 +95,14 @@ class DeclarationTests(GitFixture):
         del self.entry['introduction']; self.write_manifest(); legacy = self.commit()
         (self.root / 'tool.py').write_text('# tooling only'); self.commit()
         self.assertEqual(self.check(before=legacy), [])
+
+    def test_path_migration_still_compares_git_objects(self):
+        before = self.base
+        self.git('mv', 'usecases/A Case', 'usecases/Moved')
+        for kind in ('cover', 'case', 'introduction'):
+            self.entry[kind]['path'] = self.entry[kind]['path'].replace('/A Case/', '/Moved/')
+        self.write_manifest(); self.commit()
+        self.assertEqual(self.check(before=before), [])
+        (self.root / self.entry['cover']['path']).write_bytes(b'modified')
+        self.commit()
+        self.assertTrue(any('synchronize' in error for error in self.check(before=before)))

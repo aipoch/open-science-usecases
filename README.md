@@ -1,14 +1,22 @@
-# AIPOCH Open-Science use cases
+# AIPOCH Open-Science 案例
 
-This repository collects completed Open-Science case exports and their matching case posters.
+本仓库收集完成的 Open-Science 会话导出、封面和介绍，根 `manifest.json` 是案例索引。
 
-Each case is stored as a folder at the repository root, named with its English case title, with two files:
+案例统一放在 `usecases/<目录>/`。每个条目包含 `title`、唯一 kebab-case `name`，以及 `cover`、`case`、`introduction` 三种资源；每种资源都提供 `file_name`、`path`、`bytes`、`sha256`、`release_url`。URL 为空时采用本地文件，非空时采用远程资源；全远程条目可不创建本地目录，但仍保留规范 path。
 
-- `<English case title>/<English case title>.science` — the native Open-Science session export.
-- `<English case title>/<English case title>.png` — the matching case poster.
+```text
+usecases/示例目录/
+  cover.png
+  session.science
+  introduction.md
+```
 
-The `.science` files are preserved from the supplied exports. Posters use the AIPOCH OPEN-SCIENCE case-poster format. Synthetic demonstrations and unresolved findings remain identified in the source sessions; the presence of a package does not imply general model performance.
+目录、标题与 name 可独立命名。S3 始终使用 `<name>/<file_name>`，包解压内容位于 `<name>/extracted/`，目录迁移不改变 S3 资源键。
 
-## Cases
+原始 `.science` 会话内容保持不变。案例中标明的模拟演示和未解决结论仍以源会话为准，收录不代表模型的一般性能保证。
 
-The repository includes the existing completed cases from the source archive and the newly packaged cases from the current Open-Science case collection. Each case folder is self-contained.
+- [新增和修改案例](AGENTS.md)
+- [校验规则与命令](.github/CHECKING.md)
+- [发布、去重与恢复](.github/PUBLISHING.md)
+
+本地测试：`python3 -B -m unittest discover -s .github/tests -v`。测试使用临时数据及 fake S3，不执行真实发布。

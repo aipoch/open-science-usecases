@@ -77,6 +77,8 @@ class PublicationStepsTests(GitFixture):
                                   cwd=self.root, env={**env, **(fail or {})}, capture_output=True, text=True)
         result = run('--after', self.git('rev-parse', 'HEAD'), '--prepare', str(plan_file))
         self.assertEqual(result.returncode, 0, result.stderr)
+        prepared = run('--prepare-resources', str(plan_file), '--output', str(self.root / 'sources'))
+        self.assertEqual(prepared.returncode, 0, prepared.stderr)
         result = run('--apply-plan', str(plan_file), fail={'FAKE_S3_FAIL_MANIFEST_CASE': 'c-case'})
         self.assertNotEqual(result.returncode, 0)
         actual = json.loads((target / 'manifest.json').read_text())
@@ -90,6 +92,8 @@ class PublicationStepsTests(GitFixture):
         plan = json.loads(plan_file.read_text())
         self.assertEqual([(s['operation'], s['name']) for s in plan['steps']],
                          [('UPDATE_CASE', 'c-case'), ('FINAL_SYNC', None)])
+        prepared = run('--prepare-resources', str(plan_file), '--output', str(self.root / 'sources'))
+        self.assertEqual(prepared.returncode, 0, prepared.stderr)
         result = run('--apply-plan', str(plan_file))
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         self.assertEqual((target / 'manifest.json').read_bytes(), (self.root / 'manifest.json').read_bytes())
@@ -125,6 +129,7 @@ class PublicationBoundaryTests(GitFixture):
 
     def prepare_run(self):
         self.cli('--prepare', str(self.plan_file), '--after', self.git('rev-parse', 'HEAD'))
+        self.cli('--prepare-resources', str(self.plan_file), '--output', str(self.root / 'sources'))
         return json.loads(self.plan_file.read_text())
 
     def apply_run(self, **kwargs):
@@ -177,32 +182,13 @@ class PublicationBoundaryTests(GitFixture):
         metadata = json.loads((self.store / 'metadata.json').read_text())
         self.assertEqual(metadata['bucket/cases/manifest.json']['sha256'], hashlib.sha256(raw).hexdigest())
 
-    def test_manifest_only_steps_discard_unvalidated_resource_operations(self):
-        self.add_case('B Case', 'b-case'); self.write_manifest(); self.commit()
-        remote = copy.deepcopy(self.entry); remote['name'] = 'remote-only'
-        baseline = json.dumps([*self.entries[::-1], remote])
-        preserved = self.target / 'a-case/extracted/keep'
-        for operation in ('REMOVE_CASE', 'REORDER', 'FINAL_SYNC'):
-            with self.subTest(operation=operation):
-                (self.target / 'manifest.json').write_text(baseline)
-                preserved.parent.mkdir(parents=True, exist_ok=True)
-                preserved.write_bytes(b'keep')
-                plan = self.prepare_run()
-                self.assertEqual([s['operation'] for s in plan['steps']],
-                                 ['REMOVE_CASE', 'REORDER', 'FINAL_SYNC'])
-                step = next(s for s in plan['steps'] if s['operation'] == operation)
-                step['packages'] = [{'name': 'a-case'}]
-                step['files'] = [{**self.entry['cover'], 'key': 'unplanned/cover.png'}]
-                self.plan_file.write_text(json.dumps(plan))
-                self.apply_run()
-                self.assertTrue(preserved.is_file(), 'Unchanged extracted files were deleted')
-                self.assertEqual(preserved.read_bytes(), b'keep')
-                self.assertFalse((self.target / 'unplanned/cover.png').exists())
-                self.assertFalse(any(c[0] == 's3' for c in self.calls()))
-                self.assertEqual((self.target / 'manifest.json').read_bytes(),
-                                 (self.root / 'manifest.json').read_bytes())
-                self.assertTrue(all(s['status'] == 'completed' and not s['files']
-                                    for s in self.status()))
+    def test_manifest_only_steps_reject_tampered_resource_operations(self):
+        self.prepare_run()
+        plan = json.loads(self.plan_file.read_text())
+        plan['steps'][0]['files'] = [{'key': 'unplanned/cover.png'}]
+        self.plan_file.write_text(json.dumps(plan))
+        self.apply_run(success=False)
+        self.assertFalse(any(c[0] == 's3' or c[:2] == ['s3api', 'put-object'] for c in self.calls()))
 
     def test_publication_overrides_aws_text_output_for_parsed_responses(self):
         self.change()
@@ -287,22 +273,22 @@ class PublicationBoundaryTests(GitFixture):
         self.change(); self.prepare_run()
         (self.target / 'manifest.json').write_text('[]')
         self.apply_run(success=False)
-        self.assertTrue(all(c[:2] == ['s3api', 'get-object'] for c in self.calls()))
+        self.assertTrue(all(c[:2] in (['s3api', 'get-object'], ['s3api', 'head-object']) for c in self.calls()))
 
     def test_tampered_manifest_plan_and_original_bytes_block_writes(self):
         self.change(); plan = self.prepare_run()
         modified = copy.deepcopy(plan); modified['steps'][0]['manifest'] = '[]'
         self.plan_file.write_text(json.dumps(modified)); self.apply_run(success=False)
         self.plan_file.write_text(json.dumps(plan))
-        (self.root / self.entry['cover']['path']).write_bytes(b'tampered')
+        Path(plan['files'][0]['path']).write_bytes(b'tampered')
         self.apply_run(success=False)
-        self.assertTrue(all(c[:2] == ['s3api', 'get-object'] for c in self.calls()))
+        self.assertTrue(all(c[:2] in (['s3api', 'get-object'], ['s3api', 'head-object']) for c in self.calls()))
 
     def test_native_rerun_and_missing_cdn_configuration_block_writes(self):
         self.change(); self.prepare_run()
         for overrides in ({'GITHUB_RUN_ATTEMPT': '2'}, {'AWS_DISTRIBUITION_ID': ''}):
             self.apply_run(overrides=overrides, success=False)
-        self.assertTrue(all(c[:2] == ['s3api', 'get-object'] for c in self.calls()))
+        self.assertTrue(all(c[:2] in (['s3api', 'get-object'], ['s3api', 'head-object']) for c in self.calls()))
 
     def test_every_checkpoint_has_reviewable_files_manifest_and_events(self):
         self.change(); plan = self.prepare_run(); self.apply_run()
