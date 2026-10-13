@@ -2536,5 +2536,815 @@
     },
     "catalog": "Curiosity Lab",
     "catalog_name": "curiosity-lab"
+  },
+  {
+    "title": "2,000 Natural Products - How Diverse Are They",
+    "name": "2-000-natural-products-how-diverse-are-they",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "2,000 Natural Products - How Diverse Are They.png",
+      "path": "Academic Research/2,000 Natural Products - How Diverse Are They/2,000 Natural Products - How Diverse Are They.png",
+      "bytes": 2002458,
+      "sha256": "2342c3edf9f918cb1fc8500eb92b68f3c4f8544756e6c0be3002bfa3b953ffa4",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "2,000 Natural Products - How Diverse Are They.science",
+      "path": "Academic Research/2,000 Natural Products - How Diverse Are They/2,000 Natural Products - How Diverse Are They.science",
+      "bytes": 208641014,
+      "sha256": "98acb3cf2f9012ee75879e323b32484f4c6f700ee08a62b06dd70812953814e8",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/2%2C000%20Natural%20Products%20-%20How%20Diverse%20Are%20They/2%2C000%20Natural%20Products%20-%20How%20Diverse%20Are%20They.science"
+    },
+    "introduction": {
+      "file_name": "2,000 Natural Products - How Diverse Are They.md",
+      "path": "Academic Research/2,000 Natural Products - How Diverse Are They/2,000 Natural Products - How Diverse Are They.md",
+      "bytes": 3072,
+      "sha256": "f49fa763943b2cf980f468eabf35904eb29013f36badfb4faf21479078ca0dd8",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Air Pollution - Is the Turning Point Real",
+    "name": "air-pollution-is-the-turning-point-real",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Air Pollution - Is the Turning Point Real.png",
+      "path": "Academic Research/Air Pollution - Is the Turning Point Real/Air Pollution - Is the Turning Point Real.png",
+      "bytes": 1824161,
+      "sha256": "e1b7122a9690e2138862952009d1e75e6db488c260011949f395b6b868bac882",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Air Pollution - Is the Turning Point Real.science",
+      "path": "Academic Research/Air Pollution - Is the Turning Point Real/Air Pollution - Is the Turning Point Real.science",
+      "bytes": 2418109,
+      "sha256": "88555dcae7f19581c7d4006e923b3cbbdb4e30750a722715af211b10ae469943",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Air%20Pollution%20-%20Is%20the%20Turning%20Point%20Real/Air%20Pollution%20-%20Is%20the%20Turning%20Point%20Real.science"
+    },
+    "introduction": {
+      "file_name": "Air Pollution - Is the Turning Point Real.md",
+      "path": "Academic Research/Air Pollution - Is the Turning Point Real/Air Pollution - Is the Turning Point Real.md",
+      "bytes": 2902,
+      "sha256": "b93d8f463ac3c0f9115f1516578be9f337e9008f5de24c426286cf45cb40a86f",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Amazon Tree-Cover Loss - Does the Definition Change the Picture",
+    "name": "amazon-tree-cover-loss-does-the-definition-change-the-picture",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Amazon Tree-Cover Loss - Does the Definition Change the Picture.png",
+      "path": "Academic Research/Amazon Tree-Cover Loss - Does the Definition Change the Picture/Amazon Tree-Cover Loss - Does the Definition Change the Picture.png",
+      "bytes": 2386483,
+      "sha256": "cee289105b1c9f59d3f40332111af764d712fe9f694ec2e049d8443da00894af",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Amazon Tree-Cover Loss - Does the Definition Change the Picture.science",
+      "path": "Academic Research/Amazon Tree-Cover Loss - Does the Definition Change the Picture/Amazon Tree-Cover Loss - Does the Definition Change the Picture.science",
+      "bytes": 149495314,
+      "sha256": "7ff908b1c8fb1478ec8bebd5598875975a9ead6ef5b73c1e3918a23982fe81fe",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Amazon%20Tree-Cover%20Loss%20-%20Does%20the%20Definition%20Change%20the%20Picture/Amazon%20Tree-Cover%20Loss%20-%20Does%20the%20Definition%20Change%20the%20Picture.science"
+    },
+    "introduction": {
+      "file_name": "Amazon Tree-Cover Loss - Does the Definition Change the Picture.md",
+      "path": "Academic Research/Amazon Tree-Cover Loss - Does the Definition Change the Picture/Amazon Tree-Cover Loss - Does the Definition Change the Picture.md",
+      "bytes": 3093,
+      "sha256": "a0cebac05a32ae54b2feee55fe0c22c9dab46f4b4eefb8dd853b6a557ee26eae",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "AqSolDB scaffold novelty and aqueous solubility prediction",
+    "name": "aq-sol-db-scaffold-novelty-and-aqueous-solubility-prediction",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "AqSolDB scaffold novelty and aqueous solubility prediction.png",
+      "path": "Academic Research/AqSolDB scaffold novelty and aqueous solubility prediction/AqSolDB scaffold novelty and aqueous solubility prediction.png",
+      "bytes": 1710321,
+      "sha256": "6294c0df8e669d525c3f55d19c446fb598c5eb69633f3bc625d05937ec77fbce",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "AqSolDB scaffold novelty and aqueous solubility prediction.science",
+      "path": "Academic Research/AqSolDB scaffold novelty and aqueous solubility prediction/AqSolDB scaffold novelty and aqueous solubility prediction.science",
+      "bytes": 264317535,
+      "sha256": "120d442fb6b20a01cbcddb3f02cd764f537c1182d20cf679c27710aa958ff6ba",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/AqSolDB%20scaffold%20novelty%20and%20aqueous%20solubility%20prediction/AqSolDB%20scaffold%20novelty%20and%20aqueous%20solubility%20prediction.science"
+    },
+    "introduction": {
+      "file_name": "AqSolDB scaffold novelty and aqueous solubility prediction.md",
+      "path": "Academic Research/AqSolDB scaffold novelty and aqueous solubility prediction/AqSolDB scaffold novelty and aqueous solubility prediction.md",
+      "bytes": 2694,
+      "sha256": "cc36c94b3b294a03965eadae6df52189f43525ffe98cf71f15d670fe9ccf472f",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Are Overdose Deaths Rising Because America Is Aging",
+    "name": "are-overdose-deaths-rising-because-america-is-aging",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Are Overdose Deaths Rising Because America Is Aging.png",
+      "path": "Academic Research/Are Overdose Deaths Rising Because America Is Aging/Are Overdose Deaths Rising Because America Is Aging.png",
+      "bytes": 1897674,
+      "sha256": "bf5ebfa49fabff932a225b837bdfda4f55f86ba418ffdedb79ac176565f2b7d3",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Are Overdose Deaths Rising Because America Is Aging.science",
+      "path": "Academic Research/Are Overdose Deaths Rising Because America Is Aging/Are Overdose Deaths Rising Because America Is Aging.science",
+      "bytes": 4422601,
+      "sha256": "b2e680e213f2eda4c903491ed1069e25117a020b84627384d8a630dbd82bf16d",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Are%20Overdose%20Deaths%20Rising%20Because%20America%20Is%20Aging/Are%20Overdose%20Deaths%20Rising%20Because%20America%20Is%20Aging.science"
+    },
+    "introduction": {
+      "file_name": "Are Overdose Deaths Rising Because America Is Aging.md",
+      "path": "Academic Research/Are Overdose Deaths Rising Because America Is Aging/Are Overdose Deaths Rising Because America Is Aging.md",
+      "bytes": 2891,
+      "sha256": "0ae8871dd7fe5a14079efdeab3a24ef0f693008e1d682283b879c2bfb221e582",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Blood Metabolites - Can They Distinguish Cancer from Polyps",
+    "name": "blood-metabolites-can-they-distinguish-cancer-from-polyps",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Blood Metabolites - Can They Distinguish Cancer from Polyps.png",
+      "path": "Academic Research/Blood Metabolites - Can They Distinguish Cancer from Polyps/Blood Metabolites - Can They Distinguish Cancer from Polyps.png",
+      "bytes": 1679773,
+      "sha256": "902d0c57ffed5b555688f382a80f860d9854ba48d5e41f24a6b6528a3d971a2a",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Blood Metabolites - Can They Distinguish Cancer from Polyps.science",
+      "path": "Academic Research/Blood Metabolites - Can They Distinguish Cancer from Polyps/Blood Metabolites - Can They Distinguish Cancer from Polyps.science",
+      "bytes": 14506784,
+      "sha256": "2197426d15e62434ae145e196a364b16eeef5c2bd89aac078a45482a6d8bb5ca",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Blood%20Metabolites%20-%20Can%20They%20Distinguish%20Cancer%20from%20Polyps/Blood%20Metabolites%20-%20Can%20They%20Distinguish%20Cancer%20from%20Polyps.science"
+    },
+    "introduction": {
+      "file_name": "Blood Metabolites - Can They Distinguish Cancer from Polyps.md",
+      "path": "Academic Research/Blood Metabolites - Can They Distinguish Cancer from Polyps/Blood Metabolites - Can They Distinguish Cancer from Polyps.md",
+      "bytes": 3151,
+      "sha256": "d641d3225735e7dcf6308f664ec9e94321a5bfb775c1e374d4f9ae31d166ac6d",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Can We Forecast Mauna Loa's CO2",
+    "name": "can-we-forecast-mauna-loa-s-co2",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Can We Forecast Mauna Loa's CO2.png",
+      "path": "Academic Research/Can We Forecast Mauna Loa's CO2/Can We Forecast Mauna Loa's CO2.png",
+      "bytes": 1822133,
+      "sha256": "efef2d5e4814a90c90bb36d032dbc95a5b30430d77bfdefa97b99e7df42abd7f",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Can We Forecast Mauna Loa's CO2.science",
+      "path": "Academic Research/Can We Forecast Mauna Loa's CO2/Can We Forecast Mauna Loa's CO2.science",
+      "bytes": 2733119,
+      "sha256": "ec183c501a0f9138152e0af519174698423fd62cadf64734a2841cce957a9b67",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Can%20We%20Forecast%20Mauna%20Loa%27s%20CO2/Can%20We%20Forecast%20Mauna%20Loa%27s%20CO2.science"
+    },
+    "introduction": {
+      "file_name": "Can We Forecast Mauna Loa's CO2.md",
+      "path": "Academic Research/Can We Forecast Mauna Loa's CO2/Can We Forecast Mauna Loa's CO2.md",
+      "bytes": 2788,
+      "sha256": "a5114504b73a34231bd8a04ebbef58562461957c418d7a6dd64f8b04fd62290d",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Chemical Activity Predictions - Can We Trust the Probabilities",
+    "name": "chemical-activity-predictions-can-we-trust-the-probabilities",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Chemical Activity Predictions - Can We Trust the Probabilities.png",
+      "path": "Academic Research/Chemical Activity Predictions - Can We Trust the Probabilities/Chemical Activity Predictions - Can We Trust the Probabilities.png",
+      "bytes": 1768590,
+      "sha256": "685ebcfb745757797698dfa7b85c0cf527da8e29cd9ea44b616f0539b6748dda",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Chemical Activity Predictions - Can We Trust the Probabilities.science",
+      "path": "Academic Research/Chemical Activity Predictions - Can We Trust the Probabilities/Chemical Activity Predictions - Can We Trust the Probabilities.science",
+      "bytes": 73260193,
+      "sha256": "044e6a003401f5aa887bb1ad5b2fa470ee845feab662129a56d07bbc26834610",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Chemical%20Activity%20Predictions%20-%20Can%20We%20Trust%20the%20Probabilities/Chemical%20Activity%20Predictions%20-%20Can%20We%20Trust%20the%20Probabilities.science"
+    },
+    "introduction": {
+      "file_name": "Chemical Activity Predictions - Can We Trust the Probabilities.md",
+      "path": "Academic Research/Chemical Activity Predictions - Can We Trust the Probabilities/Chemical Activity Predictions - Can We Trust the Probabilities.md",
+      "bytes": 3110,
+      "sha256": "ed75c754563a4284da148e127b42243d0e3ea87294e0215d5a9002972dc0524a",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "COVID-19 Case Counts - Trend or Reporting Noise",
+    "name": "covid-19-case-counts-trend-or-reporting-noise",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "COVID-19 Case Counts - Trend or Reporting Noise.png",
+      "path": "Academic Research/COVID-19 Case Counts - Trend or Reporting Noise/COVID-19 Case Counts - Trend or Reporting Noise.png",
+      "bytes": 1908277,
+      "sha256": "4185108c7836be1c76935341ce96efd6ffe80b53eada27865aac4566e7722832",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "COVID-19 Case Counts - Trend or Reporting Noise.science",
+      "path": "Academic Research/COVID-19 Case Counts - Trend or Reporting Noise/COVID-19 Case Counts - Trend or Reporting Noise.science",
+      "bytes": 16945201,
+      "sha256": "7e4372505e85a850676ae1a860f78115960f731aff3872fc153458b745f1144a",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/COVID-19%20Case%20Counts%20-%20Trend%20or%20Reporting%20Noise/COVID-19%20Case%20Counts%20-%20Trend%20or%20Reporting%20Noise.science"
+    },
+    "introduction": {
+      "file_name": "COVID-19 Case Counts - Trend or Reporting Noise.md",
+      "path": "Academic Research/COVID-19 Case Counts - Trend or Reporting Noise/COVID-19 Case Counts - Trend or Reporting Noise.md",
+      "bytes": 2944,
+      "sha256": "f9133bdb34315653d3d2215993a8623252cfae38539aa5a8eac191eda3d6143e",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Diet Diversity - Does the Gut Microbiome Differ",
+    "name": "diet-diversity-does-the-gut-microbiome-differ",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Diet Diversity - Does the Gut Microbiome Differ.png",
+      "path": "Academic Research/Diet Diversity - Does the Gut Microbiome Differ/Diet Diversity - Does the Gut Microbiome Differ.png",
+      "bytes": 2070033,
+      "sha256": "c74a296e5ab58ea1d911c1ac83c213f714b626f7af5045e3fe5494bf6f8cee57",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Diet Diversity - Does the Gut Microbiome Differ.science",
+      "path": "Academic Research/Diet Diversity - Does the Gut Microbiome Differ/Diet Diversity - Does the Gut Microbiome Differ.science",
+      "bytes": 30806918,
+      "sha256": "ec457ca8f832735c9e7b3414c3145fd472f48c4bad7dbb1d439ffbdb29df5672",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Diet%20Diversity%20-%20Does%20the%20Gut%20Microbiome%20Differ/Diet%20Diversity%20-%20Does%20the%20Gut%20Microbiome%20Differ.science"
+    },
+    "introduction": {
+      "file_name": "Diet Diversity - Does the Gut Microbiome Differ.md",
+      "path": "Academic Research/Diet Diversity - Does the Gut Microbiome Differ/Diet Diversity - Does the Gut Microbiome Differ.md",
+      "bytes": 3016,
+      "sha256": "247e1698f08662b122027df694e76854075820a016e983afe93b14109e4d50f3",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "EGFR potency prediction - an inspectable pilot",
+    "name": "egfr-potency-prediction-an-inspectable-pilot",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "EGFR potency prediction - an inspectable pilot.png",
+      "path": "Academic Research/EGFR potency prediction - an inspectable pilot/EGFR potency prediction - an inspectable pilot.png",
+      "bytes": 1683778,
+      "sha256": "2525b2286013e14ac38c0e4536931581e991f79f7e751fa3f85e0d6ebee357b1",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "EGFR potency prediction - an inspectable pilot.science",
+      "path": "Academic Research/EGFR potency prediction - an inspectable pilot/EGFR potency prediction - an inspectable pilot.science",
+      "bytes": 14002784,
+      "sha256": "20c3e4777b398ca0bae0c574ce887c40868fd02f02d57fd7ec6e2c3335f92412",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/EGFR%20potency%20prediction%20-%20an%20inspectable%20pilot/EGFR%20potency%20prediction%20-%20an%20inspectable%20pilot.science"
+    },
+    "introduction": {
+      "file_name": "EGFR potency prediction - an inspectable pilot.md",
+      "path": "Academic Research/EGFR potency prediction - an inspectable pilot/EGFR potency prediction - an inspectable pilot.md",
+      "bytes": 2614,
+      "sha256": "f993111c98ed9f7273d2a4ff7712282d5a3a1c7bbc4a4170ced3083a10c72ac5",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Florida precipitation and Niño 3.4 seasonal association",
+    "name": "florida-precipitation-and-nino-3-4-seasonal-association",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Florida precipitation and Niño 3.4 seasonal association.png",
+      "path": "Academic Research/Florida precipitation and Niño 3.4 seasonal association/Florida precipitation and Niño 3.4 seasonal association.png",
+      "bytes": 1927915,
+      "sha256": "c9d6f44e665947002d439e2bd7a14cb37eeb0400312ba311cfd74ebd77245797",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Florida precipitation and Niño 3.4 seasonal association.science",
+      "path": "Academic Research/Florida precipitation and Niño 3.4 seasonal association/Florida precipitation and Niño 3.4 seasonal association.science",
+      "bytes": 3093902,
+      "sha256": "512ef74ac172b94fc6da6744c1e245d7df5728c5a3de90373e8d6e63fdbeb239",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Florida%20precipitation%20and%20Ni%C3%B1o%203.4%20seasonal%20association/Florida%20precipitation%20and%20Ni%C3%B1o%203.4%20seasonal%20association.science"
+    },
+    "introduction": {
+      "file_name": "Florida precipitation and Niño 3.4 seasonal association.md",
+      "path": "Academic Research/Florida precipitation and Niño 3.4 seasonal association/Florida precipitation and Niño 3.4 seasonal association.md",
+      "bytes": 2720,
+      "sha256": "5cf44b7b054a5ec8a7a6d5aa70bf0edefc2da8de60f7f58707d9c02ee47f569c",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Genomic context of the Horvath epigenetic clock",
+    "name": "genomic-context-of-the-horvath-epigenetic-clock",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Genomic context of the Horvath epigenetic clock.png",
+      "path": "Academic Research/Genomic context of the Horvath epigenetic clock/Genomic context of the Horvath epigenetic clock.png",
+      "bytes": 1712766,
+      "sha256": "8c451f95b7ba0edfc57d1d9f45af5309ec93b12733479e8fc776bc706a1694c4",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Genomic context of the Horvath epigenetic clock.science",
+      "path": "Academic Research/Genomic context of the Horvath epigenetic clock/Genomic context of the Horvath epigenetic clock.science",
+      "bytes": 50849100,
+      "sha256": "f84422ee366bf49fdae60516f6c9ac53ad4a89f04cc752c0a8a8373691d2522e",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Genomic%20context%20of%20the%20Horvath%20epigenetic%20clock/Genomic%20context%20of%20the%20Horvath%20epigenetic%20clock.science"
+    },
+    "introduction": {
+      "file_name": "Genomic context of the Horvath epigenetic clock.md",
+      "path": "Academic Research/Genomic context of the Horvath epigenetic clock/Genomic context of the Horvath epigenetic clock.md",
+      "bytes": 2674,
+      "sha256": "9a12987dd1666d40a28b0467a23efd714a3431541c486852845446e84bb9f078",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "GLP-1 medicines and adverse-event reporting patterns",
+    "name": "glp-1-medicines-and-adverse-event-reporting-patterns",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "GLP-1 medicines and adverse-event reporting patterns.png",
+      "path": "Academic Research/GLP-1 medicines and adverse-event reporting patterns/GLP-1 medicines and adverse-event reporting patterns.png",
+      "bytes": 1666012,
+      "sha256": "9743bbf7ab80a3b8cb150506f5c78b3f2f22cec37c5ca41806a9925b8270b7a2",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "GLP-1 medicines and adverse-event reporting patterns.science",
+      "path": "Academic Research/GLP-1 medicines and adverse-event reporting patterns/GLP-1 medicines and adverse-event reporting patterns.science",
+      "bytes": 87646343,
+      "sha256": "3950b68bddd1c3853fef83c19989f395fc082d8dbf65c90a189704a2d4fc2c40",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/GLP-1%20medicines%20and%20adverse-event%20reporting%20patterns/GLP-1%20medicines%20and%20adverse-event%20reporting%20patterns.science"
+    },
+    "introduction": {
+      "file_name": "GLP-1 medicines and adverse-event reporting patterns.md",
+      "path": "Academic Research/GLP-1 medicines and adverse-event reporting patterns/GLP-1 medicines and adverse-event reporting patterns.md",
+      "bytes": 2636,
+      "sha256": "613e253ccefd940cd06880861d87c44e7ea6b05610ad7801d99a8486bd9f7922",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Involved versus uninvolved Crohn ileum - donor-aware expression assessment",
+    "name": "involved-versus-uninvolved-crohn-ileum-donor-aware-expression-assessment",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Involved versus uninvolved Crohn ileum - donor-aware expression assessment.png",
+      "path": "Academic Research/Involved versus uninvolved Crohn ileum - donor-aware expression assessment/Involved versus uninvolved Crohn ileum - donor-aware expression assessment.png",
+      "bytes": 1712846,
+      "sha256": "068fab4c26000c2a2570a54a74b3168bfd9a38aa623401c88541090e2b5421f5",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Involved versus uninvolved Crohn ileum - donor-aware expression assessment.science",
+      "path": "Academic Research/Involved versus uninvolved Crohn ileum - donor-aware expression assessment/Involved versus uninvolved Crohn ileum - donor-aware expression assessment.science",
+      "bytes": 502695397,
+      "sha256": "3332138ef424dcae656bb4c739f1b419326fcb93f77a11ca441918c3b5dbe037",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Involved%20versus%20uninvolved%20Crohn%20ileum%20-%20donor-aware%20expression%20assessment/Involved%20versus%20uninvolved%20Crohn%20ileum%20-%20donor-aware%20expression%20assessment.science"
+    },
+    "introduction": {
+      "file_name": "Involved versus uninvolved Crohn ileum - donor-aware expression assessment.md",
+      "path": "Academic Research/Involved versus uninvolved Crohn ileum - donor-aware expression assessment/Involved versus uninvolved Crohn ileum - donor-aware expression assessment.md",
+      "bytes": 2939,
+      "sha256": "de0e67c8d57d93d047283d333cc196a89641e079b67e4841583b698e48cb8fe2",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Kidney Cancer - What Sets the Subtypes Apart",
+    "name": "kidney-cancer-what-sets-the-subtypes-apart",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Kidney Cancer - What Sets the Subtypes Apart.png",
+      "path": "Academic Research/Kidney Cancer - What Sets the Subtypes Apart/Kidney Cancer - What Sets the Subtypes Apart.png",
+      "bytes": 1753255,
+      "sha256": "a5e8c84292bd09950409ef427115a9edd3a3a0978deff1866fff9fbcd56aad06",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Kidney Cancer - What Sets the Subtypes Apart.science",
+      "path": "Academic Research/Kidney Cancer - What Sets the Subtypes Apart/Kidney Cancer - What Sets the Subtypes Apart.science",
+      "bytes": 991179045,
+      "sha256": "b2ca04d9c95766d798809f0d61d8c7a431e48679cb83e77fd481c60622c53a1f",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Kidney%20Cancer%20-%20What%20Sets%20the%20Subtypes%20Apart/Kidney%20Cancer%20-%20What%20Sets%20the%20Subtypes%20Apart.science"
+    },
+    "introduction": {
+      "file_name": "Kidney Cancer - What Sets the Subtypes Apart.md",
+      "path": "Academic Research/Kidney Cancer - What Sets the Subtypes Apart/Kidney Cancer - What Sets the Subtypes Apart.md",
+      "bytes": 2993,
+      "sha256": "839b40598615d19872c3290d241467a568ab5fd53289f6737a93a35556b1f840",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "KRAS Mutations - Do Survival Patterns Differ",
+    "name": "kras-mutations-do-survival-patterns-differ",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "KRAS Mutations - Do Survival Patterns Differ.png",
+      "path": "Academic Research/KRAS Mutations - Do Survival Patterns Differ/KRAS Mutations - Do Survival Patterns Differ.png",
+      "bytes": 1692565,
+      "sha256": "0e0202692f06e1a6cb67d42d2663aa06fedbb77b9ff402a7847e299b5e53d670",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "KRAS Mutations - Do Survival Patterns Differ.science",
+      "path": "Academic Research/KRAS Mutations - Do Survival Patterns Differ/KRAS Mutations - Do Survival Patterns Differ.science",
+      "bytes": 25604783,
+      "sha256": "588d4c4f880ea99082700251e713575b25d11b48158a47a3d1c8733d0d8d9fe6",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/KRAS%20Mutations%20-%20Do%20Survival%20Patterns%20Differ/KRAS%20Mutations%20-%20Do%20Survival%20Patterns%20Differ.science"
+    },
+    "introduction": {
+      "file_name": "KRAS Mutations - Do Survival Patterns Differ.md",
+      "path": "Academic Research/KRAS Mutations - Do Survival Patterns Differ/KRAS Mutations - Do Survival Patterns Differ.md",
+      "bytes": 2878,
+      "sha256": "d8cba9f5fb593f946d9d2e4ed3280b49ddf10842a9d9ddf8c6786cfc7ceb7e4c",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Lymphoma Biomarkers - What Does the Evidence Support",
+    "name": "lymphoma-biomarkers-what-does-the-evidence-support",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Lymphoma Biomarkers - What Does the Evidence Support.png",
+      "path": "Academic Research/Lymphoma Biomarkers - What Does the Evidence Support/Lymphoma Biomarkers - What Does the Evidence Support.png",
+      "bytes": 1693381,
+      "sha256": "d9ebcca86de533884fa4174440349889c2ca606035b4ad89f306ca543b7b8513",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Lymphoma Biomarkers - What Does the Evidence Support.science",
+      "path": "Academic Research/Lymphoma Biomarkers - What Does the Evidence Support/Lymphoma Biomarkers - What Does the Evidence Support.science",
+      "bytes": 4093585,
+      "sha256": "3e845b87b8a7c4323c6a0d2537ad2b0dbe2ff4659f0e14e087801198c2eef5ca",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Lymphoma%20Biomarkers%20-%20What%20Does%20the%20Evidence%20Support/Lymphoma%20Biomarkers%20-%20What%20Does%20the%20Evidence%20Support.science"
+    },
+    "introduction": {
+      "file_name": "Lymphoma Biomarkers - What Does the Evidence Support.md",
+      "path": "Academic Research/Lymphoma Biomarkers - What Does the Evidence Support/Lymphoma Biomarkers - What Does the Evidence Support.md",
+      "bytes": 3075,
+      "sha256": "72593e417e91f085f60737a8254911c2469a54acfd1ba6d43809d52079e06663",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Mass Spectra - Can They Reveal a Chemical Family",
+    "name": "mass-spectra-can-they-reveal-a-chemical-family",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Mass Spectra - Can They Reveal a Chemical Family.png",
+      "path": "Academic Research/Mass Spectra - Can They Reveal a Chemical Family/Mass Spectra - Can They Reveal a Chemical Family.png",
+      "bytes": 1807292,
+      "sha256": "89823854bddc790f2bc4769b905b71ae1ef073823faf3e983d5e05c233c946ba",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Mass Spectra - Can They Reveal a Chemical Family.science",
+      "path": "Academic Research/Mass Spectra - Can They Reveal a Chemical Family/Mass Spectra - Can They Reveal a Chemical Family.science",
+      "bytes": 1459578866,
+      "sha256": "d968193a142df4400f761bfd059db62df0560f1ae4e3526853fa44e04a9a1613",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Mass%20Spectra%20-%20Can%20They%20Reveal%20a%20Chemical%20Family/Mass%20Spectra%20-%20Can%20They%20Reveal%20a%20Chemical%20Family.science"
+    },
+    "introduction": {
+      "file_name": "Mass Spectra - Can They Reveal a Chemical Family.md",
+      "path": "Academic Research/Mass Spectra - Can They Reveal a Chemical Family/Mass Spectra - Can They Reveal a Chemical Family.md",
+      "bytes": 3029,
+      "sha256": "6aacc9523eda1b3ae3295c1d50e58253a7b6ea2229bd945d37758391e550e338",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024)",
+    "name": "monitoring-site-mix-and-pm2-5-trends-in-los-angeles-county-2015-2024",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024).png",
+      "path": "Academic Research/Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024)/Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024).png",
+      "bytes": 1879216,
+      "sha256": "444775d92ba9c0ad23feddae1ea4e06e6b859aa6a06b405946c65771376ad1b9",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024).science",
+      "path": "Academic Research/Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024)/Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024).science",
+      "bytes": 4972234,
+      "sha256": "5f01b22852f9e089827b334cd2bbdd7e6eda37fe6efac9f60b44086926073624",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Monitoring-site%20mix%20and%20PM2.5%20trends%20in%20Los%20Angeles%20County%20%282015%E2%80%932024%29/Monitoring-site%20mix%20and%20PM2.5%20trends%20in%20Los%20Angeles%20County%20%282015%E2%80%932024%29.science"
+    },
+    "introduction": {
+      "file_name": "Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024).md",
+      "path": "Academic Research/Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024)/Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024).md",
+      "bytes": 2913,
+      "sha256": "b1e641cef66ca3078f59cdb8527fc17c84718ead4479a752a09c9102d413ad74",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Ocean Microbes - How Do They Relate to Nutrients",
+    "name": "ocean-microbes-how-do-they-relate-to-nutrients",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Ocean Microbes - How Do They Relate to Nutrients.png",
+      "path": "Academic Research/Ocean Microbes - How Do They Relate to Nutrients/Ocean Microbes - How Do They Relate to Nutrients.png",
+      "bytes": 1964614,
+      "sha256": "6ccf4091e5b01d5b8e5fbecba0ba4f70a97467f46742ebf0c93fea6fad4a08a2",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Ocean Microbes - How Do They Relate to Nutrients.science",
+      "path": "Academic Research/Ocean Microbes - How Do They Relate to Nutrients/Ocean Microbes - How Do They Relate to Nutrients.science",
+      "bytes": 30040736,
+      "sha256": "decae8c5dcbfe5219edf2f1c1b04f34e3bc4e34af43d1f8a1a3b718847194289",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Ocean%20Microbes%20-%20How%20Do%20They%20Relate%20to%20Nutrients/Ocean%20Microbes%20-%20How%20Do%20They%20Relate%20to%20Nutrients.science"
+    },
+    "introduction": {
+      "file_name": "Ocean Microbes - How Do They Relate to Nutrients.md",
+      "path": "Academic Research/Ocean Microbes - How Do They Relate to Nutrients/Ocean Microbes - How Do They Relate to Nutrients.md",
+      "bytes": 3038,
+      "sha256": "fd3b7c3798c1cb75121066383feac601c2f84e0c68d0775051e82442143546cb",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Pennsylvania construction employment and monitored PM2.5, 2023",
+    "name": "pennsylvania-construction-employment-and-monitored-pm2-5-2023",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Pennsylvania construction employment and monitored PM2.5, 2023.png",
+      "path": "Academic Research/Pennsylvania construction employment and monitored PM2.5, 2023/Pennsylvania construction employment and monitored PM2.5, 2023.png",
+      "bytes": 1873589,
+      "sha256": "e647782996d31fd6b988b727bffb860b7dcd1f9ded8742f2e11e42c04f51d237",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Pennsylvania construction employment and monitored PM2.5, 2023.science",
+      "path": "Academic Research/Pennsylvania construction employment and monitored PM2.5, 2023/Pennsylvania construction employment and monitored PM2.5, 2023.science",
+      "bytes": 5387791,
+      "sha256": "1ce9096b0c8d07953d5a09040367ec3da187f2a2b22d91884ec5cf7daa6ab128",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Pennsylvania%20construction%20employment%20and%20monitored%20PM2.5%2C%202023/Pennsylvania%20construction%20employment%20and%20monitored%20PM2.5%2C%202023.science"
+    },
+    "introduction": {
+      "file_name": "Pennsylvania construction employment and monitored PM2.5, 2023.md",
+      "path": "Academic Research/Pennsylvania construction employment and monitored PM2.5, 2023/Pennsylvania construction employment and monitored PM2.5, 2023.md",
+      "bytes": 2728,
+      "sha256": "11af63cdbcab28931062a96c4a6410434cd35bd3d958b6e9d89c44d1d399db38",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "PFAS assay activity and placental cell-type expression",
+    "name": "pfas-assay-activity-and-placental-cell-type-expression",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "PFAS assay activity and placental cell-type expression.png",
+      "path": "Academic Research/PFAS assay activity and placental cell-type expression/PFAS assay activity and placental cell-type expression.png",
+      "bytes": 1743097,
+      "sha256": "d7eb6ffa49c4d0f0227ec4dd8b70317de45bec1b43504fe7a0802eb87ed3f823",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "PFAS assay activity and placental cell-type expression.science",
+      "path": "Academic Research/PFAS assay activity and placental cell-type expression/PFAS assay activity and placental cell-type expression.science",
+      "bytes": 702028415,
+      "sha256": "747c9e1c7053c15ccd9eab620ab6589b044dd215f8915d07156b3e8fd7554efc",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/PFAS%20assay%20activity%20and%20placental%20cell-type%20expression/PFAS%20assay%20activity%20and%20placental%20cell-type%20expression.science"
+    },
+    "introduction": {
+      "file_name": "PFAS assay activity and placental cell-type expression.md",
+      "path": "Academic Research/PFAS assay activity and placental cell-type expression/PFAS assay activity and placental cell-type expression.md",
+      "bytes": 2660,
+      "sha256": "c4ceca41d81ec4b2e04dd884832e52216fe28ed8f9ce6666148efea72f0c24b9",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Physical activity and diabetes among US adults (NHANES 2011–2018)",
+    "name": "physical-activity-and-diabetes-among-us-adults-nhanes-2011-2018",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Physical activity and diabetes among US adults (NHANES 2011–2018).png",
+      "path": "Academic Research/Physical activity and diabetes among US adults (NHANES 2011–2018)/Physical activity and diabetes among US adults (NHANES 2011–2018).png",
+      "bytes": 2050894,
+      "sha256": "13aa5eb768f5321c0adfcb8b1cd629e76ca2605c5fb8bea81e4353fa69205497",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Physical activity and diabetes among US adults (NHANES 2011–2018).science",
+      "path": "Academic Research/Physical activity and diabetes among US adults (NHANES 2011–2018)/Physical activity and diabetes among US adults (NHANES 2011–2018).science",
+      "bytes": 76283248,
+      "sha256": "fe3db6a7ddd54e15db365935c49db16093693c87d92106a2efe758cbcd99f198",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Physical%20activity%20and%20diabetes%20among%20US%20adults%20%28NHANES%202011%E2%80%932018%29/Physical%20activity%20and%20diabetes%20among%20US%20adults%20%28NHANES%202011%E2%80%932018%29.science"
+    },
+    "introduction": {
+      "file_name": "Physical activity and diabetes among US adults (NHANES 2011–2018).md",
+      "path": "Academic Research/Physical activity and diabetes among US adults (NHANES 2011–2018)/Physical activity and diabetes among US adults (NHANES 2011–2018).md",
+      "bytes": 2856,
+      "sha256": "66415145b39e7cf54d58755ecdd1e9f125967a9a7bb7abc65e7176db64e3b2c9",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Protein abundance in ischemic failing versus non-failing human hearts",
+    "name": "protein-abundance-in-ischemic-failing-versus-non-failing-human-hearts",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Protein abundance in ischemic failing versus non-failing human hearts.png",
+      "path": "Academic Research/Protein abundance in ischemic failing versus non-failing human hearts/Protein abundance in ischemic failing versus non-failing human hearts.png",
+      "bytes": 1697491,
+      "sha256": "4b2d68c6a61cc5d135aec452ec446e698e829899cad1d0d68fb100609bf6fa88",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Protein abundance in ischemic failing versus non-failing human hearts.science",
+      "path": "Academic Research/Protein abundance in ischemic failing versus non-failing human hearts/Protein abundance in ischemic failing versus non-failing human hearts.science",
+      "bytes": 46519870,
+      "sha256": "8677fc130c8c69615433557821a210cdaa0b80a6bd890d49de09daf9cfdb1c69",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Protein%20abundance%20in%20ischemic%20failing%20versus%20non-failing%20human%20hearts/Protein%20abundance%20in%20ischemic%20failing%20versus%20non-failing%20human%20hearts.science"
+    },
+    "introduction": {
+      "file_name": "Protein abundance in ischemic failing versus non-failing human hearts.md",
+      "path": "Academic Research/Protein abundance in ischemic failing versus non-failing human hearts/Protein abundance in ischemic failing versus non-failing human hearts.md",
+      "bytes": 2795,
+      "sha256": "7bbc53ccc128ab6ffd143c7b6835c89d678efde4d96189ce62fc5cee7c001c68",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Protein Measurements - Do the Ratios Add Up",
+    "name": "protein-measurements-do-the-ratios-add-up",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Protein Measurements - Do the Ratios Add Up.png",
+      "path": "Academic Research/Protein Measurements - Do the Ratios Add Up/Protein Measurements - Do the Ratios Add Up.png",
+      "bytes": 1710558,
+      "sha256": "9d0b87718cd9eb4cd7c372f3915e90ee994f78525dd66c98d8bc37e4239323bd",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Protein Measurements - Do the Ratios Add Up.science",
+      "path": "Academic Research/Protein Measurements - Do the Ratios Add Up/Protein Measurements - Do the Ratios Add Up.science",
+      "bytes": 200891766,
+      "sha256": "77f2479441a56685ba8985e9e0b8ed9c1138460063a6d439b9120c28fde52c3f",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Protein%20Measurements%20-%20Do%20the%20Ratios%20Add%20Up/Protein%20Measurements%20-%20Do%20the%20Ratios%20Add%20Up.science"
+    },
+    "introduction": {
+      "file_name": "Protein Measurements - Do the Ratios Add Up.md",
+      "path": "Academic Research/Protein Measurements - Do the Ratios Add Up/Protein Measurements - Do the Ratios Add Up.md",
+      "bytes": 2843,
+      "sha256": "0446ff8fc7c6d1894f27d346abd0e74f900d1c04354304ae033c74c6e8e0c722",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "RAS mutations in two public pancreatic cohorts",
+    "name": "ras-mutations-in-two-public-pancreatic-cohorts",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "RAS mutations in two public pancreatic cohorts.png",
+      "path": "Academic Research/RAS mutations in two public pancreatic cohorts/RAS mutations in two public pancreatic cohorts.png",
+      "bytes": 1693479,
+      "sha256": "fa7fcc66820acd40f7dd9622244d6ab5b7c77a6ac80cfbb5a38de4279a510083",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "RAS mutations in two public pancreatic cohorts.science",
+      "path": "Academic Research/RAS mutations in two public pancreatic cohorts/RAS mutations in two public pancreatic cohorts.science",
+      "bytes": 4125336,
+      "sha256": "3f0c435b42566a6ccb97a08140bc9d947fde25c729c9ecbf496d069e604c4b94",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/RAS%20mutations%20in%20two%20public%20pancreatic%20cohorts/RAS%20mutations%20in%20two%20public%20pancreatic%20cohorts.science"
+    },
+    "introduction": {
+      "file_name": "RAS mutations in two public pancreatic cohorts.md",
+      "path": "Academic Research/RAS mutations in two public pancreatic cohorts/RAS mutations in two public pancreatic cohorts.md",
+      "bytes": 2633,
+      "sha256": "26cc535771ddfbb90afe74ae2320e9d07629ac873e5f5586bfb4f62c27a71ba7",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Registry-results availability in completed glioblastoma trials",
+    "name": "registry-results-availability-in-completed-glioblastoma-trials",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Registry-results availability in completed glioblastoma trials.png",
+      "path": "Academic Research/Registry-results availability in completed glioblastoma trials/Registry-results availability in completed glioblastoma trials.png",
+      "bytes": 1649112,
+      "sha256": "ac023de290b4edff38f781d9c10ad60ee38cc9026ded2d2d19d999fd6f7ff6bb",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Registry-results availability in completed glioblastoma trials.science",
+      "path": "Academic Research/Registry-results availability in completed glioblastoma trials/Registry-results availability in completed glioblastoma trials.science",
+      "bytes": 1846866,
+      "sha256": "ddc2191f5a13e4168efcc51c9f52efbe7a558864be0f2cdeb140be2dd9447c99",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Registry-results%20availability%20in%20completed%20glioblastoma%20trials/Registry-results%20availability%20in%20completed%20glioblastoma%20trials.science"
+    },
+    "introduction": {
+      "file_name": "Registry-results availability in completed glioblastoma trials.md",
+      "path": "Academic Research/Registry-results availability in completed glioblastoma trials/Registry-results availability in completed glioblastoma trials.md",
+      "bytes": 2713,
+      "sha256": "4793a49a09018a2bafea85361ac11b59d57702994dd7618d40879b176e240c9e",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Spatial Immune Organization and Breast Cancer Prognosis",
+    "name": "spatial-immune-organization-and-breast-cancer-prognosis",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Spatial Immune Organization and Breast Cancer Prognosis.png",
+      "path": "Academic Research/Spatial Immune Organization and Breast Cancer Prognosis/Spatial Immune Organization and Breast Cancer Prognosis.png",
+      "bytes": 1635227,
+      "sha256": "69ab9e840e41ad937a1e892b7527281d01ade4e0b91f4e393fa982f41b35b309",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Spatial Immune Organization and Breast Cancer Prognosis.science",
+      "path": "Academic Research/Spatial Immune Organization and Breast Cancer Prognosis/Spatial Immune Organization and Breast Cancer Prognosis.science",
+      "bytes": 696018441,
+      "sha256": "dd563629ca34a1d1044e4f48ae00c44e66378cce60b4fa8e0170be087f8cce2a",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Spatial%20Immune%20Organization%20and%20Breast%20Cancer%20Prognosis/Spatial%20Immune%20Organization%20and%20Breast%20Cancer%20Prognosis.science"
+    },
+    "introduction": {
+      "file_name": "Spatial Immune Organization and Breast Cancer Prognosis.md",
+      "path": "Academic Research/Spatial Immune Organization and Breast Cancer Prognosis/Spatial Immune Organization and Breast Cancer Prognosis.md",
+      "bytes": 3019,
+      "sha256": "819a0a0501d587126deb660833c1d35176d24264451b6987d86a064e5eb3df95",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Worm longevity genes and human exceptional-longevity evidence",
+    "name": "worm-longevity-genes-and-human-exceptional-longevity-evidence",
+    "catalog": "Academic Research",
+    "catalog_name": "academic-research",
+    "cover": {
+      "file_name": "Worm longevity genes and human exceptional-longevity evidence.png",
+      "path": "Academic Research/Worm longevity genes and human exceptional-longevity evidence/Worm longevity genes and human exceptional-longevity evidence.png",
+      "bytes": 1732098,
+      "sha256": "5787169263a363279bc4f017682a4bb2fb1dd305712e46f8c9f8151f8324d9b4",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Worm longevity genes and human exceptional-longevity evidence.science",
+      "path": "Academic Research/Worm longevity genes and human exceptional-longevity evidence/Worm longevity genes and human exceptional-longevity evidence.science",
+      "bytes": 269483106,
+      "sha256": "2e64bebbcdc6140d234ba316aa10ee3d8c1111b1afe584e257ba12c6705df76d",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/b95158d1fb9fec49a5044657aad02fa7145eb64d/Academic%20Research/Worm%20longevity%20genes%20and%20human%20exceptional-longevity%20evidence/Worm%20longevity%20genes%20and%20human%20exceptional-longevity%20evidence.science"
+    },
+    "introduction": {
+      "file_name": "Worm longevity genes and human exceptional-longevity evidence.md",
+      "path": "Academic Research/Worm longevity genes and human exceptional-longevity evidence/Worm longevity genes and human exceptional-longevity evidence.md",
+      "bytes": 2719,
+      "sha256": "22b7508ddaae2b9bb594d24ae3e969a792d5670cc434079e45a73a7ca9684a17",
+      "release_url": ""
+    }
   }
 ]

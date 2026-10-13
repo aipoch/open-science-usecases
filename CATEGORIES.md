@@ -1,6 +1,6 @@
 # Case categories
 
-94 active cases synchronized with Hugging Face. `manifest.json` declares catalog fields and classified resource paths; `categories.json` records category membership and supplied Creator attribution.
+124 active cases synchronized with Hugging Face. `manifest.json` declares catalog fields and classified resource paths; `categories.json` records category membership and supplied Creator attribution.
 
 ## Curiosity Lab (48)
 
@@ -106,7 +106,38 @@
 | Does AI Practice Translate into Independent Learning | @cheery9998 | [Read](./AI%20Research/Does%20AI%20Practice%20Translate%20into%20Independent%20Learning/Does%20AI%20Practice%20Translate%20into%20Independent%20Learning.md) |
 | Recursive Self-Improvement - What Does the Evidence Show | @dongxi_nlp | [Read](./AI%20Research/Recursive%20Self-Improvement%20-%20What%20Does%20the%20Evidence%20Show/Recursive%20Self-Improvement%20-%20What%20Does%20the%20Evidence%20Show.md) |
 
-## Academic Research (0)
+## Academic Research (30)
 
-Reserved for future academic research cases.
+| Case | Creator | Introduction |
+|---|---|---|
+| 2,000 Natural Products - How Diverse Are They | — | [Read](./Academic%20Research/2%2C000%20Natural%20Products%20-%20How%20Diverse%20Are%20They/2%2C000%20Natural%20Products%20-%20How%20Diverse%20Are%20They.md) |
+| Air Pollution - Is the Turning Point Real | — | [Read](./Academic%20Research/Air%20Pollution%20-%20Is%20the%20Turning%20Point%20Real/Air%20Pollution%20-%20Is%20the%20Turning%20Point%20Real.md) |
+| Amazon Tree-Cover Loss - Does the Definition Change the Picture | — | [Read](./Academic%20Research/Amazon%20Tree-Cover%20Loss%20-%20Does%20the%20Definition%20Change%20the%20Picture/Amazon%20Tree-Cover%20Loss%20-%20Does%20the%20Definition%20Change%20the%20Picture.md) |
+| AqSolDB scaffold novelty and aqueous solubility prediction | — | [Read](./Academic%20Research/AqSolDB%20scaffold%20novelty%20and%20aqueous%20solubility%20prediction/AqSolDB%20scaffold%20novelty%20and%20aqueous%20solubility%20prediction.md) |
+| Are Overdose Deaths Rising Because America Is Aging | — | [Read](./Academic%20Research/Are%20Overdose%20Deaths%20Rising%20Because%20America%20Is%20Aging/Are%20Overdose%20Deaths%20Rising%20Because%20America%20Is%20Aging.md) |
+| Blood Metabolites - Can They Distinguish Cancer from Polyps | — | [Read](./Academic%20Research/Blood%20Metabolites%20-%20Can%20They%20Distinguish%20Cancer%20from%20Polyps/Blood%20Metabolites%20-%20Can%20They%20Distinguish%20Cancer%20from%20Polyps.md) |
+| Can We Forecast Mauna Loa's CO2 | — | [Read](./Academic%20Research/Can%20We%20Forecast%20Mauna%20Loa%27s%20CO2/Can%20We%20Forecast%20Mauna%20Loa%27s%20CO2.md) |
+| Chemical Activity Predictions - Can We Trust the Probabilities | — | [Read](./Academic%20Research/Chemical%20Activity%20Predictions%20-%20Can%20We%20Trust%20the%20Probabilities/Chemical%20Activity%20Predictions%20-%20Can%20We%20Trust%20the%20Probabilities.md) |
+| COVID-19 Case Counts - Trend or Reporting Noise | — | [Read](./Academic%20Research/COVID-19%20Case%20Counts%20-%20Trend%20or%20Reporting%20Noise/COVID-19%20Case%20Counts%20-%20Trend%20or%20Reporting%20Noise.md) |
+| Diet Diversity - Does the Gut Microbiome Differ | — | [Read](./Academic%20Research/Diet%20Diversity%20-%20Does%20the%20Gut%20Microbiome%20Differ/Diet%20Diversity%20-%20Does%20the%20Gut%20Microbiome%20Differ.md) |
+| EGFR potency prediction - an inspectable pilot | — | [Read](./Academic%20Research/EGFR%20potency%20prediction%20-%20an%20inspectable%20pilot/EGFR%20potency%20prediction%20-%20an%20inspectable%20pilot.md) |
+| Florida precipitation and Niño 3.4 seasonal association | — | [Read](./Academic%20Research/Florida%20precipitation%20and%20Ni%C3%B1o%203.4%20seasonal%20association/Florida%20precipitation%20and%20Ni%C3%B1o%203.4%20seasonal%20association.md) |
+| Genomic context of the Horvath epigenetic clock | — | [Read](./Academic%20Research/Genomic%20context%20of%20the%20Horvath%20epigenetic%20clock/Genomic%20context%20of%20the%20Horvath%20epigenetic%20clock.md) |
+| GLP-1 medicines and adverse-event reporting patterns | — | [Read](./Academic%20Research/GLP-1%20medicines%20and%20adverse-event%20reporting%20patterns/GLP-1%20medicines%20and%20adverse-event%20reporting%20patterns.md) |
+| Involved versus uninvolved Crohn ileum - donor-aware expression assessment | — | [Read](./Academic%20Research/Involved%20versus%20uninvolved%20Crohn%20ileum%20-%20donor-aware%20expression%20assessment/Involved%20versus%20uninvolved%20Crohn%20ileum%20-%20donor-aware%20expression%20assessment.md) |
+| Kidney Cancer - What Sets the Subtypes Apart | — | [Read](./Academic%20Research/Kidney%20Cancer%20-%20What%20Sets%20the%20Subtypes%20Apart/Kidney%20Cancer%20-%20What%20Sets%20the%20Subtypes%20Apart.md) |
+| KRAS Mutations - Do Survival Patterns Differ | — | [Read](./Academic%20Research/KRAS%20Mutations%20-%20Do%20Survival%20Patterns%20Differ/KRAS%20Mutations%20-%20Do%20Survival%20Patterns%20Differ.md) |
+| Lymphoma Biomarkers - What Does the Evidence Support | — | [Read](./Academic%20Research/Lymphoma%20Biomarkers%20-%20What%20Does%20the%20Evidence%20Support/Lymphoma%20Biomarkers%20-%20What%20Does%20the%20Evidence%20Support.md) |
+| Mass Spectra - Can They Reveal a Chemical Family | — | [Read](./Academic%20Research/Mass%20Spectra%20-%20Can%20They%20Reveal%20a%20Chemical%20Family/Mass%20Spectra%20-%20Can%20They%20Reveal%20a%20Chemical%20Family.md) |
+| Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024) | — | [Read](./Academic%20Research/Monitoring-site%20mix%20and%20PM2.5%20trends%20in%20Los%20Angeles%20County%20%282015%E2%80%932024%29/Monitoring-site%20mix%20and%20PM2.5%20trends%20in%20Los%20Angeles%20County%20%282015%E2%80%932024%29.md) |
+| Ocean Microbes - How Do They Relate to Nutrients | — | [Read](./Academic%20Research/Ocean%20Microbes%20-%20How%20Do%20They%20Relate%20to%20Nutrients/Ocean%20Microbes%20-%20How%20Do%20They%20Relate%20to%20Nutrients.md) |
+| Pennsylvania construction employment and monitored PM2.5, 2023 | — | [Read](./Academic%20Research/Pennsylvania%20construction%20employment%20and%20monitored%20PM2.5%2C%202023/Pennsylvania%20construction%20employment%20and%20monitored%20PM2.5%2C%202023.md) |
+| PFAS assay activity and placental cell-type expression | — | [Read](./Academic%20Research/PFAS%20assay%20activity%20and%20placental%20cell-type%20expression/PFAS%20assay%20activity%20and%20placental%20cell-type%20expression.md) |
+| Physical activity and diabetes among US adults (NHANES 2011–2018) | — | [Read](./Academic%20Research/Physical%20activity%20and%20diabetes%20among%20US%20adults%20%28NHANES%202011%E2%80%932018%29/Physical%20activity%20and%20diabetes%20among%20US%20adults%20%28NHANES%202011%E2%80%932018%29.md) |
+| Protein abundance in ischemic failing versus non-failing human hearts | — | [Read](./Academic%20Research/Protein%20abundance%20in%20ischemic%20failing%20versus%20non-failing%20human%20hearts/Protein%20abundance%20in%20ischemic%20failing%20versus%20non-failing%20human%20hearts.md) |
+| Protein Measurements - Do the Ratios Add Up | — | [Read](./Academic%20Research/Protein%20Measurements%20-%20Do%20the%20Ratios%20Add%20Up/Protein%20Measurements%20-%20Do%20the%20Ratios%20Add%20Up.md) |
+| RAS mutations in two public pancreatic cohorts | — | [Read](./Academic%20Research/RAS%20mutations%20in%20two%20public%20pancreatic%20cohorts/RAS%20mutations%20in%20two%20public%20pancreatic%20cohorts.md) |
+| Registry-results availability in completed glioblastoma trials | — | [Read](./Academic%20Research/Registry-results%20availability%20in%20completed%20glioblastoma%20trials/Registry-results%20availability%20in%20completed%20glioblastoma%20trials.md) |
+| Spatial Immune Organization and Breast Cancer Prognosis | — | [Read](./Academic%20Research/Spatial%20Immune%20Organization%20and%20Breast%20Cancer%20Prognosis/Spatial%20Immune%20Organization%20and%20Breast%20Cancer%20Prognosis.md) |
+| Worm longevity genes and human exceptional-longevity evidence | — | [Read](./Academic%20Research/Worm%20longevity%20genes%20and%20human%20exceptional-longevity%20evidence/Worm%20longevity%20genes%20and%20human%20exceptional-longevity%20evidence.md) |
 

@@ -480,6 +480,156 @@
       "name": "soil-heavy-metals-upstream-vs-downstream",
       "category": "Curiosity Lab",
       "creator": "@RealYDT"
+    },
+    {
+      "title": "2,000 Natural Products - How Diverse Are They",
+      "name": "2-000-natural-products-how-diverse-are-they",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Air Pollution - Is the Turning Point Real",
+      "name": "air-pollution-is-the-turning-point-real",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Amazon Tree-Cover Loss - Does the Definition Change the Picture",
+      "name": "amazon-tree-cover-loss-does-the-definition-change-the-picture",
+      "category": "Academic Research"
+    },
+    {
+      "title": "AqSolDB scaffold novelty and aqueous solubility prediction",
+      "name": "aq-sol-db-scaffold-novelty-and-aqueous-solubility-prediction",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Are Overdose Deaths Rising Because America Is Aging",
+      "name": "are-overdose-deaths-rising-because-america-is-aging",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Blood Metabolites - Can They Distinguish Cancer from Polyps",
+      "name": "blood-metabolites-can-they-distinguish-cancer-from-polyps",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Can We Forecast Mauna Loa's CO2",
+      "name": "can-we-forecast-mauna-loa-s-co2",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Chemical Activity Predictions - Can We Trust the Probabilities",
+      "name": "chemical-activity-predictions-can-we-trust-the-probabilities",
+      "category": "Academic Research"
+    },
+    {
+      "title": "COVID-19 Case Counts - Trend or Reporting Noise",
+      "name": "covid-19-case-counts-trend-or-reporting-noise",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Diet Diversity - Does the Gut Microbiome Differ",
+      "name": "diet-diversity-does-the-gut-microbiome-differ",
+      "category": "Academic Research"
+    },
+    {
+      "title": "EGFR potency prediction - an inspectable pilot",
+      "name": "egfr-potency-prediction-an-inspectable-pilot",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Florida precipitation and Niño 3.4 seasonal association",
+      "name": "florida-precipitation-and-nino-3-4-seasonal-association",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Genomic context of the Horvath epigenetic clock",
+      "name": "genomic-context-of-the-horvath-epigenetic-clock",
+      "category": "Academic Research"
+    },
+    {
+      "title": "GLP-1 medicines and adverse-event reporting patterns",
+      "name": "glp-1-medicines-and-adverse-event-reporting-patterns",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Involved versus uninvolved Crohn ileum - donor-aware expression assessment",
+      "name": "involved-versus-uninvolved-crohn-ileum-donor-aware-expression-assessment",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Kidney Cancer - What Sets the Subtypes Apart",
+      "name": "kidney-cancer-what-sets-the-subtypes-apart",
+      "category": "Academic Research"
+    },
+    {
+      "title": "KRAS Mutations - Do Survival Patterns Differ",
+      "name": "kras-mutations-do-survival-patterns-differ",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Lymphoma Biomarkers - What Does the Evidence Support",
+      "name": "lymphoma-biomarkers-what-does-the-evidence-support",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Mass Spectra - Can They Reveal a Chemical Family",
+      "name": "mass-spectra-can-they-reveal-a-chemical-family",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024)",
+      "name": "monitoring-site-mix-and-pm2-5-trends-in-los-angeles-county-2015-2024",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Ocean Microbes - How Do They Relate to Nutrients",
+      "name": "ocean-microbes-how-do-they-relate-to-nutrients",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Pennsylvania construction employment and monitored PM2.5, 2023",
+      "name": "pennsylvania-construction-employment-and-monitored-pm2-5-2023",
+      "category": "Academic Research"
+    },
+    {
+      "title": "PFAS assay activity and placental cell-type expression",
+      "name": "pfas-assay-activity-and-placental-cell-type-expression",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Physical activity and diabetes among US adults (NHANES 2011–2018)",
+      "name": "physical-activity-and-diabetes-among-us-adults-nhanes-2011-2018",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Protein abundance in ischemic failing versus non-failing human hearts",
+      "name": "protein-abundance-in-ischemic-failing-versus-non-failing-human-hearts",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Protein Measurements - Do the Ratios Add Up",
+      "name": "protein-measurements-do-the-ratios-add-up",
+      "category": "Academic Research"
+    },
+    {
+      "title": "RAS mutations in two public pancreatic cohorts",
+      "name": "ras-mutations-in-two-public-pancreatic-cohorts",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Registry-results availability in completed glioblastoma trials",
+      "name": "registry-results-availability-in-completed-glioblastoma-trials",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Spatial Immune Organization and Breast Cancer Prognosis",
+      "name": "spatial-immune-organization-and-breast-cancer-prognosis",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Worm longevity genes and human exceptional-longevity evidence",
+      "name": "worm-longevity-genes-and-human-exceptional-longevity-evidence",
+      "category": "Academic Research"
     }
   ]
 }
