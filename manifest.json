@@ -1393,13 +1393,13 @@
       "file_name": "How Often Do Job Posts Ask for Proficiency?.science",
       "bytes": 908499,
       "sha256": "c912808c05d859398e179727222087ccda49189cb2334da5900a3e209b3e7747",
-      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/5608f9845e54550f67d861e87b6b9735da864d5d/Curiosity%20Lab/How%20Often%20Do%20Job%20Posts%20Ask%20for%20Proficiency%3F/How%20Often%20Do%20Job%20Posts%20Ask%20for%20Proficiency%3F.science"
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/74d0a8c066edb235b1587002cb210796b15be777/Curiosity%20Lab/How%20Often%20Do%20Job%20Posts%20Ask%20for%20Proficiency%3F/How%20Often%20Do%20Job%20Posts%20Ask%20for%20Proficiency%3F.science"
     },
     "introduction": {
       "path": "Curiosity Lab/How Often Do Job Posts Ask for Proficiency?/How Often Do Job Posts Ask for Proficiency?.md",
       "file_name": "How Often Do Job Posts Ask for Proficiency?.md",
-      "bytes": 1279,
-      "sha256": "7754cb4fe494e85ac8d3c88566c225b0e4d264f2df8270564c02aba83db49179",
+      "bytes": 1092,
+      "sha256": "c4021b2ad566a55c95c00fd70004cf14004d45faf51a8f0845f70765b86d8d4f",
       "release_url": ""
     }
   },
@@ -1582,13 +1582,13 @@
       "file_name": "In a Year's Worth of Weather Forecasts, Are Predictions of ‘Sunny’ Weather More Accurate, or Are Predictions of ‘Rain’ More Accurate?.science",
       "bytes": 1074435,
       "sha256": "7788014919a85daba4f4870a195bf068670d863960d96bd7c0bbd44f23c1ddcc",
-      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/5608f9845e54550f67d861e87b6b9735da864d5d/Curiosity%20Lab/In%20a%20Year%27s%20Worth%20of%20Weather%20Forecasts%2C%20Are%20Predictions%20of%20%E2%80%98Sunny%E2%80%99%20Weather%20More%20Accurate%2C%20or%20Are%20Predictions%20of%20%E2%80%98Rain%E2%80%99%20More%20Accurate%3F/In%20a%20Year%27s%20Worth%20of%20Weather%20Forecasts%2C%20Are%20Predictions%20of%20%E2%80%98Sunny%E2%80%99%20Weather%20More%20Accurate%2C%20or%20Are%20Predictions%20of%20%E2%80%98Rain%E2%80%99%20More%20Accurate%3F.science"
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/74d0a8c066edb235b1587002cb210796b15be777/Curiosity%20Lab/In%20a%20Year%27s%20Worth%20of%20Weather%20Forecasts%2C%20Are%20Predictions%20of%20%E2%80%98Sunny%E2%80%99%20Weather%20More%20Accurate%2C%20or%20Are%20Predictions%20of%20%E2%80%98Rain%E2%80%99%20More%20Accurate%3F/In%20a%20Year%27s%20Worth%20of%20Weather%20Forecasts%2C%20Are%20Predictions%20of%20%E2%80%98Sunny%E2%80%99%20Weather%20More%20Accurate%2C%20or%20Are%20Predictions%20of%20%E2%80%98Rain%E2%80%99%20More%20Accurate%3F.science"
     },
     "introduction": {
       "path": "Curiosity Lab/In a Year's Worth of Weather Forecasts, Are Predictions of ‘Sunny’ Weather More Accurate, or Are Predictions of ‘Rain’ More Accurate?/In a Year's Worth of Weather Forecasts, Are Predictions of ‘Sunny’ Weather More Accurate, or Are Predictions of ‘Rain’ More Accurate?.md",
       "file_name": "In a Year's Worth of Weather Forecasts, Are Predictions of ‘Sunny’ Weather More Accurate, or Are Predictions of ‘Rain’ More Accurate?.md",
-      "bytes": 1923,
-      "sha256": "34aaa8a857a6040a6bcb0bbe9d175e15863fa491f9eddca81eaca1d7d48c68ba",
+      "bytes": 1582,
+      "sha256": "e3f0cd3e395c4e7732527ccaf5c3a6c98f73213109f10743f2693d4891b1901b",
       "release_url": ""
     }
   },
@@ -1609,13 +1609,13 @@
       "file_name": "Is Thinking Longer Worth It?.science",
       "bytes": 4408502,
       "sha256": "962b6374b970c8fdf7e3c9533a5f7c611e349ebaa803cda1751ae9c3757e6051",
-      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/5608f9845e54550f67d861e87b6b9735da864d5d/AI%20Research/Is%20Thinking%20Longer%20Worth%20It%3F/Is%20Thinking%20Longer%20Worth%20It%3F.science"
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/74d0a8c066edb235b1587002cb210796b15be777/AI%20Research/Is%20Thinking%20Longer%20Worth%20It%3F/Is%20Thinking%20Longer%20Worth%20It%3F.science"
     },
     "introduction": {
       "path": "AI Research/Is Thinking Longer Worth It?/Is Thinking Longer Worth It?.md",
       "file_name": "Is Thinking Longer Worth It?.md",
-      "bytes": 1300,
-      "sha256": "5f6d0c0bd2ffccf6671f5d6968f73d3ad435a3b2593ba4d4f54be7fdd555a174",
+      "bytes": 1136,
+      "sha256": "e52916bf0f0f6028b07ea2ec9ec97e59cdb596ea74abf763f5cb342353c4e7cb",
       "release_url": ""
     }
   },
@@ -1906,13 +1906,13 @@
       "file_name": "One-Shot vs Chunked.science",
       "bytes": 88993870,
       "sha256": "fbf2263ef343d0454309eaa6347ba6af6caff0e6c1b7f56250f9d1210a981764",
-      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/5608f9845e54550f67d861e87b6b9735da864d5d/AI%20Research/One-Shot%20vs%20Chunked/One-Shot%20vs%20Chunked.science"
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/74d0a8c066edb235b1587002cb210796b15be777/AI%20Research/One-Shot%20vs%20Chunked/One-Shot%20vs%20Chunked.science"
     },
     "introduction": {
       "path": "AI Research/One-Shot vs Chunked/One-Shot vs Chunked.md",
       "file_name": "One-Shot vs Chunked.md",
-      "bytes": 1264,
-      "sha256": "2cee1f80ff82269b03ae11ac3a8edf2697340a782c7025d2e8356e1eeeadef3d",
+      "bytes": 1115,
+      "sha256": "f72f1111309a233450b029e4594bf29394b6d068492c19fa26a33b53cf828b78",
       "release_url": ""
     }
   },
@@ -2095,13 +2095,13 @@
       "file_name": "The 100K Cliff.science",
       "bytes": 2418675,
       "sha256": "818e40abc96f5ae0aac05df102c36be01f1aee772167a22f913813fafbb3f829",
-      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/5608f9845e54550f67d861e87b6b9735da864d5d/AI%20Research/The%20100K%20Cliff/The%20100K%20Cliff.science"
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/74d0a8c066edb235b1587002cb210796b15be777/AI%20Research/The%20100K%20Cliff/The%20100K%20Cliff.science"
     },
     "introduction": {
       "path": "AI Research/The 100K Cliff/The 100K Cliff.md",
       "file_name": "The 100K Cliff.md",
-      "bytes": 1244,
-      "sha256": "a64db0e3018db6f9e3d56f3c597b747d49c8de9475816f613fa89bb5fcacb4a8",
+      "bytes": 1100,
+      "sha256": "4bd045551a90741bb9d75e92e2f21d0d6b358535636f9bc231eee4aa02113278",
       "release_url": ""
     }
   },
@@ -2149,13 +2149,13 @@
       "file_name": "What Follows a Bitcoin Surge?.science",
       "bytes": 1980331,
       "sha256": "6a5fcffb044e786251309de8f9b1ffc7469a8d507c2a10f4b107230b70be657c",
-      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/5608f9845e54550f67d861e87b6b9735da864d5d/Curiosity%20Lab/What%20Follows%20a%20Bitcoin%20Surge%3F/What%20Follows%20a%20Bitcoin%20Surge%3F.science"
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/74d0a8c066edb235b1587002cb210796b15be777/Curiosity%20Lab/What%20Follows%20a%20Bitcoin%20Surge%3F/What%20Follows%20a%20Bitcoin%20Surge%3F.science"
     },
     "introduction": {
       "path": "Curiosity Lab/What Follows a Bitcoin Surge?/What Follows a Bitcoin Surge?.md",
       "file_name": "What Follows a Bitcoin Surge?.md",
-      "bytes": 1374,
-      "sha256": "f0fac81e27c042322a8b0726ac471f995a7fe58a629009a77d55f606fdfaa764",
+      "bytes": 1207,
+      "sha256": "b5309092a38e2f16145ca0031a67ec90b727e6121dbca7a27d5f02a607936b1c",
       "release_url": ""
     }
   },
@@ -2176,13 +2176,13 @@
       "file_name": "What Happens If You Remove 1% of the Nodes from the Fruit Fly Brain Network?.science",
       "bytes": 559473817,
       "sha256": "2db4e3a21f365482c0bde927cddda0325e2d90f0a493edc5d4880122ed08e353",
-      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/5608f9845e54550f67d861e87b6b9735da864d5d/Curiosity%20Lab/What%20Happens%20If%20You%20Remove%201%25%20of%20the%20Nodes%20from%20the%20Fruit%20Fly%20Brain%20Network%3F/What%20Happens%20If%20You%20Remove%201%25%20of%20the%20Nodes%20from%20the%20Fruit%20Fly%20Brain%20Network%3F.science"
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/74d0a8c066edb235b1587002cb210796b15be777/Curiosity%20Lab/What%20Happens%20If%20You%20Remove%201%25%20of%20the%20Nodes%20from%20the%20Fruit%20Fly%20Brain%20Network%3F/What%20Happens%20If%20You%20Remove%201%25%20of%20the%20Nodes%20from%20the%20Fruit%20Fly%20Brain%20Network%3F.science"
     },
     "introduction": {
       "path": "Curiosity Lab/What Happens If You Remove 1% of the Nodes from the Fruit Fly Brain Network?/What Happens If You Remove 1% of the Nodes from the Fruit Fly Brain Network?.md",
       "file_name": "What Happens If You Remove 1% of the Nodes from the Fruit Fly Brain Network?.md",
-      "bytes": 1702,
-      "sha256": "425d6807a35bae22d73935d15b145e086504ec50435446859c8d8d8955f592c7",
+      "bytes": 1466,
+      "sha256": "cbfe4e4fd4e67a349e13f64e2320e6fffb87129b2788a54874ce059b4707d081",
       "release_url": ""
     }
   },

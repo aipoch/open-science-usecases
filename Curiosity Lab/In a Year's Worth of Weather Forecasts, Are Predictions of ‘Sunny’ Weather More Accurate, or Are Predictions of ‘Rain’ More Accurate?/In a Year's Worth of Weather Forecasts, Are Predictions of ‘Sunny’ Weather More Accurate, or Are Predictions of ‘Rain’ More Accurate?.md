@@ -14,5 +14,5 @@ The original `.science` export and matching poster are preserved byte-for-byte f
 
 ## Case files
 
-- [Session export](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/5608f9845e54550f67d861e87b6b9735da864d5d/Curiosity%20Lab/In%20a%20Year%27s%20Worth%20of%20Weather%20Forecasts%2C%20Are%20Predictions%20of%20%E2%80%98Sunny%E2%80%99%20Weather%20More%20Accurate%2C%20or%20Are%20Predictions%20of%20%E2%80%98Rain%E2%80%99%20More%20Accurate%3F/In%20a%20Year%27s%20Worth%20of%20Weather%20Forecasts%2C%20Are%20Predictions%20of%20%E2%80%98Sunny%E2%80%99%20Weather%20More%20Accurate%2C%20or%20Are%20Predictions%20of%20%E2%80%98Rain%E2%80%99%20More%20Accurate%3F.science)
+- [Session export](./In%20a%20Year%27s%20Worth%20of%20Weather%20Forecasts%2C%20Are%20Predictions%20of%20%E2%80%98Sunny%E2%80%99%20Weather%20More%20Accurate%2C%20or%20Are%20Predictions%20of%20%E2%80%98Rain%E2%80%99%20More%20Accurate%3F.science)
 - [Case poster](./In%20a%20Year%27s%20Worth%20of%20Weather%20Forecasts%2C%20Are%20Predictions%20of%20%E2%80%98Sunny%E2%80%99%20Weather%20More%20Accurate%2C%20or%20Are%20Predictions%20of%20%E2%80%98Rain%E2%80%99%20More%20Accurate%3F.png)

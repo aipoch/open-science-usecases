@@ -14,5 +14,5 @@ The original `.science` export and matching poster are preserved byte-for-byte f
 
 ## Case files
 
-- [Session export](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/5608f9845e54550f67d861e87b6b9735da864d5d/Curiosity%20Lab/What%20Happens%20If%20You%20Remove%201%25%20of%20the%20Nodes%20from%20the%20Fruit%20Fly%20Brain%20Network%3F/What%20Happens%20If%20You%20Remove%201%25%20of%20the%20Nodes%20from%20the%20Fruit%20Fly%20Brain%20Network%3F.science)
+- [Session export](./What%20Happens%20If%20You%20Remove%201%25%20of%20the%20Nodes%20from%20the%20Fruit%20Fly%20Brain%20Network%3F.science)
 - [Case poster](./What%20Happens%20If%20You%20Remove%201%25%20of%20the%20Nodes%20from%20the%20Fruit%20Fly%20Brain%20Network%3F.png)
