@@ -60,7 +60,7 @@ def local_resources(entries):
                 # Some untouched legacy cases predate required introductions.
                 # Completeness of affected entries belongs to the structure check.
                 continue
-            if kind == 'case' and resource.get('release_url'):
+            if resource.get('release_url'):
                 continue
             key = case['name'] + '/' + resource['file_name']
             if key in resources:

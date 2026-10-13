@@ -63,6 +63,10 @@ if args[:2] == ['s3api', 'get-object']:
 if args[:2] == ['s3api', 'head-object']:
     key = option('--bucket') + '/' + option('--key')
     path = root / key
+    error = os.environ.get('FAKE_S3_HEAD_ERROR') or (None if path.is_file() else '404')
+    if error:
+        print('An error occurred (' + error + ') when calling the HeadObject operation', file=sys.stderr)
+        sys.exit(254)
     emit({'ContentLength': path.stat().st_size + int(bool(os.environ.get('FAKE_S3_BAD_HEAD'))), 'Metadata': metadata(key)})
     sys.exit(0)
 if args[:2] == ['s3api', 'put-object']:

@@ -48,13 +48,6 @@ def report_error(message):
         log("ERROR: " + message)
 
 
-def file_problem(path):
-    if path.is_symlink():
-        return f"{show(str(path))} is a symlink. Replace it with the actual file and commit it."
-    return (f"Couldn't find the file {show(str(path))}. Add or rename the file so it has "
-            "the same name as its case directory, including letter case, then commit it.")
-
-
 def kebab_case(title):
     title = "".join(c for c in unicodedata.normalize("NFKD", title)
                     if not unicodedata.combining(c))
@@ -76,21 +69,138 @@ def is_image_filename(filename):
     return bool(media_type and media_type.startswith("image/") and encoding is None)
 
 
-def is_science_url(url):
+def is_resource_url(url, kind=None):
     if not isinstance(url, str) or not url or re.search(r"[\s\x00-\x1f\x7f]", url):
         return False
     try:
         parsed = urlsplit(url)
-        # Accessing port rejects malformed and out-of-range port numbers.
         _ = parsed.port
-        # Python 3.9 does not validate bracketed hosts during URL splitting.
         if "[" in parsed.netloc:
             IPv6Address(parsed.hostname)
-        # Check the asset path so download query parameters remain valid.
         return (parsed.scheme in ("http", "https") and bool(parsed.hostname)
-                and parsed.path.endswith(".science"))
+                and not parsed.username and not parsed.password
+                and (kind != "case" or parsed.path.endswith(".science")))
     except ValueError:
         return False
+
+
+def is_science_url(url):
+    return is_resource_url(url, "case")
+
+
+def validate_resource_path(resource):
+    path, filename = resource.get("path"), resource.get("file_name")
+    if (not isinstance(path, str) or re.search(r"[\x00-\x1f\x7f\\]", path)
+            or re.match(r"^[A-Za-z]:", path)
+            or any(part in ("", ".", "..") for part in path.split("/"))
+            or not isinstance(filename, str) or filename != path.split("/")[-1]):
+        raise ValueError("invalid resource path or file_name")
+
+
+def catalog_errors(entries, legacy=False):
+    errors, catalogs = [], {}
+    for entry in entries:
+        label = "manifest.json / " + show(entry.get("name"))
+        if legacy and not {"catalog", "catalog_name"} & entry.keys():
+            continue
+        catalog, name = entry.get("catalog"), entry.get("catalog_name")
+        if not isinstance(catalog, str) or not isinstance(name, str):
+            errors.append(label + ": catalog and catalog_name must both be strings; use two empty strings for no classification")
+            continue
+        if catalog == name == "":
+            continue
+        if (not catalog.strip() or catalog in (".", "..")
+                or re.search(r"[\x00-\x1f\x7f/\\]", catalog) or re.match(r"^[A-Za-z]:", catalog)):
+            errors.append(label + ": catalog must be a nonempty, safe single directory name")
+            continue
+        if not catalog.isascii():
+            errors.append(label + ": catalog " + show(catalog)
+                          + " cannot be converted to ASCII kebab-case; rename it manually (no translation or character removal)")
+            continue
+        expected = kebab_case(catalog)
+        if not expected or name != expected:
+            errors.append(label + ": catalog_name must equal the nonempty kebab-case conversion of catalog "
+                          + show(catalog) + ": " + show(expected))
+            continue
+        if name in catalogs and catalogs[name] != catalog:
+            errors.append(label + ": catalog_name collision " + show(name) + " between "
+                          + show(catalogs[name]) + " and " + show(catalog) + "; rename one catalog")
+        catalogs[name] = catalog
+        for kind in ("cover", "case", "introduction"):
+            resource = entry.get(kind)
+            path = resource.get("path") if isinstance(resource, dict) else None
+            if not isinstance(path, str) or not path.startswith(catalog + "/"):
+                errors.append(label + "/" + kind + ": path must start with catalog directory " + show(catalog + "/"))
+    return errors
+
+
+def schema_errors(entry, legacy=False):
+    errors = catalog_errors([entry], legacy=legacy)
+    label = "manifest.json / " + show(entry.get("name"))
+    required = {"title", "name", "cover", "case"} | (set() if legacy else {"introduction"})
+    if not require_keys(entry, required, label, errors, optional=("introduction", "catalog", "catalog_name")):
+        return errors
+    if not isinstance(entry["title"], str) or not entry["title"].strip():
+        errors.append(label + ": title must be a nonempty string")
+    if not isinstance(entry["name"], str) or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", entry["name"]):
+        errors.append(label + ": name must be kebab-case")
+    destinations = set()
+    for kind in ("cover", "case", "introduction"):
+        if kind not in entry:
+            continue
+        resource = entry[kind]
+        keys = {"file_name", "path", "bytes", "sha256", "release_url"}
+        if legacy and kind != "case":
+            keys.remove("release_url")
+        if not require_keys(resource, keys, label + "/" + kind, errors, optional=("release_url",)):
+            continue
+        try:
+            validate_resource_path(resource)
+        except ValueError as error:
+            errors.append(label + ": " + str(error))
+        filename = resource["file_name"]
+        if not (is_image_filename(filename) if kind == "cover" else
+                isinstance(filename, str) and filename.endswith(".science" if kind == "case" else ".md")):
+            errors.append(label + "/" + kind + ": invalid file type")
+        if isinstance(filename, str):
+            if filename in destinations:
+                errors.append(label + ": Duplicate upload destination")
+            destinations.add(filename)
+        if type(resource["bytes"]) is not int or resource["bytes"] < 0:
+            errors.append(label + "/" + kind + ": bytes must be a nonnegative integer")
+        if not isinstance(resource["sha256"], str) or not re.fullmatch(r"[0-9a-fA-F]{64}", resource["sha256"]):
+            errors.append(label + "/" + kind + ": sha256 must be 64 hexadecimal digits")
+        url = resource.get("release_url", "")
+        if url != "" and not is_resource_url(url, kind):
+            errors.append(label + "/" + kind + ": invalid release_url")
+    return errors
+
+
+def source_errors(root, entry):
+    """All-remote entries do not consult the local filesystem."""
+    if all(entry[kind]["release_url"] for kind in ("cover", "case", "introduction")):
+        return []
+    errors = []
+    for kind in ("cover", "case", "introduction"):
+        resource = entry[kind]
+        path = root / resource["path"]
+        # Resource subdirectories remain independent within the classification.
+        if resource["release_url"] and kind != "case":
+            continue
+        parts = resource["path"].split("/")
+        parents = [root.joinpath(*parts[:length]) for length in range(1, len(parts))]
+        if any(parent.is_symlink() for parent in parents):
+            errors.append("Invalid resource directory (symlink): " + resource["path"])
+        elif resource["release_url"]:
+            if path.exists() or path.is_symlink():
+                errors.append("Package requires exactly one source: " + resource["path"])
+        elif any(not parent.is_dir() for parent in parents):
+            errors.append("Missing or invalid resource directory: " + resource["path"])
+        elif not regular_file(path):
+            errors.append("Local resource must be a regular file (missing or symlink): " + resource["path"])
+        elif path.stat().st_size != resource["bytes"]:
+            errors.append("Local resource byte size mismatch: " + resource["path"])
+    return errors
 
 
 def resolve_base(base, merge_base=False, new_branch_base=None):
@@ -107,26 +217,6 @@ def resolve_base(base, merge_base=False, new_branch_base=None):
     return base
 
 
-def case_folders(paths):
-    return {path.split("/", 1)[0] for path in paths if "/" in path and not path.startswith(".")}
-
-
-def entry_folders(entry, known):
-    matches = {directory for directory in known if kebab_case(directory) == entry.get("name")}
-    if len(matches) == 1:
-        return matches
-    title = entry.get("title")
-    if isinstance(title, str) and title in known:
-        return {title}
-    # Paths help locate a case even when its manifest name/title was misspelled.
-    for key in ("cover", "case", "introduction"):
-        resource = entry.get(key)
-        path = resource.get("path") if isinstance(resource, dict) else None
-        if isinstance(path, str) and path.split("/", 1)[0] in known:
-            matches.add(path.split("/", 1)[0])
-    return matches
-
-
 def manifest_entries(text, source):
     entries = read_json(text, source)
     if not isinstance(entries, list) or any(not isinstance(entry, dict) for entry in entries):
@@ -135,84 +225,24 @@ def manifest_entries(text, source):
     return entries
 
 
+def selected_cases(entries):
+    # Selection is by entry, including entries with no local directory.
+    return [{"entry": entry, "name": entry.get("name"), "valid": True,
+             "directory": str(entry.get("cover", {}).get("path", "")).rsplit("/", 1)[0]
+             if isinstance(entry.get("cover"), dict) else "",
+             "has_local_science": not bool(entry.get("case", {}).get("release_url"))
+             if isinstance(entry.get("case"), dict) else False} for entry in entries]
+
+
 def directories(base, merge_base=False, new_branch_base=None):
     from manifest_diff import changed_entries
-
     base = resolve_base(base, merge_base, new_branch_base)
-    previous_paths = set(git("ls-tree", "-r", "--name-only", "-z", base).split("\0")) if base else set()
-    current_paths = set(git("ls-tree", "-r", "--name-only", "-z", "HEAD").split("\0"))
-    previous, current = case_folders(previous_paths), case_folders(current_paths)
-    # Compare path sets rather than file contents: additions, removals and renames
-    # affect structure; editing a file in place does not.
-    structural = case_folders(previous_paths ^ current_paths)
-    # Keep both paths when a file is renamed, including manifest.json's old path.
-    changed_paths = set(git("diff", "--no-renames", "--name-only", "-z", base, "HEAD").split("\0")) if base else current_paths
-    changed = case_folders(changed_paths)
-    manifest_changed = "manifest.json" in changed_paths
-    log(f"Cases with file changes: {len(changed)}. Cases with path changes: {len(structural)}. "
-        f"manifest.json changed: {manifest_changed}.")
-    if not manifest_changed:
-        log("manifest.json is unchanged. Skipping case resource checks.")
-        return [], []
-
-    manifest = manifest_entries(Path("manifest.json").read_text(encoding="utf-8"), "manifest.json")
-    selected = set()
-    errors = []
-    known = previous | current
-    old_manifest = []
-    if base and "manifest.json" in previous_paths:
-        try:
-            old_manifest = manifest_entries(git("show", f"{base}:manifest.json"), "baseline manifest.json")
-        except ValueError:
-            log("The baseline manifest could not be parsed. Rechecking all current entries so it can be repaired.")
-    # Only surviving additions/edits select cases. File changes and removed entries
-    # never opt a directory into publication checks on their own.
-    for entry in changed_entries(old_manifest, manifest):
-        matches = entry_folders(entry, known) & current
-        selected.update(matches)
-        if not matches:
-            errors.append(f"manifest.json: changed entry {show(entry.get('name'))} has no matching case directory. "
-                          "Correct its name, title, and resource paths, or add the case directory.")
-        for directory in matches:
-            # Do not let a bad alias hide behind an unchanged canonical entry.
-            expected_name = kebab_case(directory)
-            if entry.get("name") != expected_name:
-                errors.append(f"manifest.json: changed entry has name {show(entry.get('name'))}, "
-                              f"but its case directory {show(directory)} requires {show(expected_name)}. "
-                              "Correct this entry's name and keep exactly one entry for the case.")
-
-    cases = []
-    for directory in sorted(selected):
-        folder = Path(directory)
-        name = kebab_case(directory)
-        problems = []
-        if directory in structural and not name:
-            problems.append("The directory name becomes empty after conversion to kebab-case. "
-                            "Rename it to include Latin letters or digits, such as My New Case.")
-        if directory in structural:
-            if not regular_file(folder / f"{directory}.md"):
-                problems.append(file_problem(folder / f"{directory}.md"))
-            # Keep the same-name rule while allowing any recognized image format.
-            if not any(path.stem == directory and is_image_filename(path.name) and regular_file(path)
-                       for path in folder.glob("*")):
-                covers = [entry.get("cover", {}).get("path") for entry in manifest
-                          if entry.get("name") == name and isinstance(entry.get("cover"), dict)]
-                problems.append(f"Couldn't find an image cover with the same name as its case directory. "
-                                f"Add a same-named image file and update cover.file_name and cover.path "
-                                f"in manifest.json (declared paths: {show(covers)}).")
-        else:
-            log(f"Skipping directory/name checks for {show(directory)}: its paths are unchanged. "
-                "Rechecking its manifest entry and resources for file or metadata changes.")
-        local = regular_file(folder / f"{directory}.science")
-        log(f"Selected case {show(directory)} (manifest name: {show(name)}). "
-            + ("Found the local .science file; case.release_url must be empty."
-               if local else "No same-named .science file; the manifest step will require case.release_url."))
-        cases.append({
-            "directory": directory, "name": name, "valid": not problems,
-            "has_local_science": local,
-        })
-        errors.extend(f"Directory {show(directory)}: {problem}" for problem in problems)
-    return cases, errors
+    text = git("show", "HEAD:manifest.json")
+    if Path("manifest.json").read_text(encoding="utf-8") != text:
+        raise ValueError("Checkout manifest differs from HEAD")
+    old = manifest_entries(git("show", base + ":manifest.json"), "baseline manifest.json") if base else []
+    current = manifest_entries(text, "manifest.json")
+    return selected_cases(changed_entries(old, current)), catalog_errors(current)
 
 
 def unique_keys(pairs):
@@ -289,8 +319,7 @@ def validate_head_size(url, size, label, errors, timeout=15):
     except HTTPError as error:
         errors.append(f"{label}: HEAD failed with HTTP {error.code} ({error.reason}). "
                       "Check that the asset exists, is publicly accessible, and its host supports HEAD. "
-                      "For repository files, check CASE_FILE_BASE_URL and the PR head commit; "
-                      "for external files, correct release_url.")
+                      "Correct release_url or use a host that supports HEAD.")
         error.close()
     except (URLError, OSError, HTTPException, ValueError) as error:
         errors.append(f"{label}: HEAD could not finish: {error}. "
@@ -298,116 +327,30 @@ def validate_head_size(url, size, label, errors, timeout=15):
                       f"Each connection has a {timeout}-second timeout.")
 
 
-def validate_resource(resource, case, key, extension, errors):
-    directory = case["directory"]
-    label = f"manifest.json / {show(directory)} / {key}"
-    keys = {"file_name", "path", "bytes", "sha256"}
-    if key == "case":
-        keys.add("release_url")
-    if not require_keys(resource, keys, label, errors):
-        return
-    checksum = resource["sha256"]
-    if not isinstance(checksum, str) or not re.fullmatch(r"[0-9a-fA-F]{64}", checksum):
-        errors.append(f"{label}.sha256: found {show(checksum)}. Enter exactly 64 hexadecimal characters "
-                      "(0-9, a-f, A-F), without whitespace. Compute SHA-256 from the file on your "
-                      "device before committing and update manifest.json; CI checks the format only.")
-    if key == "cover":
-        if not is_image_filename(resource["file_name"]):
-            errors.append(f"{label}.file_name: found {show(resource['file_name'])}. "
-                          "Use a filename with an image/* extension, such as .jpg, .webp, or .svg.")
-            return
-        extension = Path(resource["file_name"]).suffix.lstrip(".")
-    filename = f"{directory}.{extension}"
-    expected_path = f"{directory}/{filename}"
-    for field, expected in (("file_name", filename), ("path", expected_path)):
-        if resource.get(field) != expected:
-            errors.append(f"{label}.{field}: found {show(resource.get(field))}. "
-                          f"Set it to {show(expected)} so it points to the same-named case file.")
-    size = resource.get("bytes")
-    size_valid = type(size) is int and size >= 0
-    if not size_valid:
-        errors.append(f"{label}.bytes: found {show(size)}. Enter the file size in bytes as "
-                      "a whole number, without quotes, that is zero or greater.")
-    if key == "case":
-        release_url = resource.get("release_url")
-        if case["has_local_science"]:
-            if release_url != "":
-                errors.append(f"{label}.release_url: found {show(release_url)} alongside local "
-                              f"{show(expected_path)}. A local .science file and release_url must not both "
-                              "be provided. Set release_url to an empty string (\"\").")
-        elif isinstance(release_url, str) and not release_url.strip():
-            errors.append(f"{label}.release_url: found neither a local {show(expected_path)} nor a "
-                          "nonempty release_url. Provide exactly one: add the same-named .science file "
-                          "or set release_url to a complete HTTP(S) .science download URL.")
-        elif not is_science_url(release_url):
-            errors.append(f"{label}.release_url: found {show(release_url)}, and there is no local "
-                          f"{show(expected_path)}. Add a complete HTTP(S) download URL whose path ends in .science "
-                          "(for example, https://example.com/case.science), or add the same-named .science file "
-                          "and set release_url to an empty string. README links are not used.")
-        elif size_valid:
-            validate_head_size(release_url, size, label, errors)
-    if key != "case" or case["has_local_science"]:
-        path = Path(expected_path)
-        if not regular_file(path):
-            errors.append(f"{label}: {file_problem(path)}")
-            return
-        if size_valid:
-            base_url = os.environ.get("CASE_FILE_BASE_URL")
-            if not base_url:
-                raise ValueError("CASE_FILE_BASE_URL is missing. Set it to the GitHub Raw URL for the "
-                                 "PR head repository and commit so repository file sizes can be checked with HEAD.")
-            validate_head_size(base_url.rstrip("/") + "/" + quote(expected_path), size, label, errors)
-
-
 def validate_manifest(cases, declared_only=False):
-    if not isinstance(cases, list):
-        raise ValueError("CASES_JSON must be a JSON array from the directories step. "
-                         "Pass steps.directories.outputs.cases to the manifest step's CASES_JSON environment variable.")
-    if not cases:
-        return []
-    required = {"directory": str, "name": str, "valid": bool, "has_local_science": bool}
-    for index, case in enumerate(cases):
-        if not isinstance(case, dict) or any(type(case.get(key)) is not kind for key, kind in required.items()):
-            raise ValueError(f"CASES_JSON item {index + 1} is incomplete or has the wrong field types. "
-                             "Rerun the directories step and pass its complete cases output to this step.")
+    if not isinstance(cases, list) or any(not isinstance(case, dict) or "entry" not in case for case in cases):
+        raise ValueError("CASES_JSON must contain selected entries from the directories step")
     manifest = manifest_entries(Path("manifest.json").read_text(encoding="utf-8"), "manifest.json")
-    errors = []
-    names = [case["name"] for case in cases]
+    errors = catalog_errors(manifest)
+    if errors:
+        return errors
     for case in cases:
-        directory, name = case["directory"], case["name"]
-        label = f"manifest.json / {show(directory)}"
-        log(f"Checking manifest entry {show(name)} for directory {show(directory)}.")
-        if not case["valid"]:
-            errors.append(f"Directory {show(directory)} failed the directories step. "
-                          "Fix its missing files or naming errors above, then rerun the workflow.")
+        entry = case["entry"]
+        if entry not in manifest:
+            errors.append("Selected entry differs from checkout manifest")
             continue
-        if names.count(name) != 1:
-            collisions = [item["directory"] for item in cases if item["name"] == name]
-            errors.append(f"Directory {show(directory)}: multiple new directories map to name {show(name)}: "
-                          f"{show(collisions)}. Rename one directory and update its manifest name so each case has a unique name.")
-        entries = [entry for entry in manifest if entry.get("name") == name]
-        if len(entries) != 1:
-            if not entries:
-                errors.append(f"{label}: no entry has name {show(name)}. Add an entry with this name, "
-                              "or correct the existing entry's name to match the directory's kebab-case name.")
-            else:
-                errors.append(f"{label}: found {len(entries)} entries with name {show(name)}. "
-                              "Keep exactly one matching entry and remove or rename the duplicates.")
+        problems = schema_errors(entry)
+        if sum(item.get("name") == entry.get("name") for item in manifest) != 1:
+            problems.append("Duplicate name: " + show(entry.get("name")))
+        errors.extend(problems)
+        if problems:
             continue
-        entry = entries[0]
-        # Publication supports legacy entries without an introduction, while PR
-        # admission retains the existing requirement for new or edited cases.
-        required_keys = {"title", "name", "cover", "case"}
-        require_keys(entry, required_keys if declared_only else required_keys | {"introduction"},
-                     label, errors, optional=("introduction",))
-        if "title" in entry and entry["title"] != directory:
-            errors.append(f"{label}.title: found {show(entry['title'])}. Set title to {show(directory)} "
-                          "so it matches the directory name exactly.")
-        for key, extension in (("cover", None), ("case", "science"), ("introduction", "md")):
-            if key in entry:
-                validate_resource(entry[key], case, key, extension, errors)
+        errors.extend(source_errors(Path.cwd(), entry))
+        for kind in ("cover", "case", "introduction"):
+            resource = entry[kind]
+            if resource["release_url"]:
+                validate_head_size(resource["release_url"], resource["bytes"], entry["name"] + "/" + kind, errors)
     return errors
-
 
 
 def check_declarations(root, before, after):
@@ -433,14 +376,14 @@ def check_declarations(root, before, after):
         if not isinstance(declaration, str) or not re.fullmatch(r"[0-9a-fA-F]{64}", declaration):
             errors.append(f"{key}: sha256 must be a 64-digit hexadecimal declaration.")
             continue
-        listing = range_git(root, "ls-tree", after, "--", path).split()
+        listing = range_git(root, "--literal-pathspecs", "ls-tree", after, "--", path).split()
         if not listing or listing[0] not in ("100644", "100755"):
             errors.append(f"{key}: local resource must be a committed regular file.")
             continue
-        if prior and prior["path"] == path and path in changed:
+        if prior and (prior["path"] != path or path in changed):
             # A file-only batch may have removed this path without changing its
             # declaration. Restoring it has no prior regular-file object to compare.
-            old_listing = range_git(root, "ls-tree", before, "--", path).split()
+            old_listing = range_git(root, "--literal-pathspecs", "ls-tree", before, "--", prior["path"]).split()
             if not old_listing or old_listing[0] not in ("100644", "100755"):
                 continue
             old_object, new_object = old_listing[2], listing[2]
