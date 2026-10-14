@@ -4,28 +4,33 @@
 
 How does a fixed landmark order compare with simple heuristics and an exact distance minimum?
 
-## Data and method
+Saves a fixed Paris landmark order before comparing it with nearest-neighbor, 2-opt, and exhaustive route search. Coordinates, route tables, and a map document the straight-line-distance comparison.
 
-Keep the Eiffel Tower start and Sacré-Cœur finish fixed, verify coordinates, and save the initial order before optimization. Enumerate all 40,320 orders of the eight intermediate stops, then compare nearest-neighbor and 2-opt routes using the same straight-line metric.
+## Data and comparison design
+
+The design keeps the Eiffel Tower start and Sacré-Cœur finish fixed, verify coordinates, and save the initial order before optimization. Enumerate all 40,320 orders of the eight intermediate stops, then compare nearest-neighbor and 2-opt routes using the same straight-line metric.
 
 ## Recorded findings
 
-Saves a fixed Paris landmark order before comparing it with nearest-neighbor, 2-opt, and exhaustive route search. Coordinates, route tables, and a map document the straight-line-distance comparison.
+The fixed order was saved **before** the notebook ran:
 
-The saved order and nearest-neighbor route measured 13.374 km; 2-opt and exact search reached 12.118 km. The initial route was 10.359% longer under that metric.
+Eiffel Tower → Arc de Triomphe → Place de la Concorde → Palais Garnier → Louvre Museum → Sainte-Chapelle → Notre-Dame de Paris → Panthéon → Luxembourg Gardens → Sacré-Cœur.
 
-## What the findings mean
+| Route | Straight-line distance | Gap to shortest |
+|---|---:|---:|
+| Fixed order; nearest neighbor | 13.374 km | 10.359% |
+| 2-opt; exact shortest | 12.118 km | 0.000% |
+
+The exact search checked all 40,320 orders of the eight intermediate stops. The comparison report gives both distinct orders and links to each coordinate source, including the [Eiffel Tower](https://www.wikidata.org/wiki/Q243) and [Arc de Triomphe](https://www.wikidata.org/wiki/Q64436) records. **This is not a live walking or traffic plan.**
+
+## What the comparison shows
 
 The calculation concerns geographic distance, not pedestrian accessibility, opening hours, queues, or live traffic.
 
-## Interpretation and limits
+## Assumptions and limits
 
 The optimization fixes the start, finish, and eight intermediate stops. Straight-line distance excludes streets, queues, accessibility, and traffic, so the output is not a live walking itinerary.
 
-## Package and provenance
+## Sources and research materials
 
 The original `.science` export and matching poster are preserved byte-for-byte from the upstream case. The package contains the conversation, session metadata, and the resources inventoried in its internal manifest. This introduction summarizes the archived record; the research, external sources, and model evaluations were not rerun for this import.
-
-## Import provenance
-
-This introduction was imported from the GitHub case description. The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
