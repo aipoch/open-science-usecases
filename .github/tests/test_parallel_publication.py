@@ -13,8 +13,9 @@ from test_unpack import valid_files, declaration, archive_bytes
 
 
 class MemoryS3:
-    def __init__(self, baseline, overlap=1, fail_case=None, fail_cdn=None, latency=.002):
+    def __init__(self, baseline, overlap=1, fail_case=None, fail_cdn=None, latency=.002, cdn_latency=0):
         self.latency = latency
+        self.cdn_latency = cdn_latency
         self.baseline = baseline
         self.overlap = overlap
         self.fail_case, self.fail_cdn = fail_case, fail_cdn
@@ -71,6 +72,7 @@ class MemoryS3:
         self.commits.append(json.loads(self.baseline))
 
     def refresh_cdn(self, name=None):
+        time.sleep(self.cdn_latency)
         if self.fail_cdn is not None and name == self.fail_cdn:
             raise OSError('fixture CDN failure')
 
@@ -101,6 +103,106 @@ class ParallelPublicationTests(GitFixture):
 
     def statuses(self):
         return json.loads((self.root / 'publication/status.json').read_text())['steps']
+
+    def test_cdn_waits_overlap_after_serial_commits_and_drain_before_final_sync(self):
+        plan = self.make_plan(count=2, objects=0)
+        store = MemoryS3('[]', latency=0)
+        both = threading.Barrier(2, timeout=3)
+        refreshed = set()
+        commit = store.commit_manifest
+
+        def refresh(name=None):
+            if name is not None:
+                self.assertIn(name, {e['name'] for e in json.loads(store.baseline)})
+                both.wait()
+                with store.lock:
+                    refreshed.add(name)
+
+        def checked_commit(path):
+            if len(store.commits) >= 2:
+                self.assertEqual(refreshed, {'a-case', 'case-1'})
+            commit(path)
+
+        store.refresh_cdn, store.commit_manifest = refresh, checked_commit
+        self.execute(plan, store, case_workers=2)
+        self.assertTrue(all(s['status'] == 'completed' for s in self.statuses()))
+
+    def test_cdn_concurrency_is_capped_even_with_more_case_workers(self):
+        plan = self.make_plan(count=8, objects=0)
+        store = MemoryS3('[]', latency=0)
+        batch = threading.Barrier(4, timeout=3)
+        active, peak = 0, 0
+
+        def refresh(name=None):
+            nonlocal active, peak
+            if name is None:
+                return
+            with store.lock:
+                active += 1
+                peak = max(peak, active)
+            try:
+                batch.wait()
+            finally:
+                with store.lock:
+                    active -= 1
+
+        store.refresh_cdn = refresh
+        self.execute(plan, store, case_workers=8, file_workers=1)
+        self.assertEqual(peak, 4)
+        self.assertEqual(active, 0)
+
+    def test_manifest_conflict_drains_accepted_cdn_and_stops_scheduling(self):
+        import subprocess
+        plan = self.make_plan(count=3, objects=0)
+        store = MemoryS3('[]', latency=0)
+        entered, release = threading.Event(), threading.Event()
+        commit = store.commit_manifest
+        refreshed = []
+
+        def refresh(name=None):
+            entered.set()
+            if not release.wait(3):
+                raise AssertionError('Coordinator blocked on CDN instead of attempting next commit')
+            refreshed.append(name)
+
+        def conflict(path):
+            if store.commits:
+                try:
+                    self.assertTrue(entered.wait(3))
+                finally:
+                    release.set()
+                raise subprocess.CalledProcessError(1, ['fixture'], stderr='PreconditionFailed')
+            commit(path)
+
+        store.refresh_cdn, store.commit_manifest = refresh, conflict
+        with self.assertRaises(subprocess.CalledProcessError):
+            self.execute(plan, store, case_workers=2)
+        self.assertEqual(refreshed, [store.commits[0][0]['name']])
+        self.assertEqual(len({key.split('/')[0] for key in store.started}), 2)
+        states = self.statuses()
+        self.assertEqual(sum(s['status'] == 'completed' for s in states), 1)
+        self.assertEqual(sum(s.get('failed_phase') == 'manifest' for s in states), 1)
+        self.assertEqual(states[-1]['status'], 'waiting')
+
+    def test_index_only_checkpoints_also_overlap_cdn_waits(self):
+        self.make_plan(count=2, objects=0)
+        baseline = (self.root / 'manifest.json').read_text()
+        for entry in self.entries:
+            entry['title'] += ' updated'
+        self.write_manifest()
+        plan = publisher.prepare(self.root, baseline, self.commit(), check_local=False)
+        store = MemoryS3(baseline)
+        both = threading.Barrier(2, timeout=3)
+
+        def refresh(name=None):
+            self.assertIsNone(name)
+            if len(store.commits) <= 2:
+                both.wait()
+
+        store.refresh_cdn = refresh
+        self.execute(plan, store, case_workers=2)
+        self.assertFalse(store.started)
+        self.assertEqual(store.baseline, (self.root / 'manifest.json').read_text())
 
     def test_four_cases_eight_files_overlap_and_index_has_one_writer(self):
         plan = self.make_plan()

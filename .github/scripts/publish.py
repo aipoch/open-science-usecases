@@ -12,6 +12,8 @@ import re
 import subprocess
 import sys
 import tempfile
+import threading
+import time
 from urllib.parse import quote, urlsplit
 
 from check_structure import catalog_errors, read_json, schema_errors, source_errors, selected_cases
@@ -198,6 +200,8 @@ class S3:
         if uri.scheme != 's3' or not uri.netloc or uri.query or uri.fragment:
             raise ValueError('AWS_TARGET_FOLDER must be an s3://bucket[/prefix] URI')
         self.client = None
+        self.cdn_lock = threading.Lock()
+        self.next_cdn_request = 0
         self.target = target.rstrip('/')
         self.bucket = uri.netloc
         self.manifest_key = uri.path.strip('/') + '/manifest.json' if uri.path.strip('/') else 'manifest.json'
@@ -270,12 +274,18 @@ class S3:
         paths = [quote('/' + self.manifest_key, safe='/')]
         if case_name:
             paths.append(quote('/' + self.object_key(case_name + '/'), safe='/') + '*')
-        print('CDN paths: ' + json.dumps(paths), flush=True)
-        result = subprocess.run(['aws', 'cloudfront', 'create-invalidation',
-                                 '--distribution-id', distribution, '--output', 'json', '--paths', *paths],
-                                capture_output=True, text=True, check=True)
-        identifier = json.loads(result.stdout)['Invalidation']['Id']
-        print('CDN invalidation submitted: ' + identifier, flush=True)
+        # CloudFront allows one wildcard invalidation per second. Serialize submission,
+        # not completion; leave the existing per-case paths and waiter semantics intact.
+        with self.cdn_lock:
+            if case_name:
+                time.sleep(max(0, self.next_cdn_request - time.monotonic()))
+                self.next_cdn_request = time.monotonic() + 1
+            print('CDN paths: ' + json.dumps(paths), flush=True)
+            result = subprocess.run(['aws', 'cloudfront', 'create-invalidation',
+                                     '--distribution-id', distribution, '--output', 'json', '--paths', *paths],
+                                    capture_output=True, text=True, check=True)
+            identifier = json.loads(result.stdout)['Invalidation']['Id']
+            print('CDN invalidation submitted: ' + identifier + ' paths: ' + json.dumps(paths), flush=True)
         subprocess.run(['aws', 'cloudfront', 'wait', 'invalidation-completed',
                         '--distribution-id', distribution, '--id', identifier], check=True)
 
