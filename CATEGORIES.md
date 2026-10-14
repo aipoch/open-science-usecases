@@ -1,6 +1,6 @@
 # Case categories
 
-`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records the 124 upstream cases synchronized from Hugging Face snapshot `149a1000396846fdb8c13888258fc816029ca9a8`. One existing unclassified case remains under `usecases/`.
+`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records the 124 upstream cases synchronized from Hugging Face snapshot `91849173361281bac301cc66a2f8628e14218e41`. One existing unclassified case remains under `usecases/`.
 
 ## Curiosity Lab (48)
 
