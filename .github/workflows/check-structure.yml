@@ -4,6 +4,11 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+      dry_run:
+        description: Run publication tests against fake S3 only
+        type: boolean
+        default: true
   pull_request:
     types: [opened, synchronize, reopened, edited]
 
@@ -54,13 +59,35 @@ jobs:
           TARGET_SHA: ${{ github.event.pull_request.head.sha }}
         run: python3 .github/scripts/check_structure.py declarations --base "$BASE_SHA" --after "$TARGET_SHA"
 
+      - name: Install publication SDK
+        run: |
+          python3 -m venv "$RUNNER_TEMP/publication-venv"
+          "$RUNNER_TEMP/publication-venv/bin/python" -m pip install -r .github/scripts/requirements.txt
+          echo "$RUNNER_TEMP/publication-venv/bin" >> "$GITHUB_PATH"
+
       - name: Test workflow behavior on pull requests
+        run: python3 -B -m unittest discover -s .github/tests -v
+
+  publication-dry-run:
+    if: github.event_name == 'workflow_dispatch' && inputs.dry_run
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - name: Install publication SDK
+        run: |
+          python3 -m venv "$RUNNER_TEMP/publication-venv"
+          "$RUNNER_TEMP/publication-venv/bin/python" -m pip install -r .github/scripts/requirements.txt
+          echo "$RUNNER_TEMP/publication-venv/bin" >> "$GITHUB_PATH"
+      - name: Exercise real publisher with local HTTP and fake S3
         run: python3 -B -m unittest discover -s .github/tests -v
 
   publish:
     if: >-
       github.ref == 'refs/heads/main' &&
-      (github.event_name == 'push' || github.event_name == 'workflow_dispatch')
+      (github.event_name == 'push' || (github.event_name == 'workflow_dispatch' && !inputs.dry_run))
     runs-on: ubuntu-latest
     # Each checkpoint waits for its own CloudFront invalidation.
     timeout-minutes: 360
@@ -78,6 +105,12 @@ jobs:
           ref: ${{ github.sha }}
           persist-credentials: false
 
+      - name: Install publication SDK
+        run: |
+          python3 -m venv "$RUNNER_TEMP/publication-venv"
+          "$RUNNER_TEMP/publication-venv/bin/python" -m pip install -r .github/scripts/requirements.txt
+          echo "$RUNNER_TEMP/publication-venv/bin" >> "$GITHUB_PATH"
+
       - name: Read S3 manifest and plan resource candidates
         id: plan
         env:
@@ -91,26 +124,7 @@ jobs:
           AWS_PAGER: ""
         run: python3 .github/scripts/publish.py --after "$TARGET_SHA" --prepare "$RUNNER_TEMP/publication-plan.json"
 
-      - name: Check planned manifest entries and resource availability
-        if: steps.plan.outputs.has_checks == 'true'
-        run: python3 .github/scripts/check_structure.py manifest --plan "$RUNNER_TEMP/publication-plan.json"
-
-      - name: Prepare selected resources and deduplicate against S3 metadata
-        if: steps.plan.outputs.has_uploads == 'true'
-        env:
-          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
-          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          AWS_DEFAULT_REGION: ${{ secrets.AWS_DEFAULT_REGION }}
-          AWS_TARGET_FOLDER: ${{ secrets.AWS_TARGET_FOLDER }}
-          AWS_EC2_METADATA_DISABLED: "true"
-          AWS_PAGER: ""
-        run: python3 .github/scripts/publish.py --prepare-resources "$RUNNER_TEMP/publication-plan.json" --output "$RUNNER_TEMP/resource-publication"
-
-      - name: Extract selected prepared science packages
-        if: steps.plan.outputs.has_packages == 'true'
-        run: python3 .github/scripts/extract_science.py --plan "$RUNNER_TEMP/publication-plan.json" --output "$RUNNER_TEMP/science-publication"
-
-      - name: Publish each case checkpoint and refresh its CDN cache
+      - name: Publish independent cases and refresh their CDN caches
         id: apply
         if: steps.plan.outputs.has_manifest == 'true'
         env:
@@ -121,7 +135,9 @@ jobs:
           AWS_DISTRIBUITION_ID: ${{ secrets.AWS_DISTRIBUITION_ID }}
           AWS_EC2_METADATA_DISABLED: "true"
           AWS_PAGER: ""
-        run: python3 .github/scripts/publish.py --apply-plan "$RUNNER_TEMP/publication-plan.json"
+          CASE_UPLOAD_WORKERS: ${{ vars.CASE_UPLOAD_WORKERS || '4' }}
+          FILE_UPLOAD_WORKERS: ${{ vars.FILE_UPLOAD_WORKERS || '8' }}
+        run: python3 .github/scripts/publish.py --publish-plan "$RUNNER_TEMP/publication-plan.json"
 
       - name: Save publication manifests, file lists and statuses
         if: always()
@@ -147,7 +163,7 @@ jobs:
           elif [ "$JOB_STATUS" = "cancelled" ]; then
             reason='Publication was cancelled; inspect the last completed upload before retrying.'
           elif [ "$JOB_STATUS" = "failure" ]; then
-            reason='Publication failed; later processing and uploads stopped. Inspect the failed step.'
+            reason='Publication failed or partially completed. Independent cases continued unless a shared-index error stopped publication; inspect the case summary and artifact.'
           elif [ "$APPLY_OUTCOME" = "success" ]; then
             reason='Publication completed; every checkpoint and the final manifest sync were committed, read back and refreshed through CDN.'
           elif [ "$PLAN_OUTCOME" = "success" ] && [ "$HAS_UPLOADS" = "false" ]; then

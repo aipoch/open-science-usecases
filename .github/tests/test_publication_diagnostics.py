@@ -37,3 +37,52 @@ class PublicationDiagnosticsTests(unittest.TestCase):
                 self.assertIn(expected, result.stdout)
                 self.assertIn(expected, summary.read_text())
                 self.assertTrue(summary.read_text().startswith('Existing summary\n'))
+
+
+class ConcurrentReporterTests(unittest.TestCase):
+    def test_many_file_events_keep_console_and_snapshot_work_bounded(self):
+        import contextlib
+        import io
+        import json
+        from unittest.mock import patch
+        from publication_steps import Reporter, atomic_json
+        plan = {'after': 'fixture', 'steps': [{'id': 1, 'operation': 'ADD_CASE', 'name': 'case',
+                'files': [{'key': 'case/' + str(n)} for n in range(1000)]}]}
+        with tempfile.TemporaryDirectory() as directory, contextlib.redirect_stdout(io.StringIO()) as log:
+            reporter = Reporter(plan, Path(directory))
+            state = reporter.state['steps'][0]
+            with patch('publication_steps.time.monotonic', return_value=reporter.started), \
+                    patch('publication_steps.atomic_json', wraps=atomic_json) as snapshots:
+                for item in state['files']:
+                    reporter.update(item, status='completed')
+                    reporter.event(plan['steps'][0], 'file', 'completed', key=item['key'])
+                self.assertEqual(snapshots.call_count, 0)
+                reporter.summary()
+                self.assertEqual(snapshots.call_count, 1)
+            self.assertEqual(log.getvalue(), '')
+            events = (Path(directory) / 'events.jsonl').read_text().splitlines()
+            self.assertEqual(len(events), 1000)
+            state = json.loads((Path(directory) / 'status.json').read_text())
+            self.assertTrue(all(f['status'] == 'completed' for f in state['steps'][0]['files']))
+
+    def test_failure_updates_cannot_resize_state_during_snapshot_on_python312(self):
+        from concurrent.futures import ThreadPoolExecutor
+        import contextlib
+        import io
+        import json
+        from publication_steps import Reporter
+        plan = {'after': 'fixture', 'steps': [{'id': 1, 'operation': 'ADD_CASE', 'name': 'case',
+                'files': [{'key': 'case/' + str(n)} for n in range(30000)]}]}
+        with tempfile.TemporaryDirectory() as directory, contextlib.redirect_stdout(io.StringIO()):
+            reporter = Reporter(plan, Path(directory))
+            state = reporter.state['steps'][0]
+            def mutate():
+                for i in range(20):
+                    reporter.update(state, **{'failure_' + str(i): 'fixture'})
+            with ThreadPoolExecutor(max_workers=2) as pool:
+                futures = [pool.submit(mutate), pool.submit(reporter.event, plan['steps'][0], 'step', 'failed')]
+                for future in futures:
+                    future.result()
+            reporter.summary()
+            saved = json.loads((Path(directory) / 'status.json').read_text())['steps'][0]
+            self.assertTrue(all('failure_' + str(i) in saved for i in range(20)))

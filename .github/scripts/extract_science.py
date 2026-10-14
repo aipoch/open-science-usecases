@@ -67,6 +67,7 @@ def download(url, target, resource):
     digest = hashlib.sha256()
     count = 0
     last_progress = time.monotonic()
+    label = json.dumps(resource.get('key', target.name), ensure_ascii=True)
     with urlopen(url, timeout=60) as response, target.open('wb') as output:
         while True:
             chunk = response.read(1024 * 1024)
@@ -77,9 +78,9 @@ def download(url, target, resource):
                 raise ValueError('Downloaded package exceeds its declared byte size')
             digest.update(chunk); output.write(chunk)
             if time.monotonic() - last_progress >= 10:
-                print(f'Download progress: {count}/{size} bytes', flush=True)
+                print(f'Download {label}: {count}/{size} bytes', flush=True)
                 last_progress = time.monotonic()
-    print(f'Download complete: {count}/{size} bytes; verifying SHA-256', flush=True)
+    print(f'Download complete {label}: {count}/{size} bytes; verifying SHA-256', flush=True)
     if digest.hexdigest() != expected.lower():
         raise ValueError('Downloaded package SHA-256 does not match the manifest')
     if count != size:
@@ -204,13 +205,13 @@ def unpack(package, output, verify_only=False):
         return verified
 
 
-def expand_plan(root, plan, output):
+def expand_plan(root, plan, output, *, names=None, check_local=True):
     if git(root, 'rev-parse', 'HEAD').strip() != plan['after']:
         raise ValueError('Checkout must match the prepared target commit')
     if plan.get('extraction_complete'):
         raise ValueError('Extraction requires a fresh, unprepared plan')
     from publish import verify_plan
-    verify_plan(root, plan)
+    verify_plan(root, plan, names=names, check_local=check_local)
     if plan.get('packages') and plan.get('resources_prepared') is not True:
         raise ValueError('Prepare all resources before extracting packages')
     result = copy.deepcopy(plan)

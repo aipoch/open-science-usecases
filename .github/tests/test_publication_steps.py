@@ -73,7 +73,7 @@ class PublicationStepsTests(GitFixture):
                'FAKE_S3_ROOT': str(store), 'AWS_TARGET_FOLDER': 's3://bucket/cases',
                'AWS_DISTRIBUITION_ID': 'test-distribution'}
         def run(*args, fail=None):
-            return subprocess.run([sys.executable, '-B', str(SCRIPTS / 'publish.py'), *args],
+            return subprocess.run([sys.executable, '-B', str(Path(__file__).with_name('fake_publish.py')), *args],
                                   cwd=self.root, env={**env, **(fail or {})}, capture_output=True, text=True)
         result = run('--after', self.git('rev-parse', 'HEAD'), '--prepare', str(plan_file))
         self.assertEqual(result.returncode, 0, result.stderr)
@@ -121,7 +121,7 @@ class PublicationBoundaryTests(GitFixture):
                     'AWS_DISTRIBUITION_ID': 'test-distribution'}
 
     def cli(self, *args, overrides=None, success=True):
-        result = subprocess.run([sys.executable, '-B', str(SCRIPTS / 'publish.py'), *args],
+        result = subprocess.run([sys.executable, '-B', str(Path(__file__).with_name('fake_publish.py')), *args],
                                 cwd=self.root, env={**self.env, **(overrides or {})},
                                 text=True, capture_output=True)
         self.assertEqual(result.returncode == 0, success, result.stdout + result.stderr)
@@ -321,7 +321,7 @@ class PublicationBoundaryTests(GitFixture):
         self.change(); self.prepare_run()
         self.apply_run(overrides={'FAKE_S3_FAIL': 'cp'}, success=False)
         self.assertEqual((self.target / 'manifest.json').read_text(), self.baseline)
-        self.assertEqual([s['status'] for s in self.status()], ['failed', 'waiting'])
+        self.assertEqual([s['status'] for s in self.status()], ['failed', 'skipped'])
         self.assertFalse(any(c[0] == 'cloudfront' or c[:2] == ['s3api', 'put-object'] for c in self.calls()))
         self.assertEqual(self.status()[0]['files'][0]['status'], 'failed')
 
@@ -360,7 +360,7 @@ class PublicationBoundaryTests(GitFixture):
                 self.assertEqual(state['status'], 'failed')
                 self.assertEqual(state['cdn'], 'failed')
                 self.assertTrue(state['manifest_committed'])
-                self.assertEqual(self.status()[1]['status'], 'waiting')
+                self.assertEqual(self.status()[1]['status'], 'failed')
                 plan = self.prepare_run()
                 self.assertEqual([s['operation'] for s in plan['steps']], ['FINAL_SYNC'])
                 start = len(self.calls())

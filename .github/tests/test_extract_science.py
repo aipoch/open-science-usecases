@@ -195,7 +195,7 @@ class ExtractionTests(GitFixture):
 
     def publish(self, env):
         return subprocess.run(
-            [sys.executable, '-B', str(SCRIPTS / 'publish.py'), '--apply-plan', str(self.plan_file)],
+            [sys.executable, '-B', str(Path(__file__).with_name('fake_publish.py')), '--apply-plan', str(self.plan_file)],
             cwd=self.root, env=env, text=True, capture_output=True)
 
     def test_repository_package_uses_fresh_output_and_preserves_existing_directories(self):
@@ -347,19 +347,20 @@ class ExtractionTests(GitFixture):
         commands = []
         count = 0
         for step in workflow.split('      - name: '):
-            command = re.search(r'^        run: (python3 .+)$', step, re.M)
+            command = re.search(r'^        run: (python3 \.github/scripts/.+)$', step, re.M)
             if command is None:
                 continue
             count += 1
             command = command.group(1).replace('python3 .github/scripts/',
                                                shlex.quote(sys.executable) + ' -B ' + str(SCRIPTS) + '/')
+            command = command.replace(str(SCRIPTS / 'publish.py'), str(Path(__file__).with_name('fake_publish.py')))
             gate = re.search(r"^        if: steps.plan.outputs.(\w+) == 'true'$", step, re.M)
             if gate:
                 commands.extend(['if grep -qx ' + shlex.quote(gate.group(1)+'=true') + ' "$GITHUB_OUTPUT"; then',
                                  command, 'fi'])
             else:
                 commands.append(command)
-        self.assertEqual(count, 5)
+        self.assertEqual(count, 2)
         output = self.root / '.git/workflow-output'
         output.write_text('')
         return subprocess.run(['bash', '-e', '-o', 'pipefail', '-c', '\n'.join(commands)], cwd=self.root,

@@ -3,9 +3,9 @@
 import argparse
 import copy
 import shutil
-import time
 import hashlib
 import json
+import mimetypes
 import os
 from pathlib import Path
 import re
@@ -17,7 +17,7 @@ from urllib.parse import quote, urlsplit
 from check_structure import catalog_errors, read_json, schema_errors, source_errors, selected_cases
 from manifest_diff import changed_entries, git
 from publication_steps import (build_steps, group_files, write_artifacts, print_plan,
-                               Reporter, digest)
+                               Reporter)
 
 
 KINDS = ('cover', 'case', 'introduction')
@@ -65,7 +65,7 @@ def check_sources(root, entries):
     return selected_cases(entries)
 
 
-def prepare(root, baseline, after):
+def prepare(root, baseline, after, *, check_local=True):
     if git(root, 'rev-parse', 'HEAD').strip() != after:
         raise ValueError('Checkout must match the fixed target commit')
     current_text = git(root, 'show', after + ':manifest.json')
@@ -73,7 +73,8 @@ def prepare(root, baseline, after):
         raise ValueError('Checkout manifest.json differs from the fixed target commit')
     old = [] if baseline is None else read_manifest(baseline, 'S3 manifest.json')
     new = read_manifest(current_text, 'repository manifest.json', legacy=False)
-    cases = check_sources(root, changed_entries(old, new))
+    changed = changed_entries(old, new)
+    cases = check_sources(root, changed) if check_local else selected_cases(changed)
     previous = {entry['name']: entry for entry in old}
     candidates, packages = [], []
     for entry in new:
@@ -104,8 +105,21 @@ def matching_head(head, item):
             and isinstance(checksum, str) and checksum.lower() == item['sha256'])
 
 
-def verify_plan(root, plan):
-    expected = prepare(root, plan['baseline'], plan['after'])
+def scope_plan(plan, names):
+    """Restrict resource work to coordinator-selected cases, never to plan-supplied scope."""
+    result = copy.deepcopy(plan)
+    for field in ('candidates', 'packages'):
+        result[field] = [item for item in result[field] if item['name'] in names]
+    result['files'] = [item for item in result['files']
+                       if item['key'] == 'manifest.json' or item['key'].split('/', 1)[0] in names]
+    result['cases'] = [item for item in result['cases'] if item['entry']['name'] in names]
+    return group_files(result)
+
+
+def verify_plan(root, plan, *, names=None, check_local=True):
+    expected = prepare(root, plan['baseline'], plan['after'], check_local=check_local)
+    if names is not None:
+        expected = scope_plan(expected, names)
     for field in ('candidates', 'packages', 'cases', 'unchanged'):
         if plan.get(field) != expected[field]:
             raise ValueError('Prepared ' + field + ' differ from the fixed target')
@@ -122,9 +136,9 @@ def verify_plan(root, plan):
     return expected
 
 
-def prepare_resources(root, plan, s3, output):
+def prepare_resources(root, plan, s3, output, *, names=None, check_local=True):
     from extract_science import download
-    expected = verify_plan(root, plan)
+    expected = verify_plan(root, plan, names=names, check_local=check_local)
     if plan.get('resources_prepared') or plan['files'] != expected['files']:
         raise ValueError('Resource preparation requires a fresh plan')
     result = copy.deepcopy(plan)
@@ -183,6 +197,7 @@ class S3:
         uri = urlsplit(target)
         if uri.scheme != 's3' or not uri.netloc or uri.query or uri.fragment:
             raise ValueError('AWS_TARGET_FOLDER must be an s3://bucket[/prefix] URI')
+        self.client = None
         self.target = target.rstrip('/')
         self.bucket = uri.netloc
         self.manifest_key = uri.path.strip('/') + '/manifest.json' if uri.path.strip('/') else 'manifest.json'
@@ -203,23 +218,35 @@ class S3:
             self.etag = json.loads(result.stdout)['ETag']
             return path.read_bytes().decode('utf-8')
 
+    def enable_transfers(self, workers=32):
+        # Construct the shared client before starting workers; no default-session races.
+        import boto3.session
+        from botocore.config import Config
+        from boto3.s3.transfer import TransferConfig
+        self.client = boto3.session.Session().client('s3', config=Config(
+            max_pool_connections=workers, retries={'mode': 'standard', 'total_max_attempts': 3},
+            connect_timeout=15, read_timeout=60))
+        self.transfer_config = TransferConfig(use_threads=False, preferred_transfer_client='classic')
+
     def upload(self, path, key):
-        # Metadata describes uploaded bytes, including unchanged package metadata,
-        # and never copies an unverified checksum declaration from the manifest.
         _, checksum = file_integrity(path)
-        subprocess.run(['aws', 's3', 'cp', str(path), self.target + '/' + key,
-                        '--only-show-errors', '--metadata', 'sha256=' + checksum], check=True)
+        content_type = mimetypes.guess_type(str(path))[0] or 'application/octet-stream'
+        self.client.upload_file(str(path), self.bucket, self.object_key(key),
+                                ExtraArgs={'Metadata': {'sha256': checksum}, 'ContentType': content_type},
+                                Config=self.transfer_config)
 
     def head(self, key):
-        result = subprocess.run(['aws', 's3api', 'head-object', '--bucket', self.bucket,
-                                 '--key', self.object_key(key), '--output', 'json'],
-                                capture_output=True, text=True)
-        if result.returncode:
-            # HeadObject reports a missing object as 404; 403/transport errors are fatal.
-            if re.search(r'\((?:404|NoSuchKey|NotFound)\) when calling the HeadObject operation', result.stderr):
+        from botocore.exceptions import ClientError
+        if self.client is None:
+            self.enable_transfers()
+        try:
+            head = self.client.head_object(Bucket=self.bucket, Key=self.object_key(key))
+            # SDK responses also contain datetime objects and transport diagnostics.
+            return {'ContentLength': head['ContentLength'], 'Metadata': head.get('Metadata', {})}
+        except ClientError as error:
+            if error.response.get('Error', {}).get('Code') in ('404', 'NoSuchKey', 'NotFound'):
                 return None
-            raise ValueError('Cannot HEAD target S3 object: ' + result.stderr.strip())
-        return json.loads(result.stdout)
+            raise ValueError('Cannot HEAD target S3 object: ' + str(error)) from error
 
     def verify_upload(self, key, size, checksum):
         if not matching_head(self.head(key), {'bytes': size, 'sha256': checksum.lower()}):
@@ -258,10 +285,10 @@ class S3:
                         '--recursive', '--only-show-errors'], check=True)
 
 
-def apply(root, plan, s3, output=None):
+def validate_prepared(root, plan, s3, *, names=None, check_local=True):
     if git(root, 'rev-parse', 'HEAD').strip() != plan['after']:
         raise ValueError('Checkout must match the prepared target commit')
-    expected = verify_plan(root, plan)
+    expected = verify_plan(root, plan, names=names, check_local=check_local)
     candidates = {item['key']: item for item in expected['candidates']}
     if candidates and plan.get('resources_prepared') is not True:
         raise ValueError('All selected resources must be prepared before publication')
@@ -321,88 +348,12 @@ def apply(root, plan, s3, output=None):
             expanded[extracted_prefix(package['name']) + item['path']] = (item['bytes'], item['sha256'])
     if {key: (item['bytes'], item['sha256']) for key, item in generated.items()} != expanded:
         raise ValueError('Extracted upload inventory differs from verified packages')
-    group_files(plan)
-    output = output or root / '.publication'
-    write_artifacts(plan, output)
-    reporter = Reporter(plan, output)
-    print_plan(plan)
-    baseline = plan['baseline']
-    try:
-        for step, state in zip(plan['steps'], reporter.state['steps']):
-            state['status'] = 'uploading'
-            reporter.event(step, 'step', 'uploading', operation=step['operation'], name=step['name'])
-            phase = 'baseline'
-            try:
-                # Also check before resource writes, not just at manifest commit time.
-                if s3.read_manifest() != baseline:
-                    raise ValueError('S3 manifest changed since preparation; dispatch a fresh run')
-                phase = 'files'
-                # Finish one case before clearing the next, even when originals and extracted files are interleaved.
-                case_files = {}
-                for item, file_state in zip(step['files'], state['files']):
-                    case_files.setdefault(item['key'].split('/', 1)[0], []).append((item, file_state))
-                package_names = {package['name'] for package in step['packages']}
-                for name, files in case_files.items():
-                    if name in package_names:
-                        reporter.event(step, 'clear_extracted', 'uploading', name=name)
-                        s3.clear_extracted(name)
-                        reporter.event(step, 'clear_extracted', 'completed', name=name)
-                    for item, file_state in files:
-                        started = time.monotonic()
-                        file_state['status'] = 'uploading'
-                        reporter.event(step, 'file', 'uploading', **item)
-                        s3.upload(root / item['path'], item['key'])
-                        s3.verify_upload(item['key'], item['bytes'], item['sha256'])
-                        file_state['status'] = 'completed'
-                        reporter.event(step, 'file', 'completed', key=item['key'],
-                                       elapsed_seconds=round(time.monotonic() - started, 3))
-                phase = 'manifest'
-                reporter.event(step, phase, 'uploading', sha256=digest(step['manifest']))
-                directory = output / 'steps' / ('%03d-%s' % (step['id'], step['name'] or step['operation'].lower()))
-                try:
-                    s3.commit_manifest(directory / 'manifest.json')
-                    state['manifest_committed'] = True
-                    reporter.event(step, phase, 'accepted')
-                except subprocess.CalledProcessError as error:
-                    # Only uncertain transport failures permit read-back recovery, never denied/conflicting writes.
-                    detail = (error.stderr or '').lower()
-                    ambiguous = any(message in detail for message in (
-                        'timeout', 'timed out', 'connection was closed', 'connection reset', 'connection aborted'))
-                    if not ambiguous:
-                        raise
-                    state['manifest_committed'] = None
-                    reporter.event(step, phase, 'unknown')
-                    if s3.read_manifest() != step['manifest']:
-                        raise
-                    state['manifest_committed'] = True
-                    reporter.event(step, phase, 'accepted')
-                if s3.read_manifest() != step['manifest']:
-                    raise ValueError('Published manifest read-back mismatch')
-                baseline = step['manifest']
-                state['manifest_verified'] = True
-                reporter.event(step, phase, 'completed')
-                phase = 'cdn'
-                state['cdn'] = 'uploading'
-                reporter.event(step, phase, 'uploading')
-                # Catalog checkpoints may upload several cases; refresh only those prefixes.
-                changed_names = sorted({item['key'].split('/', 1)[0] for item in step['files']})
-                for name in changed_names or [None]:
-                    s3.refresh_cdn(name)
-                state['cdn'] = 'completed'
-                state['status'] = 'completed'
-                reporter.event(step, 'step', 'completed')
-            except BaseException as error:
-                state['status'] = 'failed'
-                if phase == 'cdn':
-                    state['cdn'] = 'failed'
-                for file_state in state['files']:
-                    if file_state['status'] == 'uploading':
-                        file_state['status'] = 'failed'
-                reporter.event(step, phase, 'failed', error=str(error),
-                               detail=getattr(error, 'stderr', None))
-                raise
-    finally:
-        reporter.summary()
+
+
+def apply(root, plan, s3, output=None, *, case_workers=4, file_workers=8, prepare_cases=False):
+    from publication_runner import run
+    return run(root, plan, s3, output or root / '.publication',
+               case_workers=case_workers, file_workers=file_workers, prepare_cases=prepare_cases)
 
 
 
@@ -418,7 +369,13 @@ def main():
     modes.add_argument('--prepare-resources', type=Path)
     parser.add_argument('--output', type=Path)
     modes.add_argument('--apply-plan', type=Path)
+    modes.add_argument('--publish-plan', type=Path)
+    parser.add_argument('--case-workers', type=int, default=int(os.environ.get('CASE_UPLOAD_WORKERS', '4')))
+    parser.add_argument('--file-workers', type=int, default=int(os.environ.get('FILE_UPLOAD_WORKERS', '8')))
     args = parser.parse_args()
+    if not (1 <= args.case_workers <= 16 and 1 <= args.file_workers <= 32
+            and args.case_workers * args.file_workers <= 64):
+        raise ValueError('Workers require 1..16 cases, 1..32 files and at most 64 total transfers')
     root = Path.cwd()
     s3 = S3(os.environ.get('AWS_TARGET_FOLDER', ''))
     if args.prepare_resources:
@@ -429,12 +386,16 @@ def main():
         write_artifacts(plan, args.prepare_resources.with_suffix(''))
         args.prepare_resources.write_text(json.dumps(plan) + '\n', encoding='utf-8')
         return
-    if args.apply_plan:
+    if args.apply_plan or args.publish_plan:
         if not os.environ.get('AWS_DISTRIBUITION_ID', '').strip():
             raise ValueError('AWS_DISTRIBUITION_ID is required for every publication step')
-        apply(root, json.loads(args.apply_plan.read_text()), s3, args.apply_plan.with_suffix(''))
+        path = args.apply_plan or args.publish_plan
+        s3.enable_transfers(args.case_workers * args.file_workers)
+        apply(root, json.loads(path.read_text()), s3, path.with_suffix(''),
+              case_workers=args.case_workers, file_workers=args.file_workers,
+              prepare_cases=bool(args.publish_plan))
         return
-    plan = prepare(root, s3.read_manifest(), args.after)
+    plan = prepare(root, s3.read_manifest(), args.after, check_local=False)
     print_plan(plan)
     print('Prepared {} files and {} packages against S3 manifest.json.'.format(
         len(plan['files']), len(plan['packages'])))

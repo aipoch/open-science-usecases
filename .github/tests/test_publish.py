@@ -18,6 +18,10 @@ import publish as publisher
 
 class GitFixture(unittest.TestCase):
     def setUp(self):
+        from fake_publish import CommandS3
+        self.enterContext(patch.object(publisher, 'S3', CommandS3))
+        # Existing command-boundary tests assert a serial trace; parallel tests use explicit limits.
+        self.enterContext(patch.dict(os.environ, {'CASE_UPLOAD_WORKERS': '1', 'FILE_UPLOAD_WORKERS': '1'}))
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name).resolve()
@@ -260,7 +264,7 @@ class PublishTests(GitFixture):
                 calls.append(key)
                 raise OSError('upload failed')
         with self.assertRaises(OSError):
-            publisher.apply(self.root, self.ready(self.plan()), Upload())
+            publisher.apply(self.root, self.ready(self.plan()), Upload(), case_workers=1, file_workers=1)
         self.assertEqual(calls, ['a-case/A Case.png'])
 
     def s3_fixture(self):
@@ -293,7 +297,7 @@ class PublishTests(GitFixture):
         baseline = s3 / 'bucket/cases/manifest.json'
         baseline.parent.mkdir(parents=True); baseline.write_text(plan['baseline'])
         plan_file = self.root / 'plan.json'; plan_file.write_text(json.dumps(plan))
-        result = subprocess.run([sys.executable, '-B', str(SCRIPTS / 'publish.py'), '--apply-plan', str(plan_file)],
+        result = subprocess.run([sys.executable, '-B', str(Path(__file__).with_name('fake_publish.py')), '--apply-plan', str(plan_file)],
                                 cwd=self.root, env=env, text=True, capture_output=True)
         self.assertEqual(result.returncode, 0, result.stderr)
         target = s3 / 'bucket/cases'
