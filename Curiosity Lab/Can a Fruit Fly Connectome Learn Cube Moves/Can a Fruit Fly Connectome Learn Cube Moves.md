@@ -13,8 +13,3 @@ The study evaluates a computational model built from connectome topology. Action
 ## Package and provenance
 
 Creator attribution follows the signature on the supplied poster and matches Case Index.csv. The original session export and poster are preserved from AIPOCH-Creator-Use-Cases.zip. This introduction describes the archived research workflow.
-
-## Case files
-
-- [Session export](./Can%20a%20Fruit%20Fly%20Connectome%20Learn%20Cube%20Moves.science)
-- [Case poster](./Can%20a%20Fruit%20Fly%20Connectome%20Learn%20Cube%20Moves.png)

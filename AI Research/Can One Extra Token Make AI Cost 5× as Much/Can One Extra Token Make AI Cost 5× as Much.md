@@ -25,9 +25,4 @@ Caching assumes identical, fully cacheable input, successful hits before expiry,
 The package includes `haiku-pricing-threshold.png`, `haiku-pricing-estimates.csv`, and `haiku-pricing-methods.md`, with six input-length examples, formulas, and source notes. No paid API requests were made. The source notes cite the [official pricing page](https://platform.claude.com/docs/en/about-claude/pricing), but direct verification was unavailable in the recorded session.
 ## Import provenance
 
-This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/Can%20One%20Extra%20Token%20Make%20AI%20Cost%205%C3%97%20as%20Much/Can%20One%20Extra%20Token%20Make%20AI%20Cost%205%C3%97%20as%20Much.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
-
-## Case files
-
-- [Session export](./Can%20One%20Extra%20Token%20Make%20AI%20Cost%205%C3%97%20as%20Much.science)
-- [Case poster](./Can%20One%20Extra%20Token%20Make%20AI%20Cost%205%C3%97%20as%20Much.png)
+This introduction was imported from the GitHub case description. The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.

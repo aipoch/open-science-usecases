@@ -11,6 +11,11 @@
       "category": "Curiosity Lab"
     },
     {
+      "title": "2,000 Natural Products - How Diverse Are They",
+      "name": "2-000-natural-products-how-diverse-are-they",
+      "category": "Academic Research"
+    },
+    {
       "title": "99% Pure - Does Molecular Handedness Matter",
       "name": "99-pure-does-molecular-handedness-matter",
       "category": "Curiosity Lab"
@@ -46,6 +51,31 @@
       "category": "AI Research"
     },
     {
+      "title": "AI or Human - What Story Structure Reveals",
+      "name": "ai-or-human-what-story-structure-reveals",
+      "category": "AI Research"
+    },
+    {
+      "title": "Air Pollution - Is the Turning Point Real",
+      "name": "air-pollution-is-the-turning-point-real",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Amazon Tree-Cover Loss - Does the Definition Change the Picture",
+      "name": "amazon-tree-cover-loss-does-the-definition-change-the-picture",
+      "category": "Academic Research"
+    },
+    {
+      "title": "AqSolDB scaffold novelty and aqueous solubility prediction",
+      "name": "aqsoldb-scaffold-novelty-and-aqueous-solubility-prediction",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Are Overdose Deaths Rising Because America Is Aging",
+      "name": "are-overdose-deaths-rising-because-america-is-aging",
+      "category": "Academic Research"
+    },
+    {
       "title": "At 70% should you take it",
       "name": "at-70-should-you-take-it",
       "category": "Curiosity Lab"
@@ -54,6 +84,11 @@
       "title": "Birthday Paradox Simulation Verifying the 23-Person 50% Claim",
       "name": "birthday-paradox-simulation-verifying-the-23-person-50-claim",
       "category": "Curiosity Lab"
+    },
+    {
+      "title": "Blood Metabolites - Can They Distinguish Cancer from Polyps",
+      "name": "blood-metabolites-can-they-distinguish-cancer-from-polyps",
+      "category": "Academic Research"
     },
     {
       "title": "Bottled Water in Convenience Stores Across Five Cities- What Is the Price Gap Between the Most Expensive and the Cheapest",
@@ -66,19 +101,24 @@
       "category": "AI Research"
     },
     {
-      "title": "CAN AI PICK LUCKY LOTTERY NUMBERS?",
-      "name": "can-ai-pick-lucky-lottery-numbers",
-      "category": "Curiosity Lab"
-    },
-    {
-      "title": "CAN ONE WEEK FLIP THE WINNER?",
-      "name": "can-one-week-flip-the-winner",
-      "category": "Curiosity Lab"
-    },
-    {
       "title": "Can 20 Pokémon Packs Guarantee an SIR",
       "name": "can-20-pokemon-packs-guarantee-an-sir",
       "category": "Curiosity Lab"
+    },
+    {
+      "title": "Can a Fruit Fly Connectome Learn Cube Moves",
+      "name": "can-a-fruit-fly-connectome-learn-cube-moves",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Can a Layout Change Make AI Miss Parts of Your Resume",
+      "name": "can-a-layout-change-make-ai-miss-parts-of-your-resume",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can a Simple Algorithm Beat AI at Wordle",
+      "name": "can-a-simple-algorithm-beat-ai-at-wordle",
+      "category": "AI Research"
     },
     {
       "title": "Can AI Bluff and Detect Bluffs in Poker",
@@ -96,11 +136,6 @@
       "category": "AI Research"
     },
     {
-      "title": "Can AI Find Three Contradictions in a 20-Page Presentation",
-      "name": "can-ai-find-three-contradictions-in-a-20-page-presentation",
-      "category": "AI Research"
-    },
-    {
       "title": "Can AI Find the Cheapest Checkout with 100 Discount Rules",
       "name": "can-ai-find-the-cheapest-checkout-with-100-discount-rules",
       "category": "AI Research"
@@ -108,6 +143,11 @@
     {
       "title": "Can AI Find the Shortest Paris Sightseeing Route",
       "name": "can-ai-find-the-shortest-paris-sightseeing-route",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can AI Find Three Contradictions in a 20-Page Presentation",
+      "name": "can-ai-find-three-contradictions-in-a-20-page-presentation",
       "category": "AI Research"
     },
     {
@@ -141,18 +181,23 @@
       "category": "AI Research"
     },
     {
+      "title": "CAN AI PICK LUCKY LOTTERY NUMBERS?",
+      "name": "can-ai-pick-lucky-lottery-numbers",
+      "category": "Curiosity Lab"
+    },
+    {
       "title": "Can AI Pick the Right Contact",
       "name": "can-ai-pick-the-right-contact",
       "category": "AI Research"
     },
     {
-      "title": "Can AI Plan Seven Lunches Under $50 If Ingredients Must Be Bought in Full Packages",
-      "name": "can-ai-plan-seven-lunches-under-50-if-ingredients-must-be-bought-in-full-packages",
+      "title": "Can AI Plan a Fair Chinese Shared Dinner",
+      "name": "can-ai-plan-a-fair-chinese-shared-dinner",
       "category": "AI Research"
     },
     {
-      "title": "Can AI Plan a Fair Chinese Shared Dinner",
-      "name": "can-ai-plan-a-fair-chinese-shared-dinner",
+      "title": "Can AI Plan Seven Lunches Under $50 If Ingredients Must Be Bought in Full Packages",
+      "name": "can-ai-plan-seven-lunches-under-50-if-ingredients-must-be-bought-in-full-packages",
       "category": "AI Research"
     },
     {
@@ -171,6 +216,11 @@
       "category": "AI Research"
     },
     {
+      "title": "Can an AI Bidder Overpay and Lose Money",
+      "name": "can-an-ai-bidder-overpay-and-lose-money",
+      "category": "AI Research"
+    },
+    {
       "title": "Can GLP-1 Drugs Really Help Us Live Longer",
       "name": "can-glp-1-drugs-really-help-us-live-longer",
       "category": "Curiosity Lab"
@@ -186,24 +236,9 @@
       "category": "AI Research"
     },
     {
-      "title": "Can Social Pressure Make AI Change a Correct Answer",
-      "name": "can-social-pressure-make-ai-change-a-correct-answer",
-      "category": "AI Research"
-    },
-    {
-      "title": "Can a Layout Change Make AI Miss Parts of Your Resume",
-      "name": "can-a-layout-change-make-ai-miss-parts-of-your-resume",
-      "category": "AI Research"
-    },
-    {
-      "title": "Can a Simple Algorithm Beat AI at Wordle",
-      "name": "can-a-simple-algorithm-beat-ai-at-wordle",
-      "category": "AI Research"
-    },
-    {
-      "title": "Can an AI Bidder Overpay and Lose Money",
-      "name": "can-an-ai-bidder-overpay-and-lose-money",
-      "category": "AI Research"
+      "title": "CAN ONE WEEK FLIP THE WINNER?",
+      "name": "can-one-week-flip-the-winner",
+      "category": "Curiosity Lab"
     },
     {
       "title": "Can petal length identify iris",
@@ -211,9 +246,24 @@
       "category": "Curiosity Lab"
     },
     {
+      "title": "Can Social Pressure Make AI Change a Correct Answer",
+      "name": "can-social-pressure-make-ai-change-a-correct-answer",
+      "category": "AI Research"
+    },
+    {
+      "title": "Can We Forecast Mauna Loa's CO2",
+      "name": "can-we-forecast-mauna-loa-s-co2",
+      "category": "Academic Research"
+    },
+    {
       "title": "Card Shuffle Adjacency Simulation",
       "name": "card-shuffle-adjacency-simulation",
       "category": "Curiosity Lab"
+    },
+    {
+      "title": "Chemical Activity Predictions - Can We Trust the Probabilities",
+      "name": "chemical-activity-predictions-can-we-trust-the-probabilities",
+      "category": "Academic Research"
     },
     {
       "title": "Chiral Molecules - Can a 0.1% Lead Take Over",
@@ -226,9 +276,34 @@
       "category": "Curiosity Lab"
     },
     {
+      "title": "COVID-19 Case Counts - Trend or Reporting Noise",
+      "name": "covid-19-case-counts-trend-or-reporting-noise",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Diet Diversity - Does the Gut Microbiome Differ",
+      "name": "diet-diversity-does-the-gut-microbiome-differ",
+      "category": "Academic Research"
+    },
+    {
       "title": "DO STOP-LOSSES PROTECT NVDA?",
       "name": "do-stop-losses-protect-nvda",
       "category": "Curiosity Lab"
+    },
+    {
+      "title": "Does AI Practice Translate into Independent Learning",
+      "name": "does-ai-practice-translate-into-independent-learning",
+      "category": "AI Research"
+    },
+    {
+      "title": "EGFR potency prediction - an inspectable pilot",
+      "name": "egfr-potency-prediction-an-inspectable-pilot",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Florida precipitation and Niño 3.4 seasonal association",
+      "name": "florida-precipitation-and-nino-3-4-seasonal-association",
+      "category": "Academic Research"
     },
     {
       "title": "For the same one-square-meter area, which receives more solar energy over the course of a year London or Seattle",
@@ -246,9 +321,14 @@
       "category": "Curiosity Lab"
     },
     {
-      "title": "Gold vs Bitcoin 28 Days Changed the Winner",
-      "name": "gold-vs-bitcoin-28-days-changed-the-winner",
-      "category": "Curiosity Lab"
+      "title": "Genomic context of the Horvath epigenetic clock",
+      "name": "genomic-context-of-the-horvath-epigenetic-clock",
+      "category": "Academic Research"
+    },
+    {
+      "title": "GLP-1 medicines and adverse-event reporting patterns",
+      "name": "glp-1-medicines-and-adverse-event-reporting-patterns",
+      "category": "Academic Research"
     },
     {
       "title": "Gold, Bitcoin, Nvidia, and the S&P How Big Will",
@@ -256,8 +336,18 @@
       "category": "Curiosity Lab"
     },
     {
+      "title": "Gold vs Bitcoin 28 Days Changed the Winner",
+      "name": "gold-vs-bitcoin-28-days-changed-the-winner",
+      "category": "Curiosity Lab"
+    },
+    {
       "title": "Hotter Years, Hotter Days",
       "name": "hotter-years-hotter-days",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "How early should you leave",
+      "name": "how-early-should-you-leave",
       "category": "Curiosity Lab"
     },
     {
@@ -271,6 +361,11 @@
       "category": "AI Research"
     },
     {
+      "title": "How much does battery health decline after two years of smartphone use",
+      "name": "how-much-does-battery-health-decline-after-two-years-of-smartphone-use",
+      "category": "Curiosity Lab"
+    },
+    {
       "title": "How Much Memory Does a Trillion-Parameter AI Need",
       "name": "how-much-memory-does-a-trillion-parameter-ai-need",
       "category": "AI Research"
@@ -278,16 +373,6 @@
     {
       "title": "How Often Do Job Posts Ask for Proficiency?",
       "name": "how-often-do-job-posts-ask-for-proficiency",
-      "category": "Curiosity Lab"
-    },
-    {
-      "title": "How early should you leave",
-      "name": "how-early-should-you-leave",
-      "category": "Curiosity Lab"
-    },
-    {
-      "title": "How much does battery health decline after two years of smartphone use",
-      "name": "how-much-does-battery-health-decline-after-two-years-of-smartphone-use",
       "category": "Curiosity Lab"
     },
     {
@@ -301,9 +386,29 @@
       "category": "Curiosity Lab"
     },
     {
+      "title": "Involved versus uninvolved Crohn ileum - donor-aware expression assessment",
+      "name": "involved-versus-uninvolved-crohn-ileum-donor-aware-expression-assessment",
+      "category": "Academic Research"
+    },
+    {
       "title": "Is Thinking Longer Worth It?",
       "name": "is-thinking-longer-worth-it",
       "category": "AI Research"
+    },
+    {
+      "title": "Kidney Cancer - What Sets the Subtypes Apart",
+      "name": "kidney-cancer-what-sets-the-subtypes-apart",
+      "category": "Academic Research"
+    },
+    {
+      "title": "KRAS Mutations - Do Survival Patterns Differ",
+      "name": "kras-mutations-do-survival-patterns-differ",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Light-Activated Neurons - Does the Cutoff Matter",
+      "name": "light-activated-neurons-does-the-cutoff-matter",
+      "category": "Curiosity Lab"
     },
     {
       "title": "Light On - How Fast Do Neurons Respond",
@@ -311,9 +416,14 @@
       "category": "Curiosity Lab"
     },
     {
-      "title": "Light-Activated Neurons - Does the Cutoff Matter",
-      "name": "light-activated-neurons-does-the-cutoff-matter",
-      "category": "Curiosity Lab"
+      "title": "Lymphoma Biomarkers - What Does the Evidence Support",
+      "name": "lymphoma-biomarkers-what-does-the-evidence-support",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Mass Spectra - Can They Reveal a Chemical Family",
+      "name": "mass-spectra-can-they-reveal-a-chemical-family",
+      "category": "Academic Research"
     },
     {
       "title": "MiMo-V2.6 Pro vs. Flash - Is More RL Spending Worth It",
@@ -326,13 +436,13 @@
       "category": "Curiosity Lab"
     },
     {
-      "title": "Monthly rotation of best-performing assets vs. buy-and-hold",
-      "name": "monthly-rotation-of-best-performing-assets-vs-buy-and-hold",
-      "category": "Curiosity Lab"
+      "title": "Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024)",
+      "name": "monitoring-site-mix-and-pm2-5-trends-in-los-angeles-county-20152024",
+      "category": "Academic Research"
     },
     {
-      "title": "NVDA: ALL AT ONCE OR FOUR WEEKS?",
-      "name": "nvda-all-at-once-or-four-weeks",
+      "title": "Monthly rotation of best-performing assets vs. buy-and-hold",
+      "name": "monthly-rotation-of-best-performing-assets-vs-buy-and-hold",
       "category": "Curiosity Lab"
     },
     {
@@ -349,6 +459,16 @@
       "title": "Neutrino Hotspots - Signal or Chance",
       "name": "neutrino-hotspots-signal-or-chance",
       "category": "Curiosity Lab"
+    },
+    {
+      "title": "NVDA: ALL AT ONCE OR FOUR WEEKS?",
+      "name": "nvda-all-at-once-or-four-weeks",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Ocean Microbes - How Do They Relate to Nutrients",
+      "name": "ocean-microbes-how-do-they-relate-to-nutrients",
+      "category": "Academic Research"
     },
     {
       "title": "One Neutrino - How Much Sky",
@@ -371,6 +491,51 @@
       "category": "Curiosity Lab"
     },
     {
+      "title": "Pennsylvania construction employment and monitored PM2.5, 2023",
+      "name": "pennsylvania-construction-employment-and-monitored-pm2-5-2023",
+      "category": "Academic Research"
+    },
+    {
+      "title": "PFAS assay activity and placental cell-type expression",
+      "name": "pfas-assay-activity-and-placental-cell-type-expression",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Physical activity and diabetes among US adults (NHANES 2011–2018)",
+      "name": "physical-activity-and-diabetes-among-us-adults-nhanes-20112018",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Protein abundance in ischemic failing versus non-failing human hearts",
+      "name": "protein-abundance-in-ischemic-failing-versus-non-failing-human-hearts",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Protein Measurements - Do the Ratios Add Up",
+      "name": "protein-measurements-do-the-ratios-add-up",
+      "category": "Academic Research"
+    },
+    {
+      "title": "RAS mutations in two public pancreatic cohorts",
+      "name": "ras-mutations-in-two-public-pancreatic-cohorts",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Recursive Self-Improvement - What Does the Evidence Show",
+      "name": "recursive-self-improvement-what-does-the-evidence-show",
+      "category": "AI Research"
+    },
+    {
+      "title": "Registry-results availability in completed glioblastoma trials",
+      "name": "registry-results-availability-in-completed-glioblastoma-trials",
+      "category": "Academic Research"
+    },
+    {
+      "title": "Reproducing the Dexamethasone Gene Response",
+      "name": "reproducing-the-dexamethasone-gene-response",
+      "category": "Curiosity Lab"
+    },
+    {
       "title": "Revised AI Papers - Did the Main Claim Change",
       "name": "revised-ai-papers-did-the-main-claim-change",
       "category": "AI Research"
@@ -386,6 +551,16 @@
       "category": "Curiosity Lab"
     },
     {
+      "title": "Soil Heavy Metals - Upstream vs Downstream",
+      "name": "soil-heavy-metals-upstream-vs-downstream",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Spatial Immune Organization and Breast Cancer Prognosis",
+      "name": "spatial-immune-organization-and-breast-cancer-prognosis",
+      "category": "Academic Research"
+    },
+    {
       "title": "Spending $100 on Ads vs. $100 on Content Which",
       "name": "spending-100-on-ads-vs-100-on-content-which",
       "category": "Curiosity Lab"
@@ -393,11 +568,6 @@
     {
       "title": "The 100K Cliff",
       "name": "the-100-k-cliff",
-      "category": "AI Research"
-    },
-    {
-      "title": "WOULD AN AI KEEP COOPERATING?",
-      "name": "would-an-ai-keep-cooperating",
       "category": "AI Research"
     },
     {
@@ -421,6 +591,11 @@
       "category": "AI Research"
     },
     {
+      "title": "which deal is actually cheaper",
+      "name": "which-deal-is-actually-cheaper",
+      "category": "Curiosity Lab"
+    },
+    {
       "title": "Which Planet Is Most Like Earth—and Who Decides",
       "name": "which-planet-is-most-like-earth-and-who-decides",
       "category": "Curiosity Lab"
@@ -441,195 +616,14 @@
       "category": "AI Research"
     },
     {
-      "title": "which deal is actually cheaper",
-      "name": "which-deal-is-actually-cheaper",
-      "category": "Curiosity Lab"
-    },
-    {
-      "title": "AI or Human - What Story Structure Reveals",
-      "name": "ai-or-human-what-story-structure-reveals",
-      "category": "AI Research",
-      "creator": "@Saccc_c"
-    },
-    {
-      "title": "Can a Fruit Fly Connectome Learn Cube Moves",
-      "name": "can-a-fruit-fly-connectome-learn-cube-moves",
-      "category": "Curiosity Lab",
-      "creator": "@MinLiBuilds"
-    },
-    {
-      "title": "Does AI Practice Translate into Independent Learning",
-      "name": "does-ai-practice-translate-into-independent-learning",
-      "category": "AI Research",
-      "creator": "@cheery9998"
-    },
-    {
-      "title": "Recursive Self-Improvement - What Does the Evidence Show",
-      "name": "recursive-self-improvement-what-does-the-evidence-show",
-      "category": "AI Research",
-      "creator": "@dongxi_nlp"
-    },
-    {
-      "title": "Reproducing the Dexamethasone Gene Response",
-      "name": "reproducing-the-dexamethasone-gene-response",
-      "category": "Curiosity Lab",
-      "creator": "@servasyy_ai"
-    },
-    {
-      "title": "Soil Heavy Metals - Upstream vs Downstream",
-      "name": "soil-heavy-metals-upstream-vs-downstream",
-      "category": "Curiosity Lab",
-      "creator": "@RealYDT"
-    },
-    {
-      "title": "2,000 Natural Products - How Diverse Are They",
-      "name": "2-000-natural-products-how-diverse-are-they",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Air Pollution - Is the Turning Point Real",
-      "name": "air-pollution-is-the-turning-point-real",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Amazon Tree-Cover Loss - Does the Definition Change the Picture",
-      "name": "amazon-tree-cover-loss-does-the-definition-change-the-picture",
-      "category": "Academic Research"
-    },
-    {
-      "title": "AqSolDB scaffold novelty and aqueous solubility prediction",
-      "name": "aq-sol-db-scaffold-novelty-and-aqueous-solubility-prediction",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Are Overdose Deaths Rising Because America Is Aging",
-      "name": "are-overdose-deaths-rising-because-america-is-aging",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Blood Metabolites - Can They Distinguish Cancer from Polyps",
-      "name": "blood-metabolites-can-they-distinguish-cancer-from-polyps",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Can We Forecast Mauna Loa's CO2",
-      "name": "can-we-forecast-mauna-loa-s-co2",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Chemical Activity Predictions - Can We Trust the Probabilities",
-      "name": "chemical-activity-predictions-can-we-trust-the-probabilities",
-      "category": "Academic Research"
-    },
-    {
-      "title": "COVID-19 Case Counts - Trend or Reporting Noise",
-      "name": "covid-19-case-counts-trend-or-reporting-noise",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Diet Diversity - Does the Gut Microbiome Differ",
-      "name": "diet-diversity-does-the-gut-microbiome-differ",
-      "category": "Academic Research"
-    },
-    {
-      "title": "EGFR potency prediction - an inspectable pilot",
-      "name": "egfr-potency-prediction-an-inspectable-pilot",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Florida precipitation and Niño 3.4 seasonal association",
-      "name": "florida-precipitation-and-nino-3-4-seasonal-association",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Genomic context of the Horvath epigenetic clock",
-      "name": "genomic-context-of-the-horvath-epigenetic-clock",
-      "category": "Academic Research"
-    },
-    {
-      "title": "GLP-1 medicines and adverse-event reporting patterns",
-      "name": "glp-1-medicines-and-adverse-event-reporting-patterns",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Involved versus uninvolved Crohn ileum - donor-aware expression assessment",
-      "name": "involved-versus-uninvolved-crohn-ileum-donor-aware-expression-assessment",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Kidney Cancer - What Sets the Subtypes Apart",
-      "name": "kidney-cancer-what-sets-the-subtypes-apart",
-      "category": "Academic Research"
-    },
-    {
-      "title": "KRAS Mutations - Do Survival Patterns Differ",
-      "name": "kras-mutations-do-survival-patterns-differ",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Lymphoma Biomarkers - What Does the Evidence Support",
-      "name": "lymphoma-biomarkers-what-does-the-evidence-support",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Mass Spectra - Can They Reveal a Chemical Family",
-      "name": "mass-spectra-can-they-reveal-a-chemical-family",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024)",
-      "name": "monitoring-site-mix-and-pm2-5-trends-in-los-angeles-county-2015-2024",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Ocean Microbes - How Do They Relate to Nutrients",
-      "name": "ocean-microbes-how-do-they-relate-to-nutrients",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Pennsylvania construction employment and monitored PM2.5, 2023",
-      "name": "pennsylvania-construction-employment-and-monitored-pm2-5-2023",
-      "category": "Academic Research"
-    },
-    {
-      "title": "PFAS assay activity and placental cell-type expression",
-      "name": "pfas-assay-activity-and-placental-cell-type-expression",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Physical activity and diabetes among US adults (NHANES 2011–2018)",
-      "name": "physical-activity-and-diabetes-among-us-adults-nhanes-2011-2018",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Protein abundance in ischemic failing versus non-failing human hearts",
-      "name": "protein-abundance-in-ischemic-failing-versus-non-failing-human-hearts",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Protein Measurements - Do the Ratios Add Up",
-      "name": "protein-measurements-do-the-ratios-add-up",
-      "category": "Academic Research"
-    },
-    {
-      "title": "RAS mutations in two public pancreatic cohorts",
-      "name": "ras-mutations-in-two-public-pancreatic-cohorts",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Registry-results availability in completed glioblastoma trials",
-      "name": "registry-results-availability-in-completed-glioblastoma-trials",
-      "category": "Academic Research"
-    },
-    {
-      "title": "Spatial Immune Organization and Breast Cancer Prognosis",
-      "name": "spatial-immune-organization-and-breast-cancer-prognosis",
-      "category": "Academic Research"
-    },
-    {
       "title": "Worm longevity genes and human exceptional-longevity evidence",
       "name": "worm-longevity-genes-and-human-exceptional-longevity-evidence",
       "category": "Academic Research"
+    },
+    {
+      "title": "WOULD AN AI KEEP COOPERATING?",
+      "name": "would-an-ai-keep-cooperating",
+      "category": "AI Research"
     }
   ]
 }

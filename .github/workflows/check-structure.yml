@@ -48,13 +48,11 @@ jobs:
         id: directories
         env:
           BASE_SHA: ${{ steps.range.outputs.before }}
-        run: python3 .github/scripts/check_structure.py directories --base "$BASE_SHA"
+        run: python3 .github/scripts/check_structure.py directories --base "$BASE_SHA" > "$RUNNER_TEMP/selected-cases.json"
 
       - name: Check manifest entries and resource sources
         if: steps.directories.outputs.cases != '' && steps.directories.outputs.cases != '[]'
-        env:
-          CASES_JSON: ${{ steps.directories.outputs.cases }}
-        run: python3 .github/scripts/check_structure.py manifest
+        run: python3 .github/scripts/check_structure.py manifest --cases-file "$RUNNER_TEMP/selected-cases.json"
 
       - name: Check local SHA declarations in added or modified manifest entries
         env:

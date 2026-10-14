@@ -13,8 +13,3 @@ This case is a reanalysis using a paired DESeq2 design. Its differential-gene to
 ## Package and provenance
 
 Creator attribution follows the signature on the supplied poster and matches Case Index.csv. The original session export and poster are preserved from AIPOCH-Creator-Use-Cases.zip. This introduction describes the archived research workflow.
-
-## Case files
-
-- [Session export](./Reproducing%20the%20Dexamethasone%20Gene%20Response.science)
-- [Case poster](./Reproducing%20the%20Dexamethasone%20Gene%20Response.png)

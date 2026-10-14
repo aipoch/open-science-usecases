@@ -13,8 +13,3 @@ The package is a literature survey and research agenda. Proposed experiments are
 ## Package and provenance
 
 Creator attribution follows the signature on the supplied poster and matches Case Index.csv. The original session export and poster are preserved from AIPOCH-Creator-Use-Cases.zip. This introduction describes the archived research workflow.
-
-## Case files
-
-- [Session export](./Recursive%20Self-Improvement%20-%20What%20Does%20the%20Evidence%20Show.science)
-- [Case poster](./Recursive%20Self-Improvement%20-%20What%20Does%20the%20Evidence%20Show.png)

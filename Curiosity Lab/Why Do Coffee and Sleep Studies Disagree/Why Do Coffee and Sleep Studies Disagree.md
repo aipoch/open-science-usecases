@@ -39,9 +39,4 @@ A 24-study meta-analysis found average reductions of roughly **45 minutes in tot
 The practical conclusion is therefore conditional: **100 mg taken at least four hours before bed may have little measurable effect in a healthy moderate user, whereas 400 mg can disrupt objective sleep even 6–12 hours before bedtime.** Individual sensitivity remains substantial, and subjective sleep quality can underestimate the effect.
 ## Import provenance
 
-This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/Why%20Do%20Coffee%20and%20Sleep%20Studies%20Disagree/Why%20Do%20Coffee%20and%20Sleep%20Studies%20Disagree.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
-
-## Case files
-
-- [Session export](./Why%20Do%20Coffee%20and%20Sleep%20Studies%20Disagree.science)
-- [Case poster](./Why%20Do%20Coffee%20and%20Sleep%20Studies%20Disagree.png)
+This introduction was imported from the GitHub case description. The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.

@@ -13,8 +13,3 @@ The story comparison is qualitative and inspired by the paper’s narrative feat
 ## Package and provenance
 
 Creator attribution follows the signature on the supplied poster and matches Case Index.csv. The original session export and poster are preserved from AIPOCH-Creator-Use-Cases.zip. This introduction describes the archived research workflow.
-
-## Case files
-
-- [Session export](./AI%20or%20Human%20-%20What%20Story%20Structure%20Reveals.science)
-- [Case poster](./AI%20or%20Human%20-%20What%20Story%20Structure%20Reveals.png)

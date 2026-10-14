@@ -13,8 +13,3 @@ The analysis uses the supplied upstream/downstream coding and describes differen
 ## Package and provenance
 
 Creator attribution follows the signature on the supplied poster and matches Case Index.csv. The original session export and poster are preserved from AIPOCH-Creator-Use-Cases.zip. This introduction describes the archived research workflow.
-
-## Case files
-
-- [Session export](./Soil%20Heavy%20Metals%20-%20Upstream%20vs%20Downstream.science)
-- [Case poster](./Soil%20Heavy%20Metals%20-%20Upstream%20vs%20Downstream.png)

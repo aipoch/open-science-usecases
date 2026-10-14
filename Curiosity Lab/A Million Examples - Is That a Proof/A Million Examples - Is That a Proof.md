@@ -32,12 +32,7 @@ The package preserves the conversation, `euler_fifth_power_searches.py`, `euler_
 
 The recorded source is L. J. Lander and T. R. Parkin, “[Counterexample to Euler's conjecture on sums of like powers](https://doi.org/10.1090/S0002-9904-1966-11654-3),” *Bulletin of the American Mathematical Society* 72 (1966), p. 1079. The session reports checking citation metadata through Crossref and reading `source-guide.md` and `source-guide.json` from the uploaded ZIP. The original AMS PDF was blocked by the session's network destination check. The guide's claimed visual inspection is supplied provenance, not a PDF inspection performed in the recorded session or during this integration.
 
-The original `.science` package and PNG are imported unchanged from [aipoch/open-science-usecases at a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284](https://github.com/aipoch/open-science-usecases/tree/a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284/A%20Million%20Examples%20-%20Is%20That%20a%20Proof). Theresa (@theresayao0614-sudo) contributed the case and poster in [94a33e0](https://github.com/aipoch/open-science-usecases/commit/94a33e00f69f7cc8e482b3a6744e89af38d9d7d6). This introduction summarizes the packaged evidence and its stated limitations.
+The original `.science` package and PNG are imported unchanged from aipoch/open-science-usecases at a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284. Theresa (@theresayao0614-sudo) contributed the case and poster in 94a33e0. This introduction summarizes the packaged evidence and its stated limitations.
 ## Import provenance
 
-This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/A%20Million%20Examples%20-%20Is%20That%20a%20Proof/A%20Million%20Examples%20-%20Is%20That%20a%20Proof.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
-
-## Case files
-
-- [Session export](./A%20Million%20Examples%20-%20Is%20That%20a%20Proof.science)
-- [Case poster](./A%20Million%20Examples%20-%20Is%20That%20a%20Proof.png)
+This introduction was imported from the GitHub case description. The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.

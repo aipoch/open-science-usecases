@@ -11,8 +11,3 @@ This is a pricing calculation, not a comparison of comprehension or summary qual
 ## Package and provenance
 
 The original `.science` export and matching poster are preserved byte-for-byte from Hugging Face snapshot `b0218fea4fc3fc9aa37ac616aba20e619e242c1e`. The package contains the archived conversation, session metadata, and resources listed in its internal manifest. This introduction summarizes the archived record; the research, external sources, and model evaluations were not rerun for this reorganization.
-
-## Case files
-
-- [Session export](./One-Shot%20vs%20Chunked.science)
-- [Case poster](./One-Shot%20vs%20Chunked.png)

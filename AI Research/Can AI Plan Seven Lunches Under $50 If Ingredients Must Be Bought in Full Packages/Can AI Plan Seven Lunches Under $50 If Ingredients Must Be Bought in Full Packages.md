@@ -10,12 +10,7 @@ Prices and serving capacities are supplied synthetic inputs. This demonstrates c
 
 ## Package and provenance
 
-The original `.science` export and matching poster are preserved byte-for-byte from [the upstream case](https://github.com/aipoch/open-science-usecases/tree/a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284/Can%20AI%20Plan%20Seven%20Lunches%20Under%20%2450%20If%20Ingredients%20Must%20Be%20Bought%20in%20Full%20Packages). The package contains the conversation, session metadata, and the resources inventoried in its internal manifest. This introduction summarizes the archived record; the research, external sources, and model evaluations were not rerun for this import.
+The original `.science` export and matching poster are preserved byte-for-byte from the upstream case. The package contains the conversation, session metadata, and the resources inventoried in its internal manifest. This introduction summarizes the archived record; the research, external sources, and model evaluations were not rerun for this import.
 ## Import provenance
 
-This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/Can%20AI%20Plan%20Seven%20Lunches%20Under%20%2450%20If%20Ingredients%20Must%20Be%20Bought%20in%20Full%20Packages/Can%20AI%20Plan%20Seven%20Lunches%20Under%20%2450%20If%20Ingredients%20Must%20Be%20Bought%20in%20Full%20Packages.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
-
-## Case files
-
-- [Session export](./Can%20AI%20Plan%20Seven%20Lunches%20Under%20%2450%20If%20Ingredients%20Must%20Be%20Bought%20in%20Full%20Packages.science)
-- [Case poster](./Can%20AI%20Plan%20Seven%20Lunches%20Under%20%2450%20If%20Ingredients%20Must%20Be%20Bought%20in%20Full%20Packages.png)
+This introduction was imported from the GitHub case description. The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.

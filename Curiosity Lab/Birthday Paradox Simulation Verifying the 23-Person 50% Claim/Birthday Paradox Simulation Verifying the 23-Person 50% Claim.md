@@ -51,12 +51,7 @@ These probabilities apply to the specified independent, uniform model. They are 
 
 The package preserves the conversation, Notebook code and run outputs, `birthday_two_questions.csv`, `birthday_two_questions.png`, managed-file provenance, and execution evidence. The CSV and chart are also represented by managed-file artifacts whose original storage paths are retained.
 
-The `.science` package and cover PNG are imported byte-for-byte from [aipoch/open-science-usecases at a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284](https://github.com/aipoch/open-science-usecases/tree/a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284/Birthday%20Paradox%20Simulation%20Verifying%20the%2023-Person%2050%25%20Claim). Shanruoyu contributed the case in [53aaf940](https://github.com/aipoch/open-science-usecases/commit/53aaf9404dcda39e2d395a43002ebf8b95a724bd). This introduction summarizes the recorded evidence and explicitly distinguishes it from integration-time arithmetic checks.
+The `.science` package and cover PNG are imported byte-for-byte from aipoch/open-science-usecases at a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284. Shanruoyu contributed the case in 53aaf940. This introduction summarizes the recorded evidence and explicitly distinguishes it from integration-time arithmetic checks.
 ## Import provenance
 
-This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/Birthday%20Paradox%20Simulation%20Verifying%20the%2023-Person%2050%25%20Claim/Birthday%20Paradox%20Simulation%20Verifying%20the%2023-Person%2050%25%20Claim.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
-
-## Case files
-
-- [Session export](./Birthday%20Paradox%20Simulation%20Verifying%20the%2023-Person%2050%25%20Claim.science)
-- [Case poster](./Birthday%20Paradox%20Simulation%20Verifying%20the%2023-Person%2050%25%20Claim.png)
+This introduction was imported from the GitHub case description. The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.

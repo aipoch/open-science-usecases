@@ -11,8 +11,3 @@ The archived question and analysis plan do not by themselves establish profitabl
 ## Package and provenance
 
 The original `.science` export and matching poster are preserved byte-for-byte from Hugging Face snapshot `b0218fea4fc3fc9aa37ac616aba20e619e242c1e`. The package contains the archived conversation, session metadata, and resources listed in its internal manifest. This introduction summarizes the archived record; the research, external sources, and model evaluations were not rerun for this reorganization.
-
-## Case files
-
-- [Session export](./What%20Follows%20a%20Bitcoin%20Surge%3F.science)
-- [Case poster](./What%20Follows%20a%20Bitcoin%20Surge%3F.png)

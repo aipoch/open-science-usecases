@@ -13,8 +13,3 @@ The analysis separates assisted-practice performance from independent examinatio
 ## Package and provenance
 
 Creator attribution follows the signature on the supplied poster and matches Case Index.csv. The original session export and poster are preserved from AIPOCH-Creator-Use-Cases.zip. This introduction describes the archived research workflow.
-
-## Case files
-
-- [Session export](./Does%20AI%20Practice%20Translate%20into%20Independent%20Learning.science)
-- [Case poster](./Does%20AI%20Practice%20Translate%20into%20Independent%20Learning.png)

@@ -11,8 +11,3 @@ This is a structural graph analysis of a connectivity-defined subgraph, not a wh
 ## Package and provenance
 
 The original `.science` export and matching poster are preserved byte-for-byte from Hugging Face snapshot `b0218fea4fc3fc9aa37ac616aba20e619e242c1e`. The package contains the archived conversation, session metadata, and resources listed in its internal manifest. This introduction summarizes the archived record; the research, external sources, and model evaluations were not rerun for this reorganization.
-
-## Case files
-
-- [Session export](./What%20Happens%20If%20You%20Remove%201%25%20of%20the%20Nodes%20from%20the%20Fruit%20Fly%20Brain%20Network%3F.science)
-- [Case poster](./What%20Happens%20If%20You%20Remove%201%25%20of%20the%20Nodes%20from%20the%20Fruit%20Fly%20Brain%20Network%3F.png)

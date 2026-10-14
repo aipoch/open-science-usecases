@@ -56,8 +56,8 @@ Run from the repository root. The checkout must match the commit being checked, 
 
 ```sh
 python3 .github/scripts/check_structure.py release-urls
-CASES_JSON="$(python3 .github/scripts/check_structure.py directories --base <BASE_SHA>)" \
-  python3 .github/scripts/check_structure.py manifest
+python3 .github/scripts/check_structure.py directories --base <BASE_SHA> > /tmp/selected-cases.json
+python3 .github/scripts/check_structure.py manifest --cases-file /tmp/selected-cases.json
 python3 .github/scripts/check_structure.py declarations --base <BASE_SHA> --after <HEAD_SHA>
 python3 -B -m unittest discover -s .github/tests -v
 ```

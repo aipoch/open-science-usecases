@@ -148,6 +148,34 @@ class StructureTests(unittest.TestCase):
         # A syntactically valid but deliberately false SHA is admission-valid.
         self.assertEqual(entry['cover']['sha256'], 'a' * 64)
 
+    def test_cases_file_handles_selection_larger_than_linux_environment_limit(self):
+        entries = [self.case(title=f"Bulk research case {index}") for index in range(160)]
+        self.manifest(entries)
+        self.commit()
+        selected, _ = self.scan()
+        self.assertEqual(selected.returncode, 0, selected.stderr)
+        self.assertGreater(len(selected.stdout.encode()), 128 * 1024)
+        selection = self.root / 'selected-cases.json'
+        selection.write_text(selected.stdout, encoding='utf-8')
+        checked, _ = self.run_stage('manifest', '--cases-file', str(selection))
+        self.assertEqual(checked.returncode, 0, checked.stderr)
+        self.assertIn('Affected case directories: 160', checked.stderr)
+        self.assertEqual(self.http.requests, [])
+        # Reading from a file must retain the normal resource validation.
+        (self.root / entries[-1]['cover']['path']).unlink()
+        checked, _ = self.run_stage('manifest', '--cases-file', str(selection))
+        self.assertNotEqual(checked.returncode, 0)
+
+    def test_cases_file_reports_missing_or_invalid_input(self):
+        selection = self.root / 'selected-cases.json'
+        checked, _ = self.run_stage('manifest', '--cases-file', str(selection))
+        self.assertNotEqual(checked.returncode, 0)
+        self.assertIn("Couldn't access", checked.stderr)
+        selection.write_text('{', encoding='utf-8')
+        checked, _ = self.run_stage('manifest', '--cases-file', str(selection))
+        self.assertNotEqual(checked.returncode, 0)
+        self.assertIn('selected cases file', checked.stderr)
+
     def test_all_eight_local_remote_combinations(self):
         import itertools
         for flags in itertools.product((False, True), repeat=3):

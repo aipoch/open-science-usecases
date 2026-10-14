@@ -439,7 +439,9 @@ def main():
     scan.add_argument("--merge-base", action="store_true", help="Compare to the common ancestor for a PR")
     scan.add_argument("--new-branch-base", help="Default branch ref for a new feature branch's first push")
     manifest = commands.add_parser("manifest", help="Check selected manifest entries")
-    manifest.add_argument("--plan", type=Path, help="Use the S3-based publication plan")
+    selection = manifest.add_mutually_exclusive_group()
+    selection.add_argument("--plan", type=Path, help="Use the S3-based publication plan")
+    selection.add_argument("--cases-file", type=Path, help="Read selected entries from the directories step's JSON file")
     declarations = commands.add_parser("declarations", help="Check changed local resource SHA declarations")
     declarations.add_argument("--base", required=True)
     declarations.add_argument("--after", required=True)
@@ -475,9 +477,11 @@ def main():
         else:
             if args.plan:
                 cases = read_json(args.plan.read_text(encoding="utf-8"), "publication plan")["cases"]
+            elif args.cases_file:
+                cases = read_json(args.cases_file.read_text(encoding="utf-8"), "selected cases file")
             elif not os.environ.get("CASES_JSON"):
                 raise ValueError("CASES_JSON is missing or empty. Run the directories step first, then pass "
-                                 "steps.directories.outputs.cases to the manifest step's CASES_JSON environment variable.")
+                                 "its JSON output with --cases-file, or use CASES_JSON for small selections.")
             else:
                 cases = read_json(os.environ["CASES_JSON"], "CASES_JSON (from the directories step)")
             errors = validate_manifest(cases, declared_only=bool(args.plan))

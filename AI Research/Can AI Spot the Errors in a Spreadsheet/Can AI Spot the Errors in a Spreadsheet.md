@@ -27,9 +27,4 @@ All cell references below are on **Orders**.
 Resolve the uncertain source-data issues before treating any revised total as final. To prevent recurrence, add validation for IDs, SKUs, dates and discounts, and use an Excel Table so the total automatically includes new rows.
 ## Import provenance
 
-This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/Can%20AI%20Spot%20the%20Errors%20in%20a%20Spreadsheet/Can%20AI%20Spot%20the%20Errors%20in%20a%20Spreadsheet.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
-
-## Case files
-
-- [Session export](./Can%20AI%20Spot%20the%20Errors%20in%20a%20Spreadsheet.science)
-- [Case poster](./Can%20AI%20Spot%20the%20Errors%20in%20a%20Spreadsheet.png)
+This introduction was imported from the GitHub case description. The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.

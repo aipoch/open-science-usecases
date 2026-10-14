@@ -57,12 +57,7 @@ The main lesson is about selecting a visible winner from many attempts. In this 
 
 The package contains the conversation, Notebook scripts and recorded numerical outputs, dependency-analysis data, and execution evidence. Exact probabilities were independently recalculated during integration; the large stochastic simulations were not rerun, and their numbers remain labeled as archived results.
 
-The `.science` package and cover PNG are imported byte-for-byte from [aipoch/open-science-usecases at a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284](https://github.com/aipoch/open-science-usecases/tree/a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284/Coin%20Flip%20Streak%20Simulation%20Luck%20vs.%20Skill%20Across%201%2C000%20Guessers). Shanruoyu (@shanruoyu) contributed the case in [53aaf940](https://github.com/aipoch/open-science-usecases/commit/53aaf9404dcda39e2d395a43002ebf8b95a724bd).
+The `.science` package and cover PNG are imported byte-for-byte from aipoch/open-science-usecases at a1d1bfcb7d1c7a85d3e4a465060fa87fddc6d284. Shanruoyu (@shanruoyu) contributed the case in 53aaf940.
 ## Import provenance
 
-This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/Coin%20Flip%20Streak%20Simulation%20Luck%20vs.%20Skill%20Across%201%2C000%20Guessers/Coin%20Flip%20Streak%20Simulation%20Luck%20vs.%20Skill%20Across%201%2C000%20Guessers.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
-
-## Case files
-
-- [Session export](./Coin%20Flip%20Streak%20Simulation%20Luck%20vs.%20Skill%20Across%201%2C000%20Guessers.science)
-- [Case poster](./Coin%20Flip%20Streak%20Simulation%20Luck%20vs.%20Skill%20Across%201%2C000%20Guessers.png)
+This introduction was imported from the GitHub case description. The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.

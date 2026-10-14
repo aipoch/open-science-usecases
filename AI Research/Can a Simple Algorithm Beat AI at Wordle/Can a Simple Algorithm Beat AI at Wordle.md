@@ -23,9 +23,4 @@ Both used the same [2,315-word dictionary](https://gist.github.com/cfreshman/a03
 So, **about four guesses for me in this pilot**. These games shared one conversation; they don’t establish how AI generally performs.
 ## Import provenance
 
-This introduction was imported from [the GitHub case description](https://github.com/aipoch/open-science-usecases/blob/a27492292020e43cbb0c52a2be5a0fdc4fd9fd7c/Can%20a%20Simple%20Algorithm%20Beat%20AI%20at%20Wordle/Can%20a%20Simple%20Algorithm%20Beat%20AI%20at%20Wordle.md). The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
-
-## Case files
-
-- [Session export](./Can%20a%20Simple%20Algorithm%20Beat%20AI%20at%20Wordle.science)
-- [Case poster](./Can%20a%20Simple%20Algorithm%20Beat%20AI%20at%20Wordle.png)
+This introduction was imported from the GitHub case description. The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.

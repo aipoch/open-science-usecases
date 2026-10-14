@@ -11,8 +11,3 @@ Scores and estimated costs have different evidence bases. Cost parity is modeled
 ## Package and provenance
 
 The original `.science` export and matching poster are preserved byte-for-byte from Hugging Face snapshot `b0218fea4fc3fc9aa37ac616aba20e619e242c1e`. The package contains the archived conversation, session metadata, and resources listed in its internal manifest. This introduction summarizes the archived record; the research, external sources, and model evaluations were not rerun for this reorganization.
-
-## Case files
-
-- [Session export](./Is%20Thinking%20Longer%20Worth%20It%3F.science)
-- [Case poster](./Is%20Thinking%20Longer%20Worth%20It%3F.png)
