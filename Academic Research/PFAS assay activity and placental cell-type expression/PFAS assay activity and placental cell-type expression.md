@@ -1,8 +1,20 @@
 # PFAS assay activity and placental cell-type expression
 
-## Archived study
+## Research question
+
+Which assay-linked genes also appear in the placental expression data, and how much does mapping strictness matter?
+
+## Data and method
+
+Treat assay-to-gene mapping and gene expression as separate evidence layers. Expanded mappings admit a broader set of links; strict human biochemical mappings require narrower target attribution. Expression indicates potential cellular context, not chemical exposure or target engagement.
+
+## Recorded findings
 
 Combines PFAS assay activity with placental cell-type expression from five pregnancy IDs. Expanded mappings linked **45 PFOA-associated and 142 PFOS-associated genes** to expression; strict human biochemical mappings reduced these counts to **seven and 42**.
+
+## What the findings mean
+
+The large change in linked-gene counts shows that mapping rules shape the overlap. More mapped genes do not mean greater toxicity, and expressed targets do not establish an in-vivo PFAS effect.
 
 ## Interpretation and limits
 

@@ -1,8 +1,20 @@
 # EGFR potency prediction - an inspectable pilot
 
-## Archived study
+## Research question
+
+How much predictive performance survives separation by publication and by distant chemistry?
+
+## Data and method
+
+An ordinary compound holdout can retain assay and publication context shared with training. The combined holdout makes that transfer harder. Compare absolute pIC50 error with within-assay rank correlation so that apparently acceptable pooled error does not obscure poor ordering within an assay.
+
+## Recorded findings
 
 Tests EGFR potency prediction in a curated pilot of **404 compounds**. Mean absolute error increased from **0.502 to 0.788 pIC50 units** between ordinary compound and combined publication-plus-distant-chemistry holdouts. Median within-assay rank correlation was only 0.179.
+
+## What the findings mean
+
+The harder holdout and weak within-assay ranking expose limits of the pilot. Inspectability makes those limits easier to examine; it does not itself make the model ready for compound-selection decisions.
 
 ## Interpretation and limits
 

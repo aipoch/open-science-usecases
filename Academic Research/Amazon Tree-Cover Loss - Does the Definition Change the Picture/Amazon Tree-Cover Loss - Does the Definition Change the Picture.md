@@ -1,8 +1,20 @@
 # Amazon Tree-Cover Loss - Does the Definition Change the Picture
 
-## Archived study
+## Research question
+
+How much does the canopy definition change measured tree-cover loss in the same geographic window?
+
+## Data and method
+
+Keep the raster extent and loss-year layer fixed while changing the year-2000 canopy threshold. Report lost area in hectares separately from the fraction of eligible baseline canopy: changing that baseline can change the percentage without changing the timing of the largest annual event.
+
+## Recorded findings
 
 Measures mapped tree-cover loss in a fixed western Amazon raster window using Hansen GFC v1.12 through 2024. At the ≥30% canopy threshold, cumulative 2001–2024 loss was **25,133 ha**, or **55.54%** of the year-2000 baseline. The **2024 peak of 6,732 ha** persisted at all three canopy thresholds, while the affected fraction changed with its denominator.
+
+## What the findings mean
+
+The peak year is more stable across these definitions than the cumulative percentage. This distinguishes a robust temporal feature from a denominator-sensitive estimate.
 
 ## Interpretation and limits
 

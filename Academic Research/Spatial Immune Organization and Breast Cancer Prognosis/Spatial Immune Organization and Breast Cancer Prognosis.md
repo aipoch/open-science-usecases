@@ -1,8 +1,20 @@
 # Spatial Immune Organization and Breast Cancer Prognosis
 
-## Archived study
+## Research question
+
+Does spatial immune information improve prognosis prediction beyond clinical variables and cell composition?
+
+## Data and method
+
+Compare nested feature sets using patient-level internal validation. Concordance assesses risk ordering, whereas the 60-month Brier score assesses prediction error at a stated time. Paired differences evaluate the added features against the baseline on the same validation patients.
+
+## Recorded findings
 
 Examines whether spatial immune organization adds prognostic information beyond clinical variables and cell composition in **278 patients** from the public Basel breast-cancer cohort. In patient-level internal validation, adding spatial features increased concordance by **0.0127** and reduced 60-month Brier error by **0.00163**; both paired 95% intervals included zero.
+
+## What the findings mean
+
+Small favorable point estimates with intervals spanning zero leave incremental value unresolved. Prediction improvement and clinical usefulness would still need separate evaluation even if the gain were more precise.
 
 ## Interpretation and limits
 

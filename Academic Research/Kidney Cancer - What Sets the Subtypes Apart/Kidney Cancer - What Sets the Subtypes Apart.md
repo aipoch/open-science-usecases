@@ -1,8 +1,20 @@
 # Kidney Cancer - What Sets the Subtypes Apart
 
-## Archived study
+## Research question
+
+Which expression and pathway patterns distinguish the three renal tumor subtypes in this historical cohort?
+
+## Data and method
+
+Interpret subtype contrasts alongside their unequal sample sizes. Pathway summaries combine expression across gene sets; sensitivity checks examine whether the same data support similar conclusions under altered analytical choices.
+
+## Recorded findings
 
 Compares expression and pathway patterns in 39 historical renal tumors: 22 clear-cell, 11 papillary and six chromophobe samples. The analysis supports higher hypoxia-related expression in clear-cell tumors and higher oxidative-phosphorylation expression in chromophobe tumors. Pathway counts surviving all stated sensitivity checks were **1, 16 and 7** across the three subtype contrasts.
+
+## What the findings mean
+
+The recurring hypoxia and oxidative-phosphorylation patterns provide biological context. Their stability within this dataset does not establish a subtype diagnostic test or direct pathway activity.
 
 ## Interpretation and limits
 

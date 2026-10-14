@@ -1,14 +1,27 @@
 # Our Nearest Exoplanet: How Long Is the Trip?
 
+## Focus of the case
+
+How does a simple distance–speed calculation change near relativistic speeds?
+
 ## Research topic and question
 
 - Our Nearest Exoplanet: How Long Is the Trip?
 
 How long would it take to reach the nearest confirmed exoplanet at 17 km/s, 1%, 10% and 90% of light speed? Download the latest distance data from the NASA Exoplanet Archive using https://exoplanetarchive.ipac.caltech.edu/docs/TAP/usingTAP.html. Compare the time on Earth with the time experienced onboard, and explain what these hypothetical journeys leave out.
 
+## How to read the analysis
+
+The existing explanation distinguishes external travel time from traveler proper time and keeps its nearest-system selection, distance units, constant-speed assumption, and uncertainty treatment explicit.
+
 ## Research findings
 
 The analysis identifies Proxima Cen b and d at 1.30119000 pc. Central travel-time calculations at 17 km/s, 1%, 10% and 90% of light speed match the reported values. Uncertainty differences are negligible: the maximum absolute difference is \(7.78\times10^{-12}\) years and the maximum relative difference is \(1.48\times10^{-12}\).
+
 ## Import provenance
 
 This introduction was imported from the GitHub case description. The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.
+
+## What this comparison helps explain
+
+The arithmetic does not supply propulsion, acceleration, shielding, or a feasible mission design. Retain that physical distinction beside the numerical table.

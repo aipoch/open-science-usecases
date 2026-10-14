@@ -1,8 +1,20 @@
 # Mass Spectra - Can They Reveal a Chemical Family
 
-## Archived study
+## Research question
+
+Can processed tandem mass spectra predict chemical family for held-out compound identities?
+
+## Data and method
+
+Separate compound groups across training, validation and test sets so repeat spectra of one compound do not bridge partitions. Compare family predictions with the precursor-only control, and read macro-F1 alongside accuracy to give minority classes a visible role.
+
+## Recorded findings
 
 Tests nine-class chemical-family prediction from processed positive-ion GNPS tandem mass spectra, with compound-separated training, validation and test sets. The selected population contained **2,000 compound groups and 3,849 spectra**. Compound-holdout accuracy was **51.0%** and macro-F1 **0.477**, compared with **0.107** for the precursor-only control.
+
+## What the findings mean
+
+The spectra contain predictive information beyond the precursor-only control in this selected population. Identity holdout still leaves broader chemistry and instrument transfer untested.
 
 ## Interpretation and limits
 

@@ -1,8 +1,20 @@
 # RAS mutations in two public pancreatic cohorts
 
-## Archived study
+## Research question
+
+How different are reported RAS mutation frequencies under a common ductal-histology eligibility rule?
+
+## Data and method
+
+Apply the same histology rule to both cohorts, count eligible profiled patients and retain unknown profiling status. A common inclusion rule makes the tabulation clearer but does not harmonize sequencing sensitivity, tumor cellularity or stage distributions.
+
+## Recorded findings
 
 Compares reported RAS mutations in two public pancreatic cohorts under an explicit ductal-histology rule. KRAS mutations occurred in **104/150 TCGA patients (69.3%)** and **130/135 CPTAC patients (96.3%)**, a descriptive difference of 27.0 percentage points.
+
+## What the findings mean
+
+The recorded contrast is large, but its source is unresolved. Cohort and measurement differences remain plausible explanations and must accompany the percentages.
 
 ## Interpretation and limits
 

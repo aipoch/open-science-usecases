@@ -1,8 +1,20 @@
 # Pennsylvania construction employment and monitored PM2.5, 2023
 
-## Archived study
+## Research question
+
+How much construction employment falls in counties with an eligible annual monitoring summary?
+
+## Data and method
+
+Join county payroll totals with eligible county PM2.5 summaries and retain an explicit missing-monitoring category. Employment-weighted coverage describes where recorded jobs are located; it does not measure each worker’s dose or the duration spent at a job site.
+
+## Recorded findings
 
 Combines Pennsylvania construction employment and monitored PM2.5 for 2023. Of **247,962 payroll jobs**, **65,246 (26.3%)** were in counties without an eligible annual PM2.5 value. Eligible monitoring covered 23 of 67 counties.
+
+## What the findings mean
+
+The missing category is a substantive part of the result. Dropping those counties would hide coverage gaps and change the denominator of any employment summary.
 
 ## Interpretation and limits
 

@@ -1,8 +1,20 @@
 # Florida precipitation and Niño 3.4 seasonal association
 
-## Archived study
+## Research question
+
+Does the historical rainfall–Niño 3.4 association differ by season?
+
+## Data and method
+
+Keep the 1986–2025 window fixed and distinguish the month-adjusted winter association from the direct winter-minus-summer contrast. A positive coefficient in one season is not by itself evidence that its coefficient differs from another season.
+
+## Recorded findings
 
 Analyzes Florida precipitation and Niño 3.4 across **1986–2025**. The contemporaneous winter slope was **20.24 mm/month per 1°C** higher Niño 3.4 (pointwise 95% interval 13.73–26.60), with a winter correlation of 0.498 after month adjustment.
+
+## What the findings mean
+
+The winter association is clearer than the evidence for a seasonal difference. A contemporaneous association also cannot establish how well an operational advance forecast would work.
 
 ## Interpretation and limits
 

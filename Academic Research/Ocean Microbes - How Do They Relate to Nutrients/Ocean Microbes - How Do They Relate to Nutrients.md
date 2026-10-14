@@ -1,8 +1,20 @@
 # Ocean Microbes - How Do They Relate to Nutrients
 
-## Archived study
+## Research question
+
+Do phosphate–microbe associations persist after accounting for sampling depth and region?
+
+## Data and method
+
+Compare unadjusted and depth-region-adjusted slopes for the selected genomes. Within-station pairing addresses a different source of variation than cross-station regression. Specify the multiple-testing family because it changes the threshold for calling an association.
+
+## Recorded findings
 
 Studies phosphate associations for 20 selected microbial genomes across **61 Tara Oceans samples from 43 stations**. Fifteen of 20 slopes weakened after depth-region adjustment. Discovery counts depended on the multiple-testing family, and a strong adjusted association for MED_MAG_00101 had a within-station paired interval that included zero.
+
+## What the findings mean
+
+Attenuation after adjustment indicates that environmental context helps explain the original pattern. The paired interval crossing zero adds uncertainty rather than proving absence of a relationship.
 
 ## Interpretation and limits
 

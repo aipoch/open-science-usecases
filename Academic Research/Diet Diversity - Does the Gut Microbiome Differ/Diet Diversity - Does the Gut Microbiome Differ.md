@@ -1,8 +1,20 @@
 # Diet Diversity - Does the Gut Microbiome Differ
 
-## Archived study
+## Research question
+
+Is reported plant diversity associated with microbial composition after country adjustment?
+
+## Data and method
+
+The analysis compares samples through Bray–Curtis dissimilarity and its corrected geometry, rather than testing one organism in isolation. Read incremental R² with the permutation test and dispersion checks: a detectable association may still explain very little of the variation.
+
+## Recorded findings
 
 Examines reported plant diversity and gut microbial composition in historical American Gut data. A fixed-seed sample contained 600 participants, with **564** in the main analysis. The country-adjusted association had incremental R² **0.804%** and permutation **p=.004** in Lingoes-corrected Bray–Curtis geometry; sensitivity analyses were less conclusive.
+
+## What the findings mean
+
+The recorded association is small and sensitive to analysis choices. It describes community-composition differences in this cohort, without establishing that dietary diversity caused a healthier microbiome.
 
 ## Interpretation and limits
 

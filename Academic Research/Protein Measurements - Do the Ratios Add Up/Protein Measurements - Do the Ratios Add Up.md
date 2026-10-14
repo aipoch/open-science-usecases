@@ -1,8 +1,20 @@
 # Protein Measurements - Do the Ratios Add Up
 
-## Archived study
+## Research question
+
+Do measured protein-channel ratios recover the intended spike-in quantities?
+
+## Data and method
+
+Compare observed ratios with known intended ratios, using correlation for ordering and log2 RMSE for numerical accuracy. Evaluate additional background scaling against the same contrasts, while recognizing that channels sharing a reference are dependent.
+
+## Recorded findings
 
 Tests whether deposited PXD000001 TMT measurements recover intended spike-in ratios. Across 20 protein/channel contrasts, correlation was high (**r=0.984**) but ratios were compressed. Additional background scaling changed overall log2 RMSE from **0.45354 to 0.45322**, an improvement of less than 0.1%.
+
+## What the findings mean
+
+The high correlation and compressed ratios illustrate that tracking a pattern is easier than recovering its magnitude. The tiny RMSE change gives little support for a practical improvement from the extra scaling step.
 
 ## Interpretation and limits
 
