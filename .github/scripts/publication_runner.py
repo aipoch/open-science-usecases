@@ -169,7 +169,7 @@ def commit_step(step, state, baseline, s3, reporter):
     return text
 
 
-def finish_step(step, state, baseline, s3, reporter, failures):
+def accept_step(step, state, baseline, s3, reporter):
     started = time.monotonic()
     # A shared-index error is fatal, unlike a case-local resource/CDN error.
     try:
@@ -178,6 +178,13 @@ def finish_step(step, state, baseline, s3, reporter, failures):
         reporter.update(state, status='failed', failed_phase='manifest', error=str(error))
         reporter.event(step, 'manifest', 'failed', error=str(error), detail=getattr(error, 'stderr', None))
         raise
+    finally:
+        reporter.update(state, elapsed_seconds=round(state.get('elapsed_seconds', 0) + time.monotonic() - started, 3))
+    return baseline
+
+
+def finish_cdn(step, state, s3, reporter):
+    started = time.monotonic()
     reporter.update(state, cdn='uploading')
     reporter.event(step, 'cdn', 'uploading')
     cdn_errors = []
@@ -190,11 +197,10 @@ def finish_step(step, state, baseline, s3, reporter, failures):
     reporter.update(state, elapsed_seconds=round(state.get('elapsed_seconds', 0) + time.monotonic() - started, 3))
     if cdn_errors:
         reporter.update(state, status='failed', cdn='failed', failed_phase='cdn', error=str(cdn_errors[0]))
-        failures.extend(cdn_errors)
     else:
         reporter.update(state, status='completed', cdn='completed')
         reporter.event(step, 'step', 'completed')
-    return baseline
+    return cdn_errors
 
 
 def run(root, plan, s3, output, *, case_workers=4, file_workers=8, prepare_cases=False):
@@ -220,6 +226,7 @@ def run(root, plan, s3, output, *, case_workers=4, file_workers=8, prepare_cases
     baseline, failures = plan['baseline'], []
     stop = threading.Event()
     executor = ThreadPoolExecutor(max_workers=case_workers)
+    cdn_executor = ThreadPoolExecutor(max_workers=min(case_workers, 4))
     pending = {}
 
     def submit():
@@ -238,11 +245,17 @@ def run(root, plan, s3, output, *, case_workers=4, file_workers=8, prepare_cases
             for future in sorted(done, key=lambda f: pending[f][0]['id']):
                 step, state = pending.pop(future)
                 try:
-                    future.result()
+                    errors = future.result()
                 except Exception as error:
                     failures.append(error)
                 else:
-                    baseline = finish_step(step, state, baseline, s3, reporter, failures)
+                    if not state['manifest_verified']:
+                        baseline = accept_step(step, state, baseline, s3, reporter)
+                        pending[cdn_executor.submit(finish_cdn, step, state, s3, reporter)] = (step, state)
+                        # Keep this case's slot until its CDN wait finishes, without blocking
+                        # the coordinator from accepting other ready cases.
+                        continue
+                    failures.extend(errors)
                 submit()
         complete_index = all(state['manifest_verified'] for step, state in pairs
                              if step['operation'] not in ('REORDER', 'FINAL_SYNC'))
@@ -253,10 +266,13 @@ def run(root, plan, s3, output, *, case_workers=4, file_workers=8, prepare_cases
                     reporter.event(step, 'step', 'skipped', reason='Failed cases are excluded from the index')
                     continue
                 reporter.update(state, status='uploading')
-                baseline = finish_step(step, state, baseline, s3, reporter, failures)
+                baseline = accept_step(step, state, baseline, s3, reporter)
+                failures.extend(finish_cdn(step, state, s3, reporter))
         if failures:
             raise failures[0]
     finally:
         stop.set()
         executor.shutdown(wait=True, cancel_futures=True)
+        # Even after a shared-index failure, refresh every already accepted checkpoint.
+        cdn_executor.shutdown(wait=True)
         reporter.summary()

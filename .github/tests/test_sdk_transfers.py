@@ -4,6 +4,7 @@ from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 import hashlib
 import json
 import os
+import subprocess
 from pathlib import Path
 import sys
 import tempfile
@@ -13,6 +14,54 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / 'scripts'))
 from publish import S3
+
+
+class CdnTests(unittest.TestCase):
+    def test_wildcard_submissions_are_paced_including_after_a_failed_request(self):
+        s3 = S3('s3://fixture/cases')
+        now, submissions = [0.0], []
+
+        def command(args, **kwargs):
+            if args[2] == 'create-invalidation':
+                paths = args[args.index('--paths') + 1:]
+                submissions.append((now[0], paths))
+                if paths[-1] == '/cases/failed/*':
+                    raise subprocess.CalledProcessError(1, args, stderr='fixture failure')
+                return subprocess.CompletedProcess(args, 0, stdout='{"Invalidation":{"Id":"fixture"}}')
+            self.assertEqual(args[2:4], ['wait', 'invalidation-completed'])
+
+        with patch.dict(os.environ, {'AWS_DISTRIBUITION_ID': 'fixture'}), \
+                patch('publish.time.monotonic', side_effect=lambda: now[0]), \
+                patch('publish.time.sleep', side_effect=lambda delay: now.__setitem__(0, now[0] + delay)), \
+                patch('publish.subprocess.run', side_effect=command):
+            s3.refresh_cdn('first')
+            with self.assertRaises(subprocess.CalledProcessError):
+                s3.refresh_cdn('failed')
+            s3.refresh_cdn()
+            s3.refresh_cdn('last')
+        self.assertEqual([t for t, _ in submissions], [0, 1, 1, 2])
+        self.assertEqual(submissions[2][1], ['/cases/manifest.json'])
+
+    def test_cli_waits_overlap_and_logs_correlate_ids_with_paths(self):
+        import contextlib
+        import io
+        s3 = S3('s3://fixture/cases')
+        both = threading.Barrier(2, timeout=3)
+        log = io.StringIO()
+
+        def command(args, **kwargs):
+            if args[2] == 'create-invalidation':
+                name = args[-1].split('/')[-2]
+                return subprocess.CompletedProcess(args, 0, stdout=json.dumps({'Invalidation': {'Id': name}}))
+            both.wait()
+
+        with patch.dict(os.environ, {'AWS_DISTRIBUITION_ID': 'fixture'}), \
+                patch('publish.subprocess.run', side_effect=command), \
+                contextlib.redirect_stdout(log), ThreadPoolExecutor(max_workers=2) as pool:
+            list(pool.map(s3.refresh_cdn, ['first', 'second']))
+        for name in ('first', 'second'):
+            self.assertIn('CDN invalidation submitted: ' + name + ' paths: ' +
+                          json.dumps(['/cases/manifest.json', '/cases/' + name + '/*']), log.getvalue())
 
 
 class Handler(BaseHTTPRequestHandler):

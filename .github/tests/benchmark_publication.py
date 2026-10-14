@@ -22,6 +22,21 @@ def main():
     finally:
         fixture.doCleanups()
 
+    fixture = ParallelPublicationTests()
+    fixture.setUp()
+    try:
+        # Model the previously omitted CDN wait, including the real coordinator.
+        plan = fixture.make_plan(count=12, objects=0)
+        for cases in (1, 4):
+            store = MemoryS3('[]', latency=0, cdn_latency=.2)
+            started = time.monotonic()
+            fixture.execute(copy.deepcopy(plan), store, case_workers=cases, file_workers=1)
+            print(json.dumps({'scenario': 'cdn-waits', 'case_workers': cases,
+                              'seconds': round(time.monotonic() - started, 3),
+                              'cases': 12, 'simulated_cdn_latency_ms': 200}))
+    finally:
+        fixture.doCleanups()
+
 
 if __name__ == '__main__':
     main()
