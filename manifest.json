@@ -3373,5 +3373,32 @@
       "sha256": "7e6f22b9a69d0f1609097d5966fe56b0e7bf5f99d1cb14e18ec941dd0987b6f5",
       "release_url": ""
     }
+  },
+  {
+    "title": "Can We Reproduce Chinchilla Scaling",
+    "name": "can-we-reproduce-chinchilla-scaling",
+    "catalog": "AI Research",
+    "catalog_name": "ai-research",
+    "cover": {
+      "file_name": "Can We Reproduce Chinchilla Scaling.png",
+      "path": "AI Research/Can We Reproduce Chinchilla Scaling/Can We Reproduce Chinchilla Scaling.png",
+      "bytes": 1913914,
+      "sha256": "0d68191b4132e31b2e8f50193dcf36b4ef0374aedf73b2a43b61a4493d351d4e",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Can We Reproduce Chinchilla Scaling.science",
+      "path": "AI Research/Can We Reproduce Chinchilla Scaling/Can We Reproduce Chinchilla Scaling.science",
+      "bytes": 9224153,
+      "sha256": "f1bc4dd2e240171bd622eaa12c022f6e5620bbf1fbe4ab8bf7712f5ea97f763a",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/6a3460b1163b7765c18119806f6c8cdae453d813/AI%20Research/Can%20We%20Reproduce%20Chinchilla%20Scaling/Can%20We%20Reproduce%20Chinchilla%20Scaling.science"
+    },
+    "introduction": {
+      "file_name": "Can We Reproduce Chinchilla Scaling.md",
+      "path": "AI Research/Can We Reproduce Chinchilla Scaling/Can We Reproduce Chinchilla Scaling.md",
+      "bytes": 12557,
+      "sha256": "2af30a1e2e7eda27cad934f1a4831236719843c2856d4d4f3d6b44eac5d97e68",
+      "release_url": ""
+    }
   }
 ]

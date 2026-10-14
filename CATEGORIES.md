@@ -1,6 +1,6 @@
 # Case categories
 
-`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records the 124 upstream cases synchronized from Hugging Face snapshot `91849173361281bac301cc66a2f8628e14218e41`. One existing unclassified case remains under `usecases/`.
+`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records the 125 upstream cases synchronized from Hugging Face snapshot `6a3460b1163b7765c18119806f6c8cdae453d813`. One existing unclassified case remains under `usecases/`.
 
 ## Curiosity Lab (48)
 
@@ -55,7 +55,7 @@
 | Which Planet Is Most Like Earth—and Who Decides | [Read](Curiosity%20Lab/Which%20Planet%20Is%20Most%20Like%20Earth%E2%80%94and%20Who%20Decides/Which%20Planet%20Is%20Most%20Like%20Earth%E2%80%94and%20Who%20Decides.md) |
 | Why Do Coffee and Sleep Studies Disagree | [Read](Curiosity%20Lab/Why%20Do%20Coffee%20and%20Sleep%20Studies%20Disagree/Why%20Do%20Coffee%20and%20Sleep%20Studies%20Disagree.md) |
 
-## AI Research (46)
+## AI Research (47)
 
 | Case | Introduction |
 |---|---|
@@ -105,6 +105,8 @@
 | Will 10× Cheaper AI Increase Total Spending | [Read](AI%20Research/Will%2010%C3%97%20Cheaper%20AI%20Increase%20Total%20Spending/Will%2010%C3%97%20Cheaper%20AI%20Increase%20Total%20Spending.md) |
 | Will AI Overrefund or Underrefund | [Read](AI%20Research/Will%20AI%20Overrefund%20or%20Underrefund/Will%20AI%20Overrefund%20or%20Underrefund.md) |
 | WOULD AN AI KEEP COOPERATING? | [Read](AI%20Research/WOULD%20AN%20AI%20KEEP%20COOPERATING%3F/WOULD%20AN%20AI%20KEEP%20COOPERATING%3F.md) |
+| Can We Reproduce Chinchilla Scaling | [Read](AI%20Research/Can%20We%20Reproduce%20Chinchilla%20Scaling/Can%20We%20Reproduce%20Chinchilla%20Scaling.md) |
+
 
 ## Academic Research (30)
 
