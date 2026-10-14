@@ -14,10 +14,13 @@
 | `path` | Safe repository-relative path, such as `usecases/physics/example/cover.png` or `covers/cover.png`; required for remote sources as well |
 | `bytes` | Actual file size in bytes, as a nonnegative integer |
 | `sha256` | Actual file SHA-256, exactly 64 hexadecimal characters with no whitespace |
-| `release_url` | An empty string selects the local file; a nonempty value selects an HTTP(S) remote resource |
+| `release_url` | An empty string selects the local file; a nonempty value must use one of the two HTTPS repository prefixes listed below |
+
+- The `release_url` allowlist applies to all three resources and currently contains exactly `https://github.com/aipoch/open-science-usecases/` (the upstream main repository, not a fork) and `https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/`. Use a direct resource URL under one of these prefixes. Other hosts, repositories, HTTP URLs, lookalike prefixes, credentials, alternate ports, and literal or encoded path traversal are forbidden. The allowlist applies to the declared URL; normal download redirects to the providers' storage/CDN hosts remain supported.
 
 - Each local source requires an existing regular file at its `path` and existing parent directories. Neither the file nor any parent directory may be a symbolic link. Fully remote entries do not require local directories. A `.science` package must have exactly one source; do not keep a local file at the same path when the package is remote.
 - Introductions must be nonempty and accurately describe the case. Read the actual introduction before completing an addition; do not substitute an empty document, placeholder text, or README. Remote introductions must also undergo content review before upload.
+- In case Markdown files, use complete absolute HTTP(S) URLs for links and image sources, including reference-style links and HTML attributes. Do not use relative paths, root-relative paths, protocol-relative URLs, or local filesystem paths. Do not list or embed links to the `.science` package or the case cover; those resources are already declared in `manifest.json`.
 - Once the content is final, compute the size and SHA of all three resources from the actual files on the user's device. For remote resources, also compute these values from the local originals before uploading. Do not reuse another file's digest or guess values; recompute them whenever the content changes.
 
 ```sh
@@ -27,7 +30,7 @@ shasum -a 256 'usecases/directory/filename'
 
 # Pre-commit checks
 
-Check fields and types, unique names, catalog conversions and global collisions, resource types, safe paths, filenames, actual sizes, SHA values, and source selection. Classification migrations update catalog fields and paths; preserve resource contents and all other metadata. Follow Conventional Commits.
+Check fields and types, unique names, catalog conversions and global collisions, resource types, safe paths, filenames, actual sizes, SHA values, source selection, and the release URL allowlist across the entire manifest. Review case Markdown for absolute URLs and the absence of package and cover links. Classification migrations update catalog fields and paths; preserve resource contents and all other metadata. Follow Conventional Commits.
 
 Run `python3 -B -m unittest discover -s .github/tests -v`. Run the [validation commands](.github/CHECKING.md#commands) against the target being prepared for submission. The check phase does not download bodies or recompute SHA values; it only checks formatting, remote HEAD responses, sizes, and consistency between Git objects and declarations. Actual SHA verification takes place during publication preparation.
 

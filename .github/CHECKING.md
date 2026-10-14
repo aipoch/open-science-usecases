@@ -2,6 +2,13 @@
 
 Resource validation selects added or modified entries that still exist in the root `manifest.json`. Resource-only changes, removed entries, reordering, and JSON formatting changes do not trigger scans of other cases' resources. Catalog fields and mappings are checked across the entire target manifest, including unchanged entries, so incremental checks cannot miss collisions with existing catalogs. Fully remote entries are also selected and need no local directory. Each `name` must be unique across the entire index; titles and directory names can be chosen independently.
 
+The separate `release-urls` check always scans the entire target manifest, including unchanged entries and runs with no selected resources. Both PR and publication jobs run it before incremental checks or S3 planning. It performs no network requests and accepts only empty local-source URLs or URLs under these two exact prefixes:
+
+- `https://github.com/aipoch/open-science-usecases/`
+- `https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/`
+
+Forks, other repositories or hosts, lookalike prefixes, HTTP, credentials, alternate ports, and literal or encoded traversal are rejected. Normal HTTP(S) redirects from an allowed declared URL to provider storage/CDN hosts remain supported by the resource checks. This policy is defined in `RELEASE_URL_PREFIXES` in `check_structure.py`; it is not configurable through workflow inputs or environment variables.
+
 ## Field rules
 
 The top level is an array. Each entry contains `title`, `name`, `catalog`, `catalog_name`, `cover`, `case`, and `introduction`. Both classification fields must be strings; two empty strings (`""`) mean unclassified. Missing fields, null, whitespace-only values, and filling only one field are invalid.
@@ -16,7 +23,7 @@ All three resources share the same structure:
 | `path` | Safe repository-relative path; classified resources start with `<catalog>/` and may use arbitrary subdirectories; unclassified prefixes are unrestricted; required for remote sources as well |
 | `bytes` | Nonnegative integer byte count; booleans and strings are not accepted |
 | `sha256` | 64 hexadecimal characters with no whitespace; comparisons are case-insensitive |
-| `release_url` | `""` selects a local source; a nonempty value must be a valid HTTP(S) download URL and cannot contain only whitespace |
+| `release_url` | `""` selects a local source; a nonempty value must be a valid HTTPS download URL under one of the two allowed repository prefixes above |
 
 The cover must have an image extension, the package must be a `.science` file, and the introduction must be a `.md` file. Duplicate JSON fields, missing or unknown fields, absolute paths, backslashes, control characters, empty path segments, and `.` / `..` segments are rejected. Windows drive-letter paths are also rejected. New manifests must explicitly provide all three `release_url` fields. Historical S3 baselines allow legacy root-level paths and treat missing cover and introduction URLs as empty strings during comparison.
 
@@ -41,11 +48,14 @@ Remote HEAD requests must return HTTP 200 with a valid integer `Content-Length` 
 
 The check phase does not download bodies or recompute SHA values. Git declaration checks use the Git object IDs of committed regular files and fail if resource contents change without a corresponding SHA declaration update. This does not prove that the SHA matches the actual contents. Actual size and SHA verification takes place during publication preparation.
 
+Case Markdown content is reviewed according to [AGENTS.md](../AGENTS.md): links and image sources must use complete absolute HTTP(S) URLs, and package/cover links must not be listed or embedded. This content review is separate from the automated release URL check; the check phase does not fetch remote Markdown bodies.
+
 ## Commands
 
 Run from the repository root. The checkout must match the commit being checked, and the manifest must have no uncommitted changes:
 
 ```sh
+python3 .github/scripts/check_structure.py release-urls
 CASES_JSON="$(python3 .github/scripts/check_structure.py directories --base <BASE_SHA>)" \
   python3 .github/scripts/check_structure.py manifest
 python3 .github/scripts/check_structure.py declarations --base <BASE_SHA> --after <HEAD_SHA>

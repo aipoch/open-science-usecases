@@ -341,7 +341,7 @@ class ExtractionTests(GitFixture):
         self.extract(expected=1)
         self.assertEqual(self.http.requests, [])
 
-    def pipeline(self, env):
+    def pipeline(self, env, allow_test_host=True):
         # Execute the actual workflow commands and their resource/manifest gates.
         workflow = (SCRIPTS.parent / 'workflows/check-structure.yml').read_text().split('  publish:', 1)[1]
         commands = []
@@ -354,19 +354,36 @@ class ExtractionTests(GitFixture):
             command = command.group(1).replace('python3 .github/scripts/',
                                                shlex.quote(sys.executable) + ' -B ' + str(SCRIPTS) + '/')
             command = command.replace(str(SCRIPTS / 'publish.py'), str(Path(__file__).with_name('fake_publish.py')))
+            if command.endswith('check_structure.py release-urls') and allow_test_host:
+                # Only this test process admits the local HTTP fixture, never production.
+                script = (f'import sys; sys.path.insert(0, {str(SCRIPTS)!r}); '
+                          f'import check_structure as checker; '
+                          f'checker.RELEASE_URL_PREFIXES += ({self.url + "/"!r},); '
+                          'sys.exit(checker.main())')
+                command = shlex.quote(sys.executable) + ' -B -c ' + shlex.quote(script) + ' release-urls'
             gate = re.search(r"^        if: steps.plan.outputs.(\w+) == 'true'$", step, re.M)
             if gate:
                 commands.extend(['if grep -qx ' + shlex.quote(gate.group(1)+'=true') + ' "$GITHUB_OUTPUT"; then',
                                  command, 'fi'])
             else:
                 commands.append(command)
-        self.assertEqual(count, 2)
+        self.assertEqual(count, 3)
         output = self.root / '.git/workflow-output'
         output.write_text('')
         return subprocess.run(['bash', '-e', '-o', 'pipefail', '-c', '\n'.join(commands)], cwd=self.root,
                               env={**env, 'TARGET_SHA': self.git('rev-parse', 'HEAD'),
                                    'RUNNER_TEMP': str(self.root), 'GITHUB_OUTPUT': str(output)},
                               text=True, capture_output=True)
+
+    def test_workflow_rejects_untrusted_url_before_http_or_s3_access(self):
+        self.declare(remote=True)
+        s3, env = self.s3_fixture()
+        result = self.pipeline(env, allow_test_host=False)
+        self.assertEqual(result.returncode, 1, result.stderr)
+        self.assertIn('release_url', result.stderr)
+        self.assertEqual(self.http.requests + self.http.head_requests, [])
+        calls = s3 / 'calls.jsonl'
+        self.assertTrue(not calls.exists() or not calls.read_text())
 
     def test_workflow_full_incremental_and_removal_publications(self):
         self.declare()

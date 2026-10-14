@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Validate only cases added or modified in manifest.json."""
+"""Validate manifest policy globally and resources for added or modified cases."""
 
 import argparse
 from http.client import HTTPException
@@ -12,9 +12,15 @@ import re
 import subprocess
 import sys
 import unicodedata
-from urllib.parse import quote, urlsplit
+from urllib.parse import quote, unquote, urlsplit
 from urllib.error import HTTPError, URLError
 from urllib.request import HTTPRedirectHandler, Request, build_opener
+
+
+RELEASE_URL_PREFIXES = (
+    "https://github.com/aipoch/open-science-usecases/",
+    "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/",
+)
 
 
 def git(*args):
@@ -86,6 +92,37 @@ def is_resource_url(url, kind=None):
 
 def is_science_url(url):
     return is_resource_url(url, "case")
+
+
+def release_url_errors(entries):
+    errors = []
+    for entry in entries:
+        for kind in ("cover", "case", "introduction"):
+            resource = entry.get(kind)
+            if not isinstance(resource, dict):
+                continue  # Resource shape is checked by the manifest schema.
+            url = resource.get("release_url", "")
+            if url == "":
+                continue
+            allowed = is_resource_url(url, kind) and url.startswith(RELEASE_URL_PREFIXES)
+            if allowed:
+                path = urlsplit(url).path
+                # Reject traversal even if a downstream server decodes it again.
+                while True:
+                    if (re.search(r"[\\\x00-\x1f\x7f]", path)
+                            or any(part in (".", "..") for part in path.split("/"))):
+                        allowed = False
+                        break
+                    decoded = unquote(path)
+                    if decoded == path:
+                        break
+                    path = decoded
+            if not allowed:
+                errors.append("manifest.json / " + show(entry.get("name")) + "/" + kind
+                              + ": invalid release_url; use an empty string for a local source or a URL under "
+                              + " or ".join(RELEASE_URL_PREFIXES)
+                              + " (no traversal, credentials, alternate ports, or lookalike prefixes)")
+    return errors
 
 
 def validate_resource_path(resource):
@@ -396,6 +433,7 @@ def check_declarations(root, before, after):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="stage", required=True)
+    commands.add_parser("release-urls", help="Check every manifest release_url against the source allowlist")
     scan = commands.add_parser("directories")
     scan.add_argument("--base", required=True, help="Git base commit; all-zero SHA means an empty tree")
     scan.add_argument("--merge-base", action="store_true", help="Compare to the common ancestor for a PR")
@@ -406,9 +444,13 @@ def main():
     declarations.add_argument("--base", required=True)
     declarations.add_argument("--after", required=True)
     args = parser.parse_args()
-    if args.stage == "declarations":
+    if args.stage in ("declarations", "release-urls"):
         try:
-            errors = check_declarations(Path.cwd(), args.base, args.after)
+            if args.stage == "release-urls":
+                entries = manifest_entries(Path("manifest.json").read_text(encoding="utf-8"), "manifest.json")
+                errors = release_url_errors(entries)
+            else:
+                errors = check_declarations(Path.cwd(), args.base, args.after)
             for error in errors:
                 report_error(error)
             return int(bool(errors))

@@ -34,6 +34,9 @@ jobs:
           fetch-depth: 0
           persist-credentials: false
 
+      - name: Check all manifest release URLs against the allowlist
+        run: python3 .github/scripts/check_structure.py release-urls
+
       - name: Fix the pull request check range
         id: range
         env:
@@ -104,6 +107,9 @@ jobs:
         with:
           ref: ${{ github.sha }}
           persist-credentials: false
+
+      - name: Check all manifest release URLs against the allowlist
+        run: python3 .github/scripts/check_structure.py release-urls
 
       - name: Install publication SDK
         run: |
