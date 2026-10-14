@@ -630,6 +630,12 @@
       "title": "WOULD AN AI KEEP COOPERATING?",
       "name": "would-an-ai-keep-cooperating",
       "category": "AI Research"
+    },
+    {
+      "title": "Can We Reproduce Chinchilla Scaling",
+      "name": "can-we-reproduce-chinchilla-scaling",
+      "category": "AI Research",
+      "creator": "@Xudong07452910"
     }
   ]
 }

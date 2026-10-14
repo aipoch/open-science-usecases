@@ -1,6 +1,6 @@
 # Case index
 
-124 cases. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
+125 cases. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
 
 ## Curiosity Lab (48)
 
@@ -55,7 +55,7 @@
 | Why Do Coffee and Sleep Studies Disagree | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Why%20Do%20Coffee%20and%20Sleep%20Studies%20Disagree/Why%20Do%20Coffee%20and%20Sleep%20Studies%20Disagree.md) |
 | which deal is actually cheaper | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/which%20deal%20is%20actually%20cheaper/which%20deal%20is%20actually%20cheaper.md) |
 
-## AI Research (46)
+## AI Research (47)
 
 | Case | Creator | Introduction |
 |---|---|---|
@@ -105,6 +105,8 @@
 | Where Do AlphaFold Protein Structures Lose Confidence | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Where%20Do%20AlphaFold%20Protein%20Structures%20Lose%20Confidence/Where%20Do%20AlphaFold%20Protein%20Structures%20Lose%20Confidence.md) |
 | Will 10× Cheaper AI Increase Total Spending | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Will%2010%C3%97%20Cheaper%20AI%20Increase%20Total%20Spending/Will%2010%C3%97%20Cheaper%20AI%20Increase%20Total%20Spending.md) |
 | Will AI Overrefund or Underrefund | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Will%20AI%20Overrefund%20or%20Underrefund/Will%20AI%20Overrefund%20or%20Underrefund.md) |
+| Can We Reproduce Chinchilla Scaling | @Xudong07452910 | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Can%20We%20Reproduce%20Chinchilla%20Scaling/Can%20We%20Reproduce%20Chinchilla%20Scaling.md) |
+
 
 ## Academic Research (30)
 
