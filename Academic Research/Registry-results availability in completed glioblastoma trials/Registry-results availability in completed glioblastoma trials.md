@@ -1,8 +1,20 @@
 # Registry-results availability in completed glioblastoma trials
 
-## Archived study
+## Research question
+
+How often do the eligible completed trials show registry results in the captured snapshot?
+
+## Data and method
+
+Use the fixed eligible cohort and snapshot date, then group trials by elapsed time since completion. Registry availability is a status at observation; without posting histories it does not identify when results first appeared or whether a deadline was met.
+
+## Recorded findings
 
 Examines registry-results availability for 80 eligible completed glioblastoma trials in a September 2026 snapshot. **33 trials (41.25%)** indicated results, with counts of 0/1, 11/33, 10/24 and 12/22 across increasing elapsed-time groups.
+
+## What the findings mean
+
+The older groups have more visible registry results in this snapshot. The pattern cannot distinguish delayed posting, publication elsewhere or differences in trial eligibility.
 
 ## Interpretation and limits
 

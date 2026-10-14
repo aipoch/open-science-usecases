@@ -1,8 +1,20 @@
 # Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024)
 
-## Archived study
+## Research question
+
+Does the apparent county trend change when the same monitoring sites are followed throughout?
+
+## Data and method
+
+Compare an annual observed-network average with an average over the six fixed sites. The first can change because site values change or because sites enter and leave; the second holds site membership fixed. Endpoint and multi-year-window comparisons also ask different questions.
+
+## Recorded findings
 
 Compares Los Angeles County’s changing EPA monitoring network with six fixed sites during 2015–2024. The observed-network annual mean fell by **0.15 µg/m³**, while the fixed-site mean rose by **0.81 µg/m³**, showing that site membership affects the apparent change.
+
+## What the findings mean
+
+The opposite endpoint changes show that monitoring-network composition matters. Declines under the multi-year comparison further show why the chosen temporal summary must accompany any trend claim.
 
 ## Interpretation and limits
 

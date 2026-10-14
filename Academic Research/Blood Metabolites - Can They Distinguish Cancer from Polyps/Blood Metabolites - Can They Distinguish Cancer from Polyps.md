@@ -1,8 +1,20 @@
 # Blood Metabolites - Can They Distinguish Cancer from Polyps
 
-## Archived study
+## Research question
+
+Can the processed metabolite measurements distinguish cancer samples from polyp samples within this dataset?
+
+## Data and method
+
+Nested cross-validation separates model selection from held-out assessment. Read AUC as ranking ability across possible thresholds, and the confusion counts as performance at one fixed threshold. Repeated splits test sensitivity to partitioning but do not create new independent patients.
+
+## Recorded findings
 
 Tests internal discrimination between colorectal cancer and polyp samples in a public processed serum-metabolomics dataset. The primary comparison included **64 cancer and 76 polyp samples**. Three repeated nested-cross-validation AUCs were **0.856, 0.871 and 0.856**; the first-repeat fixed-threshold counts were 49 true positives, 15 false negatives, 63 true negatives and 13 false positives.
+
+## What the findings mean
+
+The archive suggests useful internal separation, while the false-negative and false-positive counts show the tradeoff at the chosen threshold. A clinical screening claim would require independent participants, appropriate intended-use sampling and external validation.
 
 ## Interpretation and limits
 

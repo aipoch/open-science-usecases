@@ -1,8 +1,20 @@
 # Worm longevity genes and human exceptional-longevity evidence
 
-## Archived study
+## Research question
+
+Do human candidates mapped from worm longevity genes overlap eligible exceptional-longevity catalog evidence?
+
+## Data and method
+
+Separate orthology mapping from phenotype and gene matching in the catalog. Keep eligible matches, excluded records and unresolved rows in distinct groups. A broad biological notion of longevity may not match the exact human phenotype definitions used by the screen.
+
+## Recorded findings
 
 Maps nine eligible worm longevity genes to **21 human candidates** and screens a GWAS Catalog snapshot. None matched the **75 eligible exceptional-longevity rows** under the stated gene-matching rules; another 159 rows remained unresolved.
+
+## What the findings mean
+
+The zero eligible overlap applies to the stated mapping and catalog rules. Unresolved evidence remains unknown, so the screen cannot be read as a biological rejection of the candidate genes.
 
 ## Interpretation and limits
 

@@ -1,8 +1,20 @@
 # Protein abundance in ischemic failing versus non-failing human hearts
 
-## Archived study
+## Research question
+
+Which apparent protein differences survive a change in normalization?
+
+## Data and method
+
+Compare the archived MaxLFQ-scale analysis with sample-median centering on the same groups. Apply multiple-testing correction within each analysis and keep protein-group identity separate from a confident single-gene assignment.
+
+## Recorded findings
 
 Compares protein abundance in 12 ischemic failing and 10 non-failing male hearts using PXD021261. Two of **1,327 protein groups**—TF and a CP-associated group—met 5% FDR on the archived MaxLFQ scale, but **neither did after sample-median centering**.
+
+## What the findings mean
+
+The loss of the two discoveries after centering makes normalization central to the finding. It supports a sensitivity discussion, rather than a stable heart-failure biomarker claim.
 
 ## Interpretation and limits
 

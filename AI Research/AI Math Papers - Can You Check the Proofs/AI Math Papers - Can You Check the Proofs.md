@@ -1,8 +1,22 @@
 # AI Math Papers - Can You Check the Proofs
 
-## Archived study
+## Research question
+
+What proof materials accompany a sampled research family, and which main claims do they actually cover?
+
+## Data and method
+
+Pin the repository, sample distinct families rather than counting nearby revisions as separate papers, and inventory written proofs, entry modules, supporting Lean files, and dependency instructions. Track whether a file is merely listed, available, compiled, or shown to correspond to the main theorem.
+
+## Recorded findings
 
 Samples distinct research families from a fixed mathematics repository and inventories written proofs, Lean targets, implementation files, and dependencies. Supplementary files close some entry-module gaps in the recorded audit.
+
+The recorded catalogue includes three explicit formalization entries among 20 sampled families, but scope remains unresolved for some entries. Inventories and setup commands alone do not establish successful compilation or a main-result formalization rate.
+
+## What the findings mean
+
+This is an inspectability audit. Absence from a partial catalogue is not proof that a formalization does not exist elsewhere.
 
 ## Interpretation and limits
 
@@ -11,6 +25,7 @@ No proof checker was run. Static inspection and file availability do not establi
 ## Package and provenance
 
 The original `.science` export and matching poster are preserved byte-for-byte from the upstream case. The package contains the conversation, session metadata, and the resources inventoried in its internal manifest. This introduction summarizes the archived record; the research, external sources, and model evaluations were not rerun for this import.
+
 ## Import provenance
 
 This introduction was imported from the GitHub case description. The archived export and poster retain their original contents. This reorganization did not rerun the study or independently reverify its external sources or conclusions.

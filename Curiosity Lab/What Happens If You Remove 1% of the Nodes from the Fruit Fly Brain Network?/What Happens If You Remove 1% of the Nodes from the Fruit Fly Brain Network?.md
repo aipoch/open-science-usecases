@@ -1,8 +1,22 @@
 # What Happens If You Remove 1% of the Nodes from the Fruit Fly Brain Network?
 
-## Archived study
+## Research question
+
+Is losing a random neuron structurally equivalent to losing a highly connected hub?
+
+## Data and method
+
+Hold the 5,000-node high-strength subgraph fixed, delete 50 nodes per repetition, and compare random removal with hub-targeted removal over 100 repetitions per strategy. Track edges, weak and strong components, reciprocity, and matched-source efficiency separately.
+
+## Recorded findings
 
 Compares random node deletion with hub-targeted deletion in a 5,000-neuron high-strength subgraph from the FlyWire v783 archive. The archived analysis uses 100 repetitions per strategy with 50 nodes removed per repetition, and records connectivity metrics and reproducibility artifacts.
+
+The session describes greater disruption under hub removal. This draft keeps the structural interpretation qualitative because the current introduction already flags poster–table consistency for checking.
+
+## What the findings mean
+
+This connectivity-defined subgraph is not the whole brain, and graph resilience does not establish behavioral resilience.
 
 ## Interpretation and limits
 

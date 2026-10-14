@@ -1,8 +1,20 @@
 # Genomic context of the Horvath epigenetic clock
 
-## Archived study
+## Research question
+
+Do apparent clock-CpG enrichments persist when the comparison background better reflects platform availability?
+
+## Data and method
+
+Compare the same clock sites against the full 450K set and the 27K-shared proxy. An enrichment odds ratio depends on how common an annotation is in the chosen background; platform selection can therefore mimic a biological preference.
+
+## Recorded findings
 
 Compares genomic annotations of the 353 Horvath clock CpGs using full 450K and 27K-shared comparison backgrounds. CpG-shore enrichment persisted under the shared-platform proxy (**odds ratio 1.54**), while island enrichment was no longer clear and promoter enrichment was much smaller.
+
+## What the findings mean
+
+Some annotation contrasts persist while others weaken with the background change. This makes the choice of eligible comparison sites central to the interpretation.
 
 ## Interpretation and limits
 

@@ -1,8 +1,20 @@
 # Involved versus uninvolved Crohn ileum - donor-aware expression assessment
 
-## Archived study
+## Research question
+
+Which expression contrasts remain credible when paired donors, rather than individual cells, define replication?
+
+## Data and method
+
+Cells from the same donor share biological and technical context. Read the paired-donor contrast separately from the number of cells, and distinguish the composite association rule from independently corrected panel-gene and program tests. The V2-only sensitivity changes the chemistry subset.
+
+## Recorded findings
 
 Assesses involved versus uninvolved Crohn ileum using **69,762 cells from 11 paired donors**. A composite rule identified 15 inflammatory gene–lineage associations, but no individual panel gene passed the separately corrected exact-test FDR threshold. Six of 18 program tests passed primary FDR screening; none did in the V2-only sensitivity.
+
+## What the findings mean
+
+Many cells do not replace independent donors. Different testing families and chemistry restrictions can produce different discovery counts without being contradictory.
 
 ## Interpretation and limits
 

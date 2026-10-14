@@ -1,8 +1,20 @@
 # Are Overdose Deaths Rising Because America Is Aging
 
-## Archived study
+## Research question
+
+Could changing population age composition explain the historical rise in overdose mortality?
+
+## Data and method
+
+Separate death counts, crude rates and age-adjusted rates before decomposing change into age composition and age-specific mortality. Counts also reflect population size; standardized rates ask what change remains when age weights are held comparable.
+
+## Recorded findings
 
 Examines US drug-overdose mortality and population age structure during 1999–2016. Deaths rose from **16,849 to 63,632**, while crude and officially age-adjusted rates increased by about **226%**. The broad-age composition term slightly offset the increase, rather than explaining it.
+
+## What the findings mean
+
+The composition component offsets rather than explains the recorded increase. That accounting result directs attention to changing within-age mortality without identifying its causes.
 
 ## Interpretation and limits
 

@@ -1,8 +1,20 @@
 # GLP-1 medicines and adverse-event reporting patterns
 
-## Archived study
+## Research question
+
+Are particular events disproportionately reported with the selected medicines in the frozen FAERS snapshot?
+
+## Data and method
+
+A reporting odds ratio compares the balance of event and other-event reports for a medicine with the corresponding comparator reports. Case eligibility and matching rules define that comparison. FAERS provides reports, rather than the total number of treated or untreated people.
+
+## Recorded findings
 
 Examines 422,458 eligible cases in FDA FAERS 2026 Q2. Reporting odds ratios for pancreatitis and cholelithiasis were **4.20 and 4.60 for semaglutide**, and **3.58 and 6.71 for liraglutide**, under the frozen primary matching rules.
+
+## What the findings mean
+
+The ratios flag reporting patterns for investigation. Differences between medicines can reflect reporting and use patterns, so these values cannot rank their absolute clinical risks.
 
 ## Interpretation and limits
 

@@ -1,8 +1,20 @@
 # KRAS Mutations - Do Survival Patterns Differ
 
-## Archived study
+## Research question
+
+Do KRAS mutation groups show different survival patterns after specimen collection?
+
+## Data and method
+
+Compare group survival curves with the saved age-, sex- and stage-adjusted Cox estimate. A median summarizes a curve at one point; a hazard ratio summarizes relative event rates under model assumptions. Check the time origin and proportional-hazards diagnostics before interpreting either.
+
+## Recorded findings
 
 Examines KRAS mutation groups and post-specimen-collection survival in a public MSK pancreatic cancer cohort. Among 2,270 patients with usable outcomes, G12D and G12R median survival was **15.5 and 20.4 months**. The saved age/sex/stage-adjusted G12R-versus-G12D hazard ratio was **0.769 (95% CI 0.655–0.903)**.
+
+## What the findings mean
+
+The recorded group difference remains an observational association. It does not show that changing a mutation would change survival, or that one group benefits more from a specific treatment.
 
 ## Interpretation and limits
 

@@ -1,8 +1,20 @@
 # Lymphoma Biomarkers - What Does the Evidence Support
 
-## Archived study
+## Research question
+
+What evidence actually connects the candidate markers to CD20-by-CD3 bispecific treatment decisions?
+
+## Data and method
+
+Keep the public-cohort inventory separate from the focused primary-report review. Classify each report by what it measures: biological plausibility, prognosis, monitoring or treatment benefit. Use profiled-patient denominators for mutation counts rather than treating unprofiled patients as negative.
+
+## Recorded findings
 
 Combines a small public DLBCL cohort with a focused review of five candidate biomarkers relevant to CD20-by-CD3 bispecific therapy. The cohort contained **48 patients**; CD58 and TP53 mutation-positive counts were **3/41 and 5/41** within their profiled denominators. The evidence review covered **13 primary reports**, distinguishing biological context, prognosis, monitoring and treatment benefit.
+
+## What the findings mean
+
+A plausible mechanism and a prognostic association are useful context, but neither demonstrates a marker-by-treatment interaction. The absence of a treatment-response endpoint in the public cohort is decisive for that distinction.
 
 ## Interpretation and limits
 

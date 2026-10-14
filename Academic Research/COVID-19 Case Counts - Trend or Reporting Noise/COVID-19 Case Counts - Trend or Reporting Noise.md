@@ -1,8 +1,20 @@
 # COVID-19 Case Counts - Trend or Reporting Noise
 
-## Archived study
+## Research question
+
+Which features reflect the broad reported-case wave, and which reflect the reporting calendar?
+
+## Data and method
+
+Compare centered seven- and 21-day smoothers with the raw daily reports. Summarize weekday departures from the seven-day curve to distinguish recurrent reporting patterns from the slower epidemic trajectory. Centering uses observations on both sides of each date.
+
+## Recorded findings
 
 Compares daily reporting variation with retrospective COVID-19 case trends in Lombardia during July–December 2020. The period contained **385,002 reported cases**. Seven- and 21-day centered smoothers both peaked on **10 November**, while median departures from the seven-day curve were **−44.6% on Mondays and +23.8% on Fridays**.
+
+## What the findings mean
+
+Agreement on the peak date supports a retrospective description of the wave. Large weekday departures explain why individual daily reports can misrepresent its direction.
 
 ## Interpretation and limits
 

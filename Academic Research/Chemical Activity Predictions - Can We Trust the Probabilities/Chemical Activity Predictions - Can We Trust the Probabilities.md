@@ -1,8 +1,20 @@
 # Chemical Activity Predictions - Can We Trust the Probabilities
 
-## Archived study
+## Research question
+
+Can a model rank assay-active compounds and also assign reliable activity probabilities?
+
+## Data and method
+
+Scaffold separation tests compounds outside the training cores. AUC measures ranking, whereas Brier score measures squared probability error. Calibration adjusts the probability scale; coverage heuristics ask a separate question about resemblance to known chemistry.
+
+## Recorded findings
 
 Evaluates Tox21 SR-MMP activity classification and probability calibration in a scaffold-separated holdout. Among 945 test structures, AUC was **0.797** and calibration improved Brier score from **0.12964 to 0.11528**. Chemical-coverage screening remained heuristic and was not shown to remove high-error predictions.
+
+## What the findings mean
+
+Improved probability calibration can coexist with unchanged ranking. Neither metric converts an in-vitro assay endpoint into a clinical toxicity probability.
 
 ## Interpretation and limits
 

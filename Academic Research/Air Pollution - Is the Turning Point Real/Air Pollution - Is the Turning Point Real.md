@@ -1,8 +1,20 @@
 # Air Pollution - Is the Turning Point Real
 
-## Archived study
+## Research question
+
+Does the annual exposure series require a change in slope, or can a simpler trend explain it?
+
+## Data and method
+
+A hinge model joins two slopes at a candidate year. Searching many years makes the best-looking break easier to find by chance, so read search-adjusted tests alongside AICc and BIC, which penalize added complexity. A knot at the earliest eligible year deserves particular scrutiny.
+
+## Recorded findings
 
 Tests whether a short annual India PM2.5 exposure series supports a stable trend break. Both searched hinge models selected **1995**, the earliest eligible knot. Search-adjusted p-values were **0.2060 and 0.3365**, and the hinge won neither AICc nor BIC in **48 sensitivity settings**, providing no convincing support for a stable abrupt break.
+
+## What the findings mean
+
+The apparent turning point loses support when search and model complexity are accounted for. A visually appealing bend therefore should not be presented as a demonstrated policy effect.
 
 ## Interpretation and limits
 

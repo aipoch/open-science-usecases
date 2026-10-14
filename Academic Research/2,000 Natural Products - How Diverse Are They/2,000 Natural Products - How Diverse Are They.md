@@ -1,8 +1,20 @@
 # 2,000 Natural Products - How Diverse Are They
 
-## Archived study
+## Research question
+
+Can a small representative subset cover the structural variety of the captured natural-product pool?
+
+## Data and method
+
+Morgan fingerprints describe local molecular environments. Nearest-representative similarity asks how well each molecule is covered; the average and the least-covered molecule answer different questions. Compare representative-selection criteria on the same pool and fingerprint definition.
+
+## Recorded findings
 
 Explores structural diversity and representative selection in 2,000 captured COCONUT natural-product records. The primary Morgan-fingerprint selection contained **12 representatives**, with mean nearest similarity **0.1916**; only **178 of 2,000 records (8.90%)** reached similarity 0.5. Farthest-first selection traded average coverage for improved worst coverage.
+
+## What the findings mean
+
+A representative set can look diverse while leaving most of the pool poorly represented. The similarity threshold makes that coverage tradeoff visible; it is not a biological activity threshold.
 
 ## Interpretation and limits
 
