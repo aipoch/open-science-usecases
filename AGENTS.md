@@ -28,6 +28,9 @@ wc -c < 'usecases/directory/filename'
 shasum -a 256 'usecases/directory/filename'
 ```
 
+
+- Every published `.science` filename must replace spaces with hyphens (`-`), including the final segment of remote download URLs. Do not rename case titles, stable IDs, parent directories or package internals for this rule. Follow [UPLOADING.md](UPLOADING.md); run `python3 .github/scripts/check_package_names.py` before submission.
+
 # Pre-commit checks
 
 Check fields and types, unique names, catalog conversions and global collisions, resource types, safe paths, filenames, actual sizes, SHA values, source selection, and the release URL allowlist across the entire manifest. Review case Markdown for absolute URLs and the absence of package and cover links. Classification migrations update catalog fields and paths; preserve resource contents and all other metadata. Follow Conventional Commits.
