@@ -636,6 +636,16 @@
       "name": "can-we-reproduce-chinchilla-scaling",
       "category": "AI Research",
       "creator": "@Xudong07452910"
+    },
+    {
+      "title": "Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second?",
+      "name": "can-tesla-roadster-really-hit-0-60-mph-in-1-second",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds?",
+      "name": "how-much-gas-does-it-take-to-make-a-tesla-roadster-hover-for-5-seconds",
+      "category": "Curiosity Lab"
     }
   ]
 }
