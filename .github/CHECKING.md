@@ -55,6 +55,7 @@ Case Markdown content is reviewed according to [AGENTS.md](../AGENTS.md): links 
 Run from the repository root. The checkout must match the commit being checked, and the manifest must have no uncommitted changes:
 
 ```sh
+python3 .github/scripts/check_package_names.py
 python3 .github/scripts/check_structure.py release-urls
 python3 .github/scripts/check_structure.py directories --base <BASE_SHA> > /tmp/selected-cases.json
 python3 .github/scripts/check_structure.py manifest --cases-file /tmp/selected-cases.json
