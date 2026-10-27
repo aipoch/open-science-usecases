@@ -1,8 +1,8 @@
 # Case index
 
-125 cases. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
+127 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
 
-## Curiosity Lab (48)
+## Curiosity Lab (50)
 
 | Case | Creator | Introduction |
 |---|---|---|
@@ -54,6 +54,8 @@
 | Which Planet Is Most Like Earth—and Who Decides | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Which%20Planet%20Is%20Most%20Like%20Earth%E2%80%94and%20Who%20Decides/Which%20Planet%20Is%20Most%20Like%20Earth%E2%80%94and%20Who%20Decides.md) |
 | Why Do Coffee and Sleep Studies Disagree | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Why%20Do%20Coffee%20and%20Sleep%20Studies%20Disagree/Why%20Do%20Coffee%20and%20Sleep%20Studies%20Disagree.md) |
 | which deal is actually cheaper | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/which%20deal%20is%20actually%20cheaper/which%20deal%20is%20actually%20cheaper.md) |
+| Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Can%20Tesla%20Roadster%20REALLY%20Hit%200-60%20mph%20in%201%20Second/Can%20Tesla%20Roadster%20REALLY%20Hit%200-60%20mph%20in%201%20Second.md) |
+| How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/How%20Much%20Gas%20Does%20It%20Take%20to%20Make%20a%20Tesla%20Roadster%20Hover%20for%205%20Seconds/How%20Much%20Gas%20Does%20It%20Take%20to%20Make%20a%20Tesla%20Roadster%20Hover%20for%205%20Seconds.md) |
 
 ## AI Research (47)
 

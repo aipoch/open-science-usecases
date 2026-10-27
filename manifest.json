@@ -3400,5 +3400,59 @@
       "sha256": "2af30a1e2e7eda27cad934f1a4831236719843c2856d4d4f3d6b44eac5d97e68",
       "release_url": ""
     }
+  },
+  {
+    "title": "Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second?",
+    "name": "can-tesla-roadster-really-hit-0-60-mph-in-1-second",
+    "catalog": "Curiosity Lab",
+    "catalog_name": "curiosity-lab",
+    "cover": {
+      "file_name": "Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second.png",
+      "path": "Curiosity Lab/Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second/Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second.png",
+      "bytes": 605000,
+      "sha256": "c4117c1c88834d3eff6ae453be61a15acbe9ad7996b41b984d333727de70b53c",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Can-Tesla-Roadster-REALLY-Hit-0-60-mph-in-1-Second.science",
+      "path": "Curiosity Lab/Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second/Can-Tesla-Roadster-REALLY-Hit-0-60-mph-in-1-Second.science",
+      "bytes": 19000819,
+      "sha256": "3215007322767a10334ddc781650234b74f1307796692470b226b6fe0d3d808d",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/9ef8505a17b965318bd98ddc70fb743a6cf9c480/Curiosity%20Lab/Can%20Tesla%20Roadster%20REALLY%20Hit%200-60%20mph%20in%201%20Second/Can-Tesla-Roadster-REALLY-Hit-0-60-mph-in-1-Second.science"
+    },
+    "introduction": {
+      "file_name": "Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second.md",
+      "path": "Curiosity Lab/Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second/Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second.md",
+      "bytes": 10492,
+      "sha256": "725f2ed656b1552c5a7e8e033c424147a1a90438d3939da1e7fe5f0c7589b7c9",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds?",
+    "name": "how-much-gas-does-it-take-to-make-a-tesla-roadster-hover-for-5-seconds",
+    "catalog": "Curiosity Lab",
+    "catalog_name": "curiosity-lab",
+    "cover": {
+      "file_name": "How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds.png",
+      "path": "Curiosity Lab/How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds/How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds.png",
+      "bytes": 590431,
+      "sha256": "d8197c083774513195ec12ea47f67c40412abe3cd958aaba1a499fc3317150df",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "How-Much-Gas-Does-It-Take-to-Make-a-Tesla-Roadster-Hover-for-5-Seconds.science",
+      "path": "Curiosity Lab/How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds/How-Much-Gas-Does-It-Take-to-Make-a-Tesla-Roadster-Hover-for-5-Seconds.science",
+      "bytes": 5389177,
+      "sha256": "26a90059fdcb687a6776fbca7facb1fd11688d3f1526d8dcf3fe0f32c2259111",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/9ef8505a17b965318bd98ddc70fb743a6cf9c480/Curiosity%20Lab/How%20Much%20Gas%20Does%20It%20Take%20to%20Make%20a%20Tesla%20Roadster%20Hover%20for%205%20Seconds/How-Much-Gas-Does-It-Take-to-Make-a-Tesla-Roadster-Hover-for-5-Seconds.science"
+    },
+    "introduction": {
+      "file_name": "How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds.md",
+      "path": "Curiosity Lab/How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds/How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds.md",
+      "bytes": 9449,
+      "sha256": "5c88d6e1cb954d3d09d888ffa176afc5f930ba536c5cb26aa85304220b2d9cd6",
+      "release_url": ""
+    }
   }
 ]
