@@ -37,6 +37,9 @@ jobs:
       - name: Check all manifest release URLs against the allowlist
         run: python3 .github/scripts/check_structure.py release-urls
 
+      - name: Check the complete manifest schema
+        run: python3 .github/scripts/check_structure.py schema
+
       - name: Fix the pull request check range
         id: range
         env:
@@ -68,6 +71,22 @@ jobs:
 
       - name: Test workflow behavior on pull requests
         run: python3 -B -m unittest discover -s .github/tests -v
+
+      - name: Check video references
+        if: steps.directories.outputs.cases != '' && steps.directories.outputs.cases != '[]'
+        env:
+          BASE_SHA: ${{ steps.range.outputs.before }}
+          TRUSTED_PR: ${{ github.event.pull_request.head.repo.full_name == github.repository }}
+          AWS_ACCESS_KEY_ID: ${{ github.event.pull_request.head.repo.full_name == github.repository && secrets.AWS_ACCESS_KEY_ID || '' }}
+          AWS_SECRET_ACCESS_KEY: ${{ github.event.pull_request.head.repo.full_name == github.repository && secrets.AWS_SECRET_ACCESS_KEY || '' }}
+          AWS_DEFAULT_REGION: ${{ github.event.pull_request.head.repo.full_name == github.repository && secrets.AWS_DEFAULT_REGION || '' }}
+          AWS_EC2_METADATA_DISABLED: "true"
+        run: |
+          if [ "$TRUSTED_PR" = "true" ]; then
+            python3 .github/scripts/check_structure.py videos --base "$BASE_SHA" --cases-file "$RUNNER_TEMP/selected-cases.json"
+          else
+            python3 .github/scripts/check_structure.py videos --base "$BASE_SHA" --cases-file "$RUNNER_TEMP/selected-cases.json" --skip-s3
+          fi
 
   publication-dry-run:
     if: github.event_name == 'workflow_dispatch' && inputs.dry_run

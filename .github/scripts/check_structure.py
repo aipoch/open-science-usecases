@@ -175,7 +175,7 @@ def schema_errors(entry, legacy=False):
     errors = catalog_errors([entry], legacy=legacy)
     label = "manifest.json / " + show(entry.get("name"))
     required = {"title", "name", "cover", "case"} | (set() if legacy else {"introduction"})
-    if not require_keys(entry, required, label, errors, optional=("introduction", "catalog", "catalog_name")):
+    if not require_keys(entry, required, label, errors, optional=("introduction", "catalog", "catalog_name", "video")):
         return errors
     if not isinstance(entry["title"], str) or not entry["title"].strip():
         errors.append(label + ": title must be a nonempty string")
@@ -210,6 +210,8 @@ def schema_errors(entry, legacy=False):
         url = resource.get("release_url", "")
         if url != "" and not is_resource_url(url, kind):
             errors.append(label + "/" + kind + ": invalid release_url")
+    from video_resources import video_errors
+    errors.extend(video_errors(entry))
     return errors
 
 
@@ -368,7 +370,7 @@ def validate_manifest(cases, declared_only=False):
     if not isinstance(cases, list) or any(not isinstance(case, dict) or "entry" not in case for case in cases):
         raise ValueError("CASES_JSON must contain selected entries from the directories step")
     manifest = manifest_entries(Path("manifest.json").read_text(encoding="utf-8"), "manifest.json")
-    errors = catalog_errors(manifest)
+    errors = manifest_schema_errors(manifest)
     if errors:
         return errors
     for case in cases:
@@ -387,6 +389,19 @@ def validate_manifest(cases, declared_only=False):
             resource = entry[kind]
             if resource["release_url"]:
                 validate_head_size(resource["release_url"], resource["bytes"], entry["name"] + "/" + kind, errors)
+    return errors
+
+
+def manifest_schema_errors(entries):
+    errors = catalog_errors(entries)
+    names = set()
+    for entry in entries:
+        errors.extend(schema_errors(entry))
+        name = entry.get('name')
+        if isinstance(name, str):
+            if name in names:
+                errors.append('Duplicate name: ' + show(name))
+            names.add(name)
     return errors
 
 
@@ -434,6 +449,11 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     commands = parser.add_subparsers(dest="stage", required=True)
     commands.add_parser("release-urls", help="Check every manifest release_url against the source allowlist")
+    commands.add_parser("schema", help="Check the complete manifest structure, including optional videos")
+    videos = commands.add_parser("videos", help="Probe selected video references without downloading video bodies")
+    videos.add_argument('--cases-file', type=Path, required=True)
+    videos.add_argument('--base', help='Probe only video declarations changed from this Git commit')
+    videos.add_argument('--skip-s3', action='store_true', help='Report S3 checks as deferred (untrusted PR only)')
     scan = commands.add_parser("directories")
     scan.add_argument("--base", required=True, help="Git base commit; all-zero SHA means an empty tree")
     scan.add_argument("--merge-base", action="store_true", help="Compare to the common ancestor for a PR")
@@ -446,11 +466,42 @@ def main():
     declarations.add_argument("--base", required=True)
     declarations.add_argument("--after", required=True)
     args = parser.parse_args()
-    if args.stage in ("declarations", "release-urls"):
+    if args.stage in ("declarations", "release-urls", "schema", "videos"):
         try:
-            if args.stage == "release-urls":
+            if args.stage in ("release-urls", "schema"):
                 entries = manifest_entries(Path("manifest.json").read_text(encoding="utf-8"), "manifest.json")
-                errors = release_url_errors(entries)
+                errors = release_url_errors(entries) if args.stage == 'release-urls' else manifest_schema_errors(entries)
+            elif args.stage == 'videos':
+                from video_resources import validate_video
+                cases = read_json(args.cases_file.read_text(encoding='utf-8'), 'selected cases')
+                entries = manifest_entries(Path('manifest.json').read_text(encoding='utf-8'), 'manifest.json')
+                errors = manifest_schema_errors(entries)
+                if not isinstance(cases, list) or any(not isinstance(c, dict) or 'entry' not in c for c in cases):
+                    raise ValueError('Expected selected cases from the directories step')
+                previous = {}
+                if args.base:
+                    base = resolve_base(args.base)
+                    if base:
+                        previous = {e['name']: e for e in manifest_entries(git('show', base + ':manifest.json'), 'baseline')}
+                if not errors:
+                    for case in cases:
+                        entry = case['entry']
+                        if entry not in entries:
+                            errors.append('Selected video entry differs from checkout manifest')
+                            continue
+                        if args.base and entry.get('video') == previous.get(entry['name'], {}).get('video'):
+                            continue
+                        if args.skip_s3 and entry.get('video', {}).get('type') == 's3':
+                            message = entry['name'] + '/video: S3 validation DEFERRED; trusted publication must verify it'
+                            log(message)
+                            if os.environ.get('GITHUB_STEP_SUMMARY'):
+                                with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as stream:
+                                    stream.write(message + '\n')
+                            continue
+                        try:
+                            validate_video(entry)
+                        except (ValueError, OSError) as error:
+                            errors.append(entry['name'] + '/video: ' + str(error))
             else:
                 errors = check_declarations(Path.cwd(), args.base, args.after)
             for error in errors:

@@ -93,6 +93,14 @@ Move directories as a whole, preserving resource contents, filenames, sizes, SHA
 
 The classification upgrade only adds `catalog: ""` and `catalog_name: ""` to existing cases, preserving `usecases/`, every resource path, and resource metadata. Historical S3 indexes may omit both fields. This upgrade also changes only the index and selects no resource operations.
 
+## Video references
+
+An optional `video` is a reference, not another source to stage/upload/extract. Its `type` determines validation as described in [VIDEOS.md](VIDEOS.md). Historical indexes without video remain valid. Video additions, updates, type switches and removals participate in case comparisons and checkpoint manifests without changing the three existing resource candidate rules.
+
+Before any resource writes for an affected case or dependent catalog group, changed video references are validated. Failure retains the previous case entry and fails the job while independent cases may continue. Internal videos are checked in the fixed `statics-aipochcom-prod/open-science/usecases/` location, regardless of the configured index target. There is no publication skip for missing credentials, objects or metadata. Deleting a video reference does not delete its S3 object.
+
+An internal-video declaration change invalidates that case's CDN path even when no ordinary resources are uploaded. Unchanged declarations do not trigger remote checks or repair. With stable filenames, upload/metadata/index/cache updates are not atomic and there is no automatic rollback of a locally overwritten object. Existing manifest locks, conditional commits and failure recovery still apply.
+
 ## Local validation
 
 ```sh
