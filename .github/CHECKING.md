@@ -52,9 +52,9 @@ Case Markdown content is reviewed according to [AGENTS.md](../AGENTS.md): links 
 
 ## Commands
 
-Optional `video` objects use `type`, `file_path` and required `file_name`; see [VIDEOS.md](VIDEOS.md) for the full contract. The `schema` command validates the complete index without network access. The separate `videos` command checks changed video declarations: fixed-target S3 HEAD size/custom SHA metadata, external HEAD size/video type, or bounded YouTube metadata. It never downloads video bodies or computes remote SHA. This rule is independent of the existing three-resource release URL allowlist.
+For the video contract, see [AGENTS.md](../AGENTS.md#adding-and-updating-videos); for uploads, see [VIDEOS.md](VIDEOS.md). `schema` validates the entire index offline. `videos` probes changed declarations: S3 HEAD size/custom SHA metadata, external HEAD size/MIME type, or bounded YouTube metadata. It downloads no video bodies, computes no remote SHA and uses separate URL rules from the three-resource allowlist.
 
-PR workflows reference repository AWS secrets only for same-repository PRs. Fork PRs run `videos --skip-s3`, explicitly recording that S3 checks are deferred; that result is not full remote validation. Trusted publication checks changed video references before writing affected cases and has no skip option. Use Python 3.11+ for the test suite, with the pinned publication SDK installed in an isolated environment.
+Same-repository PRs use repository AWS secrets. Fork PRs use `videos --skip-s3` and report deferred S3 checks in the step summary, not full validation. Publication validates changed videos before affected-case writes with no skip. Tests require Python 3.11+ and the pinned SDK in an isolated environment.
 
 Run from the repository root. The checkout must match the commit being checked, and the manifest must have no uncommitted changes:
 

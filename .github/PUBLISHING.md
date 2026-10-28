@@ -95,11 +95,11 @@ The classification upgrade only adds `catalog: ""` and `catalog_name: ""` to exi
 
 ## Video references
 
-An optional `video` is a reference, not another source to stage/upload/extract. Its `type` determines validation as described in [VIDEOS.md](VIDEOS.md). Historical indexes without video remain valid. Video additions, updates, type switches and removals participate in case comparisons and checkpoint manifests without changing the three existing resource candidate rules.
+Optional `video` references are never staged, uploaded or extracted by the publisher. Additions, updates, type switches and removals enter case comparisons and checkpoints; existing resource candidate rules and video-free indexes remain valid. See [VIDEOS.md](VIDEOS.md) for upload and validation details.
 
-Before any resource writes for an affected case or dependent catalog group, changed video references are validated. Failure retains the previous case entry and fails the job while independent cases may continue. Internal videos are checked in the fixed `statics-aipochcom-prod/open-science/usecases/` location, regardless of the configured index target. There is no publication skip for missing credentials, objects or metadata. Deleting a video reference does not delete its S3 object.
+Validate changed references before any affected-case or dependent-group writes. Failure retains the previous case entry and fails the job; independent cases may continue. S3 checks always use `statics-aipochcom-prod/open-science/usecases/`, regardless of the index target. Missing credentials, objects or metadata cannot be skipped. Removing a reference never deletes its object.
 
-An internal-video declaration change invalidates that case's CDN path even when no ordinary resources are uploaded. Unchanged declarations do not trigger remote checks or repair. With stable filenames, upload/metadata/index/cache updates are not atomic and there is no automatic rollback of a locally overwritten object. Existing manifest locks, conditional commits and failure recovery still apply.
+Changed internal-video declarations refresh the case CDN path even without resource uploads. Unchanged declarations trigger no remote checks or repair. Stable-key upload, metadata, index and cache updates are non-atomic; overwritten objects have no automatic rollback. Existing locks, conditional commits and recovery rules apply.
 
 ## Local validation
 

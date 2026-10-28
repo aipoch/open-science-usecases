@@ -30,27 +30,28 @@ shasum -a 256 'usecases/directory/filename'
 
 # Adding and updating videos
 
-- A case may contain one optional `video` object. Omit it when no video is available; do not use null or empty placeholders. Keep the existing three resource objects and their rules unchanged.
-- Every video requires `type`, `file_path`, and `file_name`. `type` is exactly `s3`, `external`, or `youtube`. Do not add `media_platform`, `internal_path`, or `external_url`.
+Each case may have one `video` object; omit it when unavailable, never use null or placeholders. Existing resource rules remain unchanged. Require `type` (`s3`, `external` or `youtube` only), `file_path` and `file_name`; do not add `media_platform`, `internal_path` or `external_url`.
 
-| Type | `file_path` | `file_name` | Integrity fields | Action check |
+| `type` | `file_path` | `file_name` | Required integrity fields | Action check |
 | --- | --- | --- | --- | --- |
-| `s3` | `{case.name}/{file_name}`, relative to the fixed S3 prefix below | Actual filename, matching the last path segment | Actual positive integer `bytes` and 64-digit `sha256` | HEAD: `ContentLength` and custom `Metadata.sha256` must match |
-| `external` | Complete public HTTPS video-file URL | Actual video filename; download-route URLs need not end with it | Actual positive integer `bytes`; no SHA requirement | HTTP HEAD: 200, `video/*` Content-Type, matching Content-Length |
-| `youtube` | Supported YouTube single-video HTTPS URL | User-provided video display name; no extension required | Neither bytes nor SHA required | Small platform metadata probe confirming that video exists |
+| `s3` | `{case.name}/{file_name}` under the fixed S3 prefix below | Actual filename matching the final segment | Positive integer `bytes`; 64 hexadecimal digits in `sha256` | HEAD size and custom `Metadata.sha256` match |
+| `external` | Public HTTPS video-file URL | Actual filename; download routes need not end with it | Positive integer `bytes`; no SHA requirement | HEAD: 200, `video/*`, matching Content-Length |
+| `youtube` | Supported single-video HTTPS URL | User-provided display name; extension optional | Neither bytes nor SHA | Platform metadata identifies the requested video |
 
-- Internal videos go only to `s3://statics-aipochcom-prod/open-science/usecases/{case.name}/{file_name}`. Use the existing kebab-case case `name`, not the title, catalog or local folder name. Reject traversal, encoded segments, subdirectories and collisions with other case resources. Keep ordinary filenames; do not add content hashes to filenames.
-- For S3 or external files, supported extensions are `.mp4`, `.webm`, `.mov`, `.m4v`, `.avi`, `.mkv`, `.ogv`, `.mpeg`, and `.mpg`. Video filenames/display names must be nonempty and contain no separators or control characters.
-- Assist the user by measuring the actual local video. For internal videos, run `python3 .github/scripts/video_resources.py metadata --case <manifest-name> /absolute/path/to/video.mp4` to produce the video object. Never invent sizes or hashes. Recompute both when the file changes.
-- Use available local S3 credentials and an appropriate CLI/SDK to upload. An S3 skill is optional. If local credentials cannot be obtained, tell the user and recommend preparing them; do not claim an upload succeeded. Never print or commit credentials.
-- Upload with the correct video Content-Type and custom object metadata `sha256=<locally-computed-SHA-256>`. After upload, HEAD the exact object and compare both its size and `Metadata.sha256` with the local measurements. Only then record it in the manifest. Do not substitute ETag or multipart checksums, and do not download the object to recompute SHA.
-- Replacing a video at the same key requires fresh size/SHA declarations, metadata and CDN refresh. Uploading one video does not authorize publishing the shared index or deleting other objects. Removing a video declaration never automatically deletes its S3 object.
-- External resources must be public HTTPS URLs without credentials or fragments; their checks never download video bodies or validate SHA. YouTube supports `watch?v=`, `youtu.be/`, `shorts/`, `embed/`, and `live/` single-video links. Do not treat a generic HTML page's HTTP 200 as proof of video existence. See [video upload instructions](.github/VIDEOS.md) for commands and examples.
+- Upload internal videos only to `s3://statics-aipochcom-prod/open-science/usecases/{case.name}/{file_name}`. Use the manifest's kebab-case `name`, not title, catalog or local directory. Reject traversal, encoded segments, subdirectories and resource-name collisions. Keep filenames without adding hashes.
+- Filenames/display names must be nonempty, without separators or control characters. S3/external extensions: `.mp4`, `.webm`, `.mov`, `.m4v`, `.avi`, `.mkv`, `.ogv`, `.mpeg`, `.mpg`.
+- Generate internal video metadata from the actual local file: `python3 .github/scripts/video_resources.py metadata --case <manifest-name> /absolute/path/to/video.mp4`. Never guess size/SHA; recompute after content changes.
+- Upload through available local S3 credentials and a CLI/SDK; an S3 skill is optional. If credentials are unavailable, tell the user to prepare them. Never print/commit credentials or claim an unsuccessful upload succeeded.
+- Set the correct Content-Type and custom `sha256=<local-SHA-256>` metadata. HEAD the uploaded object and match size/SHA before recording it in the manifest. Do not substitute ETag/multipart checksums or download S3 content to rehash.
+- Overwrites require updated size/SHA, metadata and CDN refresh. A video upload does not authorize shared-index publication or other-object deletion; removing its declaration never deletes the object.
+- External URLs require public HTTPS without credentials or fragments; checks never download video bodies or validate SHA. YouTube accepts `watch?v=`, `youtu.be/`, `shorts/`, `embed/` and `live/`; an HTML page's HTTP 200 alone is insufficient.
+
+See [VIDEOS.md](.github/VIDEOS.md) for upload commands and examples.
 
 # Pre-commit checks
 
 Check fields and types, unique names, catalog conversions and global collisions, resource types, safe paths, filenames, actual sizes, SHA values, source selection, and the release URL allowlist across the entire manifest. Review case Markdown for absolute URLs and the absence of package and cover links. Classification migrations update catalog fields and paths; preserve resource contents and all other metadata. Follow Conventional Commits.
 
-Run `python3 -B -m unittest discover -s .github/tests -v` using Python 3.11 or newer. Run the [validation commands](.github/CHECKING.md#commands) against the target being prepared for submission. Checks do not download resource bodies or recompute SHA values; YouTube checks fetch only bounded platform metadata. Internal video SHA checks compare custom S3 metadata; actual file SHA verification during publication preparation remains specific to the existing three resources.
+Run `python3 -B -m unittest discover -s .github/tests -v` with Python 3.11+ and the [validation commands](.github/CHECKING.md#commands) against the submission target. Checks neither fetch resource bodies nor recompute SHA: YouTube uses bounded metadata; S3 videos compare custom SHA metadata. Publication preparation verifies actual file SHA only for the existing three resources.
 
 See [.github/CHECKING.md](.github/CHECKING.md) for complex source combinations and HEAD behavior. See [.github/PUBLISHING.md](.github/PUBLISHING.md) for S3 baselines, differences, forced uploads, deduplication, staging, extraction, checkpoints, failure recovery, and migration acceptance. Tests must use temporary Git repositories, local HTTP, and fake S3 only. Do not perform live publication without user authorization.
