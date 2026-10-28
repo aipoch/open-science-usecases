@@ -101,7 +101,7 @@ The classification upgrade only adds `catalog: ""` and `catalog_name: ""` to exi
 
 Optional `video` references are never staged, uploaded or extracted by the publisher. Additions, updates, type switches and removals enter case comparisons and checkpoints; existing resource candidate rules and video-free indexes remain valid. See [VIDEOS.md](VIDEOS.md) for upload and validation details.
 
-Validate changed references before any affected-case or dependent-group writes. Failure retains the previous case entry and fails the job; independent cases may continue. S3 checks always use `statics-aipochcom-prod/open-science/usecases/`, regardless of the index target. Missing credentials, objects or metadata cannot be skipped. Removing a reference never deletes its object.
+Validate changed references before any affected-case or dependent-group writes. Failure retains the previous case entry and fails the job; independent cases may continue. S3 checks use `s3://{bucket name}/open-science/usecases/`, where `{bucket name}` is the Action's internal-video bucket, independent of the index target. Missing credentials, objects or metadata cannot be skipped. Removing a reference never deletes its object.
 
 Changed internal-video declarations refresh the case CDN path even without resource uploads. Unchanged declarations trigger no remote checks or repair. Stable-key upload, metadata, index and cache updates are non-atomic; overwritten objects have no automatic rollback. Existing locks, conditional commits and recovery rules apply.
 

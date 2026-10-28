@@ -40,7 +40,7 @@ Each case may have one `video` object; omit it when unavailable, never use null 
 | `external` | Public HTTPS video-file URL | Actual filename; download routes need not end with it | Positive integer `bytes`; no SHA requirement | HEAD: 200, `video/*`, matching Content-Length |
 | `youtube` | Supported single-video HTTPS URL | User-provided display name; extension optional | Neither bytes nor SHA | Platform metadata identifies the requested video |
 
-- Upload internal videos only to `s3://statics-aipochcom-prod/open-science/usecases/{case.name}/{file_name}`. Use the manifest's kebab-case `name`, not title, catalog or local directory. Reject traversal, encoded segments, subdirectories and resource-name collisions. Keep filenames without adding hashes.
+- Upload internal videos only to `s3://{bucket name}/open-science/usecases/{case.name}/{file_name}`. Replace `{bucket name}` with the Action's internal-video bucket. Use the manifest's kebab-case `name`, not title, catalog or local directory. Reject traversal, encoded segments, subdirectories and resource-name collisions. Keep filenames without adding hashes.
 - Filenames/display names must be nonempty, without separators or control characters. S3/external extensions: `.mp4`, `.webm`, `.mov`, `.m4v`, `.avi`, `.mkv`, `.ogv`, `.mpeg`, `.mpg`.
 - Generate internal video metadata from the actual local file: `python3 .github/scripts/video_resources.py metadata --case <manifest-name> /absolute/path/to/video.mp4`. Never guess size/SHA; recompute after content changes.
 - Upload through available local S3 credentials and a CLI/SDK; an S3 skill is optional. If credentials are unavailable, tell the user to prepare them. Never print/commit credentials or claim an unsuccessful upload succeeded.

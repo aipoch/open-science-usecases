@@ -4,7 +4,7 @@ An optional `video` references an available resource. See [AGENTS.md](../AGENTS.
 
 ## Internal S3 video
 
-Upload only to `s3://statics-aipochcom-prod/open-science/usecases/{case.name}/{file_name}`, using the stable manifest name and ordinary filename. Keep video files out of Git; catalog path rules do not apply.
+Upload only to `s3://{bucket name}/open-science/usecases/{case.name}/{file_name}`, using the stable manifest name and ordinary filename. Keep video files out of Git; catalog path rules do not apply.
 
 Generate the video JSON from the local file:
 
@@ -16,18 +16,19 @@ This prints all five fields, including measured `bytes` and `sha256`, without up
 
 Use local AWS credentials or a named profile; an S3 skill is optional. If credentials are missing, advise the user to prepare them. Install any needed pinned SDK in a task-local virtual environment.
 
-For an authorized upload:
+For an authorized upload, replace `bucket name` with the Action's internal-video bucket:
 
 ```sh
 # Use the actual file and existing manifest case name.
+video_bucket='bucket name'
 video_file='/absolute/path/demo.mp4'
 video_case='example-case'
 video_name=$(basename "$video_file")
 video_sha=$(shasum -a 256 < "$video_file" | awk '{print $1}')
 video_bytes=$(wc -c < "$video_file" | tr -d '[:space:]')
-aws s3 cp "$video_file" "s3://statics-aipochcom-prod/open-science/usecases/$video_case/$video_name" \
+aws s3 cp "$video_file" "s3://$video_bucket/open-science/usecases/$video_case/$video_name" \
   --content-type video/mp4 --metadata "sha256=$video_sha" --only-show-errors
-aws s3api head-object --bucket statics-aipochcom-prod \
+aws s3api head-object --bucket "$video_bucket" \
   --key "open-science/usecases/$video_case/$video_name" \
   --query '{bytes:ContentLength,sha256:Metadata.sha256}' --output json
 ```
