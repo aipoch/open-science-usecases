@@ -3453,6 +3453,11 @@
       "bytes": 9449,
       "sha256": "5c88d6e1cb954d3d09d888ffa176afc5f930ba536c5cb26aa85304220b2d9cd6",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://youtu.be/p8qhSTLUpw0",
+      "file_name": "How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds?"
     }
   }
 ]
