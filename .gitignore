@@ -1,2 +1,13 @@
 .DS_Store
 ._*
+
+# Case videos are uploaded separately; cases may use any directory.
+*.[mM][pP]4
+*.[wW][eE][bB][mM]
+*.[mM][oO][vV]
+*.[mM]4[vV]
+*.[aA][vV][iI]
+*.[mM][kK][vV]
+*.[oO][gG][vV]
+*.[mM][pP][eE][gG]
+*.[mM][pP][gG]

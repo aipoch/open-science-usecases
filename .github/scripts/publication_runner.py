@@ -8,6 +8,7 @@ import time
 from check_structure import source_errors, validate_head_size
 from publication_steps import (Reporter, encoded, digest, print_plan, write_artifacts,
                                step_directory, atomic_json, checkpoint_entries)
+from video_resources import changed_videos, validate_video
 
 
 def step_names(step):
@@ -92,6 +93,8 @@ def resource_step(root, source_plan, step, state, s3, reporter, workers, stop, p
             raise RuntimeError('Publication stopped before case preparation')
         reporter.update(state, status='preparing' if prepare_cases else 'uploading')
         reporter.event(step, 'step', state['status'])
+        for entry in changed_videos(step):
+            validate_video(entry)
         if prepare_cases:
             names = step_names(step)
             scoped = scope_plan(source_plan, names)
@@ -188,7 +191,9 @@ def finish_cdn(step, state, s3, reporter):
     reporter.update(state, cdn='uploading')
     reporter.event(step, 'cdn', 'uploading')
     cdn_errors = []
-    for name in sorted({item['key'].split('/', 1)[0] for item in step['files']}) or [None]:
+    refresh_names = {item['key'].split('/', 1)[0] for item in step['files']}
+    refresh_names.update(e['name'] for e in changed_videos(step) if e['video']['type'] == 's3')
+    for name in sorted(refresh_names) or [None]:
         try:
             s3.refresh_cdn(name)
         except Exception as error:

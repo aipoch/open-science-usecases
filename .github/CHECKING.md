@@ -52,13 +52,19 @@ Case Markdown content is reviewed according to [AGENTS.md](../AGENTS.md): links 
 
 ## Commands
 
+For the video contract, see [AGENTS.md](../AGENTS.md#adding-and-updating-videos); for uploads, see [VIDEOS.md](VIDEOS.md). `schema` validates the entire index offline. `videos` probes changed declarations: S3 HEAD size/custom SHA metadata, external HEAD size/MIME type, or bounded YouTube metadata. It downloads no video bodies, computes no remote SHA and uses separate URL rules from the three-resource allowlist.
+
+Same-repository PRs use repository AWS secrets. Fork PRs use `videos --skip-s3` and report deferred S3 checks in the step summary, not full validation. Publication validates changed videos before affected-case writes with no skip. Tests require Python 3.11+ and the pinned SDK in an isolated environment.
+
 Run from the repository root. The checkout must match the commit being checked, and the manifest must have no uncommitted changes:
 
 ```sh
 python3 .github/scripts/check_package_names.py
 python3 .github/scripts/check_structure.py release-urls
+python3 .github/scripts/check_structure.py schema
 python3 .github/scripts/check_structure.py directories --base <BASE_SHA> > /tmp/selected-cases.json
 python3 .github/scripts/check_structure.py manifest --cases-file /tmp/selected-cases.json
+python3 .github/scripts/check_structure.py videos --base <BASE_SHA> --cases-file /tmp/selected-cases.json
 python3 .github/scripts/check_structure.py declarations --base <BASE_SHA> --after <HEAD_SHA>
 python3 -B -m unittest discover -s .github/tests -v
 ```
