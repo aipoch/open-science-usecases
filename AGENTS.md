@@ -28,6 +28,8 @@ wc -c < 'usecases/directory/filename'
 shasum -a 256 'usecases/directory/filename'
 ```
 
+- Every published `.science` filename must replace spaces with hyphens (`-`), including the final segment of remote download URLs. Do not rename case titles, stable IDs, parent directories or package internals for this rule. Follow [UPLOADING.md](UPLOADING.md); run `python3 .github/scripts/check_package_names.py` before submission.
+
 # Adding and updating videos
 
 Each case may have one `video` object; omit it when unavailable, never use null or placeholders. Existing resource rules remain unchanged. Require `type` (`s3`, `external` or `youtube` only), `file_path` and `file_name`; do not add `media_platform`, `internal_path` or `external_url`.

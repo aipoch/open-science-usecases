@@ -40,6 +40,9 @@ jobs:
       - name: Check the complete manifest schema
         run: python3 .github/scripts/check_structure.py schema
 
+      - name: Check package filenames use hyphens instead of spaces
+        run: python3 .github/scripts/check_package_names.py
+
       - name: Fix the pull request check range
         id: range
         env:
@@ -127,6 +130,9 @@ jobs:
 
       - name: Check all manifest release URLs against the allowlist
         run: python3 .github/scripts/check_structure.py release-urls
+
+      - name: Check package filenames use hyphens instead of spaces
+        run: python3 .github/scripts/check_package_names.py
 
       - name: Install publication SDK
         run: |

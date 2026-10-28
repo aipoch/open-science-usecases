@@ -30,6 +30,10 @@ S3 keys always derive from `name` and `file_name`, not the repository `path`:
 
 Source files are located only through each resource's declared repository-relative `path`. Classified resources use a `<catalog>/` prefix with arbitrary depth and separate subdirectories beneath it; unclassified resources retain arbitrary safe paths and do not require a `usecases/` prefix. Local files and all parent directories must still pass safety checks. Category or path changes update only the index and do not change S3 keys.
 
+## Package filename migration
+
+The 2026-10-22 naming rule replaces spaces in `.science` filenames with hyphens. Package bytes and SHA values stay identical, but `file_name` changes the stable resource object key, so this is not a path-only migration: packages are selected for preparation/upload/extraction by the existing difference rules. Keep the case `name` unchanged; do not hand-edit S3 or invoke publication merely to rename the source repository files. Historical source URLs remain available at their pinned revisions.
+
 ## Candidates and deduplication
 
 Only candidate covers and introductions that are not marked for forced upload receive a target S3 `HeadObject` check. Upload is skipped only when both the target `Metadata.sha256` and `ContentLength` match. Missing objects, missing metadata, or SHA or size mismatches trigger preparation and upload. A 403, network failure, or other error causes failure and must not be treated as a missing object; only an explicit 404/NoSuchKey/NotFound from HeadObject indicates absence.

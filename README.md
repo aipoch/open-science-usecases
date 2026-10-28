@@ -19,7 +19,7 @@ A collection of Open-Science session exports and their accompanying case posters
 
 | Category | Cases | Focus |
 |---|---:|---|
-| [Curiosity Lab](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/tree/main/Curiosity%20Lab) | 48 | Everyday curiosity, natural phenomena, probability, finance, and exploratory science |
+| [Curiosity Lab](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/tree/main/Curiosity%20Lab) | 50 | Everyday curiosity, natural phenomena, probability, finance, and exploratory science |
 | [AI Research](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/tree/main/AI%20Research) | 47 | AI capabilities, reliability, behavior, costs, and research progress |
 | [Academic Research](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/tree/main/Academic%20Research) | 30 | Archived scientific studies across biomedical research, chemistry, environment, and climate |
 
@@ -33,12 +33,12 @@ Each case has its own folder within one of the three category directories:
 <Category>/
   <Case title>/
     <Case title>.md
-    <Case title>.science
+    <Case-title-with-spaces-replaced-by-hyphens>.science
     <Case title>.png
 ```
 
 - **`.md`**: a case-specific introduction covering the archived study, interpretation and limits, and package provenance.
-- **`.science`**: a native Open-Science session export, preserved as supplied.
+- **`.science`**: a native Open-Science session export. Replace every space in its filename with `-`; retain the original package bytes. See [upload naming rules](UPLOADING.md).
 - **`.png`**: the accompanying poster summarizing the case.
 - **`CASES.md`**: a complete case index with absolute links to the introductions.
 - **`categories.json`**: category membership and supplied Creator attribution.
@@ -62,7 +62,7 @@ hf download AIPOCH-AI/open-science-usecases --repo-type dataset --local-dir ./op
 To download one example:
 
 ```bash
-hf download AIPOCH-AI/open-science-usecases "AI Research/The 100K Cliff/The 100K Cliff.science" --repo-type dataset --local-dir ./open-science-usecases
+hf download AIPOCH-AI/open-science-usecases "AI Research/The 100K Cliff/The-100K-Cliff.science" --repo-type dataset --local-dir ./open-science-usecases
 ```
 
 For an exact snapshot, add `--revision <commit-sha>` to the download command. The collection contains application session packages rather than a uniform table of examples; use the native exports to inspect the cases.

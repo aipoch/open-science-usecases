@@ -59,6 +59,7 @@ Same-repository PRs use repository AWS secrets. Fork PRs use `videos --skip-s3` 
 Run from the repository root. The checkout must match the commit being checked, and the manifest must have no uncommitted changes:
 
 ```sh
+python3 .github/scripts/check_package_names.py
 python3 .github/scripts/check_structure.py release-urls
 python3 .github/scripts/check_structure.py schema
 python3 .github/scripts/check_structure.py directories --base <BASE_SHA> > /tmp/selected-cases.json

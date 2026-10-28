@@ -67,6 +67,18 @@ class DownloadHandler(BaseHTTPRequestHandler):
 
 
 class ExtractionTests(GitFixture):
+    def add_case(self, title, name):
+        # Current workflow fixtures obey the naming policy; legacy baseline
+        # parsing is exercised separately by publisher tests.
+        entry = super().add_case(title, name)
+        package = entry['case']
+        old = self.root / package['path']
+        filename = package['file_name'].replace(' ', '-')
+        new = old.with_name(filename)
+        old.rename(new)
+        package.update(file_name=filename, path=str(new.relative_to(self.root)))
+        return entry
+
     @classmethod
     def setUpClass(cls):
         cls.http = ThreadingHTTPServer(('127.0.0.1', 0), DownloadHandler)
@@ -98,7 +110,7 @@ class ExtractionTests(GitFixture):
         self.base_url = self.url + '/repository/' + after
         self.http.responses = {
             '/release.science': data,
-            '/repository/' + after + '/A%20Case/A%20Case.science': data}
+            '/repository/' + after + '/A%20Case/A-Case.science': data}
         for kind in ('cover', 'introduction'):
             if kind in self.entry:
                 resource = self.entry[kind]
@@ -367,13 +379,27 @@ class ExtractionTests(GitFixture):
                                  command, 'fi'])
             else:
                 commands.append(command)
-        self.assertEqual(count, 3)
+        self.assertEqual(count, 4)
         output = self.root / '.git/workflow-output'
         output.write_text('')
         return subprocess.run(['bash', '-e', '-o', 'pipefail', '-c', '\n'.join(commands)], cwd=self.root,
                               env={**env, 'TARGET_SHA': self.git('rev-parse', 'HEAD'),
                                    'RUNNER_TEMP': str(self.root), 'GITHUB_OUTPUT': str(output)},
                               text=True, capture_output=True)
+
+    def test_workflow_rejects_spaced_package_before_http_or_s3_access(self):
+        self.declare(remote=True)
+        self.entry['case']['file_name'] = 'A Case.science'
+        self.entry['case']['path'] = 'usecases/A Case/A Case.science'
+        self.write_manifest()
+        self.commit()
+        store, env = self.s3_fixture()
+        result = self.pipeline(env)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertIn('contains whitespace', result.stderr)
+        self.assertEqual(self.http.requests + self.http.head_requests, [])
+        calls = store / 'calls.jsonl'
+        self.assertTrue(not calls.exists() or not calls.read_text())
 
     def test_workflow_rejects_untrusted_url_before_http_or_s3_access(self):
         self.declare(remote=True)
@@ -392,7 +418,7 @@ class ExtractionTests(GitFixture):
         self.assertEqual(result.returncode, 0, result.stdout + result.stderr)
         target = s3 / 'bucket/cases'
         self.assertEqual((target / 'manifest.json').read_bytes(), (self.root / 'manifest.json').read_bytes())
-        self.assertEqual((target / 'a-case/A Case.science').read_bytes(),
+        self.assertEqual((target / 'a-case/A-Case.science').read_bytes(),
                          (self.root / self.entry['case']['path']).read_bytes())
         self.assertEqual(len(self.http.head_requests), 0)
         self.assertEqual(len(self.http.requests), 0)
@@ -411,7 +437,7 @@ class ExtractionTests(GitFixture):
         result = self.pipeline(env)
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual((target / 'manifest.json').read_text(), '[]')
-        self.assertTrue((target / 'a-case/A Case.science').is_file())
+        self.assertTrue((target / 'a-case/A-Case.science').is_file())
         self.assertTrue((target / 'a-case/extracted/session.json').is_file())
         calls = [json.loads(line) for line in (s3 / 'calls.jsonl').read_text().splitlines()]
         self.assertEqual(sum(c[:2] == ['s3api', 'put-object'] for c in calls), 2)
