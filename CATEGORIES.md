@@ -1,8 +1,8 @@
 # Case categories
 
-`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 127 classified cases. The two Roadster cases were added from Hugging Face snapshot `9ef8505a17b965318bd98ddc70fb743a6cf9c480`; existing case entries are unchanged. One existing unclassified case remains under `usecases/`.
+`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 130 classified cases. This index includes three additional cases synchronized from Hugging Face snapshot `c1e654e5d03656d4c8783dce7fb473b078818bcd`; existing case entries are unchanged. One existing unclassified case remains under `usecases/`.
 
-## Curiosity Lab (50)
+## Curiosity Lab (51)
 
 | Case | Introduction |
 |---|---|
@@ -56,8 +56,9 @@
 | Why Do Coffee and Sleep Studies Disagree | [Read](Curiosity%20Lab/Why%20Do%20Coffee%20and%20Sleep%20Studies%20Disagree/Why%20Do%20Coffee%20and%20Sleep%20Studies%20Disagree.md) |
 | Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Can%20Tesla%20Roadster%20REALLY%20Hit%200-60%20mph%20in%201%20Second/Can%20Tesla%20Roadster%20REALLY%20Hit%200-60%20mph%20in%201%20Second.md) |
 | How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/How%20Much%20Gas%20Does%20It%20Take%20to%20Make%20a%20Tesla%20Roadster%20Hover%20for%205%20Seconds/How%20Much%20Gas%20Does%20It%20Take%20to%20Make%20a%20Tesla%20Roadster%20Hover%20for%205%20Seconds.md) |
+| If ETH Fails, What Changes for Maximum Parsimony Local Search? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search.md) |
 
-## AI Research (47)
+## AI Research (49)
 
 | Case | Introduction |
 |---|---|
@@ -108,7 +109,8 @@
 | Will AI Overrefund or Underrefund | [Read](AI%20Research/Will%20AI%20Overrefund%20or%20Underrefund/Will%20AI%20Overrefund%20or%20Underrefund.md) |
 | WOULD AN AI KEEP COOPERATING? | [Read](AI%20Research/WOULD%20AN%20AI%20KEEP%20COOPERATING%3F/WOULD%20AN%20AI%20KEEP%20COOPERATING%3F.md) |
 | Can We Reproduce Chinchilla Scaling | [Read](AI%20Research/Can%20We%20Reproduce%20Chinchilla%20Scaling/Can%20We%20Reproduce%20Chinchilla%20Scaling.md) |
-
+| Claude-Assisted CAR Design: Does Higher Expression Mean Better Function? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Claude-Assisted%20CAR%20Design%20-%20Does%20Higher%20Expression%20Mean%20Better%20Function/Claude-Assisted%20CAR%20Design%20-%20Does%20Higher%20Expression%20Mean%20Better%20Function.md) |
+| Google’s LLM Sleep: How Consistent Are the Math Reasoning Gains? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Google%E2%80%99s%20LLM%20Sleep%20-%20How%20Consistent%20Are%20the%20Math%20Reasoning%20Gains/Google%E2%80%99s%20LLM%20Sleep%20-%20How%20Consistent%20Are%20the%20Math%20Reasoning%20Gains.md) |
 
 ## Academic Research (30)
 

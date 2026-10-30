@@ -646,6 +646,21 @@
       "title": "How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds?",
       "name": "how-much-gas-does-it-take-to-make-a-tesla-roadster-hover-for-5-seconds",
       "category": "Curiosity Lab"
+    },
+    {
+      "title": "If ETH Fails, What Changes for Maximum Parsimony Local Search?",
+      "name": "if-eth-fails-what-changes-for-maximum-parsimony-local-search",
+      "category": "Curiosity Lab"
+    },
+    {
+      "title": "Claude-Assisted CAR Design: Does Higher Expression Mean Better Function?",
+      "name": "claude-assisted-car-design-does-higher-expression-mean-better-function",
+      "category": "AI Research"
+    },
+    {
+      "title": "Google’s LLM Sleep: How Consistent Are the Math Reasoning Gains?",
+      "name": "google-s-llm-sleep-how-consistent-are-the-math-reasoning-gains",
+      "category": "AI Research"
     }
   ]
 }
