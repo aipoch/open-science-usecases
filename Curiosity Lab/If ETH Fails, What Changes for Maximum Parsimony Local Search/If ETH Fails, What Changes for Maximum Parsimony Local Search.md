@@ -63,7 +63,7 @@ The session examines Theorem 4.1 for NNI, ECR, SPR, and TBR, including its binar
 |---|---|---|
 | NP-completeness | The classification remains | A polynomial-time exclusion needs a separate class-separation assumption. |
 | W[1]-hardness in radius k | The classification remains | ETH being false does not settle FPT versus W[1]. |
-| Under ETH, no `f(k) × |I|^{o(k)}` solver | The conditional theorem remains; its premise is absent | Neither existence nor nonexistence of that faster solver follows from this implication alone. |
+| Under ETH, no `f(k) × size(I)^{o(k)}` solver | The conditional theorem remains; its premise is absent | Neither existence nor nonexistence of that faster solver follows from this implication alone. |
 | The published reductions | Their direction and constructions remain | An easier source problem does not reverse the reduction. |
 | Existing constructive upper bounds | They remain available | Their practical speed is not measured by the theorem. |
 
@@ -75,10 +75,10 @@ The archived source analysis traces a reduction from Clique with parameter q to 
 
 | Published result | Scope | Runtime form | Practical reading |
 |---|---|---|---|
-| Theorem 5.4 | Connected-contraction sECR | `2^{O(k log k)} × |X|² × |S|` | Fixed-parameter tractable in k; the connected restriction must be retained. |
-| Theorem 5.6 | NNI, SPR, TBR, unrestricted ECR | `|X|^{O(k)} × |S|` | Polynomial for fixed k, with a k-dependent exponent. |
+| Theorem 5.4 | Connected-contraction sECR | `2^{O(k log k)} × n² × m` | Fixed-parameter tractable in k; the connected restriction must be retained. |
+| Theorem 5.6 | NNI, SPR, TBR, unrestricted ECR | `n^{O(k)} × m` | Polynomial for fixed k, with a k-dependent exponent. |
 
-These algorithms do not depend on ETH. Their inputs use the paper's unordered-parsimony model; the constructive results do not require every character to be binary.
+Here n is the number of taxa, m is the number of characters, and `size(I)` above is the total encoded input size. These algorithms do not depend on ETH. Their inputs use the paper's unordered-parsimony model; the constructive results do not require every character to be binary.
 
 A possible route through SAT would need an explicit encoding of valid candidate trees, neighborhood distance, and score improvement. It would then need bounds on SAT variables, encoded bits, and translation overhead. Polynomial-size reducibility alone does not establish a runtime advantage over the parameterized algorithms above. The session constructs no competitive SAT encoding and reports no phylogenetics software speedup.
 

@@ -1,6 +1,6 @@
 # Case categories
 
-`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 130 classified cases. This index includes three additional cases synchronized from Hugging Face snapshot `c1e654e5d03656d4c8783dce7fb473b078818bcd`; existing case entries are unchanged. One existing unclassified case remains under `usecases/`.
+`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 130 classified cases. This index includes three additional cases synchronized from Hugging Face snapshot `eb50aaad9daaf7193b740f842ae8d53fcdcd397e`; existing case entries are unchanged. One existing unclassified case remains under `usecases/`.
 
 ## Curiosity Lab (51)
 
