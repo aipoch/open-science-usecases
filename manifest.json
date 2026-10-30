@@ -3540,5 +3540,32 @@
       "sha256": "7f72f9f94045e215c27ed6f96be2e15c276526338183b085f4b6996a72f2e21e",
       "release_url": ""
     }
+  },
+  {
+    "title": "Webb N159 Stellar Nursery: How Big Is One Pixel?",
+    "name": "webb-n159-stellar-nursery-how-big-is-one-pixel",
+    "catalog": "Curiosity Lab",
+    "catalog_name": "curiosity-lab",
+    "cover": {
+      "file_name": "Webb N159 Stellar Nursery - How Big Is One Pixel.png",
+      "path": "Curiosity Lab/Webb N159 Stellar Nursery - How Big Is One Pixel/Webb N159 Stellar Nursery - How Big Is One Pixel.png",
+      "bytes": 448135,
+      "sha256": "0bc286d5ca29625c2f1011fe62b067b7920966939dd765793cee3cdf4e2b6c95",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Webb-N159-Stellar-Nursery---How-Big-Is-One-Pixel.science",
+      "path": "Curiosity Lab/Webb N159 Stellar Nursery - How Big Is One Pixel/Webb-N159-Stellar-Nursery---How-Big-Is-One-Pixel.science",
+      "bytes": 271256237,
+      "sha256": "28e1011d0744911a63fc710dfc3ecaed0d7756695b1499cd77a5ab41ed1feb7c",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/36119f702e8d55681e1f8e63f49b9fbfe18d055b/Curiosity%20Lab/Webb%20N159%20Stellar%20Nursery%20-%20How%20Big%20Is%20One%20Pixel/Webb-N159-Stellar-Nursery---How-Big-Is-One-Pixel.science"
+    },
+    "introduction": {
+      "file_name": "Webb N159 Stellar Nursery - How Big Is One Pixel.md",
+      "path": "Curiosity Lab/Webb N159 Stellar Nursery - How Big Is One Pixel/Webb N159 Stellar Nursery - How Big Is One Pixel.md",
+      "bytes": 12095,
+      "sha256": "e45f7db17b010178d0d63db04349062552d4fa11a283b8ca66a7b69b13b4c3ce",
+      "release_url": ""
+    }
   }
 ]

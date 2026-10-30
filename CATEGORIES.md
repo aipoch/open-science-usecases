@@ -1,8 +1,8 @@
 # Case categories
 
-`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 130 classified cases. This index includes three additional cases synchronized from Hugging Face snapshot `c1e654e5d03656d4c8783dce7fb473b078818bcd`; existing case entries are unchanged. One existing unclassified case remains under `usecases/`.
+`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 131 classified cases, including the Webb N159 case synchronized from Hugging Face snapshot `36119f702e8d55681e1f8e63f49b9fbfe18d055b`. One existing unclassified case remains under `usecases/`.
 
-## Curiosity Lab (51)
+## Curiosity Lab (52)
 
 | Case | Introduction |
 |---|---|
@@ -57,6 +57,7 @@
 | Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Can%20Tesla%20Roadster%20REALLY%20Hit%200-60%20mph%20in%201%20Second/Can%20Tesla%20Roadster%20REALLY%20Hit%200-60%20mph%20in%201%20Second.md) |
 | How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/How%20Much%20Gas%20Does%20It%20Take%20to%20Make%20a%20Tesla%20Roadster%20Hover%20for%205%20Seconds/How%20Much%20Gas%20Does%20It%20Take%20to%20Make%20a%20Tesla%20Roadster%20Hover%20for%205%20Seconds.md) |
 | If ETH Fails, What Changes for Maximum Parsimony Local Search? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search.md) |
+| Webb N159 Stellar Nursery: How Big Is One Pixel? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Webb%20N159%20Stellar%20Nursery%20-%20How%20Big%20Is%20One%20Pixel/Webb%20N159%20Stellar%20Nursery%20-%20How%20Big%20Is%20One%20Pixel.md) |
 
 ## AI Research (49)
 
