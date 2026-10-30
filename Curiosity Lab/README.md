@@ -1,5 +1,5 @@
 # Curiosity Lab
 
-51 archived cases.
+52 archived cases.
 
 [Browse the complete case index](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/CASES.md).
