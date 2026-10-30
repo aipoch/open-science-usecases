@@ -3459,5 +3459,86 @@
       "file_path": "https://youtu.be/p8qhSTLUpw0",
       "file_name": "How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds?"
     }
+  },
+  {
+    "title": "If ETH Fails, What Changes for Maximum Parsimony Local Search?",
+    "name": "if-eth-fails-what-changes-for-maximum-parsimony-local-search",
+    "catalog": "Curiosity Lab",
+    "catalog_name": "curiosity-lab",
+    "cover": {
+      "file_name": "If ETH Fails, What Changes for Maximum Parsimony Local Search.png",
+      "path": "Curiosity Lab/If ETH Fails, What Changes for Maximum Parsimony Local Search/If ETH Fails, What Changes for Maximum Parsimony Local Search.png",
+      "bytes": 406386,
+      "sha256": "23bb0c53a8695aa080e6917eeba52c58da3982a25561028cef2f20055aef26d4",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "If-ETH-Fails,-What-Changes-for-Maximum-Parsimony-Local-Search.science",
+      "path": "Curiosity Lab/If ETH Fails, What Changes for Maximum Parsimony Local Search/If-ETH-Fails,-What-Changes-for-Maximum-Parsimony-Local-Search.science",
+      "bytes": 24504876,
+      "sha256": "e2f7a19cafcdc5c4380f03d6b2768ab311b94c6d84812ca82bbc4735f3805210",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/c1e654e5d03656d4c8783dce7fb473b078818bcd/Curiosity%20Lab/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search/If-ETH-Fails%2C-What-Changes-for-Maximum-Parsimony-Local-Search.science"
+    },
+    "introduction": {
+      "file_name": "If ETH Fails, What Changes for Maximum Parsimony Local Search.md",
+      "path": "Curiosity Lab/If ETH Fails, What Changes for Maximum Parsimony Local Search/If ETH Fails, What Changes for Maximum Parsimony Local Search.md",
+      "bytes": 8865,
+      "sha256": "d8a58d1cb47c2d662d533023304d8a7162799895b21c42a2942703bdda58d77e",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Claude-Assisted CAR Design: Does Higher Expression Mean Better Function?",
+    "name": "claude-assisted-car-design-does-higher-expression-mean-better-function",
+    "catalog": "AI Research",
+    "catalog_name": "ai-research",
+    "cover": {
+      "file_name": "Claude-Assisted CAR Design - Does Higher Expression Mean Better Function.png",
+      "path": "AI Research/Claude-Assisted CAR Design - Does Higher Expression Mean Better Function/Claude-Assisted CAR Design - Does Higher Expression Mean Better Function.png",
+      "bytes": 414853,
+      "sha256": "dfd4ef50b13c039f5105989271272bc999b84159fbaafc9193f503ad3cb3bf54",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Claude-Assisted-CAR-Design---Does-Higher-Expression-Mean-Better-Function.science",
+      "path": "AI Research/Claude-Assisted CAR Design - Does Higher Expression Mean Better Function/Claude-Assisted-CAR-Design---Does-Higher-Expression-Mean-Better-Function.science",
+      "bytes": 12022335,
+      "sha256": "ae92e09ae892c1a6056b09f7f85014f00668bd7a940b34b1b9928bf28e865ae3",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/c1e654e5d03656d4c8783dce7fb473b078818bcd/AI%20Research/Claude-Assisted%20CAR%20Design%20-%20Does%20Higher%20Expression%20Mean%20Better%20Function/Claude-Assisted-CAR-Design---Does-Higher-Expression-Mean-Better-Function.science"
+    },
+    "introduction": {
+      "file_name": "Claude-Assisted CAR Design - Does Higher Expression Mean Better Function.md",
+      "path": "AI Research/Claude-Assisted CAR Design - Does Higher Expression Mean Better Function/Claude-Assisted CAR Design - Does Higher Expression Mean Better Function.md",
+      "bytes": 10105,
+      "sha256": "80165f91ad9982e6a1ca4990a1ca2f0946b0ca231408eaf08720626b96a33723",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Google’s LLM Sleep: How Consistent Are the Math Reasoning Gains?",
+    "name": "google-s-llm-sleep-how-consistent-are-the-math-reasoning-gains",
+    "catalog": "AI Research",
+    "catalog_name": "ai-research",
+    "cover": {
+      "file_name": "Google’s LLM Sleep - How Consistent Are the Math Reasoning Gains.png",
+      "path": "AI Research/Google’s LLM Sleep - How Consistent Are the Math Reasoning Gains/Google’s LLM Sleep - How Consistent Are the Math Reasoning Gains.png",
+      "bytes": 360017,
+      "sha256": "8f69b5cbe8c87de26a9fa68a7d128769bbe17ab5c6de489547f25e69b7e57319",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Google’s-LLM-Sleep---How-Consistent-Are-the-Math-Reasoning-Gains.science",
+      "path": "AI Research/Google’s LLM Sleep - How Consistent Are the Math Reasoning Gains/Google’s-LLM-Sleep---How-Consistent-Are-the-Math-Reasoning-Gains.science",
+      "bytes": 12870351,
+      "sha256": "1810a44e4be16e90633f906a72f3ed645e192055740b14878fba10bb96684d44",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/c1e654e5d03656d4c8783dce7fb473b078818bcd/AI%20Research/Google%E2%80%99s%20LLM%20Sleep%20-%20How%20Consistent%20Are%20the%20Math%20Reasoning%20Gains/Google%E2%80%99s-LLM-Sleep---How-Consistent-Are-the-Math-Reasoning-Gains.science"
+    },
+    "introduction": {
+      "file_name": "Google’s LLM Sleep - How Consistent Are the Math Reasoning Gains.md",
+      "path": "AI Research/Google’s LLM Sleep - How Consistent Are the Math Reasoning Gains/Google’s LLM Sleep - How Consistent Are the Math Reasoning Gains.md",
+      "bytes": 9280,
+      "sha256": "7f72f9f94045e215c27ed6f96be2e15c276526338183b085f4b6996a72f2e21e",
+      "release_url": ""
+    }
   }
 ]

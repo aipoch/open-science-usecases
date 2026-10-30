@@ -1,8 +1,8 @@
 # Case index
 
-127 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
+130 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
 
-## Curiosity Lab (50)
+## Curiosity Lab (51)
 
 | Case | Creator | Introduction |
 |---|---|---|
@@ -56,8 +56,9 @@
 | which deal is actually cheaper | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/which%20deal%20is%20actually%20cheaper/which%20deal%20is%20actually%20cheaper.md) |
 | Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Can%20Tesla%20Roadster%20REALLY%20Hit%200-60%20mph%20in%201%20Second/Can%20Tesla%20Roadster%20REALLY%20Hit%200-60%20mph%20in%201%20Second.md) |
 | How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/How%20Much%20Gas%20Does%20It%20Take%20to%20Make%20a%20Tesla%20Roadster%20Hover%20for%205%20Seconds/How%20Much%20Gas%20Does%20It%20Take%20to%20Make%20a%20Tesla%20Roadster%20Hover%20for%205%20Seconds.md) |
+| If ETH Fails, What Changes for Maximum Parsimony Local Search? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search.md) |
 
-## AI Research (47)
+## AI Research (49)
 
 | Case | Creator | Introduction |
 |---|---|---|
@@ -108,7 +109,8 @@
 | Will 10× Cheaper AI Increase Total Spending | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Will%2010%C3%97%20Cheaper%20AI%20Increase%20Total%20Spending/Will%2010%C3%97%20Cheaper%20AI%20Increase%20Total%20Spending.md) |
 | Will AI Overrefund or Underrefund | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Will%20AI%20Overrefund%20or%20Underrefund/Will%20AI%20Overrefund%20or%20Underrefund.md) |
 | Can We Reproduce Chinchilla Scaling | @Xudong07452910 | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Can%20We%20Reproduce%20Chinchilla%20Scaling/Can%20We%20Reproduce%20Chinchilla%20Scaling.md) |
-
+| Claude-Assisted CAR Design: Does Higher Expression Mean Better Function? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Claude-Assisted%20CAR%20Design%20-%20Does%20Higher%20Expression%20Mean%20Better%20Function/Claude-Assisted%20CAR%20Design%20-%20Does%20Higher%20Expression%20Mean%20Better%20Function.md) |
+| Google’s LLM Sleep: How Consistent Are the Math Reasoning Gains? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Google%E2%80%99s%20LLM%20Sleep%20-%20How%20Consistent%20Are%20the%20Math%20Reasoning%20Gains/Google%E2%80%99s%20LLM%20Sleep%20-%20How%20Consistent%20Are%20the%20Math%20Reasoning%20Gains.md) |
 
 ## Academic Research (30)
 

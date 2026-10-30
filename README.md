@@ -19,8 +19,8 @@ A collection of Open-Science session exports and their accompanying case posters
 
 | Category | Cases | Focus |
 |---|---:|---|
-| [Curiosity Lab](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/tree/main/Curiosity%20Lab) | 50 | Everyday curiosity, natural phenomena, probability, finance, and exploratory science |
-| [AI Research](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/tree/main/AI%20Research) | 47 | AI capabilities, reliability, behavior, costs, and research progress |
+| [Curiosity Lab](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/tree/main/Curiosity%20Lab) | 51 | Everyday curiosity, natural phenomena, probability, finance, and exploratory science |
+| [AI Research](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/tree/main/AI%20Research) | 49 | AI capabilities, reliability, behavior, costs, and research progress |
 | [Academic Research](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/tree/main/Academic%20Research) | 30 | Archived scientific studies across biomedical research, chemistry, environment, and climate |
 
 Categories follow the principal question of each case; they are navigation labels rather than evidence-quality ratings.
