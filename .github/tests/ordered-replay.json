@@ -1,0 +1,40 @@
+{
+  "source": "{\"version\":2,\"session\":{\"id\":\"ordered-session\",\"projectId\":\"ordered-project\",\"title\":\"Ordered replay fixture\",\"revision\":1,\"createdAt\":1,\"updatedAt\":90,\"artifacts\":[],\"messages\":[{\"id\":\"answer\",\"createdAt\":50,\"role\":\"assistant\",\"status\":\"complete\",\"content\":\"Ordered complete answer.\\n\\n```ts\\nconst complete = true\\n```\\n\\n| A | B |\\n| - | - |\\n| 1 | 2 |\\n\\nFormula: \\\\(x+1\\\\).\",\"parts\":[{\"type\":\"artifact\",\"source\":\"upload\",\"versionId\":\"version\",\"path\":\"upload-version:version\",\"name\":\"notes.txt\"}]},{\"id\":\"question\",\"createdAt\":10,\"role\":\"user\",\"status\":\"complete\",\"content\":\"Ordered first question.\",\"uploads\":[{\"id\":\"file\",\"versionId\":\"version\",\"name\":\"notes.txt\",\"size\":3}]},{\"id\":\"continuation\",\"createdAt\":90,\"role\":\"assistant\",\"status\":\"complete\",\"content\":\"Ordered final continuation.\"}],\"conversationGraph\":{\"activities\":[{\"id\":\"tool-b\",\"createdAt\":30,\"title\":\"Second tool\",\"status\":\"completed\",\"rawOutput\":\"complete output B\"},{\"id\":\"compact\",\"createdAt\":40,\"updatedAt\":42,\"providerToolName\":\"ContextCompaction\",\"status\":\"completed\",\"rawOutput\":\"COMPACTION_INTERNAL_SECRET\"},{\"id\":\"tool-a\",\"createdAt\":20,\"title\":\"First tool\",\"status\":\"completed\",\"rawOutput\":\"complete output A\"},{\"id\":\"compact\",\"createdAt\":40,\"updatedAt\":41,\"providerToolName\":\"ContextCompaction\",\"status\":\"in_progress\",\"rawOutput\":\"COMPACTION_INTERNAL_SECRET\"},{\"id\":\"plan\",\"createdAt\":70,\"title\":\"mcp__open-science-plan__generate_plan\",\"status\":\"completed\",\"rawOutput\":{}},{\"id\":\"hidden-update\",\"createdAt\":80,\"title\":\"mcp__open-science-plan__update_step_status\",\"status\":\"completed\"}]}}}",
+  "index": {
+    "format": "open-science-replay",
+    "version": 1,
+    "archiveSha256": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "sessionSha256": "f712a489ec9141a019f21a482d8658beecf33d10d22688a7ab9714588b3768cb",
+    "lines": [
+      {
+        "bytes": 393,
+        "sha256": "75fd7a5307196255201bd353e9960263828725e0534853167917d95a52af952e"
+      },
+      {
+        "bytes": 259,
+        "sha256": "e35cce33c3e286d4e29c29ce5e49eb10d80e9e9256d982625ad2503a54aaeb83"
+      },
+      {
+        "bytes": 298,
+        "sha256": "fb4d5e6842ebcac7c8bfe70bd23ba860f730617d6d9faf9c5ee0b83295f0ac3e"
+      },
+      {
+        "bytes": 190,
+        "sha256": "d66ecaab975d5a59b21788009cee42b2b05ac2d603cbef077862790c988ccdd1"
+      },
+      {
+        "bytes": 403,
+        "sha256": "ad5e5f2ccef8ce760f7b9b1929df7d6fffc378d7120cc8d97a9891831af2b673"
+      },
+      {
+        "bytes": 190,
+        "sha256": "e7c5a986b5da3c7741ddf43b304c8d9bffd59c34acf13fcd006627e86ba20f30"
+      },
+      {
+        "bytes": 196,
+        "sha256": "a3b46b2b8ad87617e806ea5ca17a5435379cc9195d5a67af2269d5e1589b00f0"
+      }
+    ]
+  },
+  "stream": "{\"type\":\"header\",\"session\":{\"id\":\"ordered-session\",\"projectId\":\"ordered-project\",\"revision\":1,\"title\":\"Ordered replay fixture\",\"createdAt\":1,\"updatedAt\":90,\"artifacts\":[]},\"runRoots\":{},\"rowMetadata\":{\"answer\":{\"turnFinal\":false},\"question\":{\"turnFinal\":false},\"continuation\":{\"turnFinal\":true}},\"uploadMessages\":[{\"uploads\":[{\"id\":\"file\",\"versionId\":\"version\",\"name\":\"notes.txt\",\"size\":3}]}]}\n{\"seq\":0,\"kind\":\"message\",\"messages\":[{\"id\":\"question\",\"createdAt\":10,\"role\":\"user\",\"status\":\"complete\",\"content\":\"Ordered first question.\",\"uploads\":[{\"id\":\"file\",\"versionId\":\"version\",\"name\":\"notes.txt\",\"size\":3}]}],\"activities\":[],\"runs\":[],\"type\":\"block\"}\n{\"seq\":1,\"kind\":\"activity-group\",\"messages\":[],\"activities\":[{\"id\":\"tool-a\",\"createdAt\":20,\"title\":\"First tool\",\"status\":\"completed\",\"rawOutput\":\"complete output A\"},{\"id\":\"tool-b\",\"createdAt\":30,\"title\":\"Second tool\",\"status\":\"completed\",\"rawOutput\":\"complete output B\"}],\"runs\":[],\"type\":\"block\"}\n{\"seq\":2,\"kind\":\"compaction\",\"messages\":[],\"activities\":[{\"id\":\"compact\",\"createdAt\":40,\"providerToolName\":\"ContextCompaction\",\"status\":\"completed\",\"sortIndex\":40}],\"runs\":[],\"type\":\"block\"}\n{\"seq\":3,\"kind\":\"message\",\"messages\":[{\"id\":\"answer\",\"createdAt\":50,\"role\":\"assistant\",\"status\":\"complete\",\"content\":\"Ordered complete answer.\\n\\n```ts\\nconst complete = true\\n```\\n\\n| A | B |\\n| - | - |\\n| 1 | 2 |\\n\\nFormula: \\\\(x+1\\\\).\",\"parts\":[{\"type\":\"artifact\",\"source\":\"upload\",\"versionId\":\"version\",\"path\":\"upload-version:version\",\"name\":\"notes.txt\"}]}],\"activities\":[],\"runs\":[],\"type\":\"block\"}\n{\"seq\":4,\"kind\":\"plan\",\"messages\":[],\"activities\":[{\"id\":\"plan\",\"createdAt\":70,\"title\":\"mcp__open-science-plan__generate_plan\",\"status\":\"completed\",\"rawOutput\":{}}],\"runs\":[],\"type\":\"block\"}\n{\"seq\":5,\"kind\":\"message\",\"messages\":[{\"id\":\"continuation\",\"createdAt\":90,\"role\":\"assistant\",\"status\":\"complete\",\"content\":\"Ordered final continuation.\"}],\"activities\":[],\"runs\":[],\"type\":\"block\"}\n"
+}
