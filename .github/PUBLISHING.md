@@ -120,3 +120,34 @@ Historical baseline readers remain unchanged. Public manifest fields, stable obj
 Tests use temporary Git repositories, local HTTP, and fake S3 without accessing production AWS. Coverage includes HEAD without GET, source combinations and switches, incremental candidates, metadata deduplication, preparation integrity, extraction safety, plan tampering, cleanup scope, per-case failure recovery, and index writes for path migrations. Actual Actions permissions, AWS/CDN behavior, and compatibility with production consumers still require separate post-merge verification; passing local tests does not mean live publication has run.
 
 The local timing harness `python3 -B .github/tests/benchmark_publication.py` includes both file-transfer latency and a separate 12-case scenario with 200 ms simulated CDN waits. It exercises the real coordinator with fake S3; its timings are regression evidence, not a forecast of production AWS performance.
+
+## Optional ordered Web replay
+
+After full archive/inventory verification, extraction derives
+`extracted/replay-v1/<archive-sha256>/index.json` and `blocks.ndjson` for supported sessions.
+The original `.science`, `session.json`, restored paths and root manifest schema remain
+unchanged. No Node/Bun dependency or workflow configuration is required.
+
+The v1 index (`format: open-science-replay`, `version: 1`) binds the original archive and
+session SHA-256 and lists byte length/SHA-256 for every UTF-8 NDJSON record, excluding LF.
+The first record contains display context, assets, cross-message upload associations,
+Notebook roots and final turn/reviewer-response markers. Each subsequent record has a
+zero-based contiguous `seq`, one complete message or finalized activity block, and its
+Notebook runs. Timestamp merge/tie rules match the Web parser. Compaction snapshots are
+deduplicated and reduced to lifecycle fields before emission; raw provider payloads are
+excluded from those records. The Web still applies its normal display normalization.
+
+Both extraction and `verify_only` deterministically regenerate these bytes from verified
+package data. Existing upload-plan comparison therefore rejects forged/changed sidecars;
+normal upload checks, read-back, cleanup and manifest-last ordering also cover these files.
+The same HTTP publication trust boundary applies to the index: line hashes detect corruption
+and mixed versions, not a compromised publisher.
+
+The golden fixture in `.github/tests/ordered-replay.json` is shared with the Web consumer.
+Sessions lacking stable IDs/finite ordering timestamps, or exceeding 4 MiB index / 128 MiB
+record / 256 MiB projection limits, retain legacy replay without an index. Existing cases
+gain the optional stream only when selected for normal re-publication. Merge/deploy the Web
+consumer and this generator in either order; a missing index uses the existing reader.
+Do not republish live cases just to validate the generator: unit tests use temporary
+archives, local HTTP and fake S3. No publishing, CDN or runtime configuration changes are
+part of this feature.

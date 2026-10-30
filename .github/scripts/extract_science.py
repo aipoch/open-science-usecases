@@ -156,6 +156,35 @@ def unpack(package, output, verify_only=False):
             raise ValueError('Package inventory is incomplete or contains undeclared files')
         check_layout([(key, False) for targets in destinations.values() for key, _ in targets])
 
+        def replay_files():
+            from ordered_replay import build_replay
+            record = session['session']
+            run_key = 'notebooks/{}/{}/run.json'.format(record.get('projectId'), record.get('id'))
+            run_path = next((path for path, targets in destinations.items()
+                             if any(key == run_key for key, _ in targets)), None)
+            run_document = package_json(run_path) if run_path else None
+            archive_sha = file_integrity(package)[1]
+            with archive.extractfile(by_name['session.json']) as source:
+                session_sha = hashlib.sha256(source.read()).hexdigest()
+            files = build_replay(session, run_document, archive_sha, session_sha)
+            prefix = 'replay-v1/' + archive_sha + '/'
+            derived = {prefix + name: data for name, data in files.items()}
+            check_layout([(key, False) for targets in destinations.values() for key, _ in targets]
+                         + [(key, False) for key in derived])
+            return derived
+
+        def append_replay(verified, staging=None):
+            # Derive only after every original inventory entry passes its content checks.
+            for key, data in replay_files().items():
+                actual = (len(data), hashlib.sha256(data).hexdigest())
+                if staging is not None:
+                    target = staging / key
+                    target.parent.mkdir(parents=True, exist_ok=True)
+                    target.write_bytes(data)
+                    if file_integrity(target) != actual:
+                        raise ValueError('Derived replay read-back mismatch')
+                verified.append({'path': key, 'bytes': actual[0], 'sha256': actual[1]})
+
         if verify_only:
             # Audit destinations from the package without extracting it a second time.
             verified = []
@@ -172,6 +201,7 @@ def unpack(package, output, verify_only=False):
                     if size != member.size or (expected is not None and actual != expected):
                         raise ValueError('Inventory content size or checksum mismatch: ' + member.name)
                     verified.append({'path': key, 'bytes': size, 'sha256': actual[1]})
+            append_replay(verified)
             return verified
 
         # Stage privately; malformed content never leaves a partial restored tree.
@@ -200,6 +230,7 @@ def unpack(package, output, verify_only=False):
                     if file_integrity(target) != actual or (expected is not None and actual != expected):
                         raise ValueError('Restored content size or checksum mismatch: ' + key)
                     verified.append({'path': key, 'bytes': actual[0], 'sha256': actual[1]})
+            append_replay(verified, staging)
             output.rmdir()
             staging.rename(output)
         return verified
