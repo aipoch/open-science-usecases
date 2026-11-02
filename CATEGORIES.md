@@ -1,6 +1,6 @@
 # Case categories
 
-`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 131 classified cases, including the Webb N159 case synchronized from Hugging Face snapshot `36119f702e8d55681e1f8e63f49b9fbfe18d055b`. One existing unclassified case remains under `usecases/`.
+`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 132 classified cases, including the Project Suncatcher case synchronized from Hugging Face snapshot `fe250bb4263ea6959f104050769144d634d52d9e`. One existing unclassified case remains under `usecases/`.
 
 ## Curiosity Lab (52)
 
@@ -59,7 +59,7 @@
 | If ETH Fails, What Changes for Maximum Parsimony Local Search? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search.md) |
 | Webb N159 Stellar Nursery: How Big Is One Pixel? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Webb%20N159%20Stellar%20Nursery%20-%20How%20Big%20Is%20One%20Pixel/Webb%20N159%20Stellar%20Nursery%20-%20How%20Big%20Is%20One%20Pixel.md) |
 
-## AI Research (49)
+## AI Research (50)
 
 | Case | Introduction |
 |---|---|
@@ -112,6 +112,7 @@
 | Can We Reproduce Chinchilla Scaling | [Read](AI%20Research/Can%20We%20Reproduce%20Chinchilla%20Scaling/Can%20We%20Reproduce%20Chinchilla%20Scaling.md) |
 | Claude-Assisted CAR Design: Does Higher Expression Mean Better Function? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Claude-Assisted%20CAR%20Design%20-%20Does%20Higher%20Expression%20Mean%20Better%20Function/Claude-Assisted%20CAR%20Design%20-%20Does%20Higher%20Expression%20Mean%20Better%20Function.md) |
 | Google’s LLM Sleep: How Consistent Are the Math Reasoning Gains? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Google%E2%80%99s%20LLM%20Sleep%20-%20How%20Consistent%20Are%20the%20Math%20Reasoning%20Gains/Google%E2%80%99s%20LLM%20Sleep%20-%20How%20Consistent%20Are%20the%20Math%20Reasoning%20Gains.md) |
+| Google Project Suncatcher: Where Does the Heat Go? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Google%20Project%20Suncatcher%20-%20Where%20Does%20the%20Heat%20Go/Google%20Project%20Suncatcher%20-%20Where%20Does%20the%20Heat%20Go.md) |
 
 ## Academic Research (30)
 
