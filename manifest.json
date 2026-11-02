@@ -3567,5 +3567,32 @@
       "sha256": "e45f7db17b010178d0d63db04349062552d4fa11a283b8ca66a7b69b13b4c3ce",
       "release_url": ""
     }
+  },
+  {
+    "title": "Google Project Suncatcher: Where Does the Heat Go?",
+    "name": "google-project-suncatcher-where-does-the-heat-go",
+    "catalog": "AI Research",
+    "catalog_name": "ai-research",
+    "cover": {
+      "file_name": "Google Project Suncatcher - Where Does the Heat Go.png",
+      "path": "AI Research/Google Project Suncatcher - Where Does the Heat Go/Google Project Suncatcher - Where Does the Heat Go.png",
+      "bytes": 398279,
+      "sha256": "43127f1f2bca883c4cd8a7e439eabd52b1a8cfb927c5c82fe17f8fe3600155ff",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Google-Project-Suncatcher---Where-Does-the-Heat-Go.science",
+      "path": "AI Research/Google Project Suncatcher - Where Does the Heat Go/Google-Project-Suncatcher---Where-Does-the-Heat-Go.science",
+      "bytes": 9940894,
+      "sha256": "146a875ef95f8d4b77205d340ff1ba9c5c7bf203c399907473681376aa2b77f2",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/fe250bb4263ea6959f104050769144d634d52d9e/AI%20Research/Google%20Project%20Suncatcher%20-%20Where%20Does%20the%20Heat%20Go/Google-Project-Suncatcher---Where-Does-the-Heat-Go.science"
+    },
+    "introduction": {
+      "file_name": "Google Project Suncatcher - Where Does the Heat Go.md",
+      "path": "AI Research/Google Project Suncatcher - Where Does the Heat Go/Google Project Suncatcher - Where Does the Heat Go.md",
+      "bytes": 13278,
+      "sha256": "c328e659199d8d6c0307625597a040b6a97c188246910738e558723ea44588f2",
+      "release_url": ""
+    }
   }
 ]
