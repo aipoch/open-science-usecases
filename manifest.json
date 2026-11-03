@@ -3446,6 +3446,11 @@
       "bytes": 10492,
       "sha256": "725f2ed656b1552c5a7e8e033c424147a1a90438d3939da1e7fe5f0c7589b7c9",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=BVmnjGdk4E8",
+      "file_name": "Tesla Roadster 0–60 in 1 Second? We Ran the Physics"
     }
   },
   {
@@ -3564,6 +3569,11 @@
       "bytes": 9280,
       "sha256": "7f72f9f94045e215c27ed6f96be2e15c276526338183b085f4b6996a72f2e21e",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=hTv0pT460Bg",
+      "file_name": "Google's LLM Sleep: How Consistent Are the Math Reasoning Gains?"
     }
   },
   {
