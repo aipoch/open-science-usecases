@@ -671,6 +671,16 @@
       "title": "Google Project Suncatcher: Where Does the Heat Go?",
       "name": "google-project-suncatcher-where-does-the-heat-go",
       "category": "AI Research"
+    },
+    {
+      "title": "HackerTube: Can AI Tell Recommendations from Criticism?",
+      "name": "hackertube-can-ai-tell-recommendations-from-criticism",
+      "category": "AI Research"
+    },
+    {
+      "title": "AI Agents for Radio Astronomy: Is That Signal Worth Following Up?",
+      "name": "ai-agents-for-radio-astronomy-is-that-signal-worth-following-up",
+      "category": "AI Research"
     }
   ]
 }

@@ -3639,5 +3639,59 @@
       "file_path": "https://www.youtube.com/watch?v=7g6E21Z5yro",
       "file_name": "Google Project Suncatcher: Where Does the Heat Go? | Open-Science Web Demo"
     }
+  },
+  {
+    "title": "HackerTube: Can AI Tell Recommendations from Criticism?",
+    "name": "hackertube-can-ai-tell-recommendations-from-criticism",
+    "catalog": "AI Research",
+    "catalog_name": "ai-research",
+    "cover": {
+      "file_name": "HackerTube - Can AI Tell Recommendations from Criticism.png",
+      "path": "AI Research/HackerTube - Can AI Tell Recommendations from Criticism/HackerTube - Can AI Tell Recommendations from Criticism.png",
+      "bytes": 402606,
+      "sha256": "5adacb6a4898fd12e62eb590b85d19c4bfd64ed0d5edbd7f40a25291b1a7754a",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "HackerTube---Can-AI-Tell-Recommendations-from-Criticism.science",
+      "path": "AI Research/HackerTube - Can AI Tell Recommendations from Criticism/HackerTube---Can-AI-Tell-Recommendations-from-Criticism.science",
+      "bytes": 14478814,
+      "sha256": "97add9408281e1788be9f0ce21ba76a336cce640f07d839c3ba3132b83373054",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/46dd732758a657fac341d81c92bd31d36642c385/AI%20Research/HackerTube%20-%20Can%20AI%20Tell%20Recommendations%20from%20Criticism/HackerTube---Can-AI-Tell-Recommendations-from-Criticism.science"
+    },
+    "introduction": {
+      "file_name": "HackerTube - Can AI Tell Recommendations from Criticism.md",
+      "path": "AI Research/HackerTube - Can AI Tell Recommendations from Criticism/HackerTube - Can AI Tell Recommendations from Criticism.md",
+      "bytes": 11200,
+      "sha256": "aff41767b14cf6cdfed659a5cfa66f853bf73e5771986385036c3fefe9e0ac6f",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "AI Agents for Radio Astronomy: Is That Signal Worth Following Up?",
+    "name": "ai-agents-for-radio-astronomy-is-that-signal-worth-following-up",
+    "catalog": "AI Research",
+    "catalog_name": "ai-research",
+    "cover": {
+      "file_name": "AI Agents for Radio Astronomy - Is That Signal Worth Following Up.png",
+      "path": "AI Research/AI Agents for Radio Astronomy - Is That Signal Worth Following Up/AI Agents for Radio Astronomy - Is That Signal Worth Following Up.png",
+      "bytes": 444254,
+      "sha256": "bb35ec244336629c5657f0b5c3d2a412a809c431e141f2fa43841d4d22f97eff",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "AI-Agents-for-Radio-Astronomy---Is-That-Signal-Worth-Following-Up.science",
+      "path": "AI Research/AI Agents for Radio Astronomy - Is That Signal Worth Following Up/AI-Agents-for-Radio-Astronomy---Is-That-Signal-Worth-Following-Up.science",
+      "bytes": 13908045,
+      "sha256": "46c14f4e261c7630c1e971c2db03ed88e4b724850c894014d94a35d4261c7bd6",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/46dd732758a657fac341d81c92bd31d36642c385/AI%20Research/AI%20Agents%20for%20Radio%20Astronomy%20-%20Is%20That%20Signal%20Worth%20Following%20Up/AI-Agents-for-Radio-Astronomy---Is-That-Signal-Worth-Following-Up.science"
+    },
+    "introduction": {
+      "file_name": "AI Agents for Radio Astronomy - Is That Signal Worth Following Up.md",
+      "path": "AI Research/AI Agents for Radio Astronomy - Is That Signal Worth Following Up/AI Agents for Radio Astronomy - Is That Signal Worth Following Up.md",
+      "bytes": 12105,
+      "sha256": "b65cb0963869395e6b5f8a1e5073e88157ab7706c4827cec8100cd8d9b48a053",
+      "release_url": ""
+    }
   }
 ]
