@@ -3665,6 +3665,11 @@
       "bytes": 11200,
       "sha256": "aff41767b14cf6cdfed659a5cfa66f853bf73e5771986385036c3fefe9e0ac6f",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=WhU004dScXk",
+      "file_name": "HackerTube: Can AI Tell Recommendations from Criticism? | Open-Science Web Demo"
     }
   },
   {
@@ -3691,6 +3696,38 @@
       "path": "AI Research/AI Agents for Radio Astronomy - Is That Signal Worth Following Up/AI Agents for Radio Astronomy - Is That Signal Worth Following Up.md",
       "bytes": 12105,
       "sha256": "b65cb0963869395e6b5f8a1e5073e88157ab7706c4827cec8100cd8d9b48a053",
+      "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=Xm7HlrM-HrM",
+      "file_name": "AI Agents for Radio Astronomy: Is That Signal Worth Following Up? | Open-Science Web Demo"
+    }
+  },
+  {
+    "title": "Weight-Space Programming: Did Every Math Problem Improve?",
+    "name": "weight-space-programming-did-every-math-problem-improve",
+    "catalog": "AI Research",
+    "catalog_name": "ai-research",
+    "cover": {
+      "file_name": "Weight-Space Programming - Did Every Math Problem Improve.png",
+      "path": "AI Research/Weight-Space Programming - Did Every Math Problem Improve/Weight-Space Programming - Did Every Math Problem Improve.png",
+      "bytes": 412445,
+      "sha256": "44c088904a3977e1488312883a4a6d983bd2fc688e79352ea248e4478aacd1e1",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Weight-Space-Programming---Did-Every-Math-Problem-Improve.science",
+      "path": "AI Research/Weight-Space Programming - Did Every Math Problem Improve/Weight-Space-Programming---Did-Every-Math-Problem-Improve.science",
+      "bytes": 11432783,
+      "sha256": "78fc6dc101ce0aee51f07297aa48a5016011118950ef8f41d790fafe3f5c3b04",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/e812687c58a27e9baa0b8595011beebd414e42c4/AI%20Research/Weight-Space%20Programming%20-%20Did%20Every%20Math%20Problem%20Improve/Weight-Space-Programming---Did-Every-Math-Problem-Improve.science"
+    },
+    "introduction": {
+      "file_name": "Weight-Space Programming - Did Every Math Problem Improve.md",
+      "path": "AI Research/Weight-Space Programming - Did Every Math Problem Improve/Weight-Space Programming - Did Every Math Problem Improve.md",
+      "bytes": 12008,
+      "sha256": "c5719c707beeed53244865191109804a4690a4bf18661485ccc5eb855f980675",
       "release_url": ""
     }
   }
