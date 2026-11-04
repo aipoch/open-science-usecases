@@ -1,6 +1,6 @@
 # Case index
 
-134 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
+135 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
 
 ## Curiosity Lab (52)
 
@@ -59,7 +59,7 @@
 | If ETH Fails, What Changes for Maximum Parsimony Local Search? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search.md) |
 | Webb N159 Stellar Nursery: How Big Is One Pixel? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Webb%20N159%20Stellar%20Nursery%20-%20How%20Big%20Is%20One%20Pixel/Webb%20N159%20Stellar%20Nursery%20-%20How%20Big%20Is%20One%20Pixel.md) |
 
-## AI Research (52)
+## AI Research (53)
 
 | Case | Creator | Introduction |
 |---|---|---|
@@ -115,6 +115,7 @@
 | Google Project Suncatcher: Where Does the Heat Go? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Google%20Project%20Suncatcher%20-%20Where%20Does%20the%20Heat%20Go/Google%20Project%20Suncatcher%20-%20Where%20Does%20the%20Heat%20Go.md) |
 | HackerTube: Can AI Tell Recommendations from Criticism? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/HackerTube%20-%20Can%20AI%20Tell%20Recommendations%20from%20Criticism/HackerTube%20-%20Can%20AI%20Tell%20Recommendations%20from%20Criticism.md) |
 | AI Agents for Radio Astronomy: Is That Signal Worth Following Up? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/AI%20Agents%20for%20Radio%20Astronomy%20-%20Is%20That%20Signal%20Worth%20Following%20Up/AI%20Agents%20for%20Radio%20Astronomy%20-%20Is%20That%20Signal%20Worth%20Following%20Up.md) |
+| Weight-Space Programming: Did Every Math Problem Improve? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Weight-Space%20Programming%20-%20Did%20Every%20Math%20Problem%20Improve/Weight-Space%20Programming%20-%20Did%20Every%20Math%20Problem%20Improve.md) |
 
 ## Academic Research (30)
 
