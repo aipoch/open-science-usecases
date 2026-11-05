@@ -1,5 +1,32 @@
 [
   {
+    "title": "Kimi K3.1 Pro: What Would It Take to Run It Locally?",
+    "name": "kimi-k3-1-pro-what-would-it-take-to-run-it-locally",
+    "catalog": "Curiosity Lab",
+    "catalog_name": "curiosity-lab",
+    "cover": {
+      "file_name": "Kimi K3.1 Pro - What Would It Take to Run It Locally.png",
+      "path": "Curiosity Lab/Kimi K3.1 Pro - What Would It Take to Run It Locally/Kimi K3.1 Pro - What Would It Take to Run It Locally.png",
+      "bytes": 447437,
+      "sha256": "b198a6281399233d8f7016a6a8b338e11f35f238ff1044b7fea2e2c1b0e76cab",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Kimi-K3.1-Pro---What-Would-It-Take-to-Run-It-Locally.science",
+      "path": "Curiosity Lab/Kimi K3.1 Pro - What Would It Take to Run It Locally/Kimi-K3.1-Pro---What-Would-It-Take-to-Run-It-Locally.science",
+      "bytes": 14483676,
+      "sha256": "5c9e2265dfb4d07e27192e34ce299c61c74a65d4e6755ea73ba711c0881bd14e",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/2d7a47b404d83b151558a74497518d5cd22e003c/Curiosity%20Lab/Kimi%20K3.1%20Pro%20-%20What%20Would%20It%20Take%20to%20Run%20It%20Locally/Kimi-K3.1-Pro---What-Would-It-Take-to-Run-It-Locally.science"
+    },
+    "introduction": {
+      "file_name": "Kimi K3.1 Pro - What Would It Take to Run It Locally.md",
+      "path": "Curiosity Lab/Kimi K3.1 Pro - What Would It Take to Run It Locally/Kimi K3.1 Pro - What Would It Take to Run It Locally.md",
+      "bytes": 12922,
+      "sha256": "5d006e972f6cf905e53bdb78726f7eb92cd8b618ed42ce0c3df27595191c96ea",
+      "release_url": ""
+    }
+  },
+  {
     "title": "$10,000: NVIDIA, BITCOIN, OR BOTH?",
     "name": "10-000-nvidia-bitcoin-or-both",
     "catalog": "Curiosity Lab",
@@ -3729,6 +3756,11 @@
       "bytes": 12008,
       "sha256": "c5719c707beeed53244865191109804a4690a4bf18661485ccc5eb855f980675",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=7Lgr2oOr5lQ",
+      "file_name": "Weight-Space Programming: Did Every Math Problem Improve? | Open-Science Web Demo"
     }
   }
 ]
