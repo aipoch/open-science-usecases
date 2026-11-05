@@ -1,11 +1,12 @@
 # Case categories
 
-`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 135 classified cases, including the Weight-Space Programming case synchronized from Hugging Face snapshot `e812687c58a27e9baa0b8595011beebd414e42c4`. One existing unclassified case remains under `usecases/`.
+`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 136 classified cases, including the Kimi local-readiness case synchronized from Hugging Face snapshot `2d7a47b404d83b151558a74497518d5cd22e003c`. One existing unclassified case remains under `usecases/`.
 
-## Curiosity Lab (52)
+## Curiosity Lab (53)
 
 | Case | Introduction |
 |---|---|
+| Kimi K3.1 Pro: What Would It Take to Run It Locally? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Kimi%20K3.1%20Pro%20-%20What%20Would%20It%20Take%20to%20Run%20It%20Locally/Kimi%20K3.1%20Pro%20-%20What%20Would%20It%20Take%20to%20Run%20It%20Locally.md) |
 | $10,000: NVIDIA, BITCOIN, OR BOTH? | [Read](Curiosity%20Lab/%2410%2C000%3A%20NVIDIA%2C%20BITCOIN%2C%20OR%20BOTH%3F/%2410%2C000%3A%20NVIDIA%2C%20BITCOIN%2C%20OR%20BOTH%3F.md) |
 | 99% Pure - Does Molecular Handedness Matter | [Read](Curiosity%20Lab/99%25%20Pure%20-%20Does%20Molecular%20Handedness%20Matter/99%25%20Pure%20-%20Does%20Molecular%20Handedness%20Matter.md) |
 | A City's 100-Year Rainfall Record | [Read](Curiosity%20Lab/A%20City%27s%20100-Year%20Rainfall%20Record/A%20City%27s%20100-Year%20Rainfall%20Record.md) |
