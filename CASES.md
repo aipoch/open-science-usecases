@@ -1,11 +1,12 @@
 # Case index
 
-135 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
+136 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
 
-## Curiosity Lab (52)
+## Curiosity Lab (53)
 
 | Case | Creator | Introduction |
 |---|---|---|
+| Kimi K3.1 Pro: What Would It Take to Run It Locally? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Kimi%20K3.1%20Pro%20-%20What%20Would%20It%20Take%20to%20Run%20It%20Locally/Kimi%20K3.1%20Pro%20-%20What%20Would%20It%20Take%20to%20Run%20It%20Locally.md) |
 | $10,000: NVIDIA, BITCOIN, OR BOTH? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/%2410%2C000%3A%20NVIDIA%2C%20BITCOIN%2C%20OR%20BOTH%3F/%2410%2C000%3A%20NVIDIA%2C%20BITCOIN%2C%20OR%20BOTH%3F.md) |
 | 99% Pure - Does Molecular Handedness Matter | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/99%25%20Pure%20-%20Does%20Molecular%20Handedness%20Matter/99%25%20Pure%20-%20Does%20Molecular%20Handedness%20Matter.md) |
 | A City's 100-Year Rainfall Record | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/A%20City%27s%20100-Year%20Rainfall%20Record/A%20City%27s%20100-Year%20Rainfall%20Record.md) |
