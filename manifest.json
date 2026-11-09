@@ -1,5 +1,32 @@
 [
   {
+    "title": "Lyra 2.0: Better Pictures, but Do They Still Match?",
+    "name": "lyra-2-0-better-pictures-but-do-they-still-match",
+    "catalog": "AI Research",
+    "catalog_name": "ai-research",
+    "cover": {
+      "file_name": "Lyra 2.0 - Better Pictures, but Do They Still Match.png",
+      "path": "AI Research/Lyra 2.0 - Better Pictures, but Do They Still Match/Lyra 2.0 - Better Pictures, but Do They Still Match.png",
+      "bytes": 424033,
+      "sha256": "f6c2248fd3ee3ccd893828167535e5e0f88e5ee7a90e80ce935707fff3bea69e",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Lyra-2.0---Better-Pictures,-but-Do-They-Still-Match.science",
+      "path": "AI Research/Lyra 2.0 - Better Pictures, but Do They Still Match/Lyra-2.0---Better-Pictures,-but-Do-They-Still-Match.science",
+      "bytes": 69767023,
+      "sha256": "cfd61cf11273a60b679efee73de7c7478ba1103e8c1b7a84e73dbae0e6bc9b49",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/c2e8e9005ead5192763fc8f2dee6ebe33a36315b/AI%20Research/Lyra%202.0%20-%20Better%20Pictures%2C%20but%20Do%20They%20Still%20Match/Lyra-2.0---Better-Pictures%2C-but-Do-They-Still-Match.science"
+    },
+    "introduction": {
+      "file_name": "Lyra 2.0 - Better Pictures, but Do They Still Match.md",
+      "path": "AI Research/Lyra 2.0 - Better Pictures, but Do They Still Match/Lyra 2.0 - Better Pictures, but Do They Still Match.md",
+      "bytes": 12800,
+      "sha256": "896abe40b178c1116ad72c199587a6a02a52211b3644f96aedd9e9c2679a35e9",
+      "release_url": ""
+    }
+  },
+  {
     "title": "Kimi K3.1 Pro: What Would It Take to Run It Locally?",
     "name": "kimi-k3-1-pro-what-would-it-take-to-run-it-locally",
     "catalog": "Curiosity Lab",
@@ -24,6 +51,11 @@
       "bytes": 12922,
       "sha256": "5d006e972f6cf905e53bdb78726f7eb92cd8b618ed42ce0c3df27595191c96ea",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=Yhr-o86aEN4",
+      "file_name": "Kimi K3.1 Pro: What Would It Take to Run It Locally? | Open-Science Web Demo"
     }
   },
   {

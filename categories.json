@@ -6,6 +6,11 @@
   ],
   "cases": [
     {
+      "title": "Lyra 2.0: Better Pictures, but Do They Still Match?",
+      "name": "lyra-2-0-better-pictures-but-do-they-still-match",
+      "category": "AI Research"
+    },
+    {
       "title": "Kimi K3.1 Pro: What Would It Take to Run It Locally?",
       "name": "kimi-k3-1-pro-what-would-it-take-to-run-it-locally",
       "category": "Curiosity Lab"

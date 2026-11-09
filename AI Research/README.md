@@ -1,5 +1,5 @@
 # AI Research
 
-53 archived cases.
+54 archived cases.
 
 [Browse the complete case index](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/CASES.md).
