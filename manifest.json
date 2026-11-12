@@ -24,6 +24,11 @@
       "bytes": 12800,
       "sha256": "896abe40b178c1116ad72c199587a6a02a52211b3644f96aedd9e9c2679a35e9",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=OThnK2w5mMg",
+      "file_name": "Lyra 2.0: Better Pictures, but Do They Still Match? — Open-Science Web Demo"
     }
   },
   {
@@ -395,6 +400,11 @@
       "bytes": 3962,
       "sha256": "4ccc5c38df0e54880852ab3615af8864fd392b48403fba527cbc93d51227c266",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=U1u8oQ3cr0I",
+      "file_name": "Amazon Tree-Cover Loss: Does the Definition Change the Picture? — Open-Science Web Demo"
     }
   },
   {
@@ -3478,6 +3488,11 @@
       "bytes": 12557,
       "sha256": "2af30a1e2e7eda27cad934f1a4831236719843c2856d4d4f3d6b44eac5d97e68",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=ijpmwTPK8pU",
+      "file_name": "Can We Reproduce Chinchilla Scaling? — Open-Science Web Demo"
     }
   },
   {
