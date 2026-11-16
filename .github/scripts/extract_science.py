@@ -117,8 +117,11 @@ def unpack(package, output, verify_only=False):
                 or not isinstance(manifest.get('inventory'), list)):
             raise ValueError('Unsupported science package format')
         features = manifest.get('requiredFeatures', [])
-        if not isinstance(features, list) or any(feature not in ('literature', 'ro-crate', 'content-dedupe')
-                                                  for feature in features):
+        # Match open-science's packageFeatureSchema; feature payloads use the same inventory.
+        if not isinstance(features, list) or any(
+                feature not in ('literature', 'ro-crate', 'content-dedupe', 'research-film',
+                                'log-evidence', 'compute-log-evidence')
+                for feature in features):
             raise ValueError('Unsupported package features')
         session = package_json('session.json')
         if (not isinstance(session, dict) or session.get('version') != 2

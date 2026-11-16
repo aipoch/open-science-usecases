@@ -82,6 +82,40 @@ class UnpackTests(unittest.TestCase):
         self.assertEqual((self.output / 'uploads/id').read_bytes(), b'<svg/>')
         self.assertEqual((self.output / 'artifacts/p/.hidden/content').read_bytes(), b'<svg/>')
 
+    def test_current_features_are_restored_and_audited_without_rewriting(self):
+        payloads = {
+            'execution-file-evidence/p/s/frames/f/activity-run/evidence.json':
+                b'{ "schemaVersion": 1, "activityKind": "notebook-run" }\r\n',
+            'execution-file-evidence/p/s/frames/f/activity-job/evidence.json':
+                b'{ "schemaVersion": 1, "activityKind": "compute-job" }\r\n',
+            'artifacts/p/s/.research-films/film/player.html': b'<!doctype html><p>Film</p>\r\n',
+            'artifacts/p/s/.research-films/film/sources.zip': b'PK\x05\x06' + bytes(18),
+        }
+        for index, (key, data) in enumerate(payloads.items()):
+            self.add_object(path='objects/payload-' + str(index), key=key, data=data)
+        self.package.write_bytes(archive_bytes(
+            self.files, self.inventory, features=['literature', 'ro-crate', 'content-dedupe',
+                                                 'research-film', 'log-evidence',
+                                                 'compute-log-evidence']))
+        restored = unpack(self.package, self.output)
+        for key, data in payloads.items():
+            self.assertEqual((self.output / key).read_bytes(), data)
+        with tarfile.open(self.package) as archive:
+            for name in (*valid_files()[0], 'manifest.json'):
+                self.assertEqual((self.output / name).read_bytes(), archive.extractfile(name).read())
+        audit = self.root / 'audit'; audit.mkdir()
+        self.assertEqual(unpack(self.package, audit, verify_only=True), restored)
+        self.assertEqual(list(audit.iterdir()), [])
+
+    def test_unknown_features_are_rejected_before_restoration_or_audit(self):
+        self.package.write_bytes(archive_bytes(
+            self.files, self.inventory, features=['log-evidence', 'future-capability']))
+        for verify_only in (False, True):
+            with self.subTest(verify_only=verify_only):
+                with self.assertRaisesRegex(ValueError, 'Unsupported package features'):
+                    unpack(self.package, self.output, verify_only=verify_only)
+                self.assertEqual(list(self.output.iterdir()), [])
+
     def test_duplicate_inventory_requires_content_dedupe_and_distinct_keys(self):
         self.add_object()
         self.inventory.append({**self.inventory[-1], 'storageKey': 'uploads/other'})
