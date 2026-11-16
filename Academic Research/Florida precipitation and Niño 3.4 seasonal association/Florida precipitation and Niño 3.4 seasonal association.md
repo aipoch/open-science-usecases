@@ -1,5 +1,3 @@
-# Florida precipitation and Niño 3.4 seasonal association
-
 ## Research question
 
 Does the historical rainfall–Niño 3.4 association differ by season?

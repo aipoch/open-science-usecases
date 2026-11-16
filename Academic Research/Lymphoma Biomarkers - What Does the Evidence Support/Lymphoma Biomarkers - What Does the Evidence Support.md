@@ -1,5 +1,3 @@
-# Lymphoma Biomarkers - What Does the Evidence Support
-
 ## Research question
 
 What evidence actually connects the candidate markers to CD20-by-CD3 bispecific treatment decisions?

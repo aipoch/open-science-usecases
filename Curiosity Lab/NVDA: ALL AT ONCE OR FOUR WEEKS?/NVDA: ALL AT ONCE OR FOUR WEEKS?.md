@@ -1,5 +1,3 @@
-# NVDA: ALL AT ONCE OR FOUR WEEKS?
-
 ## Research question
 
 How often does earlier market exposure beat a short staged entry in the same historical stock?

@@ -1,5 +1,3 @@
-# Ocean Microbes - How Do They Relate to Nutrients
-
 ## Research question
 
 Do phosphate–microbe associations persist after accounting for sampling depth and region?

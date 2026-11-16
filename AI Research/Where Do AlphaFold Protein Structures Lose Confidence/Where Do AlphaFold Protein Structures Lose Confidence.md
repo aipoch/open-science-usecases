@@ -1,5 +1,3 @@
-# Where Do AlphaFold Protein Structures Lose Confidence
-
 ## Research question
 
 Where is local confidence low within a predicted protein rather than merely low on average?

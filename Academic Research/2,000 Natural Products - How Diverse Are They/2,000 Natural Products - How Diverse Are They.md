@@ -1,5 +1,3 @@
-# 2,000 Natural Products - How Diverse Are They
-
 ## Research question
 
 Can a small representative subset cover the structural variety of the captured natural-product pool?

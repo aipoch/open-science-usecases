@@ -1,5 +1,3 @@
-# Will AI Overrefund or Underrefund
-
 ## Research question
 
 Can a policy-based calculation distinguish the charge components that remain eligible in an edge case?

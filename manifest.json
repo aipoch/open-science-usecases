@@ -21,8 +21,8 @@
     "introduction": {
       "file_name": "Lyra 2.0 - Better Pictures, but Do They Still Match.md",
       "path": "AI Research/Lyra 2.0 - Better Pictures, but Do They Still Match/Lyra 2.0 - Better Pictures, but Do They Still Match.md",
-      "bytes": 12800,
-      "sha256": "896abe40b178c1116ad72c199587a6a02a52211b3644f96aedd9e9c2679a35e9",
+      "bytes": 12745,
+      "sha256": "7901728e5aa3d2d50a286fb7d59b342799bf0cba925de8539e4e1c245ced1085",
       "release_url": ""
     },
     "video": {
@@ -53,8 +53,8 @@
     "introduction": {
       "file_name": "Kimi K3.1 Pro - What Would It Take to Run It Locally.md",
       "path": "Curiosity Lab/Kimi K3.1 Pro - What Would It Take to Run It Locally/Kimi K3.1 Pro - What Would It Take to Run It Locally.md",
-      "bytes": 12922,
-      "sha256": "5d006e972f6cf905e53bdb78726f7eb92cd8b618ed42ce0c3df27595191c96ea",
+      "bytes": 12866,
+      "sha256": "35abc654d3da81d517324477b138d7bea54d05700c552a111ae5264d9394c88a",
       "release_url": ""
     },
     "video": {
@@ -85,8 +85,8 @@
     "introduction": {
       "path": "Curiosity Lab/$10,000: NVIDIA, BITCOIN, OR BOTH?/$10,000: NVIDIA, BITCOIN, OR BOTH?.md",
       "file_name": "$10,000: NVIDIA, BITCOIN, OR BOTH?.md",
-      "bytes": 2291,
-      "sha256": "255dce3d283367d77e7cccd88196ff022f61cfa88f4b9d5357d9848935f13c99",
+      "bytes": 2253,
+      "sha256": "ec76a87c17c95a52bfa197fd575ac668c91800cf05e496d07b426643d5c1a23c",
       "release_url": ""
     },
     "video": {
@@ -117,8 +117,8 @@
     "introduction": {
       "path": "Academic Research/2,000 Natural Products - How Diverse Are They/2,000 Natural Products - How Diverse Are They.md",
       "file_name": "2,000 Natural Products - How Diverse Are They.md",
-      "bytes": 4209,
-      "sha256": "00835af47f9c7701b5e836ce69faa81e002b92702b1e5cb39a59b3d71e6c21e5",
+      "bytes": 4160,
+      "sha256": "93b39c639b1fc229486c18990d1ae7af19d5fd09f9fe052126d54ae024c1a5e8",
       "release_url": ""
     }
   },
@@ -144,8 +144,8 @@
     "introduction": {
       "path": "Curiosity Lab/99% Pure - Does Molecular Handedness Matter/99% Pure - Does Molecular Handedness Matter.md",
       "file_name": "99% Pure - Does Molecular Handedness Matter.md",
-      "bytes": 1996,
-      "sha256": "f72d900e2047613ca0d1fa215b04971a4eceb6ba0e59791c07e32c91bc0acf01",
+      "bytes": 1949,
+      "sha256": "368b42cb1745b7300a7334bad2ca5e4ac6128a838c715a579e4498d3db82579a",
       "release_url": ""
     },
     "video": {
@@ -176,8 +176,8 @@
     "introduction": {
       "path": "Curiosity Lab/A City's 100-Year Rainfall Record/A City's 100-Year Rainfall Record.md",
       "file_name": "A City's 100-Year Rainfall Record.md",
-      "bytes": 3600,
-      "sha256": "683fa0fab13190700018a480445fedb24522da840101e7280b90a5c2e9271a97",
+      "bytes": 3563,
+      "sha256": "fae6c22c74944625a3932f4ee149f3c9e7c68462c343582c9d654e0258b1d241",
       "release_url": ""
     },
     "video": {
@@ -208,8 +208,8 @@
     "introduction": {
       "path": "Curiosity Lab/A Million Examples - Is That a Proof/A Million Examples - Is That a Proof.md",
       "file_name": "A Million Examples - Is That a Proof.md",
-      "bytes": 4798,
-      "sha256": "93d709e691512df1dc48ba1adcbaf125a7ee2456fd17ddb2816897b1988c6ee2",
+      "bytes": 4757,
+      "sha256": "d95e679cde66dfd4081502ebb799d0caabb5f95618c795b1e00bf7ca01ba86a7",
       "release_url": ""
     }
   },
@@ -235,8 +235,8 @@
     "introduction": {
       "path": "AI Research/AI Explains Math - What Gets Lost/AI Explains Math - What Gets Lost.md",
       "file_name": "AI Explains Math - What Gets Lost.md",
-      "bytes": 2883,
-      "sha256": "7a1b72ca5406ef3747f02522ea930d8a8d4a31273f22c99fd5b9348db6cc9678",
+      "bytes": 2846,
+      "sha256": "0648e441123b17e4b4339be9f1437f02c35fa449ed80351315b143a25fc6afb5",
       "release_url": ""
     }
   },
@@ -262,8 +262,8 @@
     "introduction": {
       "path": "AI Research/AI Math Citations - Do They Check Out/AI Math Citations - Do They Check Out.md",
       "file_name": "AI Math Citations - Do They Check Out.md",
-      "bytes": 2540,
-      "sha256": "07b6d7f340eaa7fb671ceaea98b6f263dea6329c49c30ecd0ac4a8436ba0d146",
+      "bytes": 2499,
+      "sha256": "dc46fdc04f97f7c800a54aad7769aa2d7a6dcc31737cdf592d43ade014abdcb8",
       "release_url": ""
     }
   },
@@ -289,8 +289,8 @@
     "introduction": {
       "path": "AI Research/AI Math Counterexample - Does Exact Arithmetic Agree/AI Math Counterexample - Does Exact Arithmetic Agree.md",
       "file_name": "AI Math Counterexample - Does Exact Arithmetic Agree.md",
-      "bytes": 3236,
-      "sha256": "2f6febaa09a6f7422d2855b7676cb1fa49bb08b84757d9d8f5f69d5a506e6720",
+      "bytes": 3180,
+      "sha256": "e10a3fe278de723873fb5d3c0d27c0eb6539bee9c8f244cf716ac6140656b0b2",
       "release_url": ""
     }
   },
@@ -316,8 +316,8 @@
     "introduction": {
       "path": "AI Research/AI Math Papers - Can You Check the Proofs/AI Math Papers - Can You Check the Proofs.md",
       "file_name": "AI Math Papers - Can You Check the Proofs.md",
-      "bytes": 8657,
-      "sha256": "83db78c85145195f8a05f99b948321520660f359766192af3470d833c2cb4350",
+      "bytes": 8612,
+      "sha256": "321d7977df209e21bf2e4794d0109d0a50bdb2cd3cf68b9556666c03a5241b6c",
       "release_url": ""
     }
   },
@@ -343,8 +343,8 @@
     "introduction": {
       "path": "AI Research/AI or Human - What Story Structure Reveals/AI or Human - What Story Structure Reveals.md",
       "file_name": "AI or Human - What Story Structure Reveals.md",
-      "bytes": 3368,
-      "sha256": "bdf03946d8b53faad2741d1bccce55a546b23a4d9da2a2b905cb1ee5a10643fb",
+      "bytes": 3322,
+      "sha256": "ac37c4984a89549e6a6cc127f7460773ae687a8b6aa0e7f72c25fb11b6792faf",
       "release_url": ""
     }
   },
@@ -370,8 +370,8 @@
     "introduction": {
       "path": "Academic Research/Air Pollution - Is the Turning Point Real/Air Pollution - Is the Turning Point Real.md",
       "file_name": "Air Pollution - Is the Turning Point Real.md",
-      "bytes": 4004,
-      "sha256": "2a96db10bb6fa76cff2d0afbc68eac679b2448f7b5c71803b770c0c52553f0e0",
+      "bytes": 3959,
+      "sha256": "509449d47ea3338a1137d91732814a54a694c00c55ad1fa08b3739bc11caf64d",
       "release_url": ""
     }
   },
@@ -397,8 +397,8 @@
     "introduction": {
       "path": "Academic Research/Amazon Tree-Cover Loss - Does the Definition Change the Picture/Amazon Tree-Cover Loss - Does the Definition Change the Picture.md",
       "file_name": "Amazon Tree-Cover Loss - Does the Definition Change the Picture.md",
-      "bytes": 3962,
-      "sha256": "4ccc5c38df0e54880852ab3615af8864fd392b48403fba527cbc93d51227c266",
+      "bytes": 3895,
+      "sha256": "9b3dfef1bdaa96180f83ba1246168e132adbe910ce2e965fe26307d7bcb8c406",
       "release_url": ""
     },
     "video": {
@@ -429,8 +429,8 @@
     "introduction": {
       "path": "Academic Research/AqSolDB scaffold novelty and aqueous solubility prediction/AqSolDB scaffold novelty and aqueous solubility prediction.md",
       "file_name": "AqSolDB scaffold novelty and aqueous solubility prediction.md",
-      "bytes": 3553,
-      "sha256": "cf87532f790fa0940a9b30accf7438ccac07b1d1cb3aeb3340dcd7d1c62f0262",
+      "bytes": 3491,
+      "sha256": "72128f2fb7c2edc59ae2d47e10a749cf73bee55b1b5b717a0c1c0d9f86e52b10",
       "release_url": ""
     }
   },
@@ -456,8 +456,8 @@
     "introduction": {
       "path": "Academic Research/Are Overdose Deaths Rising Because America Is Aging/Are Overdose Deaths Rising Because America Is Aging.md",
       "file_name": "Are Overdose Deaths Rising Because America Is Aging.md",
-      "bytes": 3400,
-      "sha256": "ef417288a5623b9703e653a89811085c3df0c70c8d58262717a2e1c943c4f0c4",
+      "bytes": 3345,
+      "sha256": "49dea53697a576ce80b25f089396895ac0b9cf00e40abdc2bc4a360cdb6ab58b",
       "release_url": ""
     }
   },
@@ -483,8 +483,8 @@
     "introduction": {
       "path": "Curiosity Lab/At 70% should you take it/At 70% should you take it.md",
       "file_name": "At 70% should you take it.md",
-      "bytes": 3139,
-      "sha256": "8f698026fe1e5e1dbd36c69dd91158b973b2462010da4f32b785f725ec7dab66",
+      "bytes": 3110,
+      "sha256": "55d6defcdb282302bb7cb08336162fa21847032c5dafda596be8a52d58bdc4c8",
       "release_url": ""
     }
   },
@@ -510,8 +510,8 @@
     "introduction": {
       "path": "Curiosity Lab/Birthday Paradox Simulation Verifying the 23-Person 50% Claim/Birthday Paradox Simulation Verifying the 23-Person 50% Claim.md",
       "file_name": "Birthday Paradox Simulation Verifying the 23-Person 50% Claim.md",
-      "bytes": 5050,
-      "sha256": "63b024d524faec70039df01bf58a51596ce24a3a90b9a84d071d9b21caeb58aa",
+      "bytes": 5002,
+      "sha256": "937baad07ce2eec6db6d3fee5fb2b6bc32f4f73bdf1b91e5986db538a5c0a873",
       "release_url": ""
     }
   },
@@ -537,8 +537,8 @@
     "introduction": {
       "path": "Academic Research/Blood Metabolites - Can They Distinguish Cancer from Polyps/Blood Metabolites - Can They Distinguish Cancer from Polyps.md",
       "file_name": "Blood Metabolites - Can They Distinguish Cancer from Polyps.md",
-      "bytes": 3736,
-      "sha256": "8f78d5891e5c40bd8b0684084aca0799af65738b09948db8ca302055940de80b",
+      "bytes": 3673,
+      "sha256": "e221420cc37c6af9fbea10bd2e9906027256e1d8738272c188f1303ce96ca866",
       "release_url": ""
     }
   },
@@ -564,8 +564,8 @@
     "introduction": {
       "path": "Curiosity Lab/Bottled Water in Convenience Stores Across Five Cities- What Is the Price Gap Between the Most Expensive and the Cheapest/Bottled Water in Convenience Stores Across Five Cities- What Is the Price Gap Between the Most Expensive and the Cheapest.md",
       "file_name": "Bottled Water in Convenience Stores Across Five Cities- What Is the Price Gap Between the Most Expensive and the Cheapest.md",
-      "bytes": 3091,
-      "sha256": "3c6ba0f2f1f61d85ec9b94e8329dc3e989a515536a8c2b23fae9a7784f072ec0",
+      "bytes": 2966,
+      "sha256": "5814d4b040219f91109d1f360590c54a89ea0a8154487e0dd7ccae326a28ef94",
       "release_url": ""
     }
   },
@@ -591,8 +591,8 @@
     "introduction": {
       "path": "AI Research/CAN 10,000 AI PAPERS PREDICT WHICH TOPICS WILL GROW SIX MONTHS LATER?/CAN 10,000 AI PAPERS PREDICT WHICH TOPICS WILL GROW SIX MONTHS LATER?.md",
       "file_name": "CAN 10,000 AI PAPERS PREDICT WHICH TOPICS WILL GROW SIX MONTHS LATER?.md",
-      "bytes": 3463,
-      "sha256": "0028b5d525e8c4871fcbf57cb4aa097669edf45f2ade8c9ac5f5a4ce9dd80ff6",
+      "bytes": 3390,
+      "sha256": "cfa58feea6f28255bdc2597318e206d4ebc7cca4721bc2b04e8b8475c24cd21a",
       "release_url": ""
     }
   },
@@ -618,8 +618,8 @@
     "introduction": {
       "path": "Curiosity Lab/Can 20 Pokémon Packs Guarantee an SIR/Can 20 Pokémon Packs Guarantee an SIR.md",
       "file_name": "Can 20 Pokémon Packs Guarantee an SIR.md",
-      "bytes": 2760,
-      "sha256": "e55e5c2be011da5f41f576bb17e51695103a8de68ef0bf7737e8255a8472b266",
+      "bytes": 2718,
+      "sha256": "650092d756a54126781ee2508f7aa18ba01bb0cf8b236adce8901e968df9f3b0",
       "release_url": ""
     }
   },
@@ -645,8 +645,8 @@
     "introduction": {
       "path": "Curiosity Lab/Can a Fruit Fly Connectome Learn Cube Moves/Can a Fruit Fly Connectome Learn Cube Moves.md",
       "file_name": "Can a Fruit Fly Connectome Learn Cube Moves.md",
-      "bytes": 3416,
-      "sha256": "78707e5b712bb5b39b2b93d86f38ca0f4a6b10a6264aa3fc28184af150a80b8b",
+      "bytes": 3369,
+      "sha256": "d38cb714ba383d85de2be3503e006be952cc39419973efaaeb5ee70aaf2dedc3",
       "release_url": ""
     }
   },
@@ -672,8 +672,8 @@
     "introduction": {
       "path": "AI Research/Can a Layout Change Make AI Miss Parts of Your Resume/Can a Layout Change Make AI Miss Parts of Your Resume.md",
       "file_name": "Can a Layout Change Make AI Miss Parts of Your Resume.md",
-      "bytes": 2455,
-      "sha256": "628b8b9b7e3e47d3621d710cd374d0cddf8f8431170f42b4e37af89ddb1934f1",
+      "bytes": 2398,
+      "sha256": "4c5d5d1ffdfcaca27406f1489dabb54e6986faf3ae570c9882409663e86e3305",
       "release_url": ""
     }
   },
@@ -699,8 +699,8 @@
     "introduction": {
       "path": "AI Research/Can a Simple Algorithm Beat AI at Wordle/Can a Simple Algorithm Beat AI at Wordle.md",
       "file_name": "Can a Simple Algorithm Beat AI at Wordle.md",
-      "bytes": 1625,
-      "sha256": "4757d329a9b99ebc381d5ca2ef8006f6d5a6f5dd0bb66b2ec5a38cbee1e03fe5",
+      "bytes": 1602,
+      "sha256": "a981ccced4e70aa7bb055f8f08ee4c1b99f4ea8ac312ec228d279ed1c7fcf824",
       "release_url": ""
     }
   },
@@ -726,8 +726,8 @@
     "introduction": {
       "path": "AI Research/Can AI Bluff and Detect Bluffs in Poker/Can AI Bluff and Detect Bluffs in Poker.md",
       "file_name": "Can AI Bluff and Detect Bluffs in Poker.md",
-      "bytes": 3331,
-      "sha256": "b2ca9692201fb3f1d8eb841bdb7b9313fcd57340b4cc701556f8e1a8a389db88",
+      "bytes": 3288,
+      "sha256": "2db9eb45d0cfaaabfaa8cd6d9658f1d5b7a8a2e115d1f0d6f53f1dff4b56b160",
       "release_url": ""
     }
   },
@@ -753,8 +753,8 @@
     "introduction": {
       "path": "AI Research/Can AI Extract Final Action Items, Owners, and Deadlines/Can AI Extract Final Action Items, Owners, and Deadlines.md",
       "file_name": "Can AI Extract Final Action Items, Owners, and Deadlines.md",
-      "bytes": 3409,
-      "sha256": "0515a2c6780f33a618a867cca743a976f9162fb2fd1c2bb62c9ba0dfba17b70d",
+      "bytes": 3349,
+      "sha256": "64785e4379b978849ed061dfef315633d791f3a055b2047fff977801206471af",
       "release_url": ""
     }
   },
@@ -780,8 +780,8 @@
     "introduction": {
       "path": "AI Research/Can AI Find Five Hidden Planet-Like Signals/Can AI Find Five Hidden Planet-Like Signals.md",
       "file_name": "Can AI Find Five Hidden Planet-Like Signals.md",
-      "bytes": 2637,
-      "sha256": "6e36d1548d4836d9008de113ce365d552a6f024507777cacef5895fda3bcfa52",
+      "bytes": 2590,
+      "sha256": "eda2ac5c2c9016ab17234c7f61f2061789a534aaaa1cdbaab83136e40115f516",
       "release_url": ""
     }
   },
@@ -807,8 +807,8 @@
     "introduction": {
       "path": "AI Research/Can AI Find the Cheapest Checkout with 100 Discount Rules/Can AI Find the Cheapest Checkout with 100 Discount Rules.md",
       "file_name": "Can AI Find the Cheapest Checkout with 100 Discount Rules.md",
-      "bytes": 2669,
-      "sha256": "9f667c3fad182ec552f94736d2122e69fb20f518c2fe6522db8adbfd733868e2",
+      "bytes": 2608,
+      "sha256": "55228115c1071af6d68f862e94ea840de181e8379fac1734d9816f3d78983345",
       "release_url": ""
     }
   },
@@ -834,8 +834,8 @@
     "introduction": {
       "path": "AI Research/Can AI Find the Shortest Paris Sightseeing Route/Can AI Find the Shortest Paris Sightseeing Route.md",
       "file_name": "Can AI Find the Shortest Paris Sightseeing Route.md",
-      "bytes": 2234,
-      "sha256": "5c2a521d74303ffc9571891ebff67ec0b9a607493b2ccafba0ab13dd29390eaa",
+      "bytes": 2182,
+      "sha256": "7d6f27e95fa4e5a0d6e4af58f92200a56e5b48d22d2e76c0abd409d2e70118fd",
       "release_url": ""
     },
     "video": {
@@ -866,8 +866,8 @@
     "introduction": {
       "path": "AI Research/Can AI Find Three Contradictions in a 20-Page Presentation/Can AI Find Three Contradictions in a 20-Page Presentation.md",
       "file_name": "Can AI Find Three Contradictions in a 20-Page Presentation.md",
-      "bytes": 2306,
-      "sha256": "59a63738095abcb3b0960b86acb55c6d504fd308b10343d6543b535c330fa620",
+      "bytes": 2244,
+      "sha256": "0d1b8752072ccf766f1cf4c3fe01c257275b8d581938eb0f6d02714d3256470b",
       "release_url": ""
     }
   },
@@ -893,8 +893,8 @@
     "introduction": {
       "path": "AI Research/Can AI Fit 10 London Landmarks Into One Day/Can AI Fit 10 London Landmarks Into One Day.md",
       "file_name": "Can AI Fit 10 London Landmarks Into One Day.md",
-      "bytes": 2656,
-      "sha256": "66d17723a47d9f85ee4ea05980275339f5f3ce7c7a5aa6b6c887890e567e9322",
+      "bytes": 2609,
+      "sha256": "ed0bdd87158fe3c30f841180a0c6e25d13eb0eebbeb28c0ed8e139966beb18ca",
       "release_url": ""
     }
   },
@@ -920,8 +920,8 @@
     "introduction": {
       "path": "AI Research/Can AI Fit Eight Tasks in 30 Minutes/Can AI Fit Eight Tasks in 30 Minutes.md",
       "file_name": "Can AI Fit Eight Tasks in 30 Minutes.md",
-      "bytes": 3801,
-      "sha256": "4e8246552fd55c59e0f80a13053653eba7f09da82add03e22c24ea77ac61ac39",
+      "bytes": 3761,
+      "sha256": "c6bc970ec6b01b9bb76fb049a639de0483b71dd90186c298a3d5fb9645bbca11",
       "release_url": ""
     }
   },
@@ -947,8 +947,8 @@
     "introduction": {
       "path": "AI Research/Can AI Fix a Tiny Bug/Can AI Fix a Tiny Bug.md",
       "file_name": "Can AI Fix a Tiny Bug.md",
-      "bytes": 3249,
-      "sha256": "4257badff7363e20586de842c9409334c719138289571ff72c2db4821f5b627d",
+      "bytes": 3223,
+      "sha256": "01f092e6df20ccf3314f5a2582133a67406eea71735780ccc6b0d0d0b551dabf",
       "release_url": ""
     }
   },
@@ -974,8 +974,8 @@
     "introduction": {
       "path": "AI Research/Can AI Guess the Animal in 20 Yes-or-No Questions/Can AI Guess the Animal in 20 Yes-or-No Questions.md",
       "file_name": "Can AI Guess the Animal in 20 Yes-or-No Questions.md",
-      "bytes": 2419,
-      "sha256": "edc4c1441b97379b927b0674d3e568d745f074d8afbe77ff79de7c7bebc66c92",
+      "bytes": 2366,
+      "sha256": "a65ecca0967cb6323e17857711f1b0272bfe55c73efa46ccb5f42d91827fa6fb",
       "release_url": ""
     }
   },
@@ -1001,8 +1001,8 @@
     "introduction": {
       "path": "AI Research/Can AI Keep Track of Corrections in Meeting Notes/Can AI Keep Track of Corrections in Meeting Notes.md",
       "file_name": "Can AI Keep Track of Corrections in Meeting Notes.md",
-      "bytes": 3361,
-      "sha256": "535577968b6b8c78d8f793054061620d661daab7e723b64e9329e4063ab39da1",
+      "bytes": 3308,
+      "sha256": "f9c5c7c7bc3edcc5d8329d50d82f9a66f78f8fb92b907df6e8fa38df458aa39d",
       "release_url": ""
     }
   },
@@ -1028,8 +1028,8 @@
     "introduction": {
       "path": "AI Research/Can AI Make Good Trade-Offs When Packing a Suitcase/Can AI Make Good Trade-Offs When Packing a Suitcase.md",
       "file_name": "Can AI Make Good Trade-Offs When Packing a Suitcase.md",
-      "bytes": 2807,
-      "sha256": "9d2798ed7dd04c6369e0c6352c05f05c47388818c837c8b13c462b28cc4c8987",
+      "bytes": 2752,
+      "sha256": "588a22b9a6ef9d2b38a6ddd48f0b24c5dbf9ca80f4ced2bd4774a5bcaa8ed0e9",
       "release_url": ""
     },
     "video": {
@@ -1060,8 +1060,8 @@
     "introduction": {
       "path": "Curiosity Lab/CAN AI PICK LUCKY LOTTERY NUMBERS?/CAN AI PICK LUCKY LOTTERY NUMBERS?.md",
       "file_name": "CAN AI PICK LUCKY LOTTERY NUMBERS?.md",
-      "bytes": 2652,
-      "sha256": "008eac24a1d47b177d9c3e3f6930170a754712a2d66eceaa44e0a7bcb7be0082",
+      "bytes": 2614,
+      "sha256": "4c3ccb0b370203644c06c690deade10f1acead675d72d6baa2dbd08378a418d2",
       "release_url": ""
     }
   },
@@ -1087,8 +1087,8 @@
     "introduction": {
       "path": "AI Research/Can AI Pick the Right Contact/Can AI Pick the Right Contact.md",
       "file_name": "Can AI Pick the Right Contact.md",
-      "bytes": 2507,
-      "sha256": "6c4cd47cb734aedf3f1930503263327ecc91472e1c3c13296335fe0d9a6480f9",
+      "bytes": 2474,
+      "sha256": "17e4ca88c287036e0695a477a119388aaed6f383d180072dbcb3356d6f04e0a8",
       "release_url": ""
     }
   },
@@ -1114,8 +1114,8 @@
     "introduction": {
       "path": "AI Research/Can AI Plan a Fair Chinese Shared Dinner/Can AI Plan a Fair Chinese Shared Dinner.md",
       "file_name": "Can AI Plan a Fair Chinese Shared Dinner.md",
-      "bytes": 2535,
-      "sha256": "857cdd11086e4441e0357c051da20a5a63cb6ec4de078d6a543abe1f5c92759e",
+      "bytes": 2491,
+      "sha256": "cadd39346ee332cece9a69a798c3dc0821d4653f49dabfef57de036137bc533a",
       "release_url": ""
     }
   },
@@ -1141,8 +1141,8 @@
     "introduction": {
       "path": "AI Research/Can AI Plan Seven Lunches Under $50 If Ingredients Must Be Bought in Full Packages/Can AI Plan Seven Lunches Under $50 If Ingredients Must Be Bought in Full Packages.md",
       "file_name": "Can AI Plan Seven Lunches Under $50 If Ingredients Must Be Bought in Full Packages.md",
-      "bytes": 2534,
-      "sha256": "9462f7eb8d89eabae93d92b4a97061cd8439041bd931ce48800b1fcf4075080e",
+      "bytes": 2448,
+      "sha256": "b8812096685760cb6748cd337ad00f38c8fcb658677d681bcd2d664c1d63f55f",
       "release_url": ""
     }
   },
@@ -1168,8 +1168,8 @@
     "introduction": {
       "path": "AI Research/Can AI Read the Numbers from One Chart/Can AI Read the Numbers from One Chart.md",
       "file_name": "Can AI Read the Numbers from One Chart.md",
-      "bytes": 2323,
-      "sha256": "7dcdb6e83ca57c5e5fbca9a20c7b6a459d2202eb8211365af2cada71c5396e2b",
+      "bytes": 2281,
+      "sha256": "8b471a85efcb101251ea6f1921598bf3091286408ce6707e0ff8daf6c06d5704",
       "release_url": ""
     }
   },
@@ -1195,8 +1195,8 @@
     "introduction": {
       "path": "AI Research/Can AI Recommend Movies That Follow Your Rules/Can AI Recommend Movies That Follow Your Rules.md",
       "file_name": "Can AI Recommend Movies That Follow Your Rules.md",
-      "bytes": 5159,
-      "sha256": "57d6ef101d4d3333977b4bacdb243823a0fc160af983867f4cfa7c15782251fb",
+      "bytes": 5109,
+      "sha256": "6578ecea5291865cdf0e4c248f0fa46c2ca4b93df83b4c1a6f21fac3feb80c60",
       "release_url": ""
     }
   },
@@ -1222,8 +1222,8 @@
     "introduction": {
       "path": "AI Research/Can AI Spot the Errors in a Spreadsheet/Can AI Spot the Errors in a Spreadsheet.md",
       "file_name": "Can AI Spot the Errors in a Spreadsheet.md",
-      "bytes": 2984,
-      "sha256": "82a12665dd7d5573cbca09d9ad8b92d0fb57ae394077e42f541901ecc21ba71c",
+      "bytes": 2940,
+      "sha256": "9832dd448d94fb86ecea83765996472a5165d3e7ed30c3dbb396ba325eb7d92a",
       "release_url": ""
     }
   },
@@ -1249,8 +1249,8 @@
     "introduction": {
       "path": "AI Research/Can an AI Bidder Overpay and Lose Money/Can an AI Bidder Overpay and Lose Money.md",
       "file_name": "Can an AI Bidder Overpay and Lose Money.md",
-      "bytes": 5319,
-      "sha256": "f8ff4dd2a24772f3b9066f1f36b29adefa212b650fbafd5d9d768df5a137f834",
+      "bytes": 5276,
+      "sha256": "c6b33ddad3b0d6d1f46e9edd7d3f5b9b98b9414493fe1909bb66045b1bad5676",
       "release_url": ""
     }
   },
@@ -1276,8 +1276,8 @@
     "introduction": {
       "path": "Curiosity Lab/Can GLP-1 Drugs Really Help Us Live Longer/Can GLP-1 Drugs Really Help Us Live Longer.md",
       "file_name": "Can GLP-1 Drugs Really Help Us Live Longer.md",
-      "bytes": 6258,
-      "sha256": "128d3d40f37d1d25c2c8d4eec288dab94a4c706aebe28b765823060d1d2be7d2",
+      "bytes": 6211,
+      "sha256": "f20b712ec7f755f658df8c5cfbf4abe6d2fb3eec1bca1b0d2a7aaaa9dbac9174",
       "release_url": ""
     }
   },
@@ -1303,8 +1303,8 @@
     "introduction": {
       "path": "AI Research/Can Jev Route Prompts as Well as General LLMs/Can Jev Route Prompts as Well as General LLMs.md",
       "file_name": "Can Jev Route Prompts as Well as General LLMs.md",
-      "bytes": 4573,
-      "sha256": "57b204b38defd86794a91d1a28514180e174db7b536152d2cb06f1fdd345b789",
+      "bytes": 4524,
+      "sha256": "c0727e986493c81136014c312b8f03fd03708db673f1643d2145020fd04beb5a",
       "release_url": ""
     }
   },
@@ -1330,8 +1330,8 @@
     "introduction": {
       "path": "AI Research/Can One Extra Token Make AI Cost 5× as Much/Can One Extra Token Make AI Cost 5× as Much.md",
       "file_name": "Can One Extra Token Make AI Cost 5× as Much.md",
-      "bytes": 2644,
-      "sha256": "dd8705aeb21d9a4a37f881e5468f1ce2aa54a5d34ff6269104b6720b140ac902",
+      "bytes": 2595,
+      "sha256": "0595b0133109b0eec667bf62e555d32483200dbedfefddbf0b1f99e6d99e0335",
       "release_url": ""
     }
   },
@@ -1357,8 +1357,8 @@
     "introduction": {
       "path": "Curiosity Lab/CAN ONE WEEK FLIP THE WINNER?/CAN ONE WEEK FLIP THE WINNER?.md",
       "file_name": "CAN ONE WEEK FLIP THE WINNER?.md",
-      "bytes": 2502,
-      "sha256": "0111dabc563a2fb34782b89447ff77e3b0923af4744549cfb1c160e49b710cda",
+      "bytes": 2469,
+      "sha256": "55bfff4367ee56e2107534e58518a231319f59f50b6066a1b1b10e3480df3318",
       "release_url": ""
     }
   },
@@ -1384,8 +1384,8 @@
     "introduction": {
       "path": "Curiosity Lab/Can petal length identify iris/Can petal length identify iris.md",
       "file_name": "Can petal length identify iris.md",
-      "bytes": 4016,
-      "sha256": "f1e48cc62e0cf1f6cbc27f453bd786e01c96288f96753efcbc86c4449082534c",
+      "bytes": 3982,
+      "sha256": "b53a27d1e8120bc0e986eff3bac9acc710106ae3c2b56730e4cf43937234ca98",
       "release_url": ""
     }
   },
@@ -1411,8 +1411,8 @@
     "introduction": {
       "path": "AI Research/Can Social Pressure Make AI Change a Correct Answer/Can Social Pressure Make AI Change a Correct Answer.md",
       "file_name": "Can Social Pressure Make AI Change a Correct Answer.md",
-      "bytes": 2562,
-      "sha256": "ba56af2276214e6fb273ceb227149c84986d97a65bc3bda4d029630f87764cd5",
+      "bytes": 2507,
+      "sha256": "6da0b6c70ab47277e97f844fbcb264786da414dc5d0e8510577d8de317a4669a",
       "release_url": ""
     }
   },
@@ -1438,8 +1438,8 @@
     "introduction": {
       "path": "Academic Research/Can We Forecast Mauna Loa's CO2/Can We Forecast Mauna Loa's CO2.md",
       "file_name": "Can We Forecast Mauna Loa's CO2.md",
-      "bytes": 3835,
-      "sha256": "5996129687f196f4c9b8bdffe62e04f19190b312173056f9f418c0cad3294d4d",
+      "bytes": 3800,
+      "sha256": "22ffddb5d864bea67cf2b81334994736f85a671e5e8460f7192afdbeb0d33c15",
       "release_url": ""
     }
   },
@@ -1465,8 +1465,8 @@
     "introduction": {
       "path": "Curiosity Lab/Card Shuffle Adjacency Simulation/Card Shuffle Adjacency Simulation.md",
       "file_name": "Card Shuffle Adjacency Simulation.md",
-      "bytes": 3667,
-      "sha256": "504d4f5e919c8e5e91cc4b22a0ee4ba22c070bdf0ba00f5e6e74862f0d240646",
+      "bytes": 3630,
+      "sha256": "a23d23647575577226dfe5d0ce11f14bf44bbf65eee0b52c75473357b0d4fa09",
       "release_url": ""
     }
   },
@@ -1492,8 +1492,8 @@
     "introduction": {
       "path": "Academic Research/Chemical Activity Predictions - Can We Trust the Probabilities/Chemical Activity Predictions - Can We Trust the Probabilities.md",
       "file_name": "Chemical Activity Predictions - Can We Trust the Probabilities.md",
-      "bytes": 4285,
-      "sha256": "2adf0490e9f233660e9df7d26f990cb5e23799036a402259a7128865f5b7275f",
+      "bytes": 4219,
+      "sha256": "bac7c55983c429e8344e14f7c1aadc162ffeae541e5023801045f32fb6886f3e",
       "release_url": ""
     }
   },
@@ -1519,8 +1519,8 @@
     "introduction": {
       "path": "Curiosity Lab/Chiral Molecules - Can a 0.1% Lead Take Over/Chiral Molecules - Can a 0.1% Lead Take Over.md",
       "file_name": "Chiral Molecules - Can a 0.1% Lead Take Over.md",
-      "bytes": 2231,
-      "sha256": "f7df05b77245a3f5723e135e8b8b42242f2856f2e7e5bf10bcd6e756b169aff9",
+      "bytes": 2183,
+      "sha256": "012e64e9cdb69bbd7dd99187452cbc7585eb0847be55636762a23582e4bba027",
       "release_url": ""
     }
   },
@@ -1546,8 +1546,8 @@
     "introduction": {
       "path": "Curiosity Lab/Coin Flip Streak Simulation Luck vs. Skill Across 1,000 Guessers/Coin Flip Streak Simulation Luck vs. Skill Across 1,000 Guessers.md",
       "file_name": "Coin Flip Streak Simulation Luck vs. Skill Across 1,000 Guessers.md",
-      "bytes": 5804,
-      "sha256": "28fc2e19ab08efd25e7a8239b3c01cb6e60bd70f5a575102b8d982f62b65267f",
+      "bytes": 5748,
+      "sha256": "b9b4dfcfe7ca4c408238804a2fcc16f2fc3f2fc9f3ede8e013a6c6f2bf921dbb",
       "release_url": ""
     }
   },
@@ -1573,8 +1573,8 @@
     "introduction": {
       "path": "Academic Research/COVID-19 Case Counts - Trend or Reporting Noise/COVID-19 Case Counts - Trend or Reporting Noise.md",
       "file_name": "COVID-19 Case Counts - Trend or Reporting Noise.md",
-      "bytes": 3630,
-      "sha256": "86dd4777fa8eb9f30a42c7d06f646a13196ffd5b38561ca51ea3996ca1146221",
+      "bytes": 3579,
+      "sha256": "b06760772f4fd83d6c79e2994a247c3142727b049e1e7993d5fe2bb9e8879acf",
       "release_url": ""
     }
   },
@@ -1600,8 +1600,8 @@
     "introduction": {
       "path": "Academic Research/Diet Diversity - Does the Gut Microbiome Differ/Diet Diversity - Does the Gut Microbiome Differ.md",
       "file_name": "Diet Diversity - Does the Gut Microbiome Differ.md",
-      "bytes": 4024,
-      "sha256": "98aeec20edbf73f81017cc4b679b5fe6cb52ce42afa9f7602d34642deb556970",
+      "bytes": 3973,
+      "sha256": "c4ccc06a5d5eda6ad035d56f8d6f52dbfa072c6968bbb024dd5f09e99770bc6f",
       "release_url": ""
     }
   },
@@ -1627,8 +1627,8 @@
     "introduction": {
       "path": "Curiosity Lab/DO STOP-LOSSES PROTECT NVDA?/DO STOP-LOSSES PROTECT NVDA?.md",
       "file_name": "DO STOP-LOSSES PROTECT NVDA?.md",
-      "bytes": 2292,
-      "sha256": "69054aed739123fc4f3d86a383a3fe86520c7ddec5e4219d50cd9c46d6ba0769",
+      "bytes": 2260,
+      "sha256": "e40603d9196dd94365cf21cad34754e5faf222cc8d207654566ae4381d33f85b",
       "release_url": ""
     }
   },
@@ -1654,8 +1654,8 @@
     "introduction": {
       "path": "AI Research/Does AI Practice Translate into Independent Learning/Does AI Practice Translate into Independent Learning.md",
       "file_name": "Does AI Practice Translate into Independent Learning.md",
-      "bytes": 3256,
-      "sha256": "b93b8e32cc22c7447ecc731006dc252ca4fa909f4d47eac1d8680992ad75b0f2",
+      "bytes": 3200,
+      "sha256": "8da4ddbb25e5aa6b0d18860380b999a5c1b4e431892514565173fe3b2fcf4e12",
       "release_url": ""
     }
   },
@@ -1681,8 +1681,8 @@
     "introduction": {
       "path": "Academic Research/EGFR potency prediction - an inspectable pilot/EGFR potency prediction - an inspectable pilot.md",
       "file_name": "EGFR potency prediction - an inspectable pilot.md",
-      "bytes": 3546,
-      "sha256": "9c325f0c327bb4fae24043466d8a34e9640b6e6cc33e51b94949c2517d0e5d55",
+      "bytes": 3496,
+      "sha256": "69021182dbd32fd3d2a03e85a614d947e774ea3e5c7a5f4b26693aa606b8fc44",
       "release_url": ""
     }
   },
@@ -1708,8 +1708,8 @@
     "introduction": {
       "path": "usecases/First Flight vs. Evening Flight - Which Is More Reliable/First Flight vs. Evening Flight - Which Is More Reliable.md",
       "file_name": "First Flight vs. Evening Flight - Which Is More Reliable.md",
-      "bytes": 1693,
-      "sha256": "5bacd2d3ee912af67e83c5f92c422bc1665008fa9a43585090caa9c992684343",
+      "bytes": 1633,
+      "sha256": "f598464fecd7fc6cc7541cdd5b63e2dc7b14612d594e81388311dd9be60d2e53",
       "release_url": ""
     }
   },
@@ -1735,8 +1735,8 @@
     "introduction": {
       "path": "Academic Research/Florida precipitation and Niño 3.4 seasonal association/Florida precipitation and Niño 3.4 seasonal association.md",
       "file_name": "Florida precipitation and Niño 3.4 seasonal association.md",
-      "bytes": 3736,
-      "sha256": "c5ba9e47997b040b64db6f0320bcde63cd1e5907a095489a3adbefb9640e104f",
+      "bytes": 3676,
+      "sha256": "a3e0ec8cfa3a7b2f76b7f6fa428461d29c519bf341add6ad101ec9c2a7dd3dba",
       "release_url": ""
     }
   },
@@ -1762,8 +1762,8 @@
     "introduction": {
       "path": "Curiosity Lab/For the same one-square-meter area, which receives more solar energy over the course of a year London or Seattle/For the same one-square-meter area, which receives more solar energy over the course of a year London or Seattle.md",
       "file_name": "For the same one-square-meter area, which receives more solar energy over the course of a year London or Seattle.md",
-      "bytes": 1965,
-      "sha256": "3d287215c0d621d6c02d6fa64964b7179be9ae3b2d91aab1c2369113fd903eac",
+      "bytes": 1849,
+      "sha256": "ed3a52bd6ffd6bc00eb6c5b022cdb4b45be20e9f2e0c4bf2ca9112d4d1dee086",
       "release_url": ""
     }
   },
@@ -1789,8 +1789,8 @@
     "introduction": {
       "path": "Curiosity Lab/From 10 Metres Up, a 39° Throw Beats 45°/From 10 Metres Up, a 39° Throw Beats 45°.md",
       "file_name": "From 10 Metres Up, a 39° Throw Beats 45°.md",
-      "bytes": 3705,
-      "sha256": "0c3b241898d58379c35bea4d1143f33f62c3266fdea626e2fe1651a3d37db526",
+      "bytes": 3659,
+      "sha256": "3b3fe5c8fb5f792e518f06d85cc15cf63b70df705c09b13f5bcde92911df9535",
       "release_url": ""
     }
   },
@@ -1816,8 +1816,8 @@
     "introduction": {
       "path": "Curiosity Lab/From brain map to walking fly/From brain map to walking fly.md",
       "file_name": "From brain map to walking fly.md",
-      "bytes": 10446,
-      "sha256": "7a5c41f1b9addec928605e6c62889448faeae59584fb026712a5ffe6fb2cdd41",
+      "bytes": 10413,
+      "sha256": "54894545a54da5f90f12b06129a5184875bced983d284211969aa511db04ffd3",
       "release_url": ""
     }
   },
@@ -1843,8 +1843,8 @@
     "introduction": {
       "path": "Academic Research/Genomic context of the Horvath epigenetic clock/Genomic context of the Horvath epigenetic clock.md",
       "file_name": "Genomic context of the Horvath epigenetic clock.md",
-      "bytes": 3613,
-      "sha256": "9fd17086626c88be663ebafe580cdffce802ee50f410d68f65dff3253df5efc3",
+      "bytes": 3562,
+      "sha256": "e087c6ba8169cc62300faeb4d36e63f83d58b46a133811be6f0f7f368ce3de84",
       "release_url": ""
     }
   },
@@ -1870,8 +1870,8 @@
     "introduction": {
       "path": "Academic Research/GLP-1 medicines and adverse-event reporting patterns/GLP-1 medicines and adverse-event reporting patterns.md",
       "file_name": "GLP-1 medicines and adverse-event reporting patterns.md",
-      "bytes": 3410,
-      "sha256": "a24c326a2bc1982be51fc53f3bc942157e6bae9a30289c877bb65cbdfa253a1c",
+      "bytes": 3354,
+      "sha256": "a136aa2982e5a74762d1ce244eb758a0fa21d3e10c693a1d201242875ee8d701",
       "release_url": ""
     }
   },
@@ -1897,8 +1897,8 @@
     "introduction": {
       "path": "Curiosity Lab/Gold, Bitcoin, Nvidia, and the S&P How Big Will/Gold, Bitcoin, Nvidia, and the S&P How Big Will.md",
       "file_name": "Gold, Bitcoin, Nvidia, and the S&P How Big Will.md",
-      "bytes": 2838,
-      "sha256": "8693829eafdef816d3cf18994a0a2f87a1cbcadd8e0e1108b5695777d10d8e38",
+      "bytes": 2787,
+      "sha256": "a3867dcfef520520f43026f132ba9aaf7bca789bad681810c25fe95ddcda1a48",
       "release_url": ""
     }
   },
@@ -1924,8 +1924,8 @@
     "introduction": {
       "path": "Curiosity Lab/Gold vs Bitcoin 28 Days Changed the Winner/Gold vs Bitcoin 28 Days Changed the Winner.md",
       "file_name": "Gold vs Bitcoin 28 Days Changed the Winner.md",
-      "bytes": 2359,
-      "sha256": "c03571a04c19ba5f7465a8a3bfbda7d7cdfcfbe51a2e5ac0d508686dd4d7b89f",
+      "bytes": 2313,
+      "sha256": "d365c8b27f9ccf020f8fd2201fd58d2ac54638fafd67f46461a710e0321e79e2",
       "release_url": ""
     }
   },
@@ -1951,8 +1951,8 @@
     "introduction": {
       "path": "Curiosity Lab/Hotter Years, Hotter Days/Hotter Years, Hotter Days.md",
       "file_name": "Hotter Years, Hotter Days.md",
-      "bytes": 1722,
-      "sha256": "706f8accd786b2528be8495ee03bbc2ef559f90c5c3a9553d4fc6fc886646877",
+      "bytes": 1692,
+      "sha256": "9f461448e32fa75cc52f2fcebf850f42a72499897930f376baafd93a41866383",
       "release_url": ""
     }
   },
@@ -1978,8 +1978,8 @@
     "introduction": {
       "path": "Curiosity Lab/How early should you leave/How early should you leave.md",
       "file_name": "How early should you leave.md",
-      "bytes": 2708,
-      "sha256": "acc7b20d85748dc68a86eb936fd49f130e46f71d198beb0b0da3fc1d06fe276d",
+      "bytes": 2678,
+      "sha256": "a7c4fdb92684c9cafc6d8e93522de028562e2d0723bf320b2b1ed5e2f1a46ae0",
       "release_url": ""
     }
   },
@@ -2005,8 +2005,8 @@
     "introduction": {
       "path": "AI Research/How Far Has AI Drug Discovery Really Gotten/How Far Has AI Drug Discovery Really Gotten.md",
       "file_name": "How Far Has AI Drug Discovery Really Gotten.md",
-      "bytes": 7495,
-      "sha256": "cd024441bc2b2231500b80b276b72ecceb3337a0f30c8a144516fe69a1f92a8e",
+      "bytes": 7448,
+      "sha256": "f163de2eb859e07c55c7e887714f0274c22f658b9af996d023ab145d6080b5cb",
       "release_url": ""
     }
   },
@@ -2032,8 +2032,8 @@
     "introduction": {
       "path": "AI Research/How Many Homes Could AI Data Centers Power/How Many Homes Could AI Data Centers Power.md",
       "file_name": "How Many Homes Could AI Data Centers Power.md",
-      "bytes": 3420,
-      "sha256": "7afc3a06a5e975a0431423c98984a0d13c6f53c0cb8d50354487087af9cc0901",
+      "bytes": 3373,
+      "sha256": "a6d0daa428df85317779d3f7b46fdadaccdf879fdb90b350f23c1089bdf9b286",
       "release_url": ""
     }
   },
@@ -2059,8 +2059,8 @@
     "introduction": {
       "path": "Curiosity Lab/How much does battery health decline after two years of smartphone use/How much does battery health decline after two years of smartphone use.md",
       "file_name": "How much does battery health decline after two years of smartphone use.md",
-      "bytes": 2989,
-      "sha256": "aad1ecf1c7c95a713cc00fd3707cb438d4d877e0495247fd1984ab0227eb57ed",
+      "bytes": 2915,
+      "sha256": "10e511f150bac077ab825011a60da9e6d1aea0978088c1c0c9cef23e257fb119",
       "release_url": ""
     }
   },
@@ -2086,8 +2086,8 @@
     "introduction": {
       "path": "AI Research/How Much Memory Does a Trillion-Parameter AI Need/How Much Memory Does a Trillion-Parameter AI Need.md",
       "file_name": "How Much Memory Does a Trillion-Parameter AI Need.md",
-      "bytes": 4395,
-      "sha256": "03cb24d2d71c05f25fdf230dc1f593b13499c9189954b46ef3595ec09be0ae1f",
+      "bytes": 4342,
+      "sha256": "56199c6aa3424b775da156ffa262601c38eeae9d1282bf31fd06bcc4df3833cd",
       "release_url": ""
     }
   },
@@ -2113,8 +2113,8 @@
     "introduction": {
       "path": "Curiosity Lab/How Often Do Job Posts Ask for Proficiency?/How Often Do Job Posts Ask for Proficiency?.md",
       "file_name": "How Often Do Job Posts Ask for Proficiency?.md",
-      "bytes": 2811,
-      "sha256": "a9578f1be8034b411c30bd41293f7b6e9155ebcc5d0e68ea6c5b0c97cd8e20d2",
+      "bytes": 2764,
+      "sha256": "b4da1438a6c8f95c853e9ab267232404e910ed256534ac6e3d717291fbded50a",
       "release_url": ""
     }
   },
@@ -2140,8 +2140,8 @@
     "introduction": {
       "path": "Curiosity Lab/If a rigged coin is mixed in with twenty coins, how many tosses does it take to catch it/If a rigged coin is mixed in with twenty coins, how many tosses does it take to catch it.md",
       "file_name": "If a rigged coin is mixed in with twenty coins, how many tosses does it take to catch it.md",
-      "bytes": 2299,
-      "sha256": "359acb057a4b16397db8c63ebac913ecce1814594a25e6676dc9900ed2a728b9",
+      "bytes": 2207,
+      "sha256": "0b69fc58ba5aa59a336fe3fbfc0665f0cb24d745fe0c5b98fc41efa1b2077c09",
       "release_url": ""
     }
   },
@@ -2167,8 +2167,8 @@
     "introduction": {
       "path": "Curiosity Lab/In a Year's Worth of Weather Forecasts, Are Predictions of ‘Sunny’ Weather More Accurate, or Are Predictions of ‘Rain’ More Accurate?/In a Year's Worth of Weather Forecasts, Are Predictions of ‘Sunny’ Weather More Accurate, or Are Predictions of ‘Rain’ More Accurate?.md",
       "file_name": "In a Year's Worth of Weather Forecasts, Are Predictions of ‘Sunny’ Weather More Accurate, or Are Predictions of ‘Rain’ More Accurate?.md",
-      "bytes": 2598,
-      "sha256": "6172c6be9c2be6d8df84d603abee4e82292457da9d899099404c45fb9e668d31",
+      "bytes": 2453,
+      "sha256": "d456f140dd79c8a05e4e6ddc21de90ea19876e4488b295eb8ae78179ce3dd2ae",
       "release_url": ""
     }
   },
@@ -2194,8 +2194,8 @@
     "introduction": {
       "path": "Academic Research/Involved versus uninvolved Crohn ileum - donor-aware expression assessment/Involved versus uninvolved Crohn ileum - donor-aware expression assessment.md",
       "file_name": "Involved versus uninvolved Crohn ileum - donor-aware expression assessment.md",
-      "bytes": 3964,
-      "sha256": "5d785a06509e299b7e890e25e6191b0404b9521f42716c1a4bb71731be460d64",
+      "bytes": 3886,
+      "sha256": "5fca7c642e8b478dab5a7593301b2972ff44a77643c8f91722a442432ce80349",
       "release_url": ""
     }
   },
@@ -2221,8 +2221,8 @@
     "introduction": {
       "path": "AI Research/Is Thinking Longer Worth It?/Is Thinking Longer Worth It?.md",
       "file_name": "Is Thinking Longer Worth It?.md",
-      "bytes": 3014,
-      "sha256": "627fa0eea368f6c8e6c787bec1439238f30254aba70bc3589610faa0c3bdd2d6",
+      "bytes": 2982,
+      "sha256": "1632ff349da751072423ba3c3f6dbf6d22b0bf91525948b5437fc749d5b43334",
       "release_url": ""
     }
   },
@@ -2248,8 +2248,8 @@
     "introduction": {
       "path": "Academic Research/Kidney Cancer - What Sets the Subtypes Apart/Kidney Cancer - What Sets the Subtypes Apart.md",
       "file_name": "Kidney Cancer - What Sets the Subtypes Apart.md",
-      "bytes": 4657,
-      "sha256": "c8665c95dc644ce9655d58eae55d190db7b9f38818f621843a5218aa3a5f160f",
+      "bytes": 4609,
+      "sha256": "bcf4f38aaf99d388d118dccbf84e48c1cb899323fb21b84503dc202d1067a9e4",
       "release_url": ""
     }
   },
@@ -2275,8 +2275,8 @@
     "introduction": {
       "path": "Academic Research/KRAS Mutations - Do Survival Patterns Differ/KRAS Mutations - Do Survival Patterns Differ.md",
       "file_name": "KRAS Mutations - Do Survival Patterns Differ.md",
-      "bytes": 3794,
-      "sha256": "30ed383523e7304ee9dd2bda6c78d013beac05bdbc0847135a2f64e45fd33710",
+      "bytes": 3746,
+      "sha256": "400a36bb87571983bb342a084f6a41ddc652e422ecc11ae7add589ab5bc04771",
       "release_url": ""
     }
   },
@@ -2302,8 +2302,8 @@
     "introduction": {
       "path": "Curiosity Lab/Light-Activated Neurons - Does the Cutoff Matter/Light-Activated Neurons - Does the Cutoff Matter.md",
       "file_name": "Light-Activated Neurons - Does the Cutoff Matter.md",
-      "bytes": 2168,
-      "sha256": "8201d876ed01c53e3d22ec419aea1cf3d29be624997b3d6456dfdfdbb76bc134",
+      "bytes": 2116,
+      "sha256": "c2a6a06bdee30c79a06ceb93787906fd0d4d3ca31d2ea5d7c8826efc4ca35435",
       "release_url": ""
     }
   },
@@ -2329,8 +2329,8 @@
     "introduction": {
       "path": "Curiosity Lab/Light On - How Fast Do Neurons Respond/Light On - How Fast Do Neurons Respond.md",
       "file_name": "Light On - How Fast Do Neurons Respond.md",
-      "bytes": 2534,
-      "sha256": "41def9ec6f631cb2258bb2d97ce10338db76e04553b5b178886111cf7e3fb143",
+      "bytes": 2492,
+      "sha256": "e8608038591d4a42952763034578eab3c0676b4c4043cbc3a6e2c63c1f10856d",
       "release_url": ""
     }
   },
@@ -2356,8 +2356,8 @@
     "introduction": {
       "path": "Academic Research/Lymphoma Biomarkers - What Does the Evidence Support/Lymphoma Biomarkers - What Does the Evidence Support.md",
       "file_name": "Lymphoma Biomarkers - What Does the Evidence Support.md",
-      "bytes": 3233,
-      "sha256": "2bc7ce05764b50d26cb9039d1b13cdba7f0660758104fd80ee5bedb1ec982a19",
+      "bytes": 3177,
+      "sha256": "d218fe4cd90a2069147851e4fa17317de71ff580bc01065b9eb4e19e9f4dde8d",
       "release_url": ""
     }
   },
@@ -2383,8 +2383,8 @@
     "introduction": {
       "path": "Academic Research/Mass Spectra - Can They Reveal a Chemical Family/Mass Spectra - Can They Reveal a Chemical Family.md",
       "file_name": "Mass Spectra - Can They Reveal a Chemical Family.md",
-      "bytes": 3189,
-      "sha256": "9209acfda085fc52fd419b619eb0ecb721408c385ec6c2399be9c2c79667a0c6",
+      "bytes": 3137,
+      "sha256": "70381171846064411054f1e5b86d2493d1e4badc78e3160b4ebc0a724e42594a",
       "release_url": ""
     }
   },
@@ -2410,8 +2410,8 @@
     "introduction": {
       "path": "AI Research/MiMo-V2.6 Pro vs. Flash - Is More RL Spending Worth It/MiMo-V2.6 Pro vs. Flash - Is More RL Spending Worth It.md",
       "file_name": "MiMo-V2.6 Pro vs. Flash - Is More RL Spending Worth It.md",
-      "bytes": 3237,
-      "sha256": "1ad8647df8219e2b8b7fe8a572acad3fa93f9487200e557c6bae1aca11016b95",
+      "bytes": 3179,
+      "sha256": "6992e6d07fa3e648c345c470c891648b21fa04205ced573a6e3522bf74541951",
       "release_url": ""
     }
   },
@@ -2437,8 +2437,8 @@
     "introduction": {
       "path": "Curiosity Lab/Mirror-Image Molecules - Can Algorithms Tell Them Apart/Mirror-Image Molecules - Can Algorithms Tell Them Apart.md",
       "file_name": "Mirror-Image Molecules - Can Algorithms Tell Them Apart.md",
-      "bytes": 2690,
-      "sha256": "ecb53037110f8f9d0436e6da6ceae136455bdf217ef919c98b7671ca4cf557e2",
+      "bytes": 2631,
+      "sha256": "e07b66532e4c3033eca27142b3701877a693ad875d13c69b2a45ccca588280d6",
       "release_url": ""
     }
   },
@@ -2464,8 +2464,8 @@
     "introduction": {
       "path": "Academic Research/Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024)/Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024).md",
       "file_name": "Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024).md",
-      "bytes": 3962,
-      "sha256": "a481b67acf7036af36a2fd64015cf7d04d460ca02e82a906e5c2626f853eafe5",
+      "bytes": 3886,
+      "sha256": "43c80ceed888a42994065631406f5099fbd64d42284bd721f925f3c42b4123ef",
       "release_url": ""
     }
   },
@@ -2491,8 +2491,8 @@
     "introduction": {
       "path": "Curiosity Lab/Monthly rotation of best-performing assets vs. buy-and-hold/Monthly rotation of best-performing assets vs. buy-and-hold.md",
       "file_name": "Monthly rotation of best-performing assets vs. buy-and-hold.md",
-      "bytes": 4190,
-      "sha256": "c9a7cefb377ba996abbddd03674c67298743c4600228c258fee1c35b23f42543",
+      "bytes": 4127,
+      "sha256": "df2f60d7b8f9ceabddbb72296a4f369715fc73456f6406fe28d2277fe7fef04c",
       "release_url": ""
     }
   },
@@ -2518,8 +2518,8 @@
     "introduction": {
       "path": "Curiosity Lab/Neurons Respond on Average - Does Every Trial Work/Neurons Respond on Average - Does Every Trial Work.md",
       "file_name": "Neurons Respond on Average - Does Every Trial Work.md",
-      "bytes": 2417,
-      "sha256": "fbb70d5f3ccb7258ecf6b8e0068608adb868d63cb689f270c440787b4c89b627",
+      "bytes": 2363,
+      "sha256": "4e3be6000e5e40a19c5f0b55b6a3ba1c5ec47a12ac7a152c038047e83b4a5408",
       "release_url": ""
     }
   },
@@ -2545,8 +2545,8 @@
     "introduction": {
       "path": "Curiosity Lab/Neutrino Energy - Does Higher Mean Sharper/Neutrino Energy - Does Higher Mean Sharper.md",
       "file_name": "Neutrino Energy - Does Higher Mean Sharper.md",
-      "bytes": 3278,
-      "sha256": "d8725a3c39cdb1b56e3f805c56804d9d7a9421de9da93cfc815903b130070c40",
+      "bytes": 3232,
+      "sha256": "7712652b84a2b1d8bfda214c53e6f3a78e8948071000c9b1ca3be8fd080f2324",
       "release_url": ""
     }
   },
@@ -2572,8 +2572,8 @@
     "introduction": {
       "path": "Curiosity Lab/Neutrino Hotspots - Signal or Chance/Neutrino Hotspots - Signal or Chance.md",
       "file_name": "Neutrino Hotspots - Signal or Chance.md",
-      "bytes": 2972,
-      "sha256": "814a0da94db0dbb58ead8890922053976aea6e3176c81b5a24251583d880b396",
+      "bytes": 2932,
+      "sha256": "c8b1d1d1c2b9e6ab63089d791320cebf6d27abcac7e43d73d18d5422b9f49661",
       "release_url": ""
     }
   },
@@ -2599,8 +2599,8 @@
     "introduction": {
       "path": "Curiosity Lab/NVDA: ALL AT ONCE OR FOUR WEEKS?/NVDA: ALL AT ONCE OR FOUR WEEKS?.md",
       "file_name": "NVDA: ALL AT ONCE OR FOUR WEEKS?.md",
-      "bytes": 3053,
-      "sha256": "2baa0ca864065932c693882bc63f3b483b996a85bea5bcb49ad929fae26ad4b8",
+      "bytes": 3017,
+      "sha256": "f8bdd539d10e5e8069ec78b356a51ad31f9fc8abe9e156f1275baa0bab9001e1",
       "release_url": ""
     }
   },
@@ -2626,8 +2626,8 @@
     "introduction": {
       "path": "Academic Research/Ocean Microbes - How Do They Relate to Nutrients/Ocean Microbes - How Do They Relate to Nutrients.md",
       "file_name": "Ocean Microbes - How Do They Relate to Nutrients.md",
-      "bytes": 3213,
-      "sha256": "9fa421a20915132553d026b82c7a08a8c4b01f647d73fd8a053a9c5ad70da1ea",
+      "bytes": 3161,
+      "sha256": "bedf6f502ed2cccf2962979545ea05af9443f59e2f588b41cfc9aa32e830d926",
       "release_url": ""
     }
   },
@@ -2653,8 +2653,8 @@
     "introduction": {
       "path": "Curiosity Lab/One Neutrino - How Much Sky/One Neutrino - How Much Sky.md",
       "file_name": "One Neutrino - How Much Sky.md",
-      "bytes": 2543,
-      "sha256": "68134a5b5d42d84d16bdc161d43d980535f36ca3e5a1b207bd948dd2ac8bf765",
+      "bytes": 2512,
+      "sha256": "de386ad3a23eb5e7550a7f123a2db35e45111b5ad982f18e326ca976a9fef914",
       "release_url": ""
     }
   },
@@ -2680,8 +2680,8 @@
     "introduction": {
       "path": "AI Research/One-Shot vs Chunked/One-Shot vs Chunked.md",
       "file_name": "One-Shot vs Chunked.md",
-      "bytes": 3047,
-      "sha256": "f8adf3a302342f4a08cdb7bb255b9b60ce0e2615aa48bd8ab6d265d0caa4bee9",
+      "bytes": 3024,
+      "sha256": "d3ef62d031fe1f0e67fdeeaa76b37b3cfb0cf1aa469ad5c86761dc8c55f32254",
       "release_url": ""
     }
   },
@@ -2707,8 +2707,8 @@
     "introduction": {
       "path": "AI Research/Open AI Models - What Can You Actually Download/Open AI Models - What Can You Actually Download.md",
       "file_name": "Open AI Models - What Can You Actually Download.md",
-      "bytes": 2666,
-      "sha256": "2166fd484fe3e7c180e433270950aa1af759e5c43d5279b4afb3152dc1ef1d3e",
+      "bytes": 2615,
+      "sha256": "c06ce0601b663068bf9f5278940eb1e592f9bfe2cbb495c3af55495fe25f265b",
       "release_url": ""
     }
   },
@@ -2734,8 +2734,8 @@
     "introduction": {
       "path": "Curiosity Lab/Our Nearest Exoplanet - How Long Is the Trip/Our Nearest Exoplanet - How Long Is the Trip.md",
       "file_name": "Our Nearest Exoplanet - How Long Is the Trip.md",
-      "bytes": 2959,
-      "sha256": "91d801d0548fc5b160505683ed8dfd8fb5119007b445294f146b9529aa84423e",
+      "bytes": 2911,
+      "sha256": "48d5c8696334249e669f92cabc55afe2f7463ddbf7fdbfc4d5c57d79fa498d24",
       "release_url": ""
     }
   },
@@ -2761,8 +2761,8 @@
     "introduction": {
       "path": "Academic Research/Pennsylvania construction employment and monitored PM2.5, 2023/Pennsylvania construction employment and monitored PM2.5, 2023.md",
       "file_name": "Pennsylvania construction employment and monitored PM2.5, 2023.md",
-      "bytes": 4217,
-      "sha256": "b0bb882f523c70bcf6b5f09962e5c9b695126e5855939f4a913e949c8c837e61",
+      "bytes": 4151,
+      "sha256": "1b7009a51ec65858454de83f2f8201faaf235f2654ea74431e65b13b63fe4e9c",
       "release_url": ""
     }
   },
@@ -2788,8 +2788,8 @@
     "introduction": {
       "path": "Academic Research/PFAS assay activity and placental cell-type expression/PFAS assay activity and placental cell-type expression.md",
       "file_name": "PFAS assay activity and placental cell-type expression.md",
-      "bytes": 3898,
-      "sha256": "5169852ca946eccb495b10eeca3d616b631cb8c76a526e562d9bf19f95ef2649",
+      "bytes": 3840,
+      "sha256": "c4087b622b0e726a86b4820a7ae50645e5e2a612da16626948233ee3ee2b50e7",
       "release_url": ""
     }
   },
@@ -2815,8 +2815,8 @@
     "introduction": {
       "path": "Academic Research/Physical activity and diabetes among US adults (NHANES 2011–2018)/Physical activity and diabetes among US adults (NHANES 2011–2018).md",
       "file_name": "Physical activity and diabetes among US adults (NHANES 2011–2018).md",
-      "bytes": 3957,
-      "sha256": "6e7cd477027794bb92bedb733dac6840f551787e8f97a5a6ac8b28851625abff",
+      "bytes": 3886,
+      "sha256": "9f884ee4cdec14b8133cb336875ad32b95a8f7ce67c2eecea1af1536da576bf2",
       "release_url": ""
     }
   },
@@ -2842,8 +2842,8 @@
     "introduction": {
       "path": "Academic Research/Protein abundance in ischemic failing versus non-failing human hearts/Protein abundance in ischemic failing versus non-failing human hearts.md",
       "file_name": "Protein abundance in ischemic failing versus non-failing human hearts.md",
-      "bytes": 3401,
-      "sha256": "b2cfe987b43dcd002a67d949aa512a63cd159310e5dc384111fa4e4465145a0c",
+      "bytes": 3328,
+      "sha256": "360e7d96d60debcf1ee2058da5529143808adc50ddb3c468e6b77030aa372aa8",
       "release_url": ""
     }
   },
@@ -2869,8 +2869,8 @@
     "introduction": {
       "path": "Academic Research/Protein Measurements - Do the Ratios Add Up/Protein Measurements - Do the Ratios Add Up.md",
       "file_name": "Protein Measurements - Do the Ratios Add Up.md",
-      "bytes": 4277,
-      "sha256": "bf28e7cf8ac61e7f981fb7da0add52dc86522b1d728db28c345f6389004f6c28",
+      "bytes": 4230,
+      "sha256": "60dfb18d9c36781e32ef8b58f7c73d8490e3a5463bb3af23079afa0efec607ae",
       "release_url": ""
     }
   },
@@ -2896,8 +2896,8 @@
     "introduction": {
       "path": "Academic Research/RAS mutations in two public pancreatic cohorts/RAS mutations in two public pancreatic cohorts.md",
       "file_name": "RAS mutations in two public pancreatic cohorts.md",
-      "bytes": 4339,
-      "sha256": "09234f7303d6f2bdcd4f41b30bc34b358377c4ee67f794d2b73fbeabb86d4928",
+      "bytes": 4289,
+      "sha256": "b2061675049cd11c989fd91c0c00a2fa53f2ea8105f5de046f11e85a2624dc87",
       "release_url": ""
     }
   },
@@ -2923,8 +2923,8 @@
     "introduction": {
       "path": "AI Research/Recursive Self-Improvement - What Does the Evidence Show/Recursive Self-Improvement - What Does the Evidence Show.md",
       "file_name": "Recursive Self-Improvement - What Does the Evidence Show.md",
-      "bytes": 3160,
-      "sha256": "6c468564fd14f65884c984d5d64183c63b9ef8ee33c5d36d2cf4a53c3f1ec63f",
+      "bytes": 3100,
+      "sha256": "bc1f4df2338dd1b7121c78d8c03b7173beda88ce40b24c9cfcb8691fe92148bd",
       "release_url": ""
     }
   },
@@ -2950,8 +2950,8 @@
     "introduction": {
       "path": "Academic Research/Registry-results availability in completed glioblastoma trials/Registry-results availability in completed glioblastoma trials.md",
       "file_name": "Registry-results availability in completed glioblastoma trials.md",
-      "bytes": 3220,
-      "sha256": "39cf6ff89710354f63007cab9ac190cb08ce8f9409e42bd5e2202dea82c458d5",
+      "bytes": 3154,
+      "sha256": "9be9a4be22110ac487f2a1f6f57b79293eaa165e25ee3707e0f36057b033696d",
       "release_url": ""
     }
   },
@@ -2977,8 +2977,8 @@
     "introduction": {
       "path": "Curiosity Lab/Reproducing the Dexamethasone Gene Response/Reproducing the Dexamethasone Gene Response.md",
       "file_name": "Reproducing the Dexamethasone Gene Response.md",
-      "bytes": 3277,
-      "sha256": "5bcada645dbb71ad8f931c2ad8502f9c77cb105d24b342c26c16e3cc3f770770",
+      "bytes": 3230,
+      "sha256": "96367621aebd76c22b0e2f43ed51f8493a3f69031a6586e04bde4f535d8e8838",
       "release_url": ""
     }
   },
@@ -3004,8 +3004,8 @@
     "introduction": {
       "path": "AI Research/Revised AI Papers - Did the Main Claim Change/Revised AI Papers - Did the Main Claim Change.md",
       "file_name": "Revised AI Papers - Did the Main Claim Change.md",
-      "bytes": 10432,
-      "sha256": "25e0510fe173885a3eec12c4a081ce6fe2f0f5d261658a2b18dbc2b8dcf15aba",
+      "bytes": 10383,
+      "sha256": "a375f96c8e2c71d155f1d8a19540bcad87d2cc87455fd9602723050c411f803c",
       "release_url": ""
     }
   },
@@ -3031,8 +3031,8 @@
     "introduction": {
       "path": "AI Research/Run JEV through 1,000 hands of Texas Holdem/Run JEV through 1,000 hands of Texas Holdem.md",
       "file_name": "Run JEV through 1,000 hands of Texas Holdem.md",
-      "bytes": 3822,
-      "sha256": "6da799dcfed3aad2fde6737a3cc3130a8c8f285db4037c527e0dbcbb4a15068b",
+      "bytes": 3775,
+      "sha256": "8e4cf720b691a0966e536e3443851964d7eb7c9cc2b6f1163016fe4c829cf9ce",
       "release_url": ""
     }
   },
@@ -3058,8 +3058,8 @@
     "introduction": {
       "path": "Curiosity Lab/Shared vs Separate Checkout Lines Simulation/Shared vs Separate Checkout Lines Simulation.md",
       "file_name": "Shared vs Separate Checkout Lines Simulation.md",
-      "bytes": 4951,
-      "sha256": "f2f868e47f121d8c10d807892efdda95064eab28443bf48a9229a3702a85f0ad",
+      "bytes": 4903,
+      "sha256": "fcc951ce81314d3c752e4874e93060e0d0dfe9a60425a6cf442b64738b3dec56",
       "release_url": ""
     }
   },
@@ -3085,8 +3085,8 @@
     "introduction": {
       "path": "Curiosity Lab/Soil Heavy Metals - Upstream vs Downstream/Soil Heavy Metals - Upstream vs Downstream.md",
       "file_name": "Soil Heavy Metals - Upstream vs Downstream.md",
-      "bytes": 3241,
-      "sha256": "2bf836b644cacadbd515d27d654cf132b2a11f1080096fdc88cce935412e1cce",
+      "bytes": 3195,
+      "sha256": "e87da527c14b3159f442a9e6019ef0b099a8483a6f2ec8472fc0a82db3bc98d8",
       "release_url": ""
     }
   },
@@ -3112,8 +3112,8 @@
     "introduction": {
       "path": "Academic Research/Spatial Immune Organization and Breast Cancer Prognosis/Spatial Immune Organization and Breast Cancer Prognosis.md",
       "file_name": "Spatial Immune Organization and Breast Cancer Prognosis.md",
-      "bytes": 3887,
-      "sha256": "bb269569e0e347bd46ea7aa437bcfdc332caa43255989ae3070f8a5e61311189",
+      "bytes": 3828,
+      "sha256": "f6e3c6f908ebb2da642a95b7903fda5077ab65f63da6050bff4296a8af1e8d83",
       "release_url": ""
     }
   },
@@ -3139,8 +3139,8 @@
     "introduction": {
       "path": "Curiosity Lab/Spending $100 on Ads vs. $100 on Content Which/Spending $100 on Ads vs. $100 on Content Which.md",
       "file_name": "Spending $100 on Ads vs. $100 on Content Which.md",
-      "bytes": 3113,
-      "sha256": "f0aa12f07f3482edd7aa1aa69d4293a58ddc53173152b3321eb32899397cefff",
+      "bytes": 3063,
+      "sha256": "3f561e827bc60dbbf61c81947a1508a62e66885f683eb166ff909d3141ca561e",
       "release_url": ""
     }
   },
@@ -3166,8 +3166,8 @@
     "introduction": {
       "path": "AI Research/The 100K Cliff/The 100K Cliff.md",
       "file_name": "The 100K Cliff.md",
-      "bytes": 3680,
-      "sha256": "4d6d5545ddbaaee6328baea6ae29abdd71f45c2c7db1be56dd8b38d87ee40694",
+      "bytes": 3662,
+      "sha256": "2c80bbc199e32950535c8e286bb7d9007d3880ce8570fb9bc8e05042e2bc1aa4",
       "release_url": ""
     }
   },
@@ -3193,8 +3193,8 @@
     "introduction": {
       "path": "Curiosity Lab/We keep arguing in the studio about product phot/We keep arguing in the studio about product phot.md",
       "file_name": "We keep arguing in the studio about product phot.md",
-      "bytes": 2658,
-      "sha256": "894680d4449c49e0a5eacbb3f11e49851317da95cd486eb25c1bf9e8a1720653",
+      "bytes": 2606,
+      "sha256": "c805a4846a54e30f70d9494939266dabf5e756357169de986bef54cea3598b5b",
       "release_url": ""
     }
   },
@@ -3220,8 +3220,8 @@
     "introduction": {
       "path": "Curiosity Lab/What Follows a Bitcoin Surge?/What Follows a Bitcoin Surge?.md",
       "file_name": "What Follows a Bitcoin Surge?.md",
-      "bytes": 2825,
-      "sha256": "242f942e76458b9f3786bf87b69c3226d5ead57fad43698f92ed3d8c9335a55e",
+      "bytes": 2792,
+      "sha256": "43aa64e91496a747fd4c94ea9ac412842397147751f6fbabccb6253381407acd",
       "release_url": ""
     }
   },
@@ -3247,8 +3247,8 @@
     "introduction": {
       "path": "Curiosity Lab/What Happens If You Remove 1% of the Nodes from the Fruit Fly Brain Network?/What Happens If You Remove 1% of the Nodes from the Fruit Fly Brain Network?.md",
       "file_name": "What Happens If You Remove 1% of the Nodes from the Fruit Fly Brain Network?.md",
-      "bytes": 3016,
-      "sha256": "b6de04f19f79b08eb52d32d2517bb864cfba657dfe314cdc9ab780d3d8307092",
+      "bytes": 2936,
+      "sha256": "d0f8644cdd9cd2c694028ae11304619e6913c9b2a7c20022759d1609cc90dd96",
       "release_url": ""
     }
   },
@@ -3274,8 +3274,8 @@
     "introduction": {
       "path": "AI Research/Where Do AlphaFold Protein Structures Lose Confidence/Where Do AlphaFold Protein Structures Lose Confidence.md",
       "file_name": "Where Do AlphaFold Protein Structures Lose Confidence.md",
-      "bytes": 2944,
-      "sha256": "76222d2f2dd3c226b9e7dd0b76e2edb0b6afc150ac0a2f6c0f5bb72af5a4070f",
+      "bytes": 2887,
+      "sha256": "f26cc73fe08c0101cdecdfcaeb74d10af2f52e75fb3fffa784f8558647bb787c",
       "release_url": ""
     }
   },
@@ -3301,8 +3301,8 @@
     "introduction": {
       "path": "Curiosity Lab/which deal is actually cheaper/which deal is actually cheaper.md",
       "file_name": "which deal is actually cheaper.md",
-      "bytes": 3666,
-      "sha256": "2f2e301ed2ac20c84d36f435087b4af39484f8ff756a450ba9be46ac8380a1e4",
+      "bytes": 3632,
+      "sha256": "7a0b63ef7e6ba7a092001a6a1610d714a73452778c1f6bf2b49f19a81148109a",
       "release_url": ""
     }
   },
@@ -3328,8 +3328,8 @@
     "introduction": {
       "path": "Curiosity Lab/Which Planet Is Most Like Earth—and Who Decides/Which Planet Is Most Like Earth—and Who Decides.md",
       "file_name": "Which Planet Is Most Like Earth—and Who Decides.md",
-      "bytes": 3902,
-      "sha256": "adb3489281e6e50cf86131ca958d3e91a1adfadc5b7e745c325aad3d49505319",
+      "bytes": 3849,
+      "sha256": "2c36369591c2f0b3ebcbd515f77f1cc4e05b4d674818dd1a1a4fcc3cea3d3ff6",
       "release_url": ""
     }
   },
@@ -3355,8 +3355,8 @@
     "introduction": {
       "path": "Curiosity Lab/Why Do Coffee and Sleep Studies Disagree/Why Do Coffee and Sleep Studies Disagree.md",
       "file_name": "Why Do Coffee and Sleep Studies Disagree.md",
-      "bytes": 5830,
-      "sha256": "9fbe311ffd7838d61109c4113ae7fe09f8fbeb210cabca2217338f2f2c81cf39",
+      "bytes": 5785,
+      "sha256": "b3bd2817a75e88c9f70953dbd86933e293f740b2ed1f993d4334e7426a571f7a",
       "release_url": ""
     }
   },
@@ -3382,8 +3382,8 @@
     "introduction": {
       "path": "AI Research/Will 10× Cheaper AI Increase Total Spending/Will 10× Cheaper AI Increase Total Spending.md",
       "file_name": "Will 10× Cheaper AI Increase Total Spending.md",
-      "bytes": 3078,
-      "sha256": "821c3e8361b8effa33895c5d8b8c88ea6265bb46eb803cd90d53fcd5c9ec75db",
+      "bytes": 3030,
+      "sha256": "c1760bba9ada93d67e0750212232e5340839aa5c2824c3c1548350ec836877c3",
       "release_url": ""
     }
   },
@@ -3409,8 +3409,8 @@
     "introduction": {
       "path": "AI Research/Will AI Overrefund or Underrefund/Will AI Overrefund or Underrefund.md",
       "file_name": "Will AI Overrefund or Underrefund.md",
-      "bytes": 3893,
-      "sha256": "4f71c31926630e3553fd040fdf5cd9c4e639ca510747396686235659768d27c6",
+      "bytes": 3856,
+      "sha256": "2189d1f0f12350cc9411ef401b35a3d6d1802a9b3451f1e2fa3be5061b9612a6",
       "release_url": ""
     }
   },
@@ -3436,8 +3436,8 @@
     "introduction": {
       "path": "Academic Research/Worm longevity genes and human exceptional-longevity evidence/Worm longevity genes and human exceptional-longevity evidence.md",
       "file_name": "Worm longevity genes and human exceptional-longevity evidence.md",
-      "bytes": 3642,
-      "sha256": "0a17ad176940581cb3e7aa71dbbb542f72df64ab64b9fb9549336052bb3b3f9e",
+      "bytes": 3577,
+      "sha256": "cd087fabb2a639a04b8553f85585df407268c8fc04046cdc5f9080c5f894d412",
       "release_url": ""
     }
   },
@@ -3463,8 +3463,8 @@
     "introduction": {
       "path": "AI Research/WOULD AN AI KEEP COOPERATING?/WOULD AN AI KEEP COOPERATING?.md",
       "file_name": "WOULD AN AI KEEP COOPERATING?.md",
-      "bytes": 3202,
-      "sha256": "7e6f22b9a69d0f1609097d5966fe56b0e7bf5f99d1cb14e18ec941dd0987b6f5",
+      "bytes": 3169,
+      "sha256": "4a99fbdb3235829a9350ad122fb925f8b086e5e8c356a2d65187c669dc2faba5",
       "release_url": ""
     }
   },
@@ -3490,8 +3490,8 @@
     "introduction": {
       "file_name": "Can We Reproduce Chinchilla Scaling.md",
       "path": "AI Research/Can We Reproduce Chinchilla Scaling/Can We Reproduce Chinchilla Scaling.md",
-      "bytes": 12557,
-      "sha256": "2af30a1e2e7eda27cad934f1a4831236719843c2856d4d4f3d6b44eac5d97e68",
+      "bytes": 12518,
+      "sha256": "25acfe2121f9fe708484701a38d87454ab4e19c0f865000d2391b535285e24a3",
       "release_url": ""
     },
     "video": {
@@ -3522,8 +3522,8 @@
     "introduction": {
       "file_name": "Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second.md",
       "path": "Curiosity Lab/Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second/Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second.md",
-      "bytes": 10492,
-      "sha256": "725f2ed656b1552c5a7e8e033c424147a1a90438d3939da1e7fe5f0c7589b7c9",
+      "bytes": 10437,
+      "sha256": "056611c363a19a8485bfedbddfc36c412994f50fd900a9151d0474abb614894d",
       "release_url": ""
     },
     "video": {
@@ -3554,8 +3554,8 @@
     "introduction": {
       "file_name": "How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds.md",
       "path": "Curiosity Lab/How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds/How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds.md",
-      "bytes": 9449,
-      "sha256": "5c88d6e1cb954d3d09d888ffa176afc5f930ba536c5cb26aa85304220b2d9cd6",
+      "bytes": 9374,
+      "sha256": "fe0c7c9e052fec59f6e308c5f6910cebf2c4c8ada7461beb17c36624378258cb",
       "release_url": ""
     },
     "video": {
@@ -3586,8 +3586,8 @@
     "introduction": {
       "file_name": "If ETH Fails, What Changes for Maximum Parsimony Local Search.md",
       "path": "Curiosity Lab/If ETH Fails, What Changes for Maximum Parsimony Local Search/If ETH Fails, What Changes for Maximum Parsimony Local Search.md",
-      "bytes": 8865,
-      "sha256": "d8a58d1cb47c2d662d533023304d8a7162799895b21c42a2942703bdda58d77e",
+      "bytes": 8799,
+      "sha256": "fca3f39228ca547d96d50ca9425f289bb9ce42ef8559787239dfd27f840dfcd5",
       "release_url": ""
     },
     "video": {
@@ -3618,8 +3618,8 @@
     "introduction": {
       "file_name": "Claude-Assisted CAR Design - Does Higher Expression Mean Better Function.md",
       "path": "AI Research/Claude-Assisted CAR Design - Does Higher Expression Mean Better Function/Claude-Assisted CAR Design - Does Higher Expression Mean Better Function.md",
-      "bytes": 10105,
-      "sha256": "80165f91ad9982e6a1ca4990a1ca2f0946b0ca231408eaf08720626b96a33723",
+      "bytes": 10029,
+      "sha256": "5df0725d5121e73fde471c7005c2d2260984912457d66cb359760cfaaf4269f8",
       "release_url": ""
     }
   },
@@ -3645,8 +3645,8 @@
     "introduction": {
       "file_name": "Google’s LLM Sleep - How Consistent Are the Math Reasoning Gains.md",
       "path": "AI Research/Google’s LLM Sleep - How Consistent Are the Math Reasoning Gains/Google’s LLM Sleep - How Consistent Are the Math Reasoning Gains.md",
-      "bytes": 9280,
-      "sha256": "7f72f9f94045e215c27ed6f96be2e15c276526338183b085f4b6996a72f2e21e",
+      "bytes": 9210,
+      "sha256": "122c90e4ad9de91a91a1b2b079c1c5a81f6225892fe78c8cb868fd769afd904d",
       "release_url": ""
     },
     "video": {
@@ -3677,8 +3677,8 @@
     "introduction": {
       "file_name": "Webb N159 Stellar Nursery - How Big Is One Pixel.md",
       "path": "Curiosity Lab/Webb N159 Stellar Nursery - How Big Is One Pixel/Webb N159 Stellar Nursery - How Big Is One Pixel.md",
-      "bytes": 12095,
-      "sha256": "e45f7db17b010178d0d63db04349062552d4fa11a283b8ca66a7b69b13b4c3ce",
+      "bytes": 12043,
+      "sha256": "05b4c840ae5c56f5c9e6c06adc14198eba565be27d7e0da21079d90f1e45d30d",
       "release_url": ""
     },
     "video": {
@@ -3709,8 +3709,8 @@
     "introduction": {
       "file_name": "Google Project Suncatcher - Where Does the Heat Go.md",
       "path": "AI Research/Google Project Suncatcher - Where Does the Heat Go/Google Project Suncatcher - Where Does the Heat Go.md",
-      "bytes": 13278,
-      "sha256": "c328e659199d8d6c0307625597a040b6a97c188246910738e558723ea44588f2",
+      "bytes": 13224,
+      "sha256": "60441d7040393de915f1d8ee4f5e6d8fecbd98a5f7e2ed9758d5157430d00ffd",
       "release_url": ""
     },
     "video": {
@@ -3741,8 +3741,8 @@
     "introduction": {
       "file_name": "HackerTube - Can AI Tell Recommendations from Criticism.md",
       "path": "AI Research/HackerTube - Can AI Tell Recommendations from Criticism/HackerTube - Can AI Tell Recommendations from Criticism.md",
-      "bytes": 11200,
-      "sha256": "aff41767b14cf6cdfed659a5cfa66f853bf73e5771986385036c3fefe9e0ac6f",
+      "bytes": 11141,
+      "sha256": "464393900cece1d1b2effed4a78a18f1feb6ce10ad23ebf7031f9050e39f7d9f",
       "release_url": ""
     },
     "video": {
@@ -3773,8 +3773,8 @@
     "introduction": {
       "file_name": "AI Agents for Radio Astronomy - Is That Signal Worth Following Up.md",
       "path": "AI Research/AI Agents for Radio Astronomy - Is That Signal Worth Following Up/AI Agents for Radio Astronomy - Is That Signal Worth Following Up.md",
-      "bytes": 12105,
-      "sha256": "b65cb0963869395e6b5f8a1e5073e88157ab7706c4827cec8100cd8d9b48a053",
+      "bytes": 12036,
+      "sha256": "f8feb9408bf33c4ea2a10e65d5665bb1df3a739b7e02b32038f2d27c6bf65052",
       "release_url": ""
     },
     "video": {
@@ -3805,8 +3805,8 @@
     "introduction": {
       "file_name": "Weight-Space Programming - Did Every Math Problem Improve.md",
       "path": "AI Research/Weight-Space Programming - Did Every Math Problem Improve/Weight-Space Programming - Did Every Math Problem Improve.md",
-      "bytes": 12008,
-      "sha256": "c5719c707beeed53244865191109804a4690a4bf18661485ccc5eb855f980675",
+      "bytes": 11947,
+      "sha256": "f35be10a316464b2ac047c9528494e7405bc73ee4aed1da70c746917dd9cf2ec",
       "release_url": ""
     },
     "video": {
@@ -3837,9 +3837,14 @@
     "introduction": {
       "file_name": "Pelican on a Bicycle - Do Its Feet Stay on the Pedals.md",
       "path": "AI Research/Pelican on a Bicycle - Do Its Feet Stay on the Pedals/Pelican on a Bicycle - Do Its Feet Stay on the Pedals.md",
-      "bytes": 9970,
-      "sha256": "d21a56cabd4e9570290313a8c2a8d6f95c17056dcf56bcb29ae30413ea05031f",
+      "bytes": 9913,
+      "sha256": "7f2861ebe67ea742db0687f39f54659ee3c7a67dfb68c9b4621268d14def7d63",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=UdhysF9ji00",
+      "file_name": "Can an AI Build a Pelican That Really Rides a Bicycle? — Open-Science Web Demo"
     }
   }
 ]

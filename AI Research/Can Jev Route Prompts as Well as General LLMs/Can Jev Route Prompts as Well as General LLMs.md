@@ -1,5 +1,3 @@
-# Can Jev Route Prompts as Well as General LLMs
-
 ## Research question
 
 What does a specialized choice router gain and lose relative to a general language model?

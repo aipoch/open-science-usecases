@@ -1,5 +1,3 @@
-# Spatial Immune Organization and Breast Cancer Prognosis
-
 ## Research question
 
 Does spatial immune information improve prognosis prediction beyond clinical variables and cell composition?

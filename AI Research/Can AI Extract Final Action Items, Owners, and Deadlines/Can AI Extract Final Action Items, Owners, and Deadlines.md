@@ -1,5 +1,3 @@
-# Can AI Extract Final Action Items, Owners, and Deadlines
-
 ## Research question
 
 Can extraction preserve the final state of a task after a meeting changes its owner, date, or status?

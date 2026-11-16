@@ -1,5 +1,3 @@
-# WOULD AN AI KEEP COOPERATING?
-
 ## Research question
 
 Can a one-round change in an opponent’s timeline alter a fixed strategy’s long-run cooperation?

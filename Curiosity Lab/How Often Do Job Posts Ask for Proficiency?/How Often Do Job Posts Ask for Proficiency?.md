@@ -1,5 +1,3 @@
-# How Often Do Job Posts Ask for Proficiency?
-
 ## Research question
 
 How often do exact skill-language expressions occur in one captured job feed?

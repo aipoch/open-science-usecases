@@ -1,5 +1,3 @@
-# Can We Forecast Mauna Loa's CO2
-
 ## Research question
 
 Does a seasonal time-series model improve on simple CO2 forecasts at each prediction horizon?

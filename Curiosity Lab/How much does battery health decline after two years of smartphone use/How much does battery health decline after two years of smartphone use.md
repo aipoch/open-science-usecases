@@ -1,5 +1,3 @@
-# How much does battery health decline after two years of smartphone use
-
 ## Research question
 
 What can selected owner reports say about one model’s battery health after roughly two years?

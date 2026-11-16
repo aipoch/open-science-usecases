@@ -1,5 +1,3 @@
-# Can 20 Pokémon Packs Guarantee an SIR
-
 ## Research question
 
 Does seeing frequent rare-card pulls make a short run of packs a guarantee?

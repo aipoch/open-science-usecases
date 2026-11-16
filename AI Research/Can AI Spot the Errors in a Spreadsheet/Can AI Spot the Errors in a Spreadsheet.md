@@ -1,5 +1,3 @@
-# Can AI Spot the Errors in a Spreadsheet?
-
 ## Research topic and question
 
 - Can you check this spreadsheet for mistakes before I use it? Tell me what looks wrong, which cells are affected, and how you would fix it.

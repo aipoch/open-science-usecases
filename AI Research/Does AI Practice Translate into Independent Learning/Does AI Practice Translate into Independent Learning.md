@@ -1,5 +1,3 @@
-# Does AI Practice Translate into Independent Learning
-
 **Creator:** @cheery9998  
 
 ## Research question

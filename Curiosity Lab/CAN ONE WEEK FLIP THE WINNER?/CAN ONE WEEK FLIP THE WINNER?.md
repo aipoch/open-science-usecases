@@ -1,5 +1,3 @@
-# CAN ONE WEEK FLIP THE WINNER?
-
 ## Research question
 
 Can buying the same assets five shared trading days apart change the historical winner?

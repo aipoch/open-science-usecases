@@ -1,5 +1,3 @@
-# Card Shuffle Adjacency Simulation
-
 ## Research question
 
 How quickly does an idealized shuffle erase one visible trace of the original deck order?

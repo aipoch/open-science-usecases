@@ -1,5 +1,3 @@
-# Reproducing the Dexamethasone Gene Response
-
 **Creator:** @servasyy_ai  
 
 ## Research question

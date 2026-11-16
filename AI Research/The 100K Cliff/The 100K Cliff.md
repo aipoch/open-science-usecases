@@ -1,5 +1,3 @@
-# The 100K Cliff
-
 ## Research question
 
 What happens when tokenizer changes move the same text across a rate boundary?

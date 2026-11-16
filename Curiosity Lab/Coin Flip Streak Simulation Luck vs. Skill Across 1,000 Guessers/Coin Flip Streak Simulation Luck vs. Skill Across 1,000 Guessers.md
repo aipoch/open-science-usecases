@@ -1,5 +1,3 @@
-# Coin Flip Streaks: Selection, Luck, and a Fresh Test
-
 ## Research question
 
 If 1,000 people independently guess the same ten fair coin flips, how often will someone look like a perfect predictor by chance? Does selecting the first-round winners give them an advantage on a fresh sequence?

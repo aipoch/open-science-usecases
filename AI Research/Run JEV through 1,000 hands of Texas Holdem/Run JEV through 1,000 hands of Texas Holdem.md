@@ -1,5 +1,3 @@
-# Run JEV through 1,000 hands of Texas Holdem
-
 ## Research question
 
 What was actually evaluated under the requested poker-agent label?

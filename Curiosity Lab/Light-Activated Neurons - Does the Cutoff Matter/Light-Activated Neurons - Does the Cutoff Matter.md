@@ -1,5 +1,3 @@
-# Light-Activated Neurons - Does the Cutoff Matter
-
 ## Research question
 
 Which response classifications survive changes in window, effect threshold, and multiplicity correction?

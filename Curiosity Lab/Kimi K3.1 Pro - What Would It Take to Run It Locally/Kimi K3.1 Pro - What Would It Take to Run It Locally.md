@@ -1,5 +1,3 @@
-# Kimi K3.1 Pro: What Would It Take to Run It Locally?
-
 ## The question
 
 An accessible model repository is only the beginning of a local deployment. How much data must be acquired, how long might that transfer take, what storage allowance changes the answer, and which runtime requirements still need evidence?

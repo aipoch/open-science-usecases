@@ -1,5 +1,3 @@
-# PFAS assay activity and placental cell-type expression
-
 ## Research question
 
 Which assay-linked genes also appear in the placental expression data, and how much does mapping strictness matter?

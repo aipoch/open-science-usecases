@@ -1,5 +1,3 @@
-# In a Year's Worth of Weather Forecasts, Are Predictions of ‘Sunny’ Weather More Accurate, or Are Predictions of ‘Rain’ More Accurate?
-
 ## Research question
 
 How can unequal rain and sunshine base rates distort an apparent accuracy comparison?

@@ -1,5 +1,3 @@
-# Open AI Models - What Can You Actually Download
-
 ## Research question
 
 What is open in a named model release: weights, supporting files, training assets, or reproducible evaluation?

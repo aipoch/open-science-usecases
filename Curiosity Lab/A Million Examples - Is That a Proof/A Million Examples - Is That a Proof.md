@@ -1,5 +1,3 @@
-# A Million Examples - Is That a Proof?
-
 ## Research topic and question
 
 If a mathematical claim survives a million tests, why is that still not a proof? This case compares sequential testing, random sampling, and a structured search for an exact counterexample to Euler's conjecture about sums of like powers. It uses the historical fifth-power example attributed to Lander and Parkin as a demonstration, not a new discovery.

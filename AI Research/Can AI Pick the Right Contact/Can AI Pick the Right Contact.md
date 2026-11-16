@@ -1,5 +1,3 @@
-# Can AI Pick the Right Contact
-
 ## Research question
 
 Can an email draft be matched to the intended person when several contacts share a name?

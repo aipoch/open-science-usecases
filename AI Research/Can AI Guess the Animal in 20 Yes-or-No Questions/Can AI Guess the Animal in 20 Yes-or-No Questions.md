@@ -1,5 +1,3 @@
-# Can AI Guess the Animal in 20 Yes-or-No Questions
-
 ## Research question
 
 Can successive yes-or-no answers narrow an animal identification within a fixed question budget?

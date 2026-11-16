@@ -1,5 +1,3 @@
-# Can AI Find Five Hidden Planet-Like Signals
-
 ## Research question
 
 How well can numerical-summary judgments recover deliberately injected transit-like signals?

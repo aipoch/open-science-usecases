@@ -1,5 +1,3 @@
-# Can Social Pressure Make AI Change a Correct Answer
-
 ## Research question
 
 Can a controlled pressure manipulation make a model abandon a previously correct response?

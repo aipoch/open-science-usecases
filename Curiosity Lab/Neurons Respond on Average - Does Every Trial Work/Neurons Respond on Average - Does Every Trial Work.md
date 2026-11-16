@@ -1,5 +1,3 @@
-# Neurons Respond on Average - Does Every Trial Work
-
 ## Research question
 
 Can a large average firing-rate response coexist with failures on individual pulses?

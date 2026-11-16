@@ -1,5 +1,3 @@
-# AI Math Papers - Can You Check the Proofs
-
 ## Research question
 
 What proof materials accompany a sampled research family, and which main claims do they actually cover?

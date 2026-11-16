@@ -1,5 +1,3 @@
-# Involved versus uninvolved Crohn ileum - donor-aware expression assessment
-
 ## Research question
 
 Which expression contrasts remain credible when paired donors, rather than individual cells, define replication?

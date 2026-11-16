@@ -1,5 +1,3 @@
-# Google’s LLM Sleep: How Consistent Are the Math Reasoning Gains?
-
 ## The question
 
 Does a method improve mathematical reasoning consistently across model sizes, tasks, baselines, and component choices—or does a broad headline hide uneven comparisons? This case audits the reported mathematical-reasoning results in *Language Models Need Sleep: Learning to Self-Modify and Consolidate Memories*, focusing on Tables 1 and 2 of arXiv version 2.

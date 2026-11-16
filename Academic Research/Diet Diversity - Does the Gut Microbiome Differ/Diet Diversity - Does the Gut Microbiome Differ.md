@@ -1,5 +1,3 @@
-# Diet Diversity - Does the Gut Microbiome Differ
-
 ## Research question
 
 Is reported plant diversity associated with microbial composition after country adjustment?

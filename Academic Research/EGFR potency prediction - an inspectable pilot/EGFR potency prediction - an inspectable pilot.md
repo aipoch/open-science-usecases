@@ -1,5 +1,3 @@
-# EGFR potency prediction - an inspectable pilot
-
 ## Research question
 
 How much predictive performance survives separation by publication and by distant chemistry?

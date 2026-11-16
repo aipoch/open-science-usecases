@@ -1,5 +1,3 @@
-# MiMo-V2.6 Pro vs. Flash - Is More RL Spending Worth It
-
 ## Research question
 
 What can public cost and benchmark disclosures establish about additional reinforcement-learning spending?

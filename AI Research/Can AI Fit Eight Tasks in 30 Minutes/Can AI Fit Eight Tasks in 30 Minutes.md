@@ -1,5 +1,3 @@
-# Can AI Fit Eight Tasks in 30 Minutes
-
 ## Research question
 
 What can one person finish in a fixed half-hour when tasks depend on one another?

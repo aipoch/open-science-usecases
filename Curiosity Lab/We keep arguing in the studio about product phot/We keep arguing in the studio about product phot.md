@@ -1,5 +1,3 @@
-# We keep arguing in the studio about product phot
-
 ## Research question
 
 Can a background-only experiment isolate changes in perceived product price?

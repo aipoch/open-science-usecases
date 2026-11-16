@@ -1,5 +1,3 @@
-# At 70% should you take it
-
 ## Research question
 
 Does a 70% rain forecast tell everyone to make the same decision?

@@ -1,5 +1,3 @@
-# Can AI Make Good Trade-Offs When Packing a Suitcase
-
 ## Research question
 
 Can a packing choice balance utility with a hard weight limit, and can its claimed optimum be verified?

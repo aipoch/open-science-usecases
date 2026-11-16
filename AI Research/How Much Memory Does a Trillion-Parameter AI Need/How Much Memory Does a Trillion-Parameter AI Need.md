@@ -1,5 +1,3 @@
-# How Much Memory Does a Trillion-Parameter AI Need
-
 ## Research question
 
 Why is weight storage only part of the memory needed to serve a very large model?

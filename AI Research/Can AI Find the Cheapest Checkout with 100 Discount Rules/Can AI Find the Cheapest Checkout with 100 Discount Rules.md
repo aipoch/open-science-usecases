@@ -1,5 +1,3 @@
-# Can AI Find the Cheapest Checkout with 100 Discount Rules
-
 ## Research question
 
 How close is a saved intuitive purchase plan to the exact minimum under the same discount rules?

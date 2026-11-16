@@ -1,5 +1,3 @@
-# Can AI Bluff and Detect Bluffs in Poker
-
 ## Research question
 
 Do calling and raising decisions change when opponents bluff more often?

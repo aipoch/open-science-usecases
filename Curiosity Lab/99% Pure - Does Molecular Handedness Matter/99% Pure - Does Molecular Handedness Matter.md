@@ -1,5 +1,3 @@
-# 99% Pure - Does Molecular Handedness Matter
-
 ## Research question
 
 Can two equally pure samples contain very different proportions of the desired enantiomer?

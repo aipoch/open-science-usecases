@@ -1,5 +1,3 @@
-# AI Explains Math - What Gets Lost
-
 ## Research question
 
 When a theorem becomes a plain-language explanation, which assumptions or quantifiers stop being explicit?

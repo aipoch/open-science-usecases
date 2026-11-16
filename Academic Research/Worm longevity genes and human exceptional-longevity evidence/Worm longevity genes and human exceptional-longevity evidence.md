@@ -1,5 +1,3 @@
-# Worm longevity genes and human exceptional-longevity evidence
-
 ## Research question
 
 Do human candidates mapped from worm longevity genes overlap eligible exceptional-longevity catalog evidence?

@@ -1,5 +1,3 @@
-# Can AI Find the Shortest Paris Sightseeing Route
-
 ## Research question
 
 How does a fixed landmark order compare with simple heuristics and an exact distance minimum?

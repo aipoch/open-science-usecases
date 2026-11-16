@@ -1,5 +1,3 @@
-# Air Pollution - Is the Turning Point Real
-
 ## Research question
 
 Does the annual exposure series require a change in slope, or can a simpler trend explain it?

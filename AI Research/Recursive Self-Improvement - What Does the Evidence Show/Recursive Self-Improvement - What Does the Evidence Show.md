@@ -1,5 +1,3 @@
-# Recursive Self-Improvement - What Does the Evidence Show
-
 **Creator:** @dongxi_nlp  
 
 ## Research question

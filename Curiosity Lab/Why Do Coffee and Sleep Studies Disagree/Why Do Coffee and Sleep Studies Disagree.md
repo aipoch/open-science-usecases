@@ -1,5 +1,3 @@
-# Why Do Coffee and Sleep Studies Disagree?
-
 ## Research topic and question
 
 - Why Do Coffee and Sleep Studies Disagree?

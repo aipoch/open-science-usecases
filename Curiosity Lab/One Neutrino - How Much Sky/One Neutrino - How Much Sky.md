@@ -1,5 +1,3 @@
-# One Neutrino - How Much Sky
-
 ## Research question
 
 How large is an alert’s localization region compared with a familiar angular scale?

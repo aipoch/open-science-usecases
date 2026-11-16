@@ -1,5 +1,3 @@
-# CAN AI PICK LUCKY LOTTERY NUMBERS?
-
 ## Research question
 
 Can historical frequency give a fixed lottery ticket an advantage over random or sequential numbers?

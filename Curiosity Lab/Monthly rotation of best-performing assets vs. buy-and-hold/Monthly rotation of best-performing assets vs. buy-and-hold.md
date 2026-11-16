@@ -1,5 +1,3 @@
-# Monthly rotation of best-performing assets vs. buy-and-hold
-
 ## Research question
 
 What does a trailing-return rotation rule do when it cannot see future prices?

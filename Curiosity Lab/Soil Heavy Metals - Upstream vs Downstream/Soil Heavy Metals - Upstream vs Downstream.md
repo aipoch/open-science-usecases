@@ -1,5 +1,3 @@
-# Soil Heavy Metals - Upstream vs Downstream
-
 **Creator:** @RealYDT  
 
 ## Research question

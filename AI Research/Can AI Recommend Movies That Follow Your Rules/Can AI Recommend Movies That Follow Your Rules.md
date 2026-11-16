@@ -1,5 +1,3 @@
-# Can AI Recommend Movies That Follow Your Rules
-
 ## Research question
 
 How often does a fixed watchlist violate the user’s runtime, genre, or sequel restrictions?

@@ -1,5 +1,3 @@
-# Gold vs Bitcoin 28 Days Changed the Winner
-
 ## Research question
 
 How sensitive is an equal-dollar asset comparison to the historical entry checkpoint?

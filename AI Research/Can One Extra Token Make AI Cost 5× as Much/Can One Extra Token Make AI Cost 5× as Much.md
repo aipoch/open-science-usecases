@@ -1,5 +1,3 @@
-# Can One Extra Token Make AI Cost 5× as Much?
-
 ## Research topic and question
 
 - Can a small increase in prompt length cause a sudden jump in estimated API cost when it crosses a pricing threshold?

@@ -1,5 +1,3 @@
-# Which Planet Is Most Like Earth—and Who Decides
-
 ## Research question
 
 How do ties and weighting choices change an Earth-similarity ranking?

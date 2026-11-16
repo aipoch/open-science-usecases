@@ -1,5 +1,3 @@
-# AqSolDB scaffold novelty and aqueous solubility prediction
-
 ## Research question
 
 Does a solubility model retain its accuracy when test molecules come from held-out scaffolds?

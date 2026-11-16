@@ -1,5 +1,3 @@
-# Monitoring-site mix and PM2.5 trends in Los Angeles County (2015–2024)
-
 ## Research question
 
 Does the apparent county trend change when the same monitoring sites are followed throughout?

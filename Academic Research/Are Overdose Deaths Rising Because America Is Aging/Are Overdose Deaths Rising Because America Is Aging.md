@@ -1,5 +1,3 @@
-# Are Overdose Deaths Rising Because America Is Aging
-
 ## Research question
 
 Could changing population age composition explain the historical rise in overdose mortality?

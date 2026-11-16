@@ -1,5 +1,3 @@
-# which deal is actually cheaper
-
 ## Research question
 
 Which promotion minimizes checkout cost when the two products have different prices?

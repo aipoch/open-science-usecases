@@ -1,5 +1,3 @@
-# First Flight vs. Evening Flight - Which Is More Reliable
-
 ## Archived study
 
 Compares first morning flights with evening departures from JFK, LaGuardia, and Newark using a supplied July 2026 BTS reporting-carrier file. The archived analysis matches routes and airlines, includes cancellations in its disruption measure, and checks an alternative definition of morning as before 09:00.

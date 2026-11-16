@@ -1,5 +1,3 @@
-# A City's 100-Year Rainfall Record
-
 ## Research question
 
 Are heavy-rain events becoming more frequent, or is a larger fraction of annual rain falling in the very largest storms?

@@ -1,5 +1,3 @@
-# AI Math Citations - Do They Check Out
-
 ## Research question
 
 Does a bibliography entry identify a real work, and does that work support the surrounding claim?

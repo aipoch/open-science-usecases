@@ -1,5 +1,3 @@
-# How early should you leave
-
 ## Research question
 
 How much departure buffer is needed for a weekly rather than a daily reliability target?

@@ -1,5 +1,3 @@
-# Can GLP-1 Drugs Really Help Us Live Longer?
-
 ## Research topic and question
 
 - Can GLP-1 Drugs Really Help Us Live Longer?

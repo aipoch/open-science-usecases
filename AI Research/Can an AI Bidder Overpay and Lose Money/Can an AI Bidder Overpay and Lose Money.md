@@ -1,5 +1,3 @@
-# Can an AI Bidder Overpay and Lose Money
-
 ## Research question
 
 Does a bidder respect its private valuation when the current price makes winning unprofitable?

@@ -11,3 +11,7 @@ Effective 2026-10-22, every published `.science` filename must use hyphens (`-`)
 - Old URLs remain accessible using historical Git/Hugging Face revisions. Current-branch links using the former filename need the renamed path.
 
 Website publication uses `name` and `file_name` to construct object keys. Changing a package filename therefore schedules that resource for upload/extraction under the repository's existing publication rules. Source-repository updates and a submitted PR are not proof of completed website publication.
+
+## Website case introduction headings
+
+The case detail page already renders `manifest.title` as its only H1. Published case introduction Markdown must contain no H1: omit the opening `# Case title` and begin with the overview or confirmed Creator credit. Use H2 for sections and H3 for subsections; do not demote all existing section headings. Setext H1 and HTML `<h1>` are also disallowed in rendered introduction content. Verify the Markdown-rendered body has zero H1 elements before submission. Keep case titles and filenames unchanged. This rule does not change reports inside native `.science` packages. Use [the introduction template](templates/case-introduction.md) and replace all placeholders with case-specific evidence. Recompute introduction byte sizes and SHA-256 values after edits.
