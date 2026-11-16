@@ -1,6 +1,6 @@
 # Case categories
 
-`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 137 classified cases, including the Lyra reanalysis case synchronized from Hugging Face snapshot `c2e8e9005ead5192763fc8f2dee6ebe33a36315b`. One existing unclassified case remains under `usecases/`.
+`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 138 classified cases, including the Pelican animation case synchronized from Hugging Face snapshot `9be564f73f6d1b7ee715122bd871b488fdb16522`. One existing unclassified case remains under `usecases/`.
 
 ## Curiosity Lab (53)
 
@@ -60,10 +60,11 @@
 | If ETH Fails, What Changes for Maximum Parsimony Local Search? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search.md) |
 | Webb N159 Stellar Nursery: How Big Is One Pixel? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Webb%20N159%20Stellar%20Nursery%20-%20How%20Big%20Is%20One%20Pixel/Webb%20N159%20Stellar%20Nursery%20-%20How%20Big%20Is%20One%20Pixel.md) |
 
-## AI Research (54)
+## AI Research (55)
 
 | Case | Introduction |
 |---|---|
+| Pelican on a Bicycle: Do Its Feet Stay on the Pedals? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Pelican%20on%20a%20Bicycle%20-%20Do%20Its%20Feet%20Stay%20on%20the%20Pedals/Pelican%20on%20a%20Bicycle%20-%20Do%20Its%20Feet%20Stay%20on%20the%20Pedals.md) |
 | Lyra 2.0: Better Pictures, but Do They Still Match? | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Lyra%202.0%20-%20Better%20Pictures%2C%20but%20Do%20They%20Still%20Match/Lyra%202.0%20-%20Better%20Pictures%2C%20but%20Do%20They%20Still%20Match.md) |
 | AI Explains Math - What Gets Lost | [Read](AI%20Research/AI%20Explains%20Math%20-%20What%20Gets%20Lost/AI%20Explains%20Math%20-%20What%20Gets%20Lost.md) |
 | AI Math Citations - Do They Check Out | [Read](AI%20Research/AI%20Math%20Citations%20-%20Do%20They%20Check%20Out/AI%20Math%20Citations%20-%20Do%20They%20Check%20Out.md) |
