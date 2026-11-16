@@ -1031,6 +1031,11 @@
       "bytes": 2807,
       "sha256": "9d2798ed7dd04c6369e0c6352c05f05c47388818c837c8b13c462b28cc4c8987",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=7aYYAK7Xo-Y",
+      "file_name": "Can AI Make Good Trade-Offs When Packing a Suitcase? — Open-Science Web Demo"
     }
   },
   {
@@ -3808,6 +3813,33 @@
       "type": "youtube",
       "file_path": "https://www.youtube.com/watch?v=7Lgr2oOr5lQ",
       "file_name": "Weight-Space Programming: Did Every Math Problem Improve? | Open-Science Web Demo"
+    }
+  },
+  {
+    "title": "Pelican on a Bicycle: Do Its Feet Stay on the Pedals?",
+    "name": "pelican-on-a-bicycle-do-its-feet-stay-on-the-pedals",
+    "catalog": "AI Research",
+    "catalog_name": "ai-research",
+    "cover": {
+      "file_name": "Pelican on a Bicycle - Do Its Feet Stay on the Pedals.png",
+      "path": "AI Research/Pelican on a Bicycle - Do Its Feet Stay on the Pedals/Pelican on a Bicycle - Do Its Feet Stay on the Pedals.png",
+      "bytes": 866143,
+      "sha256": "30f57f06b179626ae90bdfdc1be00537400b0ea0c08490c43c76edb68ed894f6",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Pelican-on-a-Bicycle---Do-Its-Feet-Stay-on-the-Pedals.science",
+      "path": "AI Research/Pelican on a Bicycle - Do Its Feet Stay on the Pedals/Pelican-on-a-Bicycle---Do-Its-Feet-Stay-on-the-Pedals.science",
+      "bytes": 113289486,
+      "sha256": "b83911be9577c7a61e7156a18d652901b370078ece3859c2dbc780c87835f816",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/9be564f73f6d1b7ee715122bd871b488fdb16522/AI%20Research/Pelican%20on%20a%20Bicycle%20-%20Do%20Its%20Feet%20Stay%20on%20the%20Pedals/Pelican-on-a-Bicycle---Do-Its-Feet-Stay-on-the-Pedals.science"
+    },
+    "introduction": {
+      "file_name": "Pelican on a Bicycle - Do Its Feet Stay on the Pedals.md",
+      "path": "AI Research/Pelican on a Bicycle - Do Its Feet Stay on the Pedals/Pelican on a Bicycle - Do Its Feet Stay on the Pedals.md",
+      "bytes": 9970,
+      "sha256": "d21a56cabd4e9570290313a8c2a8d6f95c17056dcf56bcb29ae30413ea05031f",
+      "release_url": ""
     }
   }
 ]
