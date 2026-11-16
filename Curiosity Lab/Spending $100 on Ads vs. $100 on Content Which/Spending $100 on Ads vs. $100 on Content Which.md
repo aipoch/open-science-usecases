@@ -1,5 +1,3 @@
-# Spending $100 on Ads vs. $100 on Content Which
-
 ## Research question
 
 What changes when a marketing comparison uses immediate response versus a mature program?

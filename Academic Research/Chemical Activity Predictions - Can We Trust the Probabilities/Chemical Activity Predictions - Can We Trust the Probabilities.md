@@ -1,5 +1,3 @@
-# Chemical Activity Predictions - Can We Trust the Probabilities
-
 ## Research question
 
 Can a model rank assay-active compounds and also assign reliable activity probabilities?

@@ -1,5 +1,3 @@
-# Can petal length identify iris
-
 ## Research question
 
 How much species information is available from one flower measurement?

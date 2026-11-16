@@ -1,5 +1,3 @@
-# Can AI Read the Numbers from One Chart
-
 ## Research question
 
 Can the plotted observations be recovered as a usable table with their units intact?

@@ -1,5 +1,3 @@
-# AI Math Counterexample - Does Exact Arithmetic Agree
-
 ## Research question
 
 Can a small explicit construction be independently checked without relying on approximate numerical agreement?

@@ -1,5 +1,3 @@
-# Genomic context of the Horvath epigenetic clock
-
 ## Research question
 
 Do apparent clock-CpG enrichments persist when the comparison background better reflects platform availability?

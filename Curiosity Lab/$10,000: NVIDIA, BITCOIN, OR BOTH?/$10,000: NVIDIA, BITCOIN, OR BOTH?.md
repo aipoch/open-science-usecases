@@ -1,5 +1,3 @@
-# $10,000: NVIDIA, BITCOIN, OR BOTH?
-
 ## Research question
 
 Would diversification improve the outcome of the same initial investment over the same historical dates?

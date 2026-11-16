@@ -1,5 +1,3 @@
-# CAN 10,000 AI PAPERS PREDICT WHICH TOPICS WILL GROW SIX MONTHS LATER?
-
 ## Research question
 
 Do earlier changes in topic shares persist in a later period?

@@ -1,5 +1,3 @@
-# Can a Layout Change Make AI Miss Parts of Your Resume
-
 ## Research question
 
 Does changing layout alter extracted information when the underlying resume content is held fixed?

@@ -1,5 +1,3 @@
-# Pelican on a Bicycle: Do Its Feet Stay on the Pedals?
-
 A convincing cycling animation needs more than spinning wheels. The rider's feet must follow the pedals, the knees must bend without changing limb length, and wheel rotation must agree with the bicycle's travel. This case follows an AI coding session that built a procedural Three.js scene and checked those relationships in saved numeric evidence and browser captures.
 
 The archived scene places a stylised pelican on a cruiser bicycle travelling around a coastal road. The central question is deliberately narrower than whether the scene looks attractive: **does the animation preserve contact and synchronization as speed, camera view and playback state change?**

@@ -1,5 +1,3 @@
-# From brain map to walking fly
-
 ## Research question
 
 What has to be supplied between a connectivity map and a six-legged body simulation?

@@ -1,5 +1,3 @@
-# AI Agents for Radio Astronomy: Is That Signal Worth Following Up?
-
 ## The question
 
 A bright drifting feature in a radio observation can look persuasive on its own. What happens when a reference direction shows the same feature, calibration is uncertain or part of the observation is missing? This case asks what evidence should change the next action before any claim about a signal's origin is made.

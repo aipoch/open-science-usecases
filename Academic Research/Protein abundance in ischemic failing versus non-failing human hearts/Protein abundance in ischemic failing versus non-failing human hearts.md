@@ -1,5 +1,3 @@
-# Protein abundance in ischemic failing versus non-failing human hearts
-
 ## Research question
 
 Which apparent protein differences survive a change in normalization?

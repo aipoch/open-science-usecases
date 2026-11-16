@@ -1,5 +1,3 @@
-# What Happens If You Remove 1% of the Nodes from the Fruit Fly Brain Network?
-
 ## Research question
 
 Is losing a random neuron structurally equivalent to losing a highly connected hub?

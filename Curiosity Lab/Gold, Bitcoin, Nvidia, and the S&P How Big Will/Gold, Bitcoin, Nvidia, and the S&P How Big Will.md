@@ -1,5 +1,3 @@
-# Gold, Bitcoin, Nvidia, and the S&P How Big Will
-
 ## Research question
 
 How do return rankings change when risk is displayed beside terminal growth?

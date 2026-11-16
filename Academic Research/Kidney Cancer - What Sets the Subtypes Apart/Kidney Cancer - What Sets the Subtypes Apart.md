@@ -1,5 +1,3 @@
-# Kidney Cancer - What Sets the Subtypes Apart
-
 ## Research question
 
 Which expression and pathway patterns distinguish the three renal tumor subtypes in this historical cohort?

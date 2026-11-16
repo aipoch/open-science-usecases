@@ -1,5 +1,3 @@
-# Webb N159 Stellar Nursery: How Big Is One Pixel?
-
 ## The question
 
 A beautiful Webb image contains millions of pixels—but what distance does one of them represent in the scene? And if a pixel spans thousands of astronomical units, does that tell us the size of the smallest object the telescope can resolve?

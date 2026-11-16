@@ -1,5 +1,3 @@
-# For the same one-square-meter area, which receives more solar energy over the course of a year London or Seattle
-
 ## Research question
 
 Can matched sunshine-duration records answer a question about annual solar energy?

@@ -1,5 +1,3 @@
-# AI or Human - What Story Structure Reveals
-
 **Creator:** @Saccc_c  
 
 ## Research question

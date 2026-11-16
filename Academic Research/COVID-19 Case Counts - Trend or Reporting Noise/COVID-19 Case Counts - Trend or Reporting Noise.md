@@ -1,5 +1,3 @@
-# COVID-19 Case Counts - Trend or Reporting Noise
-
 ## Research question
 
 Which features reflect the broad reported-case wave, and which reflect the reporting calendar?

@@ -1,5 +1,3 @@
-# Can AI Beat Wordle?
-
 ## Research topic and question
 
 - How many guesses does AI usually need to solve Wordle? Try it against a simple word-filtering algorithm using the same word list and answers. Who wins more often, and who needs fewer guesses?

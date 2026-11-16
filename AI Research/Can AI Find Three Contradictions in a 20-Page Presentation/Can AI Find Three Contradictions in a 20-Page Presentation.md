@@ -1,5 +1,3 @@
-# Can AI Find Three Contradictions in a 20-Page Presentation
-
 ## Research question
 
 Can a reader identify conflicting claims and locate both sides of each discrepancy?

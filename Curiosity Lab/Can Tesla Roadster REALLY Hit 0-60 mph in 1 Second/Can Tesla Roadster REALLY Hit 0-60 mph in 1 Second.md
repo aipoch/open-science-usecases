@@ -1,5 +1,3 @@
-# Can Tesla Roadster REALLY Hit 0-60 mph in 1 Second?
-
 What would a Roadster-like car need to reach 60 mph from rest in less than a second: better tires, more downforce, more wheel power, or a separate source of forward thrust? This case turns that question into a sequence of idealized force models, then tests how an extra 200 kg changes the answer.
 
 **At the adopted friction coefficient of 1.2, tire traction alone gives an ideal 0–60 mph time of about 2.28 seconds.** An independent horizontal thruster can bring some modeled combinations below the study's stricter **0.99 s** goal. With 600 kW wheel power, drag and 40 kN of extra thrust, the saved calculations give **0.79026 s at 1,800 kg** and **0.84589 s at 2,000 kg**. These are conditional simulation results for a hypothetical car, not measurements or specifications of a Tesla.

@@ -1,5 +1,3 @@
-# Our Nearest Exoplanet - How Long Is the Trip
-
 ## Research question
 
 How does a simple distance–speed calculation change near relativistic speeds?

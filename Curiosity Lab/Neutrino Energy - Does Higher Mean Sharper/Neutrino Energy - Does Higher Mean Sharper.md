@@ -1,5 +1,3 @@
-# Neutrino Energy - Does Higher Mean Sharper
-
 ## Research question
 
 Does the overall energy–uncertainty trend hold across sky directions?

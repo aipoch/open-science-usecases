@@ -1,5 +1,3 @@
-# Can AI Keep Track of Corrections in Meeting Notes
-
 ## Research question
 
 Can the final interpretation retain cancellations, transfers, and withdrawn deadlines rather than the first-mentioned facts?

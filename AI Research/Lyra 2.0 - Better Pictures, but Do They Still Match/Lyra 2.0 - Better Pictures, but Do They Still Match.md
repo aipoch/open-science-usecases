@@ -1,5 +1,3 @@
-# Lyra 2.0: Better Pictures, but Do They Still Match?
-
 ## The question
 
 A generated walkthrough can look attractive while its views drift apart. Does a higher perceptual-quality score also mean better style consistency, camera control and geometric agreement? This case examines that question using a fixed published ablation table rather than generating new scenes.

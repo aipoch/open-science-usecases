@@ -1,5 +1,3 @@
-# Hotter Years, Hotter Days?
-
 ## Research topic and question
 
 - Can the Hottest Ten Days Reveal What Averages Hide?

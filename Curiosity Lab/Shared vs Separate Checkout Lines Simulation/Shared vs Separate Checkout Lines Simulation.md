@@ -1,5 +1,3 @@
-# Shared vs Separate Checkout Lines Simulation
-
 ## Research question
 
 Does queue organization change typical waits and the experience of the unluckiest customers?

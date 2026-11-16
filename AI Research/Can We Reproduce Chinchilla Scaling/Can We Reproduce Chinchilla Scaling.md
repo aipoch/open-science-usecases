@@ -1,5 +1,3 @@
-# Can We Reproduce Chinchilla Scaling
-
 **Creator:** @Xudong07452910
 
 ## Research question

@@ -1,5 +1,3 @@
-# Amazon Tree-Cover Loss - Does the Definition Change the Picture
-
 ## Research question
 
 How much does the canopy definition change measured tree-cover loss in the same geographic window?

@@ -1,5 +1,3 @@
-# Pennsylvania construction employment and monitored PM2.5, 2023
-
 ## Research question
 
 How much construction employment falls in counties with an eligible annual monitoring summary?

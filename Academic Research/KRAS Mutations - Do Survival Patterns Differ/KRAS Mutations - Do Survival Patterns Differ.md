@@ -1,5 +1,3 @@
-# KRAS Mutations - Do Survival Patterns Differ
-
 ## Research question
 
 Do KRAS mutation groups show different survival patterns after specimen collection?

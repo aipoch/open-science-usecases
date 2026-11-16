@@ -1,5 +1,3 @@
-# Chiral Molecules - Can a 0.1% Lead Take Over
-
 ## Research question
 
 When can a tiny left-right imbalance amplify in an explicitly defined reaction model?

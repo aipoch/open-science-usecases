@@ -1,5 +1,3 @@
-# Is Thinking Longer Worth It?
-
 ## Research question
 
 When does extra reasoning effort buy enough improvement to justify more tokens?

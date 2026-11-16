@@ -1,5 +1,3 @@
-# Can AI Fit 10 London Landmarks Into One Day
-
 ## Research question
 
 Will a plausible sightseeing list remain feasible after durations, travel, and opening windows are added?

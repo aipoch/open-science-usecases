@@ -1,5 +1,3 @@
-# Blood Metabolites - Can They Distinguish Cancer from Polyps
-
 ## Research question
 
 Can the processed metabolite measurements distinguish cancer samples from polyp samples within this dataset?

@@ -1,5 +1,3 @@
-# Neutrino Hotspots - Signal or Chance
-
 ## Research question
 
 How surprising is the strongest-looking sky patch after searching many patches?

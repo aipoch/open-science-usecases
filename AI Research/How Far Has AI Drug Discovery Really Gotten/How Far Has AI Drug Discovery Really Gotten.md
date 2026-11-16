@@ -1,5 +1,3 @@
-# How Far Has AI Drug Discovery Really Gotten
-
 ## Research question
 
 Which studies move beyond computational prediction to experiments or human dosing?

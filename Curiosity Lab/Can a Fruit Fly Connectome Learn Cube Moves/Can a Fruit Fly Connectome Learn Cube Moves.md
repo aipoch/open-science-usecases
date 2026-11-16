@@ -1,5 +1,3 @@
-# Can a Fruit Fly Connectome Learn Cube Moves
-
 **Creator:** @MinLiBuilds  
 
 ## Research question

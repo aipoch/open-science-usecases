@@ -1,5 +1,3 @@
-# Physical activity and diabetes among US adults (NHANES 2011–2018)
-
 ## Research question
 
 How does the activity–diabetes prevalence contrast change after demographic and BMI adjustment?

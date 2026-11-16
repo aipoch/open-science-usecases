@@ -1,5 +1,3 @@
-# HackerTube: Can AI Tell Recommendations from Criticism?
-
 ## The question
 
 A video link inside a discussion is easy to extract. Deciding whether the writer recommends that video is harder: the comment may merely cite it, endorse one item in a list, or criticize a different claim in the surrounding thread. Can an AI-assisted workflow keep those distinctions visible while building a useful watchlist?

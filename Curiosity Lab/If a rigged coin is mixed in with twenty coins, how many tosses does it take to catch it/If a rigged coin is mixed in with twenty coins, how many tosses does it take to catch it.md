@@ -1,5 +1,3 @@
-# If a rigged coin is mixed in with twenty coins, how many tosses does it take to catch it
-
 ## Research question
 
 How do bias strength and the number of competing coins affect identification?

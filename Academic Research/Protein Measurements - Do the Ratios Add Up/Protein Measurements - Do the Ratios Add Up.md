@@ -1,5 +1,3 @@
-# Protein Measurements - Do the Ratios Add Up
-
 ## Research question
 
 Do measured protein-channel ratios recover the intended spike-in quantities?

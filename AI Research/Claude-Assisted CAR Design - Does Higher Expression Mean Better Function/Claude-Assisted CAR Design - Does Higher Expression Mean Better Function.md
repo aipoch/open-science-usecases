@@ -1,5 +1,3 @@
-# Claude-Assisted CAR Design: Does Higher Expression Mean Better Function?
-
 ## The question
 
 A receptor can become easier to express without improving every functional endpoint. This case examines that distinction in a Claude-assisted chimeric antigen receptor (CAR) design study: when a redesigned intracellular domain produces more surface receptors, does it also produce stronger cytokine responses, more tumor-cell killing, or longer activity?

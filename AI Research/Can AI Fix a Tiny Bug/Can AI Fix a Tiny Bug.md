@@ -1,5 +1,3 @@
-# Can AI Fix a Tiny Bug?
-
 ## Research question
 
 How should three AI bug-fix attempts be compared when the visible patches look correct but their test runs cannot be independently verified? This case records an evidence-aware review of three referenced sessions, labeled **apodex**, **DeepSeek**, and **GPT**, for a small timestamp-boundary bug.

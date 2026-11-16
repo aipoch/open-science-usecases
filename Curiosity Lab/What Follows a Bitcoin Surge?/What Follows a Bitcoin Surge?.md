@@ -1,5 +1,3 @@
-# What Follows a Bitcoin Surge?
-
 ## Research question
 
 How should a post-surge return question be defined before inspecting its outcomes?

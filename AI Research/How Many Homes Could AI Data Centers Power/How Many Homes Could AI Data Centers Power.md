@@ -1,5 +1,3 @@
-# How Many Homes Could AI Data Centers Power?
-
 ## Research topic and question
 
 - How much electricity do AI data centers use in a year, and how many homes is that equivalent to? Use the latest public figures you can find, matching the year and region for the comparison. I'd like to see how the answer changes depending on what counts as AI data center use and how household electricity use is measured.

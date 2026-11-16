@@ -1,5 +1,3 @@
-# Mass Spectra - Can They Reveal a Chemical Family
-
 ## Research question
 
 Can processed tandem mass spectra predict chemical family for held-out compound identities?

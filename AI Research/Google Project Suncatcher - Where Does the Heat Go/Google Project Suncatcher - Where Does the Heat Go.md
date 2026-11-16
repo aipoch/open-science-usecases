@@ -1,5 +1,3 @@
-# Google Project Suncatcher: Where Does the Heat Go?
-
 ## The question
 
 Moving AI computation into orbit changes where the electricity comes from, but it does not make the resulting waste heat disappear. How can a spacecraft reject that heat without surrounding air, and how much radiator area would a simplified calculation require?

@@ -1,5 +1,3 @@
-# Weight-Space Programming: Did Every Math Problem Improve?
-
 ## The question
 
 A model's average math score can rise sharply while some problems remain unsolved. This case asks whether an apparent gain from weight-space programming extends to every shared problem, and what the saved records can actually tell us about the change.

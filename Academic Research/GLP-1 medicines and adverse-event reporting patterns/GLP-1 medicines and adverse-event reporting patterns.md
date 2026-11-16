@@ -1,5 +1,3 @@
-# GLP-1 medicines and adverse-event reporting patterns
-
 ## Research question
 
 Are particular events disproportionately reported with the selected medicines in the frozen FAERS snapshot?

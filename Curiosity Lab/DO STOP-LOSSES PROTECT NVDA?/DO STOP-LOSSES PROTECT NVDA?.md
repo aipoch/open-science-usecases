@@ -1,5 +1,3 @@
-# DO STOP-LOSSES PROTECT NVDA?
-
 ## Research question
 
 How do tighter stop rules change both downside exposure and time invested?

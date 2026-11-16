@@ -1,5 +1,3 @@
-# Light On - How Fast Do Neurons Respond
-
 ## Research question
 
 How quickly do recorded neurons respond to a light pulse under a fixed response definition?

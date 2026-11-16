@@ -1,5 +1,3 @@
-# If ETH Fails, What Changes for Maximum Parsimony Local Search?
-
 ## The question
 
 What happens to a computational lower bound when the assumption supporting it is removed? This case follows that question through a concrete phylogenetics problem: finding a nearby tree that explains observed character states with fewer changes.

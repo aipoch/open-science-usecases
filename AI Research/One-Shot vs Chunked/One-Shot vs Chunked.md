@@ -1,5 +1,3 @@
-# One-Shot vs Chunked
-
 ## Research question
 
 When do intermediate summaries offset the savings from avoiding a long-context pricing tier?

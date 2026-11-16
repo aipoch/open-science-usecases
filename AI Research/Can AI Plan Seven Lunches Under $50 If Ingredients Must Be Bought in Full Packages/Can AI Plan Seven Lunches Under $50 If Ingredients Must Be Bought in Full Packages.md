@@ -1,5 +1,3 @@
-# Can AI Plan Seven Lunches Under $50 If Ingredients Must Be Bought in Full Packages
-
 ## Research question
 
 Is a seven-lunch budget feasible when groceries must be bought as whole packages?

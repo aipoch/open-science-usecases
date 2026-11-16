@@ -1,5 +1,3 @@
-# Registry-results availability in completed glioblastoma trials
-
 ## Research question
 
 How often do the eligible completed trials show registry results in the captured snapshot?

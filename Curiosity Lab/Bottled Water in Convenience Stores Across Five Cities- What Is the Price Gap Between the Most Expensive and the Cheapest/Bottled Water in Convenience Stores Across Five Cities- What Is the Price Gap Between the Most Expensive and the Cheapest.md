@@ -1,5 +1,3 @@
-# Bottled Water in Convenience Stores Across Five Cities- What Is the Price Gap Between the Most Expensive and the Cheapest
-
 ## Research question
 
 How different are prices when bottle size and product type are held comparable?

@@ -1,5 +1,3 @@
-# Will 10× Cheaper AI Increase Total Spending
-
 ## Research question
 
 How can a cheaper unit price coexist with a higher total bill?

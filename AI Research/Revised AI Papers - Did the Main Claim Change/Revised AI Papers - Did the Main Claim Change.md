@@ -1,5 +1,3 @@
-# Revised AI Papers - Did the Main Claim Change
-
 ## Research question
 
 Which revision changes the mathematical claim rather than just its presentation?

@@ -1,5 +1,3 @@
-# Birthday Paradox: Any Pair or Your Birthday?
-
 ## Research question
 
 Does a room of 23 people really have about a 50% chance of a shared birthday? Does that also mean a 50% chance that someone shares your birthday? This case combines an archived simulation with exact probability curves to distinguish those two events.

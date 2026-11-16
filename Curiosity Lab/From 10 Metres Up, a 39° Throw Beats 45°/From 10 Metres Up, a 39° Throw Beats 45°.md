@@ -1,5 +1,3 @@
-# From 10 Metres Up, a 39° Throw Beats 45°
-
 ## Research question
 
 Is 45° still the best launch angle when a ball lands below its release point? This case compares a 20 m/s throw from 10 m above the landing surface at 45° and at the angle that maximizes horizontal range, then repeats the comparison at release heights of 0, 2, and 20 m.

@@ -1,5 +1,3 @@
-# How Much Gas Does It Take to Make a Tesla Roadster Hover for 5 Seconds?
-
 A car hovering on gas thrust sounds like a question about engine power. This case shows why it is also a question about carrying—and continuously losing—mass. It follows a hypothetical Roadster-like vehicle through a one-metre ascent, a five-second hover and a controlled descent, checking both the gas budget and the thrust required at every stage.
 
 **In the adopted model, 200 kg of gas is enough for the ascent but only 3.370 seconds of subsequent hover.** Completing the prescribed two-second ascent, five-second hover and two-second descent requires approximately **347.634 kg of initial gas at the zero-reserve boundary**, with dry mass fixed at 1,800 kg. This is a calculation for an idealized propulsion system, rather than a measurement or specification of a Tesla vehicle.

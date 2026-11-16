@@ -1,5 +1,3 @@
-# RAS mutations in two public pancreatic cohorts
-
 ## Research question
 
 How different are reported RAS mutation frequencies under a common ductal-histology eligibility rule?

@@ -1,5 +1,3 @@
-# Mirror-Image Molecules - Can Algorithms Tell Them Apart
-
 ## Research question
 
 Which molecular representation makes enantiomers distinguishable to a fingerprint?

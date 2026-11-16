@@ -1,5 +1,3 @@
-# Can AI Plan a Fair Chinese Shared Dinner
-
 ## Research question
 
 Can a shared menu satisfy dietary safety while distributing satisfaction across different preferences?
