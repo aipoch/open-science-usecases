@@ -1,0 +1,163 @@
+Create a complete, fully functional, visually impressive, real-time interactive 3D animation of a pelican riding a bicycle.
+
+This is a practical AI coding, spatial reasoning, animation, and 3D simulation benchmark. The objective is to produce an actual working interactive application, not a static image, conceptual design, written description, or prerecorded video.
+
+1. Technology
+
+Use Three.js with JavaScript, HTML, and CSS.
+
+Prefer a lightweight browser-based implementation that can run locally.
+
+Generate the actual 3D models, scene geometry, materials, animations, and interaction logic programmatically.
+
+Do not rely on AI-generated images, prerecorded animations, or external 3D model assets to replace the main objects.
+
+Use procedural geometry and mathematical animation wherever practical.
+
+2. Main 3D Scene
+
+Create a charming, visually polished coastal environment featuring a realistic yet stylized pelican riding a functional bicycle along a scenic seaside road.
+
+The pelican should have:
+
+A recognizable long beak and throat pouch.
+
+A well-proportioned body, wings, feathers, eyes, neck, and legs.
+
+A natural cycling posture.
+
+Feet positioned on the bicycle pedals.
+
+Wings or appropriate appendages holding the handlebars.
+
+The bicycle should have:
+
+Two properly constructed wheels with spokes.
+
+A realistic frame, saddle, handlebars, pedals, crankset, and drivetrain.
+
+Correct proportions and mechanical connections.
+
+Proper rotational movement of the wheels and pedals.
+
+The environment should include:
+
+A winding coastal road.
+
+Ocean, sky, clouds, and distant islands.
+
+Palm trees, grass, rocks, and roadside scenery.
+
+Natural lighting, shadows, and visually appealing materials.
+
+3. Animation and Physical Consistency
+
+The pelican must actually ride and pedal the bicycle.
+
+Implement a continuously looping, mechanically consistent cycling animation.
+
+Requirements:
+
+Bicycle wheels rotate according to actual travel distance.
+
+Pedals rotate continuously around the crank axis.
+
+Both feet remain attached to their respective pedals throughout the animation.
+
+The pelican's legs follow the pedals through coherent joint animation or inverse kinematics.
+
+The rider remains naturally positioned on the saddle.
+
+The bicycle moves smoothly along the road without unrealistic sliding.
+
+The cycling speed, pedal cadence, and wheel rotation must remain synchronized.
+
+Prioritize spatial correctness and animation consistency over decorative complexity.
+
+4. Interactive Controls
+
+Create a fully interactive 3D experience.
+
+Allow the user to:
+
+Rotate the camera around the pelican and bicycle through 360 degrees.
+
+Zoom in and out with the mouse wheel.
+
+Pause and resume the animation.
+
+Adjust cycling speed with an interactive slider.
+
+Switch between side, front, rear, and free-camera views.
+
+Reset the scene and camera.
+
+Observe the bicycle and pedaling motion from any angle.
+
+Provide a clean, modern interface with intuitive controls.
+
+5. Visual Quality
+
+Aim for a polished, professional-quality 3D demonstration.
+
+Use smooth geometry, detailed but efficient materials, convincing lighting, shadows, and subtle environmental animation.
+
+The result should look like a thoughtfully designed interactive 3D experience rather than a collection of primitive shapes.
+
+Maintain smooth rendering performance on an ordinary desktop computer.
+
+6. Implementation and Verification
+
+Do not stop after writing the code.
+
+Create all necessary project files.
+
+Install or configure required dependencies if needed.
+
+Run the application locally.
+
+Detect and fix JavaScript, rendering, dependency, and runtime errors.
+
+If browser automation or screenshot tools are available, inspect the actual rendered scene and correct visual or mechanical defects.
+
+Test animation controls, camera interaction, and cycling synchronization.
+
+Clearly report any validation steps that could not be completed.
+
+7. Deliverables
+
+Save all generated artifacts in the Open-Science project workspace.
+
+Required outputs:
+
+Complete HTML, JavaScript, and CSS source code.
+
+A working interactive 3D application.
+
+Instructions for launching the application locally.
+
+A README explaining the scene, animation logic, and controls.
+
+Screenshots or a short demonstration recording if rendering and capture tools are available.
+
+A verification report documenting completed checks and remaining limitations.
+
+Preserve the relevant project files and execution evidence so that the finished work can be exported through Open-Science as a reproducible .science package.
+
+8. Final Acceptance Criteria
+
+The project is successful only if:
+
+A recognizable 3D pelican is visibly riding a recognizable bicycle.
+
+The bicycle wheels and pedals animate correctly.
+
+The pelican's feet track the rotating pedals.
+
+The scene can be viewed interactively from multiple angles.
+
+The project runs in a real browser without critical errors.
+
+Do not substitute a static image, nonfunctional mockup, or descriptive report for the working application.
+
+Proceed autonomously through implementation, local testing, debugging, and final delivery using the available tools and permissions.

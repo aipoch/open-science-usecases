@@ -1,0 +1,6885 @@
+{
+  "version": 1,
+  "authoring": "Blender 5.3 via MCP",
+  "coordinateSystem": "Y up, metres",
+  "meshes": [
+    {
+      "key": "root/4/0",
+      "name": "Rebuilt root/4/0",
+      "visible": true,
+      "material": "Terrain · sand and coastal scrub",
+      "attributes": {
+        "position": {
+          "offset": 0,
+          "count": 77940,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 311760,
+          "count": 77940,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 623520,
+          "count": 51960,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 831360,
+          "count": 152928,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/1",
+      "name": "Rebuilt root/4/1",
+      "visible": true,
+      "material": "Road · weathered aggregate and paint",
+      "attributes": {
+        "position": {
+          "offset": 1443072,
+          "count": 36012,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 1587120,
+          "count": 36012,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 1731168,
+          "count": 24008,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 1827200,
+          "count": 54000,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/3",
+      "name": "Rebuilt root/4/3",
+      "visible": true,
+      "material": "Palm · fibrous bark",
+      "attributes": {
+        "position": {
+          "offset": 2043200,
+          "count": 2034,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 2051336,
+          "count": 2034,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 2059472,
+          "count": 1356,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 2064896,
+          "count": 3114,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/4",
+      "name": "Rebuilt root/4/4",
+      "visible": true,
+      "material": "Foliage · waxy coastal leaves",
+      "attributes": {
+        "position": {
+          "offset": 2077352,
+          "count": 50190,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 2278112,
+          "count": 50190,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 2478872,
+          "count": 33460,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 2612712,
+          "count": 50190,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 2813472,
+          "count": 55272,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/5",
+      "name": "Rebuilt root/4/5",
+      "visible": true,
+      "material": "Palm · fibrous bark",
+      "attributes": {
+        "position": {
+          "offset": 3034560,
+          "count": 2034,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 3042696,
+          "count": 2034,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 3050832,
+          "count": 1356,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 3056256,
+          "count": 3114,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/6",
+      "name": "Rebuilt root/4/6",
+      "visible": true,
+      "material": "Foliage · waxy coastal leaves",
+      "attributes": {
+        "position": {
+          "offset": 3068712,
+          "count": 50190,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 3269472,
+          "count": 50190,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 3470232,
+          "count": 33460,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 3604072,
+          "count": 50190,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 3804832,
+          "count": 55272,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/7",
+      "name": "Rebuilt root/4/7",
+      "visible": true,
+      "material": "Palm · fibrous bark",
+      "attributes": {
+        "position": {
+          "offset": 4025920,
+          "count": 2034,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 4034056,
+          "count": 2034,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 4042192,
+          "count": 1356,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 4047616,
+          "count": 3114,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/8",
+      "name": "Rebuilt root/4/8",
+      "visible": true,
+      "material": "Foliage · waxy coastal leaves",
+      "attributes": {
+        "position": {
+          "offset": 4060072,
+          "count": 50190,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 4260832,
+          "count": 50190,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 4461592,
+          "count": 33460,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 4595432,
+          "count": 50190,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 4796192,
+          "count": 55272,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/9",
+      "name": "Rebuilt root/4/9",
+      "visible": true,
+      "material": "Coastal granite · scanned",
+      "attributes": {
+        "position": {
+          "offset": 5017280,
+          "count": 2436,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5027024,
+          "count": 2436,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5036768,
+          "count": 1624,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5043264,
+          "count": 4860,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/10",
+      "name": "Rebuilt root/4/10",
+      "visible": true,
+      "material": "Foliage · waxy coastal leaves",
+      "attributes": {
+        "position": {
+          "offset": 5062704,
+          "count": 495,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5064684,
+          "count": 495,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5066664,
+          "count": 330,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 5067984,
+          "count": 495,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 5069964,
+          "count": 528,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/11",
+      "name": "Rebuilt root/4/11",
+      "visible": true,
+      "material": "Foliage · waxy coastal leaves",
+      "attributes": {
+        "position": {
+          "offset": 5072076,
+          "count": 210,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5072916,
+          "count": 210,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5073756,
+          "count": 140,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 5074316,
+          "count": 210,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 5075156,
+          "count": 210,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/12",
+      "name": "Rebuilt root/4/12",
+      "visible": true,
+      "material": "Foliage · waxy coastal leaves",
+      "attributes": {
+        "position": {
+          "offset": 5075996,
+          "count": 4860,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5095436,
+          "count": 4860,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5114876,
+          "count": 3240,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 5127836,
+          "count": 4860,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 5147276,
+          "count": 5184,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/13",
+      "name": "Rebuilt root/4/13",
+      "visible": true,
+      "material": "Surface root/4/13",
+      "attributes": {
+        "position": {
+          "offset": 5168012,
+          "count": 216,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5168876,
+          "count": 216,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5169740,
+          "count": 144,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 5170316,
+          "count": 216,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 5171180,
+          "count": 108,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/14",
+      "name": "Rebuilt root/4/14",
+      "visible": true,
+      "material": "Terrain · sand and coastal scrub",
+      "attributes": {
+        "position": {
+          "offset": 5171612,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5185136,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5198660,
+          "count": 2254,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5207676,
+          "count": 6336,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/15",
+      "name": "Rebuilt root/4/15",
+      "visible": true,
+      "material": "Terrain · sand and coastal scrub",
+      "attributes": {
+        "position": {
+          "offset": 5233020,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5246544,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5260068,
+          "count": 2254,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5269084,
+          "count": 6336,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/16",
+      "name": "Rebuilt root/4/16",
+      "visible": true,
+      "material": "Terrain · sand and coastal scrub",
+      "attributes": {
+        "position": {
+          "offset": 5294428,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5307952,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5321476,
+          "count": 2254,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5330492,
+          "count": 6336,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/17",
+      "name": "Rebuilt root/4/17",
+      "visible": true,
+      "material": "Terrain · sand and coastal scrub",
+      "attributes": {
+        "position": {
+          "offset": 5355836,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5369360,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5382884,
+          "count": 2254,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5391900,
+          "count": 6336,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/18",
+      "name": "Rebuilt root/4/18",
+      "visible": true,
+      "material": "Terrain · sand and coastal scrub",
+      "attributes": {
+        "position": {
+          "offset": 5417244,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5430768,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5444292,
+          "count": 2254,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5453308,
+          "count": 6336,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/19",
+      "name": "Rebuilt root/4/19",
+      "visible": true,
+      "material": "Terrain · sand and coastal scrub",
+      "attributes": {
+        "position": {
+          "offset": 5478652,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5492176,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5505700,
+          "count": 2254,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5514716,
+          "count": 6336,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/20",
+      "name": "Rebuilt root/4/20",
+      "visible": true,
+      "material": "Terrain · sand and coastal scrub",
+      "attributes": {
+        "position": {
+          "offset": 5540060,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5553584,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5567108,
+          "count": 2254,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5576124,
+          "count": 6336,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/21",
+      "name": "Rebuilt root/4/21",
+      "visible": true,
+      "material": "Terrain · sand and coastal scrub",
+      "attributes": {
+        "position": {
+          "offset": 5601468,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5614992,
+          "count": 3381,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5628516,
+          "count": 2254,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5637532,
+          "count": 6336,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/22/0",
+      "name": "Rebuilt root/4/22/0",
+      "visible": true,
+      "material": "Coastal granite · scanned",
+      "attributes": {
+        "position": {
+          "offset": 5662876,
+          "count": 2436,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5672620,
+          "count": 2436,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5682364,
+          "count": 1624,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5688860,
+          "count": 4860,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/22/1",
+      "name": "Rebuilt root/4/22/1",
+      "visible": true,
+      "material": "Surface root/4/22/1",
+      "attributes": {
+        "position": {
+          "offset": 5708300,
+          "count": 6216,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5733164,
+          "count": 6216,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5758028,
+          "count": 4144,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 5774604,
+          "count": 6216,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 5799468,
+          "count": 9372,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/22/2",
+      "name": "Rebuilt root/4/22/2",
+      "visible": true,
+      "material": "Surface root/4/22/2",
+      "attributes": {
+        "position": {
+          "offset": 5836956,
+          "count": 231,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5837880,
+          "count": 231,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5838804,
+          "count": 154,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5839420,
+          "count": 192,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/23/0",
+      "name": "Rebuilt root/4/23/0",
+      "visible": true,
+      "material": "Surface root/4/23/0",
+      "attributes": {
+        "position": {
+          "offset": 5840188,
+          "count": 447,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5841976,
+          "count": 447,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5843764,
+          "count": 298,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5844956,
+          "count": 648,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/23/1",
+      "name": "Rebuilt root/4/23/1",
+      "visible": true,
+      "material": "Surface root/4/23/1",
+      "attributes": {
+        "position": {
+          "offset": 5847548,
+          "count": 84,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5847884,
+          "count": 84,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5848220,
+          "count": 56,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5848444,
+          "count": 72,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/23/2",
+      "name": "Rebuilt root/4/23/2",
+      "visible": true,
+      "material": "Sails · woven off-white canvas",
+      "attributes": {
+        "position": {
+          "offset": 5848732,
+          "count": 273,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5849824,
+          "count": 273,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5850916,
+          "count": 182,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5851644,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/23/3",
+      "name": "Rebuilt root/4/23/3",
+      "visible": true,
+      "material": "Sails · woven off-white canvas",
+      "attributes": {
+        "position": {
+          "offset": 5853372,
+          "count": 273,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5854464,
+          "count": 273,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5855556,
+          "count": 182,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5856284,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/24/0",
+      "name": "Rebuilt root/4/24/0",
+      "visible": true,
+      "material": "Surface root/4/24/0",
+      "attributes": {
+        "position": {
+          "offset": 5858012,
+          "count": 447,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5859800,
+          "count": 447,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5861588,
+          "count": 298,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5862780,
+          "count": 648,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/24/1",
+      "name": "Rebuilt root/4/24/1",
+      "visible": true,
+      "material": "Surface root/4/24/1",
+      "attributes": {
+        "position": {
+          "offset": 5865372,
+          "count": 84,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5865708,
+          "count": 84,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5866044,
+          "count": 56,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5866268,
+          "count": 72,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/24/2",
+      "name": "Rebuilt root/4/24/2",
+      "visible": true,
+      "material": "Sails · woven off-white canvas",
+      "attributes": {
+        "position": {
+          "offset": 5866556,
+          "count": 273,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5867648,
+          "count": 273,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5868740,
+          "count": 182,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5869468,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/24/3",
+      "name": "Rebuilt root/4/24/3",
+      "visible": true,
+      "material": "Sails · woven off-white canvas",
+      "attributes": {
+        "position": {
+          "offset": 5871196,
+          "count": 273,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5872288,
+          "count": 273,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5873380,
+          "count": 182,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5874108,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/25/0",
+      "name": "Rebuilt root/4/25/0",
+      "visible": true,
+      "material": "Surface root/4/25/0",
+      "attributes": {
+        "position": {
+          "offset": 5875836,
+          "count": 447,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5877624,
+          "count": 447,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5879412,
+          "count": 298,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5880604,
+          "count": 648,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/25/1",
+      "name": "Rebuilt root/4/25/1",
+      "visible": true,
+      "material": "Surface root/4/25/1",
+      "attributes": {
+        "position": {
+          "offset": 5883196,
+          "count": 84,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5883532,
+          "count": 84,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5883868,
+          "count": 56,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5884092,
+          "count": 72,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/25/2",
+      "name": "Rebuilt root/4/25/2",
+      "visible": true,
+      "material": "Sails · woven off-white canvas",
+      "attributes": {
+        "position": {
+          "offset": 5884380,
+          "count": 273,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5885472,
+          "count": 273,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5886564,
+          "count": 182,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5887292,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/25/3",
+      "name": "Rebuilt root/4/25/3",
+      "visible": true,
+      "material": "Sails · woven off-white canvas",
+      "attributes": {
+        "position": {
+          "offset": 5889020,
+          "count": 273,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5890112,
+          "count": 273,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5891204,
+          "count": 182,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5891932,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/26/0",
+      "name": "Rebuilt root/4/26/0",
+      "visible": true,
+      "material": "Surface root/4/26/0",
+      "attributes": {
+        "position": {
+          "offset": 5893660,
+          "count": 447,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5895448,
+          "count": 447,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5897236,
+          "count": 298,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5898428,
+          "count": 648,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/26/1",
+      "name": "Rebuilt root/4/26/1",
+      "visible": true,
+      "material": "Surface root/4/26/1",
+      "attributes": {
+        "position": {
+          "offset": 5901020,
+          "count": 84,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5901356,
+          "count": 84,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5901692,
+          "count": 56,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5901916,
+          "count": 72,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/26/2",
+      "name": "Rebuilt root/4/26/2",
+      "visible": true,
+      "material": "Sails · woven off-white canvas",
+      "attributes": {
+        "position": {
+          "offset": 5902204,
+          "count": 273,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5903296,
+          "count": 273,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5904388,
+          "count": 182,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5905116,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/26/3",
+      "name": "Rebuilt root/4/26/3",
+      "visible": true,
+      "material": "Sails · woven off-white canvas",
+      "attributes": {
+        "position": {
+          "offset": 5906844,
+          "count": 273,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5907936,
+          "count": 273,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5909028,
+          "count": 182,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5909756,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/27/0",
+      "name": "Rebuilt root/4/27/0",
+      "visible": true,
+      "material": "Surface root/4/27/0",
+      "attributes": {
+        "position": {
+          "offset": 5911484,
+          "count": 291,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5912648,
+          "count": 291,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5913812,
+          "count": 194,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5914588,
+          "count": 420,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/27/1",
+      "name": "Rebuilt root/4/27/1",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 5916268,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5917888,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5919508,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 5920588,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 5922208,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/27/2",
+      "name": "Rebuilt root/4/27/2",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 5923936,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5925556,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5927176,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 5928256,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 5929876,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/28/0",
+      "name": "Rebuilt root/4/28/0",
+      "visible": true,
+      "material": "Surface root/4/28/0",
+      "attributes": {
+        "position": {
+          "offset": 5931604,
+          "count": 291,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5932768,
+          "count": 291,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5933932,
+          "count": 194,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5934708,
+          "count": 420,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/28/1",
+      "name": "Rebuilt root/4/28/1",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 5936388,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5938008,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5939628,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 5940708,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 5942328,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/28/2",
+      "name": "Rebuilt root/4/28/2",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 5944056,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5945676,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5947296,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 5948376,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 5949996,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/29/0",
+      "name": "Rebuilt root/4/29/0",
+      "visible": true,
+      "material": "Surface root/4/29/0",
+      "attributes": {
+        "position": {
+          "offset": 5951724,
+          "count": 291,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5952888,
+          "count": 291,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5954052,
+          "count": 194,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5954828,
+          "count": 420,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/29/1",
+      "name": "Rebuilt root/4/29/1",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 5956508,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5958128,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5959748,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 5960828,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 5962448,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/29/2",
+      "name": "Rebuilt root/4/29/2",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 5964176,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5965796,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5967416,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 5968496,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 5970116,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/30/0",
+      "name": "Rebuilt root/4/30/0",
+      "visible": true,
+      "material": "Surface root/4/30/0",
+      "attributes": {
+        "position": {
+          "offset": 5971844,
+          "count": 291,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5973008,
+          "count": 291,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5974172,
+          "count": 194,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5974948,
+          "count": 420,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/30/1",
+      "name": "Rebuilt root/4/30/1",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 5976628,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5978248,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5979868,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 5980948,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 5982568,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/30/2",
+      "name": "Rebuilt root/4/30/2",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 5984296,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5985916,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5987536,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 5988616,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 5990236,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/31/0",
+      "name": "Rebuilt root/4/31/0",
+      "visible": true,
+      "material": "Surface root/4/31/0",
+      "attributes": {
+        "position": {
+          "offset": 5991964,
+          "count": 291,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5993128,
+          "count": 291,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5994292,
+          "count": 194,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 5995068,
+          "count": 420,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/31/1",
+      "name": "Rebuilt root/4/31/1",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 5996748,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 5998368,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 5999988,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 6001068,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 6002688,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/31/2",
+      "name": "Rebuilt root/4/31/2",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 6004416,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6006036,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6007656,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 6008736,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 6010356,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/32/0",
+      "name": "Rebuilt root/4/32/0",
+      "visible": true,
+      "material": "Surface root/4/32/0",
+      "attributes": {
+        "position": {
+          "offset": 6012084,
+          "count": 291,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6013248,
+          "count": 291,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6014412,
+          "count": 194,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6015188,
+          "count": 420,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/32/1",
+      "name": "Rebuilt root/4/32/1",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 6016868,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6018488,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6020108,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 6021188,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 6022808,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/32/2",
+      "name": "Rebuilt root/4/32/2",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 6024536,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6026156,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6027776,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 6028856,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 6030476,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/33/0",
+      "name": "Rebuilt root/4/33/0",
+      "visible": true,
+      "material": "Surface root/4/33/0",
+      "attributes": {
+        "position": {
+          "offset": 6032204,
+          "count": 291,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6033368,
+          "count": 291,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6034532,
+          "count": 194,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6035308,
+          "count": 420,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/33/1",
+      "name": "Rebuilt root/4/33/1",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 6036988,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6038608,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6040228,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 6041308,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 6042928,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/33/2",
+      "name": "Rebuilt root/4/33/2",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 6044656,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6046276,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6047896,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 6048976,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 6050596,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/34/0",
+      "name": "Rebuilt root/4/34/0",
+      "visible": true,
+      "material": "Surface root/4/34/0",
+      "attributes": {
+        "position": {
+          "offset": 6052324,
+          "count": 291,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6053488,
+          "count": 291,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6054652,
+          "count": 194,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6055428,
+          "count": 420,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/34/1",
+      "name": "Rebuilt root/4/34/1",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 6057108,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6058728,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6060348,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 6061428,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 6063048,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/34/2",
+      "name": "Rebuilt root/4/34/2",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 6064776,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6066396,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6068016,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 6069096,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 6070716,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/35/0",
+      "name": "Rebuilt root/4/35/0",
+      "visible": true,
+      "material": "Surface root/4/35/0",
+      "attributes": {
+        "position": {
+          "offset": 6072444,
+          "count": 291,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6073608,
+          "count": 291,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6074772,
+          "count": 194,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6075548,
+          "count": 420,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/35/1",
+      "name": "Rebuilt root/4/35/1",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 6077228,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6078848,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6080468,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 6081548,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 6083168,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/35/2",
+      "name": "Rebuilt root/4/35/2",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 6084896,
+          "count": 405,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6086516,
+          "count": 405,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6088136,
+          "count": 270,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 6089216,
+          "count": 405,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 6090836,
+          "count": 432,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/0",
+      "name": "Rebuilt root/5/0",
+      "visible": false,
+      "material": "Surface root/5/0",
+      "attributes": {
+        "position": {
+          "offset": 6092564,
+          "count": 3456,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6106388,
+          "count": 3456,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6120212,
+          "count": 2304,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6129428,
+          "count": 5184,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/1",
+      "name": "Rebuilt root/5/1",
+      "visible": false,
+      "material": "Surface root/5/1",
+      "attributes": {
+        "position": {
+          "offset": 6150164,
+          "count": 3456,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6163988,
+          "count": 3456,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6177812,
+          "count": 2304,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6187028,
+          "count": 5184,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/2",
+      "name": "Rebuilt root/5/2",
+      "visible": false,
+      "material": "Surface root/5/2",
+      "attributes": {
+        "position": {
+          "offset": 6207764,
+          "count": 3072,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6220052,
+          "count": 3072,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6232340,
+          "count": 2048,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6240532,
+          "count": 4608,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/3",
+      "name": "Rebuilt root/5/3",
+      "visible": false,
+      "material": "Surface root/5/3",
+      "attributes": {
+        "position": {
+          "offset": 6258964,
+          "count": 3072,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6271252,
+          "count": 3072,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6283540,
+          "count": 2048,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6291732,
+          "count": 4608,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/4",
+      "name": "Rebuilt root/5/4",
+      "visible": false,
+      "material": "Surface root/5/4",
+      "attributes": {
+        "position": {
+          "offset": 6310164,
+          "count": 3840,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6325524,
+          "count": 3840,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6340884,
+          "count": 2560,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6351124,
+          "count": 5760,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/5",
+      "name": "Rebuilt root/5/5",
+      "visible": false,
+      "material": "Surface root/5/5",
+      "attributes": {
+        "position": {
+          "offset": 6374164,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6392596,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6411028,
+          "count": 3072,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6423316,
+          "count": 6912,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/6",
+      "name": "Rebuilt root/5/6",
+      "visible": false,
+      "material": "Surface root/5/6",
+      "attributes": {
+        "position": {
+          "offset": 6450964,
+          "count": 3456,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6464788,
+          "count": 3456,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6478612,
+          "count": 2304,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6487828,
+          "count": 5184,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/7",
+      "name": "Rebuilt root/5/7",
+      "visible": false,
+      "material": "Surface root/5/7",
+      "attributes": {
+        "position": {
+          "offset": 6508564,
+          "count": 4224,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6525460,
+          "count": 4224,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6542356,
+          "count": 2816,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6553620,
+          "count": 6336,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/8",
+      "name": "Rebuilt root/5/8",
+      "visible": false,
+      "material": "Surface root/5/8",
+      "attributes": {
+        "position": {
+          "offset": 6578964,
+          "count": 2688,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6589716,
+          "count": 2688,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6600468,
+          "count": 1792,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6607636,
+          "count": 4032,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/9",
+      "name": "Rebuilt root/5/9",
+      "visible": false,
+      "material": "Surface root/5/9",
+      "attributes": {
+        "position": {
+          "offset": 6623764,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6642196,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6660628,
+          "count": 3072,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6672916,
+          "count": 6912,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/10",
+      "name": "Rebuilt root/5/10",
+      "visible": false,
+      "material": "Surface root/5/10",
+      "attributes": {
+        "position": {
+          "offset": 6700564,
+          "count": 3456,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6714388,
+          "count": 3456,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6728212,
+          "count": 2304,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6737428,
+          "count": 5184,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/11",
+      "name": "Rebuilt root/5/11",
+      "visible": false,
+      "material": "Surface root/5/11",
+      "attributes": {
+        "position": {
+          "offset": 6758164,
+          "count": 3072,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6770452,
+          "count": 3072,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6782740,
+          "count": 2048,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6790932,
+          "count": 4608,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/12",
+      "name": "Rebuilt root/5/12",
+      "visible": false,
+      "material": "Surface root/5/12",
+      "attributes": {
+        "position": {
+          "offset": 6809364,
+          "count": 3840,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6824724,
+          "count": 3840,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6840084,
+          "count": 2560,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6850324,
+          "count": 5760,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/13",
+      "name": "Rebuilt root/5/13",
+      "visible": false,
+      "material": "Surface root/5/13",
+      "attributes": {
+        "position": {
+          "offset": 6873364,
+          "count": 3456,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6887188,
+          "count": 3456,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6901012,
+          "count": 2304,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6910228,
+          "count": 5184,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/14",
+      "name": "Rebuilt root/5/14",
+      "visible": false,
+      "material": "Surface root/5/14",
+      "attributes": {
+        "position": {
+          "offset": 6930964,
+          "count": 2688,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6941716,
+          "count": 2688,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 6952468,
+          "count": 1792,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 6959636,
+          "count": 4032,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/15",
+      "name": "Rebuilt root/5/15",
+      "visible": false,
+      "material": "Surface root/5/15",
+      "attributes": {
+        "position": {
+          "offset": 6975764,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 6994196,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7012628,
+          "count": 3072,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7024916,
+          "count": 6912,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/16",
+      "name": "Rebuilt root/5/16",
+      "visible": false,
+      "material": "Surface root/5/16",
+      "attributes": {
+        "position": {
+          "offset": 7052564,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7070996,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7089428,
+          "count": 3072,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7101716,
+          "count": 6912,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/17",
+      "name": "Rebuilt root/5/17",
+      "visible": false,
+      "material": "Surface root/5/17",
+      "attributes": {
+        "position": {
+          "offset": 7129364,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7147796,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7166228,
+          "count": 3072,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7178516,
+          "count": 6912,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/18",
+      "name": "Rebuilt root/5/18",
+      "visible": false,
+      "material": "Surface root/5/18",
+      "attributes": {
+        "position": {
+          "offset": 7206164,
+          "count": 3840,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7221524,
+          "count": 3840,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7236884,
+          "count": 2560,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7247124,
+          "count": 5760,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/19",
+      "name": "Rebuilt root/5/19",
+      "visible": false,
+      "material": "Surface root/5/19",
+      "attributes": {
+        "position": {
+          "offset": 7270164,
+          "count": 4224,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7287060,
+          "count": 4224,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7303956,
+          "count": 2816,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7315220,
+          "count": 6336,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/20",
+      "name": "Rebuilt root/5/20",
+      "visible": false,
+      "material": "Surface root/5/20",
+      "attributes": {
+        "position": {
+          "offset": 7340564,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7358996,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7377428,
+          "count": 3072,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7389716,
+          "count": 6912,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/5/21",
+      "name": "Rebuilt root/5/21",
+      "visible": false,
+      "material": "Surface root/5/21",
+      "attributes": {
+        "position": {
+          "offset": 7417364,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7435796,
+          "count": 4608,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7454228,
+          "count": 3072,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7466516,
+          "count": 6912,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/0",
+      "name": "Rebuilt root/6/0",
+      "visible": true,
+      "material": "Frame · deep petrol enamel",
+      "attributes": {
+        "position": {
+          "offset": 7494164,
+          "count": 2202,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7502972,
+          "count": 2202,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7511780,
+          "count": 1468,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7517652,
+          "count": 1488,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/1",
+      "name": "Rebuilt root/6/1",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 7523604,
+          "count": 786,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7526748,
+          "count": 786,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7529892,
+          "count": 524,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7531988,
+          "count": 528,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/2",
+      "name": "Rebuilt root/6/2",
+      "visible": true,
+      "material": "Saddle and grips · chestnut leather",
+      "attributes": {
+        "position": {
+          "offset": 7534100,
+          "count": 1473,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7539992,
+          "count": 1473,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7545884,
+          "count": 982,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7549812,
+          "count": 2520,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/3",
+      "name": "Rebuilt root/6/3",
+      "visible": true,
+      "material": "Surface root/6/3",
+      "attributes": {
+        "position": {
+          "offset": 7559892,
+          "count": 861,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7563336,
+          "count": 861,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7566780,
+          "count": 574,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7569076,
+          "count": 1440,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/4",
+      "name": "Rebuilt root/6/4",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 7574836,
+          "count": 408,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7576468,
+          "count": 408,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7578100,
+          "count": 272,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7579188,
+          "count": 240,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/5",
+      "name": "Rebuilt root/6/5",
+      "visible": true,
+      "material": "Surface root/6/5",
+      "attributes": {
+        "position": {
+          "offset": 7580148,
+          "count": 246,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7581132,
+          "count": 246,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7582116,
+          "count": 164,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7582772,
+          "count": 192,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/6/0",
+      "name": "Rebuilt root/6/6/0",
+      "visible": true,
+      "material": "Surface root/6/6/0",
+      "attributes": {
+        "position": {
+          "offset": 7583540,
+          "count": 72,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7583828,
+          "count": 72,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7584116,
+          "count": 48,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7584308,
+          "count": 36,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/6/1",
+      "name": "Rebuilt root/6/6/1",
+      "visible": true,
+      "material": "Surface root/6/6/1",
+      "attributes": {
+        "position": {
+          "offset": 7584452,
+          "count": 72,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7584740,
+          "count": 72,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7585028,
+          "count": 48,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7585220,
+          "count": 36,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/6/2",
+      "name": "Rebuilt root/6/6/2",
+      "visible": true,
+      "material": "Tyre · carbon rubber",
+      "attributes": {
+        "position": {
+          "offset": 7585364,
+          "count": 3285,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7598504,
+          "count": 3285,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7611644,
+          "count": 2190,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7620404,
+          "count": 6048,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/6/3",
+      "name": "Rebuilt root/6/6/3",
+      "visible": true,
+      "material": "Surface root/6/6/3",
+      "attributes": {
+        "position": {
+          "offset": 7644596,
+          "count": 2409,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7654232,
+          "count": 2409,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7663868,
+          "count": 1606,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7670292,
+          "count": 4320,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/6/4",
+      "name": "Rebuilt root/6/6/4",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 7687572,
+          "count": 1752,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7694580,
+          "count": 1752,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7701588,
+          "count": 1168,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7706260,
+          "count": 3024,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/6/5",
+      "name": "Rebuilt root/6/6/5",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 7718356,
+          "count": 924,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7722052,
+          "count": 924,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7725748,
+          "count": 616,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7728212,
+          "count": 768,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/6/6",
+      "name": "Rebuilt root/6/6/6",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 7731284,
+          "count": 2688,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7742036,
+          "count": 2688,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7752788,
+          "count": 1792,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7759956,
+          "count": 1536,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/6/7",
+      "name": "Rebuilt root/6/6/7",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 7766100,
+          "count": 90,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7766460,
+          "count": 90,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7766820,
+          "count": 60,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7767060,
+          "count": 72,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/6/8",
+      "name": "Rebuilt root/6/6/8",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 7767348,
+          "count": 2151,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7775952,
+          "count": 2151,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7784556,
+          "count": 1434,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7790292,
+          "count": 864,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/0/0",
+      "name": "Rebuilt root/6/7/0/0/0",
+      "visible": true,
+      "material": "Surface root/6/7/0/0/0",
+      "attributes": {
+        "position": {
+          "offset": 7793748,
+          "count": 72,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7794036,
+          "count": 72,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7794324,
+          "count": 48,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7794516,
+          "count": 36,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/0/1",
+      "name": "Rebuilt root/6/7/0/0/1",
+      "visible": true,
+      "material": "Surface root/6/7/0/0/1",
+      "attributes": {
+        "position": {
+          "offset": 7794660,
+          "count": 72,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7794948,
+          "count": 72,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7795236,
+          "count": 48,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7795428,
+          "count": 36,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/0/2",
+      "name": "Rebuilt root/6/7/0/0/2",
+      "visible": true,
+      "material": "Tyre · carbon rubber",
+      "attributes": {
+        "position": {
+          "offset": 7795572,
+          "count": 3285,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7808712,
+          "count": 3285,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7821852,
+          "count": 2190,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7830612,
+          "count": 6048,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/0/3",
+      "name": "Rebuilt root/6/7/0/0/3",
+      "visible": true,
+      "material": "Surface root/6/7/0/0/3",
+      "attributes": {
+        "position": {
+          "offset": 7854804,
+          "count": 2409,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7864440,
+          "count": 2409,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7874076,
+          "count": 1606,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7880500,
+          "count": 4320,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/0/4",
+      "name": "Rebuilt root/6/7/0/0/4",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 7897780,
+          "count": 1752,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7904788,
+          "count": 1752,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7911796,
+          "count": 1168,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7916468,
+          "count": 3024,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/0/5",
+      "name": "Rebuilt root/6/7/0/0/5",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 7928564,
+          "count": 924,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7932260,
+          "count": 924,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7935956,
+          "count": 616,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7938420,
+          "count": 768,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/0/6",
+      "name": "Rebuilt root/6/7/0/0/6",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 7941492,
+          "count": 2688,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7952244,
+          "count": 2688,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7962996,
+          "count": 1792,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7970164,
+          "count": 1536,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/0/7",
+      "name": "Rebuilt root/6/7/0/0/7",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 7976308,
+          "count": 90,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7976668,
+          "count": 90,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7977028,
+          "count": 60,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7977268,
+          "count": 72,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/1",
+      "name": "Rebuilt root/6/7/0/1",
+      "visible": true,
+      "material": "Frame · deep petrol enamel",
+      "attributes": {
+        "position": {
+          "offset": 7977556,
+          "count": 1338,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 7982908,
+          "count": 1338,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 7988260,
+          "count": 892,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 7991828,
+          "count": 2040,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/2",
+      "name": "Rebuilt root/6/7/0/2",
+      "visible": true,
+      "material": "Surface root/6/7/0/2",
+      "attributes": {
+        "position": {
+          "offset": 7999988,
+          "count": 861,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8003432,
+          "count": 861,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 8006876,
+          "count": 574,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 8009172,
+          "count": 1440,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/3",
+      "name": "Rebuilt root/6/7/0/3",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 8014932,
+          "count": 5016,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8034996,
+          "count": 5016,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 8055060,
+          "count": 3344,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 8068436,
+          "count": 7584,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/4",
+      "name": "Rebuilt root/6/7/0/4",
+      "visible": true,
+      "material": "Saddle and grips · chestnut leather",
+      "attributes": {
+        "position": {
+          "offset": 8098772,
+          "count": 1170,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8103452,
+          "count": 1170,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 8108132,
+          "count": 780,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 8111252,
+          "count": 2100,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/5",
+      "name": "Rebuilt root/6/7/0/5",
+      "visible": true,
+      "material": "Saddle and grips · chestnut leather",
+      "attributes": {
+        "position": {
+          "offset": 8119652,
+          "count": 1170,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8124332,
+          "count": 1170,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 8129012,
+          "count": 780,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 8132132,
+          "count": 2100,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/6",
+      "name": "Rebuilt root/6/7/0/6",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 8140532,
+          "count": 558,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8142764,
+          "count": 558,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 8144996,
+          "count": 372,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 8146484,
+          "count": 912,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/7",
+      "name": "Rebuilt root/6/7/0/7",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 8150132,
+          "count": 234,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8151068,
+          "count": 234,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 8152004,
+          "count": 156,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 8152628,
+          "count": 192,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/8",
+      "name": "Rebuilt root/6/7/0/8",
+      "visible": true,
+      "material": "Surface root/6/7/0/8",
+      "attributes": {
+        "position": {
+          "offset": 8153396,
+          "count": 54,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8153612,
+          "count": 54,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 8153828,
+          "count": 36,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 8153972,
+          "count": 48,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/9/0",
+      "name": "Rebuilt root/6/7/0/9/0",
+      "visible": true,
+      "material": "Basket · natural cane",
+      "attributes": {
+        "position": {
+          "offset": 8154164,
+          "count": 38805,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8309384,
+          "count": 38805,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 8464604,
+          "count": 25870,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 8568084,
+          "count": 76230,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/9/1",
+      "name": "Rebuilt root/6/7/0/9/1",
+      "visible": true,
+      "material": "Surface root/6/7/0/9/1",
+      "attributes": {
+        "position": {
+          "offset": 8873004,
+          "count": 78,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8873316,
+          "count": 78,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 8873628,
+          "count": 52,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 8873836,
+          "count": 72,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/9/2",
+      "name": "Rebuilt root/6/7/0/9/2",
+      "visible": true,
+      "material": "Surface root/6/7/0/9/2",
+      "attributes": {
+        "position": {
+          "offset": 8874124,
+          "count": 891,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8877688,
+          "count": 891,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 8881252,
+          "count": 594,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 8883628,
+          "count": 1536,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/9/3",
+      "name": "Rebuilt root/6/7/0/9/3",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 8889772,
+          "count": 399,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8891368,
+          "count": 399,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 8892964,
+          "count": 266,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 8894028,
+          "count": 540,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/9/4",
+      "name": "Rebuilt root/6/7/0/9/4",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 8896188,
+          "count": 399,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8897784,
+          "count": 399,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 8899380,
+          "count": 266,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 8900444,
+          "count": 540,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/7/0/9/5",
+      "name": "Rebuilt root/6/7/0/9/5",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 8902604,
+          "count": 399,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8904200,
+          "count": 399,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 8905796,
+          "count": 266,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 8906860,
+          "count": 540,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/8/0",
+      "name": "Rebuilt root/6/8/0",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 8909020,
+          "count": 12111,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 8957464,
+          "count": 12111,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 9005908,
+          "count": 8074,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 9038204,
+          "count": 4692,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/8/1",
+      "name": "Rebuilt root/6/8/1",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 9056972,
+          "count": 1725,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 9063872,
+          "count": 1725,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 9070772,
+          "count": 1150,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 9075372,
+          "count": 1248,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/9/0",
+      "name": "Rebuilt root/6/9/0",
+      "visible": true,
+      "material": "Surface root/6/9/0",
+      "attributes": {
+        "position": {
+          "offset": 9080364,
+          "count": 216,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 9081228,
+          "count": 216,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 9082092,
+          "count": 144,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 9082668,
+          "count": 108,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/9/1",
+      "name": "Rebuilt root/6/9/1",
+      "visible": true,
+      "material": "Surface root/6/9/1",
+      "attributes": {
+        "position": {
+          "offset": 9083100,
+          "count": 72,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 9083388,
+          "count": 72,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 9083676,
+          "count": 48,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 9083868,
+          "count": 36,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/9/2",
+      "name": "Rebuilt root/6/9/2",
+      "visible": true,
+      "material": "Surface root/6/9/2",
+      "attributes": {
+        "position": {
+          "offset": 9084012,
+          "count": 72,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 9084300,
+          "count": 72,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 9084588,
+          "count": 48,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 9084780,
+          "count": 36,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/10/0",
+      "name": "Rebuilt root/6/10/0",
+      "visible": true,
+      "material": "Surface root/6/10/0",
+      "attributes": {
+        "position": {
+          "offset": 9084924,
+          "count": 216,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 9085788,
+          "count": 216,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 9086652,
+          "count": 144,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 9087228,
+          "count": 108,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/10/1",
+      "name": "Rebuilt root/6/10/1",
+      "visible": true,
+      "material": "Surface root/6/10/1",
+      "attributes": {
+        "position": {
+          "offset": 9087660,
+          "count": 72,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 9087948,
+          "count": 72,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 9088236,
+          "count": 48,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 9088428,
+          "count": 36,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/10/2",
+      "name": "Rebuilt root/6/10/2",
+      "visible": true,
+      "material": "Surface root/6/10/2",
+      "attributes": {
+        "position": {
+          "offset": 9088572,
+          "count": 72,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 9088860,
+          "count": 72,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 9089148,
+          "count": 48,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 9089340,
+          "count": 36,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/11",
+      "name": "Rebuilt root/6/11",
+      "visible": true,
+      "material": "Metal · brushed stainless steel",
+      "attributes": {
+        "position": {
+          "offset": 9089484,
+          "count": 72,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 9089772,
+          "count": 72,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 9090060,
+          "count": 48,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 9090252,
+          "count": 36,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/0",
+      "name": "Pelican · feathered torso",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 9090396,
+          "count": 85845,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 9433776,
+          "count": 85845,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 9777156,
+          "count": 57230,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 10006076,
+          "count": 85845,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 10349456,
+          "count": 95328,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/0/0",
+      "name": "Rebuilt root/6/12/0/0/0/0",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 10730768,
+          "count": 729,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 10733684,
+          "count": 729,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 10736600,
+          "count": 486,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 10738544,
+          "count": 729,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 10741460,
+          "count": 864,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/1",
+      "name": "Rebuilt root/6/12/0/0/1",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 10744916,
+          "count": 1782,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 10752044,
+          "count": 1782,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 10759172,
+          "count": 1188,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 10763924,
+          "count": 1782,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 10771052,
+          "count": 2112,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/2",
+      "name": "Rebuilt root/6/12/0/0/2",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 10779500,
+          "count": 32373,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 10908992,
+          "count": 32373,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11038484,
+          "count": 21582,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 11124812,
+          "count": 32373,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 11254304,
+          "count": 33948,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/3",
+      "name": "Rebuilt root/6/12/0/0/3",
+      "visible": false,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 11390096,
+          "count": 957,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11393924,
+          "count": 957,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11397752,
+          "count": 638,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 11400304,
+          "count": 957,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 11404132,
+          "count": 1680,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/4",
+      "name": "Rebuilt root/6/12/0/0/4",
+      "visible": false,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 11410852,
+          "count": 291,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11412016,
+          "count": 291,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11413180,
+          "count": 194,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 11413956,
+          "count": 291,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 11415120,
+          "count": 420,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/5",
+      "name": "Rebuilt root/6/12/0/0/5",
+      "visible": false,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 11416800,
+          "count": 78,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11417112,
+          "count": 78,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11417424,
+          "count": 52,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 11417632,
+          "count": 78,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 11417944,
+          "count": 72,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/0",
+      "name": "Rebuilt root/6/12/0/0/6/0",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 11418232,
+          "count": 17301,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11487436,
+          "count": 17301,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11556640,
+          "count": 11534,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 11602776,
+          "count": 17301,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 11671980,
+          "count": 18672,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/1",
+      "name": "Rebuilt root/6/12/0/0/6/1",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 11746668,
+          "count": 567,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11748936,
+          "count": 567,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11751204,
+          "count": 378,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 11752716,
+          "count": 567,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 11754984,
+          "count": 672,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/2/0",
+      "name": "Rebuilt root/6/12/0/0/6/2/0",
+      "visible": true,
+      "material": "Orbital bare skin",
+      "attributes": {
+        "position": {
+          "offset": 11757672,
+          "count": 657,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11760300,
+          "count": 657,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11762928,
+          "count": 438,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 11764680,
+          "count": 1056,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/2/1",
+      "name": "Rebuilt root/6/12/0/0/6/2/1",
+      "visible": true,
+      "material": "Iris · muted amber",
+      "attributes": {
+        "position": {
+          "offset": 11768904,
+          "count": 657,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11771532,
+          "count": 657,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11774160,
+          "count": 438,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 11775912,
+          "count": 1056,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/2/2",
+      "name": "Rebuilt root/6/12/0/0/6/2/2",
+      "visible": true,
+      "material": "Cornea · dark wet surface",
+      "attributes": {
+        "position": {
+          "offset": 11780136,
+          "count": 657,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11782764,
+          "count": 657,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11785392,
+          "count": 438,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 11787144,
+          "count": 1056,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/2/3",
+      "name": "Rebuilt root/6/12/0/0/6/2/3",
+      "visible": false,
+      "material": "Cornea · dark wet surface",
+      "attributes": {
+        "position": {
+          "offset": 11791368,
+          "count": 183,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11792100,
+          "count": 183,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11792832,
+          "count": 122,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 11793320,
+          "count": 240,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/2/4",
+      "name": "Rebuilt root/6/12/0/0/6/2/4",
+      "visible": true,
+      "material": "Orbital bare skin",
+      "attributes": {
+        "position": {
+          "offset": 11794280,
+          "count": 492,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11796248,
+          "count": 492,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11798216,
+          "count": 328,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 11799528,
+          "count": 798,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/3/0",
+      "name": "Rebuilt root/6/12/0/0/6/3/0",
+      "visible": true,
+      "material": "Orbital bare skin",
+      "attributes": {
+        "position": {
+          "offset": 11802720,
+          "count": 657,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11805348,
+          "count": 657,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11807976,
+          "count": 438,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 11809728,
+          "count": 1056,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/3/1",
+      "name": "Rebuilt root/6/12/0/0/6/3/1",
+      "visible": true,
+      "material": "Iris · muted amber",
+      "attributes": {
+        "position": {
+          "offset": 11813952,
+          "count": 657,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11816580,
+          "count": 657,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11819208,
+          "count": 438,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 11820960,
+          "count": 1056,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/3/2",
+      "name": "Rebuilt root/6/12/0/0/6/3/2",
+      "visible": true,
+      "material": "Cornea · dark wet surface",
+      "attributes": {
+        "position": {
+          "offset": 11825184,
+          "count": 657,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11827812,
+          "count": 657,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11830440,
+          "count": 438,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 11832192,
+          "count": 1056,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/3/3",
+      "name": "Rebuilt root/6/12/0/0/6/3/3",
+      "visible": false,
+      "material": "Cornea · dark wet surface",
+      "attributes": {
+        "position": {
+          "offset": 11836416,
+          "count": 183,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11837148,
+          "count": 183,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11837880,
+          "count": 122,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 11838368,
+          "count": 240,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/3/4",
+      "name": "Rebuilt root/6/12/0/0/6/3/4",
+      "visible": true,
+      "material": "Orbital bare skin",
+      "attributes": {
+        "position": {
+          "offset": 11839328,
+          "count": 492,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11841296,
+          "count": 492,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11843264,
+          "count": 328,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 11844576,
+          "count": 798,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/4/0",
+      "name": "Rebuilt root/6/12/0/0/6/4/0",
+      "visible": true,
+      "material": "Bill · ivory keratin",
+      "attributes": {
+        "position": {
+          "offset": 11847768,
+          "count": 1953,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11855580,
+          "count": 1953,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11863392,
+          "count": 1302,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 11868600,
+          "count": 1953,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 11876412,
+          "count": 3600,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/0/0/6/4/1/0",
+      "name": "Rebuilt root/6/12/0/0/6/4/1/0",
+      "visible": true,
+      "material": "Pouch · vascular warm skin",
+      "attributes": {
+        "position": {
+          "offset": 11890812,
+          "count": 1581,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11897136,
+          "count": 1581,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11903460,
+          "count": 1054,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 11907676,
+          "count": 1581,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 11914000,
+          "count": 2880,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/1/0",
+      "name": "Rebuilt root/6/12/1/0",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 11925520,
+          "count": 9231,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 11962444,
+          "count": 9231,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 11999368,
+          "count": 6154,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 12023984,
+          "count": 9231,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 12060908,
+          "count": 9732,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/1/1",
+      "name": "Rebuilt root/6/12/1/1",
+      "visible": true,
+      "material": "Feet · slate scaled skin",
+      "attributes": {
+        "position": {
+          "offset": 12099836,
+          "count": 105,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 12100256,
+          "count": 105,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 12100676,
+          "count": 70,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 12100956,
+          "count": 180,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/2/0",
+      "name": "Rebuilt root/6/12/2/0",
+      "visible": true,
+      "material": "Feet · slate scaled skin",
+      "attributes": {
+        "position": {
+          "offset": 12101676,
+          "count": 1017,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 12105744,
+          "count": 1017,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 12109812,
+          "count": 678,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 12112524,
+          "count": 1596,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/3/0",
+      "name": "Rebuilt root/6/12/3/0",
+      "visible": true,
+      "material": "Feet · slate scaled skin",
+      "attributes": {
+        "position": {
+          "offset": 12118908,
+          "count": 2430,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 12128628,
+          "count": 2430,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 12138348,
+          "count": 1620,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 12144828,
+          "count": 1920,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/4/0",
+      "name": "Rebuilt root/6/12/4/0",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 12152508,
+          "count": 9231,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 12189432,
+          "count": 9231,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 12226356,
+          "count": 6154,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 12250972,
+          "count": 9231,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 12287896,
+          "count": 9732,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/4/1",
+      "name": "Rebuilt root/6/12/4/1",
+      "visible": true,
+      "material": "Feet · slate scaled skin",
+      "attributes": {
+        "position": {
+          "offset": 12326824,
+          "count": 105,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 12327244,
+          "count": 105,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 12327664,
+          "count": 70,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 12327944,
+          "count": 180,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/5/0",
+      "name": "Rebuilt root/6/12/5/0",
+      "visible": true,
+      "material": "Feet · slate scaled skin",
+      "attributes": {
+        "position": {
+          "offset": 12328664,
+          "count": 1017,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 12332732,
+          "count": 1017,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 12336800,
+          "count": 678,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 12339512,
+          "count": 1596,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/6/0",
+      "name": "Rebuilt root/6/12/6/0",
+      "visible": true,
+      "material": "Feet · slate scaled skin",
+      "attributes": {
+        "position": {
+          "offset": 12345896,
+          "count": 2430,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 12355616,
+          "count": 2430,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 12365336,
+          "count": 1620,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 12371816,
+          "count": 1920,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/7/0",
+      "name": "Rebuilt root/6/12/7/0",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 12379496,
+          "count": 11340,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 12424856,
+          "count": 11340,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 12470216,
+          "count": 7560,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 12500456,
+          "count": 11340,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 12545816,
+          "count": 11988,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/8/0",
+      "name": "Rebuilt root/6/12/8/0",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 12593768,
+          "count": 11340,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 12639128,
+          "count": 11340,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 12684488,
+          "count": 7560,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 12714728,
+          "count": 11340,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 12760088,
+          "count": 11988,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/9/0",
+      "name": "Rebuilt root/6/12/9/0",
+      "visible": true,
+      "material": "Primary tips · charcoal",
+      "attributes": {
+        "position": {
+          "offset": 12808040,
+          "count": 1836,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 12815384,
+          "count": 1836,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 12822728,
+          "count": 1224,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 12827624,
+          "count": 3072,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/10/0",
+      "name": "Rebuilt root/6/12/10/0",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 12839912,
+          "count": 11340,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 12885272,
+          "count": 11340,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 12930632,
+          "count": 7560,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 12960872,
+          "count": 11340,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 13006232,
+          "count": 11988,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/11/0",
+      "name": "Rebuilt root/6/12/11/0",
+      "visible": true,
+      "material": "Pelican · layered ivory plumage",
+      "attributes": {
+        "position": {
+          "offset": 13054184,
+          "count": 11340,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 13099544,
+          "count": 11340,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 13144904,
+          "count": 7560,
+          "itemSize": 2
+        },
+        "color": {
+          "offset": 13175144,
+          "count": 11340,
+          "itemSize": 3
+        },
+        "index": {
+          "offset": 13220504,
+          "count": 11988,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/6/12/12/0",
+      "name": "Rebuilt root/6/12/12/0",
+      "visible": true,
+      "material": "Primary tips · charcoal",
+      "attributes": {
+        "position": {
+          "offset": 13268456,
+          "count": 1836,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 13275800,
+          "count": 1836,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 13283144,
+          "count": 1224,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 13288040,
+          "count": 3072,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": ""
+    },
+    {
+      "key": "root/4/2",
+      "name": "Ocean · runtime template",
+      "visible": true,
+      "material": "Ocean · dielectric salt water",
+      "attributes": {
+        "position": {
+          "offset": 13300328,
+          "count": 146523,
+          "itemSize": 3
+        },
+        "normal": {
+          "offset": 13886420,
+          "count": 146523,
+          "itemSize": 3
+        },
+        "uv": {
+          "offset": 14472512,
+          "count": 97682,
+          "itemSize": 2
+        },
+        "index": {
+          "offset": 14863240,
+          "count": 290400,
+          "itemSize": 1,
+          "type": "uint32"
+        }
+      },
+      "shader": "ocean"
+    }
+  ],
+  "materials": {
+    "Pelican · layered ivory plumage": {
+      "name": "Pelican · layered ivory plumage",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.82,
+      "metalness": 0,
+      "vertexColors": true,
+      "clearcoat": 0,
+      "normalScale": 0.38,
+      "maps": {
+        "map": "textures/feather-albedo.png",
+        "normalMap": "textures/feather-normal.png"
+      }
+    },
+    "Bill · ivory keratin": {
+      "name": "Bill · ivory keratin",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.39,
+      "metalness": 0,
+      "vertexColors": true,
+      "clearcoat": 0,
+      "normalScale": 0.18,
+      "maps": {
+        "normalMap": "textures/skin-normal.png"
+      }
+    },
+    "Pouch · vascular warm skin": {
+      "name": "Pouch · vascular warm skin",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.58,
+      "metalness": 0,
+      "vertexColors": true,
+      "clearcoat": 0,
+      "normalScale": 0.35,
+      "maps": {
+        "normalMap": "textures/skin-normal.png"
+      }
+    },
+    "Feet · slate scaled skin": {
+      "name": "Feet · slate scaled skin",
+      "color": [
+        0.18,
+        0.19,
+        0.17
+      ],
+      "roughness": 0.84,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 0.65,
+      "maps": {
+        "normalMap": "textures/skin-normal.png"
+      }
+    },
+    "Frame · deep petrol enamel": {
+      "name": "Frame · deep petrol enamel",
+      "color": [
+        0.035,
+        0.12,
+        0.13
+      ],
+      "roughness": 0.27,
+      "metalness": 0.65,
+      "vertexColors": false,
+      "clearcoat": 0.55,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Metal · brushed stainless steel": {
+      "name": "Metal · brushed stainless steel",
+      "color": [
+        0.56,
+        0.6,
+        0.62
+      ],
+      "roughness": 0.24,
+      "metalness": 0.95,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Tyre · carbon rubber": {
+      "name": "Tyre · carbon rubber",
+      "color": [
+        0.015,
+        0.018,
+        0.019
+      ],
+      "roughness": 0.86,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 0.45,
+      "maps": {
+        "normalMap": "textures/rubber-normal.png"
+      }
+    },
+    "Saddle and grips · chestnut leather": {
+      "name": "Saddle and grips · chestnut leather",
+      "color": [
+        0.12,
+        0.055,
+        0.025
+      ],
+      "roughness": 0.69,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 0.35,
+      "maps": {
+        "normalMap": "textures/skin-normal.png"
+      }
+    },
+    "Coastal granite · scanned": {
+      "name": "Coastal granite · scanned",
+      "color": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "roughness": 0.89,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {
+        "map": "textures/rock_boulder_dry_diff.jpg",
+        "normalMap": "textures/rock_boulder_dry_nor_gl.jpg",
+        "roughnessMap": "textures/rock_boulder_dry_rough.jpg"
+      }
+    },
+    "Road · weathered aggregate and paint": {
+      "name": "Road · weathered aggregate and paint",
+      "color": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "roughness": 0.92,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {
+        "map": "textures/coastal-road.png",
+        "normalMap": "textures/asphalt_02_nor_gl.jpg",
+        "roughnessMap": "textures/asphalt_02_rough.jpg"
+      }
+    },
+    "Terrain · sand and coastal scrub": {
+      "name": "Terrain · sand and coastal scrub",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.96,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 0.6,
+      "maps": {
+        "normalMap": "textures/coast_sand_01_nor_gl.jpg"
+      }
+    },
+    "Palm · fibrous bark": {
+      "name": "Palm · fibrous bark",
+      "color": [
+        0.6,
+        0.6,
+        0.6
+      ],
+      "roughness": 0.95,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {
+        "map": "textures/bark_brown_02_diff.jpg",
+        "normalMap": "textures/bark_brown_02_nor_gl.jpg",
+        "roughnessMap": "textures/bark_brown_02_rough.jpg"
+      }
+    },
+    "Foliage · waxy coastal leaves": {
+      "name": "Foliage · waxy coastal leaves",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.71,
+      "metalness": 0,
+      "vertexColors": true,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Sails · woven off-white canvas": {
+      "name": "Sails · woven off-white canvas",
+      "color": [
+        0.76,
+        0.74,
+        0.65
+      ],
+      "roughness": 0.89,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 0.13,
+      "maps": {
+        "normalMap": "textures/feather-normal.png"
+      }
+    },
+    "Basket · natural cane": {
+      "name": "Basket · natural cane",
+      "color": [
+        0.31,
+        0.18,
+        0.075
+      ],
+      "roughness": 0.78,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 0.2,
+      "maps": {
+        "normalMap": "textures/skin-normal.png"
+      }
+    },
+    "Surface root/4/13": {
+      "name": "Surface root/4/13",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.7,
+      "metalness": 0,
+      "vertexColors": true,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/22/1": {
+      "name": "Surface root/4/22/1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.6,
+      "metalness": 0,
+      "vertexColors": true,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/22/2": {
+      "name": "Surface root/4/22/2",
+      "color": [
+        0.34,
+        0.44,
+        0.45
+      ],
+      "roughness": 0.12,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {},
+      "transmission": 0.72,
+      "thickness": 0.06
+    },
+    "Surface root/4/23/0": {
+      "name": "Surface root/4/23/0",
+      "color": [
+        0.6583748172725346,
+        0.059511238155621766,
+        0.028426039499072558
+      ],
+      "roughness": 0.5,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/23/1": {
+      "name": "Surface root/4/23/1",
+      "color": [
+        0.2541520943200296,
+        0.14412847084818123,
+        0.06847816983662762
+      ],
+      "roughness": 1,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/23/2": {
+      "name": "Surface root/4/23/2",
+      "color": [
+        0.982250550332711,
+        0.9646862478936612,
+        0.9046611743890203
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/23/3": {
+      "name": "Surface root/4/23/3",
+      "color": [
+        0.982250550332711,
+        0.9646862478936612,
+        0.9046611743890203
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/24/0": {
+      "name": "Surface root/4/24/0",
+      "color": [
+        0.028426039499072558,
+        0.158960835050774,
+        0.43415363616478553
+      ],
+      "roughness": 0.5,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/24/1": {
+      "name": "Surface root/4/24/1",
+      "color": [
+        0.2541520943200296,
+        0.14412847084818123,
+        0.06847816983662762
+      ],
+      "roughness": 1,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/24/2": {
+      "name": "Surface root/4/24/2",
+      "color": [
+        0.982250550332711,
+        0.9646862478936612,
+        0.9046611743890203
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/24/3": {
+      "name": "Surface root/4/24/3",
+      "color": [
+        0.982250550332711,
+        0.9646862478936612,
+        0.9046611743890203
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/25/0": {
+      "name": "Surface root/4/25/0",
+      "color": [
+        0.8879231178794776,
+        0.8713671191959567,
+        0.8069522576650873
+      ],
+      "roughness": 0.5,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/25/1": {
+      "name": "Surface root/4/25/1",
+      "color": [
+        0.2541520943200296,
+        0.14412847084818123,
+        0.06847816983662762
+      ],
+      "roughness": 1,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/25/2": {
+      "name": "Surface root/4/25/2",
+      "color": [
+        0.982250550332711,
+        0.9646862478936612,
+        0.9046611743890203
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/25/3": {
+      "name": "Surface root/4/25/3",
+      "color": [
+        0.982250550332711,
+        0.9646862478936612,
+        0.9046611743890203
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/26/0": {
+      "name": "Surface root/4/26/0",
+      "color": [
+        0.026241221889696346,
+        0.2746773120495699,
+        0.19806931954941637
+      ],
+      "roughness": 0.5,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/26/1": {
+      "name": "Surface root/4/26/1",
+      "color": [
+        0.2541520943200296,
+        0.14412847084818123,
+        0.06847816983662762
+      ],
+      "roughness": 1,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/26/2": {
+      "name": "Surface root/4/26/2",
+      "color": [
+        0.982250550332711,
+        0.9646862478936612,
+        0.9046611743890203
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/26/3": {
+      "name": "Surface root/4/26/3",
+      "color": [
+        0.982250550332711,
+        0.9646862478936612,
+        0.9046611743890203
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/27/0": {
+      "name": "Surface root/4/27/0",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/27/1": {
+      "name": "Surface root/4/27/1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/27/2": {
+      "name": "Surface root/4/27/2",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/28/0": {
+      "name": "Surface root/4/28/0",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/28/1": {
+      "name": "Surface root/4/28/1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/28/2": {
+      "name": "Surface root/4/28/2",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/29/0": {
+      "name": "Surface root/4/29/0",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/29/1": {
+      "name": "Surface root/4/29/1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/29/2": {
+      "name": "Surface root/4/29/2",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/30/0": {
+      "name": "Surface root/4/30/0",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/30/1": {
+      "name": "Surface root/4/30/1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/30/2": {
+      "name": "Surface root/4/30/2",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/31/0": {
+      "name": "Surface root/4/31/0",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/31/1": {
+      "name": "Surface root/4/31/1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/31/2": {
+      "name": "Surface root/4/31/2",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/32/0": {
+      "name": "Surface root/4/32/0",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/32/1": {
+      "name": "Surface root/4/32/1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/32/2": {
+      "name": "Surface root/4/32/2",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/33/0": {
+      "name": "Surface root/4/33/0",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/33/1": {
+      "name": "Surface root/4/33/1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/33/2": {
+      "name": "Surface root/4/33/2",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/34/0": {
+      "name": "Surface root/4/34/0",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/34/1": {
+      "name": "Surface root/4/34/1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/34/2": {
+      "name": "Surface root/4/34/2",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/35/0": {
+      "name": "Surface root/4/35/0",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/35/1": {
+      "name": "Surface root/4/35/1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/4/35/2": {
+      "name": "Surface root/4/35/2",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/0": {
+      "name": "Surface root/5/0",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/1": {
+      "name": "Surface root/5/1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/2": {
+      "name": "Surface root/5/2",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/3": {
+      "name": "Surface root/5/3",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/4": {
+      "name": "Surface root/5/4",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/5": {
+      "name": "Surface root/5/5",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/6": {
+      "name": "Surface root/5/6",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/7": {
+      "name": "Surface root/5/7",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/8": {
+      "name": "Surface root/5/8",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/9": {
+      "name": "Surface root/5/9",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/10": {
+      "name": "Surface root/5/10",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/11": {
+      "name": "Surface root/5/11",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/12": {
+      "name": "Surface root/5/12",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/13": {
+      "name": "Surface root/5/13",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/14": {
+      "name": "Surface root/5/14",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/15": {
+      "name": "Surface root/5/15",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/16": {
+      "name": "Surface root/5/16",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/17": {
+      "name": "Surface root/5/17",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/18": {
+      "name": "Surface root/5/18",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/19": {
+      "name": "Surface root/5/19",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/20": {
+      "name": "Surface root/5/20",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/5/21": {
+      "name": "Surface root/5/21",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/3": {
+      "name": "Surface root/6/3",
+      "color": [
+        0.8962693533719567,
+        0.8227857543924378,
+        0.6724431569510133
+      ],
+      "roughness": 0.4,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/5": {
+      "name": "Surface root/6/5",
+      "color": [
+        0.6375968739867731,
+        0.009134058699157796,
+        0.023153366173251363
+      ],
+      "roughness": 0.25,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/6/0": {
+      "name": "Surface root/6/6/0",
+      "color": [
+        1,
+        0.2541520943200296,
+        0.013702083043526807
+      ],
+      "roughness": 0.3,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/6/1": {
+      "name": "Surface root/6/6/1",
+      "color": [
+        1,
+        0.2541520943200296,
+        0.013702083043526807
+      ],
+      "roughness": 0.3,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/6/3": {
+      "name": "Surface root/6/6/3",
+      "color": [
+        0.22,
+        0.2,
+        0.16
+      ],
+      "roughness": 0.85,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/7/0/0/0": {
+      "name": "Surface root/6/7/0/0/0",
+      "color": [
+        1,
+        0.2541520943200296,
+        0.013702083043526807
+      ],
+      "roughness": 0.3,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/7/0/0/1": {
+      "name": "Surface root/6/7/0/0/1",
+      "color": [
+        1,
+        0.2541520943200296,
+        0.013702083043526807
+      ],
+      "roughness": 0.3,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/7/0/0/3": {
+      "name": "Surface root/6/7/0/0/3",
+      "color": [
+        0.22,
+        0.2,
+        0.16
+      ],
+      "roughness": 0.85,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/7/0/2": {
+      "name": "Surface root/6/7/0/2",
+      "color": [
+        0.8962693533719567,
+        0.8227857543924378,
+        0.6724431569510133
+      ],
+      "roughness": 0.4,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/7/0/8": {
+      "name": "Surface root/6/7/0/8",
+      "color": [
+        1,
+        0.9646862478936612,
+        0.7454042095350284
+      ],
+      "roughness": 0.1,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/7/0/9/0": {
+      "name": "Surface root/6/7/0/9/0",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.85,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/7/0/9/1": {
+      "name": "Surface root/6/7/0/9/1",
+      "color": [
+        1,
+        1,
+        1
+      ],
+      "roughness": 0.85,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/7/0/9/2": {
+      "name": "Surface root/6/7/0/9/2",
+      "color": [
+        0.2541520943200296,
+        0.12213877222015301,
+        0.033104766565152086
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/9/0": {
+      "name": "Surface root/6/9/0",
+      "color": [
+        0.023153366173251363,
+        0.023153366173251363,
+        0.025186859622305935
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/9/1": {
+      "name": "Surface root/6/9/1",
+      "color": [
+        1,
+        0.2541520943200296,
+        0.013702083043526807
+      ],
+      "roughness": 0.3,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/9/2": {
+      "name": "Surface root/6/9/2",
+      "color": [
+        1,
+        0.2541520943200296,
+        0.013702083043526807
+      ],
+      "roughness": 0.3,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/10/0": {
+      "name": "Surface root/6/10/0",
+      "color": [
+        0.023153366173251363,
+        0.023153366173251363,
+        0.025186859622305935
+      ],
+      "roughness": 0.8,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/10/1": {
+      "name": "Surface root/6/10/1",
+      "color": [
+        1,
+        0.2541520943200296,
+        0.013702083043526807
+      ],
+      "roughness": 0.3,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Surface root/6/10/2": {
+      "name": "Surface root/6/10/2",
+      "color": [
+        1,
+        0.2541520943200296,
+        0.013702083043526807
+      ],
+      "roughness": 0.3,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Orbital bare skin": {
+      "name": "Orbital bare skin",
+      "color": [
+        0.44,
+        0.39,
+        0.29
+      ],
+      "roughness": 0.61,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Iris · muted amber": {
+      "name": "Iris · muted amber",
+      "color": [
+        0.28,
+        0.2,
+        0.08
+      ],
+      "roughness": 0.32,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Cornea · dark wet surface": {
+      "name": "Cornea · dark wet surface",
+      "color": [
+        0.007,
+        0.008,
+        0.006
+      ],
+      "roughness": 0.12,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0.65,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Ocean · dielectric salt water": {
+      "name": "Ocean · dielectric salt water",
+      "color": [
+        0.018,
+        0.12,
+        0.145
+      ],
+      "roughness": 0.19,
+      "metalness": 0,
+      "vertexColors": false,
+      "clearcoat": 0.25,
+      "normalScale": 1,
+      "maps": {}
+    },
+    "Primary tips · charcoal": {
+      "name": "Primary tips · charcoal",
+      "color": [
+        0.014,
+        0.017,
+        0.018
+      ],
+      "roughness": 0.85,
+      "metalness": 0,
+      "vertexColors": false,
+      "maps": {},
+      "normalScale": 1,
+      "clearcoat": 0
+    }
+  }
+}
