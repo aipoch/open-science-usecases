@@ -2,7 +2,8 @@
   "categories": [
     "Curiosity Lab",
     "AI Research",
-    "Academic Research"
+    "Academic Research",
+    "3D Lab"
   ],
   "cases": [
     {
@@ -701,6 +702,31 @@
       "title": "Pelican on a Bicycle: Do Its Feet Stay on the Pedals?",
       "name": "pelican-on-a-bicycle-do-its-feet-stay-on-the-pedals",
       "category": "AI Research"
+    },
+    {
+      "title": "Revalidating Mendel's Laws of Inheritance",
+      "name": "mendel-laboratory",
+      "category": "3D Lab"
+    },
+    {
+      "title": "Pelican Coastal Experience",
+      "name": "pelican-bicycle-studio",
+      "category": "3D Lab"
+    },
+    {
+      "title": "Independent Reproduction of AI-Assisted Black Hole Physics Discoveries",
+      "name": "black-hole-observatory",
+      "category": "3D Lab"
+    },
+    {
+      "title": "PTP1B Allosteric Discovery — AI Research Reproduction & 3D Molecular Laboratory",
+      "name": "ptp1b-molecular-laboratory",
+      "category": "3D Lab"
+    },
+    {
+      "title": "Riemann Hypothesis 2026 — Proof Verification",
+      "name": "riemann-classroom",
+      "category": "3D Lab"
     }
   ]
 }

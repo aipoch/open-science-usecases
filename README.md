@@ -22,12 +22,13 @@ A collection of Open-Science session exports and their accompanying case posters
 | [Curiosity Lab](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/tree/main/Curiosity%20Lab) | 53 | Everyday curiosity, natural phenomena, probability, finance, and exploratory science |
 | [AI Research](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/tree/main/AI%20Research) | 55 | AI capabilities, reliability, behavior, costs, and research progress |
 | [Academic Research](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/tree/main/Academic%20Research) | 30 | Archived scientific studies across biomedical research, chemistry, environment, and climate |
+| [3D Lab](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/tree/main/3D%20Lab) | 5 | Guided interactive 3D research projects with downloadable Open-Science sessions |
 
 Categories follow the principal question of each case; they are navigation labels rather than evidence-quality ratings.
 
 ## File structure
 
-Each case has its own folder within one of the three category directories:
+Each case has its own folder within its category directory:
 
 ```text
 <Category>/
@@ -44,7 +45,7 @@ Each case has its own folder within one of the three category directories:
 - **`categories.json`**: category membership and supplied Creator attribution.
 - **`manifest.json`**: the case-level publication index. Each case declares `title`, stable `name`, `catalog`, `catalog_name`, and `cover`, `case`, and `introduction` resource objects. Each resource records its filename, repository path, byte size, SHA-256, and `release_url`; an empty URL selects the file stored in this repository.
 
-The latest seven case folders are named after their poster titles. Earlier cases retain their existing names. Some titles contain question marks or Unicode punctuation; adapt local filenames if your operating system requires it.
+Some titles contain question marks or Unicode punctuation; adapt local filenames if your operating system requires it.
 
 ## How to use
 

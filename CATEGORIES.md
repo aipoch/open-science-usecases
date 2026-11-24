@@ -1,6 +1,6 @@
 # Case categories
 
-`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 138 classified cases, including the Pelican animation case synchronized from Hugging Face snapshot `9be564f73f6d1b7ee715122bd871b488fdb16522`. One existing unclassified case remains under `usecases/`.
+`manifest.json` is the authoritative source for catalog fields and resource paths. `categories.json` records 143 classified cases, including the Pelican animation case synchronized from Hugging Face snapshot `9be564f73f6d1b7ee715122bd871b488fdb16522`. One existing unclassified case remains under `usecases/`.
 
 ## Curiosity Lab (53)
 
@@ -161,3 +161,12 @@
 |---|---|
 | First Flight vs. Evening Flight - Which Is More Reliable | [Read](usecases/First%20Flight%20vs.%20Evening%20Flight%20-%20Which%20Is%20More%20Reliable/First%20Flight%20vs.%20Evening%20Flight%20-%20Which%20Is%20More%20Reliable.md) |
 
+## 3D Lab (5)
+
+| Case | Introduction |
+| --- | --- |
+| Revalidating Mendel's Laws of Inheritance | [Read](3D%20Lab/Mendel%20Laboratory/Mendel%20Laboratory.md) |
+| Pelican Coastal Experience | [Read](3D%20Lab/Pelican%20Bicycle%20Studio/Pelican%20Bicycle%20Studio.md) |
+| Independent Reproduction of AI-Assisted Black Hole Physics Discoveries | [Read](3D%20Lab/Black%20Hole%20Observatory/Black%20Hole%20Observatory.md) |
+| PTP1B Allosteric Discovery — AI Research Reproduction & 3D Molecular Laboratory | [Read](3D%20Lab/PTP1B%20Molecular%20Laboratory/PTP1B%20Molecular%20Laboratory.md) |
+| Riemann Hypothesis 2026 — Proof Verification | [Read](3D%20Lab/The%20Riemann%20Classroom/The%20Riemann%20Classroom.md) |

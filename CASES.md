@@ -1,6 +1,6 @@
 # Case index
 
-138 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
+143 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
 
 ## Curiosity Lab (53)
 
@@ -155,3 +155,12 @@
 | Spatial Immune Organization and Breast Cancer Prognosis | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Academic%20Research/Spatial%20Immune%20Organization%20and%20Breast%20Cancer%20Prognosis/Spatial%20Immune%20Organization%20and%20Breast%20Cancer%20Prognosis.md) |
 | Worm longevity genes and human exceptional-longevity evidence | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Academic%20Research/Worm%20longevity%20genes%20and%20human%20exceptional-longevity%20evidence/Worm%20longevity%20genes%20and%20human%20exceptional-longevity%20evidence.md) |
 
+## 3D Lab (5)
+
+| Case | Creator | Introduction |
+| --- | --- | --- |
+| Revalidating Mendel's Laws of Inheritance | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/3D%20Lab/Mendel%20Laboratory/Mendel%20Laboratory.md) |
+| Pelican Coastal Experience | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/3D%20Lab/Pelican%20Bicycle%20Studio/Pelican%20Bicycle%20Studio.md) |
+| Independent Reproduction of AI-Assisted Black Hole Physics Discoveries | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/3D%20Lab/Black%20Hole%20Observatory/Black%20Hole%20Observatory.md) |
+| PTP1B Allosteric Discovery — AI Research Reproduction & 3D Molecular Laboratory | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/3D%20Lab/PTP1B%20Molecular%20Laboratory/PTP1B%20Molecular%20Laboratory.md) |
+| Riemann Hypothesis 2026 — Proof Verification | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/3D%20Lab/The%20Riemann%20Classroom/The%20Riemann%20Classroom.md) |
