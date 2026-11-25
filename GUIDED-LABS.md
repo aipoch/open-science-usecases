@@ -36,7 +36,7 @@ The Pelican native project remains an [official release attachment](https://gith
 
 ## Project dialog in a standalone lab
 
-The scene sends `open-science:project` when its import button is clicked. An embedded scene delegates to its website host. A scene opened at its published URL uses the bundled Project dialog. On first use it reads the public case manifest relative to its entry URL and resolves the native package by case name. The download, integrity check, save and desktop import use the same component and SDK as the website.
+The scene sends `open-science:project` when its import button is clicked. An embedded scene delegates to its website host. A scene opened at its published URL uses the bundled Project dialog. On first use it reads the public case manifest relative to its entry URL and resolves the native package by case name. The dialog downloads and verifies the archive before caching it in the browser. Visitors can save the verified file to their device after a refresh or copy the case-specific instructions to import it with an agent.
 
 The source entry is `scripts/standalone-lab/project-dialog.tsx` in `aipoch-web`. To refresh the standalone assets, run the following in that repository with its locked dependencies installed. Copy both output files next to each participating scene entry, refresh their size and SHA-256 in `lab.json`, then update the experience tree revisions as described above.
 
