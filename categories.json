@@ -727,6 +727,11 @@
       "title": "Riemann Hypothesis 2026 — Proof Verification",
       "name": "riemann-classroom",
       "category": "3D Lab"
+    },
+    {
+      "title": "GPT-6 Protein Design: What Did the Lab Tests Actually Measure?",
+      "name": "gpt-6-protein-design-what-did-the-lab-tests-actually-measure",
+      "category": "AI Research"
     }
   ]
 }

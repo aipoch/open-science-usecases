@@ -1,6 +1,6 @@
 # Case index
 
-143 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
+144 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
 
 ## 3D Lab (5)
 
@@ -70,10 +70,11 @@
 | If ETH Fails, What Changes for Maximum Parsimony Local Search? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search/If%20ETH%20Fails%2C%20What%20Changes%20for%20Maximum%20Parsimony%20Local%20Search.md) |
 | Webb N159 Stellar Nursery: How Big Is One Pixel? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Webb%20N159%20Stellar%20Nursery%20-%20How%20Big%20Is%20One%20Pixel/Webb%20N159%20Stellar%20Nursery%20-%20How%20Big%20Is%20One%20Pixel.md) |
 
-## AI Research (55)
+## AI Research (56)
 
 | Case | Creator | Introduction |
 |---|---|---|
+| GPT-6 Protein Design: What Did the Lab Tests Actually Measure? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/GPT-6%20Protein%20Design%20-%20What%20Did%20the%20Lab%20Tests%20Actually%20Measure/GPT-6%20Protein%20Design%20-%20What%20Did%20the%20Lab%20Tests%20Actually%20Measure.md) |
 | Pelican on a Bicycle: Do Its Feet Stay on the Pedals? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Pelican%20on%20a%20Bicycle%20-%20Do%20Its%20Feet%20Stay%20on%20the%20Pedals/Pelican%20on%20a%20Bicycle%20-%20Do%20Its%20Feet%20Stay%20on%20the%20Pedals.md) |
 | Lyra 2.0: Better Pictures, but Do They Still Match? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/Lyra%202.0%20-%20Better%20Pictures%2C%20but%20Do%20They%20Still%20Match/Lyra%202.0%20-%20Better%20Pictures%2C%20but%20Do%20They%20Still%20Match.md) |
 | AI Explains Math - What Gets Lost | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/AI%20Research/AI%20Explains%20Math%20-%20What%20Gets%20Lost/AI%20Explains%20Math%20-%20What%20Gets%20Lost.md) |
