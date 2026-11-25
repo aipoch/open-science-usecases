@@ -1,14 +1,14 @@
 {
   "entry": {
     "file_name": "index.html",
-    "path": "3D Lab/Mendel Laboratory/index.html",
+    "path": "3D Lab/Mendel Laboratory/experience/index.html",
     "bytes": 1404712,
     "sha256": "67a94517696c1a3ac65022d6574712a0bedca6dec39971b72a683edf028b0d2b",
     "release_url": ""
   },
   "prompt": {
     "file_name": "prompt.txt",
-    "path": "3D Lab/Mendel Laboratory/prompt.txt",
+    "path": "3D Lab/Mendel Laboratory/experience/prompt.txt",
     "bytes": 721,
     "sha256": "731f85078d497d415ba1fdaa72aaee34cbf27f9170000c43c238102b86bb733d",
     "release_url": ""
@@ -16,7 +16,7 @@
   "assets": [
     {
       "file_name": "room.html",
-      "path": "3D Lab/Mendel Laboratory/room.html",
+      "path": "3D Lab/Mendel Laboratory/experience/room.html",
       "bytes": 30895707,
       "sha256": "0dfa452ae8cd63d38359222a9595ef8e4abb322df6062c6f9c527b68feb3a5d7",
       "release_url": ""
@@ -24,7 +24,7 @@
   ],
   "screenshot": {
     "file_name": "cover.png",
-    "path": "3D Lab/Mendel Laboratory/cover.png",
+    "path": "3D Lab/Mendel Laboratory/experience/cover.png",
     "bytes": 1295294,
     "sha256": "11fd82266b5b3239847d7d652d95ef7b86366565ab206a26d777ae3830e05eac",
     "release_url": ""

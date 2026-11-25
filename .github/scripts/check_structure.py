@@ -94,6 +94,20 @@ def is_science_url(url):
     return is_resource_url(url, "case")
 
 
+def allowed_release_url(url, kind=None):
+    if not is_resource_url(url, kind) or not url.startswith(RELEASE_URL_PREFIXES):
+        return False
+    path = urlsplit(url).path
+    while True:
+        if (re.search(r"[\\\x00-\x1f\x7f]", path)
+                or any(part in (".", "..") for part in path.split("/"))):
+            return False
+        decoded = unquote(path)
+        if decoded == path:
+            return True
+        path = decoded
+
+
 def release_url_errors(entries):
     errors = []
     for entry in entries:
@@ -104,20 +118,7 @@ def release_url_errors(entries):
             url = resource.get("release_url", "")
             if url == "":
                 continue
-            allowed = is_resource_url(url, kind) and url.startswith(RELEASE_URL_PREFIXES)
-            if allowed:
-                path = urlsplit(url).path
-                # Reject traversal even if a downstream server decodes it again.
-                while True:
-                    if (re.search(r"[\\\x00-\x1f\x7f]", path)
-                            or any(part in (".", "..") for part in path.split("/"))):
-                        allowed = False
-                        break
-                    decoded = unquote(path)
-                    if decoded == path:
-                        break
-                    path = decoded
-            if not allowed:
+            if not allowed_release_url(url, kind):
                 errors.append("manifest.json / " + show(entry.get("name")) + "/" + kind
                               + ": invalid release_url; use an empty string for a local source or a URL under "
                               + " or ".join(RELEASE_URL_PREFIXES)
@@ -175,7 +176,7 @@ def schema_errors(entry, legacy=False):
     errors = catalog_errors([entry], legacy=legacy)
     label = "manifest.json / " + show(entry.get("name"))
     required = {"title", "name", "cover", "case"} | (set() if legacy else {"introduction"})
-    if not require_keys(entry, required, label, errors, optional=("introduction", "catalog", "catalog_name", "video")):
+    if not require_keys(entry, required, label, errors, optional=("introduction", "catalog", "catalog_name", "video", "experience")):
         return errors
     if not isinstance(entry["title"], str) or not entry["title"].strip():
         errors.append(label + ": title must be a nonempty string")
@@ -210,6 +211,8 @@ def schema_errors(entry, legacy=False):
         url = resource.get("release_url", "")
         if url != "" and not is_resource_url(url, kind):
             errors.append(label + "/" + kind + ": invalid release_url")
+    from experience import declaration_errors
+    errors.extend(declaration_errors(entry))
     from video_resources import video_errors
     errors.extend(video_errors(entry))
     return errors
@@ -385,6 +388,12 @@ def validate_manifest(cases, declared_only=False):
         if problems:
             continue
         errors.extend(source_errors(Path.cwd(), entry))
+        if 'experience' in entry:
+            from experience import tree_files
+            value = entry['experience']
+            _, downloads = tree_files(Path.cwd(), 'HEAD', value['path'], value['revision'])
+            for path, item in downloads.items():
+                validate_head_size(item['release_url'], item['bytes'], entry['name'] + '/' + path, errors)
         for kind in ("cover", "case", "introduction"):
             resource = entry[kind]
             if resource["release_url"]:
@@ -409,6 +418,14 @@ def check_declarations(root, before, after):
     """Check Git object changes against declarations, without hashing file contents."""
     from manifest_diff import changed_entries, git as range_git, local_resources, manifests
     old, new, manifest_changed = manifests(root, before, after)
+    from experience import declaration_errors, tree_files
+    for entry in new:
+        if 'experience' in entry:
+            errors = declaration_errors(entry)
+            if errors:
+                return errors
+            value = entry['experience']
+            tree_files(root, after, value['path'], value['revision'])
     if not manifest_changed:
         return []
     # Match directory selection: unrelated file changes and removed entries are ignored.

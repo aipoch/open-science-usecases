@@ -1,5 +1,160 @@
 [
   {
+    "title": "Revalidating Mendel's Laws of Inheritance",
+    "name": "mendel-laboratory",
+    "catalog": "3D Lab",
+    "catalog_name": "3-d-lab",
+    "cover": {
+      "file_name": "gallery-cover.png",
+      "path": "3D Lab/Mendel Laboratory/gallery-cover.png",
+      "bytes": 930571,
+      "sha256": "cba1704e4fa9fe99e7af4d30cfe94b0c5b51351e16b645df6399df643427b11c",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Mendel-Laboratory.science",
+      "path": "3D Lab/Mendel Laboratory/Mendel-Laboratory.science",
+      "bytes": 56044184,
+      "sha256": "b9126a3761d185cad3243b5f1700916cadc8be5744e26c0d6951aa6f9df35f5a",
+      "release_url": ""
+    },
+    "introduction": {
+      "file_name": "Mendel Laboratory.md",
+      "path": "3D Lab/Mendel Laboratory/Mendel Laboratory.md",
+      "bytes": 137,
+      "sha256": "addebdff78dd50f0a9b692caa9c7eda424c3907877cd78b6b3be4f910b43133d",
+      "release_url": ""
+    },
+    "experience": {
+      "path": "3D Lab/Mendel Laboratory/experience",
+      "revision": "d70cb76e18b82bc26d842d17797781fac91af62a"
+    }
+  },
+  {
+    "title": "Pelican Coastal Experience",
+    "name": "pelican-bicycle-studio",
+    "catalog": "3D Lab",
+    "catalog_name": "3-d-lab",
+    "cover": {
+      "file_name": "gallery-cover.png",
+      "path": "3D Lab/Pelican Bicycle Studio/gallery-cover.png",
+      "bytes": 908545,
+      "sha256": "24f004a82c55f44480c8800ee87fa1a631127eef0aac1fc0f8f4cc2568788e75",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Pelican-Open-Science.science",
+      "path": "3D Lab/Pelican Bicycle Studio/Pelican-Open-Science.science",
+      "bytes": 174290757,
+      "sha256": "6806e5719e0f073756d777470958a4152897bdfc95a3703fcb19f0202ac03c6a",
+      "release_url": "https://github.com/aipoch/open-science-usecases/releases/download/guided-labs-2026-11-24/Pelican-Open-Science.science"
+    },
+    "introduction": {
+      "file_name": "Pelican Bicycle Studio.md",
+      "path": "3D Lab/Pelican Bicycle Studio/Pelican Bicycle Studio.md",
+      "bytes": 173,
+      "sha256": "2c66d93347406a863dad4cab4afdc7a40c5106f4ac0f1f56b39737810083115f",
+      "release_url": ""
+    },
+    "experience": {
+      "path": "3D Lab/Pelican Bicycle Studio/experience",
+      "revision": "44100a98cb9852338b4128f000091f2ce6d2326f"
+    }
+  },
+  {
+    "title": "Independent Reproduction of AI-Assisted Black Hole Physics Discoveries",
+    "name": "black-hole-observatory",
+    "catalog": "3D Lab",
+    "catalog_name": "3-d-lab",
+    "cover": {
+      "file_name": "gallery-cover.png",
+      "path": "3D Lab/Black Hole Observatory/gallery-cover.png",
+      "bytes": 696426,
+      "sha256": "773f8d19c06c74b40f345eefb3e361197db182d3497ab4e436224d9d8c99e16b",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Black-Hole-Observatory.science",
+      "path": "3D Lab/Black Hole Observatory/Black-Hole-Observatory.science",
+      "bytes": 65589134,
+      "sha256": "63aa133840c3f27d8c1682fbd37d39246e285d41dad7ba41f4814e00f8ca3eb9",
+      "release_url": ""
+    },
+    "introduction": {
+      "file_name": "Black Hole Observatory.md",
+      "path": "3D Lab/Black Hole Observatory/Black Hole Observatory.md",
+      "bytes": 123,
+      "sha256": "7dc6d2f4ba99b3800ef04076dc2cd882d97f0ba88fdd6a7d4087bb8aaa990c15",
+      "release_url": ""
+    },
+    "experience": {
+      "path": "3D Lab/Black Hole Observatory/experience",
+      "revision": "63532a39a6f5a254f65fde31dee43bc8163c8249"
+    }
+  },
+  {
+    "title": "PTP1B Allosteric Discovery — AI Research Reproduction & 3D Molecular Laboratory",
+    "name": "ptp1b-molecular-laboratory",
+    "catalog": "3D Lab",
+    "catalog_name": "3-d-lab",
+    "cover": {
+      "file_name": "gallery-cover.png",
+      "path": "3D Lab/PTP1B Molecular Laboratory/gallery-cover.png",
+      "bytes": 843770,
+      "sha256": "6b345e6d9cf159a15fcc197b2628a0e279ff17a0e06ebbb6a589d854f7f3f877",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "PTP1B-Molecular-Laboratory.science",
+      "path": "3D Lab/PTP1B Molecular Laboratory/PTP1B-Molecular-Laboratory.science",
+      "bytes": 101217293,
+      "sha256": "a0292a94fb3fe21d9950baf7fda19834cb78b70e7a192dd414fa86dbf69a075f",
+      "release_url": ""
+    },
+    "introduction": {
+      "file_name": "PTP1B Molecular Laboratory.md",
+      "path": "3D Lab/PTP1B Molecular Laboratory/PTP1B Molecular Laboratory.md",
+      "bytes": 142,
+      "sha256": "d5067026e259f3ff9f7358e5510037f21798915612832e4df5210175b2bcc496",
+      "release_url": ""
+    },
+    "experience": {
+      "path": "3D Lab/PTP1B Molecular Laboratory/experience",
+      "revision": "d20eff928ebf3c7e4cee06a912aa48cb1b8a29d8"
+    }
+  },
+  {
+    "title": "Riemann Hypothesis 2026 — Proof Verification",
+    "name": "riemann-classroom",
+    "catalog": "3D Lab",
+    "catalog_name": "3-d-lab",
+    "cover": {
+      "file_name": "gallery-cover.png",
+      "path": "3D Lab/The Riemann Classroom/gallery-cover.png",
+      "bytes": 873130,
+      "sha256": "7dcf9ab3cd883cd103c120b73ba7e0e36e0a25ba83e2219a60f5a4e79c88185f",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Riemann-Hypothesis-2026-—-Proof-Verification.science",
+      "path": "3D Lab/The Riemann Classroom/Riemann-Hypothesis-2026-—-Proof-Verification.science",
+      "bytes": 31486536,
+      "sha256": "d6001159314de303c587e10007bd0fc7ba9b7416a11808430222215c323641df",
+      "release_url": ""
+    },
+    "introduction": {
+      "file_name": "The Riemann Classroom.md",
+      "path": "3D Lab/The Riemann Classroom/The Riemann Classroom.md",
+      "bytes": 133,
+      "sha256": "1e1e7d5bed5527d02fbec42c1512f467fb85c0be89ef69e5b4095833e9c49434",
+      "release_url": ""
+    },
+    "experience": {
+      "path": "3D Lab/The Riemann Classroom/experience",
+      "revision": "b88d1fb2e86571f46d83c54ee55fe8f478c82b60"
+    }
+  },
+  {
     "title": "Lyra 2.0: Better Pictures, but Do They Still Match?",
     "name": "lyra-2-0-better-pictures-but-do-they-still-match",
     "catalog": "AI Research",
