@@ -4001,5 +4001,32 @@
       "file_path": "https://www.youtube.com/watch?v=UdhysF9ji00",
       "file_name": "Can an AI Build a Pelican That Really Rides a Bicycle? — Open-Science Web Demo"
     }
+  },
+  {
+    "title": "GPT-6 Protein Design: What Did the Lab Tests Actually Measure?",
+    "name": "gpt-6-protein-design-what-did-the-lab-tests-actually-measure",
+    "catalog": "AI Research",
+    "catalog_name": "ai-research",
+    "cover": {
+      "file_name": "GPT-6 Protein Design - What Did the Lab Tests Actually Measure.png",
+      "path": "AI Research/GPT-6 Protein Design - What Did the Lab Tests Actually Measure/GPT-6 Protein Design - What Did the Lab Tests Actually Measure.png",
+      "bytes": 718235,
+      "sha256": "7e4cbe426e1ea482802e7a42d9ef0ea4ca80691f0df1a7445a1f4c22a4bf8e9a",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "GPT-6-Protein-Design---What-Did-the-Lab-Tests-Actually-Measure.science",
+      "path": "AI Research/GPT-6 Protein Design - What Did the Lab Tests Actually Measure/GPT-6-Protein-Design---What-Did-the-Lab-Tests-Actually-Measure.science",
+      "bytes": 117078128,
+      "sha256": "efcb0a9c6fe342d23c5f731b11456f6ce86d2ee4a837c6fefdaae1d21b212c81",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/cdfbda588f669a4eae809428d7ed0c3a1828b009/AI%20Research/GPT-6%20Protein%20Design%20-%20What%20Did%20the%20Lab%20Tests%20Actually%20Measure/GPT-6-Protein-Design---What-Did-the-Lab-Tests-Actually-Measure.science"
+    },
+    "introduction": {
+      "file_name": "GPT-6 Protein Design - What Did the Lab Tests Actually Measure.md",
+      "path": "AI Research/GPT-6 Protein Design - What Did the Lab Tests Actually Measure/GPT-6 Protein Design - What Did the Lab Tests Actually Measure.md",
+      "bytes": 12714,
+      "sha256": "8a0953f602abd8f042882ead6a400a4d525e51b3ecaf684a164503ee3a6d3224",
+      "release_url": ""
+    }
   }
 ]
