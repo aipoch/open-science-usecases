@@ -2,8 +2,8 @@
   "entry": {
     "file_name": "index.html",
     "path": "3D Lab/Black Hole Observatory/experience/index.html",
-    "bytes": 10776742,
-    "sha256": "84d485b5c6c0a0f9b6be8ceb8b583945977f1c179a32c34645f2ef5124b59aa9",
+    "bytes": 10776787,
+    "sha256": "7483c5e6e60e33514e1eeb40693b377051bbe3969c63e93aa1560e52697f948d",
     "release_url": ""
   },
   "prompt": {
@@ -13,7 +13,22 @@
     "sha256": "c5f8a728d2314689c88aa517427c656a69f4471f083b66cdce31ea659ed22661",
     "release_url": ""
   },
-  "assets": [],
+  "assets": [
+    {
+      "file_name": "project-dialog.css",
+      "path": "3D Lab/Black Hole Observatory/experience/project-dialog.css",
+      "bytes": 2633,
+      "sha256": "8d6661aa2147f5af1b2428cf9461bedd53eb0e283a0e2265573cfc0462bfc68e",
+      "release_url": ""
+    },
+    {
+      "file_name": "project-dialog.js",
+      "path": "3D Lab/Black Hole Observatory/experience/project-dialog.js",
+      "bytes": 247462,
+      "sha256": "c2ef7269f1fde6e4cc35afacd2ce047dbf25c4690801ed40d644b01dec9976ce",
+      "release_url": ""
+    }
+  ],
   "screenshot": {
     "file_name": "cover.png",
     "path": "3D Lab/Black Hole Observatory/experience/cover.png",

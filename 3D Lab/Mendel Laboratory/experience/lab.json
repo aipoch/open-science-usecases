@@ -2,8 +2,8 @@
   "entry": {
     "file_name": "index.html",
     "path": "3D Lab/Mendel Laboratory/experience/index.html",
-    "bytes": 1404712,
-    "sha256": "67a94517696c1a3ac65022d6574712a0bedca6dec39971b72a683edf028b0d2b",
+    "bytes": 1404757,
+    "sha256": "beab6743922d3529db10a44930de63535564d7bccdff7f6b4097cde44924dd17",
     "release_url": ""
   },
   "prompt": {
@@ -19,6 +19,20 @@
       "path": "3D Lab/Mendel Laboratory/experience/room.html",
       "bytes": 30895707,
       "sha256": "0dfa452ae8cd63d38359222a9595ef8e4abb322df6062c6f9c527b68feb3a5d7",
+      "release_url": ""
+    },
+    {
+      "file_name": "project-dialog.css",
+      "path": "3D Lab/Mendel Laboratory/experience/project-dialog.css",
+      "bytes": 2633,
+      "sha256": "8d6661aa2147f5af1b2428cf9461bedd53eb0e283a0e2265573cfc0462bfc68e",
+      "release_url": ""
+    },
+    {
+      "file_name": "project-dialog.js",
+      "path": "3D Lab/Mendel Laboratory/experience/project-dialog.js",
+      "bytes": 247462,
+      "sha256": "c2ef7269f1fde6e4cc35afacd2ce047dbf25c4690801ed40d644b01dec9976ce",
       "release_url": ""
     }
   ],

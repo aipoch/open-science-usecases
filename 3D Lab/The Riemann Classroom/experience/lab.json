@@ -2,8 +2,8 @@
   "entry": {
     "file_name": "index.html",
     "path": "3D Lab/The Riemann Classroom/experience/index.html",
-    "bytes": 1636158,
-    "sha256": "7ff15fda4bdc583743069a89a2eba90dd8d111446c793a3ccf7ec8da97a12292",
+    "bytes": 1636203,
+    "sha256": "a6712526e2a751599bae68fe0e7a944fc0249b44b4be0953a1279b7ebae524cd",
     "release_url": ""
   },
   "prompt": {
@@ -19,6 +19,20 @@
       "path": "3D Lab/The Riemann Classroom/experience/room.html",
       "bytes": 5527210,
       "sha256": "f2559e94fe55584705099e75692d0b24697c661ff30ed45fc78aa878fb443477",
+      "release_url": ""
+    },
+    {
+      "file_name": "project-dialog.css",
+      "path": "3D Lab/The Riemann Classroom/experience/project-dialog.css",
+      "bytes": 2633,
+      "sha256": "8d6661aa2147f5af1b2428cf9461bedd53eb0e283a0e2265573cfc0462bfc68e",
+      "release_url": ""
+    },
+    {
+      "file_name": "project-dialog.js",
+      "path": "3D Lab/The Riemann Classroom/experience/project-dialog.js",
+      "bytes": 247462,
+      "sha256": "c2ef7269f1fde6e4cc35afacd2ce047dbf25c4690801ed40d644b01dec9976ce",
       "release_url": ""
     }
   ],

@@ -2,8 +2,8 @@
   "entry": {
     "file_name": "index.html",
     "path": "3D Lab/Pelican Bicycle Studio/experience/index.html",
-    "bytes": 941205,
-    "sha256": "17e02577a1e53b84e750eeded614004dff37f762a9521246f9f97c96c26b041a",
+    "bytes": 941250,
+    "sha256": "773115f7ca1fe3f19ff28b436723e58b2f606c900764dce41ac21cb409c096d9",
     "release_url": ""
   },
   "prompt": {
@@ -215,6 +215,20 @@
       "path": "3D Lab/Pelican Bicycle Studio/experience/textures-water-normal.png",
       "bytes": 476480,
       "sha256": "29299ea1c784b4fa1d9e6ce622356eb8c75dfbb91cc7fa17ae474456073643c9",
+      "release_url": ""
+    },
+    {
+      "file_name": "project-dialog.css",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/project-dialog.css",
+      "bytes": 2633,
+      "sha256": "8d6661aa2147f5af1b2428cf9461bedd53eb0e283a0e2265573cfc0462bfc68e",
+      "release_url": ""
+    },
+    {
+      "file_name": "project-dialog.js",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/project-dialog.js",
+      "bytes": 247462,
+      "sha256": "c2ef7269f1fde6e4cc35afacd2ce047dbf25c4690801ed40d644b01dec9976ce",
       "release_url": ""
     }
   ],

@@ -2,8 +2,8 @@
   "entry": {
     "file_name": "index.html",
     "path": "3D Lab/PTP1B Molecular Laboratory/experience/index.html",
-    "bytes": 827248,
-    "sha256": "1f5fdf225ce864385d7d5fa2731ea80779d0aa563324da2c5dc2d8e0165f2c60",
+    "bytes": 827293,
+    "sha256": "7bfaa3b4030a6053a1d41ae2b74faddbe1eea57129d4bc603791979b8e21d9e9",
     "release_url": ""
   },
   "prompt": {
@@ -19,6 +19,20 @@
       "path": "3D Lab/PTP1B Molecular Laboratory/experience/room.html",
       "bytes": 7161500,
       "sha256": "f2c15c734101676c37e648decacd4e3d3e163c3fbea90f19e813dd2db315ed99",
+      "release_url": ""
+    },
+    {
+      "file_name": "project-dialog.css",
+      "path": "3D Lab/PTP1B Molecular Laboratory/experience/project-dialog.css",
+      "bytes": 2633,
+      "sha256": "8d6661aa2147f5af1b2428cf9461bedd53eb0e283a0e2265573cfc0462bfc68e",
+      "release_url": ""
+    },
+    {
+      "file_name": "project-dialog.js",
+      "path": "3D Lab/PTP1B Molecular Laboratory/experience/project-dialog.js",
+      "bytes": 247462,
+      "sha256": "c2ef7269f1fde6e4cc35afacd2ce047dbf25c4690801ed40d644b01dec9976ce",
       "release_url": ""
     }
   ],
