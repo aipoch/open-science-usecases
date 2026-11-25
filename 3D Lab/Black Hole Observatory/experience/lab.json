@@ -1,0 +1,24 @@
+{
+  "entry": {
+    "file_name": "index.html",
+    "path": "3D Lab/Black Hole Observatory/experience/index.html",
+    "bytes": 10776742,
+    "sha256": "84d485b5c6c0a0f9b6be8ceb8b583945977f1c179a32c34645f2ef5124b59aa9",
+    "release_url": ""
+  },
+  "prompt": {
+    "file_name": "prompt.txt",
+    "path": "3D Lab/Black Hole Observatory/experience/prompt.txt",
+    "bytes": 4580,
+    "sha256": "c5f8a728d2314689c88aa517427c656a69f4471f083b66cdce31ea659ed22661",
+    "release_url": ""
+  },
+  "assets": [],
+  "screenshot": {
+    "file_name": "cover.png",
+    "path": "3D Lab/Black Hole Observatory/experience/cover.png",
+    "bytes": 735846,
+    "sha256": "d4cd31c457688648b8e7dd550a67878a7461ca919d35076e77b18c18c2337813",
+    "release_url": ""
+  }
+}

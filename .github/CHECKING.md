@@ -29,6 +29,8 @@ The cover must have an image extension, the package must be a `.science` file, a
 
 For example, the `Data Science` catalog may contain `Data Science/covers/cover.png`, `Data Science/packages/session.science`, and `Data Science/docs/zh/intro.md` in one entry. Unclassified root-level files may use their filenames directly as paths. `usecases/` is simply how the existing unclassified cases are organized.
 
+Optional [interactive experiences](../GUIDED-LABS.md) use a committed directory revision and a fixed HTML entry.
+
 ## Sources and checks
 
 | cover | case | introduction | Local checks | Remote checks |

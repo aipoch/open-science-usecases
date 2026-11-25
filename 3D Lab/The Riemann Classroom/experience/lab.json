@@ -1,0 +1,32 @@
+{
+  "entry": {
+    "file_name": "index.html",
+    "path": "3D Lab/The Riemann Classroom/experience/index.html",
+    "bytes": 1636158,
+    "sha256": "7ff15fda4bdc583743069a89a2eba90dd8d111446c793a3ccf7ec8da97a12292",
+    "release_url": ""
+  },
+  "prompt": {
+    "file_name": "prompt.txt",
+    "path": "3D Lab/The Riemann Classroom/experience/prompt.txt",
+    "bytes": 1835,
+    "sha256": "276fc2b2c7bbd21b6fd860973dc4c1c1bd7b57ed74ba3776bda0c5531e2e6837",
+    "release_url": ""
+  },
+  "assets": [
+    {
+      "file_name": "room.html",
+      "path": "3D Lab/The Riemann Classroom/experience/room.html",
+      "bytes": 5527210,
+      "sha256": "f2559e94fe55584705099e75692d0b24697c661ff30ed45fc78aa878fb443477",
+      "release_url": ""
+    }
+  ],
+  "screenshot": {
+    "file_name": "cover.png",
+    "path": "3D Lab/The Riemann Classroom/experience/cover.png",
+    "bytes": 964967,
+    "sha256": "43946868b5d11425f56ab330abd4c615b6599f3693bd8f147d6b4604d5848f61",
+    "release_url": ""
+  }
+}

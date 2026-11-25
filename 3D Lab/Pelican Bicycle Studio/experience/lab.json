@@ -1,0 +1,228 @@
+{
+  "entry": {
+    "file_name": "index.html",
+    "path": "3D Lab/Pelican Bicycle Studio/experience/index.html",
+    "bytes": 941205,
+    "sha256": "17e02577a1e53b84e750eeded614004dff37f762a9521246f9f97c96c26b041a",
+    "release_url": ""
+  },
+  "prompt": {
+    "file_name": "prompt.txt",
+    "path": "3D Lab/Pelican Bicycle Studio/experience/prompt.txt",
+    "bytes": 5126,
+    "sha256": "f0d4e4495313896cd5119d43e0dd8deb8d2693858cf58203c0c6187bbbf2cfbe",
+    "release_url": ""
+  },
+  "assets": [
+    {
+      "file_name": "geometry.bin",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/geometry.bin",
+      "bytes": 16024840,
+      "sha256": "3a6e572a0380e6f6f57c9cf95580b286c802471c33c6fc6c714e563cdb78c4bb",
+      "release_url": ""
+    },
+    {
+      "file_name": "poster.png",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/poster.png",
+      "bytes": 2225730,
+      "sha256": "ecf3c91e21afab609b4c12c4e84ab0c633cc815d47b8139c841db6445af1e0c9",
+      "release_url": ""
+    },
+    {
+      "file_name": "room.html",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/room.html",
+      "bytes": 612767,
+      "sha256": "d402a6099a0f3989bc640bfef2ed4d4edcdcce846d5c07d1013019b49c329774",
+      "release_url": ""
+    },
+    {
+      "file_name": "scene.json",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/scene.json",
+      "bytes": 149161,
+      "sha256": "3791da9fb51c3d36e4022325b1ab352aafa002e481717ca1bb3f5daa0e6d8d78",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-aerial_grass_rock_diff.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-aerial_grass_rock_diff.jpg",
+      "bytes": 666655,
+      "sha256": "57b8041bfe0d0f01430e4dbaad45e7ddddf0a9fc97317f90dbc51f7b0d9e1b5d",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-aerial_grass_rock_nor_gl.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-aerial_grass_rock_nor_gl.jpg",
+      "bytes": 904956,
+      "sha256": "1aa3e23bff453f152e089b9f83aa36b4901651e019f7e2ca01d5331a9bbbda78",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-aerial_grass_rock_rough.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-aerial_grass_rock_rough.jpg",
+      "bytes": 362214,
+      "sha256": "b9f3f76aba74007f708333c0dbe73c52eb83ea0c4187a13e2e994f888a25114a",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-asphalt_02_diff.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-asphalt_02_diff.jpg",
+      "bytes": 731707,
+      "sha256": "1aa5ce99f58a625c71d48cfc3e68b65ca85ccb00f39e045c0a928608a0ea25ed",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-asphalt_02_nor_gl.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-asphalt_02_nor_gl.jpg",
+      "bytes": 1240122,
+      "sha256": "42a1c381b53204e83a982db2864479a30bc127bbdeebb1006f8ee51bff099df3",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-asphalt_02_rough.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-asphalt_02_rough.jpg",
+      "bytes": 544032,
+      "sha256": "70ba3edc65525eb4dc366cf010ca7ae0bd34e0251ff0225c2dad627a873d0712",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-bark_brown_02_diff.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-bark_brown_02_diff.jpg",
+      "bytes": 659592,
+      "sha256": "920fa0bed0c9d78c1d530e99795113afd532d7db746de440f4a85d7c83ed0f1a",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-bark_brown_02_nor_gl.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-bark_brown_02_nor_gl.jpg",
+      "bytes": 1015623,
+      "sha256": "0d5e691e8ad8bcd093a3587887fda2a6b4a948b5708a4f256f7919584c6eb857",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-bark_brown_02_rough.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-bark_brown_02_rough.jpg",
+      "bytes": 337946,
+      "sha256": "68125592de36e15bae7aa6db85c4d135aeb7e5653199ba226483a70f6d69837d",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-coast_sand_01_diff.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-coast_sand_01_diff.jpg",
+      "bytes": 960614,
+      "sha256": "58af2e40100f7f405703a86d593af64379f822c4786850def23ecfc921450d54",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-coast_sand_01_nor_gl.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-coast_sand_01_nor_gl.jpg",
+      "bytes": 1146826,
+      "sha256": "fe4d045aec99e71e80f682fcf0ad958d2dff1fe614b73178b304d1bac047b54a",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-coast_sand_01_rough.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-coast_sand_01_rough.jpg",
+      "bytes": 383892,
+      "sha256": "cbc3e0bf2214e04318a643c9dc81f50f33cc5f7b935a20016c5d9efd9a6d1696",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-coastal-road.png",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-coastal-road.png",
+      "bytes": 2064674,
+      "sha256": "d81ad0b66fea1701bd9b84ac715d2577fc86cea6023416c9b167afb449141a2a",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-coastal-sky.hdr",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-coastal-sky.hdr",
+      "bytes": 5451493,
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-feather-albedo.png",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-feather-albedo.png",
+      "bytes": 49427,
+      "sha256": "a43228b2b116085791122be8989c272cfc2f2627355e4b4b2055705aaa30c536",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-feather-normal.png",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-feather-normal.png",
+      "bytes": 516378,
+      "sha256": "77087425c288942691c481317aff1b835a66012242866a894b93926962c22f3d",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-grass_path_3_diff.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-grass_path_3_diff.jpg",
+      "bytes": 646551,
+      "sha256": "71b0a514bbb65a0ec2731e82b6bad0bb3a1e089cb671cf697bfe53f75f5da943",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-grass_path_3_nor_gl.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-grass_path_3_nor_gl.jpg",
+      "bytes": 829401,
+      "sha256": "473bf439c266ffe357409fb0fb4758ed6cd1d6889df588f42e174b7cb6481cc5",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-grass_path_3_rough.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-grass_path_3_rough.jpg",
+      "bytes": 589060,
+      "sha256": "660682fb61634be28416f2a45adb54329d2e8ce743ef225e40ee9a7a999c17e7",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-rock_boulder_dry_diff.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-rock_boulder_dry_diff.jpg",
+      "bytes": 859211,
+      "sha256": "20f653a42fb24f42aa40641663070d578678da49af18cc1049dbdd4ed8679f3c",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-rock_boulder_dry_nor_gl.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-rock_boulder_dry_nor_gl.jpg",
+      "bytes": 802497,
+      "sha256": "5915fea28a97357c78a04fb31c2516f1f7ed1b3a9cef4ae25aa93e4655e6c595",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-rock_boulder_dry_rough.jpg",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-rock_boulder_dry_rough.jpg",
+      "bytes": 668127,
+      "sha256": "cc5229dd6bbdc4e817cb647e60242224b8e4f0237473ac018861ea243f2e8130",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-rubber-normal.png",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-rubber-normal.png",
+      "bytes": 530065,
+      "sha256": "9cb8e6b5bc05b7f8a13976f3030e48c2a80063d058761e2ca07f3ecbeb9fb949",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-skin-normal.png",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-skin-normal.png",
+      "bytes": 516754,
+      "sha256": "82b5d4cf7a767a8f898230384456e7f73a076b9fc356604c13bf8bb5028b2032",
+      "release_url": ""
+    },
+    {
+      "file_name": "textures-water-normal.png",
+      "path": "3D Lab/Pelican Bicycle Studio/experience/textures-water-normal.png",
+      "bytes": 476480,
+      "sha256": "29299ea1c784b4fa1d9e6ce622356eb8c75dfbb91cc7fa17ae474456073643c9",
+      "release_url": ""
+    }
+  ],
+  "screenshot": {
+    "file_name": "cover.png",
+    "path": "3D Lab/Pelican Bicycle Studio/experience/cover.png",
+    "bytes": 1283598,
+    "sha256": "1b2ded3cca22782a6cae5d111326c7389ef5cb6f54fa17a180c0d2c48c8be134",
+    "release_url": ""
+  }
+}

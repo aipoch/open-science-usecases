@@ -1,6 +1,16 @@
 # Case index
 
-138 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
+143 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
+
+## 3D Lab (5)
+
+| Case | Creator | Introduction |
+|---|---|---|
+| Independent Reproduction of AI-Assisted Black Hole Physics Discoveries | — | [Read](3D%20Lab/Black%20Hole%20Observatory/Black%20Hole%20Observatory.md) |
+| PTP1B Allosteric Discovery — AI Research Reproduction & 3D Molecular Laboratory | — | [Read](3D%20Lab/PTP1B%20Molecular%20Laboratory/PTP1B%20Molecular%20Laboratory.md) |
+| Pelican Coastal Experience | — | [Read](3D%20Lab/Pelican%20Bicycle%20Studio/Pelican%20Bicycle%20Studio.md) |
+| Revalidating Mendel's Laws of Inheritance | — | [Read](3D%20Lab/Mendel%20Laboratory/Mendel%20Laboratory.md) |
+| Riemann Hypothesis 2026 — Proof Verification | — | [Read](3D%20Lab/The%20Riemann%20Classroom/The%20Riemann%20Classroom.md) |
 
 ## Curiosity Lab (53)
 

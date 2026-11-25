@@ -17,6 +17,7 @@ import time
 from urllib.parse import quote, urlsplit
 
 from check_structure import catalog_errors, read_json, schema_errors, source_errors, selected_cases
+from experience import candidates as experience_candidates
 from manifest_diff import changed_entries, git
 from publication_steps import (build_steps, group_files, write_artifacts, print_plan,
                                Reporter)
@@ -80,6 +81,7 @@ def prepare(root, baseline, after, *, check_local=True):
     previous = {entry['name']: entry for entry in old}
     candidates, packages = [], []
     for entry in new:
+        candidates.extend(experience_candidates(root, after, entry, previous.get(entry['name'], {})))
         for kind in KINDS:
             resource = entry[kind]
             reasons, force = candidate_reasons(previous.get(entry['name'], {}).get(kind), resource)
@@ -149,7 +151,7 @@ def prepare_resources(root, plan, s3, output, *, names=None, check_local=True):
     batch = Path(tempfile.mkdtemp(prefix='sources-', dir=output)).resolve()
     try:
         for item in plan['candidates']:
-            # Only selected, non-forced covers/introductions consult target metadata.
+            # Non-forced standalone resources can reuse verified target objects.
             head = s3.head(item['key']) if item['kind'] != 'case' and not item['force_upload'] else None
             skip = item['kind'] != 'case' and not item['force_upload'] and matching_head(head, item)
             decisions.append({'key': item['key'], 'action': 'skip' if skip else 'upload',

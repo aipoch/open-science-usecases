@@ -1,0 +1,32 @@
+{
+  "entry": {
+    "file_name": "index.html",
+    "path": "3D Lab/PTP1B Molecular Laboratory/experience/index.html",
+    "bytes": 827248,
+    "sha256": "1f5fdf225ce864385d7d5fa2731ea80779d0aa563324da2c5dc2d8e0165f2c60",
+    "release_url": ""
+  },
+  "prompt": {
+    "file_name": "prompt.txt",
+    "path": "3D Lab/PTP1B Molecular Laboratory/experience/prompt.txt",
+    "bytes": 540,
+    "sha256": "1cf58b0972023711b253920ee232652a6f8459236a1139e64ff3f0229c906d99",
+    "release_url": ""
+  },
+  "assets": [
+    {
+      "file_name": "room.html",
+      "path": "3D Lab/PTP1B Molecular Laboratory/experience/room.html",
+      "bytes": 7161500,
+      "sha256": "f2c15c734101676c37e648decacd4e3d3e163c3fbea90f19e813dd2db315ed99",
+      "release_url": ""
+    }
+  ],
+  "screenshot": {
+    "file_name": "cover.png",
+    "path": "3D Lab/PTP1B Molecular Laboratory/experience/cover.png",
+    "bytes": 601433,
+    "sha256": "73c3b8f63414b947448c2a1827a0a75dfd12750348df3df0a92d5cb79065a657",
+    "release_url": ""
+  }
+}
