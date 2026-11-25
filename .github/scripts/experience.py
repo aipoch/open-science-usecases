@@ -76,7 +76,7 @@ def blob_sha256(root, blob):
 
 def candidates(root, commit, entry, previous):
     value = entry.get('experience')
-    if value is None:
+    if value is None or value == previous.get('experience'):
         return []
     path, revision = value['path'], value['revision']
     files, downloads = tree_files(root, commit, path, revision)
