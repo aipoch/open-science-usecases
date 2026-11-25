@@ -2,8 +2,8 @@
   "entry": {
     "file_name": "index.html",
     "path": "3D Lab/Pelican Bicycle Studio/experience/index.html",
-    "bytes": 942385,
-    "sha256": "63153d270e28074706a60a976691a2f6bdc5d2f03792dc4285197431c395a499",
+    "bytes": 942342,
+    "sha256": "be2d6a7feaae0c059b636cab84c0af7af8bf88f7bea621e82b5df5bce190a661",
     "release_url": ""
   },
   "prompt": {
@@ -234,15 +234,15 @@
     {
       "file_name": "lab-shell.css",
       "path": "3D Lab/Pelican Bicycle Studio/experience/lab-shell.css",
-      "bytes": 2053,
-      "sha256": "b6b6c0688ea6901ec9f12ec7709c58e3ddbb2c16e2746875943d0f6a1f45e01b",
+      "bytes": 2759,
+      "sha256": "edadcc3be6e0abad3c5abf0ceb78a30348414d6b3d2c9020710a6b26a9160730",
       "release_url": ""
     },
     {
       "file_name": "lab-shell.js",
       "path": "3D Lab/Pelican Bicycle Studio/experience/lab-shell.js",
-      "bytes": 4321,
-      "sha256": "a8179b316cdd3e0f9bdcacf3329b49a00b3dfceebf0038db3b4c4f0a3ac76d9b",
+      "bytes": 4358,
+      "sha256": "c5df1c16a8323075e1deb0cf57f1fefaf409d8f6c8350a8d95229609cae7d766",
       "release_url": ""
     }
   ],

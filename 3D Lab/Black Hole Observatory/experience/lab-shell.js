@@ -54,6 +54,7 @@ const labScene = (() => {
     video.src = URL.createObjectURL(recording)
     for (const button of buttons) {
       button.disabled = false
+      button.dataset.labWatch = 'ready'
       button.textContent = 'Watch introduction'
     }
   }
@@ -63,7 +64,7 @@ const labScene = (() => {
     const buttons = [...document.querySelectorAll('[data-lab-watch]')]
     const load = () => {
       for (const button of buttons) {
-        button.textContent = 'Loading resources...'
+        button.textContent = 'Loading resources'
         button.disabled = true
       }
       prepareIntroduction(video, buttons).catch(() => {
