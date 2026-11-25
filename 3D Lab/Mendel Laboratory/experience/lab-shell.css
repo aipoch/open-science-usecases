@@ -1,0 +1,95 @@
+#lab-media-status {
+  position: absolute;
+  z-index: 60;
+  left: 50%;
+  top: 16%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 7px 14px;
+  border-radius: 20px;
+  color: #fff;
+  background: #162a25df;
+  font: 500 14px/1.4 system-ui, sans-serif;
+  pointer-events: none;
+}
+#lab-construction {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 12px;
+  background: #c7d8cf;
+  color: #193e34;
+  font: 500 clamp(18px, 3vw, 28px)/1.3 system-ui, sans-serif;
+}
+#lab-construction svg { width: min(210px, 48vw); height: auto; }
+#lab-construction button { color: inherit; background: transparent; font: 14px system-ui; border: 1px solid currentColor; border-radius: 6px; padding: 6px 12px; }
+#lab-construction[hidden], #lab-construction button[hidden], #lab-media-status[hidden] { display: none; }
+@media (prefers-reduced-motion: no-preference) {
+  #lab-construction .lab-outline path {
+    stroke-dasharray: 1;
+    animation: lab-draw 3.8s ease-in-out infinite;
+  }
+
+  #lab-construction .lab-bench {
+    animation: lab-assemble 3.8s ease-in-out infinite;
+  }
+
+  #lab-construction .lab-instruments {
+    animation: lab-assemble 3.8s 0.45s ease-in-out infinite backwards;
+  }
+}
+
+@keyframes lab-draw {
+  0%,
+  100% {
+    stroke-dashoffset: 1;
+    opacity: 0;
+  }
+  30%,
+  80% {
+    stroke-dashoffset: 0;
+    opacity: 0.55;
+  }
+  95% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes lab-assemble {
+  0%,
+  16%,
+  100% {
+    transform: translateY(-9px);
+    opacity: 0;
+  }
+  43%,
+  77% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  92% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+}
+
+html body [data-lab-actions] {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: clamp(354px, 32vw, 460px);
+  min-width: 0;
+  max-width: 100%;
+  gap: 8px;
+}
+html body [data-lab-actions] > button { width: 100%; min-width: 0; justify-content: center; }
+@media (max-width: 650px) {
+  html body [data-lab-actions] { width: min(94vw, 348px); gap: 4px; }
+  html body [data-lab-actions] > button { font-size: 11px; padding-inline: 4px; white-space: normal; }
+}
+@media (max-width: 650px) {
+  #mast nav[data-lab-actions] { flex: 0 1 348px; }
+}

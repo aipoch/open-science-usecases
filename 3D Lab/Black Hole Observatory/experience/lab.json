@@ -2,8 +2,8 @@
   "entry": {
     "file_name": "index.html",
     "path": "3D Lab/Black Hole Observatory/experience/index.html",
-    "bytes": 10776787,
-    "sha256": "7483c5e6e60e33514e1eeb40693b377051bbe3969c63e93aa1560e52697f948d",
+    "bytes": 10778596,
+    "sha256": "31b1f431612b89ef54c5ef9a906cab51ffe4323fd7848827d71a3c6766f9cd35",
     "release_url": ""
   },
   "prompt": {
@@ -24,8 +24,22 @@
     {
       "file_name": "project-dialog.js",
       "path": "3D Lab/Black Hole Observatory/experience/project-dialog.js",
-      "bytes": 247574,
-      "sha256": "fea8923d8d81915cb4d5d6528fe6525d4fcef4ae718a69366838a71081802a45",
+      "bytes": 247668,
+      "sha256": "de72a85f3cbc38c1420e7115acf930c8b6e1601fbd8bb95d6e5c3d9f9705a4e5",
+      "release_url": ""
+    },
+    {
+      "file_name": "lab-shell.css",
+      "path": "3D Lab/Black Hole Observatory/experience/lab-shell.css",
+      "bytes": 2241,
+      "sha256": "e53f93187da31434ae50832a2a742cf77a8420c504727435079f88737221c20f",
+      "release_url": ""
+    },
+    {
+      "file_name": "lab-shell.js",
+      "path": "3D Lab/Black Hole Observatory/experience/lab-shell.js",
+      "bytes": 2621,
+      "sha256": "31edec2a17264460ade73a22e7901b12a10fdbc505cc9490a2992c0ec90c93e6",
       "release_url": ""
     }
   ],
