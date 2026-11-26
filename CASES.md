@@ -1,6 +1,6 @@
 # Case index
 
-144 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
+146 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
 
 ## 3D Lab (5)
 
@@ -12,10 +12,12 @@
 | Revalidating Mendel's Laws of Inheritance | — | [Read](3D%20Lab/Mendel%20Laboratory/Mendel%20Laboratory.md) |
 | Riemann Hypothesis 2026 — Proof Verification | — | [Read](3D%20Lab/The%20Riemann%20Classroom/The%20Riemann%20Classroom.md) |
 
-## Curiosity Lab (53)
+## Curiosity Lab (55)
 
 | Case | Creator | Introduction |
 |---|---|---|
+| The Matrix Multiplication Exponent Is 9/4: What Is New and What Is Formalized? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/The%20Matrix%20Multiplication%20Exponent%20Is%209-4%20-%20What%20Is%20New%20and%20What%20Is%20Formalized/The%20Matrix%20Multiplication%20Exponent%20Is%209-4%20-%20What%20Is%20New%20and%20What%20Is%20Formalized.md) |
+| Thanksgiving Turkey Study Plan: Steady Heat or a Hot Start? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Thanksgiving%20Turkey%20Study%20Plan%20-%20Steady%20Heat%20or%20a%20Hot%20Start/Thanksgiving%20Turkey%20Study%20Plan%20-%20Steady%20Heat%20or%20a%20Hot%20Start.md) |
 | Kimi K3.1 Pro: What Would It Take to Run It Locally? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Kimi%20K3.1%20Pro%20-%20What%20Would%20It%20Take%20to%20Run%20It%20Locally/Kimi%20K3.1%20Pro%20-%20What%20Would%20It%20Take%20to%20Run%20It%20Locally.md) |
 | $10,000: NVIDIA, BITCOIN, OR BOTH? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/%2410%2C000%3A%20NVIDIA%2C%20BITCOIN%2C%20OR%20BOTH%3F/%2410%2C000%3A%20NVIDIA%2C%20BITCOIN%2C%20OR%20BOTH%3F.md) |
 | 99% Pure - Does Molecular Handedness Matter | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/99%25%20Pure%20-%20Does%20Molecular%20Handedness%20Matter/99%25%20Pure%20-%20Does%20Molecular%20Handedness%20Matter.md) |
