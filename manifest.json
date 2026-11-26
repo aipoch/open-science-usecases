@@ -4028,5 +4028,59 @@
       "sha256": "8a0953f602abd8f042882ead6a400a4d525e51b3ecaf684a164503ee3a6d3224",
       "release_url": ""
     }
+  },
+  {
+    "title": "The Matrix Multiplication Exponent Is 9/4: What Is New and What Is Formalized?",
+    "name": "the-matrix-multiplication-exponent-is-9-4-what-is-new-and-what-is-formalized",
+    "catalog": "Curiosity Lab",
+    "catalog_name": "curiosity-lab",
+    "cover": {
+      "file_name": "The Matrix Multiplication Exponent Is 9-4 - What Is New and What Is Formalized.png",
+      "path": "Curiosity Lab/The Matrix Multiplication Exponent Is 9-4 - What Is New and What Is Formalized/The Matrix Multiplication Exponent Is 9-4 - What Is New and What Is Formalized.png",
+      "bytes": 902035,
+      "sha256": "66ef699382c3d1fbc0145bafac4315d65c318e0da9f83e8fc9338afa9ab529b7",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "The-Matrix-Multiplication-Exponent-Is-9-4---What-Is-New-and-What-Is-Formalized.science",
+      "path": "Curiosity Lab/The Matrix Multiplication Exponent Is 9-4 - What Is New and What Is Formalized/The-Matrix-Multiplication-Exponent-Is-9-4---What-Is-New-and-What-Is-Formalized.science",
+      "bytes": 5621424,
+      "sha256": "acb5bb7374a46362898c5feaefdf366249ac20f6525b93d6909fa9085092c75e",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/8d09882d5a607cf76b22b55808ba59f575e432e5/Curiosity%20Lab/The%20Matrix%20Multiplication%20Exponent%20Is%209-4%20-%20What%20Is%20New%20and%20What%20Is%20Formalized/The-Matrix-Multiplication-Exponent-Is-9-4---What-Is-New-and-What-Is-Formalized.science"
+    },
+    "introduction": {
+      "file_name": "The Matrix Multiplication Exponent Is 9-4 - What Is New and What Is Formalized.md",
+      "path": "Curiosity Lab/The Matrix Multiplication Exponent Is 9-4 - What Is New and What Is Formalized/The Matrix Multiplication Exponent Is 9-4 - What Is New and What Is Formalized.md",
+      "bytes": 10614,
+      "sha256": "d8c275d5f2a187b0c64e630432a09f41451c794c54cc54f66cef02ef386d52c3",
+      "release_url": ""
+    }
+  },
+  {
+    "title": "Thanksgiving Turkey Study Plan: Steady Heat or a Hot Start?",
+    "name": "thanksgiving-turkey-study-plan-steady-heat-or-a-hot-start",
+    "catalog": "Curiosity Lab",
+    "catalog_name": "curiosity-lab",
+    "cover": {
+      "file_name": "Thanksgiving Turkey Study Plan - Steady Heat or a Hot Start.png",
+      "path": "Curiosity Lab/Thanksgiving Turkey Study Plan - Steady Heat or a Hot Start/Thanksgiving Turkey Study Plan - Steady Heat or a Hot Start.png",
+      "bytes": 859008,
+      "sha256": "b054495375a3713dd04e5813fef4b91b0fc515a9700f23cc34a989ce8c2e1fab",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Thanksgiving-Turkey-Study-Plan---Steady-Heat-or-a-Hot-Start.science",
+      "path": "Curiosity Lab/Thanksgiving Turkey Study Plan - Steady Heat or a Hot Start/Thanksgiving-Turkey-Study-Plan---Steady-Heat-or-a-Hot-Start.science",
+      "bytes": 6877595,
+      "sha256": "2d0066431f48167a424e85b13e0b804287871af0b4acd7c8a3b552e38eccd38c",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/8d09882d5a607cf76b22b55808ba59f575e432e5/Curiosity%20Lab/Thanksgiving%20Turkey%20Study%20Plan%20-%20Steady%20Heat%20or%20a%20Hot%20Start/Thanksgiving-Turkey-Study-Plan---Steady-Heat-or-a-Hot-Start.science"
+    },
+    "introduction": {
+      "file_name": "Thanksgiving Turkey Study Plan - Steady Heat or a Hot Start.md",
+      "path": "Curiosity Lab/Thanksgiving Turkey Study Plan - Steady Heat or a Hot Start/Thanksgiving Turkey Study Plan - Steady Heat or a Hot Start.md",
+      "bytes": 10133,
+      "sha256": "2224e57853dcae322a8c8dcf06ffdd56ad1121712e86d0255eedf7baccf3ca6d",
+      "release_url": ""
+    }
   }
 ]
