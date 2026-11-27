@@ -4027,6 +4027,11 @@
       "bytes": 12714,
       "sha256": "8a0953f602abd8f042882ead6a400a4d525e51b3ecaf684a164503ee3a6d3224",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=dTdnNFrQL0s",
+      "file_name": "GPT-6 Protein Design: What Did the Lab Tests Actually Measure? | Open-Science Web Demo"
     }
   },
   {
@@ -4054,6 +4059,11 @@
       "bytes": 10614,
       "sha256": "d8c275d5f2a187b0c64e630432a09f41451c794c54cc54f66cef02ef386d52c3",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=SWykDmsrLmc",
+      "file_name": "Matrix Multiplication Exponent 9:4: What's New and Formalized? | Open-Science Web Demo"
     }
   },
   {
@@ -4081,6 +4091,43 @@
       "bytes": 10133,
       "sha256": "2224e57853dcae322a8c8dcf06ffdd56ad1121712e86d0255eedf7baccf3ca6d",
       "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=qCE-P4beJ5E",
+      "file_name": "Thanksgiving Turkey Study Plan: Steady Heat or a Hot Start? | Open-Science Web Demo"
+    }
+  },
+  {
+    "title": "Claude-Assisted Riemann Proof: From 17 Million Lines to 76,000",
+    "name": "claude-assisted-riemann-proof-from-17-million-lines-to-76-000",
+    "catalog": "Curiosity Lab",
+    "catalog_name": "curiosity-lab",
+    "cover": {
+      "file_name": "Claude-Assisted Riemann Proof - From 17 Million Lines to 76,000.png",
+      "path": "Curiosity Lab/Claude-Assisted Riemann Proof - From 17 Million Lines to 76,000/Claude-Assisted Riemann Proof - From 17 Million Lines to 76,000.png",
+      "bytes": 436918,
+      "sha256": "18780a5f1f2f0ecfec1ee00205c49d43e6d0f3cbc9f4ca08c03f7c915aa50964",
+      "release_url": ""
+    },
+    "case": {
+      "file_name": "Claude-Assisted-Riemann-Proof---From-17-Million-Lines-to-76,000.science",
+      "path": "Curiosity Lab/Claude-Assisted Riemann Proof - From 17 Million Lines to 76,000/Claude-Assisted-Riemann-Proof---From-17-Million-Lines-to-76,000.science",
+      "bytes": 5586553,
+      "sha256": "43354bc3709a83d36c97786d8dff63e68972d14dabf0bd8a691b28fe458a8783",
+      "release_url": "https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/resolve/472664bb933a8a3b4189d0aba87f5030cf7d7a72/Curiosity%20Lab/Claude-Assisted%20Riemann%20Proof%20-%20From%2017%20Million%20Lines%20to%2076%2C000/Claude-Assisted-Riemann-Proof---From-17-Million-Lines-to-76%2C000.science"
+    },
+    "introduction": {
+      "file_name": "Claude-Assisted Riemann Proof - From 17 Million Lines to 76,000.md",
+      "path": "Curiosity Lab/Claude-Assisted Riemann Proof - From 17 Million Lines to 76,000/Claude-Assisted Riemann Proof - From 17 Million Lines to 76,000.md",
+      "bytes": 13673,
+      "sha256": "22f7202e20b069668ec512773d38625db0480c63cb97a7caf605193fd65a9bd6",
+      "release_url": ""
+    },
+    "video": {
+      "type": "youtube",
+      "file_path": "https://www.youtube.com/watch?v=1YUIW62B2Ac",
+      "file_name": "Claude-Assisted Riemann Proof: From 17 Million Lines to 76,000 | Open-Science Web Demo"
     }
   }
 ]

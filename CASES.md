@@ -1,6 +1,6 @@
 # Case index
 
-146 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
+147 classified cases. One additional existing unclassified case is declared in manifest.json. Introductions describe the archived studies; resource paths, sizes, and SHA-256 values are declared in manifest.json.
 
 ## 3D Lab (5)
 
@@ -12,10 +12,11 @@
 | Revalidating Mendel's Laws of Inheritance | — | [Read](3D%20Lab/Mendel%20Laboratory/Mendel%20Laboratory.md) |
 | Riemann Hypothesis 2026 — Proof Verification | — | [Read](3D%20Lab/The%20Riemann%20Classroom/The%20Riemann%20Classroom.md) |
 
-## Curiosity Lab (55)
+## Curiosity Lab (56)
 
 | Case | Creator | Introduction |
 |---|---|---|
+| Claude-Assisted Riemann Proof: From 17 Million Lines to 76,000 | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Claude-Assisted%20Riemann%20Proof%20-%20From%2017%20Million%20Lines%20to%2076%2C000/Claude-Assisted%20Riemann%20Proof%20-%20From%2017%20Million%20Lines%20to%2076%2C000.md) |
 | The Matrix Multiplication Exponent Is 9/4: What Is New and What Is Formalized? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/The%20Matrix%20Multiplication%20Exponent%20Is%209-4%20-%20What%20Is%20New%20and%20What%20Is%20Formalized/The%20Matrix%20Multiplication%20Exponent%20Is%209-4%20-%20What%20Is%20New%20and%20What%20Is%20Formalized.md) |
 | Thanksgiving Turkey Study Plan: Steady Heat or a Hot Start? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Thanksgiving%20Turkey%20Study%20Plan%20-%20Steady%20Heat%20or%20a%20Hot%20Start/Thanksgiving%20Turkey%20Study%20Plan%20-%20Steady%20Heat%20or%20a%20Hot%20Start.md) |
 | Kimi K3.1 Pro: What Would It Take to Run It Locally? | — | [Read](https://huggingface.co/datasets/AIPOCH-AI/open-science-usecases/blob/main/Curiosity%20Lab/Kimi%20K3.1%20Pro%20-%20What%20Would%20It%20Take%20to%20Run%20It%20Locally/Kimi%20K3.1%20Pro%20-%20What%20Would%20It%20Take%20to%20Run%20It%20Locally.md) |
